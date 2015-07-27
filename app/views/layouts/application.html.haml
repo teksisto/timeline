@@ -7,4 +7,19 @@
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{style: "width: 90%; margin: auto;"}
+
+    %p
+      %span
+        %i.fa.fa-navicon
+          = link_to 'Events', events_path
+      %span
+        %i.fa.fa-folder-open
+          = link_to 'Sources', sources_path
+      %span
+        %i.fa.fa-tags
+          = link_to 'Categories', categories_path
+
+
+
+          
     = yield
