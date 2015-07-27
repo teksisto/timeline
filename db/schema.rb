@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150727123002) do
+ActiveRecord::Schema.define(version: 20150727232949) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -29,6 +29,14 @@ ActiveRecord::Schema.define(version: 20150727123002) do
   add_index "categories", ["lft"], name: "index_categories_on_lft"
   add_index "categories", ["parent_id"], name: "index_categories_on_parent_id"
   add_index "categories", ["rgt"], name: "index_categories_on_rgt"
+
+  create_table "categories_events", id: false, force: :cascade do |t|
+    t.integer "category_id"
+    t.integer "event_id"
+  end
+
+  add_index "categories_events", ["category_id"], name: "index_categories_events_on_category_id"
+  add_index "categories_events", ["event_id"], name: "index_categories_events_on_event_id"
 
   create_table "events", force: :cascade do |t|
     t.string   "name"
