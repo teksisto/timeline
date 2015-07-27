@@ -5,8 +5,8 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:id)
-      %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:date)
+      %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:description)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
@@ -14,8 +14,8 @@
     - @events.each do |event|
       %tr
         %td= link_to event.id, event_path(event)
-        %td= event.name
         %td= event.date
+        %td= event.name
         %td= event.description
         %td=l event.created_at
         %td
