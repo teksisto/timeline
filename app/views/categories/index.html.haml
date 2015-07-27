@@ -1,0 +1,31 @@
+- model_class = Category
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:description)
+      %th= model_class.human_attribute_name(:color)
+      %th= model_class.human_attribute_name(:parent_id)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+
+    - #@categories.each do |category|
+    - Category.each_with_level(Category.root.self_and_descendants) do |category, level|
+      %tr
+        %td
+          %span
+            = '» '*level
+            = link_to(category.name, category_path(category))
+        %td= category.description
+        %td
+          %span{style: "background-color: #{category.color}"}
+            = category.color
+        %td= category.parent_id
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-default btn-xs'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
+
+= link_to t('.new', :default => t("helpers.links.new")), new_category_path, :class => 'btn btn-primary'
+

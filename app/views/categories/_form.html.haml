@@ -1,0 +1,38 @@
+= form_for @category, html: { class: "form form-horizontal category" } do |f|
+  .form-group
+    = f.label :name, class: 'control-label'
+    .controls
+      = f.text_field :name, class: 'form-control', required: true
+    = error_span(@category[:name])
+  .form-group
+    = f.label :description, class: 'control-label'
+    .controls
+      = f.text_area :description, class: 'form-control', required: true
+    = error_span(@category[:description])
+  .form-group
+    = f.label :color, class: 'control-label'
+    .controls
+      = f.text_field :color, class: 'form-control'
+    = error_span(@category[:color])
+  .form-group
+    = f.label :parent_id, class: 'control-label'
+    .controls
+      = f.select :parent_id, nested_set_options(Category, @category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control'}
+    = error_span(@category[:parent_id])
+  -# .form-group
+  -#   = f.label :lft, class: 'control-label'
+  -#   .controls
+  -#     = f.text_field :lft, class: 'form-control', required: true
+  -#   = error_span(@category[:lft])
+  -# .form-group
+  -#   = f.label :rgt, class: 'control-label'
+  -#   .controls
+  -#     = f.text_field :rgt, class: 'form-control', required: true
+  -#   = error_span(@category[:rgt])
+  -# .form-group
+  -#   = f.label :depth, class: 'control-label'
+  -#   .controls
+  -#     = f.text_field :depth, class: 'form-control', required: true
+  -#   = error_span(@category[:depth])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), categories_path, :class => 'btn btn-default'
