@@ -1,0 +1,18 @@
+= form_for @source, html: { class: "form form-horizontal source" } do |f|
+  .form-group
+    = f.label :name, class: 'control-label'
+    .controls
+      = f.text_field :name, class: 'form-control', required: true
+    = error_span(@source[:name])
+  .form-group
+    = f.label :description, class: 'control-label'
+    .controls
+      = f.text_area :description, class: 'form-control', required: true
+    = error_span(@source[:description])
+  .form-group
+    = f.label :link, class: 'control-label'
+    .controls
+      = f.text_field :link, class: 'form-control', required: true
+    = error_span(@source[:link])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), sources_path, :class => 'btn btn-default'

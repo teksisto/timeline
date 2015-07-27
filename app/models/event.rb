@@ -1,5 +1,7 @@
 class Event < ActiveRecord::Base
 
+  belongs_to :source
+  
   def self.all_by_year
         
     events_by_year = Event.all.group_by(&:year)

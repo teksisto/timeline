@@ -2,26 +2,17 @@
 .page-header
   %h1=t '.title', :default => model_class.model_name.human.titleize
 
+%h3= @event.name
 %p
-  %strong= model_class.human_attribute_name(:name) + ':'
-  %br
-  = @event.name
+  %strong=  @event.date
+
+%p= @event.description
+
 %p
-  %strong= model_class.human_attribute_name(:year) + ':'
+  %strong= model_class.human_attribute_name(:source) + ':'
   %br
-  = @event.year
-%p
-  %strong= model_class.human_attribute_name(:month) + ':'
-  %br
-  = @event.month
-%p
-  %strong= model_class.human_attribute_name(:day) + ':'
-  %br
-  = @event.day
-%p
-  %strong= model_class.human_attribute_name(:description) + ':'
-  %br
-  = @event.description
+  - if source = @event.source
+    = link_to source.try(:name), source_path(source)
 
 
 = link_to t('.back', :default => t("helpers.links.back")), events_path, :class => 'btn btn-default'
