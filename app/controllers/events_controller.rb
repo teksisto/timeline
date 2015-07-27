@@ -5,6 +5,7 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
+    @events_by_year = Event.all_by_year
   end
 
   # GET /events/1

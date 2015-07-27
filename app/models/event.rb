@@ -1,4 +1,22 @@
 class Event < ActiveRecord::Base
+
+  def self.all_by_year
+        
+    events_by_year = Event.all.group_by(&:year)
+
+    start_year = Event.minimum(:year)
+    end_year = Event.maximum(:year)
+
+    for y in start_year..end_year
+      unless events_by_year[y]
+        events_by_year[y] = []
+      end
+    end
+
+    events_by_year
+    
+  end
+    
   def date
     date_array = []
     date_array << year
