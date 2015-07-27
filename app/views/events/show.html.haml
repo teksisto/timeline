@@ -7,9 +7,17 @@
   %br
   = @event.name
 %p
-  %strong= model_class.human_attribute_name(:date) + ':'
+  %strong= model_class.human_attribute_name(:year) + ':'
   %br
-  = @event.date
+  = @event.year
+%p
+  %strong= model_class.human_attribute_name(:month) + ':'
+  %br
+  = @event.month
+%p
+  %strong= model_class.human_attribute_name(:day) + ':'
+  %br
+  = @event.day
 %p
   %strong= model_class.human_attribute_name(:description) + ':'
   %br

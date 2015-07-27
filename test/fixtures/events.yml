@@ -2,10 +2,14 @@
 
 one:
   name: MyString
-  date: 2015-07-27
+  year: 1
+  month: 1
+  day: 1
   description: MyText
 
 two:
   name: MyString
-  date: 2015-07-27
+  year: 1
+  month: 1
+  day: 1
   description: MyText
