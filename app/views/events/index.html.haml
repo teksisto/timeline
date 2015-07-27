@@ -1,10 +1,18 @@
 - model_class = Event
 .page-header
+
+%table.table
+  - for year in @events_by_year.keys.sort
+    %tr
+      %td= year
+      %td
+        - for event in @events_by_year[year]
+          %p= link_to event.name, event_path(event)
+
   %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
 %table.table.table-striped
   %thead
     %tr
-      %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:year)
       %th= model_class.human_attribute_name(:month)
       %th= model_class.human_attribute_name(:day)
@@ -14,23 +22,13 @@
   %tbody
     - @events.each do |event|
       %tr
-        %td= link_to event.id, event_path(event)
         %td= event.year
         %td= event.month
         %td= event.day
-        %td= event.name
+        %td= link_to event.name, event_path(event)
         %td= event.description
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_event_path(event), :class => 'btn btn-default btn-xs'
           = link_to t('.destroy', :default => t("helpers.links.destroy")), event_path(event), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
 
 = link_to t('.new', :default => t("helpers.links.new")), new_event_path, :class => 'btn btn-primary'
-
-
-%table.table
-  - for year in @events_by_year.keys.sort
-    %tr
-      %td= year
-      %td
-        - for event in @events_by_year[year]
-          %p= link_to event.name, event_path(event)
