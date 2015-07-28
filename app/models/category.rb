@@ -4,4 +4,13 @@ class Category < ActiveRecord::Base
 
   has_and_belongs_to_many :events
 
+  after_create :inherit_parent_color
+  after_move :inherit_parent_color
+  
+  def inherit_parent_color
+    if parent.present? && !color.present?
+      update_attribute(:color, parent.color)
+    end
+  end
+  
 end
