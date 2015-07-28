@@ -13,16 +13,7 @@
 
 %h4= "Events"
 
-%table.table.table-striped
-  %tbody
-    - for event in @source.events
-      %tr
-        %td= event.year
-        %td= event.month
-        %td= event.day
-        %td= link_to event.name, event_path(event)
-        %td= event.description
-
+= render partial: 'events/default_table', locals: {events: @source.events}
   
 
 = link_to t('.back', :default => t("helpers.links.back")), sources_path, :class => 'btn btn-default'
