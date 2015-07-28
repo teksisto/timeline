@@ -9,8 +9,8 @@
 
 # Top categories
 
-event_c = Category.create(name: 'Event categories', color: '#C9CF31')
-source_c = Category.create(name: 'Sources categories', color: '#C9CF31')
+event_c = Category.create(name: 'Event categories', color: '')
+source_c = Category.create(name: 'Sources categories', color: '')
 
 # Categories
 
@@ -19,7 +19,6 @@ computers = Category.create(name: 'computers', color: '#C9CF31', parent: event_c
 networks = Category.create(name: 'networks', color: '#C9CF31', parent: computers).id
 security = Category.create(name: 'security', color: '#F8931F', parent: computers).id
 unix = Category.create(name: 'unix', color: '#E1E0B2', parent: computers).id
-space = Category.create(name: 'space', color: '#B1D1E0 ', parent: computers).id
 
 media = Category.create(name: 'media', color: '#C9CF31', parent: event_c)
 
@@ -29,6 +28,8 @@ music = Category.create(name: 'music', color: '#B1D1E0', parent: media).id
 book = Category.create(name: 'book', color: '#C9CF31', icon: 'book', parent: source_c).id
 lectures = Category.create(name: 'lectures', color: '', icon: 'university', parent: source_c).id
 site = Category.create(name: 'site', color: '#F8931F', icon: 'external-link', parent: source_c).id
+
+space = Category.create(name: 'space', color: '#B1D1E0 ', parent: event_c).id
 
 # Sources
 
@@ -47,7 +48,7 @@ stall_hash = {
 }
 
 ghost_hash = {
-  name: 'Kevin Mitnick - Ghost in the wires',
+  name: 'Kevin Mitnick — Ghost in the wires',
   link: '',
   description: 'Автобиография Митника.',
   category_id: book
