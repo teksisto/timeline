@@ -1,8 +1,11 @@
 - model_class = Category
 .page-header
-  %h1=t '.title', :default => model_class.model_name.human.titleize
-
-%h2= @category.name
+  %h1
+    = link_to t('.title', :default => model_class.model_name.human.titleize), categories_path
+    = ' » '
+    - if @category.ancestors.present?
+      = @category.ancestors.map{|a| link_to(a.name, category_path(a))+ ' » ' }.join.html_safe
+    = @category.name
 
 %p= @category.description
 
@@ -10,12 +13,6 @@
   %strong= model_class.human_attribute_name(:color) + ':'
   %span{style: "background-color: #{@category.color}"}
     = @category.color
-%p
-  %strong= model_class.human_attribute_name(:parent_id) + ':'
-  - if @category.ancestors.present?
-    = @category.ancestors.map{|a| link_to a.name, category_path(a) }.join(' » ').html_safe
-  - else
-    %span.text-muted= "< top level >"
 
 = render partial: 'events/default_table', locals: {events: @category.events}
 
