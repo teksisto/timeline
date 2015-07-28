@@ -4,9 +4,8 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:name)
-      %th= model_class.human_attribute_name(:description)
       %th= model_class.human_attribute_name(:color)
-      - #%th= model_class.human_attribute_name(:parent_id)
+      %th= model_class.human_attribute_name(:icon)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - Category.each_with_level(Category.roots.map{|r| r.self_and_descendants}.flatten) do |category, level|
@@ -15,11 +14,10 @@
           %span
             = '» '*level
             = link_to(category.name, category_path(category))
-        %td= category.description
         %td
           %span{style: "background-color: #{category.color}"}
             = category.color
-        - #%td= category.parent_id
+        %td= category_icon(category)
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-default btn-xs'
           = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default btn-xs'

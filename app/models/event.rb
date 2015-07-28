@@ -15,9 +15,17 @@ class Event < ActiveRecord::Base
   }
   
   scope :from_categories, lambda{|category_ids|
-    joins(:categories).where(categories: {id: category_ids})
+    where(id: (ids_from_categories(category_ids)+ids_from_categories_via_sources(category_ids)))
   }
-  
+
+  def self.ids_from_categories(category_ids)
+    Event.joins(:categories).where(categories: {id: category_ids})
+  end
+    
+  def self.ids_from_categories_via_sources(category_ids)
+    Event.joins(:source).where(sources: {category_id: category_ids}).pluck(:id)
+  end
+    
   def self.by_year(events)
         
     events_by_year = events.group_by(&:year)
@@ -25,14 +33,16 @@ class Event < ActiveRecord::Base
     start_year = events.minimum(:year)
     end_year = events.maximum(:year)
 
-    for y in start_year..end_year
-      unless events_by_year[y]
-        events_by_year[y] = []
+    if start_year && end_year
+      for y in start_year..end_year
+        unless events_by_year[y]
+          events_by_year[y] = []
+        end
       end
+      events_by_year
+    else
+      {}
     end
-
-    events_by_year
-    
   end
     
   def date

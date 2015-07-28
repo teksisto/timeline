@@ -14,6 +14,13 @@
   %span{style: "background-color: #{@category.color}"}
     = @category.color
 
+%p
+  %strong= model_class.human_attribute_name(:icon) + ':'
+  %span{style: "background-color: #{@category.color}"}
+    %i{class: "fa fa-#{@category.icon}"}
+
+
+    
 = render partial: 'events/editor', locals: {events: @category.events}
 
 = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn btn-default'

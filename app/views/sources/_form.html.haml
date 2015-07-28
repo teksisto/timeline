@@ -14,5 +14,12 @@
     .controls
       = f.text_field :link, class: 'form-control'
     = error_span(@source[:link])
-  = f.submit nil,class: 'btn btn-primary'
+
+  .form-group
+    = f.label :category_id, class: 'control-label'
+    .controls
+      = f.select :category_id, nested_set_options(Category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control'}
+    = error_span(@source[:category_id])
+
+    = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), sources_path, :class => 'btn btn-default'

@@ -1,6 +1,8 @@
 - model_class = Source
 
-%h3= @source.name
+%h3
+  = category_icon(@source)
+  = @source.name
 
 %p
   = @source.description

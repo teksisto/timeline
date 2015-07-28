@@ -1,20 +1,7 @@
 - model_class = Event
-
-= form_tag events_path, method: 'get' do
-  .filters.well
-    %div{style: 'margin: -10px 0px 10px -10px;'}
-      %i.fa.fa-cog= '&nbspFilters'.html_safe
-    %table{style:'width: 100%;'}
-      %tr
-        %td{colspan: 2, style:'width: 100%;'}
-          = select_tag 'source_ids', options_from_collection_for_select(Source.all, :id, :name, params[:source_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style: 'width: 100%;'
-        %tr
-          %td{style:'width: 50%;'}
-            = select_tag 'category_ids', options_from_collection_for_select(Category.all, :id, :name, params[:category_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style:'width: 100%;'
-          %td{style:'width: 50%;'}
-            = select_tag 'render_method', render_method_options(@partial), onclick: 'this.form.submit();', multiple: true, style:'width: 100%;'
     
-  
+= render partial: 'filters'
+
 = render partial: @partial, locals: {events: @events}
 
 = link_to t('.new', :default => t("helpers.links.new")), new_event_path, :class => 'btn  btn-default'

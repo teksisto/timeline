@@ -15,6 +15,11 @@
       = f.text_field :color, class: 'form-control'
     = error_span(@category[:color])
   .form-group
+    = f.label :icon, class: 'control-label'
+    .controls
+      = f.text_field :icon, class: 'form-control'
+    = error_span(@category[:icon])
+  .form-group
     = f.label :parent_id, class: 'control-label'
     .controls
       = f.select :parent_id, nested_set_options(Category, @category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control'}

@@ -3,12 +3,15 @@
 %table.table.table-striped
   %thead
     %tr
+      %th
+        &nbsp;
       %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:description)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - @sources.each do |source|
       %tr
+        %td= category_icon(source)
         %td= link_to source.name, source_path(source)
         %td= source.description
         %td
