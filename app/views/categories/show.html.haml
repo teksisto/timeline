@@ -16,18 +16,6 @@
     = @category.ancestors.map{|a| link_to a.name, category_path(a) }.join(' » ').html_safe
   - else
     %span.text-muted= "< top level >"
--# %p
--#   %strong= model_class.human_attribute_name(:lft) + ':'
--#   %br
--#   = @category.lft
--# %p
--#   %strong= model_class.human_attribute_name(:rgt) + ':'
--#   %br
--#   = @category.rgt
--# %p
--#   %strong= model_class.human_attribute_name(:depth) + ':'
--#   %br
--#   = @category.depth
 
 = render partial: 'events/default_table', locals: {events: @category.events}
 
