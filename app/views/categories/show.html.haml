@@ -1,8 +1,6 @@
 - model_class = Category
 .page-header
-  %h1
-    = link_to t('.title', :default => model_class.model_name.human.titleize), categories_path
-    = ' » '
+  %h3
     - if @category.ancestors.present?
       = @category.ancestors.map{|a| link_to(a.name, category_path(a))+ ' » ' }.join.html_safe
     = @category.name
@@ -18,8 +16,6 @@
   %strong= model_class.human_attribute_name(:icon) + ':'
   %span{style: "background-color: #{@category.color}"}
     %i{class: "fa fa-#{@category.icon}"}
-
-
     
 = render partial: 'events/editor', locals: {events: @category.events}
 

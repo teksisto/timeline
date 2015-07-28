@@ -8,6 +8,6 @@
           = select_tag 'source_ids', options_from_collection_for_select(Source.all, :id, :name, params[:source_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style: 'width: 100%;'
         %tr
           %td{style:'width: 50%;'}
-            = select_tag 'category_ids', options_from_collection_for_select(Category.all, :id, :name, params[:category_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style:'width: 100%;'
+            = select_tag 'category_ids', grouped_options_for_select(Category.roots.map{|r| [r.name, r.descendants.map{|d| [' » '*(d.depth-1 )+ d.name, d.id]}]}, params['category_ids']).html_safe, multiple: true, include_blank: true, onclick: 'this.form.submit();', style:'width: 100%;'
           %td{style:'width: 50%;'}
             = select_tag 'render_method', render_method_options(@partial), onclick: 'this.form.submit();', multiple: true, style:'width: 100%;'

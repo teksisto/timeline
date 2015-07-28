@@ -7,7 +7,7 @@
   .form-group
     = f.label :description, class: 'control-label'
     .controls
-      = f.text_area :description, class: 'form-control', required: true
+      = f.text_area :description, class: 'form-control'
     = error_span(@source[:description])
   .form-group
     = f.label :link, class: 'control-label'

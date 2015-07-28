@@ -7,36 +7,64 @@
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
+# Top categories
+
+event_c = Category.create(name: 'Event categories', color: '#C9CF31')
+source_c = Category.create(name: 'Sources categories', color: '#C9CF31')
+
 # Categories
 
-networks = Category.create(name: 'networks', color: '#C9CF31').id
-security = Category.create(name: 'security', color: '#F8931F').id
-unix = Category.create(name: 'unix', color: '#E1E0B2').id
-space = Category.create(name: 'space', color: '#B1D1E0 ').id
+computers = Category.create(name: 'computers', color: '#C9CF31', parent: event_c)
+
+networks = Category.create(name: 'networks', color: '#C9CF31', parent: computers).id
+security = Category.create(name: 'security', color: '#F8931F', parent: computers).id
+unix = Category.create(name: 'unix', color: '#E1E0B2', parent: computers).id
+space = Category.create(name: 'space', color: '#B1D1E0 ', parent: computers).id
+
+media = Category.create(name: 'media', color: '#C9CF31', parent: event_c)
+
+movie = Category.create(name: 'movie', color: '#B1D1E0', parent: media).id
+music = Category.create(name: 'music', color: '#B1D1E0', parent: media).id
+
+book = Category.create(name: 'book', color: '#C9CF31', icon: 'book', parent: source_c).id
+lectures = Category.create(name: 'lectures', color: '', icon: 'university', parent: source_c).id
+site = Category.create(name: 'site', color: '#F8931F', icon: 'external-link', parent: source_c).id
 
 # Sources
 
 michigan_hash = {
-  name: 'University of Michigan - Internet History, Technology, and Security',
+  name: 'University of Michigan — Internet History, Technology, and Security',
   link: 'https://www.coursera.org/learn/internet-history',
-  description: 'Курс на курсере про историю интернета.'
+  description: 'Курс на курсере про историю интернета.',
+  category_id: lectures
 }
 
 stall_hash = {
-  name: 'Clifford Stall - The Cuckoo\'s egg',
+  name: 'Clifford Stall — The Cuckoo\'s egg',
   link: '',
-  description: 'Книжка про то, как Столл выслеживал немецких хакеров.'
+  description: 'Книжка про то как американский астроном выслеживал немецких наркоманов.',
+  category_id: book
 }
 
 ghost_hash = {
   name: 'Kevin Mitnick - Ghost in the wires',
   link: '',
-  description: 'Автобиография Митника.'
+  description: 'Автобиография Митника.',
+  category_id: book
 }
+
+imdb_hash = {
+  name: 'IMDb',
+  link: 'https://imdb.com',
+  description: '',
+  category_id: site
+}
+
 
 michigan = Source.create(michigan_hash).id
 stall    = Source.create(stall_hash).id
 ghost    = Source.create(ghost_hash).id
+imdb     = Source.create(imdb_hash).id
 
 # Events
 
