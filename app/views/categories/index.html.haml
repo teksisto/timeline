@@ -10,7 +10,7 @@
       - #%th= model_class.human_attribute_name(:parent_id)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
-    - Category.each_with_level(Category.root.self_and_descendants) do |category, level|
+    - Category.each_with_level(Category.roots.map{|r| r.self_and_descendants}.flatten) do |category, level|
       %tr
         %td
           %span

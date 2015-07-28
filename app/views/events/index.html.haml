@@ -1,6 +1,14 @@
 - model_class = Event
 .page-header
 
+%h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+
+.filters.well
+  = form_tag events_path, method: 'get' do
+    = select_tag 'render_method', render_method_options(params[:render_method]), onclick: 'this.form.submit();'
+    = select_tag 'source_ids', options_from_collection_for_select(Source.all, :id, :name, params[:source_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();'
+    = select_tag 'category_ids', options_from_collection_for_select(Category.all, :id, :name, params[:category_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();'
+
 %table.table
   - for year in @events_by_year.keys.sort
     %tr
@@ -9,7 +17,7 @@
         - for event in @events_by_year[year]
           %p= link_to event.name, event_path(event)
 
-  %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+
 
 = render partial: 'default_table', locals: {events: @events}
   
