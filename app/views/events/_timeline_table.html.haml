@@ -1,0 +1,9 @@
+- model_class = Event
+
+%table.table
+  - for year in @events_by_year.keys.sort
+    %tr
+      %td= year
+      %td
+        - for event in @events_by_year[year]
+          %p= link_to event.name, event_path(event), style: "background-color: #{event.categories.last.color rescue nil}"

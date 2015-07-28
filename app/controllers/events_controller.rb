@@ -6,6 +6,13 @@ class EventsController < ApplicationController
   def index
     @events = Event.all
     @events_by_year = Event.all_by_year
+
+    if params[:render_method].present? && Event::RENDER_METHODS.include?(params[:render_method])
+      @partial = params[:render_method]
+    else
+      @partial = Event::RENDER_METHODS.first
+    end
+    
   end
 
   # GET /events/1
