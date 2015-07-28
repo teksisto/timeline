@@ -1,0 +1,17 @@
+- model_class = Event
+
+%table.table
+  - for year in @events_by_year.keys.sort
+    %tr
+      %td= year
+      - if @events_by_year[year].present?
+        - for event in @events_by_year[year]
+          %td
+            %p= link_to event.name, event_path(event)
+          %td
+            - for category in event.categories
+              %span{style: "background-color: #{category.color}"}= category.name
+      - else
+        %td= '&nbsp;'.html_safe
+        %td= '&nbsp;'.html_safe
+
