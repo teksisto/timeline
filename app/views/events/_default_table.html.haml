@@ -4,9 +4,7 @@
   %table.table.table-striped
     %thead
       %tr
-        %th= model_class.human_attribute_name(:year)
-        %th= model_class.human_attribute_name(:month)
-        %th= model_class.human_attribute_name(:day)
+        %th{colspan: 3}= 'Date'
         %th= model_class.human_attribute_name(:name)
         %th= model_class.human_attribute_name(:description)
         %th=t '.actions', :default => t("helpers.actions")
@@ -20,4 +18,4 @@
           %td= event.description
           %td
             = link_to t('.edit', :default => t("helpers.links.edit")), edit_event_path(event), :class => 'btn btn-default btn-xs'
-            = link_to t('.destroy', :default => t("helpers.links.destroy")), event_path(event), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
+            = link_to t('.destroy', :default => t("helpers.links.destroy")), event_path(event), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-default'

@@ -1,7 +1,4 @@
 - model_class = Event
-.page-header
-
-%h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
 
 .filters.well
   = form_tag events_path, method: 'get' do

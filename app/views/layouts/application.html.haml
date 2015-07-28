@@ -8,16 +8,18 @@
     = csrf_meta_tags
   %body{style: "width: 90%; margin: auto;"}
 
-    %p{style: 'font-size: 2.5em;'}
-      %span
-        %i.fa.fa-navicon
-          = link_to 'Events', events_path
-      %span
-        %i.fa.fa-folder-open
-          = link_to 'Sources', sources_path
-      %span
-        %i.fa.fa-tags
-          = link_to 'Categories', categories_path
+    .page-header
+      %div{style: 'font-size: 2.5em; margin-bottom: 40px;'}
+        %div{style: 'width: 30%; margin:auto; float: left;'}
+          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
+            = link_to 'Events', events_path
+        %div{style: 'width: 30%; margin:auto; float: left;'}
+
+          %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
+            = link_to 'Sources', sources_path
+        %div{style: 'width: 30%; margin:auto; float: left;'}
+          %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
+            = link_to 'Categories', categories_path
 
 
 
