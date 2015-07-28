@@ -5,10 +5,15 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     @events = Event.all
-    @events_by_year = Event.all_by_year
 
-    if params[:render_method].present? && Event::RENDER_METHODS.include?(params[:render_method])
-      @partial = params[:render_method]
+    @events = @events.from_sources(params[:source_ids]) if params[:source_ids] && params[:source_ids].first.present?
+    @events = @events.from_categories(params[:category_ids]) if params[:category_ids] && params[:category_ids].first.present?
+    
+    @events_by_year = Event.by_year(@events)
+
+    render_method = params[:render_method] && params[:render_method].first
+    if render_method.present? && Event::RENDER_METHODS.include?(render_method)
+      @partial = render_method
     else
       @partial = Event::RENDER_METHODS.first
     end
@@ -77,6 +82,12 @@ class EventsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:name, :year, :month, :day, :description, :source_id, :category_ids)
+      params.require(:event).permit(:name,
+                                    :year,
+                                    :month,
+                                    :day,
+                                    :description,
+                                    :source_id,
+                                    :category_ids)
     end
 end

@@ -2,19 +2,28 @@ class Event < ActiveRecord::Base
 
   RENDER_METHODS = [
     'timeline_table',
-    'default_table'
+    'timeline_with_categories',
+    'editor'
   ]
   
   belongs_to :source
 
   has_and_belongs_to_many :categories
-  
-  def self.all_by_year
-        
-    events_by_year = Event.all.group_by(&:year)
 
-    start_year = Event.minimum(:year)
-    end_year = Event.maximum(:year)
+  scope :from_sources, lambda{|source_ids|
+    joins(:source).where(sources: {id: source_ids})
+  }
+  
+  scope :from_categories, lambda{|category_ids|
+    joins(:categories).where(categories: {id: category_ids})
+  }
+  
+  def self.by_year(events)
+        
+    events_by_year = events.group_by(&:year)
+
+    start_year = events.minimum(:year)
+    end_year = events.maximum(:year)
 
     for y in start_year..end_year
       unless events_by_year[y]

@@ -12,7 +12,7 @@
   .form-group
     = f.label :link, class: 'control-label'
     .controls
-      = f.text_field :link, class: 'form-control', required: true
+      = f.text_field :link, class: 'form-control'
     = error_span(@source[:link])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), sources_path, :class => 'btn btn-default'
