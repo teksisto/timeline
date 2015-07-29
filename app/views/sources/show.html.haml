@@ -16,7 +16,7 @@
 = render partial: 'events/editor', locals: {events: @source.events}
 
 - for t in @source.toc.descendants
-  = content_tag("h#{t.depth}", t.name)
+  = link_to content_tag("h#{t.depth}", t.name), t
   - if t.outline
     %p= t.outline.content
 
