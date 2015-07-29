@@ -61,11 +61,19 @@ imdb_hash = {
   category_id: site
 }
 
+z_hash = {
+  name: 'Дмитрий Жуков — Биология поведения: гуморальные механизмы',
+  link: '',
+  description: 'Физиология для идиотов.',
+  category_id: book
+}
+
 
 michigan = Source.create(michigan_hash).id
 stall    = Source.create(stall_hash).id
 ghost    = Source.create(ghost_hash).id
 imdb     = Source.create(imdb_hash).id
+z        = Source.create(z_hash).id
 
 # Events
 

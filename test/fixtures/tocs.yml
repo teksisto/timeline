@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1
+  depth: 1
+  children_count: 1
+  outline_id: 1
+
+two:
+  name: MyString
+  parent_id: 1
+  lft: 1
+  rgt: 1
+  depth: 1
+  children_count: 1
+  outline_id: 1

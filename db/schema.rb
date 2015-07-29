@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150728162607) do
+ActiveRecord::Schema.define(version: 20150729132500) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "name"
@@ -50,6 +50,12 @@ ActiveRecord::Schema.define(version: 20150728162607) do
     t.integer  "source_id"
   end
 
+  create_table "outlines", force: :cascade do |t|
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "sources", force: :cascade do |t|
     t.string   "name"
     t.text     "description"
@@ -57,6 +63,23 @@ ActiveRecord::Schema.define(version: 20150728162607) do
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
     t.integer  "category_id"
+    t.integer  "toc_id"
   end
+
+  create_table "tocs", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "outline_id"
+    t.integer  "parent_id"
+    t.integer  "lft",                        null: false
+    t.integer  "rgt",                        null: false
+    t.integer  "depth",          default: 0, null: false
+    t.integer  "children_count", default: 0, null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
+
+  add_index "tocs", ["lft"], name: "index_tocs_on_lft"
+  add_index "tocs", ["parent_id"], name: "index_tocs_on_parent_id"
+  add_index "tocs", ["rgt"], name: "index_tocs_on_rgt"
 
 end
