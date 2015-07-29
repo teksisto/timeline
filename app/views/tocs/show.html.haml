@@ -11,21 +11,14 @@
   %br
   = @toc.parent_id
 %p
-  %strong= model_class.human_attribute_name(:lft) + ':'
-  %br
-  = @toc.lft
-%p
-  %strong= model_class.human_attribute_name(:rgt) + ':'
-  %br
-  = @toc.rgt
-%p
-  %strong= model_class.human_attribute_name(:depth) + ':'
-  %br
-  = @toc.depth
-%p
   %strong= model_class.human_attribute_name(:outline_id) + ':'
   %br
   = @toc.outline_id
+
+- for toc in @toc.self_and_descendants
+  = content_tag("h#{toc.depth}", toc.name)
+  - if toc.outline
+    %p= toc.outline.content
 
 
 = link_to t('.back', :default => t("helpers.links.back")), tocs_path, :class => 'btn btn-default'
