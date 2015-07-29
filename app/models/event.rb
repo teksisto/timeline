@@ -44,7 +44,7 @@ class Event < ActiveRecord::Base
       {}
     end
   end
-    
+  
   def date
     date_array = []
     date_array << year

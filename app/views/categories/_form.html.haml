@@ -22,7 +22,7 @@
   .form-group
     = f.label :parent_id, class: 'control-label'
     .controls
-      = f.select :parent_id, nested_set_options(Category, @category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control'}
+      = f.select :parent_id, nested_set_options(Category, @category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control', required: true}
     = error_span(@category[:parent_id])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), categories_path, :class => 'btn btn-default'

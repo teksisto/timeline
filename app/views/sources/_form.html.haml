@@ -18,7 +18,7 @@
   .form-group
     = f.label :category_id, class: 'control-label'
     .controls
-      = f.select :category_id, nested_set_options(Category) {|i| "#{'» ' * i.level} #{i.name}" }, {include_blank: true}, {class: 'form-control'}
+      = f.select :category_id, category_options_for_select(Category.sources_root, @source.category_id), {include_blank: true}, {class: 'form-control'}  
     = error_span(@source[:category_id])
 
   = f.submit nil,class: 'btn btn-primary'

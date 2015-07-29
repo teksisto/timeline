@@ -1,3 +1,4 @@
+# coding: utf-8
 module ApplicationHelper
 
   def category_icon(resource)
@@ -17,4 +18,23 @@ module ApplicationHelper
     end
   end
 
+  def category_options_for_select(roots, selected = nil)
+
+    if roots.respond_to?(:to_a) && roots.empty?
+      roots = Category.roots
+    elsif !roots.respond_to?(:to_a)
+      roots = [roots]
+    end
+
+    grouped_options_for_select(
+      roots.map{|r|
+        [
+          r.name,
+          r.descendants.map{|d| [' » '*(d.depth-1 ) + d.name, d.id]}
+        ]
+      }, selected 
+    ).html_safe
+
+  end
+  
 end

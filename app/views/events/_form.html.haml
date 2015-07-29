@@ -33,7 +33,7 @@
   .form-group
     = f.label :category_ids, class: 'control-label'
     .controls
-      = f.select 'category_ids', options_from_collection_for_select(Category.all, :id, :name, @event.category_ids), {include_blank: true}, {multiple: true}
+      = f.select 'category_ids', category_options_for_select(Category.events_root, @event.category_ids), {include_blank: true}, {multiple: true}
     = error_span(@event[:source_id])
     
   = f.submit nil,class: 'btn btn-primary'
