@@ -1,5 +1,5 @@
 class SourcesController < ApplicationController
-  before_action :set_source, only: [:show, :edit, :update, :destroy]
+  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_toc, :create_toc]
 
   # GET /sources
   # GET /sources.json
@@ -61,6 +61,18 @@ class SourcesController < ApplicationController
     end
   end
 
+  def new_toc
+
+  end
+
+  def create_toc
+    if @source.parse_toc(params[:toc_source])
+      redirect_to @source
+    else
+      redirect_to :new
+    end
+  end
+  
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_source

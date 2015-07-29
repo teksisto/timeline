@@ -2,7 +2,14 @@ Rails.application.routes.draw do
   resources :outlines
   resources :tocs
   resources :categories
-  resources :sources
+
+  resources :sources do
+    member do
+      get :new_toc
+      post :create_toc
+    end
+  end
+
   resources :events
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
