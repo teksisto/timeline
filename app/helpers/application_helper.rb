@@ -36,5 +36,14 @@ module ApplicationHelper
     ).html_safe
 
   end
+
+  def ancestors_breadcrumbs(object)
+    path = if object.ancestors.present?
+             object.ancestors.map{|a| link_to(a.name, category_path(a))+ ' » ' }.join
+           else
+             ''
+           end
+    (path + object.name).html_safe
+    end
   
 end

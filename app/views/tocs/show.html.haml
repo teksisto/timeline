@@ -1,7 +1,7 @@
 - model_class = Toc
 
 %h3 
-  = @toc.name
+  = ancestors_breadcrumbs(@toc)
 
 - for toc in @toc.descendants
   = content_tag("h#{toc.depth}", toc.name)

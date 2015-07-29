@@ -1,9 +1,7 @@
 - model_class = Category
 .page-header
   %h3
-    - if @category.ancestors.present?
-      = @category.ancestors.map{|a| link_to(a.name, category_path(a))+ ' » ' }.join.html_safe
-    = @category.name
+    = ancestors_breadcrumbs(@category)
 
 %p= @category.description
 
