@@ -20,10 +20,10 @@ networks = Category.create(name: 'networks', color: '#C9CF31', parent: computers
 security = Category.create(name: 'security', color: '#F8931F', parent: computers).id
 unix = Category.create(name: 'unix', color: '#E1E0B2', parent: computers).id
 
-media = Category.create(name: 'media', color: '#C9CF31', parent: event_c)
+media = Category.create(name: 'media', color: '#61E8BB', parent: event_c)
 
-movie = Category.create(name: 'movie', color: '#B1D1E0', parent: media).id
-music = Category.create(name: 'music', color: '#B1D1E0', parent: media).id
+movie = Category.create(name: 'movie', color: '#61E8BB', parent: media).id
+music = Category.create(name: 'music', color: '#61E8BB', parent: media).id
 
 book = Category.create(name: 'book', color: '#C9CF31', icon: 'book', parent: source_c).id
 lectures = Category.create(name: 'lectures', color: '', icon: 'university', parent: source_c).id

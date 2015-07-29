@@ -12,15 +12,19 @@
       %tr
         %td
           %span
-            = '» '*level
-            = link_to(category.name, category_path(category))
+            = ('&nbsp;'*level*8).html_safe
+            - if category.level == 0
+              %b= link_to(category.name, category_path(category))
+            - else
+              = link_to(category.name, category_path(category))
         %td
           %span{style: "background-color: #{category.color}"}
             = category.color
         %td= category_icon(category)
         %td
-          = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-default btn-xs'
-          = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default btn-xs'
+          - unless category.level == 0
+            = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-default btn-xs'
+            = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default btn-xs'
 
 = link_to t('.new', :default => t("helpers.links.new")), new_category_path, :class => 'btn btn-default'
 
