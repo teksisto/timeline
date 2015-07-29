@@ -10,17 +10,41 @@
 
     .page-header
       %div{style: 'font-size: 2.5em; margin-bottom: 40px;'}
-        %div{style: 'width: 30%; margin:auto; float: left;'}
+
+        %div{style: 'width: 33%; margin:auto; float: left;'}
           %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
             = link_to 'Events', events_path
-        %div{style: 'width: 30%; margin:auto; float: left;'}
 
+        %div{style: 'width: 33%; margin:auto; float: left;'}
           %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
             = link_to 'Sources', sources_path
-        %div{style: 'width: 30%; margin:auto; float: left;'}
+
+        %div{style: 'width: 33%; margin:auto; float: left;'}
+          %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
+            = link_to 'Categories', categories_path
+          
+    = yield
+
+    %hr{style: 'margin-top: 4em;'}
+    
+    .footer{style: 'margin-top: 2em; margin-bottom: 50px'}
+      %div{style: 'font-size: 1em;'}
+
+        %span{style: 'margin-right: 10px;'}
+          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
+            = link_to 'Events', events_path
+
+        %span{style: 'margin-right: 10px;'}
+          %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
+            = link_to 'Sources', sources_path
+
+        %span{style: 'margin-right: 10px;'}
           %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
             = link_to 'Categories', categories_path
 
-    = yield
-
-    .footer{style: 'margin-top: 50px;'}
+        %span{style: 'margin-right: 10px;'}
+          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'tocs'}"}
+            = link_to 'ToCs', tocs_path
+        %span{style: 'margin-right: 10px;'}
+          %i.fa.fa-square{style: "color: #{'red' if params[:controller] == 'outlines'}"}
+            = link_to 'Outlines', outlines_path
