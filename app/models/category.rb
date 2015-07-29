@@ -21,5 +21,5 @@ class Category < ActiveRecord::Base
       update_attribute(:color, parent.color)
     end
   end
-  
+
 end
