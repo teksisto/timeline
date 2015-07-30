@@ -1,0 +1,21 @@
+- model_class = Source
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th
+        &nbsp;
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:description)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+    - sources.each do |source|
+      %tr
+        %td= category_icon(source)
+        %td= link_to source.name, source_path(source)
+        %td= source.description
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(source), :class => 'btn btn-default btn-xs'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), source_path(source), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-default'
+
+= link_to t('.new', :default => t("helpers.links.new")), new_source_path, :class => 'btn btn-default'
