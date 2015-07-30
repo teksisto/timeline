@@ -3,6 +3,10 @@ require 'pp'
 class OrgToc
 
   attr_accessor :children, :content, :title, :text, :parent, :level, :content_size
+
+  def import_to_db_from_file(filepath, root)
+
+  end
   
   def initialize(options)
     self.children = options[:children] || []

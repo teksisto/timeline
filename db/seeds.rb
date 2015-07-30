@@ -75,6 +75,8 @@ ghost    = Source.create(ghost_hash).id
 imdb     = Source.create(imdb_hash).id
 z        = Source.create(z_hash).id
 
+# OrgToc.import_to_db_from_file('z.org', Source.find(z))
+
 # Events
 
 events = [
