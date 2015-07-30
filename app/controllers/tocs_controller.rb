@@ -4,7 +4,7 @@ class TocsController < ApplicationController
   # GET /tocs
   # GET /tocs.json
   def index
-    @tocs = Toc.all
+    @tocs = Toc.roots
   end
 
   # GET /tocs/1
