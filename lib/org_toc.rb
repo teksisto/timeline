@@ -3,7 +3,7 @@ require 'pp'
 class OrgToc
 
   attr_accessor :children, :content, :title, :text, :parent, :level, :content_size
-
+  
   def initialize(options)
     self.children = options[:children] || []
     self.content = options[:content] || []
@@ -60,7 +60,20 @@ class OrgToc
     end
     children.each{|c| c.parse}
   end
+  
+  def sanitaze_heading(string)
+    string = strip_stars(string)
+    string = htmlize_heading(string)
+  end
 
+  def strip_stars(heading)
+    heading.gsub(/^\*+\s+/, '')
+  end
+
+  def htmlize_heading(heading)
+    heading.gsub('--', '&mdash;')
+  end
+  
   def render_to_text(str = '')
     str + (level != 0 ? title + text : '') + @children.map{|c| c.render}.join
   end
@@ -96,7 +109,7 @@ class OrgToc
       parent: self,
       level: level+1,
       content: content,
-      title: title
+      title: sanitaze_heading(title)
     }
     new_toc = OrgToc.new(new_toc_hash)
   end
