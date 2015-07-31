@@ -1,67 +1,77 @@
+# coding: utf-8
 require 'pp'
 
 class OrgToc
 
-  attr_accessor :children, :content, :title, :text, :parent, :level, :content_size
-
-  def import_to_db_from_file(filepath, root)
+  attr_accessor :children
+  attr_accessor :content
+  attr_accessor :title
+  attr_accessor :text
+  attr_accessor :parent
+  attr_accessor :level
+  attr_accessor :content_size
+  attr_accessor :quotes
+  attr_accessor :buffer
+  attr_accessor :previous_heading
+  attr_accessor :line
+  
+  def self.import_to_db_from_file(filepath, root)
 
   end
   
   def initialize(options)
-    self.children = options[:children] || []
-    self.content = options[:content] || []
-    self.title = options[:title] || ''
-    self.text = ''
-    self.parent = options[:parent] || nil
-    self.level = options[:level] || 0
-    self.content_size = self.content.size
+    @children = options[:children] || []
+    @content = options[:content] || []
+    @title = options[:title] || ''
+    @text = ''
+    @parent = options[:parent] || nil
+    @level = options[:level] || 0
+    @content_size = @content.size
+
+    @buffer = []
+    @previous_heading = nil
+    @quotes = []
   end
 
   def parse
-    buffer = []
-    previous_title = nil
-    i = 0
-    while i < content.size
-      line = content[i]
+    while @line = content.unshift
       log '-'*10
-      log "[#{i}] Current line is = #{line}"
-      if title?(line)
-        clevel = get_level(line)
-        if level+1 == clevel && previous_title
-          log 'spawn new instance - level is matching, also got previous title'
-          log "title = #{previous_title}"
-          log "buffer = #{buffer.join}"
-          self.children = self.children << new_toc(previous_title, buffer)
-          previous_title = line
-          buffer = []
-        elsif level+1 == clevel
-          log "it's new previous title - level is matching, but there's no previous title"
-          log "content of buffer flushed to @text = it's my text!"
-          self.text = buffer.join 
-          log "parent.text = #{self.text}"
-          buffer = []
-          previous_title = line
+      log "Current line is = #{@line}"
+      if heading?
+        line_level = get_level(line)
+        if level_is_the_same?
+          unless previous_heading
+            # нашли самого первого ребенка текущего узла
+            # в буфере лежит текст, принадлежащий непосредственно заголовку
+            add_text
+          else
+            # нашли со второго по предпоследнего ребенка текущего узла
+            # в буфере лежит текст предыдущего ребенка текущего узла 
+            add_child
+          end
         else
           log "put to buffer - level is unmatching"
-          buffer << line
+          @buffer << @line
         end
       else
         log "put to buffer - just text"
-        buffer << line
+        @buffer << @line
       end
-      if last_line?(i) && previous_title
-        log "last line!!!"
-        log 'spawn new instance - level is matching, also got previous title'
-        log "title = #{previous_title}"
-        log "buffer = \n#{buffer.join}"
-
-        self.children = self.children << new_toc(previous_title, buffer)
-      elsif last_line?(i)
-        self.text = buffer.join 
-      end          
-      i += 1
+      if last_line?
+        if previous_heading 
+          # достигнут конец последовательности заголовков одного уровня
+          # в буфере лежит текст последнего рябенка текущего узла
+          add_child
+        else
+          # у текущего узла нет потомков, это лист
+          # в буфере лежит текст, пренадлежащий непосредственно заголовку
+          add_text
+        end
+      end
     end
+
+    # доставать параграфы и цитаты удобнее всего из листов
+    # здесь же можно доставать теги и аттрибуты
     children.each{|c| c.parse}
   end
   
@@ -95,33 +105,50 @@ class OrgToc
   end
   
   private
+  
+  def heading?
+    @line =~ /^\*/
+  end
 
-  def log(str)
-    Rails.logger.debug "\t"*level+str
+  def level_is_the_same?
+    @level+1 == @line_level
+  end
+
+  def add_child
+    log 'spawn new instance - level is matching, also got previous title'
+    log "title = #{@previous_heading}"
+    log "buffer = #{@buffer.join}"
+    @children << new_toc
+    @previous_heading = @line
+    @buffer = []
+  end
+
+  def add_text
+    log "it's new previous title - level is matching, but there's no previous title"
+    log "content of buffer flushed to @text = it's my text!"
+    @text += @buffer.join # плюс равно на случай, если цитата находится в середине текста
+    @buffer.clear
+    @previous_heading = @line
   end
   
-  def title?(line)
-    line =~ /^\*/
-  end
-
-  def get_level(line)
-    line.count('*')
-  end
-
-  def new_toc(title, content)
+  def new_toc
     new_toc_hash = {
       parent: self,
       level: level+1,
-      content: content,
-      title: sanitaze_heading(title)
+      content: @buffer,
+      title: sanitaze_heading(@previous_heading)
     }
     new_toc = OrgToc.new(new_toc_hash)
   end
 
-  def last_line?(i)
-    log " last_line = #{i}/#{self.content_size}"
-    i == self.content_size - 1
+  def last_line?
+    @content_size.first.nil?
   end
 
+  def log(str)
+    Rails.logger.debug "\t"*level+str
+  end
+
+  
 end
 
