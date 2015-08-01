@@ -19,6 +19,9 @@
   = link_to content_tag("h#{t.depth}", t.name), t
   - if t.outline
     %p= t.outline.content
+    - for quote in t.quotes
+      %blockquote
+        %p= quote.content 
 
 
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(@source), :class => 'btn btn-default'
