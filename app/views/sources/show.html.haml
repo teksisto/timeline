@@ -20,7 +20,8 @@
 
 
 - for t in @source.toc.descendants.includes(:outline)
-  = link_to content_tag("h#{t.depth}", t.name), t
+  = content_tag("h#{t.depth}", t.name) do
+    = link_to t.name, t
   - if t.outline
     %p= t.outline.content
 
