@@ -1,0 +1,16 @@
+#visualization
+
+:javascript  
+  // DOM element where the Timeline will be attached
+  var container = document.getElementById('visualization');
+
+  // Create a DataSet (allows two way data-binding)
+  var items = new vis.DataSet(
+    #{data_for_vis_timeline(events)}
+  );
+
+  // Configuration for the Timeline
+  var options = {};
+
+  // Create a Timeline
+  var timeline = new vis.Timeline(container, items, options);

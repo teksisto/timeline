@@ -50,8 +50,14 @@ gem 'org-ruby'
 
 gem 'colorize'
 
-gem 'cancancan'
+source 'https://rails-assets.org' do
+  gem 'rails-assets-vis'
+end
 
+
+
+
+gem 'cancancan'
 gem "paperclip", "~> 4.3"
 
 group :development, :test do

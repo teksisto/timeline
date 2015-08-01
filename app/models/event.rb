@@ -3,6 +3,7 @@ class Event < ActiveRecord::Base
   RENDER_METHODS = [
     'timeline_table',
     'timeline_with_categories',
+    'vis_timeline',
     'editor'
   ]
   

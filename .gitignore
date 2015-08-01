@@ -51,3 +51,5 @@ tramp
 .cask/
 
 passenger*
+
+public/assets/*
