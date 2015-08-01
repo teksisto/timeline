@@ -2,7 +2,7 @@
   .form-group
     = f.label :content, class: 'control-label'
     .controls
-      = f.text_field :content, class: 'form-control', required: true
+      = f.text_area :content, class: 'form-control', required: true
     = error_span(@outline[:content])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), outlines_path, :class => 'btn btn-default'
