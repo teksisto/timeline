@@ -43,13 +43,16 @@ gem "select2-rails"
 
 gem "date_validator"
 
-
 # manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
 gem 'redcarpet'
 
 gem 'org-ruby'
 
 gem 'colorize'
+
+gem 'cancancan'
+
+gem "paperclip", "~> 4.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
