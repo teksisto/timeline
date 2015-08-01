@@ -133,7 +133,7 @@ class OrgToc
   def add_text
     log "it's new previous title - level is matching, but there's no previous title"
     log "content of buffer flushed to @text = it's my text!"
-    @text += @buffer.join # плюс равно на случай, если цитата находится в середине текста
+    # @text += @buffer.join # плюс равно на случай, если цитата находится в середине текста
     OrgTextParser.new(content: @buffer, parent: self).parse
     @buffer.clear
     @previous_heading = @line
@@ -173,6 +173,7 @@ class OrgTextParser < OrgToc
         @buffer.clear
       elsif end_of_quote?
         @parent.quotes << @buffer.join
+        @buffer.clear
       else
         @buffer << @line
       end
