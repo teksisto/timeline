@@ -133,6 +133,7 @@ class OrgToc
     log "it's new previous title - level is matching, but there's no previous title"
     log "content of buffer flushed to @text = it's my text!"
     @text += @buffer.join # плюс равно на случай, если цитата находится в середине текста
+    OrgTextParser.new(content: @buffer, parent: self).parse
     @buffer.clear
     @previous_heading = @line
   end
@@ -160,6 +161,37 @@ class OrgToc
   end
   
 end
+
+
+class OrgTextParser < OrgToc
+
+  def parse
+    while @line = @content.shift
+      if beginning_of_quote?
+        @parent.text += @buffer.join
+        @buffer.clear
+      elsif end_of_quote?
+        @parent.quotes << @buffer.join
+      else
+        @buffer << @line
+      end
+      if @content.empty?
+        @parent.text += @buffer.join
+      end
+    end
+  end
+
+  def beginning_of_quote?
+    @line.strip == '#+BEGIN_QUOTE'
+  end
+
+  def end_of_quote?
+    @line.strip == '#+END_QUOTE'
+  end
+
+end
+
+
 
 if __FILE__==$0
 
