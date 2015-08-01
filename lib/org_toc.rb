@@ -34,11 +34,11 @@ class OrgToc
   end
 
   def parse
-    while @line = content.unshift
+    while @line = @content.shift
       log '-'*10
       log "Current line is = #{@line}"
       if heading?
-        line_level = get_level(line)
+        set_level
         if level_is_the_same?
           unless previous_heading
             # нашли самого первого ребенка текущего узла
@@ -60,7 +60,7 @@ class OrgToc
       if last_line?
         if previous_heading 
           # достигнут конец последовательности заголовков одного уровня
-          # в буфере лежит текст последнего рябенка текущего узла
+          # в буфере лежит текст последнего ребенка текущего узла
           add_child
         else
           # у текущего узла нет потомков, это лист
@@ -89,7 +89,13 @@ class OrgToc
   end
   
   def render_to_text(str = '')
-    str + (level != 0 ? title + text : '') + @children.map{|c| c.render}.join
+    unless @level == 0
+      heading = '*'*@level + ' ' + @title + "\n"
+      heading_content = heading + text
+    else
+      heading_content = ''
+    end
+    str + heading_content + @children.map{|c| c.render}.join
   end
 
   def render_to_db(parent)
@@ -142,13 +148,23 @@ class OrgToc
   end
 
   def last_line?
-    @content_size.first.nil?
+    @content.first.nil?
   end
 
   def log(str)
-    Rails.logger.debug "\t"*level+str
+    puts "\t"*@level+str
   end
 
+  def set_level
+    @line_level = @line.count('*')
+  end
   
 end
 
+if __FILE__==$0
+
+  t = OrgToc.new(content: IO.readlines('simple.org'), title: 'ROOT')
+  t.parse
+  pp t
+                 
+end
