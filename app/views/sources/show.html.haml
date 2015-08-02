@@ -12,7 +12,6 @@
     %i.fa.fa-link
       = link_to @source.link, @source.link
 
-
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(@source), :class => 'btn btn-default'
 = link_to t('.destroy', :default => t("helpers.links.destroy")), source_path(@source), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default'
 
@@ -24,5 +23,9 @@
     = link_to t.name, t
   - if t.outline
     %p= t.outline.content
+    - for quote in t.quotes
+      %blockquote
+        %p= quote.content 
 
+    
 = render partial: 'events/editor', locals: {events: @source.events}

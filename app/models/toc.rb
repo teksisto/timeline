@@ -5,6 +5,7 @@ class Toc < ActiveRecord::Base
   acts_as_nested_set
 
   belongs_to :outline
+  has_many :quotes
   has_one :source
 
   def parse(toc_source)
