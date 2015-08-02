@@ -1,0 +1,18 @@
+= form_for @quote, html: { class: "form form-horizontal quote" } do |f|
+  .form-group
+    = f.label :title, class: 'control-label'
+    .controls
+      = f.text_field :title, class: 'form-control', required: true
+    = error_span(@quote[:title])
+  .form-group
+    = f.label :content, class: 'control-label'
+    .controls
+      = f.text_field :content, class: 'form-control', required: true
+    = error_span(@quote[:content])
+  .form-group
+    = f.label :toc_id, class: 'control-label'
+    .controls
+      = f.text_field :toc_id, class: 'form-control', required: true
+    = error_span(@quote[:toc_id])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), quotes_path, :class => 'btn btn-default'
