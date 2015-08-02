@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#############################################################
+# default
+#############################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
@@ -32,33 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "haml-rails", "~> 0.9"
-
 gem "therubyracer"
 gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
-gem "twitter-bootstrap-rails"
-
-gem 'awesome_nested_set'
-gem "select2-rails"
-
-gem "date_validator"
-
-# manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
-gem 'redcarpet'
-
-gem 'org-ruby'
-
-gem 'colorize'
-
-source 'https://rails-assets.org' do
-  gem 'rails-assets-vis'
-end
-
-
-
-
-gem 'cancancan'
-gem "paperclip", "~> 4.3"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -70,4 +48,36 @@ group :development, :test do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
+
+
+#############################################################
+# my gems
+#############################################################
+
+gem "haml-rails", "~> 0.9"
+gem "twitter-bootstrap-rails"
+
+gem 'awesome_nested_set'
+
+gem 'colorize'
+
+gem 'org-ruby'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-vis'
+end
+
+
+#############################################################
+# may be useful in the future
+#############################################################
+
+# manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
+gem 'redcarpet'
+
+gem "select2-rails"
+gem "date_validator"
+gem 'cancancan'
+gem "paperclip", "~> 4.3"
+
 
