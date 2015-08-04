@@ -1,7 +1,9 @@
 %p#notice= notice
 
-%h1 Describe
-= render partial: 'table', locals: {resources: @resource}
+%h1
+  = 'Describe: '
+  = @resource.uri.to_s 
+= render partial: 'table', locals: {resources: @resource.properties}
 
 = link_to 'Edit' #, edit_resource_path(@resource)
 \|

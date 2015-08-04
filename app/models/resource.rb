@@ -12,6 +12,13 @@ class Resource
   #   :auth_method => 'digest'
   # )
 
+  attr_accessor :properties
+  attr_accessor :uri
+  
+  def initialize(args) 
+    @properties = args[:properties] || []
+    @uri = args[:uri]
+  end
   
   def self.all
     query = @@connection.construct([:s, :p, :o]).where([:s, :p, :o]).limit(1000)
@@ -26,10 +33,9 @@ class Resource
     Rails.logger.debug(query.to_s.inspect.red)
     Rails.logger.debug(query.solutions)
 
-    
-    r = query.solutions.to_a
+    properties = query.solutions.to_a
 
-    r
+    Resource.new(uri: resource, properties: properties)
   end
   
 end
