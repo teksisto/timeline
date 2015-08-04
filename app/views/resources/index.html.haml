@@ -1,0 +1,38 @@
+%h1 Listing resources
+
+%table.table.stripped
+  %thead
+    %tr
+      %th{style: 'width:30%'}
+      %th{style: 'width:30%'}
+      %th{style: 'width:30%'}
+
+        %tbody
+          - @resources.each_statement do |resource|
+            %tr
+              %td
+                - if resource.subject.respond_to?(:qname)
+                  = resource.subject.qname
+                  = resource.subject.to_s
+                - else
+                  resource.subject.to_s
+              %td
+                - if resource.predicate.respond_to?(:qname)
+                  = resource.predicate.qname
+                  = resource.predicate.to_s
+                - else
+                  resource.predicate.to_s
+              %td
+                - if resource.object.respond_to?(:qname)
+                  = resource.object.qname
+                  = resource.object.to_s
+                - else
+                  = resource.object.to_s
+                  
+              %td= #link_to 'Show', resource
+              %td= #link_to 'Edit', edit_resource_path(resource)
+              %td= #link_to 'Destroy', resource, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Resource', new_resource_path

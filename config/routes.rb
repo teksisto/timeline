@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :resources
   resources :quotes
   resources :outlines
   resources :tocs

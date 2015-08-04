@@ -56,12 +56,16 @@ end
 
 gem "haml-rails", "~> 0.9"
 gem "twitter-bootstrap-rails"
+gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
 
 gem 'colorize'
 
 gem 'org-ruby'
+
+gem 'linkeddata'
+gem 'rdf-virtuoso'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis'
