@@ -1,5 +1,5 @@
 class ResourcesController < ApplicationController
-  before_action :set_resource, only: [:show, :edit, :update, :destroy]
+  before_action :set_resource, only: [:show, :edit, :update, :destroy, :fget]
 
   # GET /resources
   # GET /resources.json
@@ -12,6 +12,10 @@ class ResourcesController < ApplicationController
   def show
   end
 
+  def fget
+    render action: 'show'
+  end
+  
   # GET /resources/new
   def new
     @resource = Resource.new
@@ -64,7 +68,7 @@ class ResourcesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_resource
-      @resource = Resource.find(params[:id])
+      @resource = Resource.find(RDF::URI.new(CGI.unescape(params[:id])))
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

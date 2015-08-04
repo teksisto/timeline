@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
 
-  resources :resources
+  resources :resources do
+    collection do
+      get :fget
+    end
+  end
+  
   resources :quotes
   resources :outlines
   resources :tocs

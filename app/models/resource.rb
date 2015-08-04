@@ -14,15 +14,22 @@ class Resource
 
   
   def self.all
-    
-    #query = RDF::Virtuoso::Query.select(:s, :p, :o).where( [:s, :p, :o] ).limit(1000)
     query = @@connection.construct([:s, :p, :o]).where([:s, :p, :o]).limit(1000)
 
-    Rails.logger.debug(query.inspect.red)
     Rails.logger.debug(query.to_s.inspect.red)
+    
+    query.solutions.to_a
+  end
+
+  def self.find(resource)
+    query = @@connection.describe(resource)
+    Rails.logger.debug(query.to_s.inspect.red)
+    Rails.logger.debug(query.solutions)
 
     
-    query.solutions
+    r = query.solutions.to_a
+
+    r
   end
   
 end
