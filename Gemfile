@@ -69,6 +69,7 @@ gem 'rdf-virtuoso'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis'
+  # gem 'rails-assets-reveal-js'
 end
 
 

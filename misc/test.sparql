@@ -1,0 +1,9 @@
+# select  ?s ?p ?o where {?s ?p ?o .} LIMIT 1000
+
+# select  ?s where {?s rdf:type owl:Class .} LIMIT 1000
+
+describe ?s  where {?s rdf:type owl:Class } 
+
+# SELECT ?s WHERE {
+#   ?s <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#property> .
+# }

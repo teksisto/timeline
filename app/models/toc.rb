@@ -7,7 +7,7 @@ class Toc < ActiveRecord::Base
   belongs_to :outline
   has_many :quotes
   has_one :source
-
+  
   def parse(toc_source)
     parse_org_mode(toc_source)
   end

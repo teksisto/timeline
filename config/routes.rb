@@ -15,6 +15,7 @@ Rails.application.routes.draw do
     member do
       get :new_toc
       post :create_toc
+      get :quotes
     end
   end
 

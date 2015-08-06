@@ -6,7 +6,7 @@ class Source < ActiveRecord::Base
   belongs_to :toc
 
   after_create :add_root_toc
-
+  
   def add_root_toc
     create_toc(name: self.name)
   end
@@ -15,7 +15,12 @@ class Source < ActiveRecord::Base
     toc && toc.parse(source)
   end
 
-
-
+  def quotes
+    if toc
+      Quote.where(toc_id: toc.descendants.select(:id))
+    else
+      []
+    end
+  end
   
 end

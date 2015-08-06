@@ -17,6 +17,7 @@
 /tmp
 
 
+# Emacs
 
 *~
 \#*\#
@@ -49,6 +50,8 @@ tramp
 
 # cask packages
 .cask/
+
+# passenger
 
 passenger*
 

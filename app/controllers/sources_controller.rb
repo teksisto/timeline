@@ -1,5 +1,5 @@
 class SourcesController < ApplicationController
-  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_toc, :create_toc]
+  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_toc, :create_toc, :quotes]
 
   # GET /sources
   # GET /sources.json
@@ -71,6 +71,11 @@ class SourcesController < ApplicationController
     else
       redirect_to :new
     end
+  end
+
+  def quotes
+    @quotes = @source.quotes.sort_by{ rand }
+    render layout: 'reveal'
   end
   
   private

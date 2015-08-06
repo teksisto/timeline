@@ -1,0 +1,8 @@
+.reveal
+  .slides
+    - for quote in @quotes
+      %section
+        - if quote.title
+          %h2= quote.title
+        %p= quote.content
+
