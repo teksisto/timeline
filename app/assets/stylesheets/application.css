@@ -10,13 +10,13 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
+ *= require bootstrap_and_overrides
+ *
+ *= require select2
+ *= require select2-bootstrap
+ *
  */
 
-*= require reveal
-
-*= require select2
-*= require select2-bootstrap
-*= require vis
 
 blockquote {
   background: #f9f9f9;
@@ -28,8 +28,4 @@ blockquote {
 
 blockquote p {
   display: inline;
-}
-
-.reveal p {
-    font-size: 40px;
 }

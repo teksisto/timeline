@@ -30,11 +30,14 @@
     .controls
       = f.select :source_id, options_from_collection_for_select(Source.all, 'id', 'name', @event.source_id), {include_blank: true}, {class: 'form-control'}
     = error_span(@event[:source_id])
+
   .form-group
     = f.label :category_ids, class: 'control-label'
     .controls
       = f.select 'category_ids', category_options_for_select(Category.events_root, @event.category_ids), {include_blank: true}, {multiple: true}
     = error_span(@event[:source_id])
+    :javascript
+      $("#event_category_ids").select2();
     
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), events_path, :class => 'btn btn-default'
