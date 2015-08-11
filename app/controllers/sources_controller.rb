@@ -75,7 +75,7 @@ class SourcesController < ApplicationController
 
   def quotes
     @quotes = @source.quotes.sort_by{ rand }
-    render layout: 'reveal'
+    render layout: 'slides'
   end
   
   private

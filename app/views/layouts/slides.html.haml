@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Timeline
+    = stylesheet_link_tag    'slides', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'slides', 'data-turbolinks-track' => true
+    = csrf_meta_tags
+  %body{style: "width: 90%; margin: auto;"}
+          
+    = yield
+
+    :javascript
+      Reveal.initialize({
+        loop: true,
+        controls: false,
+        progress: false,
+        history: false
+      });
