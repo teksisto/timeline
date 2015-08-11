@@ -23,7 +23,7 @@
   = content_tag("h#{t.depth}", t.name) do
     = link_to t.name, t
   - if t.outline
-    %p= t.outline.content
+    %p= temp_org_render(t.outline.content)
     - for quote in t.quotes
       %blockquote
         %p= quote.content 
