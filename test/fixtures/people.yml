@@ -1,9 +1,34 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+charles_severance:
+  name: Charles Severance
+  screen_name:
+  description:
 
-one:
-  name: MyString
-  description: MyText
+clifford_stall:
+  name: Clifford Stall
+  screen_name:
+  description: 
 
-two:
-  name: MyString
-  description: MyText
+kevin_mitnick:
+  name: Kevin Mitnick
+  screen_name:
+  description:
+
+dimitri_zhukov:
+  name: Жуков Дмитрий Анатольевич
+  screen_name: Дмитрий Жуков
+  description:
+
+teksisto:
+  name: Александр Ткачев
+  screen_name: teksisto
+  description:
+
+nassim_taleb:
+  name: Нассим Николас Талеб
+  screen_name:
+  description:
+    
+# :
+#   name:
+#   screen_name:
+#   description:

@@ -15,6 +15,11 @@
   %br
   = @person.description
 
+%p
+  %strong= model_class.human_attribute_name(:authored) + ':'
+  %ul
+    - for source in @person.authored
+      %li= link_to source.name, source_path(source)
 
 = link_to t('.back', :default => t("helpers.links.back")), people_path, :class => 'btn btn-default'
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_person_path(@person), :class => 'btn btn-default'

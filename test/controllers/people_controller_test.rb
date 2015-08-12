@@ -2,7 +2,7 @@ require 'test_helper'
 
 class PeopleControllerTest < ActionController::TestCase
   setup do
-    @person = people(:one)
+    @person = people(:dimitri_zhukov)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class PeopleControllerTest < ActionController::TestCase
 
   test "should create person" do
     assert_difference('Person.count') do
-      post :create, person: { description: @person.description, name: @person.name }
+      post :create, person: { description: @person.description, name: @person.name, screen_name: @person.screen_name }
     end
 
     assert_redirected_to person_path(assigns(:person))
@@ -35,7 +35,7 @@ class PeopleControllerTest < ActionController::TestCase
   end
 
   test "should update person" do
-    patch :update, id: @person, person: { description: @person.description, name: @person.name }
+    patch :update, id: @person, person: { description: @person.description, name: @person.name, screen_name: @person.screen_name }
     assert_redirected_to person_path(assigns(:person))
   end
 

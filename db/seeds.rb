@@ -10,9 +10,9 @@ Toc.rebuild!
 Source.all.each{|s| s.save}
 
 org_files = {
-  'Дмитрий Жуков — Биология поведения: гуморальные механизмы' => 'misc/zhukov.org',
-  'Нассим Николас Талеб — Черный лебедь' => 'misc/taleb.org',
-  'Александр Ткачев — Цитатник' => 'misc/quotes.org'
+  'Биология поведения: гуморальные механизмы' => 'misc/zhukov.org',
+  'Черный лебедь' => 'misc/taleb.org',
+  'Цитатник' => 'misc/quotes.org'
 }
 
 for name, file in org_files

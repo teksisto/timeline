@@ -13,7 +13,9 @@
       %tr
         %td= category_icon(source)
         %td
-          %p= link_to source.name, source_path(source)
+          %p
+            = by_line_links(source)
+            = link_to source.name, source_path(source)
           %p= source.description
         %td
           = link_to 'Quotes', quotes_source_path(source), :class => 'btn btn-xs btn-default'

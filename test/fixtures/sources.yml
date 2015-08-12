@@ -1,19 +1,22 @@
 michigan:
-  name: "University of Michigan — Internet History Technology and Security"
+  authors: [charles_severance]
+  name: "Internet History Technology and Security"
   link: "https://www.coursera.org/learn/internet-history"
   description: "Несколько событий, привязанных к источнику."
   category: lectures
   toc: michigan_toc
   
 stall:
-  name: "Clifford Stall — The Cuckoos egg"
+  authors: [clifford_stall]
+  name: "The Cuckoos egg"
   link: ""
   description: "Несколько событий, привязанных к источнику."
   category: book
   toc: stall_toc
   
 ghost:
-  name: "Kevin Mitnick — Ghost in the wires"
+  authors: [kevin_mitnick]
+  name: "Ghost in the wires"
   link: ""
   description: "Несколько событий, привязанных к источнику."
   category: book
@@ -27,21 +30,24 @@ imdb:
   toc: imdb_toc
   
 zhukov:
-  name: "Дмитрий Жуков — Биология поведения: гуморальные механизмы"
+  authors: [dimitri_zhukov]
+  name: "Биология поведения: гуморальные механизмы"
   link: ""
   description: "Конспект c цитатами."
   category: book
   toc: zhukov_toc
   
 quotes:
-  name: "Александр Ткачев — Цитатник"
+  authors: [teksisto]
+  name: "Цитатник"
   link: ""
   description: "Цитатник, который хорошо смотреть в виде презентации."
   category: book
   toc: quotes_toc
   
 taleb:
-  name: "Нассим Николас Талеб — Черный лебедь"
+  authors: [nassim_taleb]
+  name: "Черный лебедь"
   link: ""
   description: "Цитатник с комментариями."
   category: book
