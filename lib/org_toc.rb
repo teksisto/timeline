@@ -154,7 +154,7 @@ class OrgToc
   end
 
   def log(str)
-    puts "\t"*@level+str
+    # puts "\t"*@level+str
   end
 
   def set_level

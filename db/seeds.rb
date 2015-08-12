@@ -68,15 +68,23 @@ z_hash = {
   category_id: book
 }
 
+quotes_hash = {
+  name: 'Александр Ткачев — Цитатник',
+  link: '',
+  description: 'Цитатник, который хорошо смотреть в виде презентации.',
+  category_id: book
+}
+
+quotes    = Source.create(quotes_hash)
+quotes.parse_toc(IO.read('misc/quotes.org'))
+
+z = Source.create(z_hash)
+z.parse_toc(IO.read('misc/zhukov.org')) 
 
 michigan = Source.create(michigan_hash)
 stall    = Source.create(stall_hash)
 ghost    = Source.create(ghost_hash)
 imdb     = Source.create(imdb_hash)
-
-z = Source.create(z_hash)
-z.parse_toc(IO.read('misc/zhukov.org')) 
-
 
 
 # Events
