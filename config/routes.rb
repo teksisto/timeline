@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :people
   resources :resources do
     collection do
       get :fget
