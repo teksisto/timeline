@@ -5,9 +5,9 @@
     %table{style:'width: 100%;'}
       %tr
         %td{rowspan: 2, style:'width: 22%; height: 300px;'}
-          = select_tag 'category_ids', category_options_for_select(Category.roots, params['category_ids']), multiple: true, include_blank: true, onclick: 'this.form.submit();', style:' height: 100%; width: 100%; margin: 0px;'
+          = select_tag 'category_ids', category_options_for_select(Category.roots, params['category_ids']), multiple: true, include_blank: true, onclick: 'this.form.submit();', style:' height: 100%; width: 100%; margin: 0px;', class: 'form-control'
         %td{style:'width: 73%;'}
-          = select_tag 'source_ids', options_from_collection_for_select(Source.all, :id, :name, params[:source_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style: 'width: 100%;  height: 150px;'
+          = select_tag 'source_ids', options_from_collection_for_select(Source.all, :id, :name, params[:source_ids]), multiple: true, include_blank: true, onclick: 'this.form.submit();', style: 'width: 100%;  height: 150px;', class: 'form-control'
       %tr
         %td{style:'width: 73%;'}
-          = select_tag 'render_method', render_method_options(@partial), onclick: 'this.form.submit();', multiple: true, style:'width: 100%;  height: 149px;'
+          = select_tag 'render_method', render_method_options(@partial), onclick: 'this.form.submit();', multiple: true, style:'width: 100%;  height: 149px;', class: 'form-control'
