@@ -36,46 +36,48 @@ space = Category.create(name: 'space', color: '#B1D1E0 ', parent: event_c).id
 michigan_hash = {
   name: 'University of Michigan — Internet History, Technology, and Security',
   link: 'https://www.coursera.org/learn/internet-history',
-  description: 'Курс на курсере про историю интернета.',
+  description: 'Несколько событий, привязанных к источнику.',
   category_id: lectures
 }
 
 stall_hash = {
   name: 'Clifford Stall — The Cuckoo\'s egg',
   link: '',
-  description: 'Книжка про то как американский астроном выслеживал немецких наркоманов.',
+  description: 'Несколько событий, привязанных к источнику.',
   category_id: book
 }
 
 ghost_hash = {
   name: 'Kevin Mitnick — Ghost in the wires',
   link: '',
-  description: 'Автобиография Митника.',
+  description: 'Несколько событий, привязанных к источнику.',
   category_id: book
 }
 
 imdb_hash = {
   name: 'IMDb',
   link: 'https://imdb.com',
-  description: '',
+  description: "Источник с категорией 'site'.",
   category_id: site
 }
 
 z_hash = {
   name: 'Дмитрий Жуков — Биология поведения: гуморальные механизмы',
   link: '',
-  description: 'Физиология для идиотов.',
+  description: 'Конспект c цитатами.',
   category_id: book
 }
 
 
-michigan = Source.create(michigan_hash).id
-stall    = Source.create(stall_hash).id
-ghost    = Source.create(ghost_hash).id
-imdb     = Source.create(imdb_hash).id
-z        = Source.create(z_hash).id
+michigan = Source.create(michigan_hash)
+stall    = Source.create(stall_hash)
+ghost    = Source.create(ghost_hash)
+imdb     = Source.create(imdb_hash)
 
-# OrgToc.import_to_db_from_file('z.org', Source.find(z))
+z = Source.create(z_hash)
+z.parse_toc(IO.read('misc/zhukov.org')) 
+
+
 
 # Events
 
@@ -98,7 +100,7 @@ events = [
     day: 29,
     name: 'Первые два пакета: lo and behold',
     description: '',
-    source_id: michigan,
+    source_id: michigan.id,
     category_ids: [networks]
   },
   
@@ -108,7 +110,7 @@ events = [
     day: 12,
     name: 'Первый веб-сервер в Америке',
     description: 'Доктор Paul Kunz, Stanford Linear Accelerator. 300000 Научных статей. Первый поисковик в сети.',
-    source_id: michigan,
+    source_id: michigan.id,
     category_ids: [networks]
   },
 
@@ -118,7 +120,7 @@ events = [
     day: 4,
     name: 'Основана компания Netscape',
     description: 'Люди, которые делали Mosaic, решили уйти в коммерцию.',
-    source_id: michigan,
+    source_id: michigan.id,
     category_ids: [networks]
   },
 
@@ -128,7 +130,7 @@ events = [
     day: nil,
     name: 'Первая демонстрация ARPAnet',
     description: '',
-    source_id: michigan,
+    source_id: michigan.id,
     category_ids: [networks]
   },
 
@@ -138,7 +140,7 @@ events = [
     day: nil,
     name: 'Пережив 4 итерации дизайн/имплементация ARPAnet признан стабильным',
     description: '',
-    source_id: michigan,
+    source_id: michigan.id,
     category_ids: [networks]
   },
 
@@ -149,7 +151,7 @@ events = [
     day: 2,
     name: 'German authorities charged five people with espionage: Pengo, Hagbard, Peter Carl, Dirk Bresinsky, and Markus Hess',
     description: '',
-    source_id: stall,
+    source_id: stall.id,
     category_ids: [security]
   },
 
@@ -159,7 +161,7 @@ events = [
     day: nil,
     name: 'Bill Joy wrote Unix screen editor VI',
     description: '',
-    source_id: stall,
+    source_id: stall.id,
     category_ids: [unix]
   },
 
