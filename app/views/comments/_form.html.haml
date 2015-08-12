@@ -1,0 +1,18 @@
+= form_for @comment, html: { class: "form form-horizontal comment" } do |f|
+  .form-group
+    = f.label :author_id, class: 'control-label'
+    .controls
+      = f.text_field :author_id, class: 'form-control', required: true
+    = error_span(@comment[:author_id])
+  .form-group
+    = f.label :quote_id, class: 'control-label'
+    .controls
+      = f.text_field :quote_id, class: 'form-control', required: true
+    = error_span(@comment[:quote_id])
+  .form-group
+    = f.label :content, class: 'control-label'
+    .controls
+      = f.text_field :content, class: 'form-control', required: true
+    = error_span(@comment[:content])
+  = f.submit nil,class: 'btn btn-primary'
+  = link_to t('.cancel', :default => t("helpers.links.cancel")), comments_path, :class => 'btn btn-default'

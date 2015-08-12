@@ -5,7 +5,8 @@ class Person < ActiveRecord::Base
                           join_table: 'people_sources',
                           association_foreign_key: 'source_id'
 
-
+  has_many :comments
+  
   def screen_name
     self['screen_name'] ? self['screen_name'] : self['name']
   end
