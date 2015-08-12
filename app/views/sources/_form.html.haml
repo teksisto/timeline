@@ -1,4 +1,14 @@
 = form_for @source, html: { class: "form form-horizontal source" } do |f|
+
+  .form-group
+    = f.label :author_ids, class: 'control-label'
+    .controls
+      = f.select :author_ids, options_from_collection_for_select(Person.all, :id, :name, @source.author_ids), {include_blank: true}, {multiple: true, style: 'width: 100%;'}
+    = error_span(@source[:author_ids])
+
+    :javascript
+      $("#source_author_ids").select2();
+    
   .form-group
     = f.label :name, class: 'control-label'
     .controls
