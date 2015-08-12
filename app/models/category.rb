@@ -9,11 +9,11 @@ class Category < ActiveRecord::Base
   after_move :inherit_parent_color
 
   def self.events_root
-    self.roots.first
+    self.roots.where(name: 'Event categories').first
   end
 
   def self.sources_root
-    self.roots.last
+    self.roots.where(name: 'Source categories').first
   end
 
   def event_category?

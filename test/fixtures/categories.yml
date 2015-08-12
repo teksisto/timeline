@@ -1,11 +1,90 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+event_categories:
+  name: "Event categories"
+  description: 
+  color: ""
+  icon: 
+  parent:
 
-one:
-  name: MyString
-  description: MyText
-  color: MyString
+computers:
+  name: computers
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: event_categories
 
-two:
-  name: MyString
-  description: MyText
-  color: MyString
+networks:
+  name: "networks"
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: computers
+
+security:
+  name: "security"
+  description: 
+  color: "#F8931F"
+  icon: 
+  parent: computers
+
+unix:
+  name: "unix"
+  description: 
+  color: "#E1E0B2"
+  icon: 
+  parent: computers
+
+media:
+  name: "media"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: event_categories
+
+movie:
+  name: "movie"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: media
+
+music:
+  name: "music"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: media
+
+space:
+  name: "space"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: event_categories
+
+source_categories:
+  name: "Source categories"
+  description: 
+  color: ""
+  icon: 
+  parent:
+
+book:
+  name: "book"
+  description: 
+  color: "#C9CF31"
+  icon: book
+  parent: source_categories
+
+lectures:
+  name: "lectures"
+  description: 
+  color: ""
+  icon: "university"
+  parent: source_categories
+
+site:
+  name: "site"
+  description: 
+  color: "#F8931F"
+  icon: "external-link"
+  parent: source_categories

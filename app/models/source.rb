@@ -10,10 +10,12 @@ class Source < ActiveRecord::Base
 
   belongs_to :toc
 
-  after_create :add_root_toc
+  after_save :add_root_toc
   
   def add_root_toc
-    create_toc(name: self.name)
+    unless toc
+      create_toc(name: self.name)
+    end
   end
 
   def parse_toc(source)

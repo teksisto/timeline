@@ -1,11 +1,41 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+michigan:
+  name: "University of Michigan — Internet History Technology and Security"
+  link: "https://www.coursera.org/learn/internet-history"
+  description: "Несколько событий привязанных к источнику."
+  category: lectures
 
-one:
-  name: MyString
-  description: MyText
-  link: MyString
+stall:
+  name: "Clifford Stall — The Cuckoos egg"
+  link: ""
+  description: "Несколько событий привязанных к источнику."
+  category: book
 
-two:
-  name: MyString
-  description: MyText
-  link: MyString
+ghost:
+  name: "Kevin Mitnick — Ghost in the wires"
+  link: ""
+  description: "Несколько событий привязанных к источнику."
+  category: book
+
+imdb:
+  name: "IMDb"
+  link: "https://imdb.com"
+  description: "Источник с категорией site."
+  category: site
+
+zhukov:
+  name: "Дмитрий Жуков — Биология поведения: гуморальные механизмы"
+  link: ""
+  description: "Конспект c цитатами."
+  category: book
+
+quotes:
+  name: "Александр Ткачев — Цитатник"
+  link: ""
+  description: "Цитатник который хорошо смотреть в виде презентации."
+  category: book
+
+taleb:
+  name: "Нассим Николас Талеб — Черный лебедь"
+  link: ""
+  description: "Цитатник с комментариями."
+  category: book
