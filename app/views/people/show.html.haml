@@ -7,6 +7,10 @@
   %br
   = @person.name
 %p
+  %strong= model_class.human_attribute_name(:screen_name) + ':'
+  %br
+  = @person.screen_name
+%p
   %strong= model_class.human_attribute_name(:description) + ':'
   %br
   = @person.description

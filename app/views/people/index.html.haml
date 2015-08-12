@@ -6,6 +6,7 @@
     %tr
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:screen_name)
       %th= model_class.human_attribute_name(:description)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
@@ -14,6 +15,7 @@
       %tr
         %td= link_to person.id, person_path(person)
         %td= person.name
+        %td= person.screen_name
         %td= person.description
         %td=l person.created_at
         %td
