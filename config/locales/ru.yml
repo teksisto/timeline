@@ -1,0 +1,9 @@
+ru:
+  helpers:
+    label:
+      source:
+        name: Название 
+        description: Описание
+        link: Ссылка
+        category_id: Категория
+        author_ids: Авторы
