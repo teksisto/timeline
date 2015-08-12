@@ -17,7 +17,7 @@
 
 = link_to 'Add table of contents', new_toc_source_path(@source), :class => 'btn btn-default'
 = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
-
+= link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
 
 - for t in @source.toc.descendants.includes(:outline)
   = content_tag("h#{t.depth}", t.name) do
