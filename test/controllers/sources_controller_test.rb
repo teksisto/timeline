@@ -2,7 +2,7 @@ require 'test_helper'
 
 class SourcesControllerTest < ActionController::TestCase
   setup do
-    @source = sources(:one)
+    @source = sources(:zhukov)
   end
 
   test "should get index" do

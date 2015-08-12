@@ -1,0 +1,22 @@
+michigan_toc:
+  name: "University of Michigan — Internet History Technology and Security"
+  outline: michigan_ouline
+  
+stall_toc:                                                                     
+  name: "Clifford Stall — The Cuckoos egg"                                 
+  outline: stall_ouline
+  
+ghost_toc:                                                                     
+  name: "Kevin Mitnick — Ghost in the wires"                               
+
+imdb_toc:                                                                      
+  name: "IMDb"                                                             
+
+zhukov_toc:                                                                    
+  name: "Дмитрий Жуков — Биология поведения: гуморальные механизмы"        
+
+quotes_toc:                                                                    
+  name: "Александр Ткачев — Цитатник"                                      
+
+taleb_toc:                                                                     
+  name: "Нассим Николас Талеб — Черный лебедь"                             

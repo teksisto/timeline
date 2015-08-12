@@ -5,6 +5,8 @@
 Category.rebuild!
 Category.all.each{|c| c.save}
 
+Toc.rebuild!
+
 Source.all.each{|s| s.save}
 
 org_files = {

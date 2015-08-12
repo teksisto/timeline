@@ -2,7 +2,7 @@ require 'test_helper'
 
 class OutlinesControllerTest < ActionController::TestCase
   setup do
-    @outline = outlines(:one)
+    @outline = outlines(:michigan_outline)
   end
 
   test "should get index" do

@@ -2,7 +2,7 @@ require 'test_helper'
 
 class TocsControllerTest < ActionController::TestCase
   setup do
-    @toc = tocs(:one)
+    @toc = tocs(:michigan_toc)
   end
 
   test "should get index" do
@@ -18,7 +18,7 @@ class TocsControllerTest < ActionController::TestCase
 
   test "should create toc" do
     assert_difference('Toc.count') do
-      post :create, toc: { children_count: @toc.children_count, depth: @toc.depth, lft: @toc.lft, name: @toc.name, outline_id: @toc.outline_id, parent_id: @toc.parent_id, rgt: @toc.rgt }
+      post :create, toc: { name: @toc.name }
     end
 
     assert_redirected_to toc_path(assigns(:toc))
@@ -35,7 +35,7 @@ class TocsControllerTest < ActionController::TestCase
   end
 
   test "should update toc" do
-    patch :update, id: @toc, toc: { children_count: @toc.children_count, depth: @toc.depth, lft: @toc.lft, name: @toc.name, outline_id: @toc.outline_id, parent_id: @toc.parent_id, rgt: @toc.rgt }
+    patch :update, id: @toc, toc: { name: @toc.name, outline_id: @toc.outline_id }
     assert_redirected_to toc_path(assigns(:toc))
   end
 

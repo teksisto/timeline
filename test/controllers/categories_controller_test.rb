@@ -2,7 +2,7 @@ require 'test_helper'
 
 class CategoriesControllerTest < ActionController::TestCase
   setup do
-    @category = categories(:one)
+    @category = categories(:security)
   end
 
   test "should get index" do
@@ -21,7 +21,7 @@ class CategoriesControllerTest < ActionController::TestCase
       post :create, category: { color: @category.color, description: @category.description, name: @category.name }
     end
 
-    assert_redirected_to category_path(assigns(:category))
+    assert_redirected_to categories_path #(assigns(:category))
   end
 
   test "should show category" do

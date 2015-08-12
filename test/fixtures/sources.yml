@@ -3,39 +3,46 @@ michigan:
   link: "https://www.coursera.org/learn/internet-history"
   description: "Несколько событий привязанных к источнику."
   category: lectures
-
+  toc: michigan_toc
+  
 stall:
   name: "Clifford Stall — The Cuckoos egg"
   link: ""
   description: "Несколько событий привязанных к источнику."
   category: book
-
+  toc: stall_toc
+  
 ghost:
   name: "Kevin Mitnick — Ghost in the wires"
   link: ""
   description: "Несколько событий привязанных к источнику."
   category: book
-
+  toc: ghost_toc
+  
 imdb:
   name: "IMDb"
   link: "https://imdb.com"
   description: "Источник с категорией site."
   category: site
-
+  toc: imdb_toc
+  
 zhukov:
   name: "Дмитрий Жуков — Биология поведения: гуморальные механизмы"
   link: ""
   description: "Конспект c цитатами."
   category: book
-
+  toc: zhukov_toc
+  
 quotes:
   name: "Александр Ткачев — Цитатник"
   link: ""
   description: "Цитатник который хорошо смотреть в виде презентации."
   category: book
-
+  toc: quotes_toc
+  
 taleb:
   name: "Нассим Николас Талеб — Черный лебедь"
   link: ""
   description: "Цитатник с комментариями."
   category: book
+  toc: taleb_toc

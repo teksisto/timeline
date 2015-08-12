@@ -1,0 +1,8 @@
+one: 
+  content: "Test Michigan quote." 
+  toc: michigan_toc
+
+two:
+  content: "Test Stall quote." 
+  toc: stall_toc
+  

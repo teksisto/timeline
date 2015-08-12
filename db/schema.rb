@@ -93,10 +93,10 @@ ActiveRecord::Schema.define(version: 20150812143904) do
     t.string   "name"
     t.integer  "outline_id"
     t.integer  "parent_id"
-    t.integer  "lft",                        null: false
-    t.integer  "rgt",                        null: false
-    t.integer  "depth",          default: 0, null: false
-    t.integer  "children_count", default: 0, null: false
+    t.integer  "lft"
+    t.integer  "rgt"
+    t.integer  "depth",          default: 0
+    t.integer  "children_count", default: 0
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
   end
