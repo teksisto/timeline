@@ -1,21 +1,21 @@
 michigan:
   name: "University of Michigan — Internet History Technology and Security"
   link: "https://www.coursera.org/learn/internet-history"
-  description: "Несколько событий привязанных к источнику."
+  description: "Несколько событий, привязанных к источнику."
   category: lectures
   toc: michigan_toc
   
 stall:
   name: "Clifford Stall — The Cuckoos egg"
   link: ""
-  description: "Несколько событий привязанных к источнику."
+  description: "Несколько событий, привязанных к источнику."
   category: book
   toc: stall_toc
   
 ghost:
   name: "Kevin Mitnick — Ghost in the wires"
   link: ""
-  description: "Несколько событий привязанных к источнику."
+  description: "Несколько событий, привязанных к источнику."
   category: book
   toc: ghost_toc
   
@@ -36,7 +36,7 @@ zhukov:
 quotes:
   name: "Александр Ткачев — Цитатник"
   link: ""
-  description: "Цитатник который хорошо смотреть в виде презентации."
+  description: "Цитатник, который хорошо смотреть в виде презентации."
   category: book
   toc: quotes_toc
   
