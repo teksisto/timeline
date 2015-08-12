@@ -75,11 +75,23 @@ quotes_hash = {
   category_id: book
 }
 
+taleb_hash = {
+  name: 'Нассим Николас Талеб — Черный лебедь',
+  link: '',
+  description: 'Цитатник с комментариями.',
+  category_id: book
+}
+
+
 quotes    = Source.create(quotes_hash)
 quotes.parse_toc(IO.read('misc/quotes.org'))
 
 z = Source.create(z_hash)
 z.parse_toc(IO.read('misc/zhukov.org')) 
+
+taleb = Source.create(taleb_hash)
+taleb.parse_toc(IO.read('misc/taleb.org')) 
+
 
 michigan = Source.create(michigan_hash)
 stall    = Source.create(stall_hash)
