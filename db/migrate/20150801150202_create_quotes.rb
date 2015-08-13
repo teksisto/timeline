@@ -1,7 +1,7 @@
 class CreateQuotes < ActiveRecord::Migration
   def change
     create_table :quotes do |t|
-      t.string :title
+      t.string :label
       t.text :content
       t.integer :toc_id
 

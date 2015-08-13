@@ -2,7 +2,7 @@
   .slides
     - for quote in @quotes
       %section
-        - if quote.title
-          %h2= quote.title
+        - if quote.label
+          %h2= quote.label
         %p= quote.content
 

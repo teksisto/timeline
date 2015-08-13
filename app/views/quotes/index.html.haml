@@ -5,7 +5,7 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:id)
-      %th= model_class.human_attribute_name(:title)
+      %th= model_class.human_attribute_name(:label)
       %th= model_class.human_attribute_name(:content)
       %th= model_class.human_attribute_name(:toc_id)
       %th= model_class.human_attribute_name(:created_at)
@@ -14,7 +14,7 @@
     - @quotes.each do |quote|
       %tr
         %td= link_to quote.id, quote_path(quote)
-        %td= quote.title
+        %td= quote.label
         %td= quote.content
         %td= quote.toc_id
         %td=l quote.created_at

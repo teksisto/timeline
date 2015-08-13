@@ -5,7 +5,7 @@ class OrgToc
 
   attr_accessor :children
   attr_accessor :content
-  attr_accessor :title
+  attr_accessor :label
   attr_accessor :text
   attr_accessor :parent
   attr_accessor :level
@@ -22,7 +22,7 @@ class OrgToc
   def initialize(options)
     @children = options[:children] || []
     @content = options[:content] || []
-    @title = options[:title] || ''
+    @label = options[:label] || ''
     @text = ''
     @parent = options[:parent] || nil
     @level = options[:level] || 0
@@ -90,7 +90,7 @@ class OrgToc
   
   def render_to_text(str = '')
     unless @level == 0
-      heading = '*'*@level + ' ' + @title + "\n"
+      heading = '*'*@level + ' ' + @label + "\n"
       heading_content = heading + text
     else
       heading_content = ''
@@ -101,7 +101,7 @@ class OrgToc
   def render_to_db(parent)
 
     unless @level == 0
-      toc = Toc.create(label: title, parent: parent)
+      toc = Toc.create(label: label, parent: parent)
       if @text.present?
         toc.create_outline(content: text)
         @quotes.each{|q| toc.quotes.create(content: q)}
@@ -122,8 +122,8 @@ class OrgToc
   end
 
   def add_child
-    log 'spawn new instance - level is matching, also got previous title'
-    log "title = #{@previous_heading}"
+    log 'spawn new instance - level is matching, also got previous label'
+    log "label = #{@previous_heading}"
     log "buffer = #{@buffer.join}"
     @children << new_toc
     @previous_heading = @line
@@ -131,7 +131,7 @@ class OrgToc
   end
 
   def add_text
-    log "it's new previous title - level is matching, but there's no previous title"
+    log "it's new previous label - level is matching, but there's no previous label"
     log "content of buffer flushed to @text = it's my text!"
     # @text += @buffer.join # плюс равно на случай, если цитата находится в середине текста
     OrgTextParser.new(content: @buffer, parent: self).parse
@@ -144,7 +144,7 @@ class OrgToc
       parent: self,
       level: level+1,
       content: @buffer,
-      title: sanitaze_heading(@previous_heading)
+      label: sanitaze_heading(@previous_heading)
     }
     new_toc = OrgToc.new(new_toc_hash)
   end
@@ -197,7 +197,7 @@ end
 
 if __FILE__==$0
 
-  t = OrgToc.new(content: IO.readlines('simple.org'), title: 'ROOT')
+  t = OrgToc.new(content: IO.readlines('simple.org'), label: 'ROOT')
   t.parse
   pp t
                  

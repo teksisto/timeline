@@ -1,9 +1,9 @@
 = form_for @quote, html: { class: "form form-horizontal quote" } do |f|
   .form-group
-    = f.label :title, class: 'control-label'
+    = f.label :label, class: 'control-label'
     .controls
-      = f.text_field :title, class: 'form-control', required: true
-    = error_span(@quote[:title])
+      = f.text_field :label, class: 'form-control', required: true
+    = error_span(@quote[:label])
   .form-group
     = f.label :content, class: 'control-label'
     .controls

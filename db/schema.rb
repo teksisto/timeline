@@ -81,7 +81,7 @@ ActiveRecord::Schema.define(version: 20150812234606) do
   add_index "people_sources", ["source_id"], name: "index_people_sources_on_source_id"
 
   create_table "quotes", force: :cascade do |t|
-    t.string   "title"
+    t.string   "label"
     t.text     "content"
     t.integer  "toc_id"
     t.datetime "created_at", null: false
