@@ -1,0 +1,36 @@
+* Quotes
+ 
+   #+BEGIN_QUOTE
+   abcdef
+   #+END_QUOTE
+
+  (print-elements-recursively (org-element-parse-buffer))
+
+org-data
+
+nil
+
+(headline (:raw-value "Quotes" :begin 1 :end 440 :pre-blank 1 :hiddenp nil :contents-begin 12 :contents-end 440 :level 1 :priority nil :tags nil :todo-keyword nil :todo-type nil :post-blank 0 :footnote-section-p nil :archivedp nil :commentedp nil :quotedp nil :CATEGORY nil :title (#("Quotes" 0 6 (:parent #0))) :parent (org-data nil #0)) (section (:begin 12 :end 440 :contents-begin 12 :contents-end 440 :post-blank 0 :parent #0) (quote-block (:begin 12 :end 55 :hiddenp nil :contents-begin 29 :contents-end 39 :post-blank 1 :post-affiliated 12 :parent #1) (paragraph (:begin 29 :end 39 :contents-begin 29 :contents-end 39 :post-blank 0 :post-affiliated 29 :parent #2) #("   abcdef
+" 0 10 (:parent #3)))) (paragraph (:begin 55 :end 115 :contents-begin 55 :contents-end 113 :post-blank 2 :post-affiliated 55 :parent #1) #("  (print-elements-recursively (org-element-parse-buffer))
+" 0 58 (:parent #2))) (paragraph (:begin 115 :end 125 :contents-begin 115 :contents-end 124 :post-blank 1 :post-affiliated 115 :parent #1) #("org-data
+" 0 9 (:parent #2))) (paragraph (:begin 125 :end 130 :contents-begin 125 :contents-end 129 :post-blank 1 :post-affiliated 125 :parent #1) #("nil
+" 0 4 (:parent #2))) (paragraph (:begin 130 :end 440 :contents-begin 130 :contents-end 440 :post-blank 0 :post-affiliated 130 :parent #1) #("(headline ( (#(\"Quotes\" 0 6 (:parent #0))) :parent (org-data nil #0)) 
+  (section (:parent #0) 
+    (quote-block (:parent #1) 
+      (paragraph (:parent #2) #(\"   abcdef \" 0 10 (:parent #3)))) 
+    (paragraph (:parent #1) #(\"  (print-elements-recursively (org-element-parse-buffer))\" 0 58 (:parent #2)))))
+nil
+" 0 310 (:parent #2)))))
+nil
+
+
+org-data
+
+nil
+
+(headline ( (#("Quotes" 0 6 (:parent #0))) :parent (org-data nil #0)) 
+  (section (:parent #0) 
+    (quote-block (:parent #1) 
+      (paragraph (:parent #2) #("   abcdef " 0 10 (:parent #3)))) 
+    (paragraph (:parent #1) #("  (print-elements-recursively (org-element-parse-buffer))" 0 58 (:parent #2)))))
+nil
