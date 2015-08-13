@@ -14,7 +14,7 @@
 ActiveRecord::Schema.define(version: 20150812234606) do
 
   create_table "categories", force: :cascade do |t|
-    t.string   "name"
+    t.string   "label"
     t.text     "description"
     t.string   "color"
     t.integer  "parent_id"
@@ -48,7 +48,7 @@ ActiveRecord::Schema.define(version: 20150812234606) do
   end
 
   create_table "events", force: :cascade do |t|
-    t.string   "name"
+    t.string   "label"
     t.integer  "year"
     t.integer  "month"
     t.integer  "day"
@@ -65,11 +65,11 @@ ActiveRecord::Schema.define(version: 20150812234606) do
   end
 
   create_table "people", force: :cascade do |t|
-    t.string   "name"
+    t.string   "label"
     t.text     "description"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
-    t.string   "screen_name"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.string   "screen_label"
   end
 
   create_table "people_sources", id: false, force: :cascade do |t|
@@ -89,7 +89,7 @@ ActiveRecord::Schema.define(version: 20150812234606) do
   end
 
   create_table "sources", force: :cascade do |t|
-    t.string   "name"
+    t.string   "label"
     t.text     "description"
     t.string   "link"
     t.datetime "created_at",  null: false
@@ -99,7 +99,7 @@ ActiveRecord::Schema.define(version: 20150812234606) do
   end
 
   create_table "tocs", force: :cascade do |t|
-    t.string   "name"
+    t.string   "label"
     t.integer  "outline_id"
     t.integer  "parent_id"
     t.integer  "lft"

@@ -6,7 +6,7 @@
   = @toc.outline.content
 
 - for toc in @toc.descendants
-  = content_tag("h#{toc.depth}", toc.name)
+  = content_tag("h#{toc.depth}", toc.label)
   - if toc.outline
     %p= toc.outline.content
 

@@ -1,6 +1,6 @@
 michigan:
   authors: [charles_severance]
-  name: "Internet History Technology and Security"
+  label: "Internet History Technology and Security"
   link: "https://www.coursera.org/learn/internet-history"
   description: "Несколько событий, привязанных к источнику."
   category: lectures
@@ -8,7 +8,7 @@ michigan:
   
 stall:
   authors: [clifford_stall]
-  name: "The Cuckoos egg"
+  label: "The Cuckoos egg"
   link: ""
   description: "Несколько событий, привязанных к источнику."
   category: book
@@ -16,14 +16,14 @@ stall:
   
 ghost:
   authors: [kevin_mitnick]
-  name: "Ghost in the wires"
+  label: "Ghost in the wires"
   link: ""
   description: "Несколько событий, привязанных к источнику."
   category: book
   toc: ghost_toc
   
 imdb:
-  name: "IMDb"
+  label: "IMDb"
   link: "https://imdb.com"
   description: "Источник с категорией site."
   category: site
@@ -31,7 +31,7 @@ imdb:
   
 zhukov:
   authors: [dimitri_zhukov]
-  name: "Биология поведения: гуморальные механизмы"
+  label: "Биология поведения: гуморальные механизмы"
   link: ""
   description: "Конспект c цитатами."
   category: book
@@ -39,7 +39,7 @@ zhukov:
   
 quotes:
   authors: [teksisto]
-  name: "Цитатник"
+  label: "Цитатник"
   link: ""
   description: "Цитатник, который хорошо смотреть в виде презентации."
   category: book
@@ -47,7 +47,7 @@ quotes:
   
 taleb:
   authors: [nassim_taleb]
-  name: "Черный лебедь"
+  label: "Черный лебедь"
   link: ""
   description: "Цитатник с комментариями."
   category: book

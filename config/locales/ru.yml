@@ -2,7 +2,7 @@ ru:
   helpers:
     label:
       source:
-        name: Название 
+        label: Название 
         description: Описание
         link: Ссылка
         category_id: Категория

@@ -3,7 +3,7 @@
 %table.table.table-striped
   %thead
     %tr
-      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:label)
       %th= model_class.human_attribute_name(:color)
       %th= model_class.human_attribute_name(:icon)
       %th=t '.actions', :default => t("helpers.actions")
@@ -14,9 +14,9 @@
           %span
             = ('&nbsp;'*level*8).html_safe
             - if category.level == 0
-              %b= link_to(category.name, category_path(category))
+              %b= link_to(category.label, category_path(category))
             - else
-              = link_to(category.name, category_path(category))
+              = link_to(category.label, category_path(category))
         %td
           %span{style: "background-color: #{category.color}"}
             = category.color

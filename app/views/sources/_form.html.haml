@@ -3,17 +3,17 @@
   .form-group
     = f.label :author_ids, class: 'control-label'
     .controls
-      = f.select :author_ids, options_from_collection_for_select(Person.all, :id, :name, @source.author_ids), {include_blank: true}, {multiple: true, style: 'width: 100%;'}
+      = f.select :author_ids, options_from_collection_for_select(Person.all, :id, :label, @source.author_ids), {include_blank: true}, {multiple: true, style: 'width: 100%;'}
     = error_span(@source[:author_ids])
 
     :javascript
       $("#source_author_ids").select2();
     
   .form-group
-    = f.label :name, class: 'control-label'
+    = f.label :label, class: 'control-label'
     .controls
-      = f.text_field :name, class: 'form-control', required: true
-    = error_span(@source[:name])
+      = f.text_field :label, class: 'form-control', required: true
+    = error_span(@source[:label])
   .form-group
     = f.label :description, class: 'control-label'
     .controls

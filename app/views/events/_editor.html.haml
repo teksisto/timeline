@@ -5,7 +5,7 @@
     %thead
       %tr
         %th{colspan: 3}= 'Date'
-        %th= model_class.human_attribute_name(:name)
+        %th= model_class.human_attribute_name(:label)
         %th= model_class.human_attribute_name(:description)
         %th=t '.actions', :default => t("helpers.actions")
     %tbody
@@ -14,7 +14,7 @@
           %td= event.year
           %td= event.month
           %td= event.day
-          %td= link_to event.name, event_path(event)
+          %td= link_to event.label, event_path(event)
           %td= event.description
           %td
             = link_to t('.edit', :default => t("helpers.links.edit")), edit_event_path(event), :class => 'btn btn-default btn-xs'

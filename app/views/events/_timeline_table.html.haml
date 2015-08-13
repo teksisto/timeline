@@ -6,4 +6,4 @@
       %td= year
       %td
         - for event in @events_by_year[year]
-          %p= link_to event.name, event_path(event), style: "background-color: #{event.categories.last.color rescue nil}"
+          %p= link_to event.label, event_path(event), style: "background-color: #{event.categories.last.color rescue nil}"

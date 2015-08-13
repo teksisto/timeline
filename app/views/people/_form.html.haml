@@ -1,14 +1,14 @@
 = form_for @person, html: { class: "form form-horizontal person" } do |f|
   .form-group
-    = f.label :name, class: 'control-label'
+    = f.label :label, class: 'control-label'
     .controls
-      = f.text_field :name, class: 'form-control', required: true
-    = error_span(@person[:name])
+      = f.text_field :label, class: 'form-control', required: true
+    = error_span(@person[:label])
   .form-group
-    = f.label :screen_name, class: 'control-label'
+    = f.label :screen_label, class: 'control-label'
     .controls
-      = f.text_field :screen_name, class: 'form-control', required: true
-    = error_span(@person[:screen_name])
+      = f.text_field :screen_label, class: 'form-control', required: true
+    = error_span(@person[:screen_label])
   .form-group
     = f.label :description, class: 'control-label'
     .controls

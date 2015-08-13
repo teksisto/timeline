@@ -1,6 +1,6 @@
 - model_class = Event
 
-%h3= @event.name
+%h3= @event.label
 %p
   %strong=  @event.date
 
@@ -9,13 +9,13 @@
 %p
   %strong= model_class.human_attribute_name(:source) + ':'
   - if source = @event.source
-    = link_to source.try(:name), source_path(source)
+    = link_to source.try(:label), source_path(source)
 
 %p
   %strong= 'Category:'
   %ul
   - for category in @event.categories
-    %li= link_to category.name, category 
+    %li= link_to category.label, category 
 
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_event_path(@event), :class => 'btn btn-default'
 = link_to t('.destroy', :default => t("helpers.links.destroy")), event_path(@event), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default'

@@ -5,7 +5,7 @@
     %tr
       %th
         &nbsp;
-      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:label)
       %th= 'Views'
       %th= t '.actions', :default => t("helpers.actions")
   %tbody
@@ -15,7 +15,7 @@
         %td
           %p
             = by_line_links(source)
-            = link_to source.name, source_path(source)
+            = link_to source.label, source_path(source)
           %p= source.description
         %td
           = link_to 'Quotes', quotes_source_path(source), :class => 'btn btn-xs btn-default'

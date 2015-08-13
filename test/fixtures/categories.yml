@@ -1,89 +1,89 @@
 event_categories:
-  name: "Event categories"
+  label: "Event categories"
   description: 
   color: ""
   icon: 
   parent:
 
 computers:
-  name: computers
+  label: computers
   description: 
   color: "#C9CF31"
   icon: 
   parent: event_categories
 
 networks:
-  name: "networks"
+  label: "networks"
   description: 
   color: "#C9CF31"
   icon: 
   parent: computers
 
 security:
-  name: "security"
+  label: "security"
   description: 
   color: "#F8931F"
   icon: 
   parent: computers
 
 unix:
-  name: "unix"
+  label: "unix"
   description: 
   color: "#E1E0B2"
   icon: 
   parent: computers
 
 media:
-  name: "media"
+  label: "media"
   description: 
   color: "#61E8BB"
   icon: 
   parent: event_categories
 
 movie:
-  name: "movie"
+  label: "movie"
   description: 
   color: "#61E8BB"
   icon: 
   parent: media
 
 music:
-  name: "music"
+  label: "music"
   description: 
   color: "#61E8BB"
   icon: 
   parent: media
 
 space:
-  name: "space"
+  label: "space"
   description: 
   color: "#B1D1E0"
   icon: 
   parent: event_categories
 
 source_categories:
-  name: "Source categories"
+  label: "Source categories"
   description: 
   color: ""
   icon: 
   parent:
 
 book:
-  name: "book"
+  label: "book"
   description: 
   color: "#C9CF31"
   icon: book
   parent: source_categories
 
 lectures:
-  name: "lectures"
+  label: "lectures"
   description: 
   color: ""
   icon: "university"
   parent: source_categories
 
 site:
-  name: "site"
+  label: "site"
   description: 
   color: "#F8931F"
   icon: "external-link"

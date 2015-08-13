@@ -7,10 +7,10 @@
       - if @events_by_year[year].present?
         - for event in @events_by_year[year]
           %td
-            %p= link_to event.name, event_path(event)
+            %p= link_to event.label, event_path(event)
           %td
             - for category in event.categories
-              %span{style: "background-color: #{category.color}"}= category.name
+              %span{style: "background-color: #{category.color}"}= category.label
       - else
         %td= '&nbsp;'.html_safe
         %td= '&nbsp;'.html_safe

@@ -18,7 +18,7 @@ class TocsControllerTest < ActionController::TestCase
 
   test "should create toc" do
     assert_difference('Toc.count') do
-      post :create, toc: { name: @toc.name }
+      post :create, toc: { label: @toc.label }
     end
 
     assert_redirected_to toc_path(assigns(:toc))
@@ -35,7 +35,7 @@ class TocsControllerTest < ActionController::TestCase
   end
 
   test "should update toc" do
-    patch :update, id: @toc, toc: { name: @toc.name, outline_id: @toc.outline_id }
+    patch :update, id: @toc, toc: { label: @toc.label, outline_id: @toc.outline_id }
     assert_redirected_to toc_path(assigns(:toc))
   end
 

@@ -14,7 +14,7 @@ class Toc < ActiveRecord::Base
 
   def parse_org_mode(toc_source)
 
-    root = OrgToc.new(content: toc_source.split("\n"), title: self.name)
+    root = OrgToc.new(content: toc_source.split("\n"), title: self.label)
     root.parse
     root.render_to_db(self)
   end

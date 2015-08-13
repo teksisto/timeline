@@ -3,13 +3,13 @@
   %h1=t '.title', :default => model_class.model_name.human.titleize
 
 %p
-  %strong= model_class.human_attribute_name(:name) + ':'
+  %strong= model_class.human_attribute_name(:label) + ':'
   %br
-  = @person.name
+  = @person.label
 %p
-  %strong= model_class.human_attribute_name(:screen_name) + ':'
+  %strong= model_class.human_attribute_name(:screen_label) + ':'
   %br
-  = @person.screen_name
+  = @person.screen_label
 %p
   %strong= model_class.human_attribute_name(:description) + ':'
   %br
@@ -19,7 +19,7 @@
   %strong= model_class.human_attribute_name(:authored) + ':'
   %ul
     - for source in @person.authored
-      %li= link_to source.name, source_path(source)
+      %li= link_to source.label, source_path(source)
 
 = link_to t('.back', :default => t("helpers.links.back")), people_path, :class => 'btn btn-default'
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_person_path(@person), :class => 'btn btn-default'

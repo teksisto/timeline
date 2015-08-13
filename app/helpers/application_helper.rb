@@ -29,8 +29,8 @@ module ApplicationHelper
     grouped_options_for_select(
       roots.map{|r|
         [
-          r.name,
-          r.descendants.map{|d| [' » '*(d.depth-1 ) + d.name, d.id]}
+          r.label,
+          r.descendants.map{|d| [' » '*(d.depth-1 ) + d.label, d.id]}
         ]
       }, selected 
     ).html_safe
@@ -39,11 +39,11 @@ module ApplicationHelper
 
   def ancestors_breadcrumbs(object)
     path = if object.ancestors.present?
-             object.ancestors.map{|a| link_to(a.name, category_path(a))+ ' » ' }.join
+             object.ancestors.map{|a| link_to(a.label, category_path(a))+ ' » ' }.join
            else
              ''
            end
-    (path + object.name).html_safe
+    (path + object.label).html_safe
   end
 
   def markdown(content)

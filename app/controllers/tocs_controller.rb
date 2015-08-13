@@ -69,6 +69,6 @@ class TocsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def toc_params
-      params.require(:toc).permit(:name, :parent_id, :lft, :rgt, :depth, :children_count, :outline_id)
+      params.require(:toc).permit(:label, :parent_id, :lft, :rgt, :depth, :children_count, :outline_id)
     end
 end

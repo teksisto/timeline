@@ -16,7 +16,7 @@ class Source < ActiveRecord::Base
   
   def add_root_toc
     unless toc
-      create_toc(name: self.name)
+      create_toc(label: self.label)
     end
   end
 
@@ -32,8 +32,8 @@ class Source < ActiveRecord::Base
     end
   end
 
-  def name_with_by_line
-    by_line_text(self) + self.name
+  def label_with_by_line
+    by_line_text(self) + self.label
   end
   
 end

@@ -7,8 +7,8 @@ class Person < ActiveRecord::Base
 
   has_many :comments
   
-  def screen_name
-    self['screen_name'] ? self['screen_name'] : self['name']
+  def screen_label
+    self['screen_label'] ? self['screen_label'] : self['label']
   end
   
 end

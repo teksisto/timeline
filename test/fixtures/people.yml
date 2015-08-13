@@ -1,34 +1,34 @@
 charles_severance:
-  name: Charles Severance
-  screen_name:
+  label: Charles Severance
+  screen_label:
   description:
 
 clifford_stall:
-  name: Clifford Stall
-  screen_name:
+  label: Clifford Stall
+  screen_label:
   description: 
 
 kevin_mitnick:
-  name: Kevin Mitnick
-  screen_name:
+  label: Kevin Mitnick
+  screen_label:
   description:
 
 dimitri_zhukov:
-  name: Жуков Дмитрий Анатольевич
-  screen_name: Дмитрий Жуков
+  label: Жуков Дмитрий Анатольевич
+  screen_label: Дмитрий Жуков
   description:
 
 teksisto:
-  name: Александр Ткачев
-  screen_name: teksisto
+  label: Александр Ткачев
+  screen_label: teksisto
   description:
 
 nassim_taleb:
-  name: Нассим Николас Талеб
-  screen_name:
+  label: Нассим Николас Талеб
+  screen_label:
   description:
     
 # :
-#   name:
-#   screen_name:
+#   label:
+#   screen_label:
 #   description:

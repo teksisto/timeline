@@ -1,7 +1,7 @@
 class CreateTocs < ActiveRecord::Migration
   def change
     create_table :tocs do |t|
-      t.string :name
+      t.string :label
       t.integer :outline_id
 
       t.integer :parent_id, :index => true

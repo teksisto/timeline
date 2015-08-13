@@ -3,7 +3,7 @@
 %h3
   = category_icon(@source)
   = by_line_links(@source)
-  = @source.name
+  = @source.label
 
 %p
   = @source.description
@@ -21,8 +21,8 @@
 = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
 
 - for t in @source.toc.descendants.includes(:outline)
-  = content_tag("h#{t.depth}", t.name) do
-    = link_to t.name, t
+  = content_tag("h#{t.depth}", t.label) do
+    = link_to t.label, t
   - if t.outline
     %p= temp_org_render(t.outline.content)
     - for quote in t.quotes

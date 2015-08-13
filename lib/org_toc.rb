@@ -101,7 +101,7 @@ class OrgToc
   def render_to_db(parent)
 
     unless @level == 0
-      toc = Toc.create(name: title, parent: parent)
+      toc = Toc.create(label: title, parent: parent)
       if @text.present?
         toc.create_outline(content: text)
         @quotes.each{|q| toc.quotes.create(content: q)}

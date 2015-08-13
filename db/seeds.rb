@@ -15,8 +15,8 @@ org_files = {
   'Цитатник' => 'misc/quotes.org'
 }
 
-for name, file in org_files
-  source = Source.where(name: name).first
+for label, file in org_files
+  source = Source.where(label: label).first
   source.parse_toc(IO.read(file))
-  puts "Imported #{file} into #{name}.".cyan
+  puts "Imported #{file} into #{label}.".cyan
 end

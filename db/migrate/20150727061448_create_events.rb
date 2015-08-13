@@ -1,7 +1,7 @@
 class CreateEvents < ActiveRecord::Migration
   def change
     create_table :events do |t|
-      t.string :name
+      t.string :label
       t.integer :year
       t.integer :month,  null: true
       t.integer :day,    null: true
