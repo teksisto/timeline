@@ -1,42 +1,43 @@
 = form_for @event, html: { class: "form form-horizontal event" } do |f|
   .form-group
-    = f.label :label, class: 'control-label'
-    .controls
+    = f.label :label, class: 'col-sm-2 control-label'
+    .controls.col-sm-10.col-sm-10
       = f.text_field :label, class: 'form-control', required: true
     = error_span(@event[:label])
 
   .form-group
-    = f.label :start_date, class: 'control-label'
-    .controls
+    = f.label :start_date, class: 'col-sm-2 control-label'
+    .controls.col-sm-2
       = f.text_field :start_date, class: 'form-control', required: true
     = error_span(@event[:start_date])
+
   .form-group
-    = f.label :end_date, class: 'control-label'
-    .controls
+    = f.label :end_date, class: 'col-sm-2 control-label'
+    .controls.col-sm-2
       = f.text_field :end_date, class: 'form-control'
     = error_span(@event[:end_date])
 
   .form-group
-    = f.label :description, class: 'control-label'
-    .controls
-      = f.text_area :description, class: 'form-control'
-    = error_span(@event[:description])
-
-  .form-group
-    = f.label :age, class: 'control-label'
-    .controls
+    = f.label :age, class: 'col-sm-2 control-label'
+    .controls.col-sm-1
       = f.check_box :age, class: 'form-control'
     = error_span(@event[:age])
 
   .form-group
-    = f.label :source_id, class: 'control-label'
-    .controls
+    = f.label :description, class: 'col-sm-2 control-label'
+    .controls.col-sm-10
+      = f.text_area :description, class: 'form-control'
+    = error_span(@event[:description])
+
+  .form-group
+    = f.label :source_id, class: 'col-sm-2 control-label'
+    .controls.col-sm-10
       = f.select :source_id, options_from_collection_for_select(Source.all, 'id', 'label', @event.source_id), {include_blank: true}, {class: 'form-control'}
     = error_span(@event[:source_id])
 
   .form-group
-    = f.label :category_ids, class: 'control-label'
-    .controls
+    = f.label :category_ids, class: 'col-sm-2 control-label'
+    .controls.col-sm-10
       = f.select 'category_ids', category_options_for_select(Category.events_root, @event.category_ids), {include_blank: true}, {multiple: true}
     = error_span(@event[:source_id])
     :javascript
