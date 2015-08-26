@@ -1,7 +1,6 @@
 first_packets:
-  year: 1969
-  month: 10
-  day: 29
+  start_date: '1969-10-29'
+  end_date: 
   label: 'Первые два пакета: lo and behold'
   description: ''
   source: michigan
@@ -9,9 +8,8 @@ first_packets:
     - networks
 
 first_america_web_server:
-  year: 1991
-  month: 12
-  day: 12
+  start_date: '1991-12-12' 
+  end_date: 
   label: 'Первый веб-сервер в Америке'
   description: 'Доктор Paul Kunz Stanford Linear Accelerator. 300000 Научных статей. Первый поисковик в сети.'
   source: michigan
@@ -19,9 +17,8 @@ first_america_web_server:
     - networks
 
 netscape_found:  
-  year: 1994
-  month: 4
-  day: 4
+  start_date: '1994-04-04'
+  end_date: 
   label: 'Основана компания Netscape'
   description: 'Люди которые делали Mosaic решили уйти в коммерцию.'
   source: michigan
@@ -29,9 +26,8 @@ netscape_found:
     - networks
 
 arpanet_demo:
-  year: 1972
-  month: 10
-  day: 
+  start_date: '1972-10' 
+  end_date: 
   label: 'Первая демонстрация ARPAnet'
   description: ''
   source: michigan
@@ -39,9 +35,8 @@ arpanet_demo:
     - networks
 
 arpanet_stable:
-  year: 1978
-  month: 
-  day: 
+  start_date: '1978' 
+  end_date: 
   label: 'Пережив 4 итерации дизайн/имплементация ARPAnet признан стабильным'
   description: ''
   source: michigan
@@ -49,9 +44,8 @@ arpanet_stable:
     - networks
 
 stall_triumph:
-  year: 1989
-  month: 5
-  day: 2
+  start_date: '1989-05-02'
+  end_date: 
   label: 'German authorities charged five people with espionage: Pengo Hagbard Peter Carl Dirk Bresinsky and Markus Hess'
   description: ''
   source: stall
@@ -59,9 +53,8 @@ stall_triumph:
     - security
 
 first_vim:    
-  year: 1980
-  month: 
-  day: 
+  start_date: '1980' 
+  end_date: 
   label: 'Bill Joy wrote Unix screen editor VI'
   description: ''
   source: stall

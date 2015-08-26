@@ -1,3 +1,4 @@
+# coding: utf-8
 class Event < ActiveRecord::Base
 
   RENDER_METHODS = [
@@ -31,10 +32,10 @@ class Event < ActiveRecord::Base
     
   def self.by_year(events)
         
-    events_by_year = events.group_by(&:year)
+    events_by_year = events.group_by{|e| e.start_date.year}
 
-    start_year = events.minimum(:year)
-    end_year = events.maximum(:year)
+    start_year = events.minimum(:start_date).year
+    end_year = events.maximum(:end_date).year
 
     if start_year && end_year
       for y in start_year..end_year
@@ -50,12 +51,15 @@ class Event < ActiveRecord::Base
 
   private
 
+  # Этот метод должен дружить не только с данными, которые
+  # приходят из контроллера, но из с данными из fixtures.
+  
   def setup_dates
-    match, year, month, day = start_date_before_type_cast.match(/(\d{4})-?(\d{2})?-?(\d{2})?/).to_a.map{|s| s.to_i if s.present?}
+    year, month, day = parse_start_date
     if year && month && day
       self[:start_date] = Date.new(year, month, day)
       unless self[:end_date].present?
-        self[:end_date] = self[:start_date] + 1.day
+        self[:end_date] = self[:start_date]
       end
     elsif year && month && !day
       self[:start_date] = Date.new(year, month, 1)
@@ -69,6 +73,16 @@ class Event < ActiveRecord::Base
       end
     end
     
+  end
+
+  def parse_start_date
+    # to_s в следующей строке нужен, потому что fixtures внезапно возвращает integer
+    str = start_date_before_type_cast.to_s
+    matches = str.match(/(\d{4})-?(\d{2})?-?(\d{2})?/).to_a
+    # нам нужны только группы, а первый матч - это вся строка, поэтому он выкидывается
+    matches.shift
+    # если данные есть, то вернуть integer, если нет - nil
+    matches.map{|s| s.to_i if s.present?}
   end
   
 end

@@ -12,7 +12,12 @@ module EventsHelper
 
   def data_for_vis_timeline(events)
     events.map{|e|
-      {id: e.id, content: e.label, start: e.date.strftime('%Y-%m-%d')}
+      {
+        id:      e.id,
+        content: e.label,
+        start:   e.start_date.strftime('%Y-%m-%d'),
+        end:     e.end_date.strftime('%Y-%m-%d')
+      }
     }.to_json
   end
   

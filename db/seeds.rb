@@ -4,6 +4,7 @@
 
 Category.rebuild!
 Category.all.each{|c| c.save}
+Event.all.each{|e| e.save}
 
 Toc.rebuild!
 
