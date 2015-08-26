@@ -11,6 +11,8 @@ class Event < ActiveRecord::Base
 
   has_and_belongs_to_many :categories
 
+  before_save :setup_dates
+  
   scope :from_sources, lambda{|source_ids|
     joins(:source).where(sources: {id: source_ids})
   }
@@ -45,18 +47,28 @@ class Event < ActiveRecord::Base
       {}
     end
   end
-  
-  def date
-    date_array = []
-    date_array << year
-    date_array << month if month.present?
-    date_array << day if day.present?
-    Date.new(*date_array)
-  end
 
-  def date=(d)
-    year = d.year
-    month = d.month
-    day = d.day
+  private
+
+  def setup_dates
+    match, year, month, day = start_date_before_type_cast.match(/(\d{4})-?(\d{2})?-?(\d{2})?/).to_a.map{|s| s.to_i if s.present?}
+    if year && month && day
+      self[:start_date] = Date.new(year, month, day)
+      unless self[:end_date].present?
+        self[:end_date] = self[:start_date] + 1.day
+      end
+    elsif year && month && !day
+      self[:start_date] = Date.new(year, month, 1)
+      unless self[:end_date].present?
+        self[:end_date] = self[:start_date] + 1.month - 1.day
+      end
+    elsif year && !month && !day
+      self[:start_date] = Date.new(year, 1, 1)
+      unless self[:end_date].present?
+        self[:end_date] = self[:start_date] + 1.year - 1.day
+      end
+    end
+    
   end
+  
 end

@@ -2,8 +2,10 @@
 
 %h3= @event.label
 %p
-  %strong=  @event.date
-
+  %strong=  @event.start_date
+  &ndash;
+  %strong=  @event.end_date
+  
 %p= @event.description
 
 %p

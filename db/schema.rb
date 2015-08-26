@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150826022744) do
+ActiveRecord::Schema.define(version: 20150826023707) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "label"
@@ -49,14 +49,13 @@ ActiveRecord::Schema.define(version: 20150826022744) do
 
   create_table "events", force: :cascade do |t|
     t.string   "label"
-    t.integer  "year"
-    t.integer  "month"
-    t.integer  "day"
     t.text     "description"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
     t.integer  "source_id"
     t.boolean  "age",         default: false
+    t.date     "start_date"
+    t.date     "end_date"
   end
 
   create_table "outlines", force: :cascade do |t|

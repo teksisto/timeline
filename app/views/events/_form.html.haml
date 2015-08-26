@@ -4,21 +4,18 @@
     .controls
       = f.text_field :label, class: 'form-control', required: true
     = error_span(@event[:label])
+
   .form-group
-    = f.label :year, class: 'control-label'
+    = f.label :start_date, class: 'control-label'
     .controls
-      = f.text_field :year, class: 'form-control', required: true
-    = error_span(@event[:year])
+      = f.text_field :start_date, class: 'form-control', required: true
+    = error_span(@event[:start_date])
   .form-group
-    = f.label :month, class: 'control-label'
+    = f.label :end_date, class: 'control-label'
     .controls
-      = f.text_field :month, class: 'form-control'
-    = error_span(@event[:month])
-  .form-group
-    = f.label :day, class: 'control-label'
-    .controls
-      = f.text_field :day, class: 'form-control'
-    = error_span(@event[:day])
+      = f.text_field :end_date, class: 'form-control'
+    = error_span(@event[:end_date])
+
   .form-group
     = f.label :description, class: 'control-label'
     .controls
