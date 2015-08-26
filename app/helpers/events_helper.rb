@@ -11,14 +11,32 @@ module EventsHelper
   end
 
   def data_for_vis_timeline(events)
-    events.map{|e|
-      {
+    age_css_class = ''
+    data = events.map{|e|
+      hash = {
         id:      e.id,
         content: e.label,
         start:   e.start_date.strftime('%Y-%m-%d'),
         end:     e.end_date.strftime('%Y-%m-%d')
       }
-    }.to_json
+      if e.age
+        hash.merge!(type: 'background')
+        age_css_class = toggle_age_css_class(age_css_class)
+        if age_css_class.present?
+          hash.merge!(className: age_css_class)
+        end
+      end
+      hash
+    }
+    JSON.pretty_generate(data)
+  end
+
+  def toggle_age_css_class(str)
+    if str.present?
+      ''
+    else
+      'negative'
+    end
   end
   
 end

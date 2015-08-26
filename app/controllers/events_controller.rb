@@ -8,6 +8,7 @@ class EventsController < ApplicationController
 
     @events = @events.from_sources(params[:source_ids]) if params[:source_ids] && params[:source_ids].first.present?
     @events = @events.from_categories(params[:category_ids]) if params[:category_ids] && params[:category_ids].first.present?
+    @events = @events.sorted
     
     @events_by_year = Event.by_year(@events)
 

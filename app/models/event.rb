@@ -22,6 +22,10 @@ class Event < ActiveRecord::Base
     where(id: (ids_from_categories(category_ids)+ids_from_categories_via_sources(category_ids)))
   }
 
+  scope :sorted, lambda{
+    order('start_date')
+  }
+  
   def self.ids_from_categories(category_ids)
     Event.joins(:categories).where(categories: {id: category_ids})
   end

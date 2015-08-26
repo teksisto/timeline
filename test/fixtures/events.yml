@@ -61,3 +61,304 @@ first_vim:
   categories:
     - unix
 
+George_Washington_term:
+  label: George Washington
+  start_date: 1789-04-30
+  end_date: 1797-03-04
+  age: true
+  source: wiki
+  categories: history
+John_Adams_term:
+  label: John Adams
+  start_date: 1797-03-04
+  end_date: 1801-03-04
+  age: true
+  source: wiki
+  categories: history
+Thomas_Jefferson_term:
+  label: Thomas Jefferson
+  start_date: 1801-03-04
+  end_date: 1809-03-04
+  age: true
+  source: wiki
+  categories: history
+James_Madison_term:
+  label: James Madison
+  start_date: 1809-03-04
+  end_date: 1817-03-04
+  age: true
+  source: wiki
+  categories: history
+James_Monroe_term:
+  label: James Monroe
+  start_date: 1817-03-04
+  end_date: 1825-03-04
+  age: true
+  source: wiki
+  categories: history
+John_Quincy_Adams_term:
+  label: John Quincy Adams
+  start_date: 1825-03-04
+  end_date: 1829-03-04
+  age: true
+  source: wiki
+  categories: history
+Andrew_Jackson_term:
+  label: Andrew Jackson
+  start_date: 1829-03-04
+  end_date: 1837-03-04
+  age: true
+  source: wiki
+  categories: history
+Martin_Van_Buren_term:
+  label: Martin Van Buren
+  start_date: 1837-03-04
+  end_date: 1841-03-04
+  age: true
+  source: wiki
+  categories: history
+William_Henry_Harrison_term:
+  label: William Henry Harrison
+  start_date: 1841-03-04
+  end_date: 1841-04-04
+  age: true
+  source: wiki
+  categories: history
+John_Tyler_term:
+  label: John Tyler
+  start_date: 1841-04-04
+  end_date: 1845-03-04
+  age: true
+  source: wiki
+  categories: history
+James_K_Polk_term:
+  label: James K. Polk
+  start_date: 1845-03-04
+  end_date: 1849-03-04
+  age: true
+  source: wiki
+  categories: history
+Zachary_Taylor_term:
+  label: Zachary Taylor
+  start_date: 1849-03-04
+  end_date: 1850-07-09
+  age: true
+  source: wiki
+  categories: history
+Millard_Fillmore_term:
+  label: Millard Fillmore
+  start_date: 1850-07-09
+  end_date: 1853-03-04
+  age: true
+  source: wiki
+  categories: history
+Franklin_Pierce_term:
+  label: Franklin Pierce
+  start_date: 1853-03-04
+  end_date: 1857-03-04
+  age: true
+  source: wiki
+  categories: history
+James_Buchanan_term:
+  label: James Buchanan
+  start_date: 1857-03-04
+  end_date: 1861-03-04
+  age: true
+  source: wiki
+  categories: history
+Abraham_Lincoln_term:
+  label: Abraham Lincoln
+  start_date: 1861-03-04
+  end_date: 1865-04-15
+  age: true
+  source: wiki
+  categories: history
+Andrew_Johnson_term:
+  label: Andrew Johnson
+  start_date: 1865-04-15
+  end_date: 1869-03-04
+  age: true
+  source: wiki
+  categories: history
+Ulysses_S_Grant_term:
+  label: Ulysses S. Grant
+  start_date: 1869-03-04
+  end_date: 1877-03-04
+  age: true
+  source: wiki
+  categories: history
+Rutherford_B_Hayes_term:
+  label: Rutherford B. Hayes
+  start_date: 1877-03-04
+  end_date: 1881-03-04
+  age: true
+  source: wiki
+  categories: history
+James_A_Garfield_term:
+  label: James A. Garfield
+  start_date: 1881-03-04
+  end_date: 1881-09-19
+  age: true
+  source: wiki
+  categories: history
+Chester_A_Arthur_term:
+  label: Chester A. Arthur
+  start_date: 1881-09-19
+  end_date: 1885-03-04
+  age: true
+  source: wiki
+  categories: history
+Grover_Cleveland_term:
+  label: Grover Cleveland
+  start_date: 1885-03-04
+  end_date: 1889-03-04
+  age: true
+  source: wiki
+  categories: history
+Benjamin_Harrison_term:
+  label: Benjamin Harrison
+  start_date: 1889-03-04
+  end_date: 1893-03-04
+  age: true
+  source: wiki
+  categories: history
+Grover_Cleveland_term:
+  label: Grover Cleveland
+  start_date: 1893-03-04
+  end_date: 1897-03-04
+  age: true
+  source: wiki
+  categories: history
+William_McKinley_term:
+  label: William McKinley
+  start_date: 1897-03-04
+  end_date: 1901-09-14
+  age: true
+  source: wiki
+  categories: history
+Theodore_Roosevelt_term:
+  label: Theodore Roosevelt
+  start_date: 1901-09-14
+  end_date: 1909-03-04
+  age: true
+  source: wiki
+  categories: history
+William_Howard_Taft_term:
+  label: William Howard Taft
+  start_date: 1909-03-04
+  end_date: 1913-03-04
+  age: true
+  source: wiki
+  categories: history
+Woodrow_Wilson_term:
+  label: Woodrow Wilson
+  start_date: 1913-03-04
+  end_date: 1921-03-04
+  age: true
+  source: wiki
+  categories: history
+Warren_G_Harding_term:
+  label: Warren G. Harding
+  start_date: 1921-03-04
+  end_date: 1923-08-02
+  age: true
+  source: wiki
+  categories: history
+Calvin_Coolidge_term:
+  label: Calvin Coolidge
+  start_date: 1923-08-02
+  end_date: 1929-03-04
+  age: true
+  source: wiki
+  categories: history
+Herbert_Hoover_term:
+  label: Herbert Hoover
+  start_date: 1929-03-04
+  end_date: 1933-03-04
+  age: true
+  source: wiki
+  categories: history
+Franklin_D_Roosevelt_term:
+  label: Franklin D. Roosevelt
+  start_date: 1933-03-04
+  end_date: 1945-04-12
+  age: true
+  source: wiki
+  categories: history
+Harry_S_Truman_term:
+  label: Harry S. Truman
+  start_date: 1945-04-12
+  end_date: 1953-01-20
+  age: true
+  source: wiki
+  categories: history
+Dwight_D_Eisenhower_term:
+  label: Dwight D. Eisenhower
+  start_date: 1953-01-20
+  end_date: 1961-01-20
+  age: true
+  source: wiki
+  categories: history
+John_F_Kennedy_term:
+  label: John F. Kennedy
+  start_date: 1961-01-20
+  end_date: 1963-11-22
+  age: true
+  source: wiki
+  categories: history
+Lyndon_B_Johnson_term:
+  label: Lyndon B. Johnson
+  start_date: 1963-11-22
+  end_date: 1969-01-20
+  age: true
+  source: wiki
+  categories: history
+Richard_Nixon_term:
+  label: Richard Nixon
+  start_date: 1969-01-20
+  end_date: 1974-08-09
+  age: true
+  source: wiki
+  categories: history
+Gerald_Ford_term:
+  label: Gerald Ford
+  start_date: 1974-08-09
+  end_date: 1977-01-20
+  age: true
+  source: wiki
+  categories: history
+Jimmy_Carter_term:
+  label: Jimmy Carter
+  start_date: 1977-01-20
+  end_date: 1981-01-20
+  age: true
+  source: wiki
+  categories: history
+Ronald_Reagan_term:
+  label: Ronald Reagan
+  start_date: 1981-01-20
+  end_date: 1989-01-20
+  age: true
+  source: wiki
+  categories: history
+George_H_W_Bush_term:
+  label: George H. W. Bush
+  start_date: 1989-01-20
+  end_date: 1993-01-20
+  age: true
+  source: wiki
+  categories: history
+Bill_Clinton_term:
+  label: Bill Clinton
+  start_date: 1993-01-20
+  end_date: 2001-01-20
+  age: true
+  source: wiki
+  categories: history
+George_W_Bush_term:
+  label: George W. Bush
+  start_date: 2001-01-20
+  end_date: 2009-01-20
+  age: true
+  source: wiki
+  categories: history

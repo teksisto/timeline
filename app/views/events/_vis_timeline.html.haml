@@ -1,6 +1,11 @@
 = javascript_include_tag 'vis', 'data-turbolinks-track' => true
 = stylesheet_link_tag    'vis', media: 'all', 'data-turbolinks-track' => true
 
+:css
+  .vis-item.vis-background.negative {
+    background-color: rgba(3, 3, 3, 0.2);
+  }#e8f6e2
+
 #visualization
 
 :javascript  
@@ -13,7 +18,10 @@
   );
 
   // Configuration for the Timeline
-  var options = {type: 'point'};
+  var options = {
+    type: 'point',
+    minHeight: 500
+  };
 
   // Create a Timeline
   var timeline = new vis.Timeline(container, items, options);
