@@ -1,3 +1,5 @@
+# Event categories
+
 event_categories:
   label: "Event categories"
   description: 
@@ -5,34 +7,8 @@ event_categories:
   icon: 
   parent:
 
-computers:
-  label: computers
-  description: 
-  color: "#C9CF31"
-  icon: 
-  parent: event_categories
-
-networks:
-  label: "networks"
-  description: 
-  color: "#C9CF31"
-  icon: 
-  parent: computers
-
-security:
-  label: "security"
-  description: 
-  color: "#F8931F"
-  icon: 
-  parent: computers
-
-unix:
-  label: "unix"
-  description: 
-  color: "#E1E0B2"
-  icon: 
-  parent: computers
-
+# Event categories / Media
+  
 media:
   label: "media"
   description: 
@@ -40,6 +16,13 @@ media:
   icon: 
   parent: event_categories
 
+media_book:
+  label: "book"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: media
+  
 movie:
   label: "movie"
   description: 
@@ -54,13 +37,84 @@ music:
   icon: 
   parent: media
 
-space:
-  label: "space"
+# Event categories / Technology
+  
+technology:
+  label: "technology"
   description: 
   color: "#B1D1E0"
   icon: 
   parent: event_categories
 
+nuclear_energy:
+  label: "nuclear energy"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: technology
+  
+space:
+  label: "space"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: technology
+
+# Event categories / Technology / Computers
+    
+computers:
+  label: computers
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: event_categories
+
+networks:
+  label: "networks"
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: computers
+
+arpanet:
+  label: "ARPAnet"
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: networks
+  
+security:
+  label: "security"
+  description: 
+  color: "#F8931F"
+  icon: 
+  parent: computers
+
+software:
+  label: "software"
+  description: 
+  color: "#E1E0B2"
+  icon: 
+  parent: computers
+  
+unix:
+  label: "unix"
+  description: 
+  color: "#E1E0B2"
+  icon: 
+  parent: software
+
+# Event categories / Politics
+  
+politics:
+  label: "politics"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: event_categories
+
+# Source categories
+  
 source_categories:
   label: "Source categories"
   description: 
@@ -68,7 +122,7 @@ source_categories:
   icon: 
   parent:
 
-book:
+source_book:
   label: "book"
   description: 
   color: "#C9CF31"
