@@ -88,6 +88,7 @@ class EventsController < ApplicationController
                                     :day,
                                     :description,
                                     :source_id,
+                                    :age,
                                     {:category_ids => []})
     end
 end

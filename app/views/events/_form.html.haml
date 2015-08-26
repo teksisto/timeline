@@ -26,6 +26,12 @@
     = error_span(@event[:description])
 
   .form-group
+    = f.label :age, class: 'control-label'
+    .controls
+      = f.check_box :age, class: 'form-control'
+    = error_span(@event[:age])
+
+  .form-group
     = f.label :source_id, class: 'control-label'
     .controls
       = f.select :source_id, options_from_collection_for_select(Source.all, 'id', 'label', @event.source_id), {include_blank: true}, {class: 'form-control'}

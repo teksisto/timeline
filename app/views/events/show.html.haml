@@ -11,6 +11,10 @@
   - if source = @event.source
     = link_to source.try(:label), source_path(source)
 
+%p
+  %strong= model_class.human_attribute_name(:age) + ': '
+  = @event.age.to_s
+    
 %div
   %strong= 'Category:'
   %ul
