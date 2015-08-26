@@ -7,3 +7,8 @@ ru:
         link: Ссылка
         category_id: Категория
         author_ids: Авторы
+      event:
+        label: Заголовок
+        category_ids: Категории
+        source_id: Источник
+        description: Описание
