@@ -2,6 +2,7 @@ first_packets:
   start_date: '1969-10-29'
   end_date: 
   label: 'Первые два пакета: lo and behold'
+  location: usa
   description: ''
   source: michigan
   categories:
@@ -11,15 +12,37 @@ first_america_web_server:
   start_date: '1991-12-12' 
   end_date: 
   label: 'Первый веб-сервер в Америке'
+  location: usa
   description: 'Доктор Paul Kunz Stanford Linear Accelerator. 300000 Научных статей. Первый поисковик в сети.'
   source: michigan
   categories:
     - networks
 
+first_unix_implementation:
+  start_date: '1969' 
+  end_date: 
+  label: 'Первая имплементация Unix'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+
+first_linux_release:
+  start_date: '1991-08-25' 
+  end_date: 
+  label: 'Linux 0.01'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+    
 netscape_found:  
   start_date: '1994-04-04'
   end_date: 
   label: 'Основана компания Netscape'
+  location: usa
   description: 'Люди которые делали Mosaic решили уйти в коммерцию.'
   source: michigan
   categories:
@@ -29,6 +52,7 @@ arpanet_demo:
   start_date: '1972-10' 
   end_date: 
   label: 'Первая демонстрация ARPAnet'
+  location: usa
   description: ''
   source: michigan
   categories:
@@ -38,6 +62,7 @@ arpanet_stable:
   start_date: '1978' 
   end_date: 
   label: 'Пережив 4 итерации дизайн/имплементация ARPAnet признан стабильным'
+  location: usa
   description: ''
   source: michigan
   categories:
@@ -47,6 +72,7 @@ stall_triumph:
   start_date: '1989-05-02'
   end_date: 
   label: 'German authorities charged five people with espionage: Pengo Hagbard Peter Carl Dirk Bresinsky and Markus Hess'
+  location: usa
   description: ''
   source: stall
   categories:
@@ -56,6 +82,7 @@ first_vim:
   start_date: '1980' 
   end_date: 
   label: 'Bill Joy wrote Unix screen editor VI'
+  location: usa
   description: ''
   source: stall
   categories:
@@ -65,6 +92,7 @@ the_ware_report:
   start_date: '1967-10' 
   end_date: 
   label: 'The Ware report'
+  location: usa
   description: ''
   source: wikipedia
   categories:
@@ -74,6 +102,7 @@ the_mother_of_all_demos:
   start_date: '1968-12-09' 
   end_date: 
   label: 'The Mother of All Demos'
+  location: usa
   description: ''
   source: wikipedia
   categories:
@@ -83,397 +112,591 @@ the_mother_of_all_demos:
     
 George_Washington_term:
   label: George Washington
+  location: usa
   start_date: 1789-04-30
   end_date: 1797-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 John_Adams_term:
   label: John Adams
+  location: usa
   start_date: 1797-03-04
   end_date: 1801-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Thomas_Jefferson_term:
   label: Thomas Jefferson
+  location: usa
   start_date: 1801-03-04
   end_date: 1809-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 James_Madison_term:
   label: James Madison
+  location: usa
   start_date: 1809-03-04
   end_date: 1817-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 James_Monroe_term:
   label: James Monroe
+  location: usa
   start_date: 1817-03-04
   end_date: 1825-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 John_Quincy_Adams_term:
   label: John Quincy Adams
+  location: usa
   start_date: 1825-03-04
   end_date: 1829-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Andrew_Jackson_term:
   label: Andrew Jackson
+  location: usa
   start_date: 1829-03-04
   end_date: 1837-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Martin_Van_Buren_term:
   label: Martin Van Buren
+  location: usa
   start_date: 1837-03-04
   end_date: 1841-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 William_Henry_Harrison_term:
   label: William Henry Harrison
+  location: usa
   start_date: 1841-03-04
   end_date: 1841-04-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 John_Tyler_term:
   label: John Tyler
+  location: usa
   start_date: 1841-04-04
   end_date: 1845-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 James_K_Polk_term:
   label: James K. Polk
+  location: usa
   start_date: 1845-03-04
   end_date: 1849-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Zachary_Taylor_term:
   label: Zachary Taylor
+  location: usa
   start_date: 1849-03-04
   end_date: 1850-07-09
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Millard_Fillmore_term:
   label: Millard Fillmore
+  location: usa
   start_date: 1850-07-09
   end_date: 1853-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Franklin_Pierce_term:
   label: Franklin Pierce
+  location: usa
   start_date: 1853-03-04
   end_date: 1857-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 James_Buchanan_term:
   label: James Buchanan
+  location: usa
   start_date: 1857-03-04
   end_date: 1861-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Abraham_Lincoln_term:
   label: Abraham Lincoln
+  location: usa
   start_date: 1861-03-04
   end_date: 1865-04-15
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Andrew_Johnson_term:
   label: Andrew Johnson
+  location: usa
   start_date: 1865-04-15
   end_date: 1869-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Ulysses_S_Grant_term:
   label: Ulysses S. Grant
+  location: usa
   start_date: 1869-03-04
   end_date: 1877-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Rutherford_B_Hayes_term:
   label: Rutherford B. Hayes
+  location: usa
   start_date: 1877-03-04
   end_date: 1881-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 James_A_Garfield_term:
   label: James A. Garfield
+  location: usa
   start_date: 1881-03-04
   end_date: 1881-09-19
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Chester_A_Arthur_term:
   label: Chester A. Arthur
+  location: usa
   start_date: 1881-09-19
   end_date: 1885-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Grover_Cleveland_term:
   label: Grover Cleveland
+  location: usa
   start_date: 1885-03-04
   end_date: 1889-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Benjamin_Harrison_term:
   label: Benjamin Harrison
+  location: usa
   start_date: 1889-03-04
   end_date: 1893-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Grover_Cleveland_term:
   label: Grover Cleveland
+  location: usa
   start_date: 1893-03-04
   end_date: 1897-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 William_McKinley_term:
   label: William McKinley
+  location: usa
   start_date: 1897-03-04
   end_date: 1901-09-14
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Theodore_Roosevelt_term:
   label: Theodore Roosevelt
+  location: usa
   start_date: 1901-09-14
   end_date: 1909-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 William_Howard_Taft_term:
   label: William Howard Taft
+  location: usa
   start_date: 1909-03-04
   end_date: 1913-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Woodrow_Wilson_term:
   label: Woodrow Wilson
+  location: usa
   start_date: 1913-03-04
   end_date: 1921-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Warren_G_Harding_term:
   label: Warren G. Harding
+  location: usa
   start_date: 1921-03-04
   end_date: 1923-08-02
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Calvin_Coolidge_term:
   label: Calvin Coolidge
+  location: usa
   start_date: 1923-08-02
   end_date: 1929-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Herbert_Hoover_term:
   label: Herbert Hoover
+  location: usa
   start_date: 1929-03-04
   end_date: 1933-03-04
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Franklin_D_Roosevelt_term:
   label: Franklin D. Roosevelt
+  location: usa
   start_date: 1933-03-04
   end_date: 1945-04-12
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Harry_S_Truman_term:
   label: Harry S. Truman
+  location: usa
   start_date: 1945-04-12
   end_date: 1953-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Dwight_D_Eisenhower_term:
   label: Dwight D. Eisenhower
+  location: usa
   start_date: 1953-01-20
   end_date: 1961-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 John_F_Kennedy_term:
   label: John F. Kennedy
+  location: usa
   start_date: 1961-01-20
   end_date: 1963-11-22
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Lyndon_B_Johnson_term:
   label: Lyndon B. Johnson
+  location: usa
   start_date: 1963-11-22
   end_date: 1969-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Richard_Nixon_term:
   label: Richard Nixon
+  location: usa
   start_date: 1969-01-20
   end_date: 1974-08-09
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Gerald_Ford_term:
   label: Gerald Ford
+  location: usa
   start_date: 1974-08-09
   end_date: 1977-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Jimmy_Carter_term:
   label: Jimmy Carter
+  location: usa
   start_date: 1977-01-20
   end_date: 1981-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Ronald_Reagan_term:
   label: Ronald Reagan
+  location: usa
   start_date: 1981-01-20
   end_date: 1989-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 George_H_W_Bush_term:
   label: George H. W. Bush
+  location: usa
   start_date: 1989-01-20
   end_date: 1993-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 Bill_Clinton_term:
   label: Bill Clinton
+  location: usa
   start_date: 1993-01-20
   end_date: 2001-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
 George_W_Bush_term:
   label: George W. Bush
+  location: usa
   start_date: 2001-01-20
   end_date: 2009-01-20
   age: true
+  period: true
   source: wiki
   categories:
-    - politics
+    - head_of_state
 
+# Russia
+
+
+vladimir_lenin:
+  label: Владимир Ленин
+  start_date: 1917-10-23
+  end_date: 1924-01-21
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+  
+joseph_stalin:
+  label: Иосиф Сталин
+  start_date: 1924-01-22
+  end_date: 1953-03-05
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+
+nikita_hrushev:
+  label: Никита Хрущев
+  start_date: 1953-09-07
+  end_date: 1964-10-14
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+
+leonid_brezhnev:
+  label: Леонид Брежнев
+  start_date: 1964-10-14
+  end_date: 1982-11-10
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+
+jurij_andropov:
+  label: Юрий Андропов
+  start_date: 1982-11-12
+  end_date: 1984-02-09
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+
+constantine_chernenko:
+  label: Константин Черненко
+  start_date: 1984-02-13
+  end_date: 1985-03-10
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+
+michael_gorbachev:
+  label: Михаил Горбачев
+  start_date: 1985-03-11
+  end_date: 1991-12-25
+  age: true
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - head_of_state
+    
 # space
 
+sputnik_one:
+  start_date: '1957-10-04'
+  end_date: 
+  label: 'Спутник-1'
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - space
+
+first_space_connection:
+  start_date: '1969-01-16'
+  end_date: 
+  label: 'Первая стыковка в космосе'
+  location: russia
+  description: 'Впервые в космосе состыковались два пилотируемых космических корабля Союз-4 и Союз-5.'
+  source: wikipedia
+  categories:
+    - space
+    
 first_space_flight:
   start_date: '1961-04-12'
   end_date: 
   label: 'Первый полет человека в космос'
+  location: russia
   description: 'Юрий Гагарин, корабль "Восток"'
   source: wikipedia
   categories:
@@ -483,6 +706,7 @@ first_day_in_space:
   start_date: '1961-08-06'
   end_date: 
   label: 'Первые cутки в космосе'
+  location: russia
   description: 'Герман Титов, корабль "Восток-2"'
   source: wikipedia
   categories:
@@ -492,6 +716,7 @@ first_space_outdoor:
   start_date: '1965-03-18'
   end_date: 
   label: 'Первый выход в открытый космос'
+  location: russia
   description: 'Алексей Леонов, корабль "Восток"'
   source: wikipedia
   categories:
@@ -501,6 +726,7 @@ first_moon_flight:
   start_date: '1968-12-21'
   end_date: 
   label: 'Первый пилотируемый облет Луны'
+  location: usa
   description: '"Апполон-8"'
   source: wikipedia
   categories:
@@ -510,6 +736,7 @@ second_moon_flight:
   start_date: '1969-05-18'
   end_date: 
   label: 'Второй пилотируемый облет Луны'
+  location: usa
   description: '"Апполон-10"'
   source: wikipedia
   categories:
@@ -519,6 +746,7 @@ first_moon_landing:
   start_date: '1969-07-16'
   end_date: 
   label: 'Первая высадка на Луне'
+  location: usa
   description: '"Апполон-10", Нил Армстронг и Эдвин Олдрин'
   source: wikipedia
   categories:
@@ -528,6 +756,7 @@ second_moon_landing:
   start_date: '1969-11-14'
   end_date: 
   label: 'Вторая высадка на Луне'
+  location: usa
   description: '"Апполон-12"'
   source: wikipedia
   categories:
@@ -537,6 +766,7 @@ third_moon_landing:
   start_date: '1971-01-31'
   end_date: 
   label: 'Третья высадка на Луне'
+  location: usa
   description: '"Апполон-14"'
   source: wikipedia
   categories:
@@ -546,6 +776,7 @@ forth_moon_landing:
   start_date: '1971-07-26'
   end_date: 
   label: 'Четвертая высадка на Луне'
+  location: usa
   description: '"Апполон-15"'
   source: wikipedia
   categories:
@@ -555,6 +786,7 @@ fifth_moon_landing:
   start_date: '1972-04-16'
   end_date: 
   label: 'Пятая высадка на Луне'
+  location: usa
   description: '"Апполон-16"'
   source: wikipedia
   categories:
@@ -564,6 +796,7 @@ six_moon_landing:
   start_date: '1972-12-07'
   end_date: 
   label: 'Шестая высадка на Луне'
+  location: usa
   description: '"Апполон-17"'
   source: wikipedia
   categories:
@@ -573,6 +806,7 @@ soyuz_apollon:
   start_date: '1975-06-15'
   end_date: 
   label: 'Союз-Аполлон'
+  location:
   description: ''
   source: wikipedia
   categories:
@@ -582,6 +816,7 @@ first_mir:
   start_date: '1987-02-05'
   end_date: 
   label: 'Первая экспедиция на станции Мир'
+  location: russia
   description: ''
   source: wikipedia
   categories:
@@ -591,6 +826,7 @@ hubble_start:
   start_date: '1990-04-24'
   end_date: 
   label: 'Запуск телескопа Хаббл'
+  location: usa
   description: ''
   source: wikipedia
   categories:
@@ -600,6 +836,7 @@ last_mir:
   start_date: '2000-04-04'
   end_date: 
   label: 'Последняя экспедиция на станцию Мир'
+  location: russia
   description: ''
   source: wikipedia
   categories:
@@ -609,6 +846,7 @@ mir_drown:
   start_date: '2001-03-23'
   end_date: 
   label: 'Затопление станции Мир'
+  location: russia
   description: ''
   source: wikipedia
   categories:
@@ -618,6 +856,7 @@ mks_first_residents:
   start_date: '2000-11-02'
   end_date: 
   label: 'Первый экипаж МКС'
+  location: russia
   description: ''
   source: wikipedia
   categories:
@@ -627,6 +866,7 @@ china_first_manned_flight:
   start_date: '2003-10-15'
   end_date: 
   label: 'Shenzhou 5'
+  location: 
   description: 'Первый китайский пилотируемый корабль.'
   source: wikipedia
   categories:
@@ -636,15 +876,169 @@ first_private_suborbital:
   start_date: '2004-06-21'
   end_date: 
   label: 'SpaceShipOne'
+  location: usa
   description: 'Первый частный суборбитальный пилотируемый полёт.'
   source: wikipedia
   categories:
     - space
 
+# nuclear
+    
+first_nuclear_plant:
+  start_date: '1954-06-27'
+  end_date: 
+  label: 'Первая АЭС в Обнинске'
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+chernobol_accident:
+  start_date: '1986-04-26'
+  end_date: 
+  label: 'Авария на Чернобыльской АЭС'
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+fukushima_accident:
+  start_date: '2011-03-11'
+  end_date: 
+  label: 'Авария на АЭС Фукушима-1'
+  location: japan
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+three_mile_island_accident:
+  start_date: '1979-03-28'
+  end_date: 
+  label: 'Авария на АЭС Three Mile Island'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+hiroshima_bombing:
+  start_date: '1945-08-06'
+  end_date: 
+  label: 'Бомбардировка Хиросимы'
+  location: japan
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+nagasaki_bombing:
+  start_date: '1945-08-09'
+  end_date: 
+  label: 'Бомбардировка Нагасаки'
+  location: japan
+  description: ''
+  source: wikipedia
+  categories:
+    - nuclear_energy
+    
+first_nuclear_electricity:
+  start_date: '1948-09-03'
+  end_date: 
+  label: 'Первое электричество из ядерного реактора'
+  location: usa
+  description: 'Oak Ridge, Tennessee'
+  source: wikipedia
+  categories:
+    - nuclear_energy
+
+# war
+
+vietnam_war:
+  start_date: '1955-11-01'
+  end_date: '1975-04-30'
+  label: 'Война во Вьетнаме'
+  period: true
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - wars
+    
+soviet_afgan_war:
+  start_date: '1979-12-24'
+  end_date: '1989-02-15'
+  label: 'Афганская война'
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - war
+
+second_boer_war:
+  start_date: '1899-10-11'
+  end_date: '1902-05-31'
+  label: 'Вторая англо-бурская война'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - war
+    
+# biotech
+    
+first_aids_in_north_america:
+  start_date: '1969-05-15'
+  end_date: 
+  label: 'Первый задокументированный HIV-1 в Северной Америке'
+  location: usa 
+  description: 'Robert Rayford'
+  source: wikipedia
+  categories:
+    - biotech
+
+congolese_man:
+  start_date: '1959'
+  end_date: 
+  label: 'Congolese man'
+  location: 
+  description: 'One of the earliest documented HIV-1 infections was discovered in a preserved blood sample taken in 1959 from a man from Léopoldville in the Belgian Congo.'
+  source: wikipedia
+  categories:
+    - biotech
+
+# history
+
+# klondike_gold_rush:
+#   start_date: '1896'
+#   end_date: '1899'
+#   label: 'Klondike Gold Rush'
+#   period: true
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - history
+
+1918_flu_pandemic:  
+  start_date: '1918-01'
+  end_date: '1920-12'
+  label: 'Испанский грипп'
+  period: true
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - history
+
 # :
 #   start_date: ''
 #   end_date: 
 #   label: ''
+#   location: 
 #   description: ''
 #   source: wikipedia
 #   categories:
@@ -654,6 +1048,7 @@ first_private_suborbital:
 #   start_date: ''
 #   end_date: 
 #   label: ''
+#   location: 
 #   description: ''
 #   source: wikipedia
 #   categories:
@@ -663,7 +1058,538 @@ first_private_suborbital:
 #   start_date: ''
 #   end_date: 
 #   label: ''
+#   location: 
 #   description: ''
 #   source: wikipedia
 #   categories:
 #     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - space
+
+
+# https://en.wikipedia.org/wiki/Automated_teller_machine#History
+# The first modern ATM was an IBM 2984 and came into use at Lloyds
+# Bank, Brentwood High Street, Essex, England in December 1972.
+
+# Премьер-министры Израиля
+# https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80-%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80_%D0%98%D0%B7%D1%80%D0%B0%D0%B8%D0%BB%D1%8F
+
+# 1970
+#
+# 17 ноября — АМС «Луна-17» доставила на поверхность Моря Дождей первый Луноход.
+# 17 ноября — зарегистрирована Компьютерная мышь. Дуглас Енгельбарт
+# получил патент № 3 541 541. Официально изобретение называлось
+# «Индикатор Х-Y-позиции для системы с дисплеем». Деревянная коробочка с
+# двумя металлическими колёсиками была прозвана «мышкой» из-за провода,
+# напоминавшего хвост[4].
+
+# 1971
+# 15 ноября — фирма Intel выпускает свой первый микропроцессор — модель 4004

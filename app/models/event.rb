@@ -9,8 +9,9 @@ class Event < ActiveRecord::Base
   ]
   
   belongs_to :source
-
+  belongs_to :location, class_name: Category, foreign_key: 'location_id'
   has_and_belongs_to_many :categories
+  
 
   before_save :setup_dates
   
@@ -19,9 +20,15 @@ class Event < ActiveRecord::Base
   }
   
   scope :from_categories, lambda{|category_ids|
-    where(id: (ids_from_categories(category_ids)+ids_from_categories_via_sources(category_ids)))
+    where(id:
+            (
+              ids_from_categories(category_ids) +
+              ids_from_categories_via_sources(category_ids) +
+              ids_from_categories_by_locations(category_ids)
+            )
+         )
   }
-
+  
   scope :sorted, lambda{
     order('start_date')
   }
@@ -34,6 +41,10 @@ class Event < ActiveRecord::Base
     Event.joins(:source).where(sources: {category_id: category_ids}).pluck(:id)
   end
     
+  def self.ids_from_categories_by_locations(category_ids)
+    Event.where(location_id: category_ids).pluck(:id)
+  end
+  
   def self.by_year(events)
         
     events_by_year = events.group_by{|e| e.start_date.year}

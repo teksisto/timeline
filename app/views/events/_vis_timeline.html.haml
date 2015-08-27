@@ -14,14 +14,23 @@
 
   // Create a DataSet (allows two way data-binding)
   var items = new vis.DataSet(
-    #{data_for_vis_timeline(events)}
+    #{data_for_vis_timeline(events)[:items]}
   );
 
+  var groups = new vis.DataSet(
+    #{data_for_vis_timeline(events)[:groups]} 
+  );
+  
   // Configuration for the Timeline
   var options = {
-    type: 'point',
-    minHeight: 500
+    // align: 'left',
+    // type: 'point',
+    // minHeight: 500,
+    min: '1750-01-01',
+    max: '2020-01-01',
+    zoomMin: 10000*60*60*24*31,
+    zoomMax: 10000*60*60*24*31*12*100
   };
 
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, options);
+  var timeline = new vis.Timeline(container, items, groups, options);

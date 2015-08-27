@@ -46,6 +46,13 @@ technology:
   icon: 
   parent: event_categories
 
+biotech:
+  label: "bio"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: event_categories
+  
 nuclear_energy:
   label: "nuclear energy"
   description: 
@@ -113,6 +120,30 @@ politics:
   icon: 
   parent: event_categories
 
+head_of_state:
+  label: "head of state"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: politics
+
+wars:
+  label: "wars"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: politics
+
+# History
+
+history:
+  label: "history"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: event_categories
+
+  
 # Source categories
   
 source_categories:
@@ -142,3 +173,33 @@ site:
   color: "#F8931F"
   icon: "external-link"
   parent: source_categories
+
+# Location
+
+location_categories:
+  label: "Location categories"
+  description: 
+  color: ""
+  icon: 
+  parent:
+
+russia:
+  label: "Россия"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories
+    
+usa:
+  label: "USA"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories
+
+japan:
+  label: "Япония"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories

@@ -16,6 +16,10 @@ class Category < ActiveRecord::Base
     self.roots.where(label: 'Source categories').first
   end
 
+  def self.locations_root
+    self.roots.where(label: 'Location categories').first
+  end
+  
   def event_category?
     ancestors.include?(self.class.events_root)
   end

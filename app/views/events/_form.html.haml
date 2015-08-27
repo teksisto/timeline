@@ -18,11 +18,17 @@
     = error_span(@event[:end_date])
 
   .form-group
+    = f.label :period, class: 'col-sm-2 control-label'
+    .controls.col-sm-1
+      = f.check_box :period, class: 'form-control'
+    = error_span(@event[:period])
+
+  .form-group
     = f.label :age, class: 'col-sm-2 control-label'
     .controls.col-sm-1
       = f.check_box :age, class: 'form-control'
     = error_span(@event[:age])
-
+    
   .form-group
     = f.label :description, class: 'col-sm-2 control-label'
     .controls.col-sm-10
@@ -42,6 +48,15 @@
     = error_span(@event[:source_id])
     :javascript
       $("#event_category_ids").select2();
-    
+
+  .form-group
+    = f.label :location_id, class: 'col-sm-2 control-label'
+    .controls.col-sm-10
+      = f.select 'location_id', category_options_for_select(Category.locations_root, @event.location_id), {include_blank: true}
+    = error_span(@event[:source_id])
+    :javascript
+      $("#event_location_id").select2();
+
+      
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), events_path, :class => 'btn btn-default'

@@ -337,6 +337,7 @@ DEPENDENCIES
   select2-rails
   spring
   sqlite3
+  sxp
   therubyracer
   turbolinks
   twitter-bootstrap-rails

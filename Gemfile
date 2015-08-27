@@ -85,4 +85,4 @@ gem "date_validator"
 gem 'cancancan'
 gem "paperclip", "~> 4.3"
 
-
+gem 'sxp'
