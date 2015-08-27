@@ -1012,16 +1012,16 @@ congolese_man:
 
 # history
 
-# klondike_gold_rush:
-#   start_date: '1896'
-#   end_date: '1899'
-#   label: 'Klondike Gold Rush'
-#   period: true
-#   location: 
-#   description: ''
-#   source: wikipedia
-#   categories:
-#     - history
+klondike_gold_rush:
+  start_date: '1896'
+  end_date: '1899'
+  label: 'Klondike Gold Rush'
+  period: true
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - history
 
 1918_flu_pandemic:  
   start_date: '1918-01'

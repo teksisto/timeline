@@ -87,12 +87,29 @@ class Event < ActiveRecord::Base
         self[:end_date] = self[:start_date] + 1.year - 1.day
       end
     end
-    
+    if self[:end_date].present?
+      expand_end_date
+    end
   end
 
   def parse_start_date
+    parse_date(start_date_before_type_cast)
+  end
+
+  def parse_end_date
+    parse_date(end_date_before_type_cast)
+  end
+
+  def expand_end_date
+    year, month, day = parse_end_date
+    month = 12 unless month && day
+    day = 31 unless day
+    self[:end_date] = Date.new(year, month, day)
+  end
+  
+  def parse_date(value)
     # to_s в следующей строке нужен, потому что fixtures внезапно возвращает integer
-    str = start_date_before_type_cast.to_s
+    str = value.to_s
     matches = str.match(/(\d{4})-?(\d{2})?-?(\d{2})?/).to_a
     # нам нужны только группы, а первый матч - это вся строка, поэтому он выкидывается
     matches.shift
