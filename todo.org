@@ -16,7 +16,8 @@
 ** DONE Ошибка когда в категории нет событий
 ** FIX item[type=background] игнорирует height
 ** FIX Уменьшение размера цитат в презентациях
-** REF Убрать Toc, прикрутить все к Section
+** REF Убрать Toc, прикрутить все к Source
+** REF Переименовать Source в Section
 ** REF Перенести events/fullscreen/vis в events/vis
 ** REF Сделать layouts/minimal
 ** ADD events/filter - группировать по странам

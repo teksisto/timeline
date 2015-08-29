@@ -16,7 +16,7 @@
           %p
             = by_line_links(source)
             = link_to source.label, source_path(source)
-          %p= source.description
+          %p= # TODO source.outline.description
         %td
           = link_to 'Quotes', quotes_source_path(source), :class => 'btn btn-xs btn-default'
           = link_to 'Events', events_path(source_ids: [source]), :class => 'btn btn-xs btn-default'

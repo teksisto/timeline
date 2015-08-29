@@ -5,10 +5,6 @@ require 'rails/test_help'
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
-
-  # Category.rebuild!
-  # Toc.rebuild!
-  # load "#{Rails.root}/db/seeds.rb"
   
   # Add more helper methods to be used by all tests here...
 end

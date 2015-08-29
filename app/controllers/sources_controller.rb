@@ -1,10 +1,10 @@
 class SourcesController < ApplicationController
-  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_toc, :create_toc, :quotes]
+  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_section, :create_section, :quotes]
 
   # GET /sources
   # GET /sources.json
   def index
-    @sources = Source.all
+    @sources = Source.roots
   end
 
   # GET /sources/1
@@ -61,12 +61,12 @@ class SourcesController < ApplicationController
     end
   end
 
-  def new_toc
+  def new_section
 
   end
 
-  def create_toc
-    if @source.parse_toc(params[:toc_source])
+  def create_section
+    if @source.parse_org_mode(params[:section_source])
       redirect_to @source
     else
       redirect_to :new

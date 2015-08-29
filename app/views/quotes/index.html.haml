@@ -7,7 +7,7 @@
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:label)
       %th= model_class.human_attribute_name(:content)
-      %th= model_class.human_attribute_name(:toc_id)
+      %th= model_class.human_attribute_name(:source_id)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -16,7 +16,7 @@
         %td= link_to quote.id, quote_path(quote)
         %td= quote.label
         %td= quote.content
-        %td= quote.toc_id
+        %td= link_to quote.source_id, quote.source
         %td=l quote.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_quote_path(quote), :class => 'btn btn-default btn-xs'

@@ -6,8 +6,7 @@ Category.rebuild!
 Category.all.each{|c| c.save}
 Event.all.each{|e| e.save}
 
-Toc.rebuild!
-
+Source.rebuild!
 Source.all.each{|s| s.save}
 
 org_files = {
@@ -18,6 +17,6 @@ org_files = {
 
 for label, file in org_files
   source = Source.where(label: label).first
-  source.parse_toc(IO.read(file))
+  source.parse_org_mode(IO.read(file))
   puts "Imported #{file} into #{label}.".cyan
 end

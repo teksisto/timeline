@@ -1,39 +1,30 @@
+require 'org_toc'
+
 class Source < ActiveRecord::Base
 
-  include SourcesHelper
+  acts_as_nested_set
   
   has_and_belongs_to_many :authors,
                           class_name: Person,
                           join_table: 'people_sources',
                           association_foreign_key: 'person_id'
   
-  has_many :events
+  has_one    :outline
+  has_many   :quotes
+  has_many   :events
   belongs_to :category
-
-  belongs_to :toc
-
-  after_save :add_root_toc
   
-  def add_root_toc
-    unless toc
-      create_toc(label: self.label)
-    end
-  end
-
-  def parse_toc(source)
-    toc && toc.parse(source)
-  end
-
-  def quotes
-    if toc
-      Quote.where(toc_id: toc.descendants.select(:id))
-    else
-      []
-    end
-  end
-
+  include SourcesHelper
+  
   def label_with_by_line
     by_line_text(self) + self.label
+  end
+
+  def parse_org_mode(org_source)
+
+    root = OrgToc.new(content: org_source.split("\n"), label: self.label)
+    root.parse
+    root.render_to_db(self)
   end
   
 end

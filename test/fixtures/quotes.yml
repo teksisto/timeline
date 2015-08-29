@@ -1,8 +1,8 @@
 one: 
   content: "Test Michigan quote." 
-  toc: michigan_toc
+  source: michigan
 
 two:
   content: "Test Stall quote." 
-  toc: stall_toc
+  source: stall
   

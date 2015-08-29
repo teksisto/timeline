@@ -56,6 +56,7 @@ class Event < ActiveRecord::Base
   
   def self.by_year(events)
     unless events.empty?
+      
       events_by_year = events.group_by{|e| e.start_date.year}
 
       start_year = events.minimum(:start_date).year

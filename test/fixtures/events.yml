@@ -117,7 +117,7 @@ George_Washington_term:
   end_date: 1797-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -128,7 +128,7 @@ John_Adams_term:
   end_date: 1801-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -139,7 +139,7 @@ Thomas_Jefferson_term:
   end_date: 1809-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -150,7 +150,7 @@ James_Madison_term:
   end_date: 1817-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -161,7 +161,7 @@ James_Monroe_term:
   end_date: 1825-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -172,7 +172,7 @@ John_Quincy_Adams_term:
   end_date: 1829-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -183,7 +183,7 @@ Andrew_Jackson_term:
   end_date: 1837-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -194,7 +194,7 @@ Martin_Van_Buren_term:
   end_date: 1841-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -205,7 +205,7 @@ William_Henry_Harrison_term:
   end_date: 1841-04-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -216,7 +216,7 @@ John_Tyler_term:
   end_date: 1845-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -227,7 +227,7 @@ James_K_Polk_term:
   end_date: 1849-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -238,7 +238,7 @@ Zachary_Taylor_term:
   end_date: 1850-07-09
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -249,7 +249,7 @@ Millard_Fillmore_term:
   end_date: 1853-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -260,7 +260,7 @@ Franklin_Pierce_term:
   end_date: 1857-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -271,7 +271,7 @@ James_Buchanan_term:
   end_date: 1861-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -282,7 +282,7 @@ Abraham_Lincoln_term:
   end_date: 1865-04-15
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -293,7 +293,7 @@ Andrew_Johnson_term:
   end_date: 1869-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -304,7 +304,7 @@ Ulysses_S_Grant_term:
   end_date: 1877-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -315,7 +315,7 @@ Rutherford_B_Hayes_term:
   end_date: 1881-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -326,7 +326,7 @@ James_A_Garfield_term:
   end_date: 1881-09-19
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -337,7 +337,7 @@ Chester_A_Arthur_term:
   end_date: 1885-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -348,7 +348,7 @@ Grover_Cleveland_term:
   end_date: 1889-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -359,7 +359,7 @@ Benjamin_Harrison_term:
   end_date: 1893-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -370,7 +370,7 @@ Grover_Cleveland_term:
   end_date: 1897-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -381,7 +381,7 @@ William_McKinley_term:
   end_date: 1901-09-14
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -392,7 +392,7 @@ Theodore_Roosevelt_term:
   end_date: 1909-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -403,7 +403,7 @@ William_Howard_Taft_term:
   end_date: 1913-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -414,7 +414,7 @@ Woodrow_Wilson_term:
   end_date: 1921-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -425,7 +425,7 @@ Warren_G_Harding_term:
   end_date: 1923-08-02
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -436,7 +436,7 @@ Calvin_Coolidge_term:
   end_date: 1929-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -447,7 +447,7 @@ Herbert_Hoover_term:
   end_date: 1933-03-04
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -458,7 +458,7 @@ Franklin_D_Roosevelt_term:
   end_date: 1945-04-12
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -469,7 +469,7 @@ Harry_S_Truman_term:
   end_date: 1953-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -480,7 +480,7 @@ Dwight_D_Eisenhower_term:
   end_date: 1961-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -491,7 +491,7 @@ John_F_Kennedy_term:
   end_date: 1963-11-22
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -502,7 +502,7 @@ Lyndon_B_Johnson_term:
   end_date: 1969-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -513,7 +513,7 @@ Richard_Nixon_term:
   end_date: 1974-08-09
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -524,7 +524,7 @@ Gerald_Ford_term:
   end_date: 1977-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -535,7 +535,7 @@ Jimmy_Carter_term:
   end_date: 1981-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -546,7 +546,7 @@ Ronald_Reagan_term:
   end_date: 1989-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -557,7 +557,7 @@ George_H_W_Bush_term:
   end_date: 1993-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -568,7 +568,7 @@ Bill_Clinton_term:
   end_date: 2001-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -579,7 +579,7 @@ George_W_Bush_term:
   end_date: 2009-01-20
   age: true
   period: true
-  source: wiki
+  source: wikipedia
   categories:
     - head_of_state
 
@@ -976,7 +976,7 @@ soviet_afgan_war:
   description: ''
   source: wikipedia
   categories:
-    - war
+    - wars
 
 second_boer_war:
   start_date: '1899-10-11'

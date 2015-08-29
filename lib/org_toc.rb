@@ -15,10 +15,6 @@ class OrgToc
   attr_accessor :previous_heading
   attr_accessor :line
   
-  def self.import_to_db_from_file(filepath, root)
-
-  end
-  
   def initialize(options)
     @children = options[:children] || []
     @content = options[:content] || []
@@ -101,14 +97,14 @@ class OrgToc
   def render_to_db(parent)
 
     unless @level == 0
-      toc = Toc.create(label: label, parent: parent)
+      source = Source.create(label: label, parent: parent)
       if @text.present?
-        toc.create_outline(content: text)
-        @quotes.each{|q| toc.quotes.create(content: q)}
+        source.create_outline(content: text)
+        @quotes.each{|q| source.quotes.create(content: q)}
       end
     end
 
-    @children.each{|c| c.render_to_db(toc || parent)}
+    @children.each{|c| c.render_to_db(source || parent)}
   end
   
   private

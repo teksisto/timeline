@@ -1,0 +1,7 @@
+= form_tag create_section_source_path do
+  .form-group
+    .controls
+      = text_area_tag :section_source, params[:section_source], style: 'width: 100%; min-height: 200px;'
+
+  = submit_tag 'Add table of contents', class: 'btn btn-primary'
+  

@@ -1,7 +1,5 @@
 class Outline < ActiveRecord::Base
 
-  has_one :toc
-
-  
+  belongs_to :source
 
 end

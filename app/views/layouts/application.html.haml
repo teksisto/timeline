@@ -45,13 +45,13 @@
             = link_to 'Categories', categories_path
 
         %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'tocs'}"}
-            = link_to 'ToCs', tocs_path
-            
-        %span{style: 'margin-right: 10px;'}
           %i.fa.fa-square{style: "color: #{'red' if params[:controller] == 'outlines'}"}
             = link_to 'Outlines', outlines_path
 
         %span{style: 'margin-right: 10px;'}
           %i.fa.fa-user{style: "color: #{'red' if params[:controller] == 'people'}"}
             = link_to 'People', people_path
+
+        %span{style: 'margin-right: 10px;'}
+          %i.fa.fa-circle{style: "color: #{'red' if params[:controller] == 'quotes'}"}
+            = link_to 'Quotes', quotes_path

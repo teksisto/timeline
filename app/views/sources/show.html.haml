@@ -6,7 +6,7 @@
   = @source.label
 
 %p
-  = @source.description
+  = # TODO @source.outline.description
 
 - if @source.link.present?
   %p
@@ -16,16 +16,22 @@
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(@source), :class => 'btn btn-default'
 = link_to t('.destroy', :default => t("helpers.links.destroy")), source_path(@source), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default'
 
-= link_to 'Add table of contents', new_toc_source_path(@source), :class => 'btn btn-default'
+= link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
 = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
 = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
 
-- for t in @source.toc.descendants.includes(:outline)
-  = content_tag("h#{t.depth}", t.label) do
-    = link_to t.label, t
-  - if t.outline
-    %p= temp_org_render(t.outline.content)
-    - for quote in t.quotes
+- if @source.outline
+  %p= temp_org_render(@source.outline.content) # TODO temp_org_render?
+  - for quote in @source.quotes
+    %blockquote
+      %p= quote.content 
+
+- for section in @source.descendants.includes(:outline)
+  = content_tag("h#{section.depth}", section.label) do
+    = link_to section.label, section
+  - if section.outline
+    %p= temp_org_render(section.outline.content) # TODO temp_org_render?
+    - for quote in section.quotes
       %blockquote
         %p= quote.content 
 

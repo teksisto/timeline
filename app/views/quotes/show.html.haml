@@ -11,9 +11,9 @@
   %br
   = @quote.content
 %p
-  %strong= model_class.human_attribute_name(:toc_id) + ':'
+  %strong= model_class.human_attribute_name(:soource_id) + ':'
   %br
-  = @quote.toc_id
+  = @quote.source_id
 
 
 = link_to t('.back', :default => t("helpers.links.back")), quotes_path, :class => 'btn btn-default'

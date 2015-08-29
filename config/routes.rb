@@ -10,13 +10,12 @@ Rails.application.routes.draw do
   
   resources :quotes
   resources :outlines
-  resources :tocs
   resources :categories
 
   resources :sources do
     member do
-      get :new_toc
-      post :create_toc
+      get :new_section
+      post :create_section
       get :quotes
     end
   end

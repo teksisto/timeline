@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150829023840) do
+ActiveRecord::Schema.define(version: 20150829132857) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "label"
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20150829023840) do
     t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "source_id"
   end
 
   create_table "people", force: :cascade do |t|
@@ -86,35 +87,22 @@ ActiveRecord::Schema.define(version: 20150829023840) do
   create_table "quotes", force: :cascade do |t|
     t.string   "label"
     t.text     "content"
-    t.integer  "toc_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "source_id"
   end
 
   create_table "sources", force: :cascade do |t|
     t.string   "label"
-    t.text     "description"
     t.string   "link"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
     t.integer  "category_id"
-    t.integer  "toc_id"
-  end
-
-  create_table "tocs", force: :cascade do |t|
-    t.string   "label"
-    t.integer  "outline_id"
     t.integer  "parent_id"
     t.integer  "lft"
     t.integer  "rgt"
     t.integer  "depth",          default: 0
     t.integer  "children_count", default: 0
-    t.datetime "created_at",                 null: false
-    t.datetime "updated_at",                 null: false
   end
-
-  add_index "tocs", ["lft"], name: "index_tocs_on_lft"
-  add_index "tocs", ["parent_id"], name: "index_tocs_on_parent_id"
-  add_index "tocs", ["rgt"], name: "index_tocs_on_rgt"
 
 end
