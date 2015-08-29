@@ -1,21 +1,16 @@
 class EventsController < ApplicationController
-  before_action :set_event, only: [:show, :edit, :update, :destroy]
-
+  
+  before_action :set_event,  only: [:show, :edit, :update, :destroy]
+  before_action :set_events, only: [:index, :fullscreen]
+  
   # GET /events
   # GET /events.json
   def index
-    @events = Event.all
-    if params[:source_ids] && params[:source_ids].first.present?
-      @events = @events.from_sources(params[:source_ids])
-    end
-    if params[:category_ids] && params[:category_ids].first.present?
-      @events = @events.from_categories(params[:category_ids])
-    end
-
-    @events = @events.sorted
     
     @events_by_year = Event.by_year(@events)
 
+    @fullscreen = false
+    
     render_method = params[:render_method] && params[:render_method].first
     if render_method.present? && Event::RENDER_METHODS.include?(render_method)
       @partial = render_method
@@ -25,6 +20,11 @@ class EventsController < ApplicationController
     
   end
 
+  def fullscreen
+    @fullscreen = true
+    render layout: 'vis_fullscreen'
+  end
+  
   # GET /events/1
   # GET /events/1.json
   def show
@@ -85,6 +85,17 @@ class EventsController < ApplicationController
       @event = Event.find(params[:id])
     end
 
+    def set_events
+      @events = Event.all
+      if params[:source_ids] && params[:source_ids].first.present?
+        @events = @events.from_sources(params[:source_ids])
+      end
+      if params[:category_ids] && params[:category_ids].first.present?
+        @events = @events.from_categories(params[:category_ids])
+      end
+      @events = @events.sorted
+    end
+    
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:label,

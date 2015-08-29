@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title Timeline
+    = csrf_meta_tags
+  %body{style: 'margin: 0; padding: 0;'}
+    = yield
+      

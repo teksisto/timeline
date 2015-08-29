@@ -21,7 +21,11 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :events
+  resources :events do
+    collection do
+      get :fullscreen
+    end
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

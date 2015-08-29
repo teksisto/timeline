@@ -4,11 +4,11 @@
 :css
   .vis-item.vis-background.negative {
     background-color: rgba(3, 3, 3, 0.2);
-  }#e8f6e2
+  }
 
 #visualization
 
-- data = data_for_vis_timeline(events)
+- data = data_for_vis_timeline(events, {fullscreen: fullscreen})
 
 :javascript
   
@@ -25,15 +25,7 @@
   );
   
   // Configuration for the Timeline
-  var options = {
-    // align: 'left',
-    // type: 'point',
-    // minHeight: 500,
-    min: '1750-01-01',
-    max: '2020-01-01',
-    zoomMin: 10000*60*60*24*31,
-    zoomMax: 10000*60*60*24*31*12*100
-  };
-
+  var options = #{data[:options]}
+  
   // Create a Timeline
   var timeline = new vis.Timeline(container, items, groups, options);

@@ -10,7 +10,7 @@ module EventsHelper
     options_for_select(options, selected)
   end
 
-  def data_for_vis_timeline(events)
+  def data_for_vis_timeline(events, options = {})
     age_css_class = ''
     items = events.map do |e|
       hash = {
@@ -38,11 +38,34 @@ module EventsHelper
         content: l.label
       }
     }
+    inline_options = {
+      type: 'point',
+      # minHeight: 500,
+      min: '1750-01-01',
+      max: '2020-01-01'
+      # zoomMin: 10000*60*60*24*31,
+      # zoomMax: 10000*60*60*24*31*12*100
+      }
+
+    fullscreen_options = {
+      width:  1915,
+      height: 1079,
+      min: '1750-01-01',
+      max: '2020-01-01',
+      zoomMin: 10000*60*60*24*31,
+      zoomMax: 10000*60*60*24*31*12*100
+    }
     
     data = Hash.new
-    data[:items] = JSON.pretty_generate(items)
-    data[:groups] = JSON.pretty_generate(groups)
+    data[:items]              = JSON.pretty_generate(items)
+    data[:groups]             = JSON.pretty_generate(groups)
 
+    if options[:fullscreen]
+      data[:options] = JSON.pretty_generate(fullscreen_options)
+    else
+      data[:options] = JSON.pretty_generate(inline_options)
+    end
+    
     data
   end
 
