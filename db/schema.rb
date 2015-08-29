@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150826150627) do
+ActiveRecord::Schema.define(version: 20150829023840) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "label"
@@ -58,6 +58,7 @@ ActiveRecord::Schema.define(version: 20150826150627) do
     t.date     "end_date"
     t.boolean  "period",      default: false
     t.integer  "location_id"
+    t.text     "details_url"
   end
 
   create_table "outlines", force: :cascade do |t|

@@ -36,6 +36,12 @@
     = error_span(@event[:description])
 
   .form-group
+    = f.label :details_url, class: 'col-sm-2 control-label'
+    .controls.col-sm-10
+      = f.text_area :details_url, class: 'form-control'
+    = error_span(@event[:details_url])
+    
+  .form-group
     = f.label :source_id, class: 'col-sm-2 control-label'
 
     .controls.col-sm-10

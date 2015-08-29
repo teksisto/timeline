@@ -28,6 +28,15 @@ class Event < ActiveRecord::Base
             )
          )
   }
+
+  scope :from_location, lambda{|category|
+    if category.kind_of?(Integer)
+      category_id = category_id
+    else
+      category_id = category.id
+    end
+    where(location_id: category_id)
+  }
   
   scope :sorted, lambda{
     order('start_date')

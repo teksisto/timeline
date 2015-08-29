@@ -1,22 +1,25 @@
 michigan_toc:
-  label: "University of Michigan — Internet History Technology and Security"
+  label: 'University of Michigan — Internet History Technology and Security'
   outline: michigan_ouline
   
 stall_toc:                                                                     
-  label: "Clifford Stall — The Cuckoos egg"                                 
+  label: 'Clifford Stall — The Cuckoos egg'                                 
   outline: stall_ouline
   
 ghost_toc:                                                                     
-  label: "Kevin Mitnick — Ghost in the wires"                               
+  label: 'Kevin Mitnick — Ghost in the wires'                               
 
 imdb_toc:                                                                      
-  label: "IMDb"                                                             
+  label: 'IMDb'                                                             
 
+wikipedia_toc:
+  label: 'Wikipedia'
+  
 zhukov_toc:                                                                    
-  label: "Дмитрий Жуков — Биология поведения: гуморальные механизмы"        
+  label: 'Дмитрий Жуков — Биология поведения: гуморальные механизмы'        
 
 quotes_toc:                                                                    
-  label: "Александр Ткачев — Цитатник"                                      
+  label: 'Александр Ткачев — Цитатник'                                      
 
 taleb_toc:                                                                     
-  label: "Нассим Николас Талеб — Черный лебедь"                             
+  label: 'Нассим Николас Талеб — Черный лебедь'                             

@@ -1,12 +1,25 @@
 - model_class = Event
 
 %h3= @event.label
+
 %p
   %strong=  @event.start_date
-  &ndash;
-  %strong=  @event.end_date
-  
+  - if @event.period?
+    &ndash;
+    %strong=  @event.end_date
+
+- if @event.location
+  %p
+    %strong= model_class.human_attribute_name(:location_id) + ':'
+    = link_to @event.location.label, @event.location
+    
 %p= @event.description
+
+- if @event.details_url
+  %p
+    %strong= model_class.human_attribute_name(:details_url) + ':'
+    %i.fa.fa-link
+      = link_to @event.details_url
 
 %p
   %strong= model_class.human_attribute_name(:source) + ':'

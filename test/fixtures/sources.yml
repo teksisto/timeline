@@ -27,6 +27,13 @@ wikipedia:
   link: "https://wikipedia.org"
   description: "Источник с категорией site."
   category: site
+  toc: wikipedia_toc
+
+imdb:
+  label: "IMDb"
+  link: "https://imdb.com"
+  description: "Источник с категорией site."
+  category: site
   toc: imdb_toc
   
 zhukov:

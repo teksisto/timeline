@@ -27,6 +27,10 @@ class Category < ActiveRecord::Base
   def source_category?
     ancestors.include?(self.class.sources_root)
   end
+
+  def location_category?
+    ancestors.include?(self.class.locations_root)
+  end
   
   def inherit_parent_color
     if parent.present? && !color.present?

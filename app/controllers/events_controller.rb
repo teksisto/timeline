@@ -1,3 +1,4 @@
+# coding: utf-8
 class EventsController < ApplicationController
   
   before_action :set_event,  only: [:show, :edit, :update, :destroy]
@@ -10,8 +11,13 @@ class EventsController < ApplicationController
     @events_by_year = Event.by_year(@events)
 
     @fullscreen = false
-    
+
+    # Поле render_method сделано multiply=true только потому что
+    # браузер его красиво рисует. Приводит это к тому, что можно
+    # одновременно выбрать несколько методов, поэтому и нужна
+    # следующая строчка.
     render_method = params[:render_method] && params[:render_method].first
+    
     if render_method.present? && Event::RENDER_METHODS.include?(render_method)
       @partial = render_method
     else
@@ -106,6 +112,7 @@ class EventsController < ApplicationController
                                     :age,
                                     :period,
                                     :location_id,
+                                    :details_url,
                                     {:category_ids => []})
     end
 end

@@ -24,6 +24,11 @@
   %div
     = render partial: 'sources/editor', locals: {sources: @category.sources}
 
+- if @category.location_category?
+  %div
+    = render partial: 'events/editor', locals: {events: Event.from_location(@category)}
+
+    
 %hr
     
 = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn btn-default'
