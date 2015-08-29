@@ -11,7 +11,7 @@ stall:
   label: "The Cuckoos egg"
   link: ""
   description: "Несколько событий, привязанных к источнику."
-  category: book
+  category: source_book
   toc: stall_toc
   
 ghost:
@@ -19,7 +19,7 @@ ghost:
   label: "Ghost in the wires"
   link: ""
   description: "Несколько событий, привязанных к источнику."
-  category: book
+  category: source_book
   toc: ghost_toc
   
 wikipedia:
@@ -41,7 +41,7 @@ zhukov:
   label: "Биология поведения: гуморальные механизмы"
   link: ""
   description: "Конспект c цитатами."
-  category: book
+  category: source_book
   toc: zhukov_toc
   
 quotes:
@@ -49,7 +49,7 @@ quotes:
   label: "Цитатник"
   link: ""
   description: "Цитатник, который хорошо смотреть в виде презентации."
-  category: book
+  category: source_book
   toc: quotes_toc
   
 taleb:
@@ -57,5 +57,5 @@ taleb:
   label: "Черный лебедь"
   link: ""
   description: "Цитатник с комментариями."
-  category: book
+  category: source_book
   toc: taleb_toc
