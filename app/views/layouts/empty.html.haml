@@ -1,0 +1,9 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title= "Timeline: #{params[:controller]}/#{params[:action]}"
+    = csrf_meta_tags
+  %body
+    
+    = yield

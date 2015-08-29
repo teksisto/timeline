@@ -9,4 +9,11 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 
-Rails.application.config.assets.precompile += %w( slides.js slides.css vis.js vis.css)
+Rails.application.config.assets.precompile += [
+  'slides.js',
+  'slides.css',
+  'vis.js',
+  'vis.css',
+  'jquery.js',
+  'jquery.countdown.js'
+]

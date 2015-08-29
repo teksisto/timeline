@@ -1,0 +1,41 @@
+= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+= javascript_include_tag 'application', 'data-turbolinks-track' => true
+
+= javascript_include_tag 'jquery.countdown', 'data-turbolinks-track' => true
+
+:css
+  body {
+    background-color: #444;
+    color: #ccc;
+  }
+  
+.container-fluid{style: 'margin-top: 10%;'}
+  .row{style: 'font-size: 3em; text-align: center;'}
+    #new_year.col-md-4
+      .fa.fa-tree{style: 'font-size: 3em; color: green;'}
+      #new_year_countdown{style: 'font-size: 3em;'}
+      %div
+        недель до Нового года.
+    #death.col-md-4
+      %span.fa.fa-ban{style: 'font-size: 3em; color: red;'}
+      #death_countdown{style: 'font-size: 3em'}
+      %div
+        недель до смерти.
+    #birthday.col-md-4
+      .fa.fa-gift{style: 'font-size: 3em; color: #00bcff'}
+      #birthday_countdown{style: 'font-size: 3em'}
+      %div
+        недель до Дня Рождения.
+      
+:javascript
+  $('#new_year_countdown').countdown('***REMOVED***', function(event) {
+    $(this).html(event.strftime('%w'));
+  });
+
+  $('#death_countdown').countdown('***REMOVED***', function(event) {
+    $(this).html(event.strftime('%w'));
+  });
+
+  $('#birthday_countdown').countdown('***REMOVED***', function(event) {
+    $(this).html(event.strftime('%w'));
+  });

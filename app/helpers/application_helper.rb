@@ -58,5 +58,5 @@ module ApplicationHelper
                                           })
     @markdown.render(content)
   end
-
+  
 end

@@ -2,11 +2,13 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-    %title Timeline
+    %title= "Timeline: #{params[:controller]}/#{params[:action]}"
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
     = csrf_meta_tags
   %body{style: "width: 90%; margin: auto;"}
+
+    
 
     .page-header
       %div{style: 'font-size: 2.5em; margin-bottom: 40px;'}

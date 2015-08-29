@@ -70,6 +70,7 @@ gem 'rdf-virtuoso'
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis'
   gem 'rails-assets-reveal-js'
+  gem 'rails-assets-jquery.countdown'
 end
 
 
