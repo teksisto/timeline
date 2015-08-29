@@ -55,19 +55,22 @@ class Event < ActiveRecord::Base
   end
   
   def self.by_year(events)
-        
-    events_by_year = events.group_by{|e| e.start_date.year}
+    unless events.empty?
+      events_by_year = events.group_by{|e| e.start_date.year}
 
-    start_year = events.minimum(:start_date).year
-    end_year = events.maximum(:end_date).year
+      start_year = events.minimum(:start_date).year
+      end_year = events.maximum(:end_date).year
 
-    if start_year && end_year
-      for y in start_year..end_year
-        unless events_by_year[y]
-          events_by_year[y] = []
+      if start_year && end_year
+        for y in start_year..end_year
+          unless events_by_year[y]
+            events_by_year[y] = []
+          end
         end
+        events_by_year
+      else
+        {}
       end
-      events_by_year
     else
       {}
     end
