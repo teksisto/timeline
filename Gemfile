@@ -5,7 +5,7 @@ source 'https://rubygems.org'
 #############################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.1'
+gem 'rails', '4.2.2'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
@@ -73,17 +73,22 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-jquery.countdown'
 end
 
+group :development do
+  gem 'bullet'
+  gem 'brakeman', :require => false
+end
+
 
 #############################################################
 # may be useful in the future
 #############################################################
 
 # manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
-gem 'redcarpet'
+# gem 'redcarpet'
 
-gem "select2-rails"
-gem "date_validator"
-gem 'cancancan'
-gem "paperclip", "~> 4.3"
+# gem "select2-rails"
+# gem "date_validator"
+# gem 'cancancan'
+# gem "paperclip", "~> 4.3"
 
 gem 'sxp'
