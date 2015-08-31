@@ -17,9 +17,11 @@ module EventsHelper
         id:      e.id,
         content: e.label,
         start:   e.start_date.strftime('%Y-%m-%d'),
-        end:     e.end_date.strftime('%Y-%m-%d'),
         type:    (e.period ? 'range' : 'point')
       }
+      if e.period
+        hash.merge!(end: e.end_date.strftime('%Y-%m-%d'))
+      end
       if e.location
         hash.merge!(group: e.location.id)
       end

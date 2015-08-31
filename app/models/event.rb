@@ -84,24 +84,39 @@ class Event < ActiveRecord::Base
   
   def setup_dates
     year, month, day = parse_start_date
-    if year && month && day
-      self[:start_date] = Date.new(year, month, day)
-      unless self[:end_date].present?
-        self[:end_date] = self[:start_date]
+
+    if period?
+
+      if year && month && day
+        self[:start_date] = Date.new(year, month, day)
+        unless self[:end_date].present?
+          self[:end_date] = self[:start_date]
+        end
+      elsif year && month && !day
+        self[:start_date] = Date.new(year, month, 1)
+        unless self[:end_date].present?
+          self[:end_date] = self[:start_date] + 1.month - 1.day
+        end
+      elsif year && !month && !day
+        self[:start_date] = Date.new(year, 1, 1)
+        unless self[:end_date].present?
+          self[:end_date] = self[:start_date] + 1.year - 1.day
+        end
       end
-    elsif year && month && !day
-      self[:start_date] = Date.new(year, month, 1)
-      unless self[:end_date].present?
-        self[:end_date] = self[:start_date] + 1.month - 1.day
+      if self[:end_date].present?
+        expand_end_date
       end
-    elsif year && !month && !day
-      self[:start_date] = Date.new(year, 1, 1)
-      unless self[:end_date].present?
-        self[:end_date] = self[:start_date] + 1.year - 1.day
+      
+    else
+      
+      if year && month && day
+        self[:start_date] = Date.new( year, month, day )
+      elsif year && month && !day
+        self[:start_date] = Date.new( year, month, 15  )
+      elsif year && !month && !day
+        self[:start_date] = Date.new( year, 6,     15  )
       end
-    end
-    if self[:end_date].present?
-      expand_end_date
+
     end
   end
 
