@@ -1,4 +1,4 @@
-= form_tag events_path, method: 'get' do
+= form_for @events_filter, {url: events_path, method: 'get'} do |f|
   .filters.well
     
     %div{style: 'margin: -10px 0px 10px -10px;'}
@@ -7,29 +7,30 @@
     %table{style:'width: 100%;'}
       %tr
         %td{rowspan: 2, style:'width: 22%; height: 300px;'}
-          = select_tag 'category_ids',
-              category_options_for_select(Category.roots, params['category_ids']),
-              include_blank:  true,
-              multiple:       true,
+          = f.select :category_ids, 
+              category_options_for_select(Category.roots, @events_filter.category_ids),
+            { include_blank:  true },
+            { multiple:       true,
               class:         'form-control',
               style:         'height: 100%; width: 100%; margin: 0px;',
-              onclick:       'this.form.submit();'
+              onclick:       'this.form.submit();' }
         %td{style:'width: 73%;'}
-          = select_tag 'source_ids',
-              options_from_collection_for_select(Source.roots, :id, :label_with_by_line, params[:source_ids]),
-              include_blank:  true,
-              multiple:       true,
+          = f.select :source_ids,
+              options_from_collection_for_select(Source.roots, :id, :label_with_by_line, @events_filter.source_ids),
+            { include_blank:  true },
+            { multiple:       true,
               class:         'form-control',
               onclick:       'this.form.submit();',
-              style:         'width: 100%;  height: 150px;'
+              style:         'width: 100%;  height: 150px;' }
       %tr
         %td{style:'width: 73%;'}
-          = select_tag 'render_method',
+          = f.select :render_method,
               render_method_options(@partial),
-              multiple:  true,
+            { },
+            { multiple:  true,
               class:    'form-control',
               style:    'width: 100%;  height: 149px;',
-              onclick:  'this.form.submit();'
+              onclick:  'this.form.submit();' }
 
     %div{style: 'margin: 10px 0px 0px 10px;'}
       = check_box_tag 'group_by', onclick:  'this.form.submit();'

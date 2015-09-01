@@ -1,4 +1,3 @@
-# coding: utf-8
 class EventsController < ApplicationController
   
   before_action :set_event,  only: [:show, :edit, :update, :destroy]
@@ -7,24 +6,10 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    
+    Rails.logger.debug @events_filter.inspect.red
     @events_by_year = Event.by_year(@events)
-
     @fullscreen = false
-
-    # Поле render_method сделано multiply=true только потому что
-    # браузер его красиво рисует. Приводит это к тому, что можно
-    # одновременно выбрать несколько методов, поэтому и нужна
-    # следующая строчка.
-    render_method = params[:render_method] && params[:render_method].first
-
-    @partial = 
-      if render_method.present? && Event::RENDER_METHODS.include?(render_method)
-        render_method
-      else
-        Event::RENDER_METHODS.first
-      end
-    
+    @partial = @events_filter.partial
   end
 
   def fullscreen
@@ -93,27 +78,32 @@ class EventsController < ApplicationController
     end
 
     def set_events
-      @events = Event.all.includes(:categories, :location, :source)
-      if params[:source_ids] && params[:source_ids].first.present?
-        @events = @events.from_sources(params[:source_ids])
-      end
-      if params[:category_ids] && params[:category_ids].first.present?
-        @events = @events.from_categories(params[:category_ids])
-      end
-      @events = @events.sorted
+      @events_filter = EventsFilter.new(params[:events_filter])
+      @events = @events_filter.events
     end
     
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
-      params.require(:event).permit(:label,
-                                    :start_date,
-                                    :end_date,
-                                    :description,
-                                    :source_id,
-                                    :age,
-                                    :period,
-                                    :location_id,
-                                    :details_url,
-                                    {:category_ids => []})
+      params.require(:event).permit(
+        :label,
+        :start_date,
+        :end_date,
+        :description,
+        :source_id,
+        :age,
+        :period,
+        :location_id,
+        :details_url,
+        {:category_ids => []}
+      )
     end
+
+    # def events_filter_params
+    #   params.require(:events_filter).permit(
+    #     {:source_ids => []},
+    #     {:category_ids => []},
+    #     :render_method
+    #   )
+    # end
+
 end

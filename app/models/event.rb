@@ -16,17 +16,21 @@ class Event < ActiveRecord::Base
   before_save :setup_dates
   
   scope :from_sources, lambda{|source_ids|
-    joins(:source).where(sources: {id: source_ids})
+    if source_ids.present?
+      joins(:source).where(sources: {id: source_ids})
+    end
   }
   
   scope :from_categories, lambda{|category_ids|
-    where(id:
+    if category_ids.present?
+      where(id:
             (
               ids_from_categories(category_ids) +
               ids_from_categories_via_sources(category_ids) +
               ids_from_categories_by_locations(category_ids)
             )
-         )
+           )
+    end
   }
 
   scope :from_location, lambda{|category|
@@ -41,7 +45,14 @@ class Event < ActiveRecord::Base
   scope :sorted, lambda{
     order('start_date')
   }
-  
+
+  def self.filtered(events_filter)
+    events = Event.all.includes(:categories, :location, :source)
+    events = events.from_sources(events_filter.source_ids)
+    events = events.from_categories(events_filter.category_ids)
+    events.sorted
+  end
+    
   def self.ids_from_categories(category_ids)
     Event.joins(:categories).where(categories: {id: category_ids})
   end
