@@ -22,7 +22,7 @@ class Source < ActiveRecord::Base
 
   def parse_org_mode(org_source)
 
-    root = OrgToc.new(content: org_source.split("\n"), label: self.label)
+    root = OrgToc.new(content: StringIO.new(org_source).readlines, label: self.label)
     root.parse
     root.render_to_db(self)
   end

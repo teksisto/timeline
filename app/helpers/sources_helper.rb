@@ -2,7 +2,7 @@
 module SourcesHelper
 
   def temp_org_render(str)
-    Orgmode::Parser.new(str.gsub("\r", "\n")).to_html.html_safe
+    Orgmode::Parser.new(str).to_html.html_safe
   end
 
   def by_line_links(source)
