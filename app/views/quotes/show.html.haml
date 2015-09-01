@@ -10,10 +10,11 @@
   %strong= model_class.human_attribute_name(:content) + ':'
   %br
   = @quote.content
-%p
-  %strong= model_class.human_attribute_name(:soource_id) + ':'
-  %br
-  = @quote.source_id
+- if @quote.source
+  %p
+    %strong= model_class.human_attribute_name(:source_id) + ':'
+    %br
+    = link_to @quote.source.label, @quote.source
 
 
 = link_to t('.back', :default => t("helpers.links.back")), quotes_path, :class => 'btn btn-default'

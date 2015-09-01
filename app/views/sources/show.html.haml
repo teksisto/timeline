@@ -33,7 +33,9 @@
     %p= temp_org_render(section.outline.content) # TODO temp_org_render?
     - for quote in section.quotes
       %blockquote
-        %p= quote.content 
-
+        %p= temp_org_render(quote.content)
+    = link_to 'Add quote', new_quote_path(quote: {source_id: section.id}), :class => 'btn btn-xs btn-default'
+    = render partial: 'events/editor', locals: {events: section.events}
+    = link_to 'Add event', new_event_path(event: {source_id: section.id}), :class => 'btn btn-xs btn-default'
     
 = render partial: 'events/editor', locals: {events: @source.events}

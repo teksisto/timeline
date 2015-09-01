@@ -56,7 +56,9 @@ end
 
 gem "haml-rails", "~> 0.9"
 gem "twitter-bootstrap-rails"
-gem 'rails-i18n', '~> 4.0.0'
+gem "select2-rails"
+
+ gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
 
@@ -75,7 +77,8 @@ end
 
 group :development do
   gem 'bullet'
-  gem 'brakeman', :require => false
+  gem 'brakeman', require: false
+  gem 'rubocop',  require: false
 end
 
 
@@ -86,7 +89,6 @@ end
 # manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
 # gem 'redcarpet'
 
-# gem "select2-rails"
 # gem "date_validator"
 # gem 'cancancan'
 # gem "paperclip", "~> 4.3"

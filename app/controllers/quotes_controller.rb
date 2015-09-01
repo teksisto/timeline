@@ -14,7 +14,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes/new
   def new
-    @quote = Quote.new
+    @quote = Quote.new(quote_params)
   end
 
   # GET /quotes/1/edit
