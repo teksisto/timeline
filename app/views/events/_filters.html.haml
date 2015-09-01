@@ -16,7 +16,7 @@
               onclick:       'this.form.submit();'
         %td{style:'width: 73%;'}
           = select_tag 'source_ids',
-              options_from_collection_for_select(Source.all, :id, :label_with_by_line, params[:source_ids]),
+              options_from_collection_for_select(Source.roots, :id, :label_with_by_line, params[:source_ids]),
               include_blank:  true,
               multiple:       true,
               class:         'form-control',

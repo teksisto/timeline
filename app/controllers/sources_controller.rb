@@ -4,7 +4,7 @@ class SourcesController < ApplicationController
   # GET /sources
   # GET /sources.json
   def index
-    @sources = Source.roots
+    @sources = Source.roots.includes(:authors, :category)
   end
 
   # GET /sources/1

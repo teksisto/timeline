@@ -17,12 +17,13 @@ class EventsController < ApplicationController
     # одновременно выбрать несколько методов, поэтому и нужна
     # следующая строчка.
     render_method = params[:render_method] && params[:render_method].first
-    
-    if render_method.present? && Event::RENDER_METHODS.include?(render_method)
-      @partial = render_method
-    else
-      @partial = Event::RENDER_METHODS.first
-    end
+
+    @partial = 
+      if render_method.present? && Event::RENDER_METHODS.include?(render_method)
+        render_method
+      else
+        Event::RENDER_METHODS.first
+      end
     
   end
 
@@ -92,7 +93,7 @@ class EventsController < ApplicationController
     end
 
     def set_events
-      @events = Event.all
+      @events = Event.all.includes(:categories, :location, :source)
       if params[:source_ids] && params[:source_ids].first.present?
         @events = @events.from_sources(params[:source_ids])
       end
