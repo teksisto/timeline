@@ -43,3 +43,15 @@ taleb:
   label: "Черный лебедь"
   link: ""
   category: source_book
+
+adafasd:
+  authors: [teksisto]
+  label: "adafasdf"
+  link: ""
+  category: source_book
+
+todo:
+  authors: [teksisto]
+  label: "todo"
+  link: ""
+  category: source_book

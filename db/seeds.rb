@@ -10,6 +10,8 @@ Source.rebuild!
 Source.all.each{|s| s.save}
 
 org_files = {
+  'adafasdf' => 'doc/adafasdf.org',
+  'todo' => 'doc/todo.org',
   'Биология поведения: гуморальные механизмы' => 'misc/zhukov.org',
   'Черный лебедь' => 'misc/taleb.org',
   'Цитатник' => 'misc/quotes.org'
