@@ -11,7 +11,6 @@ class Event < ActiveRecord::Base
   belongs_to :source
   belongs_to :location, class_name: Category, foreign_key: 'location_id'
   has_and_belongs_to_many :categories
-  
 
   before_save :setup_dates
   
@@ -68,10 +67,16 @@ class Event < ActiveRecord::Base
   def self.by_year(events)
     unless events.empty?
       
-      events_by_year = events.group_by{|e| e.start_date.year}
+      events_by_year = events.group_by{|e| e.start_date.year }
 
       start_year = events.minimum(:start_date).year
-      end_year = events.maximum(:end_date).year
+
+      end_year = events.maximum(:end_date)
+      if end_year
+        end_year = end_year.year
+      else
+        end_year = events.maximum(:start_date).year
+      end
 
       if start_year && end_year
         for y in start_year..end_year
@@ -155,5 +160,5 @@ class Event < ActiveRecord::Base
     # если данные есть, то вернуть integer, если нет - nil
     matches.map{|s| s.to_i if s.present?}
   end
-  
+
 end
