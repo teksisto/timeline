@@ -6,7 +6,7 @@
 
     %table{style:'width: 100%;'}
       %tr
-        %td{rowspan: 2, style:'width: 22%; height: 300px;'}
+        %td{rowspan: 2, style:'width: 32%; height: 300px;'}
           = f.select :category_ids, 
               category_options_for_select(Category.roots, @events_filter.category_ids),
             { include_blank:  true },
@@ -14,7 +14,7 @@
               class:         'form-control',
               style:         'height: 100%; width: 100%; margin: 0px;',
               onclick:       'this.form.submit();' }
-        %td{style:'width: 73%;'}
+        %td{style:'width: 63%;'}
           = f.select :source_ids,
               options_from_collection_for_select(Source.roots, :id, :label_with_by_line, @events_filter.source_ids),
             { include_blank:  true },
@@ -23,7 +23,7 @@
               onclick:       'this.form.submit();',
               style:         'width: 100%;  height: 150px;' }
       %tr
-        %td{style:'width: 73%;'}
+        %td{style:'width: 63%;'}
           = f.select :render_method,
               render_method_options(@partial),
             { },
