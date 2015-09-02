@@ -35,8 +35,8 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem "therubyracer"
-gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'therubyracer'
+gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -54,11 +54,12 @@ end
 # my gems
 #############################################################
 
-gem "haml-rails", "~> 0.9"
-gem "twitter-bootstrap-rails"
-gem "select2-rails"
+gem 'haml-rails', '~> 0.9'
+gem 'twitter-bootstrap-rails'
+gem 'select2-rails'
+gem 'cocoon'
 
- gem 'rails-i18n', '~> 4.0.0'
+gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
 
@@ -89,8 +90,8 @@ end
 # manual: http://codetutr.com/2015/02/05/render-markdown-in-rails-with-redcarpet-and-smartypants/
 # gem 'redcarpet'
 
-# gem "date_validator"
+# gem 'date_validator'
 # gem 'cancancan'
-# gem "paperclip", "~> 4.3"
+# gem 'paperclip', '~> 4.3'
 
 gem 'sxp'
