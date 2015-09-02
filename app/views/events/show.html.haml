@@ -15,11 +15,11 @@
     
 %p= @event.description
 
-- if @event.details_url
+- if @event.link
   %p
-    %strong= model_class.human_attribute_name(:details_url) + ':'
+    %strong= model_class.human_attribute_name(:link) + ':'
     %i.fa.fa-link
-      = link_to @event.details_url
+      = link_to @event.link
 
 %p
   %strong= model_class.human_attribute_name(:source) + ':'

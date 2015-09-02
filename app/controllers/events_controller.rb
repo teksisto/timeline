@@ -93,7 +93,7 @@ class EventsController < ApplicationController
         :age,
         :period,
         :location_id,
-        :details_url,
+        :link,
         {:category_ids => []}
       )
     end

@@ -58,7 +58,7 @@ ActiveRecord::Schema.define(version: 20150829132857) do
     t.date     "end_date"
     t.boolean  "period",      default: false
     t.integer  "location_id"
-    t.text     "details_url"
+    t.text     "link"
   end
 
   create_table "outlines", force: :cascade do |t|

@@ -1091,7 +1091,7 @@ silence_of_the_lambs:
   start_date: '1991-02-14'
   end_date: 
   label: 'Silence of the Lambs'
-  details_url: 'http://www.imdb.com/title/tt0102926'
+  link: 'http://www.imdb.com/title/tt0102926'
   location: usa
   description: ''
   source: imdb
@@ -1101,7 +1101,7 @@ silence_of_the_lambs:
 hellsing:
   start_date: '2001-10-10'
   end_date:
-  details_url: 'http://www.imdb.com/title/tt0325547'
+  link: 'http://www.imdb.com/title/tt0325547'
   label: 'Hellsing'
   location: japan
   description: ''
@@ -1113,7 +1113,7 @@ hackers:
   start_date: '1995-09-15'
   end_date: 
   label: 'Hackers'
-  details_url: 'http://www.imdb.com/title/tt0113243'
+  link: 'http://www.imdb.com/title/tt0113243'
   location: usa
   description: ''
   source: imdb
@@ -1124,7 +1124,7 @@ requiem_for_a_dream:
   start_date: '2000-12-15'
   end_date: 
   label: 'Requiem for a Dream'
-  details_url: 'http://www.imdb.com/title/tt0180093'
+  link: 'http://www.imdb.com/title/tt0180093'
   location: usa
   description: ''
   source: imdb
@@ -1135,7 +1135,7 @@ american_beauty:
   start_date: '1999-09-08'
   end_date: 
   label: 'American Beauty'
-  details_url: 'http://www.imdb.com/title/tt0169547'
+  link: 'http://www.imdb.com/title/tt0169547'
   location: usa
   description: ''
   source: imdb
@@ -1146,7 +1146,7 @@ the_brick:
   start_date: '2006-04-14'
   end_date: 
   label: 'The Brick'
-  details_url: 'http://www.imdb.com/title/tt0393109'
+  link: 'http://www.imdb.com/title/tt0393109'
   location: usa
   description: ''
   source: imdb
@@ -1157,7 +1157,7 @@ ghost_in_the_shell:
   start_date: '1995-11-18'
   end_date: 
   label: 'Ghost in the Shell'
-  details_url: 'http://www.imdb.com/title/tt0113568'
+  link: 'http://www.imdb.com/title/tt0113568'
   location: japan
   description: ''
   source: imdb
@@ -1168,7 +1168,7 @@ scott_pilgrim_vs_the_world:
   start_date: '2010-07-26'
   end_date: 
   label: 'Scott Pilgrim vs. The World'
-  details_url: 'http://www.imdb.com/title/tt0446029'
+  link: 'http://www.imdb.com/title/tt0446029'
   location: usa
   description: ''
   source: imdb
@@ -1179,7 +1179,7 @@ basic_instict:
   start_date: '1992-03-20'
   end_date: 
   label: 'Basic Instinct'
-  details_url: 'http://www.imdb.com/title/tt0103772'
+  link: 'http://www.imdb.com/title/tt0103772'
   location: usa
   description: ''
   source: imdb
@@ -1190,7 +1190,7 @@ No_Maps_for_These_Territories:
   start_date: '2000-10-04'
   end_date: 
   label: 'No Maps for These Territories'
-  details_url: 'http://www.imdb.com/title/tt0269629'
+  link: 'http://www.imdb.com/title/tt0269629'
   location: canada
   description: ''
   source: imdb
@@ -1201,7 +1201,7 @@ Girl_interrupted:
   start_date: '2000-01-14'
   end_date: 
   label: 'Girl, interrupted'
-  details_url: 'http://www.imdb.com/title/tt0172493'
+  link: 'http://www.imdb.com/title/tt0172493'
   location: 
   description: ''
   source: imdb
@@ -1212,7 +1212,7 @@ Wonder_Boys:
   start_date: '2000-02-25'
   end_date: 
   label: 'Wonder Boys'
-  details_url: 'http://www.imdb.com/title/tt0185014'
+  link: 'http://www.imdb.com/title/tt0185014'
   location: usa
   description: ''
   source: imdb
@@ -1223,7 +1223,7 @@ the_matrix:
   start_date: '1999-03-31'
   end_date: 
   label: 'The Matrix'
-  details_url: 'http://www.imdb.com/title/tt0133093'
+  link: 'http://www.imdb.com/title/tt0133093'
   location: usa
   description: ''
   source: imdb
@@ -1234,7 +1234,7 @@ the_matrix:
   start_date: '2002-11-01'
   end_date: 
   label: '28 days later'
-  details_url: 'http://www.imdb.com/title/tt0289043'
+  link: 'http://www.imdb.com/title/tt0289043'
   location: UK
   description: ''
   source: imdb
@@ -1245,7 +1245,7 @@ the_matrix:
 #   start_date: ''
 #   end_date: 
 #   label: ''
-#   details_url: ''
+#   link: ''
 #   location: 
 #   description: ''
 #   source: imdb
