@@ -3,19 +3,7 @@ michigan:
   label: "Internet History Technology and Security"
   link: "https://www.coursera.org/learn/internet-history"
   category: lectures
-    
-stall:
-  authors: [clifford_stall]
-  label: "The Cuckoos egg"
-  link: ""
-  category: source_book
-  
-ghost:
-  authors: [kevin_mitnick]
-  label: "Ghost in the wires"
-  link: ""
-  category: source_book
-  
+      
 wikipedia:
   label: "Wikipedia"
   link: "https://wikipedia.org"
