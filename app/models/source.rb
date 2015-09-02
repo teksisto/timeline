@@ -15,6 +15,10 @@ class Source < ActiveRecord::Base
   belongs_to :category
   
   include SourcesHelper
+
+  default_scope do |source_ids|
+    includes(:authors)
+  end
   
   def label_with_by_line
     by_line_text(self) + self.label
