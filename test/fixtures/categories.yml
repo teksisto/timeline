@@ -103,13 +103,28 @@ software:
   color: "#E1E0B2"
   icon: 
   parent: computers
+
+operating_system:
+  label: "operating system"
+  description: 
+  color: "#E1E0B2"
+  icon: 
+  parent: computers
   
 unix:
   label: "unix"
   description: 
   color: "#E1E0B2"
   icon: 
-  parent: software
+  parent: operating_system
+
+windows:
+  label: "windows"
+  description: 
+  color: "#E1E0B2"
+  icon: 
+  parent: operating_system
+
 
 # Event categories / Politics
   
@@ -190,12 +205,6 @@ russia:
   icon: 
   parent: location_categories
     
-usa:
-  label: "USA"
-  description: 
-  color: ""
-  icon: 
-  parent: location_categories
 
 japan:
   label: "Япония"
@@ -203,3 +212,26 @@ japan:
   color: ""
   icon: 
   parent: location_categories
+
+usa:
+  label: "США"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories
+
+
+bell_labs:
+  label: "Bell Labs"
+  description: 
+  color: ""
+  icon: 
+  parent: usa
+
+
+mit:
+  label: "MIT"
+  description: 
+  color: ""
+  icon: 
+  parent: usa
