@@ -1,12 +1,3 @@
-first_packets:
-  start_date: '1969-10-29'
-  end_date: 
-  label: 'Первые два пакета: lo and behold'
-  location: usa
-  description: ''
-  source: michigan
-  categories:
-    - arpanet
 
 first_america_web_server:
   start_date: '1991-12-12' 
@@ -18,26 +9,7 @@ first_america_web_server:
   categories:
     - networks
 
-first_unix_implementation:
-  start_date: '1969' 
-  end_date: 
-  label: 'Первая имплементация Unix'
-  location: usa
-  description: ''
-  source: wikipedia
-  categories:
-    - unix
 
-first_linux_release:
-  start_date: '1991-08-25' 
-  end_date: 
-  label: 'Linux 0.01'
-  location: 
-  description: ''
-  source: wikipedia
-  categories:
-    - unix
-    
 netscape_found:  
   start_date: '1994-04-04'
   end_date: 
@@ -47,46 +19,6 @@ netscape_found:
   source: michigan
   categories:
     - networks
-
-arpanet_demo:
-  start_date: '1972-10' 
-  end_date: 
-  label: 'Первая демонстрация ARPAnet'
-  location: usa
-  description: ''
-  source: michigan
-  categories:
-    - arpanet
-
-arpanet_stable:
-  start_date: '1978' 
-  end_date: 
-  label: 'Пережив 4 итерации дизайн/имплементация ARPAnet признан стабильным'
-  location: usa
-  description: ''
-  source: michigan
-  categories:
-    - arpanet
-
-stall_triumph:
-  start_date: '1989-05-02'
-  end_date: 
-  label: 'German authorities charged five people with espionage: Pengo Hagbard Peter Carl Dirk Bresinsky and Markus Hess'
-  location: usa
-  description: ''
-  source: stall
-  categories:
-    - security
-
-first_vim:    
-  start_date: '1980' 
-  end_date: 
-  label: 'Bill Joy wrote Unix screen editor VI'
-  location: usa
-  description: ''
-  source: stall
-  categories:
-    - software
 
 the_ware_report:
   start_date: '1967-10' 
@@ -108,6 +40,125 @@ the_mother_of_all_demos:
   categories:
     - software
 
+
+# Computers / Networks / Arpanet
+
+first_packets:
+  start_date: '1969-10-29'
+  end_date: 
+  label: 'ARPAnet: первая передача данных'
+  location: usa
+  description: ''
+  source: michigan
+  categories:
+    - arpanet
+    
+arpanet_demo:
+  start_date: '1972-10' 
+  end_date: 
+  label: 'ARPAnet: первая демонстрация'
+  location: usa
+  description: ''
+  source: michigan
+  categories:
+    - arpanet
+
+arpanet_stable:
+  start_date: '1978' 
+  end_date: 
+  label: 'ARPAnet признан стабильным'
+  location: usa
+  description: ''
+  source: michigan
+  categories:
+    - arpanet
+
+
+# Software / Operating systems / Unix
+
+first_unix_implementation:
+  start_date: '1969' 
+  end_date: 
+  label: 'Первая имплементация Unix'
+  location: bell_labs
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+
+unix_rewritten_in_c:
+  start_date: '1972' 
+  end_date: 
+  label: 'Unix переписали на С'
+  location: bell_labs
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+
+X_Window_System:
+  start_date: '1984' 
+  end_date: 
+  label: 'X Window System'
+  location: mit
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+
+first_linux_release:
+  start_date: '1991-08-25' 
+  end_date: 
+  label: 'Linux 0.01'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+
+    
+# Software / Operating systems / Windows
+    
+windows_1_0:
+  start_date: '1985-11-20' 
+  end_date: 
+  label: 'Windows 1.0'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - windows
+
+windows_3_1:
+  start_date: '1992-04-06' 
+  end_date: 
+  label: 'Windows 3.1'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - windows
+
+windows_95:
+  start_date: '1995-08-24' 
+  end_date: 
+  label: 'Windows 95'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - windows
+
+windows_xp:
+  start_date: '2001-10-25' 
+  end_date: 
+  label: 'Windows XP'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - windows
+    
 # USA presidents
     
 George_Washington_term:
@@ -1024,8 +1075,8 @@ klondike_gold_rush:
     - history
 
 1918_flu_pandemic:  
-  start_date: '1918-01'
-  end_date: '1920-12'
+  start_date: '1918'
+  end_date: '1920'
   label: 'Испанский грипп'
   period: true
   location: 
