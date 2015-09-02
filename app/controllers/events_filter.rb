@@ -8,11 +8,11 @@ class EventsFilter
                 :render_method
   
   def category_ids=(array)
-    @category_ids = array.delete_if{|v| v==''}
+    @category_ids = array.delete_if(&:blank?)
   end
   
   def source_ids=(array)
-    @source_ids = array.delete_if{|v| v==''}
+    @source_ids = array.delete_if(&:blank?)
   end
     
   def render_method=(array)
@@ -20,11 +20,11 @@ class EventsFilter
     # браузер его красиво рисует. Приводит это к тому, что можно
     # одновременно выбрать несколько методов, поэтому и нужна
     # следующая строчка.
-    @render_method = array.delete_if{|v| v==''}.first
+    @render_method = array.delete_if(&:blank?).first
   end
   
   def partial
-    if render_method.present? && Event::RENDER_METHODS.include?(render_method)
+    if Event::RENDER_METHODS.include?(render_method)
       render_method
     else
       Event::RENDER_METHODS.first
