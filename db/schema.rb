@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150829132857) do
+ActiveRecord::Schema.define(version: 20150902145450) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "label"
@@ -84,9 +84,16 @@ ActiveRecord::Schema.define(version: 20150829132857) do
   add_index "people_sources", ["person_id"], name: "index_people_sources_on_person_id"
   add_index "people_sources", ["source_id"], name: "index_people_sources_on_source_id"
 
+  create_table "quote_versions", force: :cascade do |t|
+    t.integer  "quote_id"
+    t.string   "language"
+    t.text     "content"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "quotes", force: :cascade do |t|
     t.string   "label"
-    t.text     "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "source_id"

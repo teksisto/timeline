@@ -5,37 +5,39 @@
   = by_line_links(@source)
   = @source.label
 
-%p
-  = # TODO @source.outline.description
-
 - if @source.link.present?
   %p
     %i.fa.fa-link
       = link_to @source.link, @source.link
 
-= link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(@source), :class => 'btn btn-default'
-= link_to t('.destroy', :default => t("helpers.links.destroy")), source_path(@source), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default'
+= link_to t('.edit', :default => t("helpers.links.edit")),
+    edit_source_path(@source),
+    class: 'btn btn-default'
+
+= link_to t('.destroy', :default => t("helpers.links.destroy")),
+    source_path(@source),
+    :method => "delete",
+    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+    :class => 'btn btn-default'
 
 = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
 = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
 = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
 
-- if @source.outline
-  %p= temp_org_render(@source.outline.content) # TODO temp_org_render?
-  - for quote in @source.quotes
-    %blockquote
-      %p= temp_org_render(quote.content)
-
+= render partial: 'content', locals: {source: @source}
+          
 - for section in @source.descendants.includes(:outline)
   = content_tag("h#{section.depth}", section.label) do
     = link_to section.label, section
-  - if section.outline
-    %p= temp_org_render(section.outline.content) # TODO temp_org_render?
-    - for quote in section.quotes
-      %blockquote
-        %p= temp_org_render(quote.content)
-    = link_to 'Add quote', new_quote_path(quote: {source_id: section.id}), :class => 'btn btn-xs btn-default'
-    = render partial: 'events/editor', locals: {events: section.events}
-    = link_to 'Add event', new_event_path(event: {source_id: section.id}), :class => 'btn btn-xs btn-default'
+  = render partial: 'content', locals: {source: section}
     
+  = link_to 'Add quote',
+      new_quote_path(quote: {source_id: section.id}),
+      class: 'btn btn-xs btn-default'
+  
+  = render partial: 'events/editor', locals: {events: section.events}
+  = link_to 'Add event',
+      new_event_path(event: {source_id: section.id}),
+      class: 'btn btn-xs btn-default'
+  
 = render partial: 'events/editor', locals: {events: @source.events}

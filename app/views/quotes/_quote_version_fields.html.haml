@@ -1,0 +1,16 @@
+%blockquote
+
+  .form-group
+    .controls
+      = f.text_area :content, class: 'form-control', required: true
+
+  .form-group
+    .col-sm-4
+      = link_to_remove_association "Remove version", f
+
+    .col-sm-4
+      
+    .form-inline.col-sm-4{style: 'text-align: right;'}
+      = f.label :language
+      = f.select :language, ['ru', 'en'], {}, class: 'form-control', required: true
+

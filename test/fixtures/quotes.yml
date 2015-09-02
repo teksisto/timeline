@@ -1,8 +1,6 @@
 one: 
-  content: "Test Michigan quote." 
   source: michigan
 
 two:
-  content: "Test Stall quote." 
   source: stall
   

@@ -12,6 +12,7 @@
 //
 //= require jquery
 //= require select2
+//= require cocoon
 //= # require jquery_ujs
 //= # require twitter/bootstrap
 

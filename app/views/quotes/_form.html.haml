@@ -4,11 +4,7 @@
     .controls
       = f.text_field :label, class: 'form-control', required: true
     = error_span(@quote[:label])
-  .form-group
-    = f.label :content, class: 'control-label'
-    .controls
-      = f.text_area :content, class: 'form-control', required: true
-    = error_span(@quote[:content])
+      
   .form-group
     = f.label :source_id, class: 'control-label'
     .controls
@@ -17,5 +13,14 @@
         {include_blank: true},
         {class: 'form-control'}
     = error_span(@quote[:source_id])
+
+  #quote_versions
+    = f.fields_for :quote_versions do |version|
+      = render partial: 'quote_version_fields', locals: {f: version}
+    .links
+      = link_to_add_association 'Add version', f, :quote_versions, class: 'btn btn-default btn-xs'
+
+  %hr
+  
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), quotes_path, :class => 'btn btn-default'

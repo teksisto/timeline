@@ -6,16 +6,16 @@
   %strong= model_class.human_attribute_name(:label) + ':'
   %br
   = @quote.label
-%p
-  %strong= model_class.human_attribute_name(:content) + ':'
-  %br
-  = @quote.content
+
 - if @quote.source
   %p
     %strong= model_class.human_attribute_name(:source_id) + ':'
     %br
     = link_to @quote.source.label, @quote.source
 
+- @quote.quote_versions.each do |version|
+  %blockquote
+    = version.content
 
 = link_to t('.back', :default => t("helpers.links.back")), quotes_path, :class => 'btn btn-default'
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_quote_path(@quote), :class => 'btn btn-default'

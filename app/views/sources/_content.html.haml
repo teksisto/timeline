@@ -1,0 +1,14 @@
+- if source.outline
+  %p= temp_org_render(source.outline.content)
+- if source.quotes.present?
+  - for quote in source.quotes
+    - if quote.quote_versions.count == 1
+      %blockquote
+        = temp_org_render(quote.quote_versions.first.content)
+    - else
+      %table
+        %tr
+        - for version in quote.quote_versions
+          %td
+            %blockquote
+              = temp_org_render(version.content)
