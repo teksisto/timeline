@@ -1241,6 +1241,250 @@ the_matrix:
   categories:
     - movie
 
+# Media / Books
+
+hesse_gets_nobel:
+  start_date: '1946'
+  end_date: 
+  label: 'Гессе получает Нобелевскую премию'
+  link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+hesse_starts_glasperlenspiel:
+  start_date: '1931'
+  end_date: 
+  label: 'Гессе начал писать "Игру в бисер"'
+  link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+hesse_publish_glasperlenspiel:
+  start_date: '1943-11-18'
+  end_date: 
+  label: 'Der Glasperlenspiel'
+  link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+glasperlenspiel_in_english:
+  start_date: '1949'
+  end_date: 
+  label: '"Игра в бисер" опубликована на английском'
+  link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Zen_and_the_Art_of_Motorcycle_Maintenance:
+  start_date: '1974'
+  end_date: 
+  label: 'Zen and the Art of Motorcycle Maintenance'
+  link: 'https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+petrosian_house:
+  start_date: '2009'
+  end_date: 
+  label: 'Дом, в котором'
+  link: ''
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+neuromancer:
+  start_date: '1984-06-01'
+  end_date: 
+  label: 'Neuromancer'
+  link: 'https://en.wikipedia.org/wiki/Neuromancer'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Blindsight:
+  start_date: '2006-10-03'
+  end_date: 
+  label: 'Blindsight'
+  link: 'https://en.wikipedia.org/wiki/Blindsight_%28Watts_novel%29'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+wisard_of_the_earthsea:
+  start_date: '1968'
+  end_date: 
+  label: 'A Wizard of Earthsea'
+  link: 'https://en.wikipedia.org/wiki/A_Wizard_of_Earthsea'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+the_hobbit :
+  start_date: '1937-09-21'
+  end_date: 
+  label: 'The Hobbit'
+  link: 'https://en.wikipedia.org/wiki/The_Hobbit'
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Fellowship_of_the_Ring:
+  start_date: '1954-07-29'
+  end_date: 
+  label: 'The Fellowship of the Ring'
+  link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Two_Towers:
+  start_date: '1954-11-11'
+  end_date: 
+  label: 'The Two Towers'
+  link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Return_of_the_King:
+  start_date: '1955-10-20'
+  end_date: 
+  label: 'The Return of the King'
+  link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Ghost_in_the_Wires:
+  start_date: '2011-08-15'
+  end_date: 
+  label: 'Ghost in the Wires'
+  link: ''
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Dansu_Dansu_Dansu:
+  start_date: '1988-10-13'
+  end_date: 
+  label: 'Dansu Dansu Dansu'
+  link: 'https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%80%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%80%E3%83%B3%E3%82%B9'
+  location: japan
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+dance_dance_dance:
+  start_date: '1994-01'
+  end_date: 
+  label: 'Dance, Dance, Dance'
+  link: 'https://en.wikipedia.org/wiki/Dance_Dance_Dance_%28novel%29'
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+dance_dance_dance_russian_edition:
+  start_date: '1998'
+  end_date: 
+  label: 'Дэнс, дэнс, дэнс'
+  link: 'https://ru.wikipedia.org/wiki/%D0%94%D1%8D%D0%BD%D1%81,_%D0%B4%D1%8D%D0%BD%D1%81,_%D0%B4%D1%8D%D0%BD%D1%81'
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Dune_novel:
+  start_date: '1965-08-01'
+  end_date: 
+  label: 'Dune'
+  link: 'https://en.wikipedia.org/wiki/Dune_%28novel%29'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+Tommorrow_I_Always_Was_a_Lion:
+  start_date: '2005'
+  end_date: 
+  label: 'Завтра я всегда бывала львом'
+  link: ''
+  location: 
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Black_Swan:
+  start_date: '2007-04-17'
+  end_date: 
+  label: 'The Black Swan'
+  link: 'https://en.wikipedia.org/wiki/The_Black_Swan_%28Taleb_book%29'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Eye_of_the_World:
+  start_date: '1990-01-15'
+  end_date: 
+  label: 'The Eye of the World'
+  link: 'https://en.wikipedia.org/wiki/The_Eye_of_the_World'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
+The_Selfish_Gene:
+  start_date: '1976'
+  end_date: 
+  label: 'The Selfish Gene'
+  link: 'https://en.wikipedia.org/wiki/The_Selfish_Gene'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_book
+
 # :
 #   start_date: ''
 #   end_date: 
@@ -1248,10 +1492,23 @@ the_matrix:
 #   link: ''
 #   location: 
 #   description: ''
-#   source: imdb
+#   source: wikipedia
 #   categories:
-#     - movie
+#     - media_book
 
+# :
+#   start_date: ''
+#   end_date: 
+#   label: ''
+#   link: ''
+#   location: 
+#   description: ''
+#   source: wikipedia
+#   categories:
+#     - media_book
+
+
+    
 # https://en.wikipedia.org/wiki/Automated_teller_machine#History
 # The first modern ATM was an IBM 2984 and came into use at Lloyds
 # Bank, Brentwood High Street, Essex, England in December 1972.
