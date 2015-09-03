@@ -1,32 +1,6 @@
 = form_for @source, html: { class: "form form-horizontal source" } do |f|
-
-  .form-group
-    = f.label :author_ids, class: 'control-label'
-    .controls
-      = f.select :author_ids, options_from_collection_for_select(Person.all, :id, :label, @source.author_ids), {include_blank: true}, {multiple: true, style: 'width: 100%;'}
-    = error_span(@source[:author_ids])
-
-    :javascript
-      $("#source_author_ids").select2();
-    
-  .form-group
-    = f.label :label, class: 'control-label'
-    .controls
-      = f.text_field :label, class: 'form-control', required: true
-    = error_span(@source[:label])
-
-  .form-group
-    = f.label :link, class: 'control-label'
-    .controls
-      = f.text_field :link, class: 'form-control'
-    = error_span(@source[:link])
-
-  .form-group
-    = f.label :category_id, class: 'control-label'
-    .controls
-      = f.select :category_id, category_options_for_select(Category.sources_root, @source.category_id), {include_blank: true}, {class: 'form-control'}  
-    = error_span(@source[:category_id])
-
+  = render partial: 'fields', locals: {f: f, source: @source}
+  
   = f.submit nil,class: 'btn btn-primary'
     
   = link_to t('.cancel', :default => t("helpers.links.cancel")), sources_path, :class => 'btn btn-default'
