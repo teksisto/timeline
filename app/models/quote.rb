@@ -4,6 +4,8 @@ class Quote < ActiveRecord::Base
   belongs_to :source
   has_many :comments
 
+  accepts_nested_attributes_for :source
   accepts_nested_attributes_for :quote_versions, reject_if: :all_blank, allow_destroy: true
+
   
 end

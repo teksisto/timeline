@@ -1,6 +1,8 @@
 class QuotesController < ApplicationController
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
+  include SourcesHelper
+  
   # GET /quotes
   # GET /quotes.json
   def index
@@ -15,6 +17,9 @@ class QuotesController < ApplicationController
   # GET /quotes/new
   def new
     @quote = Quote.new #(quote_params)
+    unless @quote.source
+      @quote.build_source
+    end
   end
 
   # GET /quotes/1/edit
