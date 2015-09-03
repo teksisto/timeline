@@ -6,9 +6,7 @@
       %blockquote
         = temp_org_render(quote.quote_versions.first.content)
     - else
-      %table
-        %tr
-        - for version in quote.quote_versions
-          %td
-            %blockquote
-              = temp_org_render(version.content)
+      - for version in quote.quote_versions
+        .col-sm-6
+          %blockquote
+            = temp_org_render(version.content)
