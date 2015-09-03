@@ -4,4 +4,19 @@
   Use Font Awesome icons (default)
   To use Glyphicons sprites instead of Font Awesome, replace with "require twitter-bootstrap-static/sprites"
   =require twitter-bootstrap-static/fontawesome
-  */
+*/
+
+.form-horizontal .form-group {
+/*  
+    Я не знаю зачем они сделали margin, который вылезает за границы контейнера.
+
+    Было:
+
+    margin-left:  -15px;
+    margin-right: -15px;
+
+    Стало:
+*/
+    margin-left:  0px;
+    margin-right: 0px;
+}
