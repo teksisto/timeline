@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150902145450) do
+ActiveRecord::Schema.define(version: 20150904040306) do
 
   create_table "categories", force: :cascade do |t|
     t.string   "label"
@@ -74,6 +74,7 @@ ActiveRecord::Schema.define(version: 20150902145450) do
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
     t.string   "screen_label"
+    t.text     "link"
   end
 
   create_table "people_sources", id: false, force: :cascade do |t|
@@ -101,7 +102,6 @@ ActiveRecord::Schema.define(version: 20150902145450) do
 
   create_table "sources", force: :cascade do |t|
     t.string   "label"
-    t.string   "link"
     t.datetime "created_at",                 null: false
     t.datetime "updated_at",                 null: false
     t.integer  "category_id"
@@ -110,6 +110,7 @@ ActiveRecord::Schema.define(version: 20150902145450) do
     t.integer  "rgt"
     t.integer  "depth",          default: 0
     t.integer  "children_count", default: 0
+    t.text     "link"
   end
 
 end

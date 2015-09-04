@@ -30,6 +30,6 @@
 .form-group
   = f.label :link, class: 'control-label'
   .controls
-    = f.text_field :link, class: 'form-control'
+    = f.url_field :link, class: 'form-control'
   = error_span(f.object[:link])
 

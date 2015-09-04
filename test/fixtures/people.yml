@@ -2,33 +2,40 @@ charles_severance:
   label: Charles Severance
   screen_label:
   description:
+  link:
 
 clifford_stall:
   label: Clifford Stall
   screen_label:
-  description: 
+  description:
+  link: 
 
 kevin_mitnick:
   label: Kevin Mitnick
   screen_label:
   description:
+  link:
 
 dimitri_zhukov:
   label: Жуков Дмитрий Анатольевич
   screen_label: Дмитрий Жуков
   description:
+  link:
 
 teksisto:
   label: Александр Ткачев
   screen_label: teksisto
   description:
+  link:
 
 nassim_taleb:
   label: Нассим Николас Талеб
   screen_label:
   description:
+  link:
     
 # :
 #   label:
 #   screen_label:
 #   description:
+#   link:

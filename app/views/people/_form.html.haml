@@ -14,5 +14,11 @@
     .controls
       = f.text_field :description, class: 'form-control', required: true
     = error_span(@person[:description])
+  .form-group
+    = f.label :link, class: 'control-label'
+    .controls
+      = f.url_field :link, class: 'form-control'
+    = error_span(@person[:link])
+
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), people_path, :class => 'btn btn-default'
