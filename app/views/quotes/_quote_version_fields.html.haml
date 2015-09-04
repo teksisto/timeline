@@ -12,5 +12,5 @@
       
     .form-inline.col-sm-4{style: 'text-align: right;'}
       = f.label :language
-      = f.select :language, ['ru', 'en'], {}, class: 'form-control', required: true
+      = f.select :language, QuoteVersion::POSSIBLE_LANGUAGES, {}, class: 'form-control', required: true
 
