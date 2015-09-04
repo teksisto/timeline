@@ -189,6 +189,14 @@ site:
   icon: "external-link"
   parent: source_categories
 
+notes:
+  label: "notes"
+  description: 
+  color: "#F8931F"
+  icon: "pencil"
+  parent: source_categories
+
+  
 # Location
 
 location_categories:

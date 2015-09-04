@@ -24,7 +24,7 @@ quotes:
   authors: [teksisto]
   label: "Цитатник"
   link: ""
-  category: source_book
+  category: notes
   
 taleb:
   authors: [nassim_taleb]
@@ -36,10 +36,10 @@ adafasd:
   authors: [teksisto]
   label: "adafasdf"
   link: ""
-  category: source_book
+  category: notes
 
 todo:
   authors: [teksisto]
   label: "todo"
   link: ""
-  category: source_book
+  category: notes
