@@ -74,6 +74,7 @@ source 'https://rails-assets.org' do
   gem 'rails-assets-vis', '= 4.7.0'
   gem 'rails-assets-reveal-js'
   gem 'rails-assets-jquery.countdown'
+  gem 'rails-assets-anchor-js'
 end
 
 group :development do

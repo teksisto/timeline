@@ -46,3 +46,7 @@ blockquote footer p {
 .fields-for {
     padding: 0% 2% 0% 2%;
 }
+
+a.anchorjs-link:hover {
+    text-decoration: none;
+}

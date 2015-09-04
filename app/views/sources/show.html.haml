@@ -27,7 +27,7 @@
 = render partial: 'content', locals: {source: @source}
           
 - for section in @source.descendants.includes(:outline)
-  = content_tag("h#{section.depth}", section.label) do
+  = content_tag("h#{section.depth}", section.label, id: section.id) do
     = link_to section.label, section
   = render partial: 'content', locals: {source: section}
     
@@ -41,3 +41,11 @@
       class: 'btn btn-xs btn-default'
   
 = render partial: 'events/editor', locals: {events: @source.events}
+
+:javascript
+
+  anchors.options = {
+    placement: 'left',
+  };
+  
+  anchors.add();
