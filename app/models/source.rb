@@ -7,8 +7,8 @@ class Source < ActiveRecord::Base
   has_and_belongs_to_many :authors,
                           class_name: Person,
                           join_table: 'people_sources',
-                          association_foreign_key: 'person_id'
-  
+                          association_foreign_key: 'person_id',
+                          inverse_of: 'sources'  
   has_one    :outline
   has_many   :quotes
   has_many   :events

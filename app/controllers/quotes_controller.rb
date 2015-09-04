@@ -20,7 +20,7 @@ class QuotesController < ApplicationController
     @quote = Quote.new #(quote_params)
     unless @quote.source
       if params[:quote] && params[:quote][:source_id]
-        @quote.source = Source.where(id: params[:quote][:source_id]).first
+        @quote.source_id = params[:quote][:source_id].to_i
       else
         @quote.build_source
       end
@@ -82,6 +82,7 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(
         :label,
         :content,
+        :source_id,
         :versions_attributes => [
           :id,
           :quote_id,
@@ -91,12 +92,13 @@ class QuotesController < ApplicationController
         ],
         :source_attributes => [
           :id,
+          :_destroy,
           :label,
           :description,
           :link,
           :category_id,
           {:author_ids => []}
-        ]
+        ] 
       )
     end
 end
