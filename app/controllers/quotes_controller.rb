@@ -1,4 +1,5 @@
 class QuotesController < ApplicationController
+
   before_action :set_quote, only: [:show, :edit, :update, :destroy]
 
   include SourcesHelper
@@ -18,7 +19,11 @@ class QuotesController < ApplicationController
   def new
     @quote = Quote.new #(quote_params)
     unless @quote.source
-      @quote.build_source
+      if params[:quote] && params[:quote][:source_id]
+        @quote.source = Source.where(id: params[:quote][:source_id]).first
+      else
+        @quote.build_source
+      end
     end
   end
 
@@ -77,13 +82,20 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(
         :label,
         :content,
-        :source_id,
         :quote_versions_attributes => [
           :id,
           :quote_id,
           :language,
           :content,
           :_destroy
+        ],
+        :source_attributes => [
+          :id,
+          :label,
+          :description,
+          :link,
+          :category_id,
+          {:author_ids => []}
         ]
       )
     end
