@@ -24,7 +24,7 @@ class EventsController < ApplicationController
 
   # GET /events/new
   def new
-    @event = Event.new(event_params)
+    @event = Event.new(params[:event])
   end
 
   # GET /events/1/edit
