@@ -16,7 +16,7 @@ class Source < ActiveRecord::Base
   
   include SourcesHelper
 
-  default_scope do |source_ids|
+  default_scope do
     includes(:authors)
   end
   
@@ -25,7 +25,6 @@ class Source < ActiveRecord::Base
   end
 
   def parse_org_mode(org_source)
-
     root = OrgToc.new(content: StringIO.new(org_source).readlines, label: self.label)
     root.parse
     root.render_to_db(self)
