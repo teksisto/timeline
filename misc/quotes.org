@@ -7,7 +7,7 @@
   #+END_QUOTE
   
   #+BEGIN_QUOTE
-   For just a moment, pause where you are, and soak in the current
+  For just a moment, pause where you are, and soak in the current
   state of the room around you, and your own state. Just notice what
   this is like.  Now see how this moment is enough. Just as it
   is. Without any need for improvement. It is a wonder, and there’s no
@@ -52,13 +52,15 @@
   #+BEGIN_QUOTE
   “Everybody’s ideas seem obvious to them.” – Derek Sivers
   #+END_QUOTE
+
   #+BEGIN_QUOTE
   Instead of saying “I don’t have time” try saying “it’s not a
   priority,” and see how that feels.
   #+END_QUOTE
   
   #+BEGIN_QUOTE
-  -- на какой период из истории россии похоже твое душевное состояние? чем?
+  -- На какой период из истории россии похоже твое душевное состояние?
+  Чем?
 			
   -- Первая мировая -- из хорошей семьи, собирался стать, допустим,
   врачом, или инженером, был первым на курсе, все получалось. Потом
