@@ -1,6 +1,8 @@
+# coding: utf-8
 class QuotesController < ApplicationController
 
-  before_action :set_quote, only: [:show, :edit, :update, :destroy]
+  before_action :set_quote,  only: [:show, :edit, :update, :destroy]
+  after_action  :set_source, only: [:new, :edit]
 
   include SourcesHelper
   
@@ -17,14 +19,7 @@ class QuotesController < ApplicationController
 
   # GET /quotes/new
   def new
-    @quote = Quote.new #(quote_params)
-    unless @quote.source
-      if params[:quote] && params[:quote][:source_id]
-        @quote.source_id = params[:quote][:source_id].to_i
-      else
-        @quote.build_source
-      end
-    end
+    @quote = Quote.new(quote_params)
   end
 
   # GET /quotes/1/edit
@@ -72,13 +67,29 @@ class QuotesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+
     def set_quote
       @quote = Quote.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
+    def set_source
+      @quote.build_source unless @quote.source
+    end
+    
+    # TODO
+    #
+    # Следующий метод обрабатывает случай, когда пользователь пришел в
+    # new и никаких атрибутов не передал. Другими словами:
+    #
+    #   params[quote] == nil
+    #
+    # В документации говорят использовать params.fetch, но у меня он
+    # не завелся.
     def quote_params
+      (params[:quote] && regular_quote_params) || {}
+    end
+    
+    def regular_quote_params
       params.require(:quote).permit(
         :label,
         :content,

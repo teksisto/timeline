@@ -19,7 +19,7 @@
       %strong= 'Versions'
     #versions_fields.fields-for
       = f.fields_for :versions do |version|
-        = render partial: 'quote_version_fields', locals: {f: version}
+        = render partial: 'version_fields', locals: {f: version}
       .links
         = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
 
