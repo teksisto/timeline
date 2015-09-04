@@ -4,7 +4,7 @@
 
 - @quotes.each do |quote|
   %h2= link_to (quote.label || "##{quote.id}"), quote_path(quote)
-  - quote.quote_versions.each do |version|
+  - quote.versions.each do |version|
     %blockquote
       = temp_org_render(version.content)
       - if quote.source

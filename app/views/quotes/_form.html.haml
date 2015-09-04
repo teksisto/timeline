@@ -12,14 +12,14 @@
       = f.fields_for :source, @quote.source do |source|
         = render partial: 'sources/fields', locals: {f: source}
     
-  #quote_versions.well
-    #quote_versions_toggler
+  #versions.well
+    #versions_toggler
       %strong= 'Versions'
-    #quote_versions_fields.fields-for
-      = f.fields_for :quote_versions do |version|
+    #versions_fields.fields-for
+      = f.fields_for :versions do |version|
         = render partial: 'quote_version_fields', locals: {f: version}
       .links
-        = link_to_add_association 'Add version', f, :quote_versions, class: 'btn btn-default btn-xs'
+        = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
 
   %hr
   
@@ -31,6 +31,6 @@
     $("#quote_source_fields").toggle();
   })
 
-  $("#quote_versions_toggler").click(function (){
-    $("#quote_versions_fields").toggle();
+  $("#versions_toggler").click(function (){
+    $("#versions_fields").toggle();
   })

@@ -82,7 +82,7 @@ class QuotesController < ApplicationController
       params.require(:quote).permit(
         :label,
         :content,
-        :quote_versions_attributes => [
+        :versions_attributes => [
           :id,
           :quote_id,
           :language,

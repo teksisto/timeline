@@ -13,7 +13,7 @@
     %br
     = link_to @quote.source.label, @quote.source
 
-- @quote.quote_versions.each do |version|
+- @quote.versions.each do |version|
   %blockquote
     = version.content
 
