@@ -3,9 +3,9 @@
 one:
   author_id: 1
   quote_id: 1
-  content: MyText
+  text: MyText
 
 two:
   author_id: 1
   quote_id: 1
-  content: MyText
+  text: MyText

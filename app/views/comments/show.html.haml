@@ -11,9 +11,9 @@
   %br
   = @comment.quote_id
 %p
-  %strong= model_class.human_attribute_name(:content) + ':'
+  %strong= model_class.human_attribute_name(:text) + ':'
   %br
-  = @comment.content
+  = @comment.text
 
 
 = link_to t('.back', :default => t("helpers.links.back")), comments_path, :class => 'btn btn-default'

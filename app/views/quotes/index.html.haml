@@ -6,7 +6,7 @@
   %h2= link_to (quote.label || "##{quote.id}"), quote_path(quote)
   - quote.versions.each do |version|
     %blockquote
-      = temp_org_render(version.content)
+      = temp_org_render(version.text)
       - if quote.source
         - source = quote.source
         %footer

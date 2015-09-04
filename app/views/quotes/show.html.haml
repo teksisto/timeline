@@ -15,7 +15,7 @@
 
 - @quote.versions.each do |version|
   %blockquote
-    = version.content
+    = version.text
 
 = link_to t('.back', :default => t("helpers.links.back")), quotes_path, :class => 'btn btn-default'
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_quote_path(@quote), :class => 'btn btn-default'

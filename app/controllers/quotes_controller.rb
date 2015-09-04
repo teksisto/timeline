@@ -92,13 +92,13 @@ class QuotesController < ApplicationController
     def regular_quote_params
       params.require(:quote).permit(
         :label,
-        :content,
+        :text,
         :source_id,
         :versions_attributes => [
           :id,
           :quote_id,
           :language,
-          :content,
+          :text,
           :_destroy
         ],
         :source_attributes => [

@@ -69,6 +69,6 @@ class OutlinesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def outline_params
-      params.require(:outline).permit(:content)
+      params.require(:outline).permit(:text)
     end
 end

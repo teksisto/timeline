@@ -42,7 +42,7 @@ ActiveRecord::Schema.define(version: 20150904040306) do
   create_table "comments", force: :cascade do |t|
     t.integer  "author_id"
     t.integer  "quote_id"
-    t.text     "content"
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -62,7 +62,7 @@ ActiveRecord::Schema.define(version: 20150904040306) do
   end
 
   create_table "outlines", force: :cascade do |t|
-    t.text     "content"
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "source_id"
@@ -88,7 +88,7 @@ ActiveRecord::Schema.define(version: 20150904040306) do
   create_table "quote_versions", force: :cascade do |t|
     t.integer  "quote_id"
     t.string   "language"
-    t.text     "content"
+    t.text     "text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

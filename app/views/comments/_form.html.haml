@@ -10,9 +10,9 @@
       = f.text_field :quote_id, class: 'form-control', required: true
     = error_span(@comment[:quote_id])
   .form-group
-    = f.label :content, class: 'control-label'
+    = f.label :text, class: 'control-label'
     .controls
-      = f.text_field :content, class: 'form-control', required: true
-    = error_span(@comment[:content])
+      = f.text_field :text, class: 'form-control', required: true
+    = error_span(@comment[:text])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), comments_path, :class => 'btn btn-default'

@@ -5,14 +5,14 @@
   %thead
     %tr
       %th= model_class.human_attribute_name(:id)
-      %th= model_class.human_attribute_name(:content)
+      %th= model_class.human_attribute_name(:text)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - @outlines.each do |outline|
       %tr
         %td= link_to outline.id, outline_path(outline)
-        %td= outline.content
+        %td= outline.text
         %td=l outline.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_outline_path(outline), :class => 'btn btn-default btn-xs'

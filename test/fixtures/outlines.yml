@@ -1,5 +1,5 @@
 michigan_outline:
-  content: "Test Michigan outline string"
+  text: "Test Michigan outline string"
 
 stall_outline:
-  content: "Test Stall outline string"
+  text: "Test Stall outline string"

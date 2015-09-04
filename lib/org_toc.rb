@@ -99,10 +99,10 @@ class OrgToc
     unless @level == 0
       source = Source.create(label: label, parent: parent)
       if @text.present?
-        source.create_outline(content: @text)
+        source.create_outline(text: @text)
         @quotes.each{|q|
           quote = source.quotes.create
-          quote.versions.create(content: q, language: 'ru')
+          quote.versions.create(text: q, language: 'ru')
         }
       end
     end

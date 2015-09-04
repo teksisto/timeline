@@ -18,7 +18,7 @@ class OutlinesControllerTest < ActionController::TestCase
 
   test "should create outline" do
     assert_difference('Outline.count') do
-      post :create, outline: { content: @outline.content }
+      post :create, outline: { text: @outline.text }
     end
 
     assert_redirected_to outline_path(assigns(:outline))
@@ -35,7 +35,7 @@ class OutlinesControllerTest < ActionController::TestCase
   end
 
   test "should update outline" do
-    patch :update, id: @outline, outline: { content: @outline.content }
+    patch :update, id: @outline, outline: { text: @outline.text }
     assert_redirected_to outline_path(assigns(:outline))
   end
 
