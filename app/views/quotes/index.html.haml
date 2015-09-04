@@ -1,6 +1,6 @@
 - model_class = Quote
-.page-header
-  %h1=t '.title', :default => model_class.model_name.human.pluralize.titleize
+
+= link_to 'New quote', new_quote_path, :class => 'btn btn-primary'
 
 - @quotes.each do |quote|
   %h2= link_to (quote.label || "##{quote.id}"), quote_path(quote)
@@ -18,4 +18,3 @@
 -# = link_to t('.edit', :default => t("helpers.links.edit")), edit_quote_path(quote), :class => 'btn btn-default btn-xs'
 -# = link_to t('.destroy', :default => t("helpers.links.destroy")), quote_path(quote), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
 
-= link_to t('.new', :default => t("helpers.links.new")), new_quote_path, :class => 'btn btn-primary'
