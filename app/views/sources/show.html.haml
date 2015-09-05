@@ -1,28 +1,23 @@
 - model_class = Source
 
-%h3
-  = category_icon(@source)
-  = by_line_links(@source)
-  = @source.label
+= source_title
 
-- if @source.link.present?
-  %p
-    %i.fa.fa-link
-      = link_to @source.link, @source.link
+= source_link
 
-= link_to t('.edit', :default => t("helpers.links.edit")),
-    edit_source_path(@source),
-    class: 'btn btn-default'
+.controls
+  = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
+  = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
+  = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
 
-= link_to t('.destroy', :default => t("helpers.links.destroy")),
-    source_path(@source),
-    :method => "delete",
-    :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-    :class => 'btn btn-default'
+  = link_to t('.edit', :default => t("helpers.links.edit")),
+      edit_source_path(@source),
+      class: 'btn btn-default'
 
-= link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
-= link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
-= link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")),
+      source_path(@source),
+      :method => "delete",
+      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+      :class => 'btn btn-default'
 
 = render partial: 'content', locals: {source: @source}
           

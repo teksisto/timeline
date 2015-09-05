@@ -11,7 +11,7 @@ module ApplicationHelper
     end
     if category.present?
       content_tag('span', category.color, style: "color: #{category.color}") do
-        content_tag('i', '', class: "fa fa-#{category.icon}")
+        content_tag('i', '', class: "fa fa-#{category.icon}") + ' '
       end
     else
       ''
