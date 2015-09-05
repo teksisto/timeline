@@ -13,7 +13,7 @@
         %td= link_to person.screen_label, person_path(person)
         %td= person.description
         %td
-          = link_to t('.edit', :default => t("helpers.links.edit")), edit_person_path(person), :class => 'btn btn-default btn-xs'
-          = link_to t('.destroy', :default => t("helpers.links.destroy")), person_path(person), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
-
+          = button_edit    person
+          = button_destroy person
+          
 = link_to t('.new', :default => t("helpers.links.new")), new_person_path, :class => 'btn btn-primary'

@@ -21,7 +21,7 @@
           = link_to 'Quotes', quotes_source_path(source), :class => 'btn btn-xs btn-default'
           = link_to 'Events', events_path(source_ids: [source]), :class => 'btn btn-xs btn-default'
         %td
-          = link_to t('.edit', :default => t("helpers.links.edit")), edit_source_path(source), :class => 'btn btn-default btn-xs'
-          = link_to t('.destroy', :default => t("helpers.links.destroy")), source_path(source), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-default'
+          = button_edit_small source
+          = button_destroy_small source
 
 = link_to t('.new', :default => t("helpers.links.new")), new_source_path, :class => 'btn btn-default'

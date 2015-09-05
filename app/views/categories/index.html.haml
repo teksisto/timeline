@@ -23,8 +23,8 @@
         %td= category_icon(category)
         %td
           - unless category.level == 0
-            = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-default btn-xs'
-            = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-default btn-xs'
-
+            = button_edit_small    category
+            = button_destroy_small category
+            
 = link_to t('.new', :default => t("helpers.links.new")), new_category_path, :class => 'btn btn-default'
 

@@ -19,7 +19,7 @@
         %td= comment.text
         %td=l comment.created_at
         %td
-          = link_to t('.edit', :default => t("helpers.links.edit")), edit_comment_path(comment), :class => 'btn btn-default btn-xs'
-          = link_to t('.destroy', :default => t("helpers.links.destroy")), comment_path(comment), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-xs btn-danger'
-
+          = button_edit_small    comment
+          = button_destroy_small comment
+          
 = link_to t('.new', :default => t("helpers.links.new")), new_comment_path, :class => 'btn btn-primary'
