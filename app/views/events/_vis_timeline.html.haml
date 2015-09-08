@@ -8,7 +8,7 @@
 
 #visualization
 
-- data = data_for_vis_timeline(events, {fullscreen: fullscreen})
+- data = vis_data(events, {fullscreen: fullscreen})
 
 :javascript
   
@@ -19,13 +19,12 @@
   var items = new vis.DataSet(
     #{data[:items]}
   );
-
-  var groups = new vis.DataSet(
-    #{data[:groups]} 
-  );
   
   // Configuration for the Timeline
   var options = #{data[:options]}
+
+  // Groups
+  #{ data[:groups] }
   
   // Create a Timeline
-  var timeline = new vis.Timeline(container, items, groups, options);
+  #{ data[:initializer] }

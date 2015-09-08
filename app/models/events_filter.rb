@@ -5,7 +5,8 @@ class EventsFilter
 
   attr_accessor :category_ids,
                 :source_ids,
-                :render_method
+                :render_method,
+                :group_by_country
   
   def category_ids=(array)
     @category_ids = array.delete_if(&:blank?)
@@ -21,6 +22,10 @@ class EventsFilter
     # одновременно выбрать несколько методов, поэтому и нужна
     # следующая строчка.
     @render_method = array.delete_if(&:blank?).first
+  end
+
+  def group_by_country=(value)
+    @group_by_country = (value == "1" ? true : false)
   end
   
   def partial

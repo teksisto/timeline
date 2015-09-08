@@ -33,5 +33,5 @@
               onclick:  'this.form.submit();' }
 
     %div{style: 'margin: 10px 0px 0px 10px;'}
-      = check_box_tag 'group_by', onclick:  'this.form.submit();'
-      = label_tag 'group_by', 'Группировать по странам'
+      = f.check_box :group_by_country, onclick:  'this.form.submit();'
+      = label_tag 'group_by_country', 'Группировать по странам'
