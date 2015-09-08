@@ -1,35 +1,5 @@
 # coding: utf-8
 module ApplicationHelper
-
-  def button_destroy(object)
-    link_to_destroy(object, 'btn btn-default')
-  end
-
-  def button_destroy_small(object)
-    link_to_destroy(object, 'btn btn-default btn-xs')
-  end
-  
-  def link_to_destroy(object, css_class = '')
-    link_to t('.destroy', :default => t("helpers.links.destroy")),
-            object,
-            method: 'delete',
-            data: { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
-            class: css_class
-  end
-
-  def button_edit(object)
-    link_to_edit(object, 'btn btn-default')
-  end
-  
-  def button_edit_small(object)
-    link_to_edit(object, 'btn btn-default btn-xs')
-  end
-    
-  def link_to_edit(object, css_class = '')
-    link_to t('.edit', :default => t("helpers.links.edit")),
-            polymorphic_url(object, :routing_type => :path, :action => :edit),
-            class: css_class
-  end
   
   def category_icon(resource)
     if resource.kind_of?(Category)
