@@ -1,22 +1,12 @@
-- model_class = Quote
 .page-header
-  %h1=t '.title', :default => model_class.model_name.human.titleize
-
-%p
-  %strong= model_class.human_attribute_name(:label) + ':'
-  %br
-  = @quote.label
-
+  %h2= @quote.label
+  
 - if @quote.source
-  %p
-    %strong= model_class.human_attribute_name(:source_id) + ':'
-    %br
-    = link_to @quote.source.label, @quote.source
+  = link_to @quote.source.label, @quote.source
 
 - @quote.versions.each do |version|
   %blockquote
     = version.text
 
-= link_to t('.back', :default => t("helpers.links.back")), quotes_path, :class => 'btn btn-default'
 = button_edit    @quote
 = button_destroy @quote

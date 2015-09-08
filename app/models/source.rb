@@ -19,6 +19,14 @@ class Source < ActiveRecord::Base
   default_scope do
     includes(:authors)
   end
+
+  def authors
+    if root?
+      super
+    else
+      root.authors
+    end
+  end
   
   def label_with_by_line
     by_line_text(self) + self.label

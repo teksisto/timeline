@@ -3,18 +3,19 @@
 = link_to 'New quote', new_quote_path, :class => 'btn btn-primary'
 
 - @quotes.each do |quote|
-  %h2= link_to (quote.label || "##{quote.id}"), quote_path(quote)
+  %h2= link_to quote.label, quote_path(quote)
   - quote.versions.each do |version|
     %blockquote
       = temp_org_render(version.text)
       - if quote.source
         - source = quote.source
         %footer
+          = quote.source.authors.map(&:screen_label).join(', ').html_safe
+          %br
           - unless source.root?
             - root = source.ancestors.first
             %span= link_to root.label, source_path(root) 
-          %p= link_to quote.source.label_with_by_line, source_path(quote.source)
-
+          %p= link_to quote.source.label, source_path(quote.source)
 
 -# = button_edit_small quote
 -# = button_destroy_small quote

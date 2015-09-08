@@ -15,5 +15,13 @@ class Quote < ActiveRecord::Base
   default_scope do |source_ids|
     includes(:versions, :source)
   end
+
+  def label
+    if self[:label].present?
+      super
+    else
+      "##{id}"
+    end
+  end
   
 end
