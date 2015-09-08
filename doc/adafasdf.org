@@ -751,28 +751,34 @@
    [[http://www.supernova-soft.com/wpsite/products/text-aligner/create-parallel-text-for-language-lerning/][Supernova Aligner]]
 
 ** JavaScript
-*** blast
+*** Текствовые редакторы
+**** Prose mirror
+     http://prosemirror.net/
+**** Substance
+     http://substance.io/
+*** Everything else
+**** blast
 
-    Blast.js separates text in order to facilitate typographic
-    manipulation. It has four delimiters built in: character, word,
-    sentence, and element. Alternatively, Blast can match custom
-    regular expressions and phrases.
+     Blast.js separates text in order to facilitate typographic
+     manipulation. It has four delimiters built in: character, word,
+     sentence, and element. Alternatively, Blast can match custom
+     regular expressions and phrases.
 
-    http://julian.com/research/blast/
+     http://julian.com/research/blast/
 
-*** datatables
+**** datatables
 
-    http://datatables.net/
+     http://datatables.net/
 
-*** grid
+**** grid
 
-    https://github.com/ubervu/grid
+     https://github.com/ubervu/grid
 
-    https://github.com/ducksboard/gridster.js
+     https://github.com/ducksboard/gridster.js
 
-*** countdown
+**** countdown
 
-    http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html
+     http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html
 
 * Книги
 ** Graph Databases						    :oreilly:
