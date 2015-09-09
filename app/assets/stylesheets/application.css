@@ -17,6 +17,19 @@
  *
  */
 
+.page-header .menu-item {
+    font-size: 2em;
+}
+
+.footer .menu-item {
+    display:inline;
+    margin-right: 10px;
+}
+
+.footer {
+    margin-top: 2em;
+    margin-bottom: 50px;
+}
 
 blockquote {
     background: #f9f9f9;

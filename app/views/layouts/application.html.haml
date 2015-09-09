@@ -8,50 +8,50 @@
     = csrf_meta_tags
   %body{style: "width: 90%; margin: auto;"}
 
-    
+    .page-header.row
 
-    .page-header
-      %div{style: 'font-size: 2.5em; margin-bottom: 40px;'}
+      .col-sm-3.menu-item
+        %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
+          = link_to 'Events', events_path
 
-        %div{style: 'width: 33%; margin:auto; float: left;'}
-          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
-            = link_to 'Events', events_path
+      .col-sm-3.menu-item
+        %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
+          = link_to 'Sources', sources_path
 
-        %div{style: 'width: 33%; margin:auto; float: left;'}
-          %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
-            = link_to 'Sources', sources_path
+      .col-sm-3.menu-item
+        %i.fa.fa-comment{style: "color: #{'red' if params[:controller] == 'quotes'}"}
+          = link_to 'Quotes', quotes_path
 
-        %div{style: 'width: 33%; margin:auto; float: left;'}
-          %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
-            = link_to 'Categories', categories_path
-          
+      .col-sm-3.menu-item
+        %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
+          = link_to 'Categories', categories_path
+
     = yield
 
     %hr{style: 'margin-top: 4em;'}
     
-    .footer{style: 'margin-top: 2em; margin-bottom: 50px'}
-      %div{style: 'font-size: 1em;'}
+    .footer
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
-            = link_to 'Events', events_path
+      .menu-item
+        %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
+          = link_to 'Events', events_path
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
-            = link_to 'Sources', sources_path
+      .menu-item
+        %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
+          = link_to 'Sources', sources_path
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
-            = link_to 'Categories', categories_path
+      .menu-item
+        %i.fa.fa-comment{style: "color: #{'red' if params[:controller] == 'quotes'}"}
+          = link_to 'Quotes', quotes_path
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-square{style: "color: #{'red' if params[:controller] == 'outlines'}"}
-            = link_to 'Outlines', outlines_path
+      .menu-item
+        %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
+          = link_to 'Categories', categories_path
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-user{style: "color: #{'red' if params[:controller] == 'people'}"}
-            = link_to 'People', people_path
+      .menu-item
+        %i.fa.fa-user{style: "color: #{'red' if params[:controller] == 'people'}"}
+          = link_to 'People', people_path
 
-        %span{style: 'margin-right: 10px;'}
-          %i.fa.fa-circle{style: "color: #{'red' if params[:controller] == 'quotes'}"}
-            = link_to 'Quotes', quotes_path
+      .menu-item
+        %i.fa.fa-square{style: "color: #{'red' if params[:controller] == 'outlines'}"}
+          = link_to 'Outlines', outlines_path
