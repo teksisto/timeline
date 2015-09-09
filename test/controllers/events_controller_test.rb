@@ -1,3 +1,4 @@
+# coding: utf-8
 require 'test_helper'
 
 class EventsControllerTest < ActionController::TestCase
@@ -5,12 +6,28 @@ class EventsControllerTest < ActionController::TestCase
     @event = events(:first_packets)
   end
 
+  # TODO
+  #
+  # Следующие два теста не проходят и выдают ошибку. Я подозреваю, что
+  # это из-за того, что fixtures как-то по своему инициализируются. С
+  # другой стороны, добавление Rails.application.load_seed в
+  # test_helper не помогает. Возможно это какой-то мой затуп, потому
+  # что смотрю я на это уже довольно долго. Текст ошибки:
+  #
+  # event.rb:70: undefined method `year' for nil:NilClass
+  
   test "should get index" do
     get :index
     assert_response :success
     assert_not_nil assigns(:events)
   end
 
+  test "should get index with vis" do
+    get :index, parameters: {render_method: ['vis']}
+    assert_response :success
+    assert_not_nil assigns(:events)
+  end
+  
   test "should get new" do
     get :new
     assert_response :success
