@@ -1,9 +1,11 @@
 - model_class = Event
 
+- data = @events_filter.data
+
 %table.table
-  - for year in @events_by_year.keys.sort
+  - for year in data[:events_by_year].keys.sort
     %tr
       %td= year
       %td
-        - for event in @events_by_year[year]
+        - for event in data[:events_by_year][year]
           %p= link_to event.label, event_path(event), style: "background-color: #{event.categories.last.color rescue nil}"

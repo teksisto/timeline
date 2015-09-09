@@ -1,11 +1,13 @@
 - model_class = Event
 
+- data = @events_filter.data
+
 %table.table
-  - for year in @events_by_year.keys.sort
+  - for year in data[:events_by_year].keys.sort
     %tr
       %td= year
-      - if @events_by_year[year].present?
-        - for event in @events_by_year[year]
+      - if data[:events_by_year][year].present?
+        - for event in data[:events_by_year][year]
           %td
             %p= link_to event.label, event_path(event)
           %td

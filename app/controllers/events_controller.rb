@@ -7,7 +7,6 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     Rails.logger.debug @events_filter.inspect.red
-    @events_by_year = Event.by_year(@events)
     @fullscreen = false
     @partial = @events_filter.partial
   end
