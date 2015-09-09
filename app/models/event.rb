@@ -93,6 +93,12 @@ class Event < ActiveRecord::Base
     end
   end
 
+  def country
+    if location
+      location.self_and_ancestors.second
+    end
+  end
+  
   private
 
   # Этот метод должен дружить не только с данными, которые

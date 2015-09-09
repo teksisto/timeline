@@ -36,7 +36,7 @@ module EventsHelper
                     })
       end
       if @events_filter.group_by_country && e.location
-        hash.merge!(group: e.location.id)
+        hash.merge!(group: e.country.id)
       end
       if @events_filter.group_by_country && e.age
         # TODO
@@ -58,7 +58,7 @@ module EventsHelper
   
   def vis_groups_content(events)
     JSON.pretty_generate(
-      events.map{|e| e.location}.compact.uniq.map{|l|
+      events.map{|e| e.country}.compact.uniq.map{|l|
       {
         id: l.id,
         content: l.label
