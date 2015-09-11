@@ -1,8 +1,8 @@
-require 'events/events_filter'
-require 'events/vis_timeline'
-
 module EventsHelper
   
+  require 'events/events_filter'
+  require 'events/vis_timeline'
+
   def render_method_options(selected = nil)
     options = [
       ['Table',                 'table_timeline'        ],
