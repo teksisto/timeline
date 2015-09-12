@@ -116,12 +116,34 @@ first_linux_release:
   categories:
     - unix
 
-    
 # Software / Operating systems / Windows
+    
+microsoft_fouded:
+  start_date: '1975-04-04' 
+  end_date:
+  label: 'Основана Microsoft'
+  link: 'https://en.wikipedia.org/wiki/Microsoft' 
+  location: usa
+  description: 'Билл Гейтс и Пол Аллен основали Microsoft.'
+  source: wikipedia
+  categories:
+    - windows
+
+msdos_first_release:
+  start_date: '1981-08' 
+  end_date:
+  link: 'https://en.wikipedia.org/wiki/MS-DOS'
+  label: 'MS-DOS'
+  location: usa
+  description: 
+  source: wikipedia
+  categories:
+    - windows
     
 windows_1_0:
   start_date: '1985-11-20' 
   end_date: 
+  link: ''
   label: 'Windows 1.0'
   location: usa
   description: ''
@@ -132,6 +154,7 @@ windows_1_0:
 windows_3_1:
   start_date: '1992-04-06' 
   end_date: 
+  link: '' 
   label: 'Windows 3.1'
   location: usa
   description: ''
@@ -142,6 +165,7 @@ windows_3_1:
 windows_95:
   start_date: '1995-08-24' 
   end_date: 
+  link: '' 
   label: 'Windows 95'
   location: usa
   description: ''
@@ -152,13 +176,72 @@ windows_95:
 windows_xp:
   start_date: '2001-10-25' 
   end_date: 
+  link: '' 
   label: 'Windows XP'
   location: 
   description: ''
   source: wikipedia
   categories:
     - windows
-    
+
+# Hardware
+
+intel_founded:
+  start_date: '1968-07-18'
+  end_date: 
+  label: 'Основана Intel'
+  link: 'https://en.wikipedia.org/wiki/Intel'
+  location: usa
+  description: 'Основана компания Intel. Основатели: Gordon Moore, Robert Noyce, Andrew Grove.'
+  source: wikipedia
+  categories:
+    - hardware
+
+intel_first_chip:
+  start_date: '1971-01'
+  end_date: 
+  label: 'Intel 4004'
+  link: 'https://en.wikipedia.org/wiki/Intel_4004'
+  location: 
+  description: 'Закончена разработка первого чипа Intel. Уже в марте они продадут его каким-то японцам.'
+  source: wikipedia
+  categories:
+    - hardware
+
+zx_spectrum_first_release:
+  start_date: '1982-04-21'
+  end_date: 
+  label: 'ZX Spectrum'
+  link: 'https://en.wikipedia.org/wiki/ZX_Spectrum'
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
+
+first_commodore64:
+  start_date: '1982-08'
+  end_date: 
+  label: 'Commodore 64'
+  link: 'https://en.wikipedia.org/wiki/Commodore_64'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
+
+first_apple:
+  start_date: '1976-04-11'
+  end_date: 
+  label: 'Apple I'
+  link: 'https://en.wikipedia.org/wiki/Apple_I'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
+
+
 # USA presidents
     
 George_Washington_term:

@@ -83,6 +83,13 @@ networks:
   icon: 
   parent: computers
 
+hardware:
+  label: "hardware"
+  description: 
+  color: "#C9CF31"
+  icon: 
+  parent: computers
+  
 arpanet:
   label: "ARPAnet"
   description: 
@@ -212,7 +219,6 @@ russia:
   color: ""
   icon: 
   parent: location_categories
-    
 
 japan:
   label: "Япония"
@@ -221,13 +227,20 @@ japan:
   icon: 
   parent: location_categories
 
+united_kingdom:
+  label: "Великобритания"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories
+
+  
 usa:
   label: "США"
   description: 
   color: ""
   icon: 
   parent: location_categories
-
 
 bell_labs:
   label: "Bell Labs"
