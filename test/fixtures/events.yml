@@ -1055,7 +1055,7 @@ congolese_man:
   start_date: '1959'
   end_date: 
   label: 'Congolese man'
-  location: 
+  location:
   description: 'One of the earliest documented HIV-1 infections was discovered in a preserved blood sample taken in 1959 from a man from Léopoldville in the Belgian Congo.'
   source: wikipedia
   categories:

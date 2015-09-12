@@ -22,6 +22,7 @@ class VisTimeline
         id:      e.id,
         content: e.label,
         start:   e.start_date.strftime('%Y-%m-%d'),
+        title:   e.description,
         type:    'point'
       }
       if e.period
@@ -46,9 +47,22 @@ class VisTimeline
           hash.merge!(className: age_css_class)
         end
       end
-      hash
+      # TODO
+      #
+      # Сейчас, если у события не указан location, и выбрана
+      # группировка по странам, событие выкидывается. Проблема в том,
+      # что если vis отдавать события, не привязанные к группе, то он
+      # падает, хотя в документации написано, что он их просто не
+      # будет показывать. Возможно лучшей стратегией было бы все
+      # события без location добавлять в отдельную группу с пустым
+      # заголовком.
+      if @options[:group_by_country] && !e.location
+        nil
+      else
+        hash
+      end
     end
-    JSON.pretty_generate(items)
+    JSON.pretty_generate(items.compact)
   end
   
   def groups_content

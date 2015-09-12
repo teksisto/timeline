@@ -46,10 +46,12 @@ class Event < ActiveRecord::Base
   }
 
   def self.filtered(events_filter)
-    events = Event.all.includes(:categories, :location, :source)
-    events = events.from_sources(events_filter.source_ids)
-    events = events.from_categories(events_filter.category_ids)
-    events.sorted
+    Event.
+      all.
+      includes(:categories, :location, :source).
+      from_sources(events_filter.source_ids).
+      from_categories(events_filter.category_ids).
+      sorted
   end
     
   def self.ids_from_categories(category_ids)

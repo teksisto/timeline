@@ -31,17 +31,21 @@ class EventsFilter
   end
 
   # Output
+
+  def render_method
+    if Event::RENDER_METHODS.include?(@render_method)
+      @render_method
+    else
+      default_render_method
+    end
+  end
   
   def partial
-    if Event::RENDER_METHODS.include?(render_method)
-      render_method
-    else
-      Event::RENDER_METHODS.first
-    end
+    render_method
   end
 
   def data
-    case @render_method
+    case render_method
     when 'table_timeline'
       table_timeline_data
     when 'table_with_categories'
@@ -59,6 +63,10 @@ class EventsFilter
 
   private
 
+  def default_render_method
+    Event::RENDER_METHODS.first
+  end
+  
   def table_timeline_data
     {events_by_year: Event.by_year(events)}
   end
