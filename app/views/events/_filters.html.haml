@@ -25,7 +25,7 @@
       %tr
         %td{style:'width: 63%;'}
           = f.select :render_method,
-              render_method_options(@partial),
+              render_method_options(f.object.render_method),
             { },
             { multiple:  true,
               class:    'form-control',
@@ -33,5 +33,9 @@
               onclick:  'this.form.submit();' }
 
     %div{style: 'margin: 10px 0px 0px 10px;'}
-      = f.check_box :group_by_country, onclick:  'this.form.submit();'
-      = label_tag 'group_by_country', 'Группировать по странам'
+      %span{style: 'margin-right: 20px;'}
+        = f.check_box :group_by_country, onclick:  'this.form.submit();'
+        = label_tag 'group_by_country', 'Группировать по странам'
+      %span{style: 'margin-right: 20px;'}
+        = f.check_box :fullscreen, onclick:  'this.form.submit();'
+        = label_tag 'fullscreen', 'На весь экран'

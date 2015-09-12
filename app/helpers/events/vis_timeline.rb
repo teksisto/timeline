@@ -104,8 +104,10 @@ class VisTimeline
     JSON.pretty_generate({
                            # width:  1915,
                            # minHeight: 1070,
-                           min: '1750-01-01',
-                           max: '2020-01-01'
+                           width:  1915,
+                           height: 1060,
+                           min:   '1750-01-01',
+                           max:   '2020-01-01'
                            # zoomMin: 10000*60*60*24*31,
                            # zoomMax: 10000*60*60*24*31*12*100
                          })

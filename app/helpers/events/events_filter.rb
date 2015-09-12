@@ -6,8 +6,9 @@ class EventsFilter
   attr_accessor :category_ids,
                 :source_ids,
                 :render_method,
-                :group_by_country
-
+                :group_by_country,
+                :fullscreen
+  
   # Input
   
   def category_ids=(array)
@@ -27,10 +28,22 @@ class EventsFilter
   end
 
   def group_by_country=(value)
-    @group_by_country = (value == "1" ? true : false)
+    @group_by_country = (value == "1")
+  end
+
+  def fullscreen=(value)
+    @fullscreen = (value == "1")
   end
 
   # Output
+  
+  def partial
+    render_method
+  end
+  
+  def layout
+    @fullscreen ? 'empty' : 'application'
+  end
 
   def render_method
     if Event::RENDER_METHODS.include?(@render_method)
@@ -40,10 +53,6 @@ class EventsFilter
     end
   end
   
-  def partial
-    render_method
-  end
-
   def data
     case render_method
     when 'table_timeline'
@@ -66,7 +75,7 @@ class EventsFilter
   def default_render_method
     Event::RENDER_METHODS.first
   end
-  
+
   def table_timeline_data
     {events_by_year: Event.by_year(events)}
   end
@@ -77,7 +86,7 @@ class EventsFilter
   
   def vis_timeline_data
     VisTimeline.new(events, {
-                      fullscreen: false,
+                      fullscreen: fullscreen,
                       group_by_country: @group_by_country
                     }).data
   end

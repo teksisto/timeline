@@ -7,13 +7,7 @@ class EventsController < ApplicationController
   # GET /events.json
   def index
     Rails.logger.debug @events_filter.inspect.red
-    @fullscreen = false
-    @partial = @events_filter.partial
-  end
-
-  def fullscreen
-    @fullscreen = true
-    render layout: 'vis_fullscreen'
+    render layout: @events_filter.layout
   end
   
   # GET /events/1

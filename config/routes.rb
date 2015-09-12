@@ -20,11 +20,7 @@ Rails.application.routes.draw do
     end
   end
 
-  resources :events do
-    collection do
-      get :fullscreen
-    end
-  end
+  resources :events
 
   root 'dashboard#index'
   

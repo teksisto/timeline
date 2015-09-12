@@ -1,6 +1,7 @@
 - model_class = Event
-    
-= render partial: 'filters'
 
-= render partial: @partial, locals: {events: @events, fullscreen: @fullscreen}
+- unless @events_filter.fullscreen
+  = render partial: 'filters'
+
+= render partial: @events_filter.partial
 
