@@ -23,7 +23,7 @@ module SourcesHelper
 
   def source_title
     content_tag('h3') do
-      category_icon(@source) + by_line_links(@source) + @source.label
+      (category_icon(@source) + by_line_links(@source) + @source.label).html_safe
     end
   end
 
