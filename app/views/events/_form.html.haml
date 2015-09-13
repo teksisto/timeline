@@ -71,7 +71,8 @@
     .controls.col-sm-10
       = f.select 'location_id',
         category_options_for_select(Category.locations_root, @event.location_id),
-        {include_blank: true}
+        {include_blank: true},
+        {style: 'width: 30%'}
       :javascript
         $("#event_location_id").select2();
 
