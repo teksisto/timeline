@@ -23,20 +23,34 @@ media_book:
   icon: 
   parent: media
   
-movie:
+media_movie:
   label: "movie"
   description: 
   color: "#61E8BB"
   icon: 
   parent: media
 
-music:
+media_music:
   label: "music"
   description: 
   color: "#61E8BB"
   icon: 
   parent: media
 
+musical_album:
+  label: "musical album"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: media_music
+
+musical_group:
+  label: "musical group"
+  description: 
+  color: "#61E8BB"
+  icon: 
+  parent: media_music
+  
 # Event categories / Technology
   
 technology:
@@ -165,7 +179,15 @@ history:
   icon: 
   parent: event_categories
 
-  
+# What the fuck
+
+wtf:
+  label: "wtf"
+  description: 
+  color: "#B1D1E0"
+  icon: 
+  parent: event_categories
+
 # Source categories
   
 source_categories:
@@ -220,6 +242,13 @@ russia:
   icon: 
   parent: location_categories
 
+germany:
+  label: "Германия"
+  description: 
+  color: ""
+  icon: 
+  parent: location_categories
+  
 japan:
   label: "Япония"
   description: 
@@ -248,7 +277,6 @@ bell_labs:
   color: ""
   icon: 
   parent: usa
-
 
 mit:
   label: "MIT"

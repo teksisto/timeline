@@ -1,24 +1,15 @@
+# Computers / Software
 
-first_america_web_server:
-  start_date: '1991-12-12' 
+first_ascii:
+  start_date: '1963'
   end_date: 
-  label: 'Первый веб-сервер в Америке'
+  label: 'ASCII 1st edition'
+  link: 'https://en.wikipedia.org/wiki/ASCII'
   location: usa
-  description: 'Доктор Paul Kunz Stanford Linear Accelerator. 300000 Научных статей. Первый поисковик в сети.'
-  source: michigan
+  description: ''
+  source: wikipedia
   categories:
-    - networks
-
-
-netscape_found:  
-  start_date: '1994-04-04'
-  end_date: 
-  label: 'Основана компания Netscape'
-  location: usa
-  description: 'Люди которые делали Mosaic решили уйти в коммерцию.'
-  source: michigan
-  categories:
-    - networks
+    - software
 
 the_ware_report:
   start_date: '1967-10' 
@@ -40,6 +31,94 @@ the_mother_of_all_demos:
   categories:
     - software
 
+first_emacs:
+  start_date: '1976'
+  end_date: 
+  label: 'Emacs'
+  link: 'https://en.wikipedia.org/wiki/Emacs'
+  location: usa
+  description: 'The original EMACS was written in 1976 by Richard Stallman and Guy L. Steele, Jr. as a set of Editor MACroS for the TECO editor.'
+  source: wikipedia
+  categories:
+    - software
+
+first_c:
+  start_date: '1972'
+  end_date: 
+  label: 'C'
+  link: 'https://en.wikipedia.org/wiki/C_%28programming_language'
+  location: bell_labs
+  description: ''
+  source: wikipedia
+  categories:
+    - software
+
+first_tex:
+  start_date: '1978'
+  end_date: 
+  label: 'TeX'
+  link: 'https://en.wikipedia.org/wiki/TeX'
+  location: usa
+  description: 'Donald Knuth'
+  source: wikipedia
+  categories:
+    - software
+    
+first_latex:
+  start_date: '1985'
+  end_date: 
+  label: 'LaTeX'
+  link: 'https://en.wikipedia.org/wiki/LaTeX'
+  location: usa
+  description: 'Leslie Lamport'
+  source: wikipedia
+  categories:
+    - software
+
+gnu_manifesto:
+  start_date: '1985-03'
+  end_date: 
+  label: 'GNU Manifesto'
+  link: 'https://en.wikipedia.org/wiki/GNU'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - unix
+    
+mature_cpp:
+  start_date: '1989'
+  end_date: 
+  label: 'C++ 2.0'
+  link: 'https://en.wikipedia.org/wiki/C%2B%2B'
+  location: bell_labs
+  description: 'Leslie Lamport'
+  source: wikipedia
+  categories:
+    - software
+
+    
+# Computers / Networks
+
+first_america_web_server:
+  start_date: '1991-12-12' 
+  end_date: 
+  label: 'Первый веб-сервер в Америке'
+  location: usa
+  description: 'Доктор Paul Kunz Stanford Linear Accelerator. 300000 Научных статей. Первый поисковик в сети.'
+  source: michigan
+  categories:
+    - networks
+
+netscape_found:  
+  start_date: '1994-04-04'
+  end_date: 
+  label: 'Основана компания Netscape'
+  location: usa
+  description: 'Люди которые делали Mosaic решили уйти в коммерцию.'
+  source: michigan
+  categories:
+    - networks
 
 # Computers / Networks / Arpanet
 
@@ -68,11 +147,21 @@ arpanet_stable:
   end_date: 
   label: 'ARPAnet признан стабильным'
   location: usa
-  description: ''
+  description: 'После 4 итерация дизайн/имплементация.'
   source: michigan
   categories:
     - arpanet
 
+tcp_flag_day:
+  start_date: '1983-01-01'
+  end_date: 
+  label: 'TCP/IP Flag Day'
+  link: 'https://en.wikipedia.org/wiki/Flag_day_%28computing%29'
+  location: usa
+  description: 'RFC 801. ARPANET changed from NCP to the TCP/IP protocol suite. This major change required all ARPANET nodes and interfaces to be shut down and restarted across the entire network.'
+  source: wikipedia
+  categories:
+    - arpanet
 
 # Software / Operating systems / Unix
 
@@ -97,15 +186,38 @@ unix_rewritten_in_c:
     - unix
 
 X_Window_System:
-  start_date: '1984' 
+  start_date: '1984-06' 
   end_date: 
-  label: 'X Window System'
+  label: 'X1 Window System'
   location: mit
   description: ''
   source: wikipedia
   categories:
     - unix
 
+X11_Window_System:
+  start_date: '1987-09-15' 
+  end_date: 
+  label: 'X11 Window System'
+  link: 
+  location: mit
+  description: 'First release of the current protocol.'
+  source: wikipedia
+  categories:
+    - unix
+
+bash_initial_release:
+  start_date: '1989-07-07' 
+  end_date: 
+  label: 'Bash'
+  link: 'https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29'
+  location: usa
+  description: 'Brian Fox'
+  source: wikipedia
+  categories:
+    - unix
+  
+    
 first_linux_release:
   start_date: '1991-08-25' 
   end_date: 
@@ -197,6 +309,17 @@ intel_founded:
   categories:
     - hardware
 
+amd_founded:
+  start_date: '1969-05-01'
+  end_date: 
+  label: 'Основана AMD'
+  link: 'https://en.wikipedia.org/wiki/Advanced_Micro_Devices#First_twelve_years'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
+    
 intel_first_chip:
   start_date: '1971-01'
   end_date: 
@@ -207,7 +330,7 @@ intel_first_chip:
   source: wikipedia
   categories:
     - hardware
-
+    
 zx_spectrum_first_release:
   start_date: '1982-04-21'
   end_date: 
@@ -241,7 +364,40 @@ first_apple:
   categories:
     - hardware
 
+first_mac:
+  start_date: '1984-01-24'
+  end_date: 
+  label: 'Apple Macintosh'
+  link: 'https://en.wikipedia.org/wiki/Macintosh_128K'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
+    
+first_pentium:
+  start_date: '1993-03-22'
+  end_date: 
+  label: 'Intel Pentium'
+  link: 'https://en.wikipedia.org/wiki/Pentium'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - hardware
 
+athlon_64:    
+  start_date: '2003-09-23'
+  end_date: 
+  label: 'Athlon 64'
+  link: 'https://en.wikipedia.org/wiki/Athlon_64'
+  location: usa
+  description: 'The second processor (after the Opteron) to implement AMD64 architecture and the first 64-bit processor targeted at the average consumer.'
+  source: wikipedia
+  categories:
+    - hardware
+
+  
 # USA presidents
     
 George_Washington_term:
@@ -1168,8 +1324,19 @@ klondike_gold_rush:
   categories:
     - history
 
-# movie
-    
+# Media / Movie
+
+blade_runner:
+  start_date: '1982-06-25'
+  end_date: 
+  label: 'Blade Runner'
+  link: 'http://www.imdb.com/title/tt0083658'
+  location: usa
+  description: ''
+  source: imdb
+  categories:
+    - media_movie    
+
 silence_of_the_lambs:
   start_date: '1991-02-14'
   end_date: 
@@ -1179,7 +1346,7 @@ silence_of_the_lambs:
   description: ''
   source: imdb
   categories:
-    - movie    
+    - media_movie    
 
 hellsing:
   start_date: '2001-10-10'
@@ -1190,7 +1357,7 @@ hellsing:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 hackers:
   start_date: '1995-09-15'
@@ -1201,7 +1368,7 @@ hackers:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 requiem_for_a_dream:
   start_date: '2000-12-15'
@@ -1212,7 +1379,7 @@ requiem_for_a_dream:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 american_beauty:
   start_date: '1999-09-08'
@@ -1223,7 +1390,7 @@ american_beauty:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 the_brick:
   start_date: '2006-04-14'
@@ -1234,7 +1401,7 @@ the_brick:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 ghost_in_the_shell:
   start_date: '1995-11-18'
@@ -1245,7 +1412,7 @@ ghost_in_the_shell:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 scott_pilgrim_vs_the_world:
   start_date: '2010-07-26'
@@ -1256,7 +1423,7 @@ scott_pilgrim_vs_the_world:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 basic_instict:
   start_date: '1992-03-20'
@@ -1267,7 +1434,7 @@ basic_instict:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 No_Maps_for_These_Territories:
   start_date: '2000-10-04'
@@ -1278,7 +1445,7 @@ No_Maps_for_These_Territories:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 Girl_interrupted:
   start_date: '2000-01-14'
@@ -1289,7 +1456,7 @@ Girl_interrupted:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 Wonder_Boys:
   start_date: '2000-02-25'
@@ -1300,7 +1467,7 @@ Wonder_Boys:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 the_matrix:
   start_date: '1999-03-31'
@@ -1311,7 +1478,7 @@ the_matrix:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 28_days_later:
   start_date: '2002-11-01'
@@ -1322,7 +1489,7 @@ the_matrix:
   description: ''
   source: imdb
   categories:
-    - movie
+    - media_movie
 
 # Media / Books
 
@@ -1496,8 +1663,8 @@ dance_dance_dance:
   end_date: 
   label: 'Dance, Dance, Dance'
   link: 'https://en.wikipedia.org/wiki/Dance_Dance_Dance_%28novel%29'
-  location: 
-  description: ''
+  location: japan
+  description: 'Перевод на английский выпущен японским издательством.'
   source: wikipedia
   categories:
     - media_book
@@ -1568,16 +1735,99 @@ The_Selfish_Gene:
   categories:
     - media_book
 
-# :
-#   start_date: ''
-#   end_date: 
-#   label: ''
-#   link: ''
-#   location: 
-#   description: ''
-#   source: wikipedia
-#   categories:
-#     - media_book
+# Media / Music
+
+kino:
+  start_date: '1982'
+  end_date: '1990'
+  label: 'Кино'
+  link: 'https://ru.wikipedia.org/wiki/Кино_(группа)'
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+zoopark:
+  start_date: '1982'
+  end_date: '1991'
+  label: 'Зоопарк'
+  link: 'https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA_%28%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%29'
+  location: russia
+  period: true
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+aquarium:
+  start_date: '1972-07'
+  end_date: '2016'
+  label: 'Аквариум'
+  link: 'https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D0%B2%D0%B0%D1%80%D0%B8%D1%83%D0%BC_%28%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%29'
+  period: true
+  location: russia
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+the_beatles:
+  start_date: '1960'
+  end_date: '1970'
+  label: 'The Beatles'
+  link: 'https://en.wikipedia.org/wiki/The_Beatles'
+  period: true
+  location: united_kingdom
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+lennon_shot:
+  start_date: '1980-12-08'
+  end_date: 
+  label: 'Леннона застрелили'
+  link: 'https://en.wikipedia.org/wiki/Death_of_John_Lennon'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+harrison_died:
+  start_date: '2001-11-29'
+  end_date: 
+  label: 'Харрисон умер от рака'
+  link: 'https://en.wikipedia.org/wiki/George_Harrison'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - media_music
+
+bohren_sunset_mission:
+  start_date: '2000-02-25'
+  end_date: 
+  label: 'Sunset Mission'
+  link: 'http://www.discogs.com/Bohren-Der-Club-Of-Gore-Sunset-Mission/release/209952'
+  location: germany
+  description: ''
+  source: discogs
+  categories:
+    - musical_album
+
+bohren_black_earth:
+  start_date: '2002-10-28'
+  end_date: 
+  label: 'Black Earth'
+  link: 'http://www.discogs.com/Bohren-Der-Club-Of-Gore-Black-Earth/release/85745'
+  location: germany
+  description: ''
+  source: discogs
+  categories:
+    - musical_album
 
 # :
 #   start_date: ''
@@ -1586,15 +1836,35 @@ The_Selfish_Gene:
 #   link: ''
 #   location: 
 #   description: ''
-#   source: wikipedia
+#   source: 
 #   categories:
-#     - media_book
-
+#     - 
 
     
-# https://en.wikipedia.org/wiki/Automated_teller_machine#History
-# The first modern ATM was an IBM 2984 and came into use at Lloyds
-# Bank, Brentwood High Street, Essex, England in December 1972.
+
+# What the fuck?
+    
+burning_man:
+  start_date: '1986'
+  end_date: 
+  label: 'Burning Man'
+  link: 'https://en.wikipedia.org/wiki/Burning_Man#1986_to_1989'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - wtf
+
+first_atm:
+  start_date: '1972-12'
+  end_date: 
+  label: 'Первый банкомат'
+  link: 'https://en.wikipedia.org/wiki/Automated_teller_machine'
+  location: united_kingdom
+  description: 'The first modern ATM was an IBM 2984 and came into use at Lloyds Bank, Brentwood High Street, Essex, England.'
+  source: wikipedia
+  categories:
+    - wtf
 
 # Премьер-министры Израиля
 # https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D0%B5%D0%BC%D1%8C%D0%B5%D1%80-%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80_%D0%98%D0%B7%D1%80%D0%B0%D0%B8%D0%BB%D1%8F
@@ -1609,8 +1879,6 @@ The_Selfish_Gene:
 # напоминавшего хвост[4].
 
 # 1971
-# 15 ноября — фирма Intel выпускает свой первый микропроцессор — модель 4004
-
 
 # Trygve Mikkjel Heyerdahl Reenskaug (born 21 June 1930) is a Norwegian
 # computer scientist and professor emeritus of the University of

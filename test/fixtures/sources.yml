@@ -13,6 +13,11 @@ imdb:
   label: "IMDb"
   link: "https://imdb.com"
   category: site
+
+discogs:
+  label: "Discogs"
+  link: "http://www.discogs.com"
+  category: site
   
 zhukov:
   authors: [dimitri_zhukov]
