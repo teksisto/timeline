@@ -75,22 +75,9 @@ class QuotesController < ApplicationController
     def set_source
       @quote.build_source unless @quote.source
     end
-    
-    # TODO
-    #
-    # Следующий метод обрабатывает случай, когда пользователь пришел в
-    # new и никаких атрибутов не передал. Другими словами:
-    #
-    #   params[quote] == nil
-    #
-    # В документации говорят использовать params.fetch, но у меня он
-    # не завелся.
+
     def quote_params
-      (params[:quote] && regular_quote_params) || {}
-    end
-    
-    def regular_quote_params
-      params.require(:quote).permit(
+      params.fetch(:quote, {}).permit(
         :label,
         :text,
         :source_id,
