@@ -42,7 +42,7 @@ class VisTimeline
         # не выбрана, то они показываются как range. Выглядит не
         # очень, но выбирать события по категориям пока не хочется.
         hash.merge!(type: 'background')
-        age_css_class = toggle_age_css_class(age_css_class)
+        age_css_class = toggle_age_css_class(e.location)
         if age_css_class.present?
           hash.merge!(className: age_css_class)
         end
@@ -123,13 +123,12 @@ class VisTimeline
 
   private
   
-  # TODO Надо чередовать классы внутри одной страны, а не глобально.
-  def toggle_age_css_class(str)
-    if str.present?
-      ''
-    else
-      'negative'
-    end
+  def toggle_age_css_class(location)
+    @css_class_by_location ||= {}
+    current_class = @css_class_by_location[location]
+    next_class = current_class.present? ? '' : 'negative'
+    @css_class_by_location[location] = next_class
+    next_class
   end
 
 end
