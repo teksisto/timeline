@@ -168,5 +168,5 @@ class Event < ActiveRecord::Base
     # если данные есть, то вернуть integer, если нет - nil
     matches.map{|s| s.to_i if s.present?}
   end
-
+  
 end

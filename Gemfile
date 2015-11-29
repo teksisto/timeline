@@ -70,6 +70,9 @@ gem 'org-ruby'
 gem 'linkeddata'
 gem 'rdf-virtuoso'
 
+gem 'pry'
+gem 'pry-doc'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis', '= 4.7.0'
   gem 'rails-assets-reveal-js'
