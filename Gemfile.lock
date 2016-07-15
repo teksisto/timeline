@@ -173,6 +173,7 @@ GEM
       rubypants (~> 0.2)
     parser (2.3.0.pre.2)
       ast (>= 1.1, < 3.0)
+    pg (0.18.4)
     powerpack (0.1.1)
     pry (0.10.1)
       coderay (~> 1.1.0)
@@ -324,7 +325,6 @@ GEM
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (>= 2.8, < 4.0)
-    sqlite3 (1.3.10)
     sxp (0.1.5)
     temple (0.7.6)
     terminal-table (1.4.5)
@@ -372,6 +372,7 @@ DEPENDENCIES
   less-rails
   linkeddata
   org-ruby
+  pg
   pry
   pry-doc
   rails (= 4.2.4)
@@ -386,7 +387,6 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   select2-rails
   spring
-  sqlite3
   sxp
   therubyracer
   turbolinks
@@ -395,4 +395,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.10.0.rc
+   1.12.5
