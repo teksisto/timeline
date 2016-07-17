@@ -3,7 +3,10 @@
 .form-group
   = f.label :author_ids, class: 'control-label'
   .controls
-    = f.select :author_ids, options_from_collection_for_select(Person.all, :id, :label, f.object.author_ids), {include_blank: true}, {multiple: true, style: 'width: 100%;'}
+    = f.select :author_ids,
+               options_from_collection_for_select(Person.all, :id, :label, f.object.author_ids),
+               {include_blank: true},
+               {multiple: true, style: 'width: 100%;'}
   = error_span(f.object[:author_ids])
 
   -# TODO
@@ -26,7 +29,10 @@
 .form-group
   = f.label :category_id, class: 'control-label'
   .controls
-    = f.select :category_id, category_options_for_select(Category.sources_root, f.object.category_id), {include_blank: true}, {class: 'form-control'}  
+    = f.select :category_id,
+               category_options_for_select(Category.sources_root, f.object.category_id),
+               {include_blank: true},
+               {class: 'form-control'}  
   = error_span(f.object[:category_id])
 
 .form-group
