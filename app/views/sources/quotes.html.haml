@@ -1,8 +1,8 @@
 .reveal
   .slides
-    - for quote in @quotes
+    - for version in @quote_versions
       %section
-        - if quote.label
-          %h2= quote.label
-        %p= quote.text
+        -# - if version.label
+        -#   %h2= version.label
+        %p= version.text
 
