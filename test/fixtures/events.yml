@@ -1,7 +1,7 @@
 # Computers / Software
 
 first_ascii:
-  start_date: '1963'
+  start_date: <%= Date.new(1963).to_s(:db) %>
   end_date: 
   label: 'ASCII 1st edition'
   link: 'https://en.wikipedia.org/wiki/ASCII'
@@ -12,7 +12,7 @@ first_ascii:
     - software
 
 the_ware_report:
-  start_date: '1967-10' 
+  start_date: <%= Date.new(1967,10).to_s(:db) %>
   end_date: 
   label: 'The Ware report'
   location: usa
@@ -22,7 +22,7 @@ the_ware_report:
     - security
 
 the_mother_of_all_demos:
-  start_date: '1968-12-09' 
+  start_date: <%= Date.new(1968,12,9).to_s(:db) %>
   end_date: 
   label: 'The Mother of All Demos'
   location: usa
@@ -32,7 +32,7 @@ the_mother_of_all_demos:
     - software
 
 first_emacs:
-  start_date: '1976'
+  start_date: <%= Date.new(1976).to_s(:db) %>
   end_date: 
   label: 'Emacs'
   link: 'https://en.wikipedia.org/wiki/Emacs'
@@ -43,7 +43,7 @@ first_emacs:
     - software
 
 first_c:
-  start_date: '1972'
+  start_date:  <%= Date.new(1972).to_s(:db) %>
   end_date: 
   label: 'C'
   link: 'https://en.wikipedia.org/wiki/C_%28programming_language'
@@ -54,7 +54,7 @@ first_c:
     - software
 
 first_tex:
-  start_date: '1978'
+  start_date:  <%= Date.new(1978).to_s(:db) %>
   end_date: 
   label: 'TeX'
   link: 'https://en.wikipedia.org/wiki/TeX'
@@ -65,7 +65,7 @@ first_tex:
     - software
     
 first_latex:
-  start_date: '1985'
+  start_date:  <%= Date.new(1985).to_s(:db) %>
   end_date: 
   label: 'LaTeX'
   link: 'https://en.wikipedia.org/wiki/LaTeX'
@@ -76,7 +76,7 @@ first_latex:
     - software
 
 gnu_manifesto:
-  start_date: '1985-03'
+  start_date: <%= Date.new(1985,3).to_s(:db) %>
   end_date: 
   label: 'GNU Manifesto'
   link: 'https://en.wikipedia.org/wiki/GNU'
@@ -87,7 +87,7 @@ gnu_manifesto:
     - unix
     
 mature_cpp:
-  start_date: '1989'
+  start_date: <%= Date.new(1989).to_s(:db) %> 
   end_date: 
   label: 'C++ 2.0'
   link: 'https://en.wikipedia.org/wiki/C%2B%2B'
@@ -101,7 +101,7 @@ mature_cpp:
 # Computers / Networks
 
 first_america_web_server:
-  start_date: '1991-12-12' 
+  start_date:  <%= Date.new(1991,12,12).to_s(:db) %>  
   end_date: 
   label: 'Первый веб-сервер в Америке'
   location: usa
@@ -111,7 +111,7 @@ first_america_web_server:
     - networks
 
 netscape_found:  
-  start_date: '1994-04-04'
+  start_date:  <%= Date.new(1994,4,4).to_s(:db) %> 
   end_date: 
   label: 'Основана компания Netscape'
   location: usa
@@ -123,7 +123,7 @@ netscape_found:
 # Computers / Networks / Arpanet
 
 first_packets:
-  start_date: '1969-10-29'
+  start_date:  <%= Date.new(1969,10,29).to_s(:db) %> 
   end_date: 
   label: 'ARPAnet: первая передача данных'
   location: usa
@@ -133,7 +133,7 @@ first_packets:
     - arpanet
     
 arpanet_demo:
-  start_date: '1972-10' 
+  start_date:  <%= Date.new(1972,10).to_s(:db) %>  
   end_date: 
   label: 'ARPAnet: первая демонстрация'
   location: usa
@@ -143,7 +143,7 @@ arpanet_demo:
     - arpanet
 
 arpanet_stable:
-  start_date: '1978' 
+  start_date:  <%= Date.new(1978).to_s(:db) %>  
   end_date: 
   label: 'ARPAnet признан стабильным'
   location: usa
@@ -153,7 +153,7 @@ arpanet_stable:
     - arpanet
 
 tcp_flag_day:
-  start_date: '1983-01-01'
+  start_date:  <%= Date.new(1983,1,1).to_s(:db) %> 
   end_date: 
   label: 'TCP/IP Flag Day'
   link: 'https://en.wikipedia.org/wiki/Flag_day_%28computing%29'
@@ -166,7 +166,7 @@ tcp_flag_day:
 # Software / Operating systems / Unix
 
 first_unix_implementation:
-  start_date: '1969' 
+  start_date:  <%= Date.new(1969).to_s(:db) %>  
   end_date: 
   label: 'Первая имплементация Unix'
   location: bell_labs
@@ -176,7 +176,7 @@ first_unix_implementation:
     - unix
 
 unix_rewritten_in_c:
-  start_date: '1972' 
+  start_date:  <%= Date.new(1972).to_s(:db) %>  
   end_date: 
   label: 'Unix переписали на С'
   location: bell_labs
@@ -186,7 +186,7 @@ unix_rewritten_in_c:
     - unix
 
 X_Window_System:
-  start_date: '1984-06' 
+  start_date:  <%= Date.new(1984,6).to_s(:db) %>  
   end_date: 
   label: 'X1 Window System'
   location: mit
@@ -196,7 +196,7 @@ X_Window_System:
     - unix
 
 X11_Window_System:
-  start_date: '1987-09-15' 
+  start_date:  <%= Date.new(1987,9,15).to_s(:db) %>  
   end_date: 
   label: 'X11 Window System'
   link: 
@@ -207,7 +207,7 @@ X11_Window_System:
     - unix
 
 bash_initial_release:
-  start_date: '1989-07-07' 
+  start_date:  <%= Date.new(1989,7,7).to_s(:db) %>  
   end_date: 
   label: 'Bash'
   link: 'https://en.wikipedia.org/wiki/Bash_%28Unix_shell%29'
@@ -219,7 +219,7 @@ bash_initial_release:
   
     
 first_linux_release:
-  start_date: '1991-08-25' 
+  start_date:  <%= Date.new(1991,8,25).to_s(:db) %>  
   end_date: 
   label: 'Linux 0.01'
   location: 
@@ -231,7 +231,7 @@ first_linux_release:
 # Software / Operating systems / Windows
     
 microsoft_fouded:
-  start_date: '1975-04-04' 
+  start_date:  <%= Date.new(1975,4,4).to_s(:db) %>  
   end_date:
   label: 'Основана Microsoft'
   link: 'https://en.wikipedia.org/wiki/Microsoft' 
@@ -242,7 +242,7 @@ microsoft_fouded:
     - windows
 
 msdos_first_release:
-  start_date: '1981-08' 
+  start_date:  <%= Date.new(1981,8).to_s(:db) %>  
   end_date:
   link: 'https://en.wikipedia.org/wiki/MS-DOS'
   label: 'MS-DOS'
@@ -253,7 +253,7 @@ msdos_first_release:
     - windows
     
 windows_1_0:
-  start_date: '1985-11-20' 
+  start_date:  <%= Date.new(1985,11,20).to_s(:db) %>  
   end_date: 
   link: ''
   label: 'Windows 1.0'
@@ -264,7 +264,7 @@ windows_1_0:
     - windows
 
 windows_3_1:
-  start_date: '1992-04-06' 
+  start_date:  <%= Date.new(1992,4,6).to_s(:db) %>  
   end_date: 
   link: '' 
   label: 'Windows 3.1'
@@ -275,7 +275,7 @@ windows_3_1:
     - windows
 
 windows_95:
-  start_date: '1995-08-24' 
+  start_date:  <%= Date.new(1995,8,24).to_s(:db) %>  
   end_date: 
   link: '' 
   label: 'Windows 95'
@@ -286,7 +286,7 @@ windows_95:
     - windows
 
 windows_xp:
-  start_date: '2001-10-25' 
+  start_date:  <%= Date.new(2001,10,25).to_s(:db) %>  
   end_date: 
   link: '' 
   label: 'Windows XP'
@@ -299,7 +299,7 @@ windows_xp:
 # Hardware
 
 intel_founded:
-  start_date: '1968-07-18'
+  start_date:  <%= Date.new(1968,7,18).to_s(:db) %> 
   end_date: 
   label: 'Основана Intel'
   link: 'https://en.wikipedia.org/wiki/Intel'
@@ -310,7 +310,7 @@ intel_founded:
     - hardware
 
 amd_founded:
-  start_date: '1969-05-01'
+  start_date:  <%= Date.new(1969,5,1).to_s(:db) %> 
   end_date: 
   label: 'Основана AMD'
   link: 'https://en.wikipedia.org/wiki/Advanced_Micro_Devices#First_twelve_years'
@@ -321,7 +321,7 @@ amd_founded:
     - hardware
     
 intel_first_chip:
-  start_date: '1971-01'
+  start_date:  <%= Date.new(1971,1).to_s(:db) %> 
   end_date: 
   label: 'Intel 4004'
   link: 'https://en.wikipedia.org/wiki/Intel_4004'
@@ -332,7 +332,7 @@ intel_first_chip:
     - hardware
     
 zx_spectrum_first_release:
-  start_date: '1982-04-21'
+  start_date:  <%= Date.new(1982,4,21).to_s(:db) %> 
   end_date: 
   label: 'ZX Spectrum'
   link: 'https://en.wikipedia.org/wiki/ZX_Spectrum'
@@ -343,7 +343,7 @@ zx_spectrum_first_release:
     - hardware
 
 first_commodore64:
-  start_date: '1982-08'
+  start_date:  <%= Date.new(1982,8).to_s(:db) %> 
   end_date: 
   label: 'Commodore 64'
   link: 'https://en.wikipedia.org/wiki/Commodore_64'
@@ -354,7 +354,7 @@ first_commodore64:
     - hardware
 
 first_apple:
-  start_date: '1976-04-11'
+  start_date:  <%= Date.new(1976,4,11).to_s(:db) %> 
   end_date: 
   label: 'Apple I'
   link: 'https://en.wikipedia.org/wiki/Apple_I'
@@ -365,7 +365,7 @@ first_apple:
     - hardware
 
 first_mac:
-  start_date: '1984-01-24'
+  start_date:  <%= Date.new(1984,1,24).to_s(:db) %> 
   end_date: 
   label: 'Apple Macintosh'
   link: 'https://en.wikipedia.org/wiki/Macintosh_128K'
@@ -376,7 +376,7 @@ first_mac:
     - hardware
     
 first_pentium:
-  start_date: '1993-03-22'
+  start_date:  <%= Date.new(1993,3,22).to_s(:db) %> 
   end_date: 
   label: 'Intel Pentium'
   link: 'https://en.wikipedia.org/wiki/Pentium'
@@ -387,7 +387,7 @@ first_pentium:
     - hardware
 
 athlon_64:    
-  start_date: '2003-09-23'
+  start_date:  <%= Date.new(2003,9,23).to_s(:db) %> 
   end_date: 
   label: 'Athlon 64'
   link: 'https://en.wikipedia.org/wiki/Athlon_64'
@@ -403,8 +403,8 @@ athlon_64:
 George_Washington_term:
   label: George Washington
   location: usa
-  start_date: 1789-04-30
-  end_date: 1797-03-04
+  start_date:  <%= Date.new(1789,4,30).to_s(:db) %> 
+  end_date:  <%= Date.new(1797,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -414,8 +414,8 @@ George_Washington_term:
 John_Adams_term:
   label: John Adams
   location: usa
-  start_date: 1797-03-04
-  end_date: 1801-03-04
+  start_date:  <%= Date.new(1797,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1801,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -425,8 +425,8 @@ John_Adams_term:
 Thomas_Jefferson_term:
   label: Thomas Jefferson
   location: usa
-  start_date: 1801-03-04
-  end_date: 1809-03-04
+  start_date:  <%= Date.new(1801,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1809,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -436,8 +436,8 @@ Thomas_Jefferson_term:
 James_Madison_term:
   label: James Madison
   location: usa
-  start_date: 1809-03-04
-  end_date: 1817-03-04
+  start_date:  <%= Date.new(1809,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1817,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -447,8 +447,8 @@ James_Madison_term:
 James_Monroe_term:
   label: James Monroe
   location: usa
-  start_date: 1817-03-04
-  end_date: 1825-03-04
+  start_date:  <%= Date.new(1817,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1825,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -458,8 +458,8 @@ James_Monroe_term:
 John_Quincy_Adams_term:
   label: John Quincy Adams
   location: usa
-  start_date: 1825-03-04
-  end_date: 1829-03-04
+  start_date:  <%= Date.new(1825,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1829,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -469,8 +469,8 @@ John_Quincy_Adams_term:
 Andrew_Jackson_term:
   label: Andrew Jackson
   location: usa
-  start_date: 1829-03-04
-  end_date: 1837-03-04
+  start_date:  <%= Date.new(1829,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1837,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -480,8 +480,8 @@ Andrew_Jackson_term:
 Martin_Van_Buren_term:
   label: Martin Van Buren
   location: usa
-  start_date: 1837-03-04
-  end_date: 1841-03-04
+  start_date:  <%= Date.new(1837,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1841,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -491,8 +491,8 @@ Martin_Van_Buren_term:
 William_Henry_Harrison_term:
   label: William Henry Harrison
   location: usa
-  start_date: 1841-03-04
-  end_date: 1841-04-04
+  start_date:  <%= Date.new(1841,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1841,4,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -502,8 +502,8 @@ William_Henry_Harrison_term:
 John_Tyler_term:
   label: John Tyler
   location: usa
-  start_date: 1841-04-04
-  end_date: 1845-03-04
+  start_date:  <%= Date.new(1841,4,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1845,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -513,8 +513,8 @@ John_Tyler_term:
 James_K_Polk_term:
   label: James K. Polk
   location: usa
-  start_date: 1845-03-04
-  end_date: 1849-03-04
+  start_date:  <%= Date.new(1845,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1849,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -524,8 +524,8 @@ James_K_Polk_term:
 Zachary_Taylor_term:
   label: Zachary Taylor
   location: usa
-  start_date: 1849-03-04
-  end_date: 1850-07-09
+  start_date:  <%= Date.new(1849,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1850,7,9).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -535,8 +535,8 @@ Zachary_Taylor_term:
 Millard_Fillmore_term:
   label: Millard Fillmore
   location: usa
-  start_date: 1850-07-09
-  end_date: 1853-03-04
+  start_date:  <%= Date.new(1850,7,9).to_s(:db) %> 
+  end_date:  <%= Date.new(1853,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -546,8 +546,8 @@ Millard_Fillmore_term:
 Franklin_Pierce_term:
   label: Franklin Pierce
   location: usa
-  start_date: 1853-03-04
-  end_date: 1857-03-04
+  start_date:  <%= Date.new(1853,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1857,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -557,8 +557,8 @@ Franklin_Pierce_term:
 James_Buchanan_term:
   label: James Buchanan
   location: usa
-  start_date: 1857-03-04
-  end_date: 1861-03-04
+  start_date:  <%= Date.new(1857,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1861,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -568,8 +568,8 @@ James_Buchanan_term:
 Abraham_Lincoln_term:
   label: Abraham Lincoln
   location: usa
-  start_date: 1861-03-04
-  end_date: 1865-04-15
+  start_date:  <%= Date.new(1861,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1865,4,15).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -579,8 +579,8 @@ Abraham_Lincoln_term:
 Andrew_Johnson_term:
   label: Andrew Johnson
   location: usa
-  start_date: 1865-04-15
-  end_date: 1869-03-04
+  start_date:  <%= Date.new(1865,4,15).to_s(:db) %> 
+  end_date:  <%= Date.new(1869,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -590,8 +590,8 @@ Andrew_Johnson_term:
 Ulysses_S_Grant_term:
   label: Ulysses S. Grant
   location: usa
-  start_date: 1869-03-04
-  end_date: 1877-03-04
+  start_date:  <%= Date.new(1869,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1877,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -601,8 +601,8 @@ Ulysses_S_Grant_term:
 Rutherford_B_Hayes_term:
   label: Rutherford B. Hayes
   location: usa
-  start_date: 1877-03-04
-  end_date: 1881-03-04
+  start_date:  <%= Date.new(1877,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1881,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -612,8 +612,8 @@ Rutherford_B_Hayes_term:
 James_A_Garfield_term:
   label: James A. Garfield
   location: usa
-  start_date: 1881-03-04
-  end_date: 1881-09-19
+  start_date:  <%= Date.new(1881,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1881,9,19).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -623,8 +623,8 @@ James_A_Garfield_term:
 Chester_A_Arthur_term:
   label: Chester A. Arthur
   location: usa
-  start_date: 1881-09-19
-  end_date: 1885-03-04
+  start_date:  <%= Date.new(1881,9,19).to_s(:db) %> 
+  end_date:  <%= Date.new(1885,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -634,8 +634,8 @@ Chester_A_Arthur_term:
 Grover_Cleveland_term:
   label: Grover Cleveland
   location: usa
-  start_date: 1885-03-04
-  end_date: 1889-03-04
+  start_date:  <%= Date.new(1885,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1889,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -645,8 +645,8 @@ Grover_Cleveland_term:
 Benjamin_Harrison_term:
   label: Benjamin Harrison
   location: usa
-  start_date: 1889-03-04
-  end_date: 1893-03-04
+  start_date:  <%= Date.new(1889,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1893,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -656,8 +656,8 @@ Benjamin_Harrison_term:
 Grover_Cleveland_term:
   label: Grover Cleveland
   location: usa
-  start_date: 1893-03-04
-  end_date: 1897-03-04
+  start_date:  <%= Date.new(1893,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1897,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -667,8 +667,8 @@ Grover_Cleveland_term:
 William_McKinley_term:
   label: William McKinley
   location: usa
-  start_date: 1897-03-04
-  end_date: 1901-09-14
+  start_date:  <%= Date.new(1897,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1901,9,14).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -678,8 +678,8 @@ William_McKinley_term:
 Theodore_Roosevelt_term:
   label: Theodore Roosevelt
   location: usa
-  start_date: 1901-09-14
-  end_date: 1909-03-04
+  start_date:  <%= Date.new(1901,9,14).to_s(:db) %> 
+  end_date:  <%= Date.new(1909,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -689,8 +689,8 @@ Theodore_Roosevelt_term:
 William_Howard_Taft_term:
   label: William Howard Taft
   location: usa
-  start_date: 1909-03-04
-  end_date: 1913-03-04
+  start_date:  <%= Date.new(1909,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1913,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -700,8 +700,8 @@ William_Howard_Taft_term:
 Woodrow_Wilson_term:
   label: Woodrow Wilson
   location: usa
-  start_date: 1913-03-04
-  end_date: 1921-03-04
+  start_date:  <%= Date.new(1913,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1921,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -711,8 +711,8 @@ Woodrow_Wilson_term:
 Warren_G_Harding_term:
   label: Warren G. Harding
   location: usa
-  start_date: 1921-03-04
-  end_date: 1923-08-02
+  start_date:  <%= Date.new(1921,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1923,8,2).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -722,8 +722,8 @@ Warren_G_Harding_term:
 Calvin_Coolidge_term:
   label: Calvin Coolidge
   location: usa
-  start_date: 1923-08-02
-  end_date: 1929-03-04
+  start_date:  <%= Date.new(1923,8,2).to_s(:db) %> 
+  end_date:  <%= Date.new(1929,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -733,8 +733,8 @@ Calvin_Coolidge_term:
 Herbert_Hoover_term:
   label: Herbert Hoover
   location: usa
-  start_date: 1929-03-04
-  end_date: 1933-03-04
+  start_date:  <%= Date.new(1929,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1933,3,4).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -744,8 +744,8 @@ Herbert_Hoover_term:
 Franklin_D_Roosevelt_term:
   label: Franklin D. Roosevelt
   location: usa
-  start_date: 1933-03-04
-  end_date: 1945-04-12
+  start_date:  <%= Date.new(1933,3,4).to_s(:db) %> 
+  end_date:  <%= Date.new(1945,4,12).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -755,8 +755,8 @@ Franklin_D_Roosevelt_term:
 Harry_S_Truman_term:
   label: Harry S. Truman
   location: usa
-  start_date: 1945-04-12
-  end_date: 1953-01-20
+  start_date:  <%= Date.new(1945,4,12).to_s(:db) %> 
+  end_date:  <%= Date.new(1953,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -766,8 +766,8 @@ Harry_S_Truman_term:
 Dwight_D_Eisenhower_term:
   label: Dwight D. Eisenhower
   location: usa
-  start_date: 1953-01-20
-  end_date: 1961-01-20
+  start_date:  <%= Date.new(1953,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1961,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -777,8 +777,8 @@ Dwight_D_Eisenhower_term:
 John_F_Kennedy_term:
   label: John F. Kennedy
   location: usa
-  start_date: 1961-01-20
-  end_date: 1963-11-22
+  start_date:  <%= Date.new(1961,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1963,11,22).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -788,8 +788,8 @@ John_F_Kennedy_term:
 Lyndon_B_Johnson_term:
   label: Lyndon B. Johnson
   location: usa
-  start_date: 1963-11-22
-  end_date: 1969-01-20
+  start_date:  <%= Date.new(1963,11,22).to_s(:db) %> 
+  end_date:  <%= Date.new(1969,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -799,8 +799,8 @@ Lyndon_B_Johnson_term:
 Richard_Nixon_term:
   label: Richard Nixon
   location: usa
-  start_date: 1969-01-20
-  end_date: 1974-08-09
+  start_date:  <%= Date.new(1969,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1974,8,9).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -810,8 +810,8 @@ Richard_Nixon_term:
 Gerald_Ford_term:
   label: Gerald Ford
   location: usa
-  start_date: 1974-08-09
-  end_date: 1977-01-20
+  start_date:  <%= Date.new(1974,8,9).to_s(:db) %> 
+  end_date:  <%= Date.new(1977,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -821,8 +821,8 @@ Gerald_Ford_term:
 Jimmy_Carter_term:
   label: Jimmy Carter
   location: usa
-  start_date: 1977-01-20
-  end_date: 1981-01-20
+  start_date:  <%= Date.new(1977,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1981,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -832,8 +832,8 @@ Jimmy_Carter_term:
 Ronald_Reagan_term:
   label: Ronald Reagan
   location: usa
-  start_date: 1981-01-20
-  end_date: 1989-01-20
+  start_date:  <%= Date.new(1981,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1989,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -843,8 +843,8 @@ Ronald_Reagan_term:
 George_H_W_Bush_term:
   label: George H. W. Bush
   location: usa
-  start_date: 1989-01-20
-  end_date: 1993-01-20
+  start_date:  <%= Date.new(1989,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(1993,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -854,8 +854,8 @@ George_H_W_Bush_term:
 Bill_Clinton_term:
   label: Bill Clinton
   location: usa
-  start_date: 1993-01-20
-  end_date: 2001-01-20
+  start_date:  <%= Date.new(1993,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(2001,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -865,8 +865,8 @@ Bill_Clinton_term:
 George_W_Bush_term:
   label: George W. Bush
   location: usa
-  start_date: 2001-01-20
-  end_date: 2009-01-20
+  start_date:  <%= Date.new(2001,1,20).to_s(:db) %> 
+  end_date:  <%= Date.new(2009,1,20).to_s(:db) %> 
   age: true
   period: true
   source: wikipedia
@@ -878,8 +878,8 @@ George_W_Bush_term:
 
 vladimir_lenin:
   label: Владимир Ленин
-  start_date: 1917-10-23
-  end_date: 1924-01-21
+  start_date:  <%= Date.new(1917,10,23).to_s(:db) %> 
+  end_date:  <%= Date.new(1924,1,21).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -890,8 +890,8 @@ vladimir_lenin:
   
 joseph_stalin:
   label: Иосиф Сталин
-  start_date: 1924-01-22
-  end_date: 1953-03-05
+  start_date:  <%= Date.new(1924,1,22).to_s(:db) %> 
+  end_date:  <%= Date.new(1953,3,5).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -902,8 +902,8 @@ joseph_stalin:
 
 nikita_hrushev:
   label: Никита Хрущев
-  start_date: 1953-09-07
-  end_date: 1964-10-14
+  start_date:  <%= Date.new(1953,9,7).to_s(:db) %> 
+  end_date:  <%= Date.new(1964,10,14).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -914,8 +914,8 @@ nikita_hrushev:
 
 leonid_brezhnev:
   label: Леонид Брежнев
-  start_date: 1964-10-14
-  end_date: 1982-11-10
+  start_date:  <%= Date.new(1964,10,14).to_s(:db) %> 
+  end_date:  <%= Date.new(1982,11,10).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -926,8 +926,8 @@ leonid_brezhnev:
 
 jurij_andropov:
   label: Юрий Андропов
-  start_date: 1982-11-12
-  end_date: 1984-02-09
+  start_date:  <%= Date.new(1982,11,12).to_s(:db) %> 
+  end_date:  <%= Date.new(1984,2,9).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -938,8 +938,8 @@ jurij_andropov:
 
 constantine_chernenko:
   label: Константин Черненко
-  start_date: 1984-02-13
-  end_date: 1985-03-10
+  start_date:  <%= Date.new(1984,2,13).to_s(:db) %> 
+  end_date:  <%= Date.new(1985,3,10).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -950,8 +950,8 @@ constantine_chernenko:
 
 michael_gorbachev:
   label: Михаил Горбачев
-  start_date: 1985-03-11
-  end_date: 1991-12-25
+  start_date:  <%= Date.new(1985,3,11).to_s(:db) %> 
+  end_date:  <%= Date.new(1991,12,25).to_s(:db) %> 
   age: true
   period: true
   location: russia
@@ -963,7 +963,7 @@ michael_gorbachev:
 # space
 
 sputnik_one:
-  start_date: '1957-10-04'
+  start_date:  <%= Date.new(1957,10,4).to_s(:db) %> 
   end_date: 
   label: 'Спутник-1'
   location: russia
@@ -973,7 +973,7 @@ sputnik_one:
     - space
 
 first_space_connection:
-  start_date: '1969-01-16'
+  start_date:  <%= Date.new(1969,1,16).to_s(:db) %> 
   end_date: 
   label: 'Первая стыковка в космосе'
   location: russia
@@ -983,7 +983,7 @@ first_space_connection:
     - space
     
 first_space_flight:
-  start_date: '1961-04-12'
+  start_date:  <%= Date.new(1961,4,12).to_s(:db) %> 
   end_date: 
   label: 'Первый полет человека в космос'
   location: russia
@@ -993,7 +993,7 @@ first_space_flight:
     - space
 
 first_day_in_space:
-  start_date: '1961-08-06'
+  start_date:  <%= Date.new(1961,8,6).to_s(:db) %> 
   end_date: 
   label: 'Первые cутки в космосе'
   location: russia
@@ -1003,7 +1003,7 @@ first_day_in_space:
     - space
 
 first_space_outdoor:
-  start_date: '1965-03-18'
+  start_date:  <%= Date.new(1965,3,18).to_s(:db) %> 
   end_date: 
   label: 'Первый выход в открытый космос'
   location: russia
@@ -1013,7 +1013,7 @@ first_space_outdoor:
     - space
 
 first_moon_flight:
-  start_date: '1968-12-21'
+  start_date:  <%= Date.new(1968,12,21).to_s(:db) %> 
   end_date: 
   label: 'Первый пилотируемый облет Луны'
   location: usa
@@ -1023,7 +1023,7 @@ first_moon_flight:
     - space
 
 second_moon_flight:
-  start_date: '1969-05-18'
+  start_date:  <%= Date.new(1969,5,18).to_s(:db) %> 
   end_date: 
   label: 'Второй пилотируемый облет Луны'
   location: usa
@@ -1033,7 +1033,7 @@ second_moon_flight:
     - space
 
 first_moon_landing:
-  start_date: '1969-07-16'
+  start_date:  <%= Date.new(1969,7,16).to_s(:db) %> 
   end_date: 
   label: 'Первая высадка на Луне'
   location: usa
@@ -1043,7 +1043,7 @@ first_moon_landing:
     - space
 
 second_moon_landing:
-  start_date: '1969-11-14'
+  start_date:  <%= Date.new(1969,11,14).to_s(:db) %> 
   end_date: 
   label: 'Вторая высадка на Луне'
   location: usa
@@ -1053,7 +1053,7 @@ second_moon_landing:
     - space
 
 third_moon_landing:
-  start_date: '1971-01-31'
+  start_date:  <%= Date.new(1971,1,31).to_s(:db) %> 
   end_date: 
   label: 'Третья высадка на Луне'
   location: usa
@@ -1063,7 +1063,7 @@ third_moon_landing:
     - space
 
 forth_moon_landing:
-  start_date: '1971-07-26'
+  start_date:  <%= Date.new(1971,7,26).to_s(:db) %> 
   end_date: 
   label: 'Четвертая высадка на Луне'
   location: usa
@@ -1073,7 +1073,7 @@ forth_moon_landing:
     - space
 
 fifth_moon_landing:
-  start_date: '1972-04-16'
+  start_date:  <%= Date.new(1972,4,16).to_s(:db) %> 
   end_date: 
   label: 'Пятая высадка на Луне'
   location: usa
@@ -1083,7 +1083,7 @@ fifth_moon_landing:
     - space
 
 six_moon_landing:
-  start_date: '1972-12-07'
+  start_date:  <%= Date.new(1972,12,7).to_s(:db) %> 
   end_date: 
   label: 'Шестая высадка на Луне'
   location: usa
@@ -1093,7 +1093,7 @@ six_moon_landing:
     - space
 
 soyuz_apollon:
-  start_date: '1975-06-15'
+  start_date:  <%= Date.new(1975,6,15).to_s(:db) %> 
   end_date: 
   label: 'Союз-Аполлон'
   location:
@@ -1103,7 +1103,7 @@ soyuz_apollon:
     - space
 
 first_mir:
-  start_date: '1987-02-05'
+  start_date:  <%= Date.new(1987,2,5).to_s(:db) %> 
   end_date: 
   label: 'Первая экспедиция на станции Мир'
   location: russia
@@ -1113,7 +1113,7 @@ first_mir:
     - space
 
 hubble_start:
-  start_date: '1990-04-24'
+  start_date:  <%= Date.new(1990,4,24).to_s(:db) %> 
   end_date: 
   label: 'Запуск телескопа Хаббл'
   location: usa
@@ -1123,7 +1123,7 @@ hubble_start:
     - space
 
 last_mir:
-  start_date: '2000-04-04'
+  start_date:  <%= Date.new(2000,4,4).to_s(:db) %> 
   end_date: 
   label: 'Последняя экспедиция на станцию Мир'
   location: russia
@@ -1133,7 +1133,7 @@ last_mir:
     - space
 
 mir_drown:
-  start_date: '2001-03-23'
+  start_date:  <%= Date.new(2001,3,23).to_s(:db) %> 
   end_date: 
   label: 'Затопление станции Мир'
   location: russia
@@ -1143,7 +1143,7 @@ mir_drown:
     - space
 
 mks_first_residents:
-  start_date: '2000-11-02'
+  start_date:  <%= Date.new(2000,11,2).to_s(:db) %> 
   end_date: 
   label: 'Первый экипаж МКС'
   location: russia
@@ -1153,7 +1153,7 @@ mks_first_residents:
     - space
 
 china_first_manned_flight:
-  start_date: '2003-10-15'
+  start_date:  <%= Date.new(2003,10,15).to_s(:db) %> 
   end_date: 
   label: 'Shenzhou 5'
   location: 
@@ -1163,7 +1163,7 @@ china_first_manned_flight:
     - space
 
 first_private_suborbital:
-  start_date: '2004-06-21'
+  start_date:  <%= Date.new(2004,6,21).to_s(:db) %> 
   end_date: 
   label: 'SpaceShipOne'
   location: usa
@@ -1175,7 +1175,7 @@ first_private_suborbital:
 # nuclear
     
 first_nuclear_plant:
-  start_date: '1954-06-27'
+  start_date:  <%= Date.new(1954,6,27).to_s(:db) %> 
   end_date: 
   label: 'Первая АЭС в Обнинске'
   location: russia
@@ -1185,7 +1185,7 @@ first_nuclear_plant:
     - nuclear_energy
     
 chernobol_accident:
-  start_date: '1986-04-26'
+  start_date:  <%= Date.new(1986,4,26).to_s(:db) %> 
   end_date: 
   label: 'Авария на Чернобыльской АЭС'
   location: russia
@@ -1195,7 +1195,7 @@ chernobol_accident:
     - nuclear_energy
     
 fukushima_accident:
-  start_date: '2011-03-11'
+  start_date:  <%= Date.new(2011,3,11).to_s(:db) %> 
   end_date: 
   label: 'Авария на АЭС Фукушима-1'
   location: japan
@@ -1205,7 +1205,7 @@ fukushima_accident:
     - nuclear_energy
     
 three_mile_island_accident:
-  start_date: '1979-03-28'
+  start_date:  <%= Date.new(1979,3,28).to_s(:db) %> 
   end_date: 
   label: 'Авария на АЭС Three Mile Island'
   location: usa
@@ -1215,7 +1215,7 @@ three_mile_island_accident:
     - nuclear_energy
     
 hiroshima_bombing:
-  start_date: '1945-08-06'
+  start_date:  <%= Date.new(1945,8,6).to_s(:db) %> 
   end_date: 
   label: 'Бомбардировка Хиросимы'
   location: japan
@@ -1225,7 +1225,7 @@ hiroshima_bombing:
     - nuclear_energy
     
 nagasaki_bombing:
-  start_date: '1945-08-09'
+  start_date:  <%= Date.new(1945,8,9).to_s(:db) %> 
   end_date: 
   label: 'Бомбардировка Нагасаки'
   location: japan
@@ -1235,7 +1235,7 @@ nagasaki_bombing:
     - nuclear_energy
     
 first_nuclear_electricity:
-  start_date: '1948-09-03'
+  start_date:  <%= Date.new(1948,9,3).to_s(:db) %> 
   end_date: 
   label: 'Первое электричество из ядерного реактора'
   location: usa
@@ -1247,8 +1247,8 @@ first_nuclear_electricity:
 # war
 
 vietnam_war:
-  start_date: '1955-11-01'
-  end_date: '1975-04-30'
+  start_date:  <%= Date.new(1955,11,1).to_s(:db) %> 
+  end_date:  <%= Date.new(1975,4,30).to_s(:db) %> 
   label: 'Война во Вьетнаме'
   period: true
   location: usa
@@ -1258,8 +1258,8 @@ vietnam_war:
     - wars
     
 soviet_afgan_war:
-  start_date: '1979-12-24'
-  end_date: '1989-02-15'
+  start_date:  <%= Date.new(1979,12,24).to_s(:db) %> 
+  end_date:  <%= Date.new(1989,2,15).to_s(:db) %> 
   label: 'Афганская война'
   period: true
   location: russia
@@ -1269,8 +1269,8 @@ soviet_afgan_war:
     - wars
 
 second_boer_war:
-  start_date: '1899-10-11'
-  end_date: '1902-05-31'
+  start_date:  <%= Date.new(1899,10,11).to_s(:db) %> 
+  end_date:  <%= Date.new(1902,5,31).to_s(:db) %> 
   label: 'Вторая англо-бурская война'
   location: 
   description: ''
@@ -1281,7 +1281,7 @@ second_boer_war:
 # biotech
     
 first_aids_in_north_america:
-  start_date: '1969-05-15'
+  start_date:  <%= Date.new(1969,5,15).to_s(:db) %> 
   end_date: 
   label: 'Первый задокументированный HIV-1 в Северной Америке'
   location: usa 
@@ -1291,7 +1291,7 @@ first_aids_in_north_america:
     - biotech
 
 congolese_man:
-  start_date: '1959'
+  start_date:  <%= Date.new(1959).to_s(:db) %> 
   end_date: 
   label: 'Congolese man'
   location:
@@ -1303,8 +1303,8 @@ congolese_man:
 # history
 
 klondike_gold_rush:
-  start_date: '1896'
-  end_date: '1899'
+  start_date:  <%= Date.new(1896).to_s(:db) %> 
+  end_date: <%= Date.new(1899).to_s(:db) %> 
   label: 'Klondike Gold Rush'
   period: true
   location: 
@@ -1314,8 +1314,8 @@ klondike_gold_rush:
     - history
 
 1918_flu_pandemic:  
-  start_date: '1918'
-  end_date: '1920'
+  start_date:  <%= Date.new(1918).to_s(:db) %> 
+  end_date: <%= Date.new(1920).to_s(:db) %> 
   label: 'Испанский грипп'
   period: true
   location: 
@@ -1327,7 +1327,7 @@ klondike_gold_rush:
 # Media / Movie
 
 blade_runner:
-  start_date: '1982-06-25'
+  start_date:  <%= Date.new(1982,6,25).to_s(:db) %> 
   end_date: 
   label: 'Blade Runner'
   link: 'http://www.imdb.com/title/tt0083658'
@@ -1338,7 +1338,7 @@ blade_runner:
     - media_movie    
 
 silence_of_the_lambs:
-  start_date: '1991-02-14'
+  start_date:  <%= Date.new(1991,2,14).to_s(:db) %> 
   end_date: 
   label: 'Silence of the Lambs'
   link: 'http://www.imdb.com/title/tt0102926'
@@ -1349,7 +1349,7 @@ silence_of_the_lambs:
     - media_movie    
 
 hellsing:
-  start_date: '2001-10-10'
+  start_date:  <%= Date.new(2001,10,10).to_s(:db) %> 
   end_date:
   link: 'http://www.imdb.com/title/tt0325547'
   label: 'Hellsing'
@@ -1360,7 +1360,7 @@ hellsing:
     - media_movie
 
 hackers:
-  start_date: '1995-09-15'
+  start_date:  <%= Date.new(1995,9,15).to_s(:db) %> 
   end_date: 
   label: 'Hackers'
   link: 'http://www.imdb.com/title/tt0113243'
@@ -1371,7 +1371,7 @@ hackers:
     - media_movie
 
 requiem_for_a_dream:
-  start_date: '2000-12-15'
+  start_date:  <%= Date.new(2000,12,15).to_s(:db) %> 
   end_date: 
   label: 'Requiem for a Dream'
   link: 'http://www.imdb.com/title/tt0180093'
@@ -1382,7 +1382,7 @@ requiem_for_a_dream:
     - media_movie
 
 american_beauty:
-  start_date: '1999-09-08'
+  start_date:  <%= Date.new(1999,9,8).to_s(:db) %> 
   end_date: 
   label: 'American Beauty'
   link: 'http://www.imdb.com/title/tt0169547'
@@ -1393,7 +1393,7 @@ american_beauty:
     - media_movie
 
 the_brick:
-  start_date: '2006-04-14'
+  start_date:  <%= Date.new(2006,4,14).to_s(:db) %> 
   end_date: 
   label: 'The Brick'
   link: 'http://www.imdb.com/title/tt0393109'
@@ -1404,7 +1404,7 @@ the_brick:
     - media_movie
 
 ghost_in_the_shell:
-  start_date: '1995-11-18'
+  start_date:  <%= Date.new(1995,11,18).to_s(:db) %> 
   end_date: 
   label: 'Ghost in the Shell'
   link: 'http://www.imdb.com/title/tt0113568'
@@ -1415,7 +1415,7 @@ ghost_in_the_shell:
     - media_movie
 
 scott_pilgrim_vs_the_world:
-  start_date: '2010-07-26'
+  start_date:  <%= Date.new(2010,7,26).to_s(:db) %> 
   end_date: 
   label: 'Scott Pilgrim vs. The World'
   link: 'http://www.imdb.com/title/tt0446029'
@@ -1426,7 +1426,7 @@ scott_pilgrim_vs_the_world:
     - media_movie
 
 basic_instict:
-  start_date: '1992-03-20'
+  start_date:  <%= Date.new(1992,3,20).to_s(:db) %> 
   end_date: 
   label: 'Basic Instinct'
   link: 'http://www.imdb.com/title/tt0103772'
@@ -1437,7 +1437,7 @@ basic_instict:
     - media_movie
 
 No_Maps_for_These_Territories:
-  start_date: '2000-10-04'
+  start_date:  <%= Date.new(2000,10,4).to_s(:db) %> 
   end_date: 
   label: 'No Maps for These Territories'
   link: 'http://www.imdb.com/title/tt0269629'
@@ -1448,7 +1448,7 @@ No_Maps_for_These_Territories:
     - media_movie
 
 Girl_interrupted:
-  start_date: '2000-01-14'
+  start_date:  <%= Date.new(2000,1,14).to_s(:db) %> 
   end_date: 
   label: 'Girl, interrupted'
   link: 'http://www.imdb.com/title/tt0172493'
@@ -1459,7 +1459,7 @@ Girl_interrupted:
     - media_movie
 
 Wonder_Boys:
-  start_date: '2000-02-25'
+  start_date:  <%= Date.new(2000,2,25).to_s(:db) %> 
   end_date: 
   label: 'Wonder Boys'
   link: 'http://www.imdb.com/title/tt0185014'
@@ -1470,7 +1470,7 @@ Wonder_Boys:
     - media_movie
 
 the_matrix:
-  start_date: '1999-03-31'
+  start_date:  <%= Date.new(1999,3,31).to_s(:db) %> 
   end_date: 
   label: 'The Matrix'
   link: 'http://www.imdb.com/title/tt0133093'
@@ -1481,7 +1481,7 @@ the_matrix:
     - media_movie
 
 28_days_later:
-  start_date: '2002-11-01'
+  start_date:  <%= Date.new(2002,11,1).to_s(:db) %> 
   end_date: 
   label: '28 days later'
   link: 'http://www.imdb.com/title/tt0289043'
@@ -1494,7 +1494,7 @@ the_matrix:
 # Media / Books
 
 hesse_gets_nobel:
-  start_date: '1946'
+  start_date:  <%= Date.new(1946).to_s(:db) %> 
   end_date: 
   label: 'Гессе получает Нобелевскую премию'
   link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
@@ -1505,7 +1505,7 @@ hesse_gets_nobel:
     - media_book
 
 hesse_starts_glasperlenspiel:
-  start_date: '1931'
+  start_date:  <%= Date.new(1931).to_s(:db) %> 
   end_date: 
   label: 'Гессе начал писать "Игру в бисер"'
   link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
@@ -1516,7 +1516,7 @@ hesse_starts_glasperlenspiel:
     - media_book
 
 hesse_publish_glasperlenspiel:
-  start_date: '1943-11-18'
+  start_date:  <%= Date.new(1943,11,18).to_s(:db) %> 
   end_date: 
   label: 'Der Glasperlenspiel'
   link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
@@ -1527,7 +1527,7 @@ hesse_publish_glasperlenspiel:
     - media_book
 
 glasperlenspiel_in_english:
-  start_date: '1949'
+  start_date:  <%= Date.new(1949).to_s(:db) %> 
   end_date: 
   label: '"Игра в бисер" опубликована на английском'
   link: 'https://en.wikipedia.org/wiki/The_Glass_Bead_Game'
@@ -1538,7 +1538,7 @@ glasperlenspiel_in_english:
     - media_book
 
 Zen_and_the_Art_of_Motorcycle_Maintenance:
-  start_date: '1974'
+  start_date:  <%= Date.new(1974).to_s(:db) %> 
   end_date: 
   label: 'Zen and the Art of Motorcycle Maintenance'
   link: 'https://en.wikipedia.org/wiki/Zen_and_the_Art_of_Motorcycle_Maintenance'
@@ -1549,7 +1549,7 @@ Zen_and_the_Art_of_Motorcycle_Maintenance:
     - media_book
 
 petrosian_house:
-  start_date: '2009'
+  start_date:  <%= Date.new(2009).to_s(:db) %> 
   end_date: 
   label: 'Дом, в котором'
   link: ''
@@ -1560,7 +1560,7 @@ petrosian_house:
     - media_book
 
 neuromancer:
-  start_date: '1984-06-01'
+  start_date:  <%= Date.new(1984,6,1).to_s(:db) %> 
   end_date: 
   label: 'Neuromancer'
   link: 'https://en.wikipedia.org/wiki/Neuromancer'
@@ -1571,7 +1571,7 @@ neuromancer:
     - media_book
 
 Blindsight:
-  start_date: '2006-10-03'
+  start_date:  <%= Date.new(2006,10,3).to_s(:db) %> 
   end_date: 
   label: 'Blindsight'
   link: 'https://en.wikipedia.org/wiki/Blindsight_%28Watts_novel%29'
@@ -1582,7 +1582,7 @@ Blindsight:
     - media_book
 
 wisard_of_the_earthsea:
-  start_date: '1968'
+  start_date:  <%= Date.new(1968).to_s(:db) %> 
   end_date: 
   label: 'A Wizard of Earthsea'
   link: 'https://en.wikipedia.org/wiki/A_Wizard_of_Earthsea'
@@ -1593,7 +1593,7 @@ wisard_of_the_earthsea:
     - media_book
 
 the_hobbit :
-  start_date: '1937-09-21'
+  start_date:  <%= Date.new(1937,9,21).to_s(:db) %> 
   end_date: 
   label: 'The Hobbit'
   link: 'https://en.wikipedia.org/wiki/The_Hobbit'
@@ -1604,7 +1604,7 @@ the_hobbit :
     - media_book
 
 The_Fellowship_of_the_Ring:
-  start_date: '1954-07-29'
+  start_date:  <%= Date.new(1954,7,29).to_s(:db) %> 
   end_date: 
   label: 'The Fellowship of the Ring'
   link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
@@ -1615,7 +1615,7 @@ The_Fellowship_of_the_Ring:
     - media_book
 
 The_Two_Towers:
-  start_date: '1954-11-11'
+  start_date:  <%= Date.new(1954,11,11).to_s(:db) %> 
   end_date: 
   label: 'The Two Towers'
   link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
@@ -1626,7 +1626,7 @@ The_Two_Towers:
     - media_book
 
 The_Return_of_the_King:
-  start_date: '1955-10-20'
+  start_date:  <%= Date.new(1955,10,20).to_s(:db) %> 
   end_date: 
   label: 'The Return of the King'
   link: 'https://en.wikipedia.org/wiki/The_Lord_of_the_Rings'
@@ -1637,7 +1637,7 @@ The_Return_of_the_King:
     - media_book
 
 Ghost_in_the_Wires:
-  start_date: '2011-08-15'
+  start_date:  <%= Date.new(2011,8,15).to_s(:db) %> 
   end_date: 
   label: 'Ghost in the Wires'
   link: ''
@@ -1648,7 +1648,7 @@ Ghost_in_the_Wires:
     - media_book
 
 Dansu_Dansu_Dansu:
-  start_date: '1988-10-13'
+  start_date:  <%= Date.new(1988,10,13).to_s(:db) %> 
   end_date: 
   label: 'Dansu Dansu Dansu'
   link: 'https://ja.wikipedia.org/wiki/%E3%83%80%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%80%E3%83%B3%E3%82%B9%E3%83%BB%E3%83%80%E3%83%B3%E3%82%B9'
@@ -1659,7 +1659,7 @@ Dansu_Dansu_Dansu:
     - media_book
 
 dance_dance_dance:
-  start_date: '1994-01'
+  start_date:  <%= Date.new(1994,1).to_s(:db) %> 
   end_date: 
   label: 'Dance, Dance, Dance'
   link: 'https://en.wikipedia.org/wiki/Dance_Dance_Dance_%28novel%29'
@@ -1670,7 +1670,7 @@ dance_dance_dance:
     - media_book
 
 dance_dance_dance_russian_edition:
-  start_date: '1998'
+  start_date:  <%= Date.new(1998).to_s(:db) %> 
   end_date: 
   label: 'Дэнс, дэнс, дэнс'
   link: 'https://ru.wikipedia.org/wiki/%D0%94%D1%8D%D0%BD%D1%81,_%D0%B4%D1%8D%D0%BD%D1%81,_%D0%B4%D1%8D%D0%BD%D1%81'
@@ -1681,7 +1681,7 @@ dance_dance_dance_russian_edition:
     - media_book
 
 Dune_novel:
-  start_date: '1965-08-01'
+  start_date:  <%= Date.new(1965,8,1).to_s(:db) %> 
   end_date: 
   label: 'Dune'
   link: 'https://en.wikipedia.org/wiki/Dune_%28novel%29'
@@ -1692,7 +1692,7 @@ Dune_novel:
     - media_book
 
 Tommorrow_I_Always_Was_a_Lion:
-  start_date: '2005'
+  start_date:  <%= Date.new(2005).to_s(:db) %> 
   end_date: 
   label: 'Завтра я всегда бывала львом'
   link: ''
@@ -1703,7 +1703,7 @@ Tommorrow_I_Always_Was_a_Lion:
     - media_book
 
 The_Black_Swan:
-  start_date: '2007-04-17'
+  start_date:  <%= Date.new(2007,4,17).to_s(:db) %> 
   end_date: 
   label: 'The Black Swan'
   link: 'https://en.wikipedia.org/wiki/The_Black_Swan_%28Taleb_book%29'
@@ -1714,7 +1714,7 @@ The_Black_Swan:
     - media_book
 
 The_Eye_of_the_World:
-  start_date: '1990-01-15'
+  start_date:  <%= Date.new(1990,1,15).to_s(:db) %> 
   end_date: 
   label: 'The Eye of the World'
   link: 'https://en.wikipedia.org/wiki/The_Eye_of_the_World'
@@ -1725,7 +1725,7 @@ The_Eye_of_the_World:
     - media_book
 
 The_Selfish_Gene:
-  start_date: '1976'
+  start_date:  <%= Date.new(1976).to_s(:db) %> 
   end_date: 
   label: 'The Selfish Gene'
   link: 'https://en.wikipedia.org/wiki/The_Selfish_Gene'
@@ -1738,8 +1738,8 @@ The_Selfish_Gene:
 # Media / Music
 
 kino:
-  start_date: '1982'
-  end_date: '1990'
+  start_date:  <%= Date.new(1982).to_s(:db) %> 
+  end_date: <%= Date.new(1990).to_s(:db) %> 
   label: 'Кино'
   link: 'https://ru.wikipedia.org/wiki/Кино_(группа)'
   period: true
@@ -1750,8 +1750,8 @@ kino:
     - media_music
 
 zoopark:
-  start_date: '1982'
-  end_date: '1991'
+  start_date:  <%= Date.new(1982).to_s(:db) %> 
+  end_date:  <%= Date.new(1991).to_s(:db) %> 
   label: 'Зоопарк'
   link: 'https://ru.wikipedia.org/wiki/%D0%97%D0%BE%D0%BE%D0%BF%D0%B0%D1%80%D0%BA_%28%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%29'
   location: russia
@@ -1762,8 +1762,8 @@ zoopark:
     - media_music
 
 aquarium:
-  start_date: '1972-07'
-  end_date: '2016'
+  start_date:  <%= Date.new(1972,7).to_s(:db) %> 
+  end_date:  <%= Date.new(2016).to_s(:db) %> 
   label: 'Аквариум'
   link: 'https://ru.wikipedia.org/wiki/%D0%90%D0%BA%D0%B2%D0%B0%D1%80%D0%B8%D1%83%D0%BC_%28%D0%B3%D1%80%D1%83%D0%BF%D0%BF%D0%B0%29'
   period: true
@@ -1774,8 +1774,8 @@ aquarium:
     - media_music
 
 the_beatles:
-  start_date: '1960'
-  end_date: '1970'
+  start_date:  <%= Date.new(1960).to_s(:db) %> 
+  end_date:  <%= Date.new(1970).to_s(:db) %> 
   label: 'The Beatles'
   link: 'https://en.wikipedia.org/wiki/The_Beatles'
   period: true
@@ -1786,7 +1786,7 @@ the_beatles:
     - media_music
 
 lennon_shot:
-  start_date: '1980-12-08'
+  start_date:  <%= Date.new(1980,12,8).to_s(:db) %> 
   end_date: 
   label: 'Леннона застрелили'
   link: 'https://en.wikipedia.org/wiki/Death_of_John_Lennon'
@@ -1797,7 +1797,7 @@ lennon_shot:
     - media_music
 
 harrison_died:
-  start_date: '2001-11-29'
+  start_date:  <%= Date.new(2001,11,29).to_s(:db) %> 
   end_date: 
   label: 'Харрисон умер от рака'
   link: 'https://en.wikipedia.org/wiki/George_Harrison'
@@ -1808,7 +1808,7 @@ harrison_died:
     - media_music
 
 bohren_sunset_mission:
-  start_date: '2000-02-25'
+  start_date:  <%= Date.new(2000,2,25).to_s(:db) %> 
   end_date: 
   label: 'Sunset Mission'
   link: 'http://www.discogs.com/Bohren-Der-Club-Of-Gore-Sunset-Mission/release/209952'
@@ -1819,7 +1819,7 @@ bohren_sunset_mission:
     - musical_album
 
 bohren_black_earth:
-  start_date: '2002-10-28'
+  start_date:  <%= Date.new(2002,10,28).to_s(:db) %> 
   end_date: 
   label: 'Black Earth'
   link: 'http://www.discogs.com/Bohren-Der-Club-Of-Gore-Black-Earth/release/85745'
@@ -1845,7 +1845,7 @@ bohren_black_earth:
 # What the fuck?
     
 burning_man:
-  start_date: '1986'
+  start_date:  <%= Date.new(1986).to_s(:db) %> 
   end_date: 
   label: 'Burning Man'
   link: 'https://en.wikipedia.org/wiki/Burning_Man#1986_to_1989'
@@ -1856,7 +1856,7 @@ burning_man:
     - wtf
 
 first_atm:
-  start_date: '1972-12'
+  start_date:  <%= Date.new(1972,12).to_s(:db) %> 
   end_date: 
   label: 'Первый банкомат'
   link: 'https://en.wikipedia.org/wiki/Automated_teller_machine'
