@@ -56,7 +56,11 @@ tramp
 passenger*
 
 public/assets/*
+public/images/timeline/*
+public/images/words/*
 
 breakman.html
 
 doc/adafasdf.html
+
+
