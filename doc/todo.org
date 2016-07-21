@@ -54,6 +54,7 @@
    В рельсах есть встроенная функция:
 
    : distance_of_time_in_words(Time.now, Time.local(2010, 12, 25))
+
 ** Блочный текстовый редактор
 *** Как поймать enter?
    Похоже самым простым способом будет множество тексовых полей, у
@@ -88,6 +89,7 @@
 *** Причем здесь nested_form?
 
     Очень может быть, что причем.
+
 ** Polymorphic eager loading
 
    : Address.includes(:addressable)
