@@ -44,9 +44,64 @@
     наборах цитат будут находится не только пары, но цепочки из цитат.
 
     #+BEGIN_QUOTE 
+	Reed College at that time offered perhaps the best calligraphy
+	instruction in the country. Throughout the campus every poster,
+	every label on every drawer, was beautifully hand
+	calligraphed. Because I had dropped out and didn't have to take
+	the normal classes, I decided to take a calligraphy class to learn
+	how to do this. I learned about serif and san serif typefaces,
+	about varying the amount of space between different letter
+	combinations, about what makes great typography great. It was
+	beautiful, historical, artistically subtle in a way that science
+	can't capture, and I found it fascinating.
+
+	None of this had even a hope of any practical application in my
+	life. But ten years later, when we were designing the first Macintosh
+	computer, it all came back to me. And we designed it all into the
+	Mac. It was the first computer with beautiful typography. If I had
+	never dropped in on that single course in college, the "Mac" would
+	have never had multiple typefaces or proportionally spaced fonts. And
+	since Windows just copied the Mac, it's likely that no personal
+	computer would have them. If I had never dropped out, I would have
+	never dropped in on that calligraphy class, and personal computers
+	might not have the wonderful typography that they do. Of course it was
+	impossible to connect the dots looking forward when I was in
+	college. But it was very, very clear looking backwards 10 years later.
+	Again, *you can't connect the dots looking forward*;
+	you can only connect them looking backwards. So you have to trust that
+	the dots will somehow connect in your future. You have to trust in
+	something – your gut, destiny, life, karma, whatever – because
+	believing that the dots will connect down the road will give you the
+	confidence to follow your heart, even when it leads you off the
+	well-worn path, and that will make all the difference. 
+
+	(Steve Jobs, [[http://www.americanrhetoric.com/speeches/stevejobsstanfordcommencement.htm][Commencement Address at Stanford University]])
     #+END_QUOTE
 
     #+BEGIN_QUOTE 
+	What you’re supposed to do in most freshman-rhetoric courses is to
+	read a little essay or short story, discuss how the writer has done
+	certain little things to achieve certain little effects, and then have
+	the students write an imitative little essay or short story to see if
+	they can do the same little things. He tried this over and over again
+	but it never jelled. The students seldom achieved anything, as a
+	result of this calculated mimicry, that was remotely close to the
+	models he’d given them. More often their writing got worse. It seemed
+	as though every rule he honestly tried to discover with them and learn
+	with them was so full of exceptions and contradictions and
+	qualifications and confusions that he wished he’d never come across
+	the rule in the first place.
+
+
+	A student would always ask how the rule would apply in a certain
+	special circumstance. Phædrus would then have the choice of trying to
+	fake through a made-up explanation of how it worked, or follow the
+	selfless route and say what he really thought. And what he really
+	thought was that *the rule was pasted on to the writing after
+	the writing was all done*. It was post hoc, after the fact,
+	instead of prior to the fact.
+
+	(Robert M. Pirsig, [[http://design.caltech.edu/Misc/pirsig.html][Zen and the Art of Motorcycle Maintenance]])
     #+END_QUOTE
 
 *** Компартментализм
@@ -710,23 +765,37 @@
 
 ** Org-mode
 
+   http://orgmode.org/
+
 ** Calibre
 
    reference-mode в читалке
+
+   https://calibre-ebook.com/
+
 ** MusicBrainz
+
+   Онтология для музыки.
+
+   https://musicbrainz.org/
 
 ** Ginko
 
-   Очень хороший. Умеет делать презентации и возвращать текст в виде json.
+   Хороший. Умеет делать презентации и возвращать текст в виде json.
 
    https://gingkoapp.com
 
 ** TiddlyWiki
 
    http://tiddlywiki.com/
+
 ** Purple
 
+   https://en.wikipedia.org/wiki/Purple_Numbers
+
 ** Smallest Federated Wiki
+
+   http://fed.wiki.org
 
 ** Scrivener
    
@@ -738,71 +807,78 @@
 
 ** Del.icio.us
 
-*** Про отношения с делишесом
+   Старая заметка про [[https://delicious.com][delicious]]:
     
-    Плохие у меня с делишесом отношения. Естественный подход мне не
-    нравится. Точнее он у меня изначально вызвал какое-то
-    непонимание. Поэтому изначально я пользовался противоестественным
-    способом. Пытался добавлять избытычные метаданные. Сделал подобие
-    онтологии. Но проблема этого подхода в том, что дальше с данными
-    сделать ничего нельзя. Язык запросов лучше даже на френдфиде.
-    
-    Есть другая сторона. Почему фрф лучше для показывания
-    ссылок. Сохранение ссылки очень мало кто сопровождает тем почему
-    эта ссылка привлекла внимание. Никто не пишет эту самую
-    пресловутую тысячу знаков. Это долго и никому не
-    инетересно. Сохранение ссылки – это тоже самое рассказывание
-    истории. Потому что без истории ссылки никому не нужна. Этих
-    ссылок вокруг слишком много, чтобы во все тыкать и самому
-    разбираться что там к чему. Социальность делишеса проявляется
-    только в одном случае – когда люди начинают искать популярные
-    ссылки по какому-то тегу.
-    
-    Компенсировать отсутствие обсуждения заправлением делишеса во
-    френдфид тоже плохо. Потому что если исходить из того, что это все
-    ссылки "на потом", то соотношение сигнал/шум становится слишком
-    низким. Каждый сохраняет в день по несколько ссылок умножить на
-    количество френдов – получается жуткий мусор. Поэтому ссылки нужно
-    обсуждать там, где они лежат.
-    
-    Одно время я очень перся от делишеса, но сейчас это прошло. Тогда
-    мне хотелось, чтобы так можно было работать с файлами на харде. Но
-    если из метаданных нельзя ничего выжать, то на фиг они нужны?
-    
-    У делишеса есть проблема интерфейса – сохранять слишком долго. В
-    результате на смену ему пришел Read It Later. Пост сохраняется
-    одним нажатием галочки. Получается обычный линейный список. То,
-    что прошло испытание временем переносится в делишес. Или про это
-    рассказывается история во френфиде. Лишнее удаляется одним
-    кликом. То что там нет тегов – это отдельная тема. Мне кажется,
-    что ключевые слова можно вытаскивать из текста
-    автоматом. Используя API того же делишеса или гугла. Или тупо
-    смотреть по частоте.
-    
-    Получается, что делишес – это медленные коммуникации. Медленные
-    именно из-за интерфейса, а не по сути. Из этого вытекает очевидное
-    в принципе заключение, что пропускная способность интерфейса
-    определяет суть сервиса. Если сделать медленный интерфейс для
-    чата, то это будет уже форум. Условно говоря. Если сделать быстрый
-    интерфейс для форума, то получится френдфид. Опять же очень
-    условно.
+   #+BEGIN_QUOTE
+       Про отношения с делишесом. Плохие у меня с делишесом
+       отношения. Естественный подход мне не нравится. Точнее он у
+       меня изначально вызвал какое-то непонимание. Поэтому изначально
+       я пользовался противоестественным способом. Пытался добавлять
+       избытычные метаданные. Сделал подобие онтологии. Но проблема
+       этого подхода в том, что дальше с данными сделать ничего
+       нельзя. Язык запросов лучше даже на френдфиде.
+
+       Есть другая сторона. Почему фрф лучше для показывания
+       ссылок. Сохранение ссылки очень мало кто сопровождает тем почему
+       эта ссылка привлекла внимание. Никто не пишет эту самую
+       пресловутую тысячу знаков. Это долго и никому не
+       инетересно. Сохранение ссылки – это тоже самое рассказывание
+       истории. Потому что без истории ссылки никому не нужна. Этих
+       ссылок вокруг слишком много, чтобы во все тыкать и самому
+       разбираться что там к чему. Социальность делишеса проявляется
+       только в одном случае – когда люди начинают искать популярные
+       ссылки по какому-то тегу.
+
+       Компенсировать отсутствие обсуждения заправлением делишеса во
+       френдфид тоже плохо. Потому что если исходить из того, что это все
+       ссылки "на потом", то соотношение сигнал/шум становится слишком
+       низким. Каждый сохраняет в день по несколько ссылок умножить на
+       количество френдов – получается жуткий мусор. Поэтому ссылки нужно
+       обсуждать там, где они лежат.
+
+       Одно время я очень перся от делишеса, но сейчас это прошло. Тогда
+       мне хотелось, чтобы так можно было работать с файлами на харде. Но
+       если из метаданных нельзя ничего выжать, то на фиг они нужны?
+
+       У делишеса есть проблема интерфейса – сохранять слишком долго. В
+       результате на смену ему пришел Read It Later. Пост сохраняется
+       одним нажатием галочки. Получается обычный линейный список. То,
+       что прошло испытание временем переносится в делишес. Или про это
+       рассказывается история во френфиде. Лишнее удаляется одним
+       кликом. То что там нет тегов – это отдельная тема. Мне кажется,
+       что ключевые слова можно вытаскивать из текста
+       автоматом. Используя API того же делишеса или гугла. Или тупо
+       смотреть по частоте.
+
+       Получается, что делишес – это медленные коммуникации. Медленные
+       именно из-за интерфейса, а не по сути. Из этого вытекает очевидное
+       в принципе заключение, что пропускная способность интерфейса
+       определяет суть сервиса. Если сделать медленный интерфейс для
+       чата, то это будет уже форум. Условно говоря. Если сделать быстрый
+       интерфейс для форума, то получится френдфид. Опять же очень
+       условно.
+   #+END_QUOTE
 
 ** Gifford - Semantic file systems
 
-   Подход, описанный Гиффордом, можно наглядно продемонстрировать на
-   примере делишеса. Факт того, что он писал это еще в 1991 году, убивает на
-   фиг. Но. Главный недостаток этого подхода заключается в том, что когда
-   множества полей (fields) и их значений (values) выростет, системой
-   будет невозможно пользоваться. Это видно и на примере делишеса. Никто
-   не пользуется инкрементным поиском. Это прикольно, но медленно и нафиг
-   никому не сдалось. Проблема инкрементного поиска в том, что вылезает
-   слишком много не нужных параметров поиска.
+   Старая заметка про Гиффорда:
+    
+   #+BEGIN_QUOTE
+       Подход, описанный Гиффордом, можно наглядно продемонстрировать на
+       примере делишеса. Факт того, что он писал это еще в 1991 году, убивает на
+       фиг. Но. Главный недостаток этого подхода заключается в том, что когда
+       множества полей (fields) и их значений (values) выростет, системой
+       будет невозможно пользоваться. Это видно и на примере делишеса. Никто
+       не пользуется инкрементным поиском. Это прикольно, но медленно и нафиг
+       никому не сдалось. Проблема инкрементного поиска в том, что вылезает
+       слишком много не нужных параметров поиска.
 
-   Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
-   они заранее отсеивают ненужные параметры поиска. Дело не в том, что
-   дерево -- это плохо. Дело в том, что одно дерево это плохо. Деревьев
-   должно быть много. В файловую систему из можно интегрировать с помощью
-   виртуальных файловых систем.
+       Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
+       они заранее отсеивают ненужные параметры поиска. Дело не в том, что
+       дерево -- это плохо. Дело в том, что одно дерево это плохо. Деревьев
+       должно быть много. В файловую систему из можно интегрировать с помощью
+       виртуальных файловых систем.
+   #+END_QUOTE
 
 ** NEPOMUK (framework)
 
@@ -818,11 +894,11 @@
 
    http://fluidinfo.com
 
-** Friendfeed							       :dead:
+** Friendfeed (dead)
 
-** Locker 							       :dead:
+** Locker (dead)
 
-** Singly							       :dead:
+** Singly (dead)
    
    Наткнулся тут на сервис Singly. Это еще один метасервис по
    собиранию данных из разных веб-сервисов в единую ленту. Singly
@@ -863,12 +939,10 @@
 
 * Инструменты
 ** Ruby
-*** TODO rdf
-*** qt
-*** fuse
-*** NLP
+   
+   [[https://github.com/ruby-rdf/linkeddata][linkeddata]] -- гемы для работы с rdf.
 
-    [[https://github.com/louismullie/treat][treat]] -- natural language processing framework for Ruby. 
+   [[https://github.com/louismullie/treat][treat]] -- natural language processing framework for Ruby. 
 
 ** Триплсторы
 
@@ -881,16 +955,18 @@
 
     Есть community версия и платная.
 
-    Внезапно есть биндинги для Common Lisp и курсы по изучению Common Lisp.
-*** Neo4j
+    Внезапно есть биндинги для Common Lisp и курсы по изучению Common
+    Lisp.
 
-    Нашел старый листочек, на котором написано "Neo4j?".
+*** Neo4j
 
     Книга O'Reilly "Graph Databases" -- это введение в neo4j.
 
     http://graphdatabases.com
 
 ** WebDAW
+
+   https://en.wikipedia.org/wiki/WebDAV
 
 ** Parallel text
   
@@ -1207,14 +1283,22 @@
    http://booksblog.infotoday.com/ -- книги
 
 ** Устоявшиеся термины
+
    - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
    - [[https://en.wikipedia.org/wiki/Personal_knowledge_base][Personal knowledge base]]
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://en.wikipedia.org/wiki/Transclusion][Transclusion]]
+
 ** Книги
-*** Graph Databases						    :oreilly:
+
+*** Graph Databases
+
 ** urbansheep
+
 *** Полоски
+
+    Ссылки больше не работают. Полосатор видимо закрылся. Очень жаль.
+
     - [[http://utx.ambience.ru/users/urbansheep/info_organization][info organization]]
     - [[http://utx.ambience.ru/users/urbansheep/classification][classification]]
     - [[http://utx.ambience.ru/users/urbansheep/memory_management][memory management]]
@@ -1227,13 +1311,17 @@
     - [[http://freefeed.net/search?q=%23%D1%81%D0%B2%D0%BE%D0%B9_%D0%BD%D0%B5%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82][свой небольшой интернет]]
     - [[http://freefeed.net/search?q=%23%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F][цифровая история]]
     - [[http://freefeed.net/search?q=%23%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B8%D1%81%D1%82%D1%8B][архивисты]]
+
 ** Ассоциации
+
 *** Association for Information Science and Technology
 
     Ааа, ыыы, много всего, оно живое. 
 
     https://www.asist.org/
+
 ** Конференции
+
 *** Personal Digital Archiving Conference
 
     Видео лежат на archive.org.
@@ -1243,20 +1331,23 @@
     https://archive.org/details/PDA2015
 
 ** Учебные заведения
-*** UC Berkeley School of Information
+
+   [[http://www.ischool.berkeley.edu/][UC Berkeley School of Information]]
+
 ** Стандарты
-** ISO
 
-   - ISO 9    :: Транслитерация кирилицы в латинские символы.
-   - ISO 639  :: Коды языков.
-   - ISO 2108 :: ISBN
-   - ISO 3166 :: Коды названий стран.
-   - ISO 4217 :: Коды валют.
-   - ISO 8601 :: Дата и время.
+*** ISO
 
-** RFC
+    - ISO 9    :: Транслитерация кирилицы в латинские символы.
+    - ISO 639  :: Коды языков.
+    - ISO 2108 :: ISBN
+    - ISO 3166 :: Коды названий стран.
+    - ISO 4217 :: Коды валют.
+    - ISO 8601 :: Дата и время.
 
-   - 3986 :: Определение URI.
+*** RFC
+
+    - 3986 :: Определение URI.
 
 * Зачем бить на блочные элементы
 
