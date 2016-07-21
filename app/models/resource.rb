@@ -8,7 +8,7 @@ class Resource
   #                  "http://localhost:8890/sparql", 
   #   :update_uri => "http://localhost:8890/sparql-auth",
   #   :username => 'dba', 
-  #   :password => '***REMOVED***', 
+  #   :password => 'your_password', 
   #   :auth_method => 'digest'
   # )
 
