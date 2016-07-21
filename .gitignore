@@ -16,6 +16,20 @@
 !/log/.keep
 /tmp
 
+# passenger
+
+passenger*
+
+public/assets/*
+public/images/timeline/*
+public/images/words/*
+
+breakman.html
+
+doc/adafasdf.html
+
+config/database.yml
+
 
 # Emacs
 
@@ -50,17 +64,4 @@ tramp
 
 # cask packages
 .cask/
-
-# passenger
-
-passenger*
-
-public/assets/*
-public/images/timeline/*
-public/images/words/*
-
-breakman.html
-
-doc/adafasdf.html
-
 
