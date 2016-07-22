@@ -1,8 +1,23 @@
-* Установка
+[[https://codeclimate.com/github/teksisto/timeline/badges/gpa.svg]]
 
-  Поправить database.yml. 
+* Timeline
 
-  Запустить:
+  Здесь я размышляю какой personal information manager мне хотелось бы
+  иметь и реализую отдельные куски из него, чтобы посмотреть как оно
+  будет на практике.
 
-  : bundle install
-  : rake db:migrate db:fixtures:load db:seed
+  Основной текст зачем это все [[https://github.com/teksisto/timeline/blob/master/doc/adafasdf.md][лежит тут]].
+
+** Установка
+
+   Поправить database.yml. 
+
+   Запустить:
+
+   : bundle install
+   : rake db:migrate db:fixtures:load db:seed
+
+** Скриншоты
+
+   [[./images/timeline/timeline1.png]]
+   [[./images/timeline/timeline2.png]]
