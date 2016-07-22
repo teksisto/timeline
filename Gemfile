@@ -86,6 +86,9 @@ group :development do
   gem 'rubocop',  require: false
 end
 
+group :test do
+  gem "codeclimate-test-reporter", require: nil
+end
 
 #############################################################
 # may be useful in the future
