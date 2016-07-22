@@ -21,8 +21,9 @@
 passenger*
 
 public/assets/*
-public/images/timeline/*
-public/images/words/*
+
+public/images/timeline
+public/images/words
 
 breakman.html
 
