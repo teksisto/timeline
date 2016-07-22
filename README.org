@@ -1,0 +1,8 @@
+* Установка
+
+  Поправить database.yml. 
+
+  Запустить:
+
+  : bundle install
+  : rake db:migrate db:fixtures:load db:seed
