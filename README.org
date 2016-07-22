@@ -16,7 +16,7 @@
    Запустить:
 
    : bundle install
-   : rake db:migrate db:fixtures:load db:seed
+   : rake timeline:setup
 
 ** Скриншоты
 
