@@ -217,6 +217,9 @@
 
 # Задачи инфоорга<a id="orgheadline10"></a>
 
+Сначала я выпишу задачи, которые решает любая система по хранению
+данных, чтобы потом можно было ссылаться на эти термины.
+
 Задачи инфоорга решаются последовательно. Если нет захвата, нечего
 идентифицировать. Если нет идентификации, не к чему привязывать
 классификацию.
@@ -1150,13 +1153,20 @@ reference-mode в читалке
 
 ## Smallest Federated Wiki<a id="orgheadline59"></a>
 
+Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
+вики. Страницы можно форкать и поддерживать локально свою версию.
+
 <http://fed.wiki.org>
 
 ## Scrivener<a id="orgheadline60"></a>
 
+Неведомая фигня под мак, которую периодически очень хвалят.
+
 <http://www.literatureandlatte.com/scrivener.html>
 
 ## Tinderbox<a id="orgheadline61"></a>
+
+Неведомая фигня под мак, которую периодически очень хвалят.
 
 <https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29>
 
@@ -1243,18 +1253,26 @@ reference-mode в читалке
 
 ## Fluidinfo<a id="orgheadline67"></a>
 
+У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
+
 <http://fluidinfo.com>
 
 ## Friendfeed (dead)<a id="orgheadline68"></a>
 
+Помимо всего прочего умел собирать данных из разных источников в
+одну ленту.
+
 ## Locker (dead)<a id="orgheadline69"></a>
+
+Метасервис по собиранию данных из разных веб-сервисов в единую
+ленту.
 
 ## Singly (dead)<a id="orgheadline70"></a>
 
-Наткнулся тут на сервис Singly. Это еще один метасервис по
-собиранию данных из разных веб-сервисов в единую ленту. Singly
-ориентирован не только на собирание, но и на предоставление к
-собранному API для различных манипуляций и визуализации.
+Метасервис по собиранию данных из разных веб-сервисов в единую
+ленту. Singly ориентирован не только на собирание, но и на
+предоставление к собранному API для различных манипуляций и
+визуализации.
 
 Singly was founded by Jeremie Miller, creator of XMPP, Jason Cavnar
 and Simon Murtha-Smith. Matt Zimmerman, former CTO of Ubuntu,
