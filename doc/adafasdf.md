@@ -157,7 +157,7 @@
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline138">10. Пользовательская онтология</a>
+<li><a href="#orgheadline129">10. Пользовательская онтология</a>
 <ul>
 <li><a href="#orgheadline102">10.1. Параграф</a></li>
 <li><a href="#orgheadline103">10.2. Книга</a></li>
@@ -179,43 +179,28 @@
 </ul>
 </li>
 <li><a href="#orgheadline115">10.8. Событие</a></li>
-<li><a href="#orgheadline120">10.9. Пост</a>
+<li><a href="#orgheadline116">10.9. Пост</a></li>
+<li><a href="#orgheadline118">10.10. Цитата</a>
 <ul>
-<li><a href="#orgheadline116">10.9.1. Текстовая заметка</a></li>
-<li><a href="#orgheadline117">10.9.2. Аудио</a></li>
-<li><a href="#orgheadline118">10.9.3. Видео</a></li>
-<li><a href="#orgheadline119">10.9.4. Фотография</a></li>
+<li><a href="#orgheadline117">10.10.1. Версии на разных языках</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline122">10.10. Цитата</a>
+<li><a href="#orgheadline119">10.11. Картинка</a></li>
+<li><a href="#orgheadline120">10.12. Набор картинок</a></li>
+<li><a href="#orgheadline121">10.13. Аудио</a></li>
+<li><a href="#orgheadline124">10.14. Музыкальный альбом</a>
 <ul>
-<li><a href="#orgheadline121">10.10.1. Версии на разных языках</a></li>
+<li><a href="#orgheadline122">10.14.1. Обложка</a></li>
+<li><a href="#orgheadline123">10.14.2. Набор треков</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline128">10.11. Картинка</a>
+<li><a href="#orgheadline127">10.15. Слово</a>
 <ul>
-<li><a href="#orgheadline123">10.11.1. Скриншот</a></li>
-<li><a href="#orgheadline124">10.11.2. Фотография</a></li>
-<li><a href="#orgheadline125">10.11.3. Иллюстрация</a></li>
-<li><a href="#orgheadline126">10.11.4. Обложка альбома</a></li>
-<li><a href="#orgheadline127">10.11.5. Обложка фильма</a></li>
+<li><a href="#orgheadline125">10.15.1. Словарь иностранных слов</a></li>
+<li><a href="#orgheadline126">10.15.2. Объяснение термина</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline129">10.12. Набор картинок</a></li>
-<li><a href="#orgheadline130">10.13. Аудио</a></li>
-<li><a href="#orgheadline133">10.14. Музыкальный альбом</a>
-<ul>
-<li><a href="#orgheadline131">10.14.1. Обложка</a></li>
-<li><a href="#orgheadline132">10.14.2. Набор треков</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline136">10.15. Слово</a>
-<ul>
-<li><a href="#orgheadline134">10.15.1. Словарь иностранных слов</a></li>
-<li><a href="#orgheadline135">10.15.2. Объяснение термина</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline137">10.16. Текст</a></li>
+<li><a href="#orgheadline128">10.16. Текст</a></li>
 </ul>
 </li>
 </ul>
@@ -1444,7 +1429,7 @@ Lisp.
 
     <http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html>
 
-# Пользовательская онтология<a id="orgheadline138"></a>
+# Пользовательская онтология<a id="orgheadline129"></a>
 
 Здесь я пытаюсь перечислить все сущности, которые мне хочется
 хранить в базе.
@@ -1647,46 +1632,39 @@ Lisp.
 -   связанные люди = массив человеков
 -   описание
 
-## Пост<a id="orgheadline120"></a>
+## Пост<a id="orgheadline116"></a>
 
-### Текстовая заметка<a id="orgheadline116"></a>
+-   текстовая заметка
+-   аудио
+-   видео
+-   фотография
 
-### Аудио<a id="orgheadline117"></a>
+## Цитата<a id="orgheadline118"></a>
 
-### Видео<a id="orgheadline118"></a>
+### Версии на разных языках<a id="orgheadline117"></a>
 
-### Фотография<a id="orgheadline119"></a>
+## Картинка<a id="orgheadline119"></a>
 
-## Цитата<a id="orgheadline122"></a>
+-   скриншот
+-   фотография
+-   иллюстрация
+-   обложка альбома
+-   обложка фильма
 
-### Версии на разных языках<a id="orgheadline121"></a>
+## Набор картинок<a id="orgheadline120"></a>
 
-## Картинка<a id="orgheadline128"></a>
+## Аудио<a id="orgheadline121"></a>
 
-### Скриншот<a id="orgheadline123"></a>
+## Музыкальный альбом<a id="orgheadline124"></a>
 
-### Фотография<a id="orgheadline124"></a>
+### Обложка<a id="orgheadline122"></a>
 
-### Иллюстрация<a id="orgheadline125"></a>
+### Набор треков<a id="orgheadline123"></a>
 
-### Обложка альбома<a id="orgheadline126"></a>
+## Слово<a id="orgheadline127"></a>
 
-### Обложка фильма<a id="orgheadline127"></a>
+### Словарь иностранных слов<a id="orgheadline125"></a>
 
-## Набор картинок<a id="orgheadline129"></a>
+### Объяснение термина<a id="orgheadline126"></a>
 
-## Аудио<a id="orgheadline130"></a>
-
-## Музыкальный альбом<a id="orgheadline133"></a>
-
-### Обложка<a id="orgheadline131"></a>
-
-### Набор треков<a id="orgheadline132"></a>
-
-## Слово<a id="orgheadline136"></a>
-
-### Словарь иностранных слов<a id="orgheadline134"></a>
-
-### Объяснение термина<a id="orgheadline135"></a>
-
-## Текст<a id="orgheadline137"></a>
+## Текст<a id="orgheadline128"></a>
