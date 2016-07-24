@@ -28,14 +28,14 @@
         недель до Дня Рождения.
       
 :javascript
-  $('#new_year_countdown').countdown('***REMOVED***', function(event) {
+  $('#new_year_countdown').countdown('2038/01/19', function(event) {
     $(this).html(event.strftime('%w'));
   });
 
-  $('#death_countdown').countdown('***REMOVED***', function(event) {
+  $('#death_countdown').countdown('2038/01/19', function(event) {
     $(this).html(event.strftime('%w'));
   });
 
-  $('#birthday_countdown').countdown('***REMOVED***', function(event) {
+  $('#birthday_countdown').countdown('2038/01/19', function(event) {
     $(this).html(event.strftime('%w'));
   });
