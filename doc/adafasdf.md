@@ -110,25 +110,25 @@
 </li>
 <li><a href="#orgheadline81">7. Ссылки</a>
 <ul>
-<li><a href="#orgheadline71">7.1. Устоявшиеся термины</a></li>
-<li><a href="#orgheadline72">7.2. Книги</a></li>
-<li><a href="#orgheadline75">7.3. urbansheep</a>
+<li><a href="#orgheadline71">7.1. Учебные заведения</a></li>
+<li><a href="#orgheadline72">7.2. Устоявшиеся термины</a></li>
+<li><a href="#orgheadline73">7.3. Книги</a></li>
+<li><a href="#orgheadline75">7.4. Ассоциации</a>
 <ul>
-<li><a href="#orgheadline73">7.3.1. Полоски</a></li>
-<li><a href="#orgheadline74">7.3.2. Freefeed</a></li>
+<li><a href="#orgheadline74">7.4.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline77">7.4. Ассоциации</a>
+<li><a href="#orgheadline78">7.5. urbansheep</a>
 <ul>
-<li><a href="#orgheadline76">7.4.1. Association for Information Science and Technology</a></li>
+<li><a href="#orgheadline76">7.5.1. Полоски</a></li>
+<li><a href="#orgheadline77">7.5.2. Freefeed</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline79">7.5. Конференции</a>
+<li><a href="#orgheadline80">7.6. Конференции</a>
 <ul>
-<li><a href="#orgheadline78">7.5.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#orgheadline79">7.6.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline80">7.6. Учебные заведения</a></li>
 </ul>
 </li>
 <li><a href="#orgheadline96">8. Инструменты</a>
@@ -1223,7 +1223,11 @@ joined Singly and was the CTO.
 
 <http://booksblog.infotoday.com/> &#x2013; книги
 
-## Устоявшиеся термины<a id="orgheadline71"></a>
+## Учебные заведения<a id="orgheadline71"></a>
+
+[UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
+
+## Устоявшиеся термины<a id="orgheadline72"></a>
 
 -   [Personal information manager](https://en.wikipedia.org/wiki/Personal_information_manager)
 -   [Personal knowledge base](https://en.wikipedia.org/wiki/Personal_knowledge_base)
@@ -1237,7 +1241,7 @@ joined Singly and was the CTO.
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
 -   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 
-## Книги<a id="orgheadline72"></a>
+## Книги<a id="orgheadline73"></a>
 
 -   Semantic Web for the Working Ontologist (Morgan-Kaufman)
 -   A Semantic Web Primer (MIT Press)
@@ -1247,9 +1251,17 @@ joined Singly and was the CTO.
 -   The Discipline of Organizing (MIT Press)
 -   Игра в бисер (Герман Гессе)
 
-## urbansheep<a id="orgheadline75"></a>
+## Ассоциации<a id="orgheadline75"></a>
 
-### Полоски<a id="orgheadline73"></a>
+### Association for Information Science and Technology<a id="orgheadline74"></a>
+
+Ааа, ыыы, много всего, оно живое. 
+
+<https://www.asist.org/>
+
+## urbansheep<a id="orgheadline78"></a>
+
+### Полоски<a id="orgheadline76"></a>
 
 Ссылки больше не работают. Полосатор видимо закрылся. Очень жаль.
 
@@ -1259,7 +1271,7 @@ joined Singly and was the CTO.
 -   [knowledge management](http://utx.ambience.ru/users/urbansheep/knowledge_management)
 -   [hypertext](http://utx.ambience.ru/users/urbansheep/hypertext)
 
-### Freefeed<a id="orgheadline74"></a>
+### Freefeed<a id="orgheadline77"></a>
 
 Архивы френфида еще не импортировали в фрифид, ссылки починятся,
 когда &#x2013; неизвестно.
@@ -1269,27 +1281,15 @@ joined Singly and was the CTO.
 -   [цифровая история](http://freefeed.net/search?q=%23%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F)
 -   [архивисты](http://freefeed.net/search?q=%23%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B8%D1%81%D1%82%D1%8B)
 
-## Ассоциации<a id="orgheadline77"></a>
+## Конференции<a id="orgheadline80"></a>
 
-### Association for Information Science and Technology<a id="orgheadline76"></a>
-
-Ааа, ыыы, много всего, оно живое. 
-
-<https://www.asist.org/>
-
-## Конференции<a id="orgheadline79"></a>
-
-### Personal Digital Archiving Conference<a id="orgheadline78"></a>
+### Personal Digital Archiving Conference<a id="orgheadline79"></a>
 
 Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
 
 <http://personaldigitalarchiving.com>
 
 <https://archive.org/details/PDA2015>
-
-## Учебные заведения<a id="orgheadline80"></a>
-
-[UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 
 # Инструменты<a id="orgheadline96"></a>
 
