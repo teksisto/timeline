@@ -15,7 +15,7 @@
 <li><a href="#orgheadline9">2.8. Переносимость</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline37">3. Чего мне хочется от информационного менеджера</a>
+<li><a href="#orgheadline36">3. Чего мне хочется от информационного менеджера</a>
 <ul>
 <li><a href="#orgheadline17">3.1. Цитатник</a>
 <ul>
@@ -47,105 +47,104 @@
 </ul>
 </li>
 <li><a href="#orgheadline31">3.5. Параллельные тексты</a></li>
-<li><a href="#orgheadline35">3.6. Блочный текстовый редактор</a>
+<li><a href="#orgheadline34">3.6. Блочный текстовый редактор</a>
 <ul>
 <li><a href="#orgheadline32">3.6.1. Зачем бить на блочные элементы</a></li>
 <li><a href="#orgheadline33">3.6.2. Post with input/output</a></li>
-<li><a href="#orgheadline34">3.6.3. Ссылки</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline36">3.7. Импорт данных из веб-сервисов</a></li>
+<li><a href="#orgheadline35">3.7. Импорт данных из веб-сервисов</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline46">4. Поиск идеи для решения</a>
+<li><a href="#orgheadline45">4. Поиск идеи для решения</a>
 <ul>
-<li><a href="#orgheadline40">4.1. Декомпозиция</a>
+<li><a href="#orgheadline39">4.1. Декомпозиция</a>
 <ul>
-<li><a href="#orgheadline38">4.1.1. Блог</a></li>
-<li><a href="#orgheadline39">4.1.2. Оценка количества триплетов при импорте книги</a></li>
+<li><a href="#orgheadline37">4.1.1. Блог</a></li>
+<li><a href="#orgheadline38">4.1.2. Оценка количества триплетов при импорте книги</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline45">4.2. Базовые определения</a>
+<li><a href="#orgheadline44">4.2. Базовые определения</a>
 <ul>
-<li><a href="#orgheadline41">4.2.1. Ресурс</a></li>
-<li><a href="#orgheadline42">4.2.2. Представление</a></li>
-<li><a href="#orgheadline43">4.2.3. Атрибут</a></li>
-<li><a href="#orgheadline44">4.2.4. Адаптер</a></li>
+<li><a href="#orgheadline40">4.2.1. Ресурс</a></li>
+<li><a href="#orgheadline41">4.2.2. Представление</a></li>
+<li><a href="#orgheadline42">4.2.3. Атрибут</a></li>
+<li><a href="#orgheadline43">4.2.4. Адаптер</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline52">5. Как это все может выглядеть на практике</a>
+<li><a href="#orgheadline51">5. Как это все может выглядеть на практике</a>
 <ul>
-<li><a href="#orgheadline47">5.1. Наивный реляционный подход + наведенная семантика</a></li>
-<li><a href="#orgheadline50">5.2. Реляционный подход</a>
+<li><a href="#orgheadline46">5.1. Наивный реляционный подход + наведенная семантика</a></li>
+<li><a href="#orgheadline49">5.2. Реляционный подход</a>
 <ul>
-<li><a href="#orgheadline48">5.2.1. Конспект</a></li>
-<li><a href="#orgheadline49">5.2.2. Цитаты, разложенные по главам</a></li>
+<li><a href="#orgheadline47">5.2.1. Конспект</a></li>
+<li><a href="#orgheadline48">5.2.2. Цитаты, разложенные по главам</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline51">5.3. Семантика</a></li>
+<li><a href="#orgheadline50">5.3. Семантика</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline71">6. Case study</a>
+<li><a href="#orgheadline70">6. Case study</a>
 <ul>
-<li><a href="#orgheadline53">6.1. Org-mode</a></li>
-<li><a href="#orgheadline54">6.2. Calibre</a></li>
-<li><a href="#orgheadline55">6.3. MusicBrainz</a></li>
-<li><a href="#orgheadline56">6.4. Ginko</a></li>
-<li><a href="#orgheadline57">6.5. TiddlyWiki</a></li>
-<li><a href="#orgheadline58">6.6. Purple</a></li>
-<li><a href="#orgheadline59">6.7. Smallest Federated Wiki</a></li>
-<li><a href="#orgheadline60">6.8. Scrivener</a></li>
-<li><a href="#orgheadline61">6.9. Tinderbox</a></li>
-<li><a href="#orgheadline62">6.10. Del.icio.us</a></li>
-<li><a href="#orgheadline63">6.11. Gifford - Semantic file systems</a></li>
-<li><a href="#orgheadline64">6.12. NEPOMUK (framework)</a></li>
-<li><a href="#orgheadline65">6.13. Chandler</a></li>
-<li><a href="#orgheadline66">6.14. vk.com/audio</a></li>
-<li><a href="#orgheadline67">6.15. Fluidinfo</a></li>
-<li><a href="#orgheadline68">6.16. Friendfeed (dead)</a></li>
-<li><a href="#orgheadline69">6.17. Locker (dead)</a></li>
-<li><a href="#orgheadline70">6.18. Singly (dead)</a></li>
+<li><a href="#orgheadline52">6.1. Org-mode</a></li>
+<li><a href="#orgheadline53">6.2. Calibre</a></li>
+<li><a href="#orgheadline54">6.3. MusicBrainz</a></li>
+<li><a href="#orgheadline55">6.4. Ginko</a></li>
+<li><a href="#orgheadline56">6.5. TiddlyWiki</a></li>
+<li><a href="#orgheadline57">6.6. Purple</a></li>
+<li><a href="#orgheadline58">6.7. Smallest Federated Wiki</a></li>
+<li><a href="#orgheadline59">6.8. Scrivener</a></li>
+<li><a href="#orgheadline60">6.9. Tinderbox</a></li>
+<li><a href="#orgheadline61">6.10. Del.icio.us</a></li>
+<li><a href="#orgheadline62">6.11. Gifford - Semantic file systems</a></li>
+<li><a href="#orgheadline63">6.12. NEPOMUK (framework)</a></li>
+<li><a href="#orgheadline64">6.13. Chandler</a></li>
+<li><a href="#orgheadline65">6.14. vk.com/audio</a></li>
+<li><a href="#orgheadline66">6.15. Fluidinfo</a></li>
+<li><a href="#orgheadline67">6.16. Friendfeed (dead)</a></li>
+<li><a href="#orgheadline68">6.17. Locker (dead)</a></li>
+<li><a href="#orgheadline69">6.18. Singly (dead)</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline82">7. Ссылки</a>
+<li><a href="#orgheadline81">7. Ссылки</a>
 <ul>
-<li><a href="#orgheadline72">7.1. Устоявшиеся термины</a></li>
-<li><a href="#orgheadline73">7.2. Книги</a></li>
-<li><a href="#orgheadline76">7.3. urbansheep</a>
+<li><a href="#orgheadline71">7.1. Устоявшиеся термины</a></li>
+<li><a href="#orgheadline72">7.2. Книги</a></li>
+<li><a href="#orgheadline75">7.3. urbansheep</a>
 <ul>
-<li><a href="#orgheadline74">7.3.1. Полоски</a></li>
-<li><a href="#orgheadline75">7.3.2. Freefeed</a></li>
+<li><a href="#orgheadline73">7.3.1. Полоски</a></li>
+<li><a href="#orgheadline74">7.3.2. Freefeed</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline78">7.4. Ассоциации</a>
+<li><a href="#orgheadline77">7.4. Ассоциации</a>
 <ul>
-<li><a href="#orgheadline77">7.4.1. Association for Information Science and Technology</a></li>
+<li><a href="#orgheadline76">7.4.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline80">7.5. Конференции</a>
+<li><a href="#orgheadline79">7.5. Конференции</a>
 <ul>
-<li><a href="#orgheadline79">7.5.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#orgheadline78">7.5.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline81">7.6. Учебные заведения</a></li>
+<li><a href="#orgheadline80">7.6. Учебные заведения</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline97">8. Инструменты</a>
+<li><a href="#orgheadline96">8. Инструменты</a>
 <ul>
-<li><a href="#orgheadline83">8.1. Ruby</a></li>
-<li><a href="#orgheadline86">8.2. Триплсторы</a>
+<li><a href="#orgheadline82">8.1. Ruby</a></li>
+<li><a href="#orgheadline85">8.2. Триплсторы</a>
 <ul>
-<li><a href="#orgheadline84">8.2.1. AllegroGraph</a></li>
-<li><a href="#orgheadline85">8.2.2. Neo4j</a></li>
+<li><a href="#orgheadline83">8.2.1. AllegroGraph</a></li>
+<li><a href="#orgheadline84">8.2.2. Neo4j</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline87">8.3. WebDAW</a></li>
-<li><a href="#orgheadline96">8.4. JavaScript</a>
+<li><a href="#orgheadline86">8.3. WebDAW</a></li>
+<li><a href="#orgheadline95">8.4. JavaScript</a>
 <ul>
-<li><a href="#orgheadline90">8.4.1. Текствовые редакторы</a></li>
-<li><a href="#orgheadline95">8.4.2. Everything else</a></li>
+<li><a href="#orgheadline89">8.4.1. Текствовые редакторы</a></li>
+<li><a href="#orgheadline94">8.4.2. Everything else</a></li>
 </ul>
 </li>
 </ul>
@@ -294,7 +293,7 @@ uuid.
 только при одном условии: чтобы мне больше никогда не приходилось
 это делать.
 
-# Чего мне хочется от информационного менеджера<a id="orgheadline37"></a>
+# Чего мне хочется от информационного менеджера<a id="orgheadline36"></a>
 
 ## Цитатник<a id="orgheadline17"></a>
 
@@ -657,6 +656,9 @@ uuid.
 
 ## Параллельные тексты<a id="orgheadline31"></a>
 
+Под текстом здесь понимается любая информация, упорядоченная
+последовательно.
+
 Примеры параллельных текстов: 
 
 -   запись выступления и презентация
@@ -671,11 +673,19 @@ uuid.
 они делают это на основе грубого машинного перевода и вычисления
 насколько параграфы идентичны.
 
-[Abbyy Aligner](http://www.abbyy.com/aligner/)
+-   [Abbyy Aligner](http://www.abbyy.com/aligner/)
+-   [Supernova Aligner](http://www.supernova-soft.com/wpsite/products/text-aligner/create-parallel-text-for-language-lerning/)
 
-[Supernova Aligner](http://www.supernova-soft.com/wpsite/products/text-aligner/create-parallel-text-for-language-lerning/)
+Ссылки:
 
-## Блочный текстовый редактор<a id="orgheadline35"></a>
+-   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
+-   [Обучение через чтение параллельных текстов](https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BA%D1%81%D1%82_(%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F))
+
+## Блочный текстовый редактор<a id="orgheadline34"></a>
+
+За неимением лучшего описания блочного текстового редактора сошлюсь
+пока на заметку Глеба Калинина ["Контент-менеджмент и
+веб-публикации"](http://glebkalinin.ru/content-management-vs-web-publishing/).
 
 ### Зачем бить на блочные элементы<a id="orgheadline32"></a>
 
@@ -700,26 +710,20 @@ uuid.
 Ссылки на ресурсы, которые показывают что меня побудило написать
 этот текст.
 
-### Ссылки<a id="orgheadline34"></a>
-
-За неимением пока лучшего описания блочного текстового редактора
-сошлюсь пока на заметку Глеба Калинина ["Контент-менеджмент и
-веб-публикации"](http://glebkalinin.ru/content-management-vs-web-publishing/).
-
-## Импорт данных из веб-сервисов<a id="orgheadline36"></a>
+## Импорт данных из веб-сервисов<a id="orgheadline35"></a>
 
 О плохом сервисе никто не знает, хороший закроется через 10
 лет. Плохой сервис не отдает данные пользователям, хороший имеет
 выгрузку данных и api. Но что с ними делать, если он все равно
 закрылся?
 
-# Поиск идеи для решения<a id="orgheadline46"></a>
+# Поиск идеи для решения<a id="orgheadline45"></a>
 
 Самое вменяемое решение, которое я вижу &#x2013; это rdf. 
 
-## Декомпозиция<a id="orgheadline40"></a>
+## Декомпозиция<a id="orgheadline39"></a>
 
-### Блог<a id="orgheadline38"></a>
+### Блог<a id="orgheadline37"></a>
 
 Представим себе блог, где каждый пост не является монолитом, а
 собирается из кусочков-атомов. Каждый атом имеет уникальный
@@ -806,7 +810,7 @@ uuid.
 сильно отличается от твиттера, френдфида, фликра и многого
 другого. Все упирается в модель безопастности.
 
-### Оценка количества триплетов при импорте книги<a id="orgheadline39"></a>
+### Оценка количества триплетов при импорте книги<a id="orgheadline38"></a>
 
 Книжка "Learning SPARQL - Bob DuCharme". 
 
@@ -844,9 +848,9 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 
 30k триплетов на одну книгу. На 1k книг &#x2013; 30 000 000 триплетов.
 
-## Базовые определения<a id="orgheadline45"></a>
+## Базовые определения<a id="orgheadline44"></a>
 
-### Ресурс<a id="orgheadline41"></a>
+### Ресурс<a id="orgheadline40"></a>
 
 Отдельная сущность, адресуемая уникальным идентификатором. Роль
 идентификатора выполняет url. 
@@ -867,7 +871,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 картинкой, аудио-файлом, видео-файлом. Для ресурсов, у которых нет
 контента, устанавливается некий пустой адаптер.
 
-### Представление<a id="orgheadline42"></a>
+### Представление<a id="orgheadline41"></a>
 
 У ресурса есть класс. Классу соответствует множество представлений,
 из которого выбирается нужное. Представление &#x2013; это шаблон, который
@@ -898,7 +902,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 3.  `classed-link-with-card` &#x2013; `classed-link` у которой при навении
     мышки на ссылку появляется карточка во всплывающем окне.
 
-### Атрибут<a id="orgheadline43"></a>
+### Атрибут<a id="orgheadline42"></a>
 
 Атрибут тоже ресурс. На него тоже можно навешивать атрибуты. 
 
@@ -907,7 +911,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 Формат атрибута ключ=значение. uuid ресурса плюс ключ и значение
 образовывают триплет. Да, я говорю про rdf.
 
-### Адаптер<a id="orgheadline44"></a>
+### Адаптер<a id="orgheadline43"></a>
 
 Урл состоит из nid и nss.
 
@@ -937,12 +941,12 @@ nss &#x2013; namespace spicific string. Позволяет однозначно 
 интернете). В этом случае адаптер просто не поддерживает эти
 операции.
 
-# Как это все может выглядеть на практике<a id="orgheadline52"></a>
+# Как это все может выглядеть на практике<a id="orgheadline51"></a>
 
 RDF &#x2013; это идея, что данные хранятся в графе. Хранение и управление
 этим графом может реализовываться по-разному.
 
-## Наивный реляционный подход + наведенная семантика<a id="orgheadline47"></a>
+## Наивный реляционный подход + наведенная семантика<a id="orgheadline46"></a>
 
 Объекты каждого класса хранятся в отдельной таблице, связи между
 ними во внешних ключах. Связи лежат в коде. Новый класс &#x2013; новый
@@ -961,7 +965,7 @@ RDF &#x2013; это идея, что данные хранятся в графе
 livejournal, и поле "current mood" приходится класть прямо в текст
 записи, потому что мы не можем его добавить не программируя.
 
-## Реляционный подход<a id="orgheadline50"></a>
+## Реляционный подход<a id="orgheadline49"></a>
 
 Все хранится в трех таблицах: Resources, Properties, Trees.
 
@@ -986,7 +990,7 @@ Trees &#x2013; это оптимизация, которая позволяет 
 ограничение. Правда придется разуруливать два триплета с которых
 вообще начинается вся семантика. Потом все нормально.
 
-### Конспект<a id="orgheadline48"></a>
+### Конспект<a id="orgheadline47"></a>
 
 Сначала у нас есть один ресурс &#x2013; книга. У него есть атрибут content
 в котором лежит ссылка на дерево.
@@ -1008,7 +1012,7 @@ Trees &#x2013; это оптимизация, которая позволяет 
 На выходе получаем массив элементов дерева, с уже загруженными из
 базы элементами типа `Paragraph`, `Section` или `List`.
 
-### Цитаты, разложенные по главам<a id="orgheadline49"></a>
+### Цитаты, разложенные по главам<a id="orgheadline48"></a>
 
 У цитаты есть функциональное свойство источник. Функциональное в
 том смысле, что оно у него может быть только одно, потому что у
@@ -1039,7 +1043,7 @@ Trees &#x2013; это оптимизация, которая позволяет 
 свойство `quotes`, которое ссылается на анонимный элемент дерева,
 который хранит список элементов класса `Quote`, который нам и нужен.
 
-## Семантика<a id="orgheadline51"></a>
+## Семантика<a id="orgheadline50"></a>
 
 Триплстор, нормальный ризонер, запросы на `sparq`. Интерфейс на
 рельсах. Моделей нет. Контроллер по сути один &#x2013;
@@ -1047,59 +1051,59 @@ Trees &#x2013; это оптимизация, которая позволяет 
 отрисовки ресурсов конретного класса с указанной детализаций и
 связанными ресурсами.
 
-# Case study<a id="orgheadline71"></a>
+# Case study<a id="orgheadline70"></a>
 
-## Org-mode<a id="orgheadline53"></a>
+## Org-mode<a id="orgheadline52"></a>
 
 <http://orgmode.org/>
 
-## Calibre<a id="orgheadline54"></a>
+## Calibre<a id="orgheadline53"></a>
 
 Reference-mode в читалке. Решение проблемы идентификации для
 электронных книг.
 
 <https://calibre-ebook.com/>
 
-## MusicBrainz<a id="orgheadline55"></a>
+## MusicBrainz<a id="orgheadline54"></a>
 
 Онтология для музыки.
 
 <https://musicbrainz.org/>
 
-## Ginko<a id="orgheadline56"></a>
+## Ginko<a id="orgheadline55"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде json.
 
 <https://gingkoapp.com>
 
-## TiddlyWiki<a id="orgheadline57"></a>
+## TiddlyWiki<a id="orgheadline56"></a>
 
 <http://tiddlywiki.com/>
 
-## Purple<a id="orgheadline58"></a>
+## Purple<a id="orgheadline57"></a>
 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## Smallest Federated Wiki<a id="orgheadline59"></a>
+## Smallest Federated Wiki<a id="orgheadline58"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Scrivener<a id="orgheadline60"></a>
+## Scrivener<a id="orgheadline59"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <http://www.literatureandlatte.com/scrivener.html>
 
-## Tinderbox<a id="orgheadline61"></a>
+## Tinderbox<a id="orgheadline60"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29>
 
-## Del.icio.us<a id="orgheadline62"></a>
+## Del.icio.us<a id="orgheadline61"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1151,7 +1155,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## Gifford - Semantic file systems<a id="orgheadline63"></a>
+## Gifford - Semantic file systems<a id="orgheadline62"></a>
 
 Старая заметка про Гиффорда:
 
@@ -1170,37 +1174,37 @@ Reference-mode в читалке. Решение проблемы идентиф
 > должно быть много. В файловую систему из можно интегрировать с помощью
 > виртуальных файловых систем.
 
-## NEPOMUK (framework)<a id="orgheadline64"></a>
+## NEPOMUK (framework)<a id="orgheadline63"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## Chandler<a id="orgheadline65"></a>
+## Chandler<a id="orgheadline64"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## vk.com/audio<a id="orgheadline66"></a>
+## vk.com/audio<a id="orgheadline65"></a>
 
 Здесь должна быть грустная история про то, как построить нормальную
 классификацию, в условиях, когда одной аудио-записи можно присвоить
 только одну метку. Если коротко, то никак.
 
-## Fluidinfo<a id="orgheadline67"></a>
+## Fluidinfo<a id="orgheadline66"></a>
 
 У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
 
 <http://fluidinfo.com>
 
-## Friendfeed (dead)<a id="orgheadline68"></a>
+## Friendfeed (dead)<a id="orgheadline67"></a>
 
 Помимо всего прочего умел собирать данных из разных источников в
 одну ленту.
 
-## Locker (dead)<a id="orgheadline69"></a>
+## Locker (dead)<a id="orgheadline68"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту.
 
-## Singly (dead)<a id="orgheadline70"></a>
+## Singly (dead)<a id="orgheadline69"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту. Singly ориентирован не только на собирание, но и на
@@ -1213,13 +1217,13 @@ joined Singly and was the CTO.
 
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
-# Ссылки<a id="orgheadline82"></a>
+# Ссылки<a id="orgheadline81"></a>
 
 <http://infotoday.com/> &#x2013; новости
 
 <http://booksblog.infotoday.com/> &#x2013; книги
 
-## Устоявшиеся термины<a id="orgheadline72"></a>
+## Устоявшиеся термины<a id="orgheadline71"></a>
 
 -   [Personal information manager](https://en.wikipedia.org/wiki/Personal_information_manager)
 -   [Personal knowledge base](https://en.wikipedia.org/wiki/Personal_knowledge_base)
@@ -1231,8 +1235,9 @@ joined Singly and was the CTO.
 -   [Semantic desktop](https://en.wikipedia.org/wiki/Semantic_desktop)
 -   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
+-   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 
-## Книги<a id="orgheadline73"></a>
+## Книги<a id="orgheadline72"></a>
 
 -   Semantic Web for the Working Ontologist (Morgan-Kaufman)
 -   A Semantic Web Primer (MIT Press)
@@ -1242,9 +1247,9 @@ joined Singly and was the CTO.
 -   The Discipline of Organizing (MIT Press)
 -   Игра в бисер (Герман Гессе)
 
-## urbansheep<a id="orgheadline76"></a>
+## urbansheep<a id="orgheadline75"></a>
 
-### Полоски<a id="orgheadline74"></a>
+### Полоски<a id="orgheadline73"></a>
 
 Ссылки больше не работают. Полосатор видимо закрылся. Очень жаль.
 
@@ -1254,7 +1259,7 @@ joined Singly and was the CTO.
 -   [knowledge management](http://utx.ambience.ru/users/urbansheep/knowledge_management)
 -   [hypertext](http://utx.ambience.ru/users/urbansheep/hypertext)
 
-### Freefeed<a id="orgheadline75"></a>
+### Freefeed<a id="orgheadline74"></a>
 
 Архивы френфида еще не импортировали в фрифид, ссылки починятся,
 когда &#x2013; неизвестно.
@@ -1264,17 +1269,17 @@ joined Singly and was the CTO.
 -   [цифровая история](http://freefeed.net/search?q=%23%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F)
 -   [архивисты](http://freefeed.net/search?q=%23%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B8%D1%81%D1%82%D1%8B)
 
-## Ассоциации<a id="orgheadline78"></a>
+## Ассоциации<a id="orgheadline77"></a>
 
-### Association for Information Science and Technology<a id="orgheadline77"></a>
+### Association for Information Science and Technology<a id="orgheadline76"></a>
 
 Ааа, ыыы, много всего, оно живое. 
 
 <https://www.asist.org/>
 
-## Конференции<a id="orgheadline80"></a>
+## Конференции<a id="orgheadline79"></a>
 
-### Personal Digital Archiving Conference<a id="orgheadline79"></a>
+### Personal Digital Archiving Conference<a id="orgheadline78"></a>
 
 Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
 
@@ -1282,21 +1287,21 @@ joined Singly and was the CTO.
 
 <https://archive.org/details/PDA2015>
 
-## Учебные заведения<a id="orgheadline81"></a>
+## Учебные заведения<a id="orgheadline80"></a>
 
 [UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 
-# Инструменты<a id="orgheadline97"></a>
+# Инструменты<a id="orgheadline96"></a>
 
-## Ruby<a id="orgheadline83"></a>
+## Ruby<a id="orgheadline82"></a>
 
 [linkeddata](https://github.com/ruby-rdf/linkeddata) &#x2013; гемы для работы с rdf.
 
 [treat](https://github.com/louismullie/treat) &#x2013; natural language processing framework for Ruby. 
 
-## Триплсторы<a id="orgheadline86"></a>
+## Триплсторы<a id="orgheadline85"></a>
 
-### AllegroGraph<a id="orgheadline84"></a>
+### AllegroGraph<a id="orgheadline83"></a>
 
 <http://franz.com/>
 
@@ -1308,19 +1313,19 @@ joined Singly and was the CTO.
 Внезапно есть биндинги для Common Lisp и курсы по изучению Common
 Lisp.
 
-### Neo4j<a id="orgheadline85"></a>
+### Neo4j<a id="orgheadline84"></a>
 
 Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j.
 
 <http://graphdatabases.com>
 
-## WebDAW<a id="orgheadline87"></a>
+## WebDAW<a id="orgheadline86"></a>
 
 <https://en.wikipedia.org/wiki/WebDAV>
 
-## JavaScript<a id="orgheadline96"></a>
+## JavaScript<a id="orgheadline95"></a>
 
-### Текствовые редакторы<a id="orgheadline90"></a>
+### Текствовые редакторы<a id="orgheadline89"></a>
 
 1.  Prose mirror
 
@@ -1330,7 +1335,7 @@ Lisp.
 
     <http://substance.io/>
 
-### Everything else<a id="orgheadline95"></a>
+### Everything else<a id="orgheadline94"></a>
 
 1.  blast
 
