@@ -6,7 +6,7 @@ module ApplicationHelper
       category = resource
     elsif resource.kind_of?(Source)
       category = resource.category
-    elsif
+    else
       raise TypeError
     end
     if category.present?
