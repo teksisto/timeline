@@ -136,8 +136,8 @@
 <li><a href="#orgheadline82">8.1. Ruby</a></li>
 <li><a href="#orgheadline85">8.2. Триплсторы</a>
 <ul>
-<li><a href="#orgheadline83">8.2.1. AllegroGraph</a></li>
-<li><a href="#orgheadline84">8.2.2. Neo4j</a></li>
+<li><a href="#orgheadline83">8.2.1. Neo4j</a></li>
+<li><a href="#orgheadline84">8.2.2. AllegroGraph</a></li>
 </ul>
 </li>
 <li><a href="#orgheadline86">8.3. WebDAW</a></li>
@@ -1244,7 +1244,7 @@ joined Singly and was the CTO.
 -   [Semantic desktop](https://en.wikipedia.org/wiki/Semantic_desktop)
 -   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
--   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
+-   [Graph database](https://en.wikipedia.org/wiki/Graph_database)
 
 ## Книги<a id="orgheadline73"></a>
 
@@ -1306,7 +1306,15 @@ joined Singly and was the CTO.
 
 ## Триплсторы<a id="orgheadline85"></a>
 
-### AllegroGraph<a id="orgheadline83"></a>
+### Neo4j<a id="orgheadline83"></a>
+
+Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j. 
+
+Обертка для ruby: <https://github.com/neo4jrb/neo4j>
+
+<https://neo4j.com>
+
+### AllegroGraph<a id="orgheadline84"></a>
 
 <http://franz.com/>
 
@@ -1317,12 +1325,6 @@ joined Singly and was the CTO.
 
 Внезапно есть биндинги для Common Lisp и курсы по изучению Common
 Lisp.
-
-### Neo4j<a id="orgheadline84"></a>
-
-Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j.
-
-<http://graphdatabases.com>
 
 ## WebDAW<a id="orgheadline86"></a>
 

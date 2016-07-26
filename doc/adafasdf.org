@@ -1101,7 +1101,7 @@
    - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://en.wikipedia.org/wiki/Transclusion][Transclusion]]
-   - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
+   - [[https://en.wikipedia.org/wiki/Graph_database][Graph database]]
 
 ** Книги
 
@@ -1163,6 +1163,14 @@
 
 ** Триплсторы
 
+*** Neo4j
+
+    Книга O'Reilly "Graph Databases" -- это введение в neo4j. 
+
+    Обертка для ruby: https://github.com/neo4jrb/neo4j
+
+    https://neo4j.com
+
 *** AllegroGraph
 
     http://franz.com/
@@ -1174,12 +1182,6 @@
 
     Внезапно есть биндинги для Common Lisp и курсы по изучению Common
     Lisp.
-
-*** Neo4j
-
-    Книга O'Reilly "Graph Databases" -- это введение в neo4j.
-
-    http://graphdatabases.com
 
 ** WebDAW
 
