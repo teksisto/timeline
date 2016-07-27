@@ -127,8 +127,8 @@
 </li>
 <li><a href="#orgheadline82">7.5. urbansheep</a>
 <ul>
-<li><a href="#orgheadline80">7.5.1. Полоски</a></li>
-<li><a href="#orgheadline81">7.5.2. Freefeed</a></li>
+<li><a href="#orgheadline80">7.5.1. LiveJournal</a></li>
+<li><a href="#orgheadline81">7.5.2. FriendFeed</a></li>
 </ul>
 </li>
 <li><a href="#orgheadline84">7.6. Конференции</a>
@@ -1322,25 +1322,20 @@ joined Singly and was the CTO.
 
 ## urbansheep<a id="orgheadline82"></a>
 
-### Полоски<a id="orgheadline80"></a>
+### LiveJournal<a id="orgheadline80"></a>
 
-Ссылки больше не работают. Полосатор видимо закрылся. Очень жаль.
+-   [info organization](https://urbansheep.livejournal.com/tag/info organization)
+-   [classification](https://urbansheep.livejornal.com/tag/classification)
+-   [memory<sub>management</sub>](https://urbansheep.livejournal.com/tag/memory_management)
+-   [knowledge management](https://urbansheep.livejournal.com/tag/knowledge_management)
+-   [hypertext](https://urbansheep.livejornal.com/tag/hypertext)
 
--   [info organization](http://utx.ambience.ru/users/urbansheep/info_organization)
--   [classification](http://utx.ambience.ru/users/urbansheep/classification)
--   [memory management](http://utx.ambience.ru/users/urbansheep/memory_management)
--   [knowledge management](http://utx.ambience.ru/users/urbansheep/knowledge_management)
--   [hypertext](http://utx.ambience.ru/users/urbansheep/hypertext)
+### FriendFeed<a id="orgheadline81"></a>
 
-### Freefeed<a id="orgheadline81"></a>
-
-Архивы френфида еще не импортировали в фрифид, ссылки починятся,
-когда &#x2013; неизвестно.
-
--   [инфоорг](http://freefeed.net/search?q=%23%D0%B8%D0%BD%D1%84%D0%BE%D0%BE%D1%80%D0%B3+from%3Aurbansheep)
--   [свой небольшой интернет](http://freefeed.net/search?q=%23%D1%81%D0%B2%D0%BE%D0%B9_%D0%BD%D0%B5%D0%B1%D0%BE%D0%BB%D1%8C%D1%88%D0%BE%D0%B9_%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82)
--   [цифровая история](http://freefeed.net/search?q=%23%D1%86%D0%B8%D1%84%D1%80%D0%BE%D0%B2%D0%B0%D1%8F_%D0%B8%D1%81%D1%82%D0%BE%D1%80%D0%B8%D1%8F)
--   [архивисты](http://freefeed.net/search?q=%23%D0%B0%D1%80%D1%85%D0%B8%D0%B2%D0%B8%D1%81%D1%82%D1%8B)
+-   [инфоорг](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html)
+-   [свой небольшой интернет](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html)
+-   [цифровая история](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html)
+-   [архивисты](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html)
 
 ## Конференции<a id="orgheadline84"></a>
 
