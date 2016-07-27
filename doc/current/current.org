@@ -1,0 +1,5 @@
+* Как устроен timeline
+
+  База сейчас выглядит приблизительно вот так:
+
+  [[timeline_current_database.png]]
