@@ -278,7 +278,7 @@
 
     Играть в эту игру можно просто с самим собой, находя противоречия
     как в себе, так и в окружающем мире. Но есть и вторая цель --
-    сделать какой-то аналог дискуссионного клуба. Сбор best arguments,
+    сделать какой-то аналог [[https://en.wikipedia.org/wiki/Debate#Student_debating_societies][дискуссионного клуба]]. Сбор best arguments,
     за и против какой-нибудь идеи.
 
     Конечная цель игры -- синтез разных мнений.
@@ -366,7 +366,7 @@
     поделать? 
 
     Во-первых, можно прогнать свежий текст через базу и найти слова,
-    которых ты не знаешь. Если прекрутить [[https://github.com/louismullie/treat][treat]], то еще и с частью
+    которых ты не знаешь. Если прикрутить [[https://github.com/louismullie/treat][treat]], то еще и с частью
     речи. Теперь можно автоматом генерить из них карточки для
     запоминания, в которых будет учитываться часть речи ("мне
     встречалось это слово как глагол, а тут оно как существительное"),
@@ -577,7 +577,7 @@
    экспортированными наборами данных, если хочется единую ленту?
 
    Примеры веб-сервисов, которые пытались делать единую ленту: Singly,
-   Locker, FriendFeed. В настоящий момент все закрыты.
+   Locker, Memolane, FriendFeed. В настоящий момент все закрыты.
 
 ** Динамические деревья
 
@@ -848,12 +848,12 @@
     интернете). В этом случае адаптер просто не поддерживает эти
     операции.
 
-* Как это все может выглядеть на практики
+* Как это все может выглядеть на практике
 
   RDF -- это идея, что данные хранятся в графе. Хранить этот граф и
   управлять им можно по-разному.
 
-** Наивный реляционный подход + наведенная семантика
+** Обычный реляционный подход + наведенная семантика
 
    Объекты каждого класса хранятся в отдельной таблице, связи между
    ними во внешних ключах. Связи лежат в коде. Новый класс -- новый
@@ -873,7 +873,16 @@
    записи, потому что мы не можем его добавить не программируя.
 
 ** Реляционный подход
-   
+
+   Лучше всего про реляционный подход написал какой-то чувак с [[https://news.ycombinator.com/item?id=10326764][HN]]:
+
+   #+BEGIN_QUOTE 
+       Having a completely abstracted database with one big
+       table called "things" and another big table called "relationships"
+       seems really attractive before you actually do it. Then it starts
+       to suck.
+   #+END_QUOTE
+
    Все хранится в трех таблицах: Resources, Properties, Trees.
 
    Trees -- это оптимизация, которая позволяет хранить деревья,
@@ -894,7 +903,7 @@
 
    У классов нет множественного наследования. Мне оно строго говоря и
    не нужно, но реализовывать проще, если принять это
-   ограничение. Правда придется разуруливать два триплета с которых
+   ограничение. Правда придется разруливать два триплета с которых
    вообще начинается вся семантика. Потом все нормально.
 
 *** Конспект
@@ -957,6 +966,32 @@
     ~ResourcesController~. В основном надо рисовать партиалы для
     отрисовки ресурсов конретного класса с указанной детализаций и
     связанными ресурсами.
+
+*** OpenLink Virtuoso
+
+    http://virtuoso.openlinksw.com/
+    
+*** AllegroGraph
+
+    http://franz.com/
+
+    Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
+    видео и список событий.
+
+    Есть community версия и платная.
+
+    Внезапно есть биндинги для Common Lisp и курсы по изучению Common
+    Lisp.
+
+** Графовая база данных
+
+   В частности, neo4j. 
+   
+   Книга O'Reilly "Graph Databases" -- это введение в neo4j. 
+
+   Обертка для ruby: https://github.com/neo4jrb/neo4j
+
+   https://neo4j.com
 
 * Case study
 
@@ -1176,7 +1211,7 @@
 
     - [[https://urbansheep.livejournal.com/tag/info organization][info organization]]
     - [[https://urbansheep.livejornal.com/tag/classification][classification]]
-    - [[https://urbansheep.livejournal.com/tag/memory_management][memory_management]]
+    - [[https://urbansheep.livejournal.com/tag/memory_management][memory management]]
     - [[https://urbansheep.livejournal.com/tag/knowledge_management][knowledge management]]
     - [[https://urbansheep.livejornal.com/tag/hypertext][hypertext]]
 
@@ -1204,59 +1239,3 @@
    [[https://github.com/ruby-rdf/linkeddata][linkeddata]] -- гемы для работы с rdf.
 
    [[https://github.com/louismullie/treat][treat]] -- natural language processing framework for Ruby. 
-
-** Триплсторы
-
-*** Neo4j
-
-    Книга O'Reilly "Graph Databases" -- это введение в neo4j. 
-
-    Обертка для ruby: https://github.com/neo4jrb/neo4j
-
-    https://neo4j.com
-
-*** AllegroGraph
-
-    http://franz.com/
-
-    Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
-    видео и список событий.
-
-    Есть community версия и платная.
-
-    Внезапно есть биндинги для Common Lisp и курсы по изучению Common
-    Lisp.
-
-** WebDAW
-
-   https://en.wikipedia.org/wiki/WebDAV
-
-** JavaScript
-*** Текствовые редакторы
-**** Prose mirror
-     http://prosemirror.net/
-**** Substance
-     http://substance.io/
-*** Everything else
-**** blast
-
-     Blast.js separates text in order to facilitate typographic
-     manipulation. It has four delimiters built in: character, word,
-     sentence, and element. Alternatively, Blast can match custom
-     regular expressions and phrases.
-
-     http://julian.com/research/blast/
-
-**** datatables
-
-     http://datatables.net/
-
-**** grid
-
-     https://github.com/ubervu/grid
-
-     https://github.com/ducksboard/gridster.js
-
-**** countdown
-
-     http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html

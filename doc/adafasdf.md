@@ -81,79 +81,72 @@
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline55">5. Как это все может выглядеть на практики</a>
+<li><a href="#orgheadline58">5. Как это все может выглядеть на практике</a>
 <ul>
-<li><a href="#orgheadline50">5.1. Наивный реляционный подход + наведенная семантика</a></li>
+<li><a href="#orgheadline50">5.1. Обычный реляционный подход + наведенная семантика</a></li>
 <li><a href="#orgheadline53">5.2. Реляционный подход</a>
 <ul>
 <li><a href="#orgheadline51">5.2.1. Конспект</a></li>
 <li><a href="#orgheadline52">5.2.2. Цитаты, разложенные по главам</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline54">5.3. Семантика</a></li>
+<li><a href="#orgheadline56">5.3. Семантика</a>
+<ul>
+<li><a href="#orgheadline54">5.3.1. OpenLink Virtuoso</a></li>
+<li><a href="#orgheadline55">5.3.2. AllegroGraph</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline74">6. Case study</a>
-<ul>
-<li><a href="#orgheadline56">6.1. Org-mode</a></li>
-<li><a href="#orgheadline57">6.2. Calibre</a></li>
-<li><a href="#orgheadline58">6.3. MusicBrainz</a></li>
-<li><a href="#orgheadline59">6.4. Ginko</a></li>
-<li><a href="#orgheadline60">6.5. TiddlyWiki</a></li>
-<li><a href="#orgheadline61">6.6. Purple</a></li>
-<li><a href="#orgheadline62">6.7. Smallest Federated Wiki</a></li>
-<li><a href="#orgheadline63">6.8. Scrivener</a></li>
-<li><a href="#orgheadline64">6.9. Tinderbox</a></li>
-<li><a href="#orgheadline65">6.10. Del.icio.us</a></li>
-<li><a href="#orgheadline66">6.11. Gifford - Semantic file systems</a></li>
-<li><a href="#orgheadline67">6.12. NEPOMUK (framework)</a></li>
-<li><a href="#orgheadline68">6.13. Chandler</a></li>
-<li><a href="#orgheadline69">6.14. vk.com/audio</a></li>
-<li><a href="#orgheadline70">6.15. Fluidinfo</a></li>
-<li><a href="#orgheadline71">6.16. Friendfeed (dead)</a></li>
-<li><a href="#orgheadline72">6.17. Locker (dead)</a></li>
-<li><a href="#orgheadline73">6.18. Singly (dead)</a></li>
+<li><a href="#orgheadline57">5.4. Графовая база данных</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline85">7. Ссылки</a>
+<li><a href="#orgheadline77">6. Case study</a>
 <ul>
-<li><a href="#orgheadline75">7.1. Учебные заведения</a></li>
-<li><a href="#orgheadline76">7.2. Устоявшиеся термины</a></li>
-<li><a href="#orgheadline77">7.3. Книги</a></li>
-<li><a href="#orgheadline79">7.4. Ассоциации</a>
-<ul>
-<li><a href="#orgheadline78">7.4.1. Association for Information Science and Technology</a></li>
+<li><a href="#orgheadline59">6.1. Org-mode</a></li>
+<li><a href="#orgheadline60">6.2. Calibre</a></li>
+<li><a href="#orgheadline61">6.3. MusicBrainz</a></li>
+<li><a href="#orgheadline62">6.4. Ginko</a></li>
+<li><a href="#orgheadline63">6.5. TiddlyWiki</a></li>
+<li><a href="#orgheadline64">6.6. Purple</a></li>
+<li><a href="#orgheadline65">6.7. Smallest Federated Wiki</a></li>
+<li><a href="#orgheadline66">6.8. Scrivener</a></li>
+<li><a href="#orgheadline67">6.9. Tinderbox</a></li>
+<li><a href="#orgheadline68">6.10. Del.icio.us</a></li>
+<li><a href="#orgheadline69">6.11. Gifford - Semantic file systems</a></li>
+<li><a href="#orgheadline70">6.12. NEPOMUK (framework)</a></li>
+<li><a href="#orgheadline71">6.13. Chandler</a></li>
+<li><a href="#orgheadline72">6.14. vk.com/audio</a></li>
+<li><a href="#orgheadline73">6.15. Fluidinfo</a></li>
+<li><a href="#orgheadline74">6.16. Friendfeed (dead)</a></li>
+<li><a href="#orgheadline75">6.17. Locker (dead)</a></li>
+<li><a href="#orgheadline76">6.18. Singly (dead)</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline82">7.5. urbansheep</a>
+<li><a href="#orgheadline88">7. Ссылки</a>
 <ul>
-<li><a href="#orgheadline80">7.5.1. LiveJournal</a></li>
-<li><a href="#orgheadline81">7.5.2. FriendFeed</a></li>
+<li><a href="#orgheadline78">7.1. Учебные заведения</a></li>
+<li><a href="#orgheadline79">7.2. Устоявшиеся термины</a></li>
+<li><a href="#orgheadline80">7.3. Книги</a></li>
+<li><a href="#orgheadline82">7.4. Ассоциации</a>
+<ul>
+<li><a href="#orgheadline81">7.4.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline84">7.6. Конференции</a>
+<li><a href="#orgheadline85">7.5. urbansheep</a>
 <ul>
-<li><a href="#orgheadline83">7.6.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#orgheadline83">7.5.1. LiveJournal</a></li>
+<li><a href="#orgheadline84">7.5.2. FriendFeed</a></li>
+</ul>
+</li>
+<li><a href="#orgheadline87">7.6. Конференции</a>
+<ul>
+<li><a href="#orgheadline86">7.6.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgheadline100">8. Инструменты</a>
+<li><a href="#orgheadline90">8. Инструменты</a>
 <ul>
-<li><a href="#orgheadline86">8.1. Ruby</a></li>
-<li><a href="#orgheadline89">8.2. Триплсторы</a>
-<ul>
-<li><a href="#orgheadline87">8.2.1. Neo4j</a></li>
-<li><a href="#orgheadline88">8.2.2. AllegroGraph</a></li>
-</ul>
-</li>
-<li><a href="#orgheadline90">8.3. WebDAW</a></li>
-<li><a href="#orgheadline99">8.4. JavaScript</a>
-<ul>
-<li><a href="#orgheadline93">8.4.1. Текствовые редакторы</a></li>
-<li><a href="#orgheadline98">8.4.2. Everything else</a></li>
-</ul>
-</li>
+<li><a href="#orgheadline89">8.1. Ruby</a></li>
 </ul>
 </li>
 </ul>
@@ -433,7 +426,7 @@ uuid.
 
 Играть в эту игру можно просто с самим собой, находя противоречия
 как в себе, так и в окружающем мире. Но есть и вторая цель &#x2013;
-сделать какой-то аналог дискуссионного клуба. Сбор best arguments,
+сделать какой-то аналог [дискуссионного клуба](https://en.wikipedia.org/wiki/Debate#Student_debating_societies). Сбор best arguments,
 за и против какой-нибудь идеи.
 
 Конечная цель игры &#x2013; синтез разных мнений.
@@ -517,7 +510,7 @@ uuid.
 поделать? 
 
 Во-первых, можно прогнать свежий текст через базу и найти слова,
-которых ты не знаешь. Если прекрутить [treat](https://github.com/louismullie/treat), то еще и с частью
+которых ты не знаешь. Если прикрутить [treat](https://github.com/louismullie/treat), то еще и с частью
 речи. Теперь можно автоматом генерить из них карточки для
 запоминания, в которых будет учитываться часть речи ("мне
 встречалось это слово как глагол, а тут оно как существительное"),
@@ -731,7 +724,7 @@ uuid.
 экспортированными наборами данных, если хочется единую ленту?
 
 Примеры веб-сервисов, которые пытались делать единую ленту: Singly,
-Locker, FriendFeed. В настоящий момент все закрыты.
+Locker, Memolane, FriendFeed. В настоящий момент все закрыты.
 
 ## Динамические деревья<a id="orgheadline39"></a>
 
@@ -1002,12 +995,12 @@ nss &#x2013; namespace spicific string. Позволяет однозначно 
 интернете). В этом случае адаптер просто не поддерживает эти
 операции.
 
-# Как это все может выглядеть на практики<a id="orgheadline55"></a>
+# Как это все может выглядеть на практике<a id="orgheadline58"></a>
 
 RDF &#x2013; это идея, что данные хранятся в графе. Хранить этот граф и
 управлять им можно по-разному.
 
-## Наивный реляционный подход + наведенная семантика<a id="orgheadline50"></a>
+## Обычный реляционный подход + наведенная семантика<a id="orgheadline50"></a>
 
 Объекты каждого класса хранятся в отдельной таблице, связи между
 ними во внешних ключах. Связи лежат в коде. Новый класс &#x2013; новый
@@ -1027,6 +1020,13 @@ livejournal, и поле "current mood" приходится класть пря
 записи, потому что мы не можем его добавить не программируя.
 
 ## Реляционный подход<a id="orgheadline53"></a>
+
+Лучше всего про реляционный подход написал какой-то чувак с [HN](https://news.ycombinator.com/item?id=10326764):
+
+> Having a completely abstracted database with one big
+> table called "things" and another big table called "relationships"
+> seems really attractive before you actually do it. Then it starts
+> to suck.
 
 Все хранится в трех таблицах: Resources, Properties, Trees.
 
@@ -1048,7 +1048,7 @@ Trees &#x2013; это оптимизация, которая позволяет 
 
 У классов нет множественного наследования. Мне оно строго говоря и
 не нужно, но реализовывать проще, если принять это
-ограничение. Правда придется разуруливать два триплета с которых
+ограничение. Правда придется разруливать два триплета с которых
 вообще начинается вся семантика. Потом все нормально.
 
 ### Конспект<a id="orgheadline51"></a>
@@ -1104,7 +1104,7 @@ Trees &#x2013; это оптимизация, которая позволяет 
 свойство `quotes`, которое ссылается на анонимный элемент дерева,
 который хранит список элементов класса `Quote`, который нам и нужен.
 
-## Семантика<a id="orgheadline54"></a>
+## Семантика<a id="orgheadline56"></a>
 
 Триплстор, нормальный ризонер, запросы на `sparq`. Интерфейс на
 рельсах. Моделей нет. Контроллер по сути один &#x2013;
@@ -1112,59 +1112,85 @@ Trees &#x2013; это оптимизация, которая позволяет 
 отрисовки ресурсов конретного класса с указанной детализаций и
 связанными ресурсами.
 
-# Case study<a id="orgheadline74"></a>
+### OpenLink Virtuoso<a id="orgheadline54"></a>
 
-## Org-mode<a id="orgheadline56"></a>
+<http://virtuoso.openlinksw.com/>
+
+### AllegroGraph<a id="orgheadline55"></a>
+
+<http://franz.com/>
+
+Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
+видео и список событий.
+
+Есть community версия и платная.
+
+Внезапно есть биндинги для Common Lisp и курсы по изучению Common
+Lisp.
+
+## Графовая база данных<a id="orgheadline57"></a>
+
+В частности, neo4j. 
+
+Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j. 
+
+Обертка для ruby: <https://github.com/neo4jrb/neo4j>
+
+<https://neo4j.com>
+
+# Case study<a id="orgheadline77"></a>
+
+## Org-mode<a id="orgheadline59"></a>
 
 <http://orgmode.org/>
 
-## Calibre<a id="orgheadline57"></a>
+## Calibre<a id="orgheadline60"></a>
 
 Reference-mode в читалке. Решение проблемы идентификации для
 электронных книг.
 
 <https://calibre-ebook.com/>
 
-## MusicBrainz<a id="orgheadline58"></a>
+## MusicBrainz<a id="orgheadline61"></a>
 
 Онтология для музыки.
 
 <https://musicbrainz.org/>
 
-## Ginko<a id="orgheadline59"></a>
+## Ginko<a id="orgheadline62"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде json.
 
 <https://gingkoapp.com>
 
-## TiddlyWiki<a id="orgheadline60"></a>
+## TiddlyWiki<a id="orgheadline63"></a>
 
 <http://tiddlywiki.com/>
 
-## Purple<a id="orgheadline61"></a>
+## Purple<a id="orgheadline64"></a>
 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## Smallest Federated Wiki<a id="orgheadline62"></a>
+## Smallest Federated Wiki<a id="orgheadline65"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Scrivener<a id="orgheadline63"></a>
+## Scrivener<a id="orgheadline66"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <http://www.literatureandlatte.com/scrivener.html>
 
-## Tinderbox<a id="orgheadline64"></a>
+## Tinderbox<a id="orgheadline67"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29>
 
-## Del.icio.us<a id="orgheadline65"></a>
+## Del.icio.us<a id="orgheadline68"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1216,7 +1242,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## Gifford - Semantic file systems<a id="orgheadline66"></a>
+## Gifford - Semantic file systems<a id="orgheadline69"></a>
 
 Старая заметка про Гиффорда:
 
@@ -1235,37 +1261,37 @@ Reference-mode в читалке. Решение проблемы идентиф
 > должно быть много. В файловую систему из можно интегрировать с помощью
 > виртуальных файловых систем.
 
-## NEPOMUK (framework)<a id="orgheadline67"></a>
+## NEPOMUK (framework)<a id="orgheadline70"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## Chandler<a id="orgheadline68"></a>
+## Chandler<a id="orgheadline71"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## vk.com/audio<a id="orgheadline69"></a>
+## vk.com/audio<a id="orgheadline72"></a>
 
 Здесь должна быть грустная история про то, как построить нормальную
 классификацию, в условиях, когда одной аудио-записи можно присвоить
 только одну метку. Если коротко, то никак.
 
-## Fluidinfo<a id="orgheadline70"></a>
+## Fluidinfo<a id="orgheadline73"></a>
 
 У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
 
 <http://fluidinfo.com>
 
-## Friendfeed (dead)<a id="orgheadline71"></a>
+## Friendfeed (dead)<a id="orgheadline74"></a>
 
 Помимо всего прочего умел собирать данных из разных источников в
 одну ленту.
 
-## Locker (dead)<a id="orgheadline72"></a>
+## Locker (dead)<a id="orgheadline75"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту.
 
-## Singly (dead)<a id="orgheadline73"></a>
+## Singly (dead)<a id="orgheadline76"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту. Singly ориентирован не только на собирание, но и на
@@ -1278,17 +1304,17 @@ joined Singly and was the CTO.
 
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
-# Ссылки<a id="orgheadline85"></a>
+# Ссылки<a id="orgheadline88"></a>
 
 <http://infotoday.com/> &#x2013; новости
 
 <http://booksblog.infotoday.com/> &#x2013; книги
 
-## Учебные заведения<a id="orgheadline75"></a>
+## Учебные заведения<a id="orgheadline78"></a>
 
 [UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 
-## Устоявшиеся термины<a id="orgheadline76"></a>
+## Устоявшиеся термины<a id="orgheadline79"></a>
 
 -   [Personal information manager](https://en.wikipedia.org/wiki/Personal_information_manager)
 -   [Personal knowledge base](https://en.wikipedia.org/wiki/Personal_knowledge_base)
@@ -1302,7 +1328,7 @@ joined Singly and was the CTO.
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
 -   [Graph database](https://en.wikipedia.org/wiki/Graph_database)
 
-## Книги<a id="orgheadline77"></a>
+## Книги<a id="orgheadline80"></a>
 
 -   Semantic Web for the Working Ontologist (Morgan-Kaufman)
 -   A Semantic Web Primer (MIT Press)
@@ -1312,34 +1338,34 @@ joined Singly and was the CTO.
 -   The Discipline of Organizing (MIT Press)
 -   Игра в бисер (Герман Гессе)
 
-## Ассоциации<a id="orgheadline79"></a>
+## Ассоциации<a id="orgheadline82"></a>
 
-### Association for Information Science and Technology<a id="orgheadline78"></a>
+### Association for Information Science and Technology<a id="orgheadline81"></a>
 
 Ааа, ыыы, много всего, оно живое. 
 
 <https://www.asist.org/>
 
-## urbansheep<a id="orgheadline82"></a>
+## urbansheep<a id="orgheadline85"></a>
 
-### LiveJournal<a id="orgheadline80"></a>
+### LiveJournal<a id="orgheadline83"></a>
 
 -   [info organization](https://urbansheep.livejournal.com/tag/info organization)
 -   [classification](https://urbansheep.livejornal.com/tag/classification)
--   [memory<sub>management</sub>](https://urbansheep.livejournal.com/tag/memory_management)
+-   [memory management](https://urbansheep.livejournal.com/tag/memory_management)
 -   [knowledge management](https://urbansheep.livejournal.com/tag/knowledge_management)
 -   [hypertext](https://urbansheep.livejornal.com/tag/hypertext)
 
-### FriendFeed<a id="orgheadline81"></a>
+### FriendFeed<a id="orgheadline84"></a>
 
 -   [инфоорг](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html)
 -   [свой небольшой интернет](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html)
 -   [цифровая история](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html)
 -   [архивисты](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html)
 
-## Конференции<a id="orgheadline84"></a>
+## Конференции<a id="orgheadline87"></a>
 
-### Personal Digital Archiving Conference<a id="orgheadline83"></a>
+### Personal Digital Archiving Conference<a id="orgheadline86"></a>
 
 Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
 
@@ -1347,73 +1373,10 @@ joined Singly and was the CTO.
 
 <https://archive.org/details/PDA2015>
 
-# Инструменты<a id="orgheadline100"></a>
+# Инструменты<a id="orgheadline90"></a>
 
-## Ruby<a id="orgheadline86"></a>
+## Ruby<a id="orgheadline89"></a>
 
 [linkeddata](https://github.com/ruby-rdf/linkeddata) &#x2013; гемы для работы с rdf.
 
-[treat](https://github.com/louismullie/treat) &#x2013; natural language processing framework for Ruby. 
-
-## Триплсторы<a id="orgheadline89"></a>
-
-### Neo4j<a id="orgheadline87"></a>
-
-Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j. 
-
-Обертка для ruby: <https://github.com/neo4jrb/neo4j>
-
-<https://neo4j.com>
-
-### AllegroGraph<a id="orgheadline88"></a>
-
-<http://franz.com/>
-
-Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
-видео и список событий.
-
-Есть community версия и платная.
-
-Внезапно есть биндинги для Common Lisp и курсы по изучению Common
-Lisp.
-
-## WebDAW<a id="orgheadline90"></a>
-
-<https://en.wikipedia.org/wiki/WebDAV>
-
-## JavaScript<a id="orgheadline99"></a>
-
-### Текствовые редакторы<a id="orgheadline93"></a>
-
-1.  Prose mirror
-
-    <http://prosemirror.net/>
-
-2.  Substance
-
-    <http://substance.io/>
-
-### Everything else<a id="orgheadline98"></a>
-
-1.  blast
-
-    Blast.js separates text in order to facilitate typographic
-    manipulation. It has four delimiters built in: character, word,
-    sentence, and element. Alternatively, Blast can match custom
-    regular expressions and phrases.
-    
-    <http://julian.com/research/blast/>
-
-2.  datatables
-
-    <http://datatables.net/>
-
-3.  grid
-
-    <https://github.com/ubervu/grid>
-    
-    <https://github.com/ducksboard/gridster.js>
-
-4.  countdown
-
-    <http://hilios.github.io/jQuery.countdown/examples/multiple-instances.html>
+[treat](https://github.com/louismullie/treat) &#x2013; natural language processing framework for Ruby.
