@@ -3,9 +3,9 @@
 
 * Timeline
 
-  Здесь я размышляю [[https://github.com/teksisto/timeline/blob/master/doc/adafasdf.md][какой personal information manager мне хотелось бы]]
-  иметь и реализую маленькие куски из него, чтобы посмотреть [[https://github.com/teksisto/timeline/blob/master/doc/current/current.org][как оно
-  выглядит на практике]]. 
+  Здесь я размышляю [[https://github.com/teksisto/timeline/blob/master/doc/adafasdf.md][какой personal information manager мне хотелось бы
+  иметь]] и реализую маленькие куски из него, чтобы посмотреть [[https://github.com/teksisto/timeline/blob/master/doc/current/current.org][как оно
+  выглядит на практике]].
 
 ** Установка
 

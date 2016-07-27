@@ -101,21 +101,21 @@
 </li>
 <li><a href="#orgheadline77">6. Case study</a>
 <ul>
-<li><a href="#orgheadline59">6.1. Org-mode</a></li>
-<li><a href="#orgheadline60">6.2. Calibre</a></li>
+<li><a href="#orgheadline59">6.1. Purple</a></li>
+<li><a href="#orgheadline60">6.2. Gifford - Semantic file systems</a></li>
 <li><a href="#orgheadline61">6.3. MusicBrainz</a></li>
-<li><a href="#orgheadline62">6.4. Ginko</a></li>
-<li><a href="#orgheadline63">6.5. TiddlyWiki</a></li>
-<li><a href="#orgheadline64">6.6. Purple</a></li>
-<li><a href="#orgheadline65">6.7. Smallest Federated Wiki</a></li>
-<li><a href="#orgheadline66">6.8. Scrivener</a></li>
-<li><a href="#orgheadline67">6.9. Tinderbox</a></li>
-<li><a href="#orgheadline68">6.10. Del.icio.us</a></li>
-<li><a href="#orgheadline69">6.11. Gifford - Semantic file systems</a></li>
-<li><a href="#orgheadline70">6.12. NEPOMUK (framework)</a></li>
-<li><a href="#orgheadline71">6.13. Chandler</a></li>
-<li><a href="#orgheadline72">6.14. vk.com/audio</a></li>
-<li><a href="#orgheadline73">6.15. Fluidinfo</a></li>
+<li><a href="#orgheadline62">6.4. Org-mode</a></li>
+<li><a href="#orgheadline63">6.5. Fluidinfo</a></li>
+<li><a href="#orgheadline64">6.6. Calibre</a></li>
+<li><a href="#orgheadline65">6.7. Ginko</a></li>
+<li><a href="#orgheadline66">6.8. TiddlyWiki</a></li>
+<li><a href="#orgheadline67">6.9. Smallest Federated Wiki</a></li>
+<li><a href="#orgheadline68">6.10. Scrivener</a></li>
+<li><a href="#orgheadline69">6.11. Tinderbox</a></li>
+<li><a href="#orgheadline70">6.12. Del.icio.us</a></li>
+<li><a href="#orgheadline71">6.13. NEPOMUK (framework)</a></li>
+<li><a href="#orgheadline72">6.14. Chandler</a></li>
+<li><a href="#orgheadline73">6.15. vk.com/audio</a></li>
 <li><a href="#orgheadline74">6.16. Friendfeed (dead)</a></li>
 <li><a href="#orgheadline75">6.17. Locker (dead)</a></li>
 <li><a href="#orgheadline76">6.18. Singly (dead)</a></li>
@@ -124,7 +124,7 @@
 <li><a href="#orgheadline88">7. Ссылки</a>
 <ul>
 <li><a href="#orgheadline78">7.1. Учебные заведения</a></li>
-<li><a href="#orgheadline79">7.2. Устоявшиеся термины</a></li>
+<li><a href="#orgheadline79">7.2. Термины</a></li>
 <li><a href="#orgheadline80">7.3. Книги</a></li>
 <li><a href="#orgheadline82">7.4. Ассоциации</a>
 <ul>
@@ -142,11 +142,6 @@
 <li><a href="#orgheadline86">7.6.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><a href="#orgheadline90">8. Инструменты</a>
-<ul>
-<li><a href="#orgheadline89">8.1. Ruby</a></li>
 </ul>
 </li>
 </ul>
@@ -261,10 +256,10 @@ Keeping is not organizing.
 
 Как искать нужную информацию в массиве?
 
-На больших объемах информации поиск итеративен и разные "мили"
-проходятся разными способами. Полнотекстовый поиск, сохраненные
-запросы и обычный иерархический подход будут мирно сосуществовать
-на машинах.
+> На больших объемах информации поиск итеративен и разные "мили"
+> проходятся разными способами. Полнотекстовый поиск, сохраненные
+> запросы и обычный иерархический подход будут мирно сосуществовать
+> на машинах.
 
 ## Аннотирование<a id="orgheadline8"></a>
 
@@ -1106,7 +1101,9 @@ Trees &#x2013; это оптимизация, которая позволяет 
 
 ## Семантика<a id="orgheadline56"></a>
 
-Триплстор, нормальный ризонер, запросы на `sparq`. Интерфейс на
+[Триплстор](https://en.wikipedia.org/wiki/Triplestore), 
+[ризонер](https://en.wikipedia.org/wiki/Semantic_reasoner), 
+запросы на [SPARQL](https://en.wikipedia.org/wiki/SPARQL). Интерфейс на
 рельсах. Моделей нет. Контроллер по сути один &#x2013;
 `ResourcesController`. В основном надо рисовать партиалы для
 отрисовки ресурсов конретного класса с указанной детализаций и
@@ -1121,35 +1118,47 @@ Trees &#x2013; это оптимизация, которая позволяет 
 <http://franz.com/>
 
 Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
-видео и список событий.
-
-Есть community версия и платная.
-
-Внезапно есть биндинги для Common Lisp и курсы по изучению Common
-Lisp.
+видео и список событий. Есть community версия и платная. Внезапно
+есть биндинги для Common Lisp и курсы по изучению Common Lisp.
 
 ## Графовая база данных<a id="orgheadline57"></a>
 
-В частности, neo4j. 
+Если конкретнее, то [neo4j](https://neo4j.com). Про графовые базы
+пишут, что если цепочки связей между ресурсами больше трех, то
+можно использовать, а если нет, тогда postgres. То есть
+хранить там все нет смысла.
+
+Очень привлекают примеры с быстрой загрузкой данных из WordNet и
+dbpedia.
 
 Книга O'Reilly "Graph Databases" &#x2013; это введение в neo4j. 
 
 Обертка для ruby: <https://github.com/neo4jrb/neo4j>
 
-<https://neo4j.com>
-
 # Case study<a id="orgheadline77"></a>
 
-## Org-mode<a id="orgheadline59"></a>
+## Purple<a id="orgheadline59"></a>
 
-<http://orgmode.org/>
+<https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## Calibre<a id="orgheadline60"></a>
+## Gifford - Semantic file systems<a id="orgheadline60"></a>
 
-Reference-mode в читалке. Решение проблемы идентификации для
-электронных книг.
+Старая заметка про Гиффорда:
 
-<https://calibre-ebook.com/>
+> Подход, описанный Гиффордом, можно наглядно продемонстрировать на
+> примере делишеса. Факт того, что он писал это еще в 1991 году, убивает на
+> фиг. Но. Главный недостаток этого подхода заключается в том, что когда
+> множества полей (fields) и их значений (values) выростет, системой
+> будет невозможно пользоваться. Это видно и на примере делишеса. Никто
+> не пользуется инкрементным поиском. Это прикольно, но медленно и нафиг
+> никому не сдалось. Проблема инкрементного поиска в том, что вылезает
+> слишком много не нужных параметров поиска.
+> 
+> Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
+> они заранее отсеивают ненужные параметры поиска. Дело не в том, что
+> дерево &#x2013; это плохо. Дело в том, что одно дерево это плохо. Деревьев
+> должно быть много. В файловую систему из можно интегрировать с помощью
+> виртуальных файловых систем.
 
 ## MusicBrainz<a id="orgheadline61"></a>
 
@@ -1157,40 +1166,53 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 <https://musicbrainz.org/>
 
-## Ginko<a id="orgheadline62"></a>
+## Org-mode<a id="orgheadline62"></a>
+
+<http://orgmode.org/>
+
+## Fluidinfo<a id="orgheadline63"></a>
+
+У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
+
+<http://fluidinfo.com>
+
+## Calibre<a id="orgheadline64"></a>
+
+Reference-mode в читалке. Решение проблемы идентификации для
+электронных книг.
+
+<https://calibre-ebook.com/>
+
+## Ginko<a id="orgheadline65"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде json.
 
 <https://gingkoapp.com>
 
-## TiddlyWiki<a id="orgheadline63"></a>
+## TiddlyWiki<a id="orgheadline66"></a>
 
 <http://tiddlywiki.com/>
 
-## Purple<a id="orgheadline64"></a>
-
-<https://en.wikipedia.org/wiki/Purple_Numbers>
-
-## Smallest Federated Wiki<a id="orgheadline65"></a>
+## Smallest Federated Wiki<a id="orgheadline67"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Scrivener<a id="orgheadline66"></a>
+## Scrivener<a id="orgheadline68"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <http://www.literatureandlatte.com/scrivener.html>
 
-## Tinderbox<a id="orgheadline67"></a>
+## Tinderbox<a id="orgheadline69"></a>
 
 Неведомая фигня под мак, которую периодически очень хвалят.
 
 <https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29>
 
-## Del.icio.us<a id="orgheadline68"></a>
+## Del.icio.us<a id="orgheadline70"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1242,44 +1264,19 @@ Reference-mode в читалке. Решение проблемы идентиф
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## Gifford - Semantic file systems<a id="orgheadline69"></a>
-
-Старая заметка про Гиффорда:
-
-> Подход, описанный Гиффордом, можно наглядно продемонстрировать на
-> примере делишеса. Факт того, что он писал это еще в 1991 году, убивает на
-> фиг. Но. Главный недостаток этого подхода заключается в том, что когда
-> множества полей (fields) и их значений (values) выростет, системой
-> будет невозможно пользоваться. Это видно и на примере делишеса. Никто
-> не пользуется инкрементным поиском. Это прикольно, но медленно и нафиг
-> никому не сдалось. Проблема инкрементного поиска в том, что вылезает
-> слишком много не нужных параметров поиска.
-> 
-> Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
-> они заранее отсеивают ненужные параметры поиска. Дело не в том, что
-> дерево &#x2013; это плохо. Дело в том, что одно дерево это плохо. Деревьев
-> должно быть много. В файловую систему из можно интегрировать с помощью
-> виртуальных файловых систем.
-
-## NEPOMUK (framework)<a id="orgheadline70"></a>
+## NEPOMUK (framework)<a id="orgheadline71"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## Chandler<a id="orgheadline71"></a>
+## Chandler<a id="orgheadline72"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## vk.com/audio<a id="orgheadline72"></a>
+## vk.com/audio<a id="orgheadline73"></a>
 
 Здесь должна быть грустная история про то, как построить нормальную
 классификацию, в условиях, когда одной аудио-записи можно присвоить
 только одну метку. Если коротко, то никак.
-
-## Fluidinfo<a id="orgheadline73"></a>
-
-У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
-
-<http://fluidinfo.com>
 
 ## Friendfeed (dead)<a id="orgheadline74"></a>
 
@@ -1314,7 +1311,7 @@ joined Singly and was the CTO.
 
 [UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 
-## Устоявшиеся термины<a id="orgheadline79"></a>
+## Термины<a id="orgheadline79"></a>
 
 -   [Personal information manager](https://en.wikipedia.org/wiki/Personal_information_manager)
 -   [Personal knowledge base](https://en.wikipedia.org/wiki/Personal_knowledge_base)
@@ -1327,6 +1324,7 @@ joined Singly and was the CTO.
 -   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
 -   [Graph database](https://en.wikipedia.org/wiki/Graph_database)
+-   [Universally unique identifier (UUID)](https://en.wikipedia.org/wiki/Universally_unique_identifier)
 
 ## Книги<a id="orgheadline80"></a>
 
@@ -1372,11 +1370,3 @@ joined Singly and was the CTO.
 <http://personaldigitalarchiving.com>
 
 <https://archive.org/details/PDA2015>
-
-# Инструменты<a id="orgheadline90"></a>
-
-## Ruby<a id="orgheadline89"></a>
-
-[linkeddata](https://github.com/ruby-rdf/linkeddata) &#x2013; гемы для работы с rdf.
-
-[treat](https://github.com/louismullie/treat) &#x2013; natural language processing framework for Ruby.

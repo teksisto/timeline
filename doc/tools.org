@@ -1,3 +1,9 @@
+* Ruby
+   
+  [[https://github.com/ruby-rdf/linkeddata][linkeddata]] -- гемы для работы с rdf.
+
+  [[https://github.com/louismullie/treat][treat]] -- natural language processing framework for Ruby. 
+
 * JavaScript
 
 ** Блочный текстовый редактор
