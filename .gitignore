@@ -17,8 +17,10 @@
 /tmp
 
 # passenger
-
 passenger*
+
+# code climate
+coverage/*
 
 public/assets/*
 
