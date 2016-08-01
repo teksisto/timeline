@@ -75,7 +75,7 @@
 
    Как описывать объекты хранящиеся в системе?
 
-   Онтологии.
+   [[https://en.wikipedia.org/wiki/Ontology_(information_science)][Онтологии]].
 
    Системе должно быть безразлично не только что именно она
    описывает, но и где оно лежит. Хранение должно быть отделено от
@@ -95,12 +95,10 @@
    Группировка и сортировка.
 
    Структура информации являются функцией от ее объема. Как только
-   меняется объем, структуре приходится его догонять. В одной папке с 7
-   файлами легко найти нужный, в одной папке с 1024 файлами уже не очень.
-
-   Кстати, про 1024 файла. Я специально выписал выше, что организация
-   включает в себя сортировку. На 1024 файлов можно нормально
-   смотреть, если знаешь по какому признаку они отсортированы.
+   меняется объем, структуре приходится его догонять. В одной папке с 10
+   файлами легко найти нужный, в одной папке с 1000 файлами уже не
+   очень. С другой стороны, эта 1000 файлов отсортирована по какому-то
+   признаку, там снова можно ориентироваться.
 
    Сохраненные запросы / Деревья / Контексты
 
@@ -125,17 +123,17 @@
 
    Как аннотировать видео?
 
-   Аннотирование в самом простом случае -- это комментирование. 
-
-   Удобство аннотирования -- это аргумент в пользу блочной
-   идентификации. Можно добавлять комментарии к каждому параграфу.
-    
-   Аннотирование обновляющегося источника. Обновляющийся источник
+   Как аннотировать обновляющийся источник? Обновляющийся источник
    сложно аннотировать. Какие-то части появляются, какие-то
    попадают. Последовательная нумерациия параграфов невозможна, потому
    что она будет ломаться каждую версию. Значит адресовать нужно по
    uuid.
 
+   Аннотирование в самом простом случае -- это комментирование. 
+
+   Удобство аннотирования -- это аргумент в пользу блочной
+   идентификации. Можно добавлять комментарии к каждому параграфу.
+    
 ** Переносимость
 
    Я готов вбивать руками семантику на весь свой массив данных, но
@@ -309,7 +307,9 @@
 	несовместимых установок сразу. Со стороны это выглядит как простое
 	лицемерие, но сам человек в этом случае придерживается своих
 	установок вполне искренне, хотя и использует в каждом конкретном
-	случае только одну из них. (Википедия, Мак-Вильямс)
+	случае только одну из них. 
+
+	(Википедия, Мак-Вильямс)
     #+END_QUOTE
 
     #+BEGIN_QUOTE 
@@ -326,7 +326,9 @@
 	становится очевидно, что противники или говорят о совершенно
 	разных вещах или ни в чем не расходятся. Когда же выявляется
 	смысл продолжать спор -- начинают поочередно записывать доводы
-	на своих половинках листа. (Солженицин, "В круге первом")
+	на своих половинках листа. 
+
+	(Солженицин, "В круге первом")
     #+END_QUOTE
 
 ** События
@@ -348,7 +350,7 @@
    когда что-то произошло.
 
    Кое-как, но события сейчас реализованы. Их можно добавлять,
-   разглядывать на таймлайне через vis.js, и крепить вместе с цитатами
+   разглядывать на таймлайне через [[http://visjs.org][vis.js]], и крепить вместе с цитатами
    к оглавлению книги.
 
    [[../images/timeline/timeline1.png]]
@@ -455,16 +457,6 @@
    как и чем из запроса можно выводить атрибуты, которые присущи новым
    записям.
 
-*** Запрос
-
-    Некоторые базовые операции:
-
-    - атрибут равен
-    - атрибут не равен
-    - атрибут больше/меньше
-    - логическое и
-    - логическое или
-
 *** Хвост
 
    Хвост определяется запросом.
@@ -474,9 +466,8 @@
    человека. Все покупки. 
 
    Контекст умеет показывать хвост в прямом и обратном хронологическом
-   порядках. Обратный хронологический порядок важен. Представьте себе
-   насколько меня достало отсутствие такой простой вещи в интернете,
-   если мне хочется написать про это отдельно. 
+   порядках. Если я нахожу какой-то интересный блог в интернете, как
+   правило мне хочется читать его с начала.
 
 *** Контекст есть у каждого ресурса
 
@@ -552,6 +543,7 @@
    Ссылки:
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BA%D1%81%D1%82_(%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)][Обучение через чтение параллельных текстов]]
+   - [[http://ted.hyperland.com/myU/][Ted Nelson -- My parallel universe]]
 
 ** Блочный текстовый редактор
 
@@ -592,6 +584,9 @@
 
    Примеры веб-сервисов, которые пытались делать единую ленту: Singly,
    Locker, Memolane, FriendFeed. В настоящий момент все закрыты.
+
+   Помимо единой ленты есть еще проблема единых метаданных. Теги из
+   разных сервисов надо приводить к одному знаменателю.
 
 ** Динамические деревья
 
@@ -635,12 +630,12 @@
     генерится запросом. 
 
     Либо, чтобы не связываться с системным программированием, можно
-    использовать WebDAW, монтировать веб-приложение как папку и снова
+    использовать [[https://en.wikipedia.org/wiki/WebDAV][WebDAV]], монтировать веб-приложение как папку и снова
     пользоваться ей как файловой системой.
 
 * Поиск подхода к реализации
 
-  Самое вменяемое решение, которое я вижу -- это rdf. 
+  Самое вменяемое решение, которое я вижу -- это [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]]. 
 
 ** Декомпозиция
 
@@ -1029,16 +1024,21 @@
 
    Обертка для ruby: https://github.com/neo4jrb/neo4j
 
-* Case study
+* История
 
-** Purple
+** Vannevar Bush — As We May Think (1945)
 
-   Подход к решению проблемы идентификации частей документа. Добавляет
-   для блочных элементов в html якоря со ссылками.
+   The Atlantic: [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
 
-   https://en.wikipedia.org/wiki/Purple_Numbers
+   Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
-** Gifford - Semantic file systems
+** Douglas Engelbart — The Mother of All Demos (1968)
+
+   Википедия: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
+
+   Видео: http://www.1968demo.org/
+
+** Gifford — Semantic file systems (1991)
 
    Старая заметка про Гиффорда:
     
@@ -1050,7 +1050,7 @@
        будет невозможно пользоваться. Это видно и на примере делишеса. Никто
        не пользуется инкрементным поиском. Это прикольно, но медленно и нафиг
        никому не сдалось. Проблема инкрементного поиска в том, что вылезает
-       слишком много не нужных параметров поиска.
+       слишком много не нужных параметров.
 
        Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
        они заранее отсеивают ненужные параметры поиска. Дело не в том, что
@@ -1059,43 +1059,14 @@
        виртуальных файловых систем.
    #+END_QUOTE
 
-** MusicBrainz
+** Eric Kim — Purple (2001)
 
-   Онтология для музыки.
+   Подход к решению проблемы идентификации частей документа. Добавляет
+   для блочных элементов в html якоря со ссылками.
 
-   https://musicbrainz.org/
+   https://en.wikipedia.org/wiki/Purple_Numbers
 
-** Org-mode
-
-   http://orgmode.org/
-
-** Fluidinfo
-
-   У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
-
-   http://fluidinfo.com
-
-** Calibre
-
-   Reference-mode в читалке. Решение проблемы идентификации для
-   электронных книг.
-
-   https://calibre-ebook.com/
-
-** Ginko
-
-   Хороший. Умеет делать презентации и возвращать текст в виде json.
-
-   https://gingkoapp.com
-
-** Smallest Federated Wiki
-
-   Создатель первой вики, [[https://en.wikipedia.org/wiki/Ward_Cunningham][Ward Cunningham]], делает федеративную
-   вики. Страницы можно форкать и поддерживать локально свою версию.
-
-   http://fed.wiki.org
-
-** Del.icio.us
+** Joshua Schachter — Del.icio.us (2003)
 
    Старая заметка про [[https://delicious.com][delicious]]:
     
@@ -1148,6 +1119,44 @@
        интерфейс для форума, то получится френдфид. Опять же очень
        условно.
    #+END_QUOTE
+
+** W3C — RDF / RDFS / OWL (2004)
+
+** MusicBrainz
+
+   Онтология для музыки.
+
+   https://musicbrainz.org/
+
+** Org-mode
+
+   http://orgmode.org/
+
+** Fluidinfo
+
+   У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
+
+   http://fluidinfo.com
+
+** Calibre
+
+   Reference-mode в читалке. Решение проблемы идентификации для
+   электронных книг.
+
+   https://calibre-ebook.com/
+
+** Ginko
+
+   Хороший. Умеет делать презентации и возвращать текст в виде json.
+
+   https://gingkoapp.com
+
+** Smallest Federated Wiki
+
+   Создатель первой вики, [[https://en.wikipedia.org/wiki/Ward_Cunningham][Ward Cunningham]], делает федеративную
+   вики. Страницы можно форкать и поддерживать локально свою версию.
+
+   http://fed.wiki.org
 
 ** Chandler
 
@@ -1217,10 +1226,12 @@
 ** Учебные заведения
 
    [[http://www.ischool.berkeley.edu/][UC Berkeley School of Information]]
+   - [[https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus][INFO202: Information Organization and Retrieval (Fall 2014)]]
 
 ** Термины
 
    - [[https://en.wikipedia.org/wiki/Personal_information_manager][Personal information manager]]
+   - [[https://en.wikipedia.org/wiki/Semantic_Web][Semantic Web]]
    - [[https://en.wikipedia.org/wiki/Personal_knowledge_base][Personal knowledge base]]
    - [[https://en.wikipedia.org/wiki/Information_science][Information science]]
    - [[https://en.wikipedia.org/wiki/Faceted_classification][Faceted classification]]
@@ -1232,11 +1243,19 @@
    - [[https://en.wikipedia.org/wiki/Transclusion][Transclusion]]
    - [[https://en.wikipedia.org/wiki/Graph_database][Graph database]]
    - [[https://en.wikipedia.org/wiki/Universally_unique_identifier][Universally unique identifier (UUID)]]
+   - [[https://en.wikipedia.org/wiki/Uniform_Resource_Identifier][URI]] / [[https://en.wikipedia.org/wiki/Uniform_Resource_Locator][URL]] / [[https://en.wikipedia.org/wiki/Uniform_Resource_Name][URN]]
+   - [[https://en.wikipedia.org/wiki/Dublin_Core][Dublin Core]]
+
+** Люди
+
+   - [[https://en.wikipedia.org/wiki/Douglas_Engelbart][Douglas Engelbart]]
+   - [[https://en.wikipedia.org/wiki/Vannevar_Bush][Vannevar Bush]]
+   - [[https://en.wikipedia.org/wiki/Ted_Nelson][Ted Nelson]]
 
 ** Книги
 
-   - Semantic Web for the Working Ontologist (Morgan-Kaufman)
    - A Semantic Web Primer (MIT Press)
+   - Semantic Web for the Working Ontologist (Morgan-Kaufman)
    - Keeping Found Things Found (Morgan-Kaufman)
    - Learning SPARQL (O'Reilly)
    - Graph Databases (O'Reilly)
