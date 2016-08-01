@@ -1287,6 +1287,15 @@
     - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html][цифровая история]]
     - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html][архивисты]]
 
+*** Pinboard
+
+    - [[https://pinboard.in/u:urbansheep/t:km/][KM]] / [[https://pinboard.in/u:urbansheep/t:knowledgemanagement/][knowledgemanagement]]
+    - [[https://pinboard.in/u:urbansheep/t:infoorg/][infoorg]]
+    - [[https://pinboard.in/u:urbansheep/t:hypertext/][hypertext]]
+    - [[https://pinboard.in/u:urbansheep/t:semanticweb/][semanticweb]]
+    - [[https://pinboard.in/u:urbansheep/t:classification/][classification]]
+    - [[https://pinboard.in/u:urbansheep/t:metadata/][metadata]]
+
 ** Конференции
 
 *** Personal Digital Archiving Conference

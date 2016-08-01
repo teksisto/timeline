@@ -125,7 +125,7 @@
 <li><a href="#orgheadline80">6.22. Tinderbox</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline93">7. Ссылки</a>
+<li><a href="#orgheadline94">7. Ссылки</a>
 <ul>
 <li><a href="#orgheadline82">7.1. Учебные заведения</a></li>
 <li><a href="#orgheadline83">7.2. Термины</a></li>
@@ -136,15 +136,16 @@
 <li><a href="#orgheadline86">7.5.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline90">7.6. urbansheep</a>
+<li><a href="#orgheadline91">7.6. urbansheep</a>
 <ul>
 <li><a href="#orgheadline88">7.6.1. LiveJournal</a></li>
 <li><a href="#orgheadline89">7.6.2. FriendFeed</a></li>
+<li><a href="#orgheadline90">7.6.3. Pinboard</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline92">7.7. Конференции</a>
+<li><a href="#orgheadline93">7.7. Конференции</a>
 <ul>
-<li><a href="#orgheadline91">7.7.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#orgheadline92">7.7.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
 </ul>
@@ -1358,7 +1359,7 @@ joined Singly and was the CTO.
 
 <https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29>
 
-# Ссылки<a id="orgheadline93"></a>
+# Ссылки<a id="orgheadline94"></a>
 
 <http://infotoday.com/> &#x2013; новости
 
@@ -1412,7 +1413,7 @@ joined Singly and was the CTO.
 
 <https://www.asist.org/>
 
-## urbansheep<a id="orgheadline90"></a>
+## urbansheep<a id="orgheadline91"></a>
 
 ### LiveJournal<a id="orgheadline88"></a>
 
@@ -1429,9 +1430,18 @@ joined Singly and was the CTO.
 -   [цифровая история](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html)
 -   [архивисты](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html)
 
-## Конференции<a id="orgheadline92"></a>
+### Pinboard<a id="orgheadline90"></a>
 
-### Personal Digital Archiving Conference<a id="orgheadline91"></a>
+-   [KM](https://pinboard.in/u:urbansheep/t:km/) / [knowledgemanagement](https://pinboard.in/u:urbansheep/t:knowledgemanagement/)
+-   [infoorg](https://pinboard.in/u:urbansheep/t:infoorg/)
+-   [hypertext](https://pinboard.in/u:urbansheep/t:hypertext/)
+-   [semanticweb](https://pinboard.in/u:urbansheep/t:semanticweb/)
+-   [classification](https://pinboard.in/u:urbansheep/t:classification/)
+-   [metadata](https://pinboard.in/u:urbansheep/t:metadata/)
+
+## Конференции<a id="orgheadline93"></a>
+
+### Personal Digital Archiving Conference<a id="orgheadline92"></a>
 
 Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
 
