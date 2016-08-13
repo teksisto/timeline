@@ -49,7 +49,6 @@ group :development, :test do
   gem 'spring'
 end
 
-
 #############################################################
 # my gems
 #############################################################
@@ -72,6 +71,8 @@ gem 'rdf-virtuoso'
 
 gem 'pry'
 gem 'pry-doc'
+
+gem 'neo4apis-activerecord'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis', '= 4.7.0'
