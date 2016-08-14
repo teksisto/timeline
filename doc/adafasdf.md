@@ -99,53 +99,56 @@
 <li><a href="#orgheadline60">5.4. Графовая база данных</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline84">6. История</a>
+<li><a href="#orgheadline87">6. История</a>
 <ul>
 <li><a href="#orgheadline62">6.1. Vannevar Bush — As We May Think (1945)</a></li>
 <li><a href="#orgheadline63">6.2. Douglas Engelbart — The Mother of All Demos (1968)</a></li>
 <li><a href="#orgheadline64">6.3. Gifford — Semantic file systems (1991)</a></li>
-<li><a href="#orgheadline65">6.4. Eric Kim — Purple (2001)</a></li>
-<li><a href="#orgheadline66">6.5. Joshua Schachter — Del.icio.us (2003)</a></li>
-<li><a href="#orgheadline67">6.6. W3C — RDF / RDFS / OWL (2004)</a></li>
-<li><a href="#orgheadline68">6.7. MusicBrainz</a></li>
-<li><a href="#orgheadline69">6.8. Org-mode</a></li>
-<li><a href="#orgheadline70">6.9. Fluidinfo</a></li>
-<li><a href="#orgheadline71">6.10. Calibre</a></li>
-<li><a href="#orgheadline72">6.11. Ginko</a></li>
-<li><a href="#orgheadline73">6.12. Smallest Federated Wiki</a></li>
-<li><a href="#orgheadline74">6.13. Chandler</a></li>
-<li><a href="#orgheadline75">6.14. CommonTag (dead)</a></li>
-<li><a href="#orgheadline76">6.15. Friendfeed (dead)</a></li>
-<li><a href="#orgheadline77">6.16. Locker (dead)</a></li>
-<li><a href="#orgheadline78">6.17. Singly (dead)</a></li>
-<li><a href="#orgheadline79">6.18. vk.com/audio</a></li>
-<li><a href="#orgheadline80">6.19. NEPOMUK (framework)</a></li>
-<li><a href="#orgheadline81">6.20. TiddlyWiki</a></li>
-<li><a href="#orgheadline82">6.21. Tinderbox</a></li>
-<li><a href="#orgheadline83">6.22. Scrivener</a></li>
+<li><a href="#orgheadline65">6.4. id3v2.4 (2000)</a></li>
+<li><a href="#orgheadline66">6.5. MusicBrainz (2000)</a></li>
+<li><a href="#orgheadline67">6.6. Eric Kim — Purple (2001)</a></li>
+<li><a href="#orgheadline68">6.7. Joshua Schachter — Del.icio.us (2003)</a></li>
+<li><a href="#orgheadline69">6.8. W3C — RDF / RDFS / OWL (2004)</a></li>
+<li><a href="#orgheadline70">6.9. DBpedia (2007)</a></li>
+<li><a href="#orgheadline71">6.10. Scrivener (2007)</a></li>
+<li><a href="#orgheadline72">6.11. Evernote (2008)</a></li>
+<li><a href="#orgheadline73">6.12. Fluidinfo (2009)</a></li>
+<li><a href="#orgheadline74">6.13. Org-mode</a></li>
+<li><a href="#orgheadline75">6.14. Calibre</a></li>
+<li><a href="#orgheadline76">6.15. Ginko</a></li>
+<li><a href="#orgheadline77">6.16. Smallest Federated Wiki</a></li>
+<li><a href="#orgheadline78">6.17. Chandler</a></li>
+<li><a href="#orgheadline79">6.18. CommonTag (dead)</a></li>
+<li><a href="#orgheadline80">6.19. Friendfeed (dead)</a></li>
+<li><a href="#orgheadline81">6.20. Locker (dead)</a></li>
+<li><a href="#orgheadline82">6.21. Singly (dead)</a></li>
+<li><a href="#orgheadline83">6.22. vk.com/audio</a></li>
+<li><a href="#orgheadline84">6.23. NEPOMUK (framework)</a></li>
+<li><a href="#orgheadline85">6.24. TiddlyWiki</a></li>
+<li><a href="#orgheadline86">6.25. Tinderbox</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline97">7. Ссылки</a>
+<li><a href="#orgheadline100">7. Ссылки</a>
 <ul>
-<li><a href="#orgheadline85">7.1. Учебные заведения</a></li>
-<li><a href="#orgheadline86">7.2. Термины</a></li>
-<li><a href="#orgheadline87">7.3. Люди</a></li>
-<li><a href="#orgheadline88">7.4. Книги</a></li>
-<li><a href="#orgheadline90">7.5. Ассоциации</a>
+<li><a href="#orgheadline88">7.1. Учебные заведения</a></li>
+<li><a href="#orgheadline89">7.2. Термины</a></li>
+<li><a href="#orgheadline90">7.3. Люди</a></li>
+<li><a href="#orgheadline91">7.4. Книги</a></li>
+<li><a href="#orgheadline93">7.5. Ассоциации</a>
 <ul>
-<li><a href="#orgheadline89">7.5.1. Association for Information Science and Technology</a></li>
+<li><a href="#orgheadline92">7.5.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline94">7.6. urbansheep</a>
+<li><a href="#orgheadline97">7.6. urbansheep</a>
 <ul>
-<li><a href="#orgheadline91">7.6.1. LiveJournal</a></li>
-<li><a href="#orgheadline92">7.6.2. FriendFeed</a></li>
-<li><a href="#orgheadline93">7.6.3. Pinboard</a></li>
+<li><a href="#orgheadline94">7.6.1. LiveJournal</a></li>
+<li><a href="#orgheadline95">7.6.2. FriendFeed</a></li>
+<li><a href="#orgheadline96">7.6.3. Pinboard</a></li>
 </ul>
 </li>
-<li><a href="#orgheadline96">7.7. Конференции</a>
+<li><a href="#orgheadline99">7.7. Конференции</a>
 <ul>
-<li><a href="#orgheadline95">7.7.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#orgheadline98">7.7.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
 </ul>
@@ -156,8 +159,9 @@
 
 # Предпосылки<a id="orgheadline1"></a>
 
-Человеческая память ограничена. Поэтому нужен инструмент чтобы
-запоминать нужное, забывать бесполезное и наводить порядок в голове.
+Человеческая память ограничена. Поэтому нужен инструмент который
+помогает забывать лишнее, вспоминать нужное и наводить порядок в
+голове.
 
 Нет никакого решения для всех. Поэтому решением является инструмент
 для создания решений.
@@ -1186,7 +1190,7 @@ dbpedia.
 
 Обертка для ruby: <https://github.com/neo4jrb/neo4j>
 
-# История<a id="orgheadline84"></a>
+# История<a id="orgheadline87"></a>
 
 ## Vannevar Bush — As We May Think (1945)<a id="orgheadline62"></a>
 
@@ -1219,14 +1223,32 @@ Wikipedia: [Memex](https://en.wikipedia.org/wiki/Memex)
 > должно быть много. В файловую систему из можно интегрировать с помощью
 > виртуальных файловых систем.
 
-## Eric Kim — Purple (2001)<a id="orgheadline65"></a>
+## id3v2.4 (2000)<a id="orgheadline65"></a>
+
+Informal standard на теги для mp3 файлов. Не смотря на то, что
+структура метаданных хорошо прописана, по большому счету ее никто
+не использует.
+
+Проблема метаданных для музыки &#x2013; обширная тема, надо ее чуть позже
+раскрыть.
+
+<http://id3.org/id3v2.4.0-frames>
+
+## MusicBrainz (2000)<a id="orgheadline66"></a>
+
+Отлично прописанная онтология для музыки. Last.fm забирает данные
+именно отсюда.
+
+<https://musicbrainz.org/>
+
+## Eric Kim — Purple (2001)<a id="orgheadline67"></a>
 
 Подход к решению проблемы идентификации частей документа. Добавляет
 для блочных элементов в html якоря со ссылками.
 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## Joshua Schachter — Del.icio.us (2003)<a id="orgheadline66"></a>
+## Joshua Schachter — Del.icio.us (2003)<a id="orgheadline68"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1278,16 +1300,40 @@ Wikipedia: [Memex](https://en.wikipedia.org/wiki/Memex)
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## W3C — RDF / RDFS / OWL (2004)<a id="orgheadline67"></a>
+## W3C — RDF / RDFS / OWL (2004)<a id="orgheadline69"></a>
 
-## MusicBrainz<a id="orgheadline68"></a>
+## DBpedia (2007)<a id="orgheadline70"></a>
 
-Отлично прописанная онтология для музыки. Last.fm забирает данные
-именно отсюда.
+Вытаскивает структурированные данные из википедии, конвертит их в
+RDF, позволяет делать запросы на SPARQL.
 
-<https://musicbrainz.org/>
+Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
-## Org-mode<a id="orgheadline69"></a>
+## Scrivener (2007)<a id="orgheadline71"></a>
+
+Инструмент для написания текстов. Есть текстовый редактор и
+контроль версий. Есть хранилище связанных файлов и их отображение в
+виде доски. Какие-то инструменты для рефакторинга в духе
+"переименовать персонажа". 
+
+Надо еще в нем покопаться, но пока ощущение что в целом он про текст
+как проект.
+
+<http://www.literatureandlatte.com/scrivener.html>
+
+## Evernote (2008)<a id="orgheadline72"></a>
+
+Подкаст с Пачиковым: [Рунетология 45](http://runetologia.podfm.ru/96/)
+
+Wiki: [Evernote](https://en.wikipedia.org/wiki/Evernote)
+
+## Fluidinfo (2009)<a id="orgheadline73"></a>
+
+У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
+
+<http://fluidinfo.com>
+
+## Org-mode<a id="orgheadline74"></a>
 
 Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
 которому можно доверять, вполне можно жить с помощью текстовых
@@ -1295,38 +1341,32 @@ Outliner для emacs. Выяснилось, что пока нет хороше
 
 <http://orgmode.org/>
 
-## Fluidinfo<a id="orgheadline70"></a>
-
-У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
-
-<http://fluidinfo.com>
-
-## Calibre<a id="orgheadline71"></a>
+## Calibre<a id="orgheadline75"></a>
 
 Reference-mode в читалке. Решение проблемы идентификации для
 электронных книг.
 
 <https://calibre-ebook.com/>
 
-## Ginko<a id="orgheadline72"></a>
+## Ginko<a id="orgheadline76"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде
 json. Интересен в первую очередь интерфейсом.
 
 <https://gingkoapp.com>
 
-## Smallest Federated Wiki<a id="orgheadline73"></a>
+## Smallest Federated Wiki<a id="orgheadline77"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Chandler<a id="orgheadline74"></a>
+## Chandler<a id="orgheadline78"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## CommonTag (dead)<a id="orgheadline75"></a>
+## CommonTag (dead)<a id="orgheadline79"></a>
 
 Теги на основе заголовков статей в википедии. Позволяют получить
 для тега хорошо прописанную семантику, в том числе на разных
@@ -1335,17 +1375,17 @@ json. Интересен в первую очередь интерфейсом.
 
 <http://microformats.org/wiki/CommonTag>
 
-## Friendfeed (dead)<a id="orgheadline76"></a>
+## Friendfeed (dead)<a id="orgheadline80"></a>
 
 Помимо всего прочего умел собирать данных из разных источников в
 одну ленту.
 
-## Locker (dead)<a id="orgheadline77"></a>
+## Locker (dead)<a id="orgheadline81"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту.
 
-## Singly (dead)<a id="orgheadline78"></a>
+## Singly (dead)<a id="orgheadline82"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту. Singly ориентирован не только на собирание, но и на
@@ -1358,7 +1398,7 @@ json. Интересен в первую очередь интерфейсом.
 
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
-## vk.com/audio<a id="orgheadline79"></a>
+## vk.com/audio<a id="orgheadline83"></a>
 
 Здесь должна быть грустная история про то, как построить нормальную
 классификацию, в условиях, когда одной аудио-записи можно присвоить
@@ -1367,15 +1407,15 @@ json. Интересен в первую очередь интерфейсом.
 Интересный заход был построить классификацию по эмоции, которую
 трек вызывает, но он тоже провалился.
 
-## NEPOMUK (framework)<a id="orgheadline80"></a>
+## NEPOMUK (framework)<a id="orgheadline84"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## TiddlyWiki<a id="orgheadline81"></a>
+## TiddlyWiki<a id="orgheadline85"></a>
 
 <http://tiddlywiki.com/>
 
-## Tinderbox<a id="orgheadline82"></a>
+## Tinderbox<a id="orgheadline86"></a>
 
 По сути &#x2013; mindmap. Есть заметки, у них есть классы (прототипы на
 местном сленге) и аттрибуты. Из классов можно делать иерархии. 
@@ -1394,31 +1434,19 @@ json. Интересен в первую очередь интерфейсом.
 
 Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29)
 
-## Scrivener<a id="orgheadline83"></a>
-
-Инструмент для написания текстов. Есть текстовый редактор и
-контроль версий. Есть хранилище связанных файлов и их отображение в
-виде доски. Какие-то инструменты для рефакторинга в духе
-"переименовать персонажа". 
-
-Надо еще в нем покопаться, но пока ощущение что в целом он про текст
-как проект.
-
-<http://www.literatureandlatte.com/scrivener.html>
-
-# Ссылки<a id="orgheadline97"></a>
+# Ссылки<a id="orgheadline100"></a>
 
 <http://infotoday.com/> &#x2013; новости
 
 <http://booksblog.infotoday.com/> &#x2013; книги
 
-## Учебные заведения<a id="orgheadline85"></a>
+## Учебные заведения<a id="orgheadline88"></a>
 
 [UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 
 -   [INFO202: Information Organization and Retrieval (Fall 2014)](https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus)
 
-## Термины<a id="orgheadline86"></a>
+## Термины<a id="orgheadline89"></a>
 
 -   [Personal information manager](https://en.wikipedia.org/wiki/Personal_information_manager)
 -   [Semantic Web](https://en.wikipedia.org/wiki/Semantic_Web)
@@ -1428,6 +1456,7 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 -   [Metadata](https://en.wikipedia.org/wiki/Metadata)
 -   [Entity–attribute–value model](https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model)
 -   [Adaptive hypermedia](https://en.wikipedia.org/wiki/Adaptive_hypermedia)
+-   [Hypertext](https://en.wikipedia.org/wiki/Hypertext)
 -   [Semantic desktop](https://en.wikipedia.org/wiki/Semantic_desktop)
 -   [Parallel text](https://en.wikipedia.org/wiki/Parallel_text)
 -   [Transclusion](https://en.wikipedia.org/wiki/Transclusion)
@@ -1436,13 +1465,13 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 -   [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier) / [URL](https://en.wikipedia.org/wiki/Uniform_Resource_Locator) / [URN](https://en.wikipedia.org/wiki/Uniform_Resource_Name)
 -   [Dublin Core](https://en.wikipedia.org/wiki/Dublin_Core)
 
-## Люди<a id="orgheadline87"></a>
+## Люди<a id="orgheadline90"></a>
 
 -   [Douglas Engelbart](https://en.wikipedia.org/wiki/Douglas_Engelbart)
 -   [Vannevar Bush](https://en.wikipedia.org/wiki/Vannevar_Bush)
 -   [Ted Nelson](https://en.wikipedia.org/wiki/Ted_Nelson)
 
-## Книги<a id="orgheadline88"></a>
+## Книги<a id="orgheadline91"></a>
 
 -   A Semantic Web Primer (MIT Press)
 -   Semantic Web for the Working Ontologist (Morgan-Kaufman)
@@ -1452,17 +1481,17 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 -   The Discipline of Organizing (MIT Press)
 -   Игра в бисер (Герман Гессе)
 
-## Ассоциации<a id="orgheadline90"></a>
+## Ассоциации<a id="orgheadline93"></a>
 
-### Association for Information Science and Technology<a id="orgheadline89"></a>
+### Association for Information Science and Technology<a id="orgheadline92"></a>
 
 Ааа, ыыы, много всего, оно живое. 
 
 <https://www.asist.org/>
 
-## urbansheep<a id="orgheadline94"></a>
+## urbansheep<a id="orgheadline97"></a>
 
-### LiveJournal<a id="orgheadline91"></a>
+### LiveJournal<a id="orgheadline94"></a>
 
 -   [info organization](https://urbansheep.livejournal.com/tag/info organization)
 -   [classification](https://urbansheep.livejornal.com/tag/classification)
@@ -1470,14 +1499,14 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 -   [knowledge management](https://urbansheep.livejournal.com/tag/knowledge_management)
 -   [hypertext](https://urbansheep.livejornal.com/tag/hypertext)
 
-### FriendFeed<a id="orgheadline92"></a>
+### FriendFeed<a id="orgheadline95"></a>
 
 -   [инфоорг](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html)
 -   [свой небольшой интернет](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html)
 -   [цифровая история](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html)
 -   [архивисты](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html)
 
-### Pinboard<a id="orgheadline93"></a>
+### Pinboard<a id="orgheadline96"></a>
 
 -   [KM](https://pinboard.in/u:urbansheep/t:km/) / [knowledgemanagement](https://pinboard.in/u:urbansheep/t:knowledgemanagement/)
 -   [infoorg](https://pinboard.in/u:urbansheep/t:infoorg/)
@@ -1486,9 +1515,9 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 -   [classification](https://pinboard.in/u:urbansheep/t:classification/)
 -   [metadata](https://pinboard.in/u:urbansheep/t:metadata/)
 
-## Конференции<a id="orgheadline96"></a>
+## Конференции<a id="orgheadline99"></a>
 
-### Personal Digital Archiving Conference<a id="orgheadline95"></a>
+### Personal Digital Archiving Conference<a id="orgheadline98"></a>
 
 Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
 

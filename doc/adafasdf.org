@@ -1,7 +1,8 @@
 * Предпосылки
 
-  Человеческая память ограничена. Поэтому нужен инструмент чтобы
-  запоминать нужное, забывать бесполезное и наводить порядок в голове.
+  Человеческая память ограничена. Поэтому нужен инструмент который
+  помогает забывать лишнее, вспоминать нужное и наводить порядок в
+  голове.
 
   Нет никакого решения для всех. Поэтому решением является инструмент
   для создания решений.
@@ -1075,6 +1076,25 @@
        виртуальных файловых систем.
    #+END_QUOTE
 
+** id3v2.4 (2000)
+
+   Informal standard на теги для mp3 файлов. Не смотря на то, что
+   структура метаданных хорошо прописана, по большому счету ее никто
+   не использует.
+
+   Проблема метаданных для музыки -- обширная тема, надо ее чуть позже
+   раскрыть.
+
+   http://id3.org/id3v2.4.0-frames
+
+** MusicBrainz (2000)
+
+   Отлично прописанная онтология для музыки. Last.fm забирает данные
+   именно отсюда.
+
+   https://musicbrainz.org/
+   
+
 ** Eric Kim — Purple (2001)
 
    Подход к решению проблемы идентификации частей документа. Добавляет
@@ -1138,12 +1158,36 @@
 
 ** W3C — RDF / RDFS / OWL (2004)
 
-** MusicBrainz
+** DBpedia (2007)
 
-   Отлично прописанная онтология для музыки. Last.fm забирает данные
-   именно отсюда.
+   Вытаскивает структурированные данные из википедии, конвертит их в
+   RDF, позволяет делать запросы на SPARQL.
 
-   https://musicbrainz.org/
+   Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
+
+** Scrivener (2007)
+   
+   Инструмент для написания текстов. Есть текстовый редактор и
+   контроль версий. Есть хранилище связанных файлов и их отображение в
+   виде доски. Какие-то инструменты для рефакторинга в духе
+   "переименовать персонажа". 
+
+   Надо еще в нем покопаться, но пока ощущение что в целом он про текст
+   как проект.
+
+   http://www.literatureandlatte.com/scrivener.html
+
+** Evernote (2008)
+
+   Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
+
+   Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
+
+** Fluidinfo (2009)
+
+   У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
+
+   http://fluidinfo.com
 
 ** Org-mode
 
@@ -1152,12 +1196,6 @@
    файлов и git.
 
    http://orgmode.org/
-
-** Fluidinfo
-
-   У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
-
-   http://fluidinfo.com
 
 ** Calibre
 
@@ -1254,18 +1292,6 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
 
-** Scrivener
-   
-   Инструмент для написания текстов. Есть текстовый редактор и
-   контроль версий. Есть хранилище связанных файлов и их отображение в
-   виде доски. Какие-то инструменты для рефакторинга в духе
-   "переименовать персонажа". 
-
-   Надо еще в нем покопаться, но пока ощущение что в целом он про текст
-   как проект.
-
-   http://www.literatureandlatte.com/scrivener.html
-
 * Ссылки
 
    http://infotoday.com/ -- новости
@@ -1287,6 +1313,7 @@
    - [[https://en.wikipedia.org/wiki/Metadata][Metadata]]
    - [[https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model][Entity–attribute–value model]]
    - [[https://en.wikipedia.org/wiki/Adaptive_hypermedia][Adaptive hypermedia]]
+   - [[https://en.wikipedia.org/wiki/Hypertext][Hypertext]]
    - [[https://en.wikipedia.org/wiki/Semantic_desktop][Semantic desktop]]
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://en.wikipedia.org/wiki/Transclusion][Transclusion]]
