@@ -1354,6 +1354,7 @@
 
 ** Книги
 
+   - [[http://www.anthempress.com/memory-machines][Memory Machines: The Evolution of Hypertext]] (Anthem Press)
    - A Semantic Web Primer (MIT Press)
    - Semantic Web for the Working Ontologist (Morgan-Kaufman)
    - Keeping Found Things Found (Morgan-Kaufman)

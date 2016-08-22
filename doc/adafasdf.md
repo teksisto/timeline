@@ -1501,6 +1501,7 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 
 ## Книги<a id="orgheadline96"></a>
 
+-   [Memory Machines: The Evolution of Hypertext](http://www.anthempress.com/memory-machines) (Anthem Press)
 -   A Semantic Web Primer (MIT Press)
 -   Semantic Web for the Working Ontologist (Morgan-Kaufman)
 -   Keeping Found Things Found (Morgan-Kaufman)
