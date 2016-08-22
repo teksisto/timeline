@@ -1052,11 +1052,32 @@
 
    Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
-** Douglas Engelbart — The Mother of All Demos (1968)
+** Andries van Dam, Ted Nelson — Hypertext Editing System (1967)
 
-   Википедия: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
+   Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
+
+** Douglas Engelbart — oN-Line System (1968)
+
+   Wiki: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
+
+** Andries van Dam — File Retrieval and Editing System (1968)
+
+   Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
+
+** Intermedia (1985)
+
+   #+BEGIN_QUOTE
+       In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
+       the Institute for Research in Information and Scholarship (IRIS) at Brown.
+       Their most notable project was Intermedia, a networked, shared, multiuser
+       hypermedia system explicitly designed for use within university research and
+       teaching environments. Intermedia was started in 1985 and sponsored by the
+       Annenberg/CPB project and IBM (Meyrowitz 1986, 196).
+   #+END_QUOTE
+
+   Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
 
 ** Gifford — Semantic file systems (1991)
 
@@ -1108,6 +1129,7 @@
 
    https://en.wikipedia.org/wiki/Purple_Numbers
 
+** Tim Berners-Lee — Semantic Web (2001)
 ** Joshua Schachter — Del.icio.us (2003)
 
    Старая заметка про [[https://delicious.com][delicious]]:
@@ -1262,15 +1284,6 @@
    
    2013-08-22 -- поглощен компанией [[http://appcelerator.com/][appcelerator]].
 
-** vk.com/audio
-
-   Здесь должна быть грустная история про то, как построить нормальную
-   классификацию, в условиях, когда одной аудио-записи можно присвоить
-   только одну метку. Если коротко, то никак.
-
-   Интересный заход был построить классификацию по эмоции, которую
-   трек вызывает, но он тоже провалился.
-
 ** NEPOMUK (framework)
 
    https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29
@@ -1335,7 +1348,9 @@
 
    - [[https://en.wikipedia.org/wiki/Douglas_Engelbart][Douglas Engelbart]]
    - [[https://en.wikipedia.org/wiki/Vannevar_Bush][Vannevar Bush]]
+   - [[https://en.wikipedia.org/wiki/Andries_van_Dam][Andries van Dam]]
    - [[https://en.wikipedia.org/wiki/Ted_Nelson][Ted Nelson]]
+
 
 ** Книги
 
