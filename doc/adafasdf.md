@@ -102,35 +102,35 @@
 </li>
 <li><a href="#orgheadline92">6. История</a>
 <ul>
-<li><a href="#orgheadline63">6.1. Vannevar Bush — As We May Think (1945)</a></li>
-<li><a href="#orgheadline64">6.2. Andries van Dam, Ted Nelson — Hypertext Editing System (1967)</a></li>
-<li><a href="#orgheadline65">6.3. Douglas Engelbart — oN-Line System (1968)</a></li>
-<li><a href="#orgheadline66">6.4. Andries van Dam — File Retrieval and Editing System (1968)</a></li>
-<li><a href="#orgheadline67">6.5. Intermedia (1985)</a></li>
-<li><a href="#orgheadline68">6.6. Gifford — Semantic file systems (1991)</a></li>
-<li><a href="#orgheadline69">6.7. LDAP (1993)</a></li>
-<li><a href="#orgheadline70">6.8. id3v2.4 (2000)</a></li>
-<li><a href="#orgheadline71">6.9. MusicBrainz (2000)</a></li>
-<li><a href="#orgheadline72">6.10. Eric Kim — Purple (2001)</a></li>
-<li><a href="#orgheadline73">6.11. Tim Berners-Lee — Semantic Web (2001)</a></li>
-<li><a href="#orgheadline74">6.12. Joshua Schachter — Del.icio.us (2003)</a></li>
-<li><a href="#orgheadline75">6.13. W3C — RDF / RDFS / OWL (2004)</a></li>
-<li><a href="#orgheadline76">6.14. DBpedia (2007)</a></li>
-<li><a href="#orgheadline77">6.15. Scrivener (2007)</a></li>
-<li><a href="#orgheadline78">6.16. Evernote (2008)</a></li>
-<li><a href="#orgheadline79">6.17. Fluidinfo (2009)</a></li>
-<li><a href="#orgheadline80">6.18. Ginko (2013)</a></li>
-<li><a href="#orgheadline81">6.19. Org-mode</a></li>
-<li><a href="#orgheadline82">6.20. Calibre</a></li>
-<li><a href="#orgheadline83">6.21. Smallest Federated Wiki</a></li>
-<li><a href="#orgheadline84">6.22. Chandler</a></li>
-<li><a href="#orgheadline85">6.23. CommonTag (dead)</a></li>
-<li><a href="#orgheadline86">6.24. Friendfeed (dead)</a></li>
-<li><a href="#orgheadline87">6.25. Locker (dead)</a></li>
-<li><a href="#orgheadline88">6.26. Singly (dead)</a></li>
-<li><a href="#orgheadline89">6.27. NEPOMUK (framework)</a></li>
-<li><a href="#orgheadline90">6.28. TiddlyWiki</a></li>
-<li><a href="#orgheadline91">6.29. Tinderbox</a></li>
+<li><a href="#orgheadline63">6.1. (1945) Vannevar Bush — As We May Think</a></li>
+<li><a href="#orgheadline64">6.2. (1967) Andries van Dam, Ted Nelson — Hypertext Editing System</a></li>
+<li><a href="#orgheadline65">6.3. (1968) Douglas Engelbart — oN-Line System</a></li>
+<li><a href="#orgheadline66">6.4. (1968) Andries van Dam — File Retrieval and Editing System</a></li>
+<li><a href="#orgheadline67">6.5. (1985) Intermedia</a></li>
+<li><a href="#orgheadline68">6.6. (1991) Gifford — Semantic file systems</a></li>
+<li><a href="#orgheadline69">6.7. (1993) LDAP</a></li>
+<li><a href="#orgheadline70">6.8. (2000) id3v2.4</a></li>
+<li><a href="#orgheadline71">6.9. (2000) MusicBrainz</a></li>
+<li><a href="#orgheadline72">6.10. (2001) Eric Kim — Purple</a></li>
+<li><a href="#orgheadline73">6.11. (2001) Tim Berners-Lee — Semantic Web</a></li>
+<li><a href="#orgheadline74">6.12. (2001) Tinderbox</a></li>
+<li><a href="#orgheadline75">6.13. (2003) Joshua Schachter — Del.icio.us</a></li>
+<li><a href="#orgheadline76">6.14. (2004) W3C — RDF / RDFS / OWL</a></li>
+<li><a href="#orgheadline77">6.15. (2007) DBpedia</a></li>
+<li><a href="#orgheadline78">6.16. (2007) Scrivener</a></li>
+<li><a href="#orgheadline79">6.17. (2008) Evernote</a></li>
+<li><a href="#orgheadline80">6.18. (2009) Fluidinfo</a></li>
+<li><a href="#orgheadline81">6.19. (2013) Ginko</a></li>
+<li><a href="#orgheadline82">6.20. Org-mode</a></li>
+<li><a href="#orgheadline83">6.21. Calibre</a></li>
+<li><a href="#orgheadline84">6.22. Smallest Federated Wiki</a></li>
+<li><a href="#orgheadline85">6.23. Chandler</a></li>
+<li><a href="#orgheadline86">6.24. CommonTag</a></li>
+<li><a href="#orgheadline87">6.25. Friendfeed</a></li>
+<li><a href="#orgheadline88">6.26. Locker</a></li>
+<li><a href="#orgheadline89">6.27. Singly</a></li>
+<li><a href="#orgheadline90">6.28. NEPOMUK</a></li>
+<li><a href="#orgheadline91">6.29. TiddlyWiki</a></li>
 </ul>
 </li>
 <li><a href="#orgheadline105">7. Ссылки</a>
@@ -1200,27 +1200,27 @@ dbpedia.
 
 # История<a id="orgheadline92"></a>
 
-## Vannevar Bush — As We May Think (1945)<a id="orgheadline63"></a>
+## (1945) Vannevar Bush — As We May Think<a id="orgheadline63"></a>
 
 The Atlantic: [As We May Think](http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/)
 
 Wikipedia: [Memex](https://en.wikipedia.org/wiki/Memex)
 
-## Andries van Dam, Ted Nelson — Hypertext Editing System (1967)<a id="orgheadline64"></a>
+## (1967) Andries van Dam, Ted Nelson — Hypertext Editing System<a id="orgheadline64"></a>
 
 Wiki: [HES](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 
-## Douglas Engelbart — oN-Line System (1968)<a id="orgheadline65"></a>
+## (1968) Douglas Engelbart — oN-Line System<a id="orgheadline65"></a>
 
 Wiki: [The Mother of All Demos](https://en.wikipedia.org/wiki/The_Mother_of_All_Demos) / [oN-Line System](https://en.wikipedia.org/wiki/NLS_(computer_system))
 
 Видео: <http://www.1968demo.org/>
 
-## Andries van Dam — File Retrieval and Editing System (1968)<a id="orgheadline66"></a>
+## (1968) Andries van Dam — File Retrieval and Editing System<a id="orgheadline66"></a>
 
 Wiki: [FRESS](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 
-## Intermedia (1985)<a id="orgheadline67"></a>
+## (1985) Intermedia<a id="orgheadline67"></a>
 
 > In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
 > the Institute for Research in Information and Scholarship (IRIS) at Brown.
@@ -1231,7 +1231,7 @@ Wiki: [FRESS](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 
 Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 
-## Gifford — Semantic file systems (1991)<a id="orgheadline68"></a>
+## (1991) Gifford — Semantic file systems<a id="orgheadline68"></a>
 
 Старая заметка про Гиффорда:
 
@@ -1250,11 +1250,11 @@ Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 > должно быть много. В файловую систему из можно интегрировать с помощью
 > виртуальных файловых систем.
 
-## LDAP (1993)<a id="orgheadline69"></a>
+## (1993) LDAP<a id="orgheadline69"></a>
 
 Wiki: [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
 
-## id3v2.4 (2000)<a id="orgheadline70"></a>
+## (2000) id3v2.4<a id="orgheadline70"></a>
 
 Informal standard на теги для mp3 файлов. Не смотря на то, что
 структура метаданных хорошо прописана, по большому счету ее никто
@@ -1265,23 +1265,49 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 
 <http://id3.org/id3v2.4.0-frames>
 
-## MusicBrainz (2000)<a id="orgheadline71"></a>
+## (2000) MusicBrainz<a id="orgheadline71"></a>
 
 Отлично прописанная онтология для музыки. Last.fm забирает данные
 именно отсюда.
 
 <https://musicbrainz.org/>
 
-## Eric Kim — Purple (2001)<a id="orgheadline72"></a>
+## (2001) Eric Kim — Purple<a id="orgheadline72"></a>
 
 Подход к решению проблемы идентификации частей документа. Добавляет
-для блочных элементов в html якоря со ссылками.
+для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## Tim Berners-Lee — Semantic Web (2001)<a id="orgheadline73"></a>
+## (2001) Tim Berners-Lee — Semantic Web<a id="orgheadline73"></a>
 
-## Joshua Schachter — Del.icio.us (2003)<a id="orgheadline74"></a>
+## (2001) Tinderbox<a id="orgheadline74"></a>
+
+По сути &#x2013; mindmap. Есть заметки, у них есть классы (прототипы на
+местном сленге) и аттрибуты. Из классов можно делать иерархии. 
+
+Есть несколько способов отображения заметок: mindmap (с
+возможностью заныривания в поддерево), timeline, outline, карта. В
+смысле отображение Tinderbox хорош, хотя он упускает один важный
+способ отображения &#x2013; лента.
+
+Между заметками можно делать связи. Связи можно делать между любыми
+заметками, даже если они находятся на разных уровнях иерархии. Есть
+инспектор, который показывает все входящие и исходящие связи для
+конкретной заметки.
+
+Tinderbox не является редактором гипертекста (и тем более блочным
+редактором), связи у него существуют только на уровне
+заметок. Метаданные тоже можно навешивать на уровне заметок. Текст
+по-прежнему лежит одним куском.
+
+Книга: [Mark Bernstein](http://www.markbernstein.org/) &#x2013; [The Tinderbox Way](http://www.eastgate.com/Tinderbox/TinderboxWay.html)
+
+Сайт разработчика: [Mark Bernstein](http://www.markbernstein.org/)
+
+Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29)
+
+## (2003) Joshua Schachter — Del.icio.us<a id="orgheadline75"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1333,16 +1359,16 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## W3C — RDF / RDFS / OWL (2004)<a id="orgheadline75"></a>
+## (2004) W3C — RDF / RDFS / OWL<a id="orgheadline76"></a>
 
-## DBpedia (2007)<a id="orgheadline76"></a>
+## (2007) DBpedia<a id="orgheadline77"></a>
 
 Вытаскивает структурированные данные из википедии, конвертит их в
 RDF, позволяет делать запросы на SPARQL.
 
 Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
-## Scrivener (2007)<a id="orgheadline77"></a>
+## (2007) Scrivener<a id="orgheadline78"></a>
 
 Инструмент для написания текстов. Есть текстовый редактор и
 контроль версий. Есть хранилище связанных файлов и их отображение в
@@ -1354,26 +1380,26 @@ Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
 <http://www.literatureandlatte.com/scrivener.html>
 
-## Evernote (2008)<a id="orgheadline78"></a>
+## (2008) Evernote<a id="orgheadline79"></a>
 
 Подкаст с Пачиковым: [Рунетология 45](http://runetologia.podfm.ru/96/)
 
 Wiki: [Evernote](https://en.wikipedia.org/wiki/Evernote)
 
-## Fluidinfo (2009)<a id="orgheadline79"></a>
+## (2009) Fluidinfo<a id="orgheadline80"></a>
 
 У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
 
 <http://fluidinfo.com>
 
-## Ginko (2013)<a id="orgheadline80"></a>
+## (2013) Ginko<a id="orgheadline81"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде
 json. Интересен в первую очередь интерфейсом.
 
 <https://gingkoapp.com>
 
-## Org-mode<a id="orgheadline81"></a>
+## Org-mode<a id="orgheadline82"></a>
 
 Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
 которому можно доверять, вполне можно жить с помощью текстовых
@@ -1381,25 +1407,25 @@ Outliner для emacs. Выяснилось, что пока нет хороше
 
 <http://orgmode.org/>
 
-## Calibre<a id="orgheadline82"></a>
+## Calibre<a id="orgheadline83"></a>
 
 Reference-mode в читалке. Решение проблемы идентификации для
 электронных книг.
 
 <https://calibre-ebook.com/>
 
-## Smallest Federated Wiki<a id="orgheadline83"></a>
+## Smallest Federated Wiki<a id="orgheadline84"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Chandler<a id="orgheadline84"></a>
+## Chandler<a id="orgheadline85"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## CommonTag (dead)<a id="orgheadline85"></a>
+## CommonTag<a id="orgheadline86"></a>
 
 Теги на основе заголовков статей в википедии. Позволяют получить
 для тега хорошо прописанную семантику, в том числе на разных
@@ -1408,17 +1434,17 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 <http://microformats.org/wiki/CommonTag>
 
-## Friendfeed (dead)<a id="orgheadline86"></a>
+## Friendfeed<a id="orgheadline87"></a>
 
 Помимо всего прочего умел собирать данных из разных источников в
 одну ленту.
 
-## Locker (dead)<a id="orgheadline87"></a>
+## Locker<a id="orgheadline88"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту.
 
-## Singly (dead)<a id="orgheadline88"></a>
+## Singly<a id="orgheadline89"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту. Singly ориентирован не только на собирание, но и на
@@ -1431,32 +1457,13 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
-## NEPOMUK (framework)<a id="orgheadline89"></a>
+## NEPOMUK<a id="orgheadline90"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## TiddlyWiki<a id="orgheadline90"></a>
+## TiddlyWiki<a id="orgheadline91"></a>
 
 <http://tiddlywiki.com/>
-
-## Tinderbox<a id="orgheadline91"></a>
-
-По сути &#x2013; mindmap. Есть заметки, у них есть классы (прототипы на
-местном сленге) и аттрибуты. Из классов можно делать иерархии. 
-
-Есть несколько способов отображения заметок: mindmap (с
-возможностью заныривания в поддерево), timeline, outline. 
-
-Между заметками можно делать связи. Связи можно делать между любыми
-заметками, даже если они находятся на разных уровнях иерархии. Есть
-инспектор, который показывает все входящие и исходящие связи для
-конкретной заметки.
-
-Книга: [Mark Bernstein](http://www.markbernstein.org/) &#x2013; [The Tinderbox Way](http://www.eastgate.com/Tinderbox/TinderboxWay.html)
-
-Сайт разработчика: [Mark Bernstein](http://www.markbernstein.org/)
-
-Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29)
 
 # Ссылки<a id="orgheadline105"></a>
 

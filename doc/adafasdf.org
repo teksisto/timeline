@@ -1046,27 +1046,27 @@
 
 * История
 
-** Vannevar Bush — As We May Think (1945)
+** (1945) Vannevar Bush — As We May Think
 
    The Atlantic: [[http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/][As We May Think]]
 
    Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
-** Andries van Dam, Ted Nelson — Hypertext Editing System (1967)
+** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
 
-** Douglas Engelbart — oN-Line System (1968)
+** (1968) Douglas Engelbart — oN-Line System 
 
    Wiki: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
 
-** Andries van Dam — File Retrieval and Editing System (1968)
+** (1968) Andries van Dam — File Retrieval and Editing System 
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
 
-** Intermedia (1985)
+** (1985) Intermedia 
 
    #+BEGIN_QUOTE
        In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
@@ -1079,7 +1079,7 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
 
-** Gifford — Semantic file systems (1991)
+** (1991) Gifford — Semantic file systems 
 
    Старая заметка про Гиффорда:
     
@@ -1100,11 +1100,11 @@
        виртуальных файловых систем.
    #+END_QUOTE
 
-** LDAP (1993)
+** (1993) LDAP 
 
    Wiki: [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
 
-** id3v2.4 (2000)
+** (2000) id3v2.4 
 
    Informal standard на теги для mp3 файлов. Не смотря на то, что
    структура метаданных хорошо прописана, по большому счету ее никто
@@ -1115,22 +1115,48 @@
 
    http://id3.org/id3v2.4.0-frames
 
-** MusicBrainz (2000)
+** (2000) MusicBrainz
 
    Отлично прописанная онтология для музыки. Last.fm забирает данные
    именно отсюда.
 
    https://musicbrainz.org/
    
-** Eric Kim — Purple (2001)
+** (2001) Eric Kim — Purple 
 
    Подход к решению проблемы идентификации частей документа. Добавляет
-   для блочных элементов в html якоря со ссылками.
+   для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
    https://en.wikipedia.org/wiki/Purple_Numbers
 
-** Tim Berners-Lee — Semantic Web (2001)
-** Joshua Schachter — Del.icio.us (2003)
+** (2001) Tim Berners-Lee — Semantic Web 
+** (2001) Tinderbox 
+
+   По сути -- mindmap. Есть заметки, у них есть классы (прототипы на
+   местном сленге) и аттрибуты. Из классов можно делать иерархии. 
+
+   Есть несколько способов отображения заметок: mindmap (с
+   возможностью заныривания в поддерево), timeline, outline, карта. В
+   смысле отображение Tinderbox хорош, хотя он упускает один важный
+   способ отображения -- лента.
+
+   Между заметками можно делать связи. Связи можно делать между любыми
+   заметками, даже если они находятся на разных уровнях иерархии. Есть
+   инспектор, который показывает все входящие и исходящие связи для
+   конкретной заметки.
+
+   Tinderbox не является редактором гипертекста (и тем более блочным
+   редактором), связи у него существуют только на уровне
+   заметок. Метаданные тоже можно навешивать на уровне заметок. Текст
+   по-прежнему лежит одним куском.
+
+   Книга: [[http://www.markbernstein.org/][Mark Bernstein]] -- [[http://www.eastgate.com/Tinderbox/TinderboxWay.html][The Tinderbox Way]]
+
+   Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]]
+
+   Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
+
+** (2003) Joshua Schachter — Del.icio.us 
 
    Старая заметка про [[https://delicious.com][delicious]]:
     
@@ -1184,16 +1210,15 @@
        условно.
    #+END_QUOTE
 
-** W3C — RDF / RDFS / OWL (2004)
-
-** DBpedia (2007)
+** (2004) W3C — RDF / RDFS / OWL 
+** (2007) DBpedia 
 
    Вытаскивает структурированные данные из википедии, конвертит их в
    RDF, позволяет делать запросы на SPARQL.
 
    Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
 
-** Scrivener (2007)
+** (2007) Scrivener 
    
    Инструмент для написания текстов. Есть текстовый редактор и
    контроль версий. Есть хранилище связанных файлов и их отображение в
@@ -1205,19 +1230,19 @@
 
    http://www.literatureandlatte.com/scrivener.html
 
-** Evernote (2008)
+** (2008) Evernote 
 
    Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
 
    Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
 
-** Fluidinfo (2009)
+** (2009) Fluidinfo 
 
    У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
 
    http://fluidinfo.com
 
-** Ginko (2013)
+** (2013) Ginko 
 
    Хороший. Умеет делать презентации и возвращать текст в виде
    json. Интересен в первую очередь интерфейсом.
@@ -1250,7 +1275,7 @@
 
    https://en.wikipedia.org/wiki/Chandler_%28software%29
 
-** CommonTag (dead)
+** CommonTag
 
    Теги на основе заголовков статей в википедии. Позволяют получить
    для тега хорошо прописанную семантику, в том числе на разных
@@ -1259,17 +1284,17 @@
 
    http://microformats.org/wiki/CommonTag
 
-** Friendfeed (dead)
+** Friendfeed
 
    Помимо всего прочего умел собирать данных из разных источников в
    одну ленту.
 
-** Locker (dead)
+** Locker
 
    Метасервис по собиранию данных из разных веб-сервисов в единую
    ленту.
 
-** Singly (dead)
+** Singly
    
    Метасервис по собиранию данных из разных веб-сервисов в единую
    ленту. Singly ориентирован не только на собирание, но и на
@@ -1284,32 +1309,13 @@
    
    2013-08-22 -- поглощен компанией [[http://appcelerator.com/][appcelerator]].
 
-** NEPOMUK (framework)
+** NEPOMUK
 
    https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29
 
 ** TiddlyWiki
 
    http://tiddlywiki.com/
-
-** Tinderbox
-
-   По сути -- mindmap. Есть заметки, у них есть классы (прототипы на
-   местном сленге) и аттрибуты. Из классов можно делать иерархии. 
-
-   Есть несколько способов отображения заметок: mindmap (с
-   возможностью заныривания в поддерево), timeline, outline. 
-
-   Между заметками можно делать связи. Связи можно делать между любыми
-   заметками, даже если они находятся на разных уровнях иерархии. Есть
-   инспектор, который показывает все входящие и исходящие связи для
-   конкретной заметки.
-
-   Книга: [[http://www.markbernstein.org/][Mark Bernstein]] -- [[http://www.eastgate.com/Tinderbox/TinderboxWay.html][The Tinderbox Way]]
-
-   Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]]
-
-   Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
 
 * Ссылки
 
