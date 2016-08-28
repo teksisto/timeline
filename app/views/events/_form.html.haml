@@ -13,9 +13,17 @@
                        collection:   Category.all,
                        label_method: :label,
                        value_method: :uuid,
-                       selected: @event.categories,
+                       selected: @event.categories.map(&:uuid),
                        include_blank: true,
                        input_html: { multiple: true }
-    
-  .form-actions
+
+    = f.association :people,
+                       collection:   Person.all,
+                       label_method: :label,
+                       value_method: :uuid,
+                       selected: @event.people.map(&:uuid),
+                       include_blank: true,
+                       input_html: { multiple: true }
+
+                       .form-actions
     = f.button :submit

@@ -10,5 +10,6 @@ class Event
   property :link, type: String
 
   has_many :out, :categories, type: :has_category
-
+  has_many :out, :people,     type: :involves
+  
 end

@@ -7,6 +7,6 @@ class Person
   property :created_at, type: DateTime
   property :updated_at, type: DateTime
 
-
+  has_many :in, :events, type: :involves
 
 end

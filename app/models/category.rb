@@ -8,6 +8,5 @@ class Category
   property :updated_at, type: DateTime
 
   has_many :in, :events, type: :has_category
-
-
+  
 end

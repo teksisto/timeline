@@ -19,6 +19,11 @@
   %b Updated at:
   = @person.updated_at
 
+%b Events:
+%ul
+  - for event in @person.events
+    %li= link_to event.label, event_path(event)
+
 = link_to 'Edit', edit_person_path(@person)
 \|
 = link_to 'Back', people_path
