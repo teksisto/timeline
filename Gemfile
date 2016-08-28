@@ -62,7 +62,7 @@ gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
 
-gem 'colorize'
+# gem 'colorize'
 
 gem 'org-ruby'
 

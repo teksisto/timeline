@@ -279,7 +279,7 @@ GEM
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
     rainbow (2.0.0)
-    rake (10.4.2)
+    rake (11.2.2)
     rdf (1.1.15)
       link_header (~> 0.0, >= 0.0.8)
     rdf-aggregate-repo (1.1.0)
@@ -436,7 +436,6 @@ DEPENDENCIES
   cocoon
   codeclimate-test-reporter
   coffee-rails (~> 4.1.0)
-  colorize
   generic_edit_and_destroy_links!
   haml-rails (~> 0.9)
   jbuilder (~> 2.0)

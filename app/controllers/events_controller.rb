@@ -6,7 +6,7 @@ class EventsController < ApplicationController
   # GET /events
   # GET /events.json
   def index
-    Rails.logger.debug @events_filter.inspect.red
+    # Rails.logger.debug @events_filter.inspect.red
     render layout: @events_filter.layout
   end
   
