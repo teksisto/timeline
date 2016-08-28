@@ -9,8 +9,9 @@ class Event
   property :period, type: String
   property :link, type: String
 
+  has_many :in,  :quotes,     type: :supports
+  
   has_one  :out, :location,   type: :happend_in
-
   has_many :out, :categories, type: :has_category
   has_many :out, :people,     type: :involves
   

@@ -1,5 +1,7 @@
 %p#notice= notice
 
+%h3 Attributes
+
 %p
   %b Label:
   = @event.label
@@ -27,16 +29,23 @@
   - if @event.location
     = link_to @event.location.label, location_path(@event.location)
 
-%b Categories:
-%ul
-  - for category in @event.categories
-    %li= link_to category.label, category_path(category)
-
-%b People:
+%h3 People
 %ul
   - for person in @event.people
     %li= link_to person.label, person_path(person)
     
+%h3 Quotes
+- for quote in @event.quotes
+  %h4= link_to quote.label, quote_path(quote)
+  - for version in quote.versions
+    %blockquote
+      = version.content
+  
+%h3 Categories
+%ul
+  - for category in @event.categories
+    %li= link_to category.label, category_path(category)
+
 = link_to 'Edit', edit_event_path(@event)
 \|
 = link_to 'Back', events_path
