@@ -4,15 +4,11 @@
   .form-inputs
     = f.input :label
     = f.input :description
-    = f.input :start_date
-    = f.input :end_date
-    = f.input :age
-    = f.input :period
+    = f.input :start_date, as: :datetime
+    = f.input :end_date,   as: :datetime
+    = f.input :age,        as: :boolean  
+    = f.input :period,     as: :boolean
     = f.input :link
-    = f.input :categories,
-                collection:   Category.all,
-                label_method: :label,
-                value_method: :uuid,
     = f.association :categories,
                        collection:   Category.all,
                        label_method: :label,
