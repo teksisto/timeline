@@ -1,5 +1,6 @@
 class Event 
   include Neo4j::ActiveNode
+
   property :label, type: String
   property :description, type: String
   property :start_date, type: DateTime
@@ -8,6 +9,6 @@ class Event
   property :period, type: String
   property :link, type: String
 
-
+  has_many :out, :categories, type: :has_category
 
 end

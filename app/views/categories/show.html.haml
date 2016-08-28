@@ -19,6 +19,12 @@
   %b Updated at:
   = @category.updated_at
 
+%b Events:
+%ul
+  - for event in @category.events
+    %li= link_to event.label, event_path(event)
+
+  
 = link_to 'Edit', edit_category_path(@category)
 \|
 = link_to 'Back', categories_path

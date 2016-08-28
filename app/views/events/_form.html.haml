@@ -9,6 +9,17 @@
     = f.input :age
     = f.input :period
     = f.input :link
-
+    = f.input :categories,
+                collection:   Category.all,
+                label_method: :label,
+                value_method: :uuid,
+    = f.association :categories,
+                       collection:   Category.all,
+                       label_method: :label,
+                       value_method: :uuid,
+                       selected: @event.categories,
+                       include_blank: true,
+                       input_html: { multiple: true }
+    
   .form-actions
     = f.button :submit

@@ -22,6 +22,11 @@
   %b Link:
   = @event.link
 
+%b Categories:
+%ul
+  - for category in @event.categories
+    %li= link_to category.label, category_path(category)
+
 = link_to 'Edit', edit_event_path(@event)
 \|
 = link_to 'Back', events_path

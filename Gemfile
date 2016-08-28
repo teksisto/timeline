@@ -56,6 +56,6 @@ gem 'neo4j', '~> 7.1.0'
 gem 'haml-rails', '~> 0.9'
 
 gem 'twitter-bootstrap-rails'
-
 gem 'simple_form'
-
+gem 'select2-rails'
+gem 'simple_form_auto_select2'
