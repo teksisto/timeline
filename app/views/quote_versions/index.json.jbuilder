@@ -1,0 +1,1 @@
+json.array! @quote_versions, partial: 'quote_versions/quote_version', as: :quote_version

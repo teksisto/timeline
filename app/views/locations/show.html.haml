@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @location.label
+%p
+  %b Description:
+  = @location.description
+%p
+  %b Icon:
+  = @location.icon
+%p
+  %b Created at:
+  = @location.created_at
+%p
+  %b Updated at:
+  = @location.updated_at
+
+= link_to 'Edit', edit_location_path(@location)
+\|
+= link_to 'Back', locations_path

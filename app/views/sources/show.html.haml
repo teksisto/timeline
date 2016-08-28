@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @source.label
+%p
+  %b Category:
+  = @source.category_id
+%p
+  %b Parent:
+  = @source.parent
+%p
+  %b Link:
+  = @source.link
+%p
+  %b Text:
+  = @source.text
+%p
+  %b Created at:
+  = @source.created_at
+%p
+  %b Updated at:
+  = @source.updated_at
+
+= link_to 'Edit', edit_source_path(@source)
+\|
+= link_to 'Back', sources_path

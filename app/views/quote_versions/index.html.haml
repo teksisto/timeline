@@ -1,0 +1,29 @@
+%h1 Listing quote_versions
+
+%table
+  %thead
+    %tr
+      %th Quote
+      %th Language
+      %th Text
+      %th Created at
+      %th Updated at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @quote_versions.each do |quote_version|
+      %tr
+        %td= quote_version.quote_id
+        %td= quote_version.language
+        %td= quote_version.text
+        %td= quote_version.created_at
+        %td= quote_version.updated_at
+        %td= link_to 'Show', quote_version
+        %td= link_to 'Edit', edit_quote_version_path(quote_version)
+        %td= link_to 'Destroy', quote_version, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Quote version', new_quote_version_path

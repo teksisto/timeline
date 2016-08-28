@@ -1,0 +1,27 @@
+%h1 Listing quotes
+
+%table
+  %thead
+    %tr
+      %th Label
+      %th Source
+      %th Created at
+      %th Updated at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @quotes.each do |quote|
+      %tr
+        %td= quote.label
+        %td= quote.source_id
+        %td= quote.created_at
+        %td= quote.updated_at
+        %td= link_to 'Show', quote
+        %td= link_to 'Edit', edit_quote_path(quote)
+        %td= link_to 'Destroy', quote, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Quote', new_quote_path

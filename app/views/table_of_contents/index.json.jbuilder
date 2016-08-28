@@ -1,0 +1,1 @@
+json.array! @table_of_contents, partial: 'table_of_contents/table_of_content', as: :table_of_content

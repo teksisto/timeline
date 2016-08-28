@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @category.label
+%p
+  %b Description:
+  = @category.description
+%p
+  %b Icon:
+  = @category.icon
+%p
+  %b Color:
+  = @category.color
+%p
+  %b Created at:
+  = @category.created_at
+%p
+  %b Updated at:
+  = @category.updated_at
+
+= link_to 'Edit', edit_category_path(@category)
+\|
+= link_to 'Back', categories_path

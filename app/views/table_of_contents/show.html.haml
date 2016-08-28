@@ -1,0 +1,9 @@
+%p#notice= notice
+
+%p
+  %b Source:
+  = @table_of_content.source
+
+= link_to 'Edit', edit_table_of_content_path(@table_of_content)
+\|
+= link_to 'Back', table_of_contents_path

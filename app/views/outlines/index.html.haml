@@ -1,0 +1,27 @@
+%h1 Listing outlines
+
+%table
+  %thead
+    %tr
+      %th Text
+      %th Source
+      %th Created at
+      %th Updated at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @outlines.each do |outline|
+      %tr
+        %td= outline.text
+        %td= outline.source_id
+        %td= outline.created_at
+        %td= outline.updated_at
+        %td= link_to 'Show', outline
+        %td= link_to 'Edit', edit_outline_path(outline)
+        %td= link_to 'Destroy', outline, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Outline', new_outline_path

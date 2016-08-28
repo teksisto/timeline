@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @quote.label
+%p
+  %b Source:
+  = @quote.source_id
+%p
+  %b Created at:
+  = @quote.created_at
+%p
+  %b Updated at:
+  = @quote.updated_at
+
+= link_to 'Edit', edit_quote_path(@quote)
+\|
+= link_to 'Back', quotes_path

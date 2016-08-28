@@ -1,0 +1,11 @@
+= simple_form_for(@quote) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :label
+    = f.input :source_id
+    = f.input :created_at
+    = f.input :updated_at
+
+  .form-actions
+    = f.button :submit

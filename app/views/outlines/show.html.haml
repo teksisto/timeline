@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Text:
+  = @outline.text
+%p
+  %b Source:
+  = @outline.source_id
+%p
+  %b Created at:
+  = @outline.created_at
+%p
+  %b Updated at:
+  = @outline.updated_at
+
+= link_to 'Edit', edit_outline_path(@outline)
+\|
+= link_to 'Back', outlines_path

@@ -1,0 +1,33 @@
+%h1 Listing sources
+
+%table
+  %thead
+    %tr
+      %th Label
+      %th Category
+      %th Parent
+      %th Link
+      %th Text
+      %th Created at
+      %th Updated at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @sources.each do |source|
+      %tr
+        %td= source.label
+        %td= source.category_id
+        %td= source.parent
+        %td= source.link
+        %td= source.text
+        %td= source.created_at
+        %td= source.updated_at
+        %td= link_to 'Show', source
+        %td= link_to 'Edit', edit_source_path(source)
+        %td= link_to 'Destroy', source, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Source', new_source_path

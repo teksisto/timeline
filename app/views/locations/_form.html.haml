@@ -1,0 +1,12 @@
+= simple_form_for(@location) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :label
+    = f.input :description
+    = f.input :icon
+    = f.input :created_at
+    = f.input :updated_at
+
+  .form-actions
+    = f.button :submit

@@ -1,0 +1,21 @@
+%h1 Listing table_of_contents
+
+%table
+  %thead
+    %tr
+      %th Source
+      %th
+      %th
+      %th
+
+  %tbody
+    - @table_of_contents.each do |table_of_content|
+      %tr
+        %td= table_of_content.source
+        %td= link_to 'Show', table_of_content
+        %td= link_to 'Edit', edit_table_of_content_path(table_of_content)
+        %td= link_to 'Destroy', table_of_content, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Table of content', new_table_of_content_path

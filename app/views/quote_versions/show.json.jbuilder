@@ -1,0 +1,1 @@
+json.partial! "quote_versions/quote_version", quote_version: @quote_version

@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Quote:
+  = @quote_version.quote_id
+%p
+  %b Language:
+  = @quote_version.language
+%p
+  %b Text:
+  = @quote_version.text
+%p
+  %b Created at:
+  = @quote_version.created_at
+%p
+  %b Updated at:
+  = @quote_version.updated_at
+
+= link_to 'Edit', edit_quote_version_path(@quote_version)
+\|
+= link_to 'Back', quote_versions_path

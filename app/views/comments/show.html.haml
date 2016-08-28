@@ -1,0 +1,21 @@
+%p#notice= notice
+
+%p
+  %b Author:
+  = @comment.author_id
+%p
+  %b Quote:
+  = @comment.quote_id
+%p
+  %b Text:
+  = @comment.text
+%p
+  %b Created at:
+  = @comment.created_at
+%p
+  %b Updated at:
+  = @comment.updated_at
+
+= link_to 'Edit', edit_comment_path(@comment)
+\|
+= link_to 'Back', comments_path

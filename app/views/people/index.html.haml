@@ -1,0 +1,31 @@
+%h1 Listing people
+
+%table
+  %thead
+    %tr
+      %th Label
+      %th Description
+      %th Screen label
+      %th Link
+      %th Created at
+      %th Updated at
+      %th
+      %th
+      %th
+
+  %tbody
+    - @people.each do |person|
+      %tr
+        %td= person.label
+        %td= person.description
+        %td= person.screen_label
+        %td= person.link
+        %td= person.created_at
+        %td= person.updated_at
+        %td= link_to 'Show', person
+        %td= link_to 'Edit', edit_person_path(person)
+        %td= link_to 'Destroy', person, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Person', new_person_path

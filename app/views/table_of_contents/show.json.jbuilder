@@ -1,0 +1,1 @@
+json.partial! "table_of_contents/table_of_content", table_of_content: @table_of_content

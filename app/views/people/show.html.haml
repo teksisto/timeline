@@ -1,0 +1,24 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @person.label
+%p
+  %b Description:
+  = @person.description
+%p
+  %b Screen label:
+  = @person.screen_label
+%p
+  %b Link:
+  = @person.link
+%p
+  %b Created at:
+  = @person.created_at
+%p
+  %b Updated at:
+  = @person.updated_at
+
+= link_to 'Edit', edit_person_path(@person)
+\|
+= link_to 'Back', people_path
