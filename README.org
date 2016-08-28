@@ -1,0 +1,24 @@
+* Timeline (Neo4j version)
+
+  Differencies from =master= branch:
+  - neo4j back-end
+  - simple_form
+  - rspec
+  - rails 5
+
+    
+
+** Setup
+
+   Development environment:
+
+   : rake neo4j:install[community-3.0.4,development]
+   : rake neo4j:config[development,7000]
+   : rake neo4j:start
+
+   Test environment:
+   
+   : rake neo4j:install[community-3.0.4,test]
+   : rake neo4j:config[test,7100]
+   : rake neo4j:start[test]
+
