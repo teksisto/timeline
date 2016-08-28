@@ -16,6 +16,11 @@
   %b Updated at:
   = @location.updated_at
 
+%b Events:
+%ul
+  - for event in @location.events
+    %li= link_to event.label, event_path(event)
+
 = link_to 'Edit', edit_location_path(@location)
 \|
 = link_to 'Back', locations_path

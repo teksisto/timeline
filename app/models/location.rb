@@ -6,6 +6,6 @@ class Location
   property :created_at, type: DateTime
   property :updated_at, type: DateTime
 
-
+  has_many :in, :events, type: :happend_in
 
 end

@@ -25,5 +25,12 @@
                        include_blank: true,
                        input_html: { multiple: true }
 
-                       .form-actions
+    = f.association :location,
+                       collection:   Location.all,
+                       label_method: :label,
+                       value_method: :uuid,
+                       selected: @event.location.try(:uuid)
+                       include_blank: true
+
+  .form-actions
     = f.button :submit
