@@ -1156,6 +1156,8 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
 
+   Release dates: http://www.markbernstein.org/elements/Releases.jpg
+
 ** (2003) Joshua Schachter — Del.icio.us 
 
    Старая заметка про [[https://delicious.com][delicious]]:

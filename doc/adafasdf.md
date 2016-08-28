@@ -1307,6 +1307,8 @@ Tinderbox не является редактором гипертекста (и 
 
 Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29)
 
+Release dates: ![img](//www.markbernstein.org/elements/Releases.jpg)
+
 ## (2003) Joshua Schachter — Del.icio.us<a id="orgheadline75"></a>
 
 Старая заметка про [delicious](https://delicious.com):
