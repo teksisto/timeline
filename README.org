@@ -22,3 +22,4 @@
    : rake neo4j:config[test,7100]
    : rake neo4j:start[test]
 
+[[./public/timeline-neo4j.png]]
