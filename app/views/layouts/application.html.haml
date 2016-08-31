@@ -26,5 +26,10 @@
         %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
           = link_to 'Categories', categories_path
 
+    %p.notice= notice
+    %p.alert=  alert
 
+    - if @user
+      = link_to @user.email, user_path(@user)
+    
     = yield

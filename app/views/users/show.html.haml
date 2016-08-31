@@ -1,0 +1,15 @@
+%p#notice= notice
+
+%p
+  %b Label:
+  = @user.label
+%p
+  %b Created at:
+  = @user.created_at
+%p
+  %b Updated at:
+  = @user.updated_at
+
+= link_to 'Edit', edit_user_path(@user)
+\|
+= link_to 'Back', users_path
