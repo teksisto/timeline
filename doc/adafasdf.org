@@ -45,7 +45,7 @@
 
    Компьютер знает о нас очень много. Все что может быть захвачено
    автоматически должно захватываться автоматически.
-      
+
 ** Идентификация
 
    Как адресовать отдельный элемент в системе?
@@ -68,20 +68,24 @@
 
 ** Хранение
 
-   В каком формате хранить информацию из различных источников? 
+   В каком формате хранить информацию из различных источников?
 
-   Хочется унифицированности.
-     
+   Хочется унифицированности при которой не будет теряться информация.
+   Например при переносе заметок из livejournal в wordpress может
+   потеряться информация о текущей прослушиваемой музыке, которая есть
+   в постах livejournal. Эта информация ничем особо не отличается ото
+   всей остальной -- просто метаданные для поста. Тем не менее она
+   тереется, поскольку в целевой системе нет такого поля. Так
+   вот. Данные должны забираться из источника целиком. Для этого нужна
+   очень емкая структура для хранения. Подход сейчас я вижу только
+   один - RDF.
+
 ** Классификация
 
    Как описывать объекты хранящиеся в системе?
 
    [[https://en.wikipedia.org/wiki/Ontology_(information_science)][Онтологии]].
 
-   Системе должно быть безразлично не только что именно она
-   описывает, но и где оно лежит. Хранение должно быть отделено от
-   доступа.
-  
    Не все файлы нуждаются в семантике. Целая куча постоянно
    скачивается, просматривается и удаляется. Нет никакого смысла
    наводить на них семантику, кроме может быть примитивной
@@ -111,7 +115,7 @@
        На больших объемах информации поиск итеративен и разные "мили"
        проходятся разными способами. Полнотекстовый поиск, сохраненные
        запросы и обычный иерархический подход будут мирно сосуществовать
-       на машинах.
+       на машинах. (urbansheep)
    #+END_QUOTE
 
 ** Аннотирование
@@ -124,20 +128,20 @@
 
    Как аннотировать видео?
 
+   Аннотирование в самом простом случае -- это комментирование.
+
    Как аннотировать обновляющийся источник? Обновляющийся источник
    сложно аннотировать. Какие-то части появляются, какие-то
    попадают. Последовательная нумерациия параграфов невозможна, потому
    что она будет ломаться каждую версию. Значит адресовать нужно по
    uuid.
 
-   Аннотирование в самом простом случае -- это комментирование. 
-
    Удобство аннотирования -- это аргумент в пользу блочной
    идентификации. Можно добавлять комментарии к каждому параграфу.
-    
+
 ** Переносимость
 
-   Есть ли импор и экспорт из хранилища? Можно ли передвинуть данные
+   Есть ли импорт и экспорт из хранилища? Можно ли передвинуть данные
    куда-то еще?
 
    Я готов вбивать руками семантику на весь свой массив данных, но
@@ -147,7 +151,7 @@
 * Чего мне хочется от информационного менеджера
 
 ** Оглавления для источников
-   
+
    В идеале книги должны импортироваться внутрь, биться на блочные
    элементы и цитаты должны привязываться непосредственно к тому
    пераграфу, откуда она была вытащена. Но это непростая операция,
@@ -168,7 +172,7 @@
 
 *** Привязка цитат к оглавлению книги
 
-    Цитаты привязываются к оглавлению источника. 
+    Цитаты привязываются к оглавлению источника.
 
 *** Заголовки для цитат
 
@@ -213,65 +217,65 @@
     предполагаю, что для нескольких человек на относительно больших
     наборах цитат будут находится не только пары, но цепочки из цитат.
 
-    #+BEGIN_QUOTE 
-	Reed College at that time offered perhaps the best calligraphy
-	instruction in the country. Throughout the campus every poster,
-	every label on every drawer, was beautifully hand
-	calligraphed. Because I had dropped out and didn't have to take
-	the normal classes, I decided to take a calligraphy class to learn
-	how to do this. I learned about serif and san serif typefaces,
-	about varying the amount of space between different letter
-	combinations, about what makes great typography great. It was
-	beautiful, historical, artistically subtle in a way that science
-	can't capture, and I found it fascinating.
+    #+BEGIN_QUOTE
+        Reed College at that time offered perhaps the best calligraphy
+        instruction in the country. Throughout the campus every poster,
+        every label on every drawer, was beautifully hand
+        calligraphed. Because I had dropped out and didn't have to take
+        the normal classes, I decided to take a calligraphy class to learn
+        how to do this. I learned about serif and san serif typefaces,
+        about varying the amount of space between different letter
+        combinations, about what makes great typography great. It was
+        beautiful, historical, artistically subtle in a way that science
+        can't capture, and I found it fascinating.
 
-	None of this had even a hope of any practical application in my
-	life. But ten years later, when we were designing the first Macintosh
-	computer, it all came back to me. And we designed it all into the
-	Mac. It was the first computer with beautiful typography. If I had
-	never dropped in on that single course in college, the "Mac" would
-	have never had multiple typefaces or proportionally spaced fonts. And
-	since Windows just copied the Mac, it's likely that no personal
-	computer would have them. If I had never dropped out, I would have
-	never dropped in on that calligraphy class, and personal computers
-	might not have the wonderful typography that they do. Of course it was
-	impossible to connect the dots looking forward when I was in
-	college. But it was very, very clear looking backwards 10 years later.
-	Again, *you can't connect the dots looking forward*;
-	you can only connect them looking backwards. So you have to trust that
-	the dots will somehow connect in your future. You have to trust in
-	something – your gut, destiny, life, karma, whatever – because
-	believing that the dots will connect down the road will give you the
-	confidence to follow your heart, even when it leads you off the
-	well-worn path, and that will make all the difference. 
+        None of this had even a hope of any practical application in my
+        life. But ten years later, when we were designing the first Macintosh
+        computer, it all came back to me. And we designed it all into the
+        Mac. It was the first computer with beautiful typography. If I had
+        never dropped in on that single course in college, the "Mac" would
+        have never had multiple typefaces or proportionally spaced fonts. And
+        since Windows just copied the Mac, it's likely that no personal
+        computer would have them. If I had never dropped out, I would have
+        never dropped in on that calligraphy class, and personal computers
+        might not have the wonderful typography that they do. Of course it was
+        impossible to connect the dots looking forward when I was in
+        college. But it was very, very clear looking backwards 10 years later.
+        Again, *you can't connect the dots looking forward*;
+        you can only connect them looking backwards. So you have to trust that
+        the dots will somehow connect in your future. You have to trust in
+        something – your gut, destiny, life, karma, whatever – because
+        believing that the dots will connect down the road will give you the
+        confidence to follow your heart, even when it leads you off the
+        well-worn path, and that will make all the difference.
 
-	(Steve Jobs, [[http://www.americanrhetoric.com/speeches/stevejobsstanfordcommencement.htm][Commencement Address at Stanford University]])
+        (Steve Jobs, [[http://www.americanrhetoric.com/speeches/stevejobsstanfordcommencement.htm][Commencement Address at Stanford University]])
     #+END_QUOTE
 
-    #+BEGIN_QUOTE 
-	What you’re supposed to do in most freshman-rhetoric courses is to
-	read a little essay or short story, discuss how the writer has done
-	certain little things to achieve certain little effects, and then have
-	the students write an imitative little essay or short story to see if
-	they can do the same little things. He tried this over and over again
-	but it never jelled. The students seldom achieved anything, as a
-	result of this calculated mimicry, that was remotely close to the
-	models he’d given them. More often their writing got worse. It seemed
-	as though every rule he honestly tried to discover with them and learn
-	with them was so full of exceptions and contradictions and
-	qualifications and confusions that he wished he’d never come across
-	the rule in the first place.
+    #+BEGIN_QUOTE
+        What you’re supposed to do in most freshman-rhetoric courses is to
+        read a little essay or short story, discuss how the writer has done
+        certain little things to achieve certain little effects, and then have
+        the students write an imitative little essay or short story to see if
+        they can do the same little things. He tried this over and over again
+        but it never jelled. The students seldom achieved anything, as a
+        result of this calculated mimicry, that was remotely close to the
+        models he’d given them. More often their writing got worse. It seemed
+        as though every rule he honestly tried to discover with them and learn
+        with them was so full of exceptions and contradictions and
+        qualifications and confusions that he wished he’d never come across
+        the rule in the first place.
 
 
-	A student would always ask how the rule would apply in a certain
-	special circumstance. Phædrus would then have the choice of trying to
-	fake through a made-up explanation of how it worked, or follow the
-	selfless route and say what he really thought. And what he really
-	thought was that *the rule was pasted on to the writing after
-	the writing was all done*. It was post hoc, after the fact,
-	instead of prior to the fact.
+        A student would always ask how the rule would apply in a certain
+        special circumstance. Phædrus would then have the choice of trying to
+        fake through a made-up explanation of how it worked, or follow the
+        selfless route and say what he really thought. And what he really
+        thought was that *the rule was pasted on to the writing after
+        the writing was all done*. It was post hoc, after the fact,
+        instead of prior to the fact.
 
-	(Robert M. Pirsig, [[http://design.caltech.edu/Misc/pirsig.html][Zen and the Art of Motorcycle Maintenance]])
+        (Robert M. Pirsig, [[http://design.caltech.edu/Misc/pirsig.html][Zen and the Art of Motorcycle Maintenance]])
     #+END_QUOTE
 
 *** Компартментализм
@@ -306,41 +310,45 @@
 
     Конечная цель игры -- синтез разных мнений.
 
-    #+BEGIN_QUOTE 
-	Раздельное мышление — это защитный механизм,
-	позволяющий человеку умещать в себе логически несовместимые
-	установки. Если по каким-то причинам человек нуждается в каждой из
-	своих несовместимых установок, то осознание возникающего
-	противоречия начинает занимать мысли попытками это противоречие
-	разрешить (зачастую с помощью рационализаций). Чтобы этого не
-	происходило, человек может начать «раздельно мыслить» — не
-	осознавая противоречия между ними, придерживаться всех
-	несовместимых установок сразу. Со стороны это выглядит как простое
-	лицемерие, но сам человек в этом случае придерживается своих
-	установок вполне искренне, хотя и использует в каждом конкретном
-	случае только одну из них. 
+    #+BEGIN_QUOTE
+        Раздельное мышление — это защитный механизм,
+        позволяющий человеку умещать в себе логически несовместимые
+        установки. Если по каким-то причинам человек нуждается в каждой из
+        своих несовместимых установок, то осознание возникающего
+        противоречия начинает занимать мысли попытками это противоречие
+        разрешить (зачастую с помощью рационализаций). Чтобы этого не
+        происходило, человек может начать «раздельно мыслить» — не
+        осознавая противоречия между ними, придерживаться всех
+        несовместимых установок сразу. Со стороны это выглядит как простое
+        лицемерие, но сам человек в этом случае придерживается своих
+        установок вполне искренне, хотя и использует в каждом конкретном
+        случае только одну из них.
 
-	(Википедия, Мак-Вильямс)
+        (Википедия, Мак-Вильямс)
     #+END_QUOTE
 
-    #+BEGIN_QUOTE 
-	Настоящий спор, говорю тебе из лагерного опыта, производится
-	как поединок. По согласию выбираем посредника -- хоть Глеба
-	сейчас позовем.  Берем лист бумаги, делим его отвесной чертой
-	пополам. Наверху, через весь лист, пишем содержание
-	спора. Затем, каждый на своей половине, предельно ясно и
-	кратко, выражаем свою точку зрения на поставленный
-	вопрос. Чтобы не было случайной ошибки в подборе слова --
-	время на эту запись не ограничивается. [...] Пустые
-	словопрения и сотрясения воздуха могут тянуться неделями. А
-	спор на бумаге иногда кончается в десять минут: сразу же
-	становится очевидно, что противники или говорят о совершенно
-	разных вещах или ни в чем не расходятся. Когда же выявляется
-	смысл продолжать спор -- начинают поочередно записывать доводы
-	на своих половинках листа. 
+    #+BEGIN_QUOTE
+        Настоящий спор, говорю тебе из лагерного опыта, производится
+        как поединок. По согласию выбираем посредника -- хоть Глеба
+        сейчас позовем.  Берем лист бумаги, делим его отвесной чертой
+        пополам. Наверху, через весь лист, пишем содержание
+        спора. Затем, каждый на своей половине, предельно ясно и
+        кратко, выражаем свою точку зрения на поставленный
+        вопрос. Чтобы не было случайной ошибки в подборе слова --
+        время на эту запись не ограничивается. [...] Пустые
+        словопрения и сотрясения воздуха могут тянуться неделями. А
+        спор на бумаге иногда кончается в десять минут: сразу же
+        становится очевидно, что противники или говорят о совершенно
+        разных вещах или ни в чем не расходятся. Когда же выявляется
+        смысл продолжать спор -- начинают поочередно записывать доводы
+        на своих половинках листа.
 
-	(Солженицин, "В круге первом")
+        (Солженицин, "В круге первом")
     #+END_QUOTE
+
+** Конспекты
+
+   Конспект точно так же привязывается к оглавлению, как и цитаты.
 
 ** События
 
@@ -390,7 +398,7 @@
     ты знаешь. По сравнению со временем обучения языку это очень мало.
 
     Ок, на выходе мы получили список слов. Что теперь с ним можно
-    поделать? 
+    поделать?
 
     Во-первых, можно прогнать свежий текст через базу и найти слова,
     которых ты не знаешь. Если прикрутить [[https://github.com/louismullie/treat][treat]], то еще и с частью
@@ -419,18 +427,18 @@
    гетерогенен. Он может захватывать ссылки, картинки, посты, ресурсы
    любого типа.
 
-   Контекст -- это легковестный блог с вики-страницей в заголовке. 
+   Контекст -- это легковестный блог с вики-страницей в заголовке.
 
    + Он предназначен либо для мелкого собирательства, которое возможно
-     перератет во что-то большее (например в заметку). Тогда заметка
-     должна стать хедом. 
+     перерастет во что-то большее (например в заметку). Тогда заметка
+     должна стать хедом.
 
    + Либо для подборки однотипных высказываний (рифмы из цитат). Хотя их можно
      делать и коммуникативными связями.
 
    + Крупномаштабный харвест всего встреченного на пути по интересной теме.
 
-   На что это похоже: 
+   На что это похоже:
    + tumbler -- множество блогов у одного пользователя. Маленькие
      блоги на какую-нибудь обскурную тему, в которых есть два поста и
      новые появляются раз в год.
@@ -445,7 +453,7 @@
    - запрос, определяющий хвост
    - хвост = массив ресурсов
 
-*** Заголовочный блок 
+*** Заголовочный блок
 
     Заголовочный блок может использоваться как summary или описание
     того, зачем контекст нужен.
@@ -474,7 +482,7 @@
 
    Контекст может захватывать ресурсы автоматически, если ему задать
    правила. Все заметки, которые ссылаются на конкретного
-   человека. Все покупки. 
+   человека. Все покупки.
 
    Контекст умеет показывать хвост в прямом и обратном хронологическом
    порядках. Если я нахожу какой-то интересный блог в интернете, как
@@ -487,11 +495,21 @@
     который входят:
 
     - все ресурсы, которые ссылаются на данный
-    - все ресурсы на которые ссылается он сам. 
+    - все ресурсы на которые ссылается он сам.
 
     В первом случае из множества триплетов, у которых на месте объекта
     стоит данный ресурс, выбираются уникальные значения из столбца
     субъектов.
+
+    Дело в том, что ни жесткое дерево, ни запутанный граф сами по себе
+    не подходят для хранения. Часть данных всегда упорядочена, часть
+    связей всегда нарушает иерархию. То есть получается дерево,
+    опутанное дополнительными связями между узлами. Это всевозможный
+    cross-referencing, ассоциативные связи и прочее случайное, что
+    может объединять узлы.
+
+    Тот контекст, который есть у каждого узла -- это те самые
+    случайные связи
 
 *** Контекст как строительный блок интерфейса
 
@@ -508,11 +526,11 @@
     Новые сущности просеиваются сначала сквозь фильтр первого
     контекста, потом через фильтры вложенных контекстов и где-то
     оседают. Механизм просеивания -- это детали реализации.
- 
+
     Еще раз. Контекст гетерогенен. Ему без разницы что засасывать,
     потому что засасывает он ресурсы, адресуемые uuid. Поэтому ничто
     не мешает ему содержать в себе другие контексты.
- 
+
     В этом случае, кстати, голова контекста является элементом,
     отображаеммым в ленте контекста верхнего уровня. Не надо так же
     забывать, что голова контекста -- это обычный ресурс и у него, как
@@ -535,7 +553,7 @@
    Под текстом здесь понимается любая информация, упорядоченная
    последовательно.
 
-   Примеры параллельных текстов: 
+   Примеры параллельных текстов:
 
    - запись выступления и презентация
    - песня и ее текст
@@ -543,7 +561,7 @@
    - фильм, аудио дорожки к нему и субтитры
    - цитата на двух языках
    - книга на двух языках
-      
+
    Есть утилиты, которые строят параллельные тексты на разных языках
    автоматически. Например, параграф к параграфу. Как я предполагаю,
    они делают это на основе грубого машинного перевода и вычисления
@@ -570,7 +588,7 @@
     поставить ссылку на что угодно, начиная от параграфа и элемента
     списка до конкретной ячейки таблицы.
 
-    Удобство классификации -- можно навешивать атрибуты на что угодно. 
+    Удобство классификации -- можно навешивать атрибуты на что угодно.
 
     Удобство аннотирования -- к каждому параграфу можно добавить
     аннотацию, например комментарий.
@@ -610,7 +628,7 @@
    схемы классификации файл можно положить в разные папки. Проблемы
    начинаются когда:
 
-   - один и тот же файл можно положить в разные места. 
+   - один и тот же файл можно положить в разные места.
    - изменился объем информации и схему надо детализировать
    - изменился подход и классификацию надо переделывать
 
@@ -657,12 +675,12 @@
 
 * Поиск подхода к реализации
 
-  Самое вменяемое решение, которое я вижу -- это [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]]. 
+  Самое вменяемое решение, которое я вижу -- это [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]].
 
 ** Декомпозиция
 
 *** Блог
-  
+
    Представим себе блог, где каждый пост не является монолитом, а
    собирается из кусочков-атомов. Каждый атом имеет уникальный
    идентификатор, хранится отдельно и имеет свой набор
@@ -671,36 +689,36 @@
    каждого атома, каждый из которых трансклюдится в пост. На каждый
    параграф в посте можно сослаться, навесить атрибуты и добавить
    комментарии.
-  
+
    Структура каждого комментария к посту повторяет его структуру. К
    этому добавляется древовидный или линейный контейнер, который хранит
    порядок комментариев.
-  
+
    Посты организуются в хронологическое дерево. Это может быть
    стандартная схема год/месяц/день или какая-нибудь другая, например,
    год/неделя/день. Деревьев может быть несколько, выбор определяется
    удобством.
-  
+
    Какие элементы структуры имеем в результате?
-  
-   - атомы с атрибутами 
+
+   - атомы с атрибутами
    - линейный список для объединения атомов в посты
    - комментарии, каждый из которых повторяет структуру поста
    - дерево для комментариев
    - посты организуются в хронологическое дерево
-  
+
    Теперь отрезаем лишние сущности.
-  
+
    Между атомом и постом нет никакой разницы. Оба имеют уникальный
    идентификатор и набор атрибутов. Разница только в том, что у поста
    есть сложный атрибут, который хранит список входящих в него
    атомов. Сущность, обладающую уникальным идентификатором, на которую
    можно навесить атрибуты я дальше буду называть ресурсом.
-  
+
    Между деревом и линейным списком нет никакой разницы, поскольку
    дерево – это просто список списков. Дерево комментариев – это список
    списков, листьями которого являются ресурсы, содержащие комментарии.
-  
+
    Теперь у нас есть два вида ресурсов: посты и комментарии. На самом
    деле, даже больше, потому что атомы тоже различаются – текст,
    картинка, видео. Поскольку у нас есть несколько типов ресурсов,
@@ -715,26 +733,26 @@
    в div и отдать браузеру. Чтобы показать картинку, надо обернуть ее в
    тег img и отдать браузеру. Разница в обработке закрепляется в виде
    типа.
-  
+
    Атрибуты — это, строго говоря, тоже ресурсы, а линейные списки
    создаются с помощью цепочек ресурсов, ссылающихся друг на друга. Так
    что кроме ресурсов ничего особо и не остается, но атрибуты и
    линейные списки мы выкидывать пока не будем, а то говорить не о чем
    будет.
-  
+
    Итак, у нас остались:
-  
+
    - ресурсы
    - атрибуты
    - линейные списки
-  
+
    Переводим в термины rdf:
-  
+
    - ресурс по-прежнему остается ресурсом (rdf:Resource)
-   - атрибуты в терминологии rdf называются rdf:property 
+   - атрибуты в терминологии rdf называются rdf:property
    - атрибут «тип ресурса» – это rdf:type
    - ресурсы, описывающие атрибуты, имеют rdf:type равным rdf:Property
-  
+
    Схема получается довольно заманчивая, потому что в базе данных все
    поместится в две таблицы: одна для графа и одна для сопоставления
    идентификаторов атомов и все было бы хорошо, если бы речь шла про
@@ -743,7 +761,7 @@
    комментарии и пользователей много. Нужно разграничение
    доступа. Красивая схема «все в двух таблицах» разваливается. Права —
    зло, про них придется думать отдельно.
-  
+
    Чтобы два раза не вставать, сразу скажу, что в смысле бекапа блог не
    сильно отличается от твиттера, френдфида, фликра и многого
    другого. Все упирается в модель безопастности.
@@ -766,11 +784,11 @@
     Получается в среднем около 8 блочных элементов на элемент
     заголовка. Предположим, что большинство элементов прикреплены к
     заголовкам третьего уровня. (Уровень заголовка считается от единицы.)
-    
+
     hasPart / isPartOf. Формула: ~2 * n * (d + 1)~ Каждый блочный элемент
     принадлежит своему заголовку и всем его родительским.
 
-    : 2 * 2363 * (3 + 1) = 18904 <2> 
+    : 2 * 2363 * (3 + 1) = 18904 <2>
 
     Теперь у нас есть количество элементов и есть связи. Надо какие-то
     индексы, чтобы сортировать части внутри заголовка. Придется
@@ -791,9 +809,9 @@
 *** Ресурс
 
     Отдельная сущность, адресуемая уникальным идентификатором. Роль
-    идентификатора выполняет URI. 
+    идентификатора выполняет URI.
 
-    Имеет множество атрибутов в формате ключ=значение. 
+    Имеет множество атрибутов в формате ключ=значение.
 
     Имеет множество представлений.
 
@@ -841,25 +859,25 @@
        мышки на ссылку появляется карточка во всплывающем окне.
 
 *** Атрибут
-   
-    Атрибут тоже ресурс. На него тоже можно навешивать атрибуты. 
+
+    Атрибут тоже ресурс. На него тоже можно навешивать атрибуты.
 
     Адаптер для него HTTP, потому что так сложилось.
 
     Формат атрибута ~<attribute>=<value>~. UUID ресурса плюс ключ и значение
     образовывают триплет.
 
-*** Адаптер 
+*** Адаптер
 
     URI состоит из NID и NSS.
 
     NID -- namespace id. Позволяет выбрать адаптер для совершения с ресурсом базовых
-    действий. 
+    действий.
 
     NSS -- namespace spicific string. Позволяет однозначно ссылаться на
     ресурс внутри определенного namespace.
-   
-    Основные действия, которые должен поддерживать ресурс: 
+
+    Основные действия, которые должен поддерживать ресурс:
 
     - создание
     - чтение
@@ -888,7 +906,7 @@
 
    Лучше всего про реляционный подход написал какой-то чувак с [[https://news.ycombinator.com/item?id=10326764][HN]]:
 
-   #+BEGIN_QUOTE 
+   #+BEGIN_QUOTE
        Having a completely abstracted database with one big
        table called "things" and another big table called "relationships"
        seems really attractive before you actually do it. Then it starts
@@ -899,10 +917,10 @@
 
    =Trees= -- это оптимизация, которая позволяет хранить деревья,
    упорядоченные и не упорядоченные списки, не прибегая к упоротому
-   способу ~rdf:next~. 
+   способу ~rdf:next~.
 
    В таблице =Resources= включен single-table inheritance, который
-   выгружает ресурсы в соответствующие ruby-классы.    
+   выгружает ресурсы в соответствующие ruby-классы.
 
    Валидации делаются засчет того, что у ресурсов типа =Property= в
    классах есть методы в духе =domain= и =range=, которые возвращают
@@ -922,7 +940,7 @@
 
     Сначала у нас есть один ресурс -- книга. У него есть атрибут =content=
     в котором лежит ссылка на дерево.
-    
+
     Ссылка на дерево -- это указатель на анонимный корневой элемент
     дерева, к которому крепятся его элементы. У элемента дерева, помимо
     информации о вложенности есть только одна полезная нагрузка --
@@ -932,7 +950,7 @@
     класса ~Outline~.
 
     Мы делаем второй запрос и получаем свойство ~content~ ресурса класса
-    ~Outline~. В нем хранится ссылка на дерево. 
+    ~Outline~. В нем хранится ссылка на дерево.
 
     Мы делаем третий запрос и получаем упорядоченный массив
     элементов дерева, потому что nested set. Ресурсы крепятся к
@@ -959,7 +977,7 @@
     ссылку на анонимный элемент дерева, который хранит все элементы
     оглавления класса ~Section~.
 
-    : resource[toc] = tree_id 
+    : resource[toc] = tree_id
 
     Второй запрос: прийти в таблицу деревья и вытащить оттуда всех
     детей этого анонимного элемента, сделав на них ~inludes~, что дает
@@ -1001,7 +1019,7 @@
 *** OpenLink Virtuoso
 
     http://virtuoso.openlinksw.com/
-    
+
 *** AllegroGraph
 
     http://franz.com/
@@ -1010,7 +1028,7 @@
     видео и список событий. Есть community версия и платная. Внезапно
     есть биндинги для Common Lisp и курсы по изучению Common Lisp.
 
-** Графовая база данных 
+** Графовая база данных
 
    Если конкретнее, то [[https://neo4j.com][neo4j]]. Про графовые базы
    пишут, что если цепочки связей между ресурсами больше двух, то
@@ -1025,7 +1043,7 @@
    локально для каждой созданной связи. То есть метаинформацию кто и
    когда добавил связь оставить можно, но нельзя сказать, что эта
    связь соединяет только определенные узлы. Эта информация уходит в
-   логику приложения. 
+   логику приложения.
 
    С другой стороны это радикально упрощает provenance. Нет этой
    упоротой rdf-схемы, где для описания одной связи надо использовать
@@ -1036,11 +1054,11 @@
    Очень привлекают примеры с быстрой загрузкой данных из WordNet и
    dbpedia.
 
-   Определенно хорошо применять для: 
+   Определенно хорошо применять для:
    - связей между цитатами
    - связей между параграфами
 
-   Книга O'Reilly "Graph Databases" -- это введение в neo4j. 
+   Книга O'Reilly "Graph Databases" -- это введение в neo4j.
 
    Обертка для ruby: [[https://github.com/neo4jrb/neo4j][neo4jrb]] ([[https://neo4jrb.readthedocs.io/en/7.1.x/][docs]] / [[https://www.youtube.com/watch?v=bDjbqRL9HcM][блог на neo4jrb за 10 минут]])
 
@@ -1056,17 +1074,17 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
 
-** (1968) Douglas Engelbart — oN-Line System 
+** (1968) Douglas Engelbart — oN-Line System
 
    Wiki: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
 
-** (1968) Andries van Dam — File Retrieval and Editing System 
+** (1968) Andries van Dam — File Retrieval and Editing System
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
 
-** (1985) Intermedia 
+** (1985) Intermedia
 
    #+BEGIN_QUOTE
        In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
@@ -1079,10 +1097,10 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
 
-** (1991) Gifford — Semantic file systems 
+** (1991) Gifford — Semantic file systems
 
    Старая заметка про Гиффорда:
-    
+
    #+BEGIN_QUOTE
        Подход, описанный Гиффордом, можно наглядно продемонстрировать на
        примере делишеса. Факт того, что он писал это еще в 1991 году, убивает на
@@ -1100,11 +1118,11 @@
        виртуальных файловых систем.
    #+END_QUOTE
 
-** (1993) LDAP 
+** (1993) LDAP
 
    Wiki: [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
 
-** (2000) id3v2.4 
+** (2000) id3v2.4
 
    Informal standard на теги для mp3 файлов. Не смотря на то, что
    структура метаданных хорошо прописана, по большому счету ее никто
@@ -1121,19 +1139,19 @@
    именно отсюда.
 
    https://musicbrainz.org/
-   
-** (2001) Eric Kim — Purple 
+
+** (2001) Eric Kim — Purple
 
    Подход к решению проблемы идентификации частей документа. Добавляет
    для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
    https://en.wikipedia.org/wiki/Purple_Numbers
 
-** (2001) Tim Berners-Lee — Semantic Web 
-** (2001) Tinderbox 
+** (2001) Tim Berners-Lee — Semantic Web
+** (2001) Tinderbox
 
    По сути -- mindmap. Есть заметки, у них есть классы (прототипы на
-   местном сленге) и аттрибуты. Из классов можно делать иерархии. 
+   местном сленге) и аттрибуты. Из классов можно делать иерархии.
 
    Есть несколько способов отображения заметок: mindmap (с
    возможностью заныривания в поддерево), timeline, outline, карта. В
@@ -1158,10 +1176,10 @@
 
    Release dates: http://www.markbernstein.org/elements/Releases.jpg
 
-** (2003) Joshua Schachter — Del.icio.us 
+** (2003) Joshua Schachter — Del.icio.us
 
    Старая заметка про [[https://delicious.com][delicious]]:
-    
+
    #+BEGIN_QUOTE
        Про отношения с делишесом. Плохие у меня с делишесом
        отношения. Естественный подход мне не нравится. Точнее он у
@@ -1212,39 +1230,39 @@
        условно.
    #+END_QUOTE
 
-** (2004) W3C — RDF / RDFS / OWL 
-** (2007) DBpedia 
+** (2004) W3C — RDF / RDFS / OWL
+** (2007) DBpedia
 
    Вытаскивает структурированные данные из википедии, конвертит их в
    RDF, позволяет делать запросы на SPARQL.
 
    Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
 
-** (2007) Scrivener 
-   
+** (2007) Scrivener
+
    Инструмент для написания текстов. Есть текстовый редактор и
    контроль версий. Есть хранилище связанных файлов и их отображение в
    виде доски. Какие-то инструменты для рефакторинга в духе
-   "переименовать персонажа". 
+   "переименовать персонажа".
 
    Надо еще в нем покопаться, но пока ощущение что в целом он про текст
    как проект.
 
    http://www.literatureandlatte.com/scrivener.html
 
-** (2008) Evernote 
+** (2008) Evernote
 
    Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
 
    Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
 
-** (2009) Fluidinfo 
+** (2009) Fluidinfo
 
    У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
 
    http://fluidinfo.com
 
-** (2013) Ginko 
+** (2013) Ginko
 
    Хороший. Умеет делать презентации и возвращать текст в виде
    json. Интересен в первую очередь интерфейсом.
@@ -1297,7 +1315,7 @@
    ленту.
 
 ** Singly
-   
+
    Метасервис по собиранию данных из разных веб-сервисов в единую
    ленту. Singly ориентирован не только на собирание, но и на
    предоставление к собранному API для различных манипуляций и
@@ -1308,7 +1326,7 @@
       and Simon Murtha-Smith. Matt Zimmerman, former CTO of Ubuntu,
       joined Singly and was the CTO.
    #+END_QUOTE
-   
+
    2013-08-22 -- поглощен компанией [[http://appcelerator.com/][appcelerator]].
 
 ** NEPOMUK
@@ -1375,7 +1393,7 @@
 
 *** Association for Information Science and Technology
 
-    Ааа, ыыы, много всего, оно живое. 
+    Ааа, ыыы, много всего, оно живое.
 
     https://www.asist.org/
 
@@ -1409,8 +1427,8 @@
 
 *** Personal Digital Archiving Conference
 
-    Можно поковыряться, но как-то скучно. Видео лежат на archive.org. 
+    Можно поковыряться, но как-то скучно. Видео лежат на archive.org.
 
     http://personaldigitalarchiving.com
-   
+
     https://archive.org/details/PDA2015
