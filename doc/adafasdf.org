@@ -1122,6 +1122,10 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
 
+** (1996) Eric Freeman and David Gelertner — Lifestreams
+
+   Wiki: [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
+
 ** (2000) id3v2.4
 
    Informal standard на теги для mp3 файлов. Не смотря на то, что

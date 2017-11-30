@@ -110,28 +110,29 @@
 <li><a href="#sec-6-5">6.5. (1985) Intermedia</a></li>
 <li><a href="#sec-6-6">6.6. (1991) Gifford — Semantic file systems</a></li>
 <li><a href="#sec-6-7">6.7. (1993) LDAP</a></li>
-<li><a href="#sec-6-8">6.8. (2000) id3v2.4</a></li>
-<li><a href="#sec-6-9">6.9. (2000) MusicBrainz</a></li>
-<li><a href="#sec-6-10">6.10. (2001) Eric Kim — Purple</a></li>
-<li><a href="#sec-6-11">6.11. (2001) Tim Berners-Lee — Semantic Web</a></li>
-<li><a href="#sec-6-12">6.12. (2001) Tinderbox</a></li>
-<li><a href="#sec-6-13">6.13. (2003) Joshua Schachter — Del.icio.us</a></li>
-<li><a href="#sec-6-14">6.14. (2004) W3C — RDF / RDFS / OWL</a></li>
-<li><a href="#sec-6-15">6.15. (2007) DBpedia</a></li>
-<li><a href="#sec-6-16">6.16. (2007) Scrivener</a></li>
-<li><a href="#sec-6-17">6.17. (2008) Evernote</a></li>
-<li><a href="#sec-6-18">6.18. (2009) Fluidinfo</a></li>
-<li><a href="#sec-6-19">6.19. (2013) Ginko</a></li>
-<li><a href="#sec-6-20">6.20. Org-mode</a></li>
-<li><a href="#sec-6-21">6.21. Calibre</a></li>
-<li><a href="#sec-6-22">6.22. Smallest Federated Wiki</a></li>
-<li><a href="#sec-6-23">6.23. Chandler</a></li>
-<li><a href="#sec-6-24">6.24. CommonTag</a></li>
-<li><a href="#sec-6-25">6.25. Friendfeed</a></li>
-<li><a href="#sec-6-26">6.26. Locker</a></li>
-<li><a href="#sec-6-27">6.27. Singly</a></li>
-<li><a href="#sec-6-28">6.28. NEPOMUK</a></li>
-<li><a href="#sec-6-29">6.29. TiddlyWiki</a></li>
+<li><a href="#sec-6-8">6.8. (1996) Eric Freeman and David Gelertner — Lifestreams</a></li>
+<li><a href="#sec-6-9">6.9. (2000) id3v2.4</a></li>
+<li><a href="#sec-6-10">6.10. (2000) MusicBrainz</a></li>
+<li><a href="#sec-6-11">6.11. (2001) Eric Kim — Purple</a></li>
+<li><a href="#sec-6-12">6.12. (2001) Tim Berners-Lee — Semantic Web</a></li>
+<li><a href="#sec-6-13">6.13. (2001) Tinderbox</a></li>
+<li><a href="#sec-6-14">6.14. (2003) Joshua Schachter — Del.icio.us</a></li>
+<li><a href="#sec-6-15">6.15. (2004) W3C — RDF / RDFS / OWL</a></li>
+<li><a href="#sec-6-16">6.16. (2007) DBpedia</a></li>
+<li><a href="#sec-6-17">6.17. (2007) Scrivener</a></li>
+<li><a href="#sec-6-18">6.18. (2008) Evernote</a></li>
+<li><a href="#sec-6-19">6.19. (2009) Fluidinfo</a></li>
+<li><a href="#sec-6-20">6.20. (2013) Ginko</a></li>
+<li><a href="#sec-6-21">6.21. Org-mode</a></li>
+<li><a href="#sec-6-22">6.22. Calibre</a></li>
+<li><a href="#sec-6-23">6.23. Smallest Federated Wiki</a></li>
+<li><a href="#sec-6-24">6.24. Chandler</a></li>
+<li><a href="#sec-6-25">6.25. CommonTag</a></li>
+<li><a href="#sec-6-26">6.26. Friendfeed</a></li>
+<li><a href="#sec-6-27">6.27. Locker</a></li>
+<li><a href="#sec-6-28">6.28. Singly</a></li>
+<li><a href="#sec-6-29">6.29. NEPOMUK</a></li>
+<li><a href="#sec-6-30">6.30. TiddlyWiki</a></li>
 </ul>
 </li>
 <li><a href="#sec-7">7. Ссылки</a>
@@ -1268,7 +1269,11 @@ Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 
 Wiki: [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
 
-## (2000) id3v2.4<a id="sec-6-8" name="sec-6-8"></a>
+## (1996) Eric Freeman and David Gelertner — Lifestreams<a id="sec-6-8" name="sec-6-8"></a>
+
+Wiki: [Lifestreaming](https://en.wikipedia.org/wiki/Lifestreaming)
+
+## (2000) id3v2.4<a id="sec-6-9" name="sec-6-9"></a>
 
 Informal standard на теги для mp3 файлов. Не смотря на то, что
 структура метаданных хорошо прописана, по большому счету ее никто
@@ -1279,23 +1284,23 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 
 <http://id3.org/id3v2.4.0-frames>
 
-## (2000) MusicBrainz<a id="sec-6-9" name="sec-6-9"></a>
+## (2000) MusicBrainz<a id="sec-6-10" name="sec-6-10"></a>
 
 Отлично прописанная онтология для музыки. Last.fm забирает данные
 именно отсюда.
 
 <https://musicbrainz.org/>
 
-## (2001) Eric Kim — Purple<a id="sec-6-10" name="sec-6-10"></a>
+## (2001) Eric Kim — Purple<a id="sec-6-11" name="sec-6-11"></a>
 
 Подход к решению проблемы идентификации частей документа. Добавляет
 для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
-## (2001) Tim Berners-Lee — Semantic Web<a id="sec-6-11" name="sec-6-11"></a>
+## (2001) Tim Berners-Lee — Semantic Web<a id="sec-6-12" name="sec-6-12"></a>
 
-## (2001) Tinderbox<a id="sec-6-12" name="sec-6-12"></a>
+## (2001) Tinderbox<a id="sec-6-13" name="sec-6-13"></a>
 
 По сути &#x2013; mindmap. Есть заметки, у них есть классы (прототипы на
 местном сленге) и аттрибуты. Из классов можно делать иерархии.
@@ -1323,7 +1328,7 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 
 Release dates: ![img](//www.markbernstein.org/elements/Releases.jpg)
 
-## (2003) Joshua Schachter — Del.icio.us<a id="sec-6-13" name="sec-6-13"></a>
+## (2003) Joshua Schachter — Del.icio.us<a id="sec-6-14" name="sec-6-14"></a>
 
 Старая заметка про [delicious](https://delicious.com):
 
@@ -1375,16 +1380,16 @@ Release dates: ![img](//www.markbernstein.org/elements/Releases.jpg)
 > интерфейс для форума, то получится френдфид. Опять же очень
 > условно.
 
-## (2004) W3C — RDF / RDFS / OWL<a id="sec-6-14" name="sec-6-14"></a>
+## (2004) W3C — RDF / RDFS / OWL<a id="sec-6-15" name="sec-6-15"></a>
 
-## (2007) DBpedia<a id="sec-6-15" name="sec-6-15"></a>
+## (2007) DBpedia<a id="sec-6-16" name="sec-6-16"></a>
 
 Вытаскивает структурированные данные из википедии, конвертит их в
 RDF, позволяет делать запросы на SPARQL.
 
 Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
-## (2007) Scrivener<a id="sec-6-16" name="sec-6-16"></a>
+## (2007) Scrivener<a id="sec-6-17" name="sec-6-17"></a>
 
 Инструмент для написания текстов. Есть текстовый редактор и
 контроль версий. Есть хранилище связанных файлов и их отображение в
@@ -1396,26 +1401,26 @@ Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
 <http://www.literatureandlatte.com/scrivener.html>
 
-## (2008) Evernote<a id="sec-6-17" name="sec-6-17"></a>
+## (2008) Evernote<a id="sec-6-18" name="sec-6-18"></a>
 
 Подкаст с Пачиковым: [Рунетология 45](http://runetologia.podfm.ru/96/)
 
 Wiki: [Evernote](https://en.wikipedia.org/wiki/Evernote)
 
-## (2009) Fluidinfo<a id="sec-6-18" name="sec-6-18"></a>
+## (2009) Fluidinfo<a id="sec-6-19" name="sec-6-19"></a>
 
 У них очень прикольный [блог](http://blogs.fluidinfo.com/), если читать его с начала, а не с конца.
 
 <http://fluidinfo.com>
 
-## (2013) Ginko<a id="sec-6-19" name="sec-6-19"></a>
+## (2013) Ginko<a id="sec-6-20" name="sec-6-20"></a>
 
 Хороший. Умеет делать презентации и возвращать текст в виде
 json. Интересен в первую очередь интерфейсом.
 
 <https://gingkoapp.com>
 
-## Org-mode<a id="sec-6-20" name="sec-6-20"></a>
+## Org-mode<a id="sec-6-21" name="sec-6-21"></a>
 
 Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
 которому можно доверять, вполне можно жить с помощью текстовых
@@ -1423,25 +1428,25 @@ Outliner для emacs. Выяснилось, что пока нет хороше
 
 <http://orgmode.org/>
 
-## Calibre<a id="sec-6-21" name="sec-6-21"></a>
+## Calibre<a id="sec-6-22" name="sec-6-22"></a>
 
 Reference-mode в читалке. Решение проблемы идентификации для
 электронных книг.
 
 <https://calibre-ebook.com/>
 
-## Smallest Federated Wiki<a id="sec-6-22" name="sec-6-22"></a>
+## Smallest Federated Wiki<a id="sec-6-23" name="sec-6-23"></a>
 
 Создатель первой вики, [Ward Cunningham](https://en.wikipedia.org/wiki/Ward_Cunningham), делает федеративную
 вики. Страницы можно форкать и поддерживать локально свою версию.
 
 <http://fed.wiki.org>
 
-## Chandler<a id="sec-6-23" name="sec-6-23"></a>
+## Chandler<a id="sec-6-24" name="sec-6-24"></a>
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
-## CommonTag<a id="sec-6-24" name="sec-6-24"></a>
+## CommonTag<a id="sec-6-25" name="sec-6-25"></a>
 
 Теги на основе заголовков статей в википедии. Позволяют получить
 для тега хорошо прописанную семантику, в том числе на разных
@@ -1450,17 +1455,17 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 <http://microformats.org/wiki/CommonTag>
 
-## Friendfeed<a id="sec-6-25" name="sec-6-25"></a>
+## Friendfeed<a id="sec-6-26" name="sec-6-26"></a>
 
 Помимо всего прочего умел собирать данных из разных источников в
 одну ленту.
 
-## Locker<a id="sec-6-26" name="sec-6-26"></a>
+## Locker<a id="sec-6-27" name="sec-6-27"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту.
 
-## Singly<a id="sec-6-27" name="sec-6-27"></a>
+## Singly<a id="sec-6-28" name="sec-6-28"></a>
 
 Метасервис по собиранию данных из разных веб-сервисов в единую
 ленту. Singly ориентирован не только на собирание, но и на
@@ -1473,11 +1478,11 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
-## NEPOMUK<a id="sec-6-28" name="sec-6-28"></a>
+## NEPOMUK<a id="sec-6-29" name="sec-6-29"></a>
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
-## TiddlyWiki<a id="sec-6-29" name="sec-6-29"></a>
+## TiddlyWiki<a id="sec-6-30" name="sec-6-30"></a>
 
 <http://tiddlywiki.com/>
 
