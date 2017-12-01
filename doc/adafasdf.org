@@ -1120,7 +1120,14 @@
 
 ** (1993) LDAP
 
+   LDAP интересен своей способностью строить классицификаторы. Там
+   есть классы, наследование, всякие прочие штуки. Для 1993 года
+   неплохо.
+
    Wiki: [[https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol][LDAP]]
+
+   [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
+
 
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
@@ -1355,6 +1362,9 @@
    [[http://www.ischool.berkeley.edu/][UC Berkeley School of Information]]
    - [[https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus][INFO202: Information Organization and Retrieval (Fall 2014)]]
 
+   [[https://ischool.uw.edu/][University of Washington Information School]]
+   - [[http://kftf.ischool.washington.edu/][Keeping Found Things Found]]
+
 ** Термины
 
    - [[https://en.wikipedia.org/wiki/Personal_information_manager][Personal information manager]]
@@ -1380,7 +1390,6 @@
    - [[https://en.wikipedia.org/wiki/Vannevar_Bush][Vannevar Bush]]
    - [[https://en.wikipedia.org/wiki/Andries_van_Dam][Andries van Dam]]
    - [[https://en.wikipedia.org/wiki/Ted_Nelson][Ted Nelson]]
-
 
 ** Книги
 

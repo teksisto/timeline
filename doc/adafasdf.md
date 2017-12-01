@@ -1267,7 +1267,13 @@ Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 
 ## (1993) LDAP<a id="sec-6-7" name="sec-6-7"></a>
 
+LDAP интересен своей способностью строить классицификаторы. Там
+есть классы, наследование, всякие прочие штуки. Для 1993 года
+неплохо.
+
 Wiki: [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol)
+
+[LDAP for Rocket Scientists](http://www.zytrax.com/books/ldap/)
 
 ## (1996) Eric Freeman and David Gelertner — Lifestreams<a id="sec-6-8" name="sec-6-8"></a>
 
@@ -1499,6 +1505,9 @@ Reference-mode в читалке. Решение проблемы идентиф
 
 [UC Berkeley School of Information](http://www.ischool.berkeley.edu/)
 -   [INFO202: Information Organization and Retrieval (Fall 2014)](https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus)
+
+[University of Washington Information School](https://ischool.uw.edu/)
+-   [Keeping Found Things Found](http://kftf.ischool.washington.edu/)
 
 ## Термины<a id="sec-7-2" name="sec-7-2"></a>
 
