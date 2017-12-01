@@ -2,161 +2,161 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgbdccea9">1. Предпосылки</a></li>
-<li><a href="#org2067989">2. Задачи инфоорга</a>
+<li><a href="#orga3a3979">1. Предпосылки</a></li>
+<li><a href="#orgd650fc7">2. Задачи инфоорга</a>
 <ul>
-<li><a href="#org662ad94">2.1. Захват</a></li>
-<li><a href="#org0fa7473">2.2. Идентификация</a></li>
-<li><a href="#org98b6db1">2.3. Хранение</a></li>
-<li><a href="#org0e69a55">2.4. Классификация</a></li>
-<li><a href="#org839f06f">2.5. Структурирование</a></li>
-<li><a href="#orgcf182b4">2.6. Поиск</a></li>
-<li><a href="#org7e1104d">2.7. Репрезентация</a></li>
-<li><a href="#org11f69a1">2.8. Аннотирование</a></li>
-<li><a href="#orge27ca7d">2.9. Переносимость</a></li>
+<li><a href="#org3a3e668">2.1. Захват</a></li>
+<li><a href="#org15d60de">2.2. Идентификация</a></li>
+<li><a href="#org85fab87">2.3. Хранение</a></li>
+<li><a href="#org3dbe0ac">2.4. Классификация</a></li>
+<li><a href="#orgf55c4b6">2.5. Структурирование</a></li>
+<li><a href="#orgade779e">2.6. Поиск</a></li>
+<li><a href="#org2c78c01">2.7. Репрезентация</a></li>
+<li><a href="#orgb859cd4">2.8. Аннотирование</a></li>
+<li><a href="#orgcc391eb">2.9. Переносимость</a></li>
 </ul>
 </li>
-<li><a href="#org48e8777">3. Чего мне хочется от информационного менеджера</a>
+<li><a href="#org8507562">3. Чего мне хочется от информационного менеджера</a>
 <ul>
-<li><a href="#org8824141">3.1. Оглавления для источников</a></li>
-<li><a href="#org0752a63">3.2. Цитатник</a>
+<li><a href="#org39ffc4d">3.1. Оглавления для источников</a></li>
+<li><a href="#orgadd7aaf">3.2. Цитатник</a>
 <ul>
-<li><a href="#orgb9e4413">3.2.1. Привязка цитат к оглавлению книги</a></li>
-<li><a href="#org96fe386">3.2.2. Заголовки для цитат</a></li>
-<li><a href="#org0202d7f">3.2.3. Форматирование внутри цитат</a></li>
-<li><a href="#org1738b6a">3.2.4. Параллельные цитатники</a></li>
-<li><a href="#org470ffb7">3.2.5. Колоды</a></li>
-<li><a href="#orge201ff0">3.2.6. Рифмы</a></li>
-<li><a href="#org5cef1aa">3.2.7. Компартментализм</a></li>
+<li><a href="#orgc478131">3.2.1. Привязка цитат к оглавлению книги</a></li>
+<li><a href="#org402594d">3.2.2. Заголовки для цитат</a></li>
+<li><a href="#org28ba7a2">3.2.3. Форматирование внутри цитат</a></li>
+<li><a href="#orgc230a2f">3.2.4. Параллельные цитатники</a></li>
+<li><a href="#org5e64c7f">3.2.5. Колоды</a></li>
+<li><a href="#org91a5b42">3.2.6. Рифмы</a></li>
+<li><a href="#org7c4a719">3.2.7. Компартментализм</a></li>
 </ul>
 </li>
-<li><a href="#org6aa7ff0">3.3. Конспекты</a></li>
-<li><a href="#orgcd7bd15">3.4. События</a></li>
-<li><a href="#orgf816c12">3.5. Словарь</a>
+<li><a href="#org51d2570">3.3. События</a></li>
+<li><a href="#orgd9778db">3.4. Словарь</a>
 <ul>
-<li><a href="#org6c0e13d">3.5.1. Личный словарь терминов</a></li>
-<li><a href="#orgc7a6b0b">3.5.2. Словарь иностранных слов</a></li>
+<li><a href="#org690ae9e">3.4.1. Личный словарь терминов</a></li>
+<li><a href="#org9ebcd11">3.4.2. Словарь иностранных слов</a></li>
 </ul>
 </li>
-<li><a href="#org0fa505a">3.6. Контекст</a>
+<li><a href="#org390ed87">3.5. Контекст</a>
 <ul>
-<li><a href="#org992f346">3.6.1. Заголовочный блок</a></li>
-<li><a href="#org31b8120">3.6.2. Форма быстрого поста</a></li>
-<li><a href="#org06b9bd2">3.6.3. Хвост</a></li>
-<li><a href="#org2a4ddfc">3.6.4. Контекст есть у каждого ресурса</a></li>
-<li><a href="#org4b13aa8">3.6.5. Контекст как строительный блок интерфейса</a></li>
-<li><a href="#org18e798e">3.6.6. Динамическое дерево как вложенные контексты</a></li>
-<li><a href="#org9e04998">3.6.7. Вопросы</a></li>
+<li><a href="#orgc581b60">3.5.1. Заголовочный блок</a></li>
+<li><a href="#orgc2a921f">3.5.2. Форма быстрого поста</a></li>
+<li><a href="#org39ca228">3.5.3. Хвост</a></li>
+<li><a href="#orgf7f95e4">3.5.4. Контекст есть у каждого ресурса</a></li>
+<li><a href="#org58d333b">3.5.5. Контекст как строительный блок интерфейса</a></li>
+<li><a href="#orgc4694b9">3.5.6. Динамическое дерево как вложенные контексты</a></li>
+<li><a href="#org606a93c">3.5.7. Вопросы</a></li>
 </ul>
 </li>
-<li><a href="#orge77c9ba">3.7. Параллельные тексты</a></li>
-<li><a href="#org7b50513">3.8. Блочный текстовый редактор</a>
+<li><a href="#org4fc6762">3.6. Параллельные тексты</a></li>
+<li><a href="#orgcc751fc">3.7. Блочный текстовый редактор</a>
 <ul>
-<li><a href="#orgc2b1c6a">3.8.1. Зачем бить на блочные элементы</a></li>
-<li><a href="#orgdee6fcf">3.8.2. Post with input/output</a></li>
+<li><a href="#org72b82da">3.7.1. Зачем бить на блочные элементы</a></li>
+<li><a href="#orgab96e86">3.7.2. Post with input/output</a></li>
 </ul>
 </li>
-<li><a href="#orgcce6192">3.9. Импорт данных из веб-сервисов</a></li>
-<li><a href="#org95b583a">3.10. Динамические деревья</a>
+<li><a href="#org8bd50ca">3.8. Импорт данных из веб-сервисов</a></li>
+<li><a href="#orgf3d0734">3.9. Динамические деревья</a>
 <ul>
-<li><a href="#org656fa8d">3.10.1. Проблемы иерархических файловых систем</a></li>
-<li><a href="#orgfe7a227">3.10.2. Замена одного дерево на множество</a></li>
-<li><a href="#org8fea479">3.10.3. Сохранение файловой семантики</a></li>
+<li><a href="#orgaa04a68">3.9.1. Проблемы иерархических файловых систем</a></li>
+<li><a href="#org0e4203b">3.9.2. Замена одного дерево на множество</a></li>
+<li><a href="#org39b4d14">3.9.3. Сохранение файловой семантики</a></li>
+</ul>
+</li>
+<li><a href="#org5d756d8">3.10. Конспекты</a></li>
+</ul>
+</li>
+<li><a href="#org5fa6b57">4. Поиск подхода к реализации</a>
+<ul>
+<li><a href="#org7f33337">4.1. Декомпозиция</a>
+<ul>
+<li><a href="#org6b8da55">4.1.1. Блог</a></li>
+<li><a href="#orgf7a7456">4.1.2. Оценка количества триплетов при импорте книги</a></li>
+</ul>
+</li>
+<li><a href="#org33733d0">4.2. Базовые определения</a>
+<ul>
+<li><a href="#orgf76c8f7">4.2.1. Ресурс</a></li>
+<li><a href="#orga5167a8">4.2.2. Представление</a></li>
+<li><a href="#orga4f3365">4.2.3. Атрибут</a></li>
+<li><a href="#orgd618f7b">4.2.4. Адаптер</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#orgbb60018">4. Поиск подхода к реализации</a>
+<li><a href="#orgef84e1b">5. Как это все может выглядеть на практике</a>
 <ul>
-<li><a href="#org3666de5">4.1. Декомпозиция</a>
+<li><a href="#orgea0cef9">5.1. Реляционный подход</a>
 <ul>
-<li><a href="#org907faff">4.1.1. Блог</a></li>
-<li><a href="#org0da8631">4.1.2. Оценка количества триплетов при импорте книги</a></li>
+<li><a href="#orgab09b5c">5.1.1. Конспект</a></li>
+<li><a href="#org88e0f53">5.1.2. Цитаты, разложенные по главам</a></li>
 </ul>
 </li>
-<li><a href="#orgad6a22e">4.2. Базовые определения</a>
+<li><a href="#org2f1c061">5.2. Обычный реляционный подход + наведенная семантика</a></li>
+<li><a href="#org5c6a337">5.3. Семантика</a>
 <ul>
-<li><a href="#org13eb126">4.2.1. Ресурс</a></li>
-<li><a href="#orga5272ca">4.2.2. Представление</a></li>
-<li><a href="#org7c6b6a4">4.2.3. Атрибут</a></li>
-<li><a href="#org5a783a8">4.2.4. Адаптер</a></li>
+<li><a href="#org9b93771">5.3.1. OpenLink Virtuoso</a></li>
+<li><a href="#org527ce08">5.3.2. AllegroGraph</a></li>
 </ul>
 </li>
+<li><a href="#orgfe2497b">5.4. Графовая база данных</a></li>
 </ul>
 </li>
-<li><a href="#orga8b36b1">5. Как это все может выглядеть на практике</a>
+<li><a href="#org54d7f2f">6. История</a>
 <ul>
-<li><a href="#orgb14a43c">5.1. Реляционный подход</a>
-<ul>
-<li><a href="#org19f2135">5.1.1. Конспект</a></li>
-<li><a href="#org2f04921">5.1.2. Цитаты, разложенные по главам</a></li>
+<li><a href="#org4b4dea7">6.1. (1945) Vannevar Bush — As We May Think</a></li>
+<li><a href="#orga74294b">6.2. (1967) Andries van Dam, Ted Nelson — Hypertext Editing System</a></li>
+<li><a href="#org0c1ba3f">6.3. (1968) Douglas Engelbart — oN-Line System</a></li>
+<li><a href="#orge7b3240">6.4. (1968) Andries van Dam — File Retrieval and Editing System</a></li>
+<li><a href="#orgc1d2407">6.5. (1985) Intermedia</a></li>
+<li><a href="#org54753c5">6.6. (1991) Gifford — Semantic file systems</a></li>
+<li><a href="#org0d02ee9">6.7. (1993) LDAP</a></li>
+<li><a href="#orgd3289bb">6.8. (1996) Eric Freeman and David Gelertner — Lifestreams</a></li>
+<li><a href="#org0dc4041">6.9. (2000) id3v2.4</a></li>
+<li><a href="#org7371df9">6.10. (2000) MusicBrainz</a></li>
+<li><a href="#orgf8813f1">6.11. (2001) Eric Kim — Purple</a></li>
+<li><a href="#org0b73dea">6.12. (2001) Tim Berners-Lee — Semantic Web</a></li>
+<li><a href="#orge9f5158">6.13. (2001) Tinderbox</a></li>
+<li><a href="#orgee45fbe">6.14. (2003) Joshua Schachter — Del.icio.us</a></li>
+<li><a href="#orge39839e">6.15. (2004) W3C — RDF / RDFS / OWL</a></li>
+<li><a href="#org8c5b64d">6.16. (2007) DBpedia</a></li>
+<li><a href="#orgd6b8b08">6.17. (2007) Scrivener</a></li>
+<li><a href="#orgb00c17b">6.18. (2008) Evernote</a></li>
+<li><a href="#org9a7d7be">6.19. (2009) Fluidinfo</a></li>
+<li><a href="#org91d28ee">6.20. (2013) Ginko</a></li>
+<li><a href="#org82cf1ca">6.21. Org-mode</a></li>
+<li><a href="#orge4e4eeb">6.22. Calibre</a></li>
+<li><a href="#org45fcff0">6.23. Smallest Federated Wiki</a></li>
+<li><a href="#org75e74ee">6.24. Chandler</a></li>
+<li><a href="#org24a3a85">6.25. CommonTag</a></li>
+<li><a href="#orgb2b03df">6.26. Friendfeed</a></li>
+<li><a href="#orga677d15">6.27. Locker</a></li>
+<li><a href="#org84c522f">6.28. Singly</a></li>
+<li><a href="#org8ec98fe">6.29. NEPOMUK</a></li>
+<li><a href="#org7e245d4">6.30. TiddlyWiki</a></li>
 </ul>
 </li>
-<li><a href="#org1b0be14">5.2. Обычный реляционный подход + наведенная семантика</a></li>
-<li><a href="#org0d59c97">5.3. Семантика</a>
+<li><a href="#org0013ef2">7. Ссылки</a>
 <ul>
-<li><a href="#org51b3479">5.3.1. OpenLink Virtuoso</a></li>
-<li><a href="#org335f466">5.3.2. AllegroGraph</a></li>
+<li><a href="#org032cb47">7.1. Учебные заведения</a></li>
+<li><a href="#org1f707b2">7.2. Термины</a></li>
+<li><a href="#org56fab07">7.3. Люди</a></li>
+<li><a href="#org42bb6d3">7.4. Книги</a></li>
+<li><a href="#org7a09973">7.5. Ассоциации</a>
+<ul>
+<li><a href="#org2d58e95">7.5.1. Association for Information Science and Technology</a></li>
 </ul>
 </li>
-<li><a href="#org6a4878e">5.4. Графовая база данных</a></li>
+<li><a href="#org3c88c70">7.6. urbansheep</a>
+<ul>
+<li><a href="#org4b1fb9c">7.6.1. LiveJournal</a></li>
+<li><a href="#orgd1abd48">7.6.2. FriendFeed</a></li>
+<li><a href="#org4065333">7.6.3. Pinboard</a></li>
 </ul>
 </li>
-<li><a href="#org4458ff0">6. История</a>
+<li><a href="#orga65e811">7.7. Конференции</a>
 <ul>
-<li><a href="#org09089b3">6.1. (1945) Vannevar Bush — As We May Think</a></li>
-<li><a href="#org58186bd">6.2. (1967) Andries van Dam, Ted Nelson — Hypertext Editing System</a></li>
-<li><a href="#org8a0eb89">6.3. (1968) Douglas Engelbart — oN-Line System</a></li>
-<li><a href="#orgbc03a56">6.4. (1968) Andries van Dam — File Retrieval and Editing System</a></li>
-<li><a href="#orgb77ef58">6.5. (1985) Intermedia</a></li>
-<li><a href="#orgc751af4">6.6. (1991) Gifford — Semantic file systems</a></li>
-<li><a href="#orgda8116d">6.7. (1993) LDAP</a></li>
-<li><a href="#org59b1a39">6.8. (1996) Eric Freeman and David Gelertner — Lifestreams</a></li>
-<li><a href="#org6e30e0b">6.9. (2000) id3v2.4</a></li>
-<li><a href="#org73421bb">6.10. (2000) MusicBrainz</a></li>
-<li><a href="#org63ba239">6.11. (2001) Eric Kim — Purple</a></li>
-<li><a href="#org3edb2ef">6.12. (2001) Tim Berners-Lee — Semantic Web</a></li>
-<li><a href="#org67cc4c4">6.13. (2001) Tinderbox</a></li>
-<li><a href="#org9566c75">6.14. (2003) Joshua Schachter — Del.icio.us</a></li>
-<li><a href="#orgf6401cc">6.15. (2004) W3C — RDF / RDFS / OWL</a></li>
-<li><a href="#orgca7680c">6.16. (2007) DBpedia</a></li>
-<li><a href="#orgf31a034">6.17. (2007) Scrivener</a></li>
-<li><a href="#org6f10669">6.18. (2008) Evernote</a></li>
-<li><a href="#org8e983c6">6.19. (2009) Fluidinfo</a></li>
-<li><a href="#orgb0e57fd">6.20. (2013) Ginko</a></li>
-<li><a href="#orgbadd0ed">6.21. Org-mode</a></li>
-<li><a href="#org3eb5d55">6.22. Calibre</a></li>
-<li><a href="#org71b6b9e">6.23. Smallest Federated Wiki</a></li>
-<li><a href="#org2a7be3a">6.24. Chandler</a></li>
-<li><a href="#org35f8497">6.25. CommonTag</a></li>
-<li><a href="#org378ade0">6.26. Friendfeed</a></li>
-<li><a href="#org862930a">6.27. Locker</a></li>
-<li><a href="#orgdddac38">6.28. Singly</a></li>
-<li><a href="#org2c6a4ab">6.29. NEPOMUK</a></li>
-<li><a href="#orgef39e28">6.30. TiddlyWiki</a></li>
-</ul>
-</li>
-<li><a href="#org8cd878e">7. Ссылки</a>
-<ul>
-<li><a href="#org8af6057">7.1. Учебные заведения</a></li>
-<li><a href="#org86cd5ed">7.2. Термины</a></li>
-<li><a href="#orge4691f0">7.3. Люди</a></li>
-<li><a href="#org58142d9">7.4. Книги</a></li>
-<li><a href="#org40d26f6">7.5. Ассоциации</a>
-<ul>
-<li><a href="#org01d9e21">7.5.1. Association for Information Science and Technology</a></li>
-</ul>
-</li>
-<li><a href="#orgcc7a55e">7.6. urbansheep</a>
-<ul>
-<li><a href="#orgc2291ac">7.6.1. LiveJournal</a></li>
-<li><a href="#org21d33f0">7.6.2. FriendFeed</a></li>
-<li><a href="#orgf8e5b2b">7.6.3. Pinboard</a></li>
-</ul>
-</li>
-<li><a href="#orgd5031d0">7.7. Конференции</a>
-<ul>
-<li><a href="#orgfd73487">7.7.1. Personal Digital Archiving Conference</a></li>
+<li><a href="#org6669583">7.7.1. Personal Digital Archiving Conference</a></li>
 </ul>
 </li>
 </ul>
@@ -165,7 +165,7 @@
 </div>
 </div>
 
-<a id="orgbdccea9"></a>
+<a id="orga3a3979"></a>
 
 # Предпосылки
 
@@ -177,7 +177,7 @@
 для создания решений.
 
 
-<a id="org2067989"></a>
+<a id="orgd650fc7"></a>
 
 # Задачи инфоорга
 
@@ -200,7 +200,7 @@
 > интернете этого еще не произошло, здесь все только начинается.
 
 
-<a id="org662ad94"></a>
+<a id="org3a3e668"></a>
 
 ## Захват
 
@@ -220,7 +220,7 @@ Keeping is not organizing.
 автоматически должно захватываться автоматически.
 
 
-<a id="org0fa7473"></a>
+<a id="org15d60de"></a>
 
 ## Идентификация
 
@@ -243,7 +243,7 @@ Keeping is not organizing.
 но и части этих документов.
 
 
-<a id="org98b6db1"></a>
+<a id="org85fab87"></a>
 
 ## Хранение
 
@@ -260,7 +260,7 @@ Keeping is not organizing.
 один - RDF.
 
 
-<a id="org0e69a55"></a>
+<a id="org3dbe0ac"></a>
 
 ## Классификация
 
@@ -276,7 +276,7 @@ Keeping is not organizing.
 остальное пускай лежит как раньше.
 
 
-<a id="org839f06f"></a>
+<a id="orgf55c4b6"></a>
 
 ## Структурирование
 
@@ -293,7 +293,7 @@ Keeping is not organizing.
 Сохраненные запросы / Деревья / Контексты
 
 
-<a id="orgcf182b4"></a>
+<a id="orgade779e"></a>
 
 ## Поиск
 
@@ -305,7 +305,7 @@ Keeping is not organizing.
 > на машинах. (urbansheep)
 
 
-<a id="org7e1104d"></a>
+<a id="org2c78c01"></a>
 
 ## Репрезентация
 
@@ -314,7 +314,7 @@ Keeping is not organizing.
 Как нарисовать на экране все то, что у нас есть в базе.
 
 
-<a id="org11f69a1"></a>
+<a id="orgb859cd4"></a>
 
 ## Аннотирование
 
@@ -338,7 +338,7 @@ uuid.
 идентификации. Можно добавлять комментарии к каждому параграфу.
 
 
-<a id="orge27ca7d"></a>
+<a id="orgcc391eb"></a>
 
 ## Переносимость
 
@@ -350,12 +350,12 @@ uuid.
 это делать.
 
 
-<a id="org48e8777"></a>
+<a id="org8507562"></a>
 
 # Чего мне хочется от информационного менеджера
 
 
-<a id="org8824141"></a>
+<a id="org39ffc4d"></a>
 
 ## Оглавления для источников
 
@@ -377,19 +377,19 @@ uuid.
 -   FictionBook (опять xml)
 
 
-<a id="org0752a63"></a>
+<a id="orgadd7aaf"></a>
 
 ## Цитатник
 
 
-<a id="orgb9e4413"></a>
+<a id="orgc478131"></a>
 
 ### Привязка цитат к оглавлению книги
 
 Цитаты привязываются к оглавлению источника.
 
 
-<a id="org96fe386"></a>
+<a id="org402594d"></a>
 
 ### Заголовки для цитат
 
@@ -397,7 +397,7 @@ uuid.
 делаю заголовки в формате "#{автор} про #{тема}".
 
 
-<a id="org0202d7f"></a>
+<a id="org28ba7a2"></a>
 
 ### Форматирование внутри цитат
 
@@ -407,7 +407,7 @@ uuid.
 Паттерн "куда смотреть".
 
 
-<a id="org1738b6a"></a>
+<a id="orgc230a2f"></a>
 
 ### Параллельные цитатники
 
@@ -422,7 +422,7 @@ uuid.
 цитат.
 
 
-<a id="org470ffb7"></a>
+<a id="org5e64c7f"></a>
 
 ### Колоды
 
@@ -432,7 +432,7 @@ uuid.
 произвольные цитаты в группу и добавить к ней описание.
 
 
-<a id="orge201ff0"></a>
+<a id="org91a5b42"></a>
 
 ### Рифмы
 
@@ -503,7 +503,7 @@ uuid.
 > (Robert M. Pirsig, [Zen and the Art of Motorcycle Maintenance](http://design.caltech.edu/Misc/pirsig.html))
 
 
-<a id="org5cef1aa"></a>
+<a id="org7c4a719"></a>
 
 ### Компартментализм
 
@@ -570,14 +570,7 @@ uuid.
 > (Солженицин, "В круге первом")
 
 
-<a id="org6aa7ff0"></a>
-
-## Конспекты
-
-Конспект точно так же привязывается к оглавлению, как и цитаты.
-
-
-<a id="orgcd7bd15"></a>
+<a id="org51d2570"></a>
 
 ## События
 
@@ -604,12 +597,12 @@ uuid.
 ![img](../images/timeline/timeline1.png)
 
 
-<a id="orgf816c12"></a>
+<a id="orgd9778db"></a>
 
 ## Словарь
 
 
-<a id="org6c0e13d"></a>
+<a id="org690ae9e"></a>
 
 ### Личный словарь терминов
 
@@ -618,7 +611,7 @@ uuid.
 википедию.
 
 
-<a id="orgc7a6b0b"></a>
+<a id="org9ebcd11"></a>
 
 ### Словарь иностранных слов
 
@@ -659,7 +652,7 @@ uuid.
 ![img](../images/words/words.png)
 
 
-<a id="org0fa505a"></a>
+<a id="org390ed87"></a>
 
 ## Контекст
 
@@ -696,7 +689,7 @@ uuid.
 -   хвост = массив ресурсов
 
 
-<a id="org992f346"></a>
+<a id="orgc581b60"></a>
 
 ### Заголовочный блок
 
@@ -715,7 +708,7 @@ uuid.
 и зачем.
 
 
-<a id="org31b8120"></a>
+<a id="orgc2a921f"></a>
 
 ### Форма быстрого поста
 
@@ -725,7 +718,7 @@ uuid.
 записям.
 
 
-<a id="org06b9bd2"></a>
+<a id="org39ca228"></a>
 
 ### Хвост
 
@@ -740,7 +733,7 @@ uuid.
 правило мне хочется читать его с начала.
 
 
-<a id="org2a4ddfc"></a>
+<a id="orgf7f95e4"></a>
 
 ### Контекст есть у каждого ресурса
 
@@ -766,7 +759,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 случайные связи
 
 
-<a id="org4b13aa8"></a>
+<a id="org58d333b"></a>
 
 ### Контекст как строительный блок интерфейса
 
@@ -776,7 +769,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 вытаскивает сущности из базы и показывает в хедере статистику.
 
 
-<a id="org18e798e"></a>
+<a id="orgc4694b9"></a>
 
 ### Динамическое дерево как вложенные контексты
 
@@ -799,7 +792,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 представлении весь контекст до заголовка со ссылкой.
 
 
-<a id="org9e04998"></a>
+<a id="org606a93c"></a>
 
 ### Вопросы
 
@@ -812,7 +805,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 Ничем не отличаются. Да, интерфейсом.
 
 
-<a id="orge77c9ba"></a>
+<a id="org4fc6762"></a>
 
 ## Параллельные тексты
 
@@ -843,7 +836,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 -   [Ted Nelson &#x2013; My parallel universe](http://ted.hyperland.com/myU/)
 
 
-<a id="org7b50513"></a>
+<a id="orgcc751fc"></a>
 
 ## Блочный текстовый редактор
 
@@ -852,7 +845,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 веб-публикации"](http://glebkalinin.ru/content-management-vs-web-publishing/).
 
 
-<a id="orgc2b1c6a"></a>
+<a id="org72b82da"></a>
 
 ### Зачем бить на блочные элементы
 
@@ -878,7 +871,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 которое нужно преобразовать в картинку.
 
 
-<a id="orgdee6fcf"></a>
+<a id="orgab96e86"></a>
 
 ### Post with input/output
 
@@ -886,7 +879,7 @@ cross-referencing, ассоциативные связи и прочее слу�
 этот текст.
 
 
-<a id="orgcce6192"></a>
+<a id="org8bd50ca"></a>
 
 ## Импорт данных из веб-сервисов
 
@@ -903,12 +896,12 @@ Locker, Memolane, FriendFeed. В настоящий момент все закр
 разных сервисов надо приводить к одному знаменателю.
 
 
-<a id="org95b583a"></a>
+<a id="orgf3d0734"></a>
 
 ## Динамические деревья
 
 
-<a id="org656fa8d"></a>
+<a id="orgaa04a68"></a>
 
 ### Проблемы иерархических файловых систем
 
@@ -927,7 +920,7 @@ Locker, Memolane, FriendFeed. В настоящий момент все закр
 меняется структура.
 
 
-<a id="orgfe7a227"></a>
+<a id="org0e4203b"></a>
 
 ### Замена одного дерево на множество
 
@@ -939,7 +932,7 @@ Locker, Memolane, FriendFeed. В настоящий момент все закр
 отображения коллекции.
 
 
-<a id="org8fea479"></a>
+<a id="org39b4d14"></a>
 
 ### Сохранение файловой семантики
 
@@ -971,19 +964,31 @@ Locker, Memolane, FriendFeed. В настоящий момент все закр
     Либо это какой-то менеджер hard links.
 
 
-<a id="orgbb60018"></a>
+<a id="org5d756d8"></a>
+
+## Конспекты
+
+Конспект точно так же привязывается к оглавлению, как и
+цитаты.
+
+В итоге к оглавлению привязываются: сам текст с возможностью
+комментирования любого параграфа и отсылками к заметкам, цитаты,
+новые слова, события, ссылки, карточки персоналий.
+
+
+<a id="org5fa6b57"></a>
 
 # Поиск подхода к реализации
 
 Самое вменяемое решение, которое я вижу &#x2013; это [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework).
 
 
-<a id="org3666de5"></a>
+<a id="org7f33337"></a>
 
 ## Декомпозиция
 
 
-<a id="org907faff"></a>
+<a id="org6b8da55"></a>
 
 ### Блог
 
@@ -1073,7 +1078,7 @@ Locker, Memolane, FriendFeed. В настоящий момент все закр
 другого. Все упирается в модель безопастности.
 
 
-<a id="org0da8631"></a>
+<a id="orgf7a7456"></a>
 
 ### Оценка количества триплетов при импорте книги
 
@@ -1114,12 +1119,12 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 30k триплетов на одну книгу. На 1k книг &#x2013; 30 000 000 триплетов.
 
 
-<a id="orgad6a22e"></a>
+<a id="org33733d0"></a>
 
 ## Базовые определения
 
 
-<a id="org13eb126"></a>
+<a id="orgf76c8f7"></a>
 
 ### Ресурс
 
@@ -1143,7 +1148,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 контента, устанавливается некий пустой адаптер.
 
 
-<a id="orga5272ca"></a>
+<a id="orga5167a8"></a>
 
 ### Представление
 
@@ -1177,7 +1182,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
     мышки на ссылку появляется карточка во всплывающем окне.
 
 
-<a id="org7c6b6a4"></a>
+<a id="orga4f3365"></a>
 
 ### Атрибут
 
@@ -1189,7 +1194,7 @@ hasPart / isPartOf. Формула: `2 * n * (d + 1)` Каждый блочны�
 образовывают триплет.
 
 
-<a id="org5a783a8"></a>
+<a id="orgd618f7b"></a>
 
 ### Адаптер
 
@@ -1222,7 +1227,7 @@ NSS &#x2013; namespace spicific string. Позволяет однозначно 
 операции.
 
 
-<a id="orga8b36b1"></a>
+<a id="orgef84e1b"></a>
 
 # Как это все может выглядеть на практике
 
@@ -1230,7 +1235,7 @@ RDF &#x2013; это идея, что данные хранятся в графе
 управлять им можно по-разному.
 
 
-<a id="orgb14a43c"></a>
+<a id="orgea0cef9"></a>
 
 ## Реляционный подход
 
@@ -1265,7 +1270,7 @@ RDF &#x2013; это идея, что данные хранятся в графе
 вообще начинается вся семантика. Потом все нормально.
 
 
-<a id="org19f2135"></a>
+<a id="orgab09b5c"></a>
 
 ### Конспект
 
@@ -1290,7 +1295,7 @@ RDF &#x2013; это идея, что данные хранятся в графе
 базы элементами типа `Paragraph`, `Section` или `List`.
 
 
-<a id="org2f04921"></a>
+<a id="org88e0f53"></a>
 
 ### Цитаты, разложенные по главам
 
@@ -1324,7 +1329,7 @@ RDF &#x2013; это идея, что данные хранятся в графе
 который хранит список элементов класса `Quote`, который нам и нужен.
 
 
-<a id="org1b0be14"></a>
+<a id="org2f1c061"></a>
 
 ## Обычный реляционный подход + наведенная семантика
 
@@ -1346,7 +1351,7 @@ livejournal, и поле "current mood" приходится класть пря
 записи, потому что мы не можем его добавить не программируя.
 
 
-<a id="org0d59c97"></a>
+<a id="org5c6a337"></a>
 
 ## Семантика
 
@@ -1357,14 +1362,14 @@ livejournal, и поле "current mood" приходится класть пря
 связанными ресурсами.
 
 
-<a id="org51b3479"></a>
+<a id="org9b93771"></a>
 
 ### OpenLink Virtuoso
 
 <http://virtuoso.openlinksw.com/>
 
 
-<a id="org335f466"></a>
+<a id="org527ce08"></a>
 
 ### AllegroGraph
 
@@ -1375,7 +1380,7 @@ livejournal, и поле "current mood" приходится класть пря
 есть биндинги для Common Lisp и курсы по изучению Common Lisp.
 
 
-<a id="org6a4878e"></a>
+<a id="orgfe2497b"></a>
 
 ## Графовая база данных
 
@@ -1413,12 +1418,12 @@ dbpedia.
 Обертка для ruby: [neo4jrb](https://github.com/neo4jrb/neo4j) ([docs](https://neo4jrb.readthedocs.io/en/7.1.x/) / [блог на neo4jrb за 10 минут](https://www.youtube.com/watch?v=bDjbqRL9HcM))
 
 
-<a id="org4458ff0"></a>
+<a id="org54d7f2f"></a>
 
 # История
 
 
-<a id="org09089b3"></a>
+<a id="org4b4dea7"></a>
 
 ## (1945) Vannevar Bush — As We May Think
 
@@ -1427,14 +1432,14 @@ The Atlantic: [As We May Think](http://www.theatlantic.com/magazine/archive/1945
 Wikipedia: [Memex](https://en.wikipedia.org/wiki/Memex)
 
 
-<a id="org58186bd"></a>
+<a id="orga74294b"></a>
 
 ## (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
 Wiki: [HES](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 
 
-<a id="org8a0eb89"></a>
+<a id="org0c1ba3f"></a>
 
 ## (1968) Douglas Engelbart — oN-Line System
 
@@ -1443,14 +1448,14 @@ Wiki: [The Mother of All Demos](https://en.wikipedia.org/wiki/The_Mother_of_All_
 Видео: <http://www.1968demo.org/>
 
 
-<a id="orgbc03a56"></a>
+<a id="orge7b3240"></a>
 
 ## (1968) Andries van Dam — File Retrieval and Editing System
 
 Wiki: [FRESS](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 
 
-<a id="orgb77ef58"></a>
+<a id="orgc1d2407"></a>
 
 ## (1985) Intermedia
 
@@ -1464,7 +1469,7 @@ Wiki: [FRESS](https://en.wikipedia.org/wiki/Hypertext_Editing_System)
 Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 
 
-<a id="orgc751af4"></a>
+<a id="org54753c5"></a>
 
 ## (1991) Gifford — Semantic file systems
 
@@ -1486,7 +1491,7 @@ Wiki: [Intermedia](https://en.wikipedia.org/wiki/Intermedia_(hypertext))
 > виртуальных файловых систем.
 
 
-<a id="orgda8116d"></a>
+<a id="org0d02ee9"></a>
 
 ## (1993) LDAP
 
@@ -1499,14 +1504,14 @@ Wiki: [LDAP](https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
 [LDAP for Rocket Scientists](http://www.zytrax.com/books/ldap/)
 
 
-<a id="org59b1a39"></a>
+<a id="orgd3289bb"></a>
 
 ## (1996) Eric Freeman and David Gelertner — Lifestreams
 
 Wiki: [Lifestreaming](https://en.wikipedia.org/wiki/Lifestreaming)
 
 
-<a id="org6e30e0b"></a>
+<a id="org0dc4041"></a>
 
 ## (2000) id3v2.4
 
@@ -1520,7 +1525,7 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 <http://id3.org/id3v2.4.0-frames>
 
 
-<a id="org73421bb"></a>
+<a id="org7371df9"></a>
 
 ## (2000) MusicBrainz
 
@@ -1530,7 +1535,7 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 <https://musicbrainz.org/>
 
 
-<a id="org63ba239"></a>
+<a id="orgf8813f1"></a>
 
 ## (2001) Eric Kim — Purple
 
@@ -1540,12 +1545,12 @@ Informal standard на теги для mp3 файлов. Не смотря на 
 <https://en.wikipedia.org/wiki/Purple_Numbers>
 
 
-<a id="org3edb2ef"></a>
+<a id="org0b73dea"></a>
 
 ## (2001) Tim Berners-Lee — Semantic Web
 
 
-<a id="org67cc4c4"></a>
+<a id="orge9f5158"></a>
 
 ## (2001) Tinderbox
 
@@ -1576,7 +1581,7 @@ Wiki: [Tinderbox](https://en.wikipedia.org/wiki/Tinderbox_%28application_softwar
 Release dates: ![img](//www.markbernstein.org/elements/Releases.jpg)
 
 
-<a id="org9566c75"></a>
+<a id="orgee45fbe"></a>
 
 ## (2003) Joshua Schachter — Del.icio.us
 
@@ -1631,12 +1636,12 @@ Release dates: ![img](//www.markbernstein.org/elements/Releases.jpg)
 > условно.
 
 
-<a id="orgf6401cc"></a>
+<a id="orge39839e"></a>
 
 ## (2004) W3C — RDF / RDFS / OWL
 
 
-<a id="orgca7680c"></a>
+<a id="org8c5b64d"></a>
 
 ## (2007) DBpedia
 
@@ -1646,7 +1651,7 @@ RDF, позволяет делать запросы на SPARQL.
 Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 
 
-<a id="orgf31a034"></a>
+<a id="orgd6b8b08"></a>
 
 ## (2007) Scrivener
 
@@ -1661,7 +1666,7 @@ Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 <http://www.literatureandlatte.com/scrivener.html>
 
 
-<a id="org6f10669"></a>
+<a id="orgb00c17b"></a>
 
 ## (2008) Evernote
 
@@ -1670,7 +1675,7 @@ Wiki: [DBpedia](https://en.wikipedia.org/wiki/DBpedia)
 Wiki: [Evernote](https://en.wikipedia.org/wiki/Evernote)
 
 
-<a id="org8e983c6"></a>
+<a id="org9a7d7be"></a>
 
 ## (2009) Fluidinfo
 
@@ -1679,7 +1684,7 @@ Wiki: [Evernote](https://en.wikipedia.org/wiki/Evernote)
 <http://fluidinfo.com>
 
 
-<a id="orgb0e57fd"></a>
+<a id="org91d28ee"></a>
 
 ## (2013) Ginko
 
@@ -1689,7 +1694,7 @@ json. Интересен в первую очередь интерфейсом.
 <https://gingkoapp.com>
 
 
-<a id="orgbadd0ed"></a>
+<a id="org82cf1ca"></a>
 
 ## Org-mode
 
@@ -1700,7 +1705,7 @@ Outliner для emacs. Выяснилось, что пока нет хороше
 <http://orgmode.org/>
 
 
-<a id="org3eb5d55"></a>
+<a id="orge4e4eeb"></a>
 
 ## Calibre
 
@@ -1710,7 +1715,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 <https://calibre-ebook.com/>
 
 
-<a id="org71b6b9e"></a>
+<a id="org45fcff0"></a>
 
 ## Smallest Federated Wiki
 
@@ -1720,14 +1725,14 @@ Reference-mode в читалке. Решение проблемы идентиф
 <http://fed.wiki.org>
 
 
-<a id="org2a7be3a"></a>
+<a id="org75e74ee"></a>
 
 ## Chandler
 
 <https://en.wikipedia.org/wiki/Chandler_%28software%29>
 
 
-<a id="org35f8497"></a>
+<a id="org24a3a85"></a>
 
 ## CommonTag
 
@@ -1739,7 +1744,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 <http://microformats.org/wiki/CommonTag>
 
 
-<a id="org378ade0"></a>
+<a id="orgb2b03df"></a>
 
 ## Friendfeed
 
@@ -1747,7 +1752,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 одну ленту.
 
 
-<a id="org862930a"></a>
+<a id="orga677d15"></a>
 
 ## Locker
 
@@ -1755,7 +1760,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 ленту.
 
 
-<a id="orgdddac38"></a>
+<a id="org84c522f"></a>
 
 ## Singly
 
@@ -1771,21 +1776,21 @@ Reference-mode в читалке. Решение проблемы идентиф
 2013-08-22 &#x2013; поглощен компанией [appcelerator](http://appcelerator.com/).
 
 
-<a id="org2c6a4ab"></a>
+<a id="org8ec98fe"></a>
 
 ## NEPOMUK
 
 <https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29>
 
 
-<a id="orgef39e28"></a>
+<a id="org7e245d4"></a>
 
 ## TiddlyWiki
 
 <http://tiddlywiki.com/>
 
 
-<a id="org8cd878e"></a>
+<a id="org0013ef2"></a>
 
 # Ссылки
 
@@ -1797,7 +1802,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 другие - <http://worrydream.com/refs/>.
 
 
-<a id="org8af6057"></a>
+<a id="org032cb47"></a>
 
 ## Учебные заведения
 
@@ -1810,7 +1815,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [Keeping Found Things Found](http://kftf.ischool.washington.edu/)
 
 
-<a id="org86cd5ed"></a>
+<a id="org1f707b2"></a>
 
 ## Термины
 
@@ -1832,7 +1837,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [Dublin Core](https://en.wikipedia.org/wiki/Dublin_Core)
 
 
-<a id="orge4691f0"></a>
+<a id="org56fab07"></a>
 
 ## Люди
 
@@ -1842,7 +1847,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [Ted Nelson](https://en.wikipedia.org/wiki/Ted_Nelson)
 
 
-<a id="org58142d9"></a>
+<a id="org42bb6d3"></a>
 
 ## Книги
 
@@ -1867,12 +1872,12 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   Игра в бисер (Герман Гессе)
 
 
-<a id="org40d26f6"></a>
+<a id="org7a09973"></a>
 
 ## Ассоциации
 
 
-<a id="org01d9e21"></a>
+<a id="org2d58e95"></a>
 
 ### Association for Information Science and Technology
 
@@ -1881,12 +1886,12 @@ Reference-mode в читалке. Решение проблемы идентиф
 <https://www.asist.org/>
 
 
-<a id="orgcc7a55e"></a>
+<a id="org3c88c70"></a>
 
 ## urbansheep
 
 
-<a id="orgc2291ac"></a>
+<a id="org4b1fb9c"></a>
 
 ### LiveJournal
 
@@ -1897,7 +1902,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [hypertext](https://urbansheep.livejornal.com/tag/hypertext)
 
 
-<a id="org21d33f0"></a>
+<a id="orgd1abd48"></a>
 
 ### FriendFeed
 
@@ -1907,7 +1912,7 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [архивисты](http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html)
 
 
-<a id="orgf8e5b2b"></a>
+<a id="org4065333"></a>
 
 ### Pinboard
 
@@ -1919,12 +1924,12 @@ Reference-mode в читалке. Решение проблемы идентиф
 -   [metadata](https://pinboard.in/u:urbansheep/t:metadata/)
 
 
-<a id="orgd5031d0"></a>
+<a id="orga65e811"></a>
 
 ## Конференции
 
 
-<a id="orgfd73487"></a>
+<a id="org6669583"></a>
 
 ### Personal Digital Archiving Conference
 
