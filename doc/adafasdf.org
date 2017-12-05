@@ -1144,10 +1144,16 @@
 
    [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
 
-
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
    Wiki: [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
+
+** (1999) Presto
+
+   Paul Dourish, W. Keith Edwards, Anthony LaMarca and Michael
+   Salisbury. Xerox Palo Alto Research Center.
+
+   [[http://www.dourish.com/publications/1999/tochi-presto.pdf][Presto: An Experimental Architecture for Fluid Interactive Document Spaces]]
 
 ** (2000) id3v2.4
 
