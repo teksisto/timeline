@@ -1,4 +1,4 @@
-../images/pepe_silvia.png
+  [[../images/pepe_silvia.png]]
 
 * Предпосылки
 
