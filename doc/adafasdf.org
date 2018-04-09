@@ -1458,28 +1458,9 @@
 
 ** Ассоциации
 
-*** Association for Information Science and Technology
-
-    Ааа, ыыы, много всего, оно живое.
-
-    https://www.asist.org/
+   * [[https://www.asist.org/][Association for Information Science and Technology]]
 
 ** urbansheep
-
-*** LiveJournal
-
-    - [[https://urbansheep.livejournal.com/tag/info organization][info organization]]
-    - [[https://urbansheep.livejornal.com/tag/classification][classification]]
-    - [[https://urbansheep.livejournal.com/tag/memory_management][memory management]]
-    - [[https://urbansheep.livejournal.com/tag/knowledge_management][knowledge management]]
-    - [[https://urbansheep.livejornal.com/tag/hypertext][hypertext]]
-
-*** FriendFeed
-
-    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html][инфоорг]]
-    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html][свой небольшой интернет]]
-    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html][цифровая история]]
-    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html][архивисты]]
 
 *** Pinboard
 
@@ -1490,12 +1471,22 @@
     - [[https://pinboard.in/u:urbansheep/t:classification/][classification]]
     - [[https://pinboard.in/u:urbansheep/t:metadata/][metadata]]
 
+*** FriendFeed
+
+    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html][инфоорг]]
+    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html][свой небольшой интернет]]
+    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html][цифровая история]]
+    - [[http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html][архивисты]]
+
+*** LiveJournal
+
+    - [[https://urbansheep.livejournal.com/tag/info organization][info organization]]
+    - [[https://urbansheep.livejornal.com/tag/classification][classification]]
+    - [[https://urbansheep.livejournal.com/tag/memory_management][memory management]]
+    - [[https://urbansheep.livejournal.com/tag/knowledge_management][knowledge management]]
+    - [[https://urbansheep.livejornal.com/tag/hypertext][hypertext]]
+
+
 ** Конференции
 
-*** Personal Digital Archiving Conference
-
-    Можно поковыряться, но как-то скучно. Видео лежат на archive.org.
-
-    http://personaldigitalarchiving.com
-
-    https://archive.org/details/PDA2015
+   * [[https://archive.org/details/PDA2015][Personal Digital Archiving Conference]]
