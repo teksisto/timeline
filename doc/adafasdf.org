@@ -1055,12 +1055,14 @@
         the *only graph database that supports both models over the same
         database, simultaneously*.
 
-        -- http://tinkerpop.apache.org/providers.html
+        -- [[http://tinkerpop.apache.org/providers.html][Tinkertop doc]] / [[https://www.stardog.com/docs/#_property][Stardog doc]]
     #+END_QUOTE
 
     #+BEGIN_QUOTE
         Stardog supports integrity constraint validation as a data
         quality mechanism via *closed world* reasoning.
+
+        -- [[https://www.stardog.com/docs/#_validating_constraints][Stardog doc]]
     #+END_QUOTE
 
 *** AllegroGraph

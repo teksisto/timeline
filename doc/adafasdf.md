@@ -1204,10 +1204,12 @@ livejournal, и поле "current mood" приходится класть пря
 > the **only graph database that supports both models over the same
 > database, simultaneously**.
 >
-> &#x2013; <http://tinkerpop.apache.org/providers.html>
+> &#x2013; [Tinkertop doc](http://tinkerpop.apache.org/providers.html) / [Stardog doc](https://www.stardog.com/docs/#_property)
 
 > Stardog supports integrity constraint validation as a data
 > quality mechanism via **closed world** reasoning.
+>
+> &#x2013; [Stardog doc](https://www.stardog.com/docs/#_validating_constraints)
 
 ### AllegroGraph<a id="sec-6-3-3" name="sec-6-3-3"></a>
 
