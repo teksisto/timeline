@@ -1043,6 +1043,26 @@
 
     http://virtuoso.openlinksw.com/
 
+*** Stardog
+
+    https://www.stardog.com
+
+    Платная.
+
+    #+BEGIN_QUOTE
+        It supports both semantic graphs, via RDF, SPARQL, and OWL, as
+        well as property graphs via Apache TinkerPop and Gremlin--it's
+        the *only graph database that supports both models over the same
+        database, simultaneously*.
+
+        -- http://tinkerpop.apache.org/providers.html
+    #+END_QUOTE
+
+    #+BEGIN_QUOTE
+        Stardog supports integrity constraint validation as a data
+        quality mechanism via *closed world* reasoning.
+    #+END_QUOTE
+
 *** AllegroGraph
 
     http://franz.com/

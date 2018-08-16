@@ -99,7 +99,8 @@
 <li><a href="#sec-6-3">6.3. Семантика</a>
 <ul>
 <li><a href="#sec-6-3-1">6.3.1. OpenLink Virtuoso</a></li>
-<li><a href="#sec-6-3-2">6.3.2. AllegroGraph</a></li>
+<li><a href="#sec-6-3-2">6.3.2. Stardog</a></li>
+<li><a href="#sec-6-3-3">6.3.3. AllegroGraph</a></li>
 </ul>
 </li>
 <li><a href="#sec-6-4">6.4. Графовая база данных</a></li>
@@ -1192,7 +1193,23 @@ livejournal, и поле "current mood" приходится класть пря
 
 <http://virtuoso.openlinksw.com/>
 
-### AllegroGraph<a id="sec-6-3-2" name="sec-6-3-2"></a>
+### Stardog<a id="sec-6-3-2" name="sec-6-3-2"></a>
+
+<https://www.stardog.com>
+
+Платная.
+
+> It supports both semantic graphs, via RDF, SPARQL, and OWL, as
+> well as property graphs via Apache TinkerPop and Gremlin&#x2013;it's
+> the **only graph database that supports both models over the same
+> database, simultaneously**.
+>
+> &#x2013; <http://tinkerpop.apache.org/providers.html>
+
+> Stardog supports integrity constraint validation as a data
+> quality mechanism via **closed world** reasoning.
+
+### AllegroGraph<a id="sec-6-3-3" name="sec-6-3-3"></a>
 
 <http://franz.com/>
 
