@@ -3,10 +3,15 @@ michigan:
   label: "Internet History Technology and Security"
   link: "https://www.coursera.org/learn/internet-history"
   category: lectures
-      
+
 wikipedia:
   label: "Wikipedia"
   link: "https://wikipedia.org"
+  category: site
+
+rfc:
+  label: "RFC"
+  link: "https://tools.ietf.org"
   category: site
 
 imdb:
@@ -18,19 +23,19 @@ discogs:
   label: "Discogs"
   link: "http://www.discogs.com"
   category: site
-  
+
 zhukov:
   authors: [dimitri_zhukov]
   label: "Биология поведения: гуморальные механизмы"
   link: ""
   category: source_book
-  
+
 quotes:
   authors: [teksisto]
   label: "Цитатник"
   link: ""
   category: notes
-  
+
 taleb:
   authors: [nassim_taleb]
   label: "Черный лебедь"
