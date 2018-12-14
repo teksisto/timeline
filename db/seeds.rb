@@ -18,8 +18,8 @@ org_files = {
 }
 
 for label, file in org_files
-  puts "Processing #{file}".cyan
+  puts "Processing #{file}"
   source = Source.where(label: label).first
   source.parse_org_mode(IO.read(file))
-  puts "Imported #{file} into #{label}.".cyan
+  puts "Imported #{file} into #{label}."
 end

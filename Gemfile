@@ -53,6 +53,8 @@ end
 # my gems
 #############################################################
 
+gem 'sqlite3'
+
 gem 'haml-rails', '~> 0.9'
 gem 'twitter-bootstrap-rails'
 gem 'select2-rails'
@@ -66,13 +68,13 @@ gem 'awesome_nested_set'
 
 gem 'org-ruby'
 
-gem 'linkeddata'
-gem 'rdf-virtuoso'
+# gem 'linkeddata'
+# gem 'rdf-virtuoso'
 
 gem 'pry'
 gem 'pry-doc'
 
-gem 'neo4apis-activerecord'
+# gem 'neo4apis-activerecord'
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-vis', '= 4.7.0'
@@ -83,10 +85,10 @@ end
 
 group :development do
   gem 'bullet'
-  gem 'brakeman', require: false
-  gem 'rubocop',  require: false
-  gem 'capistrano', '~> 3.1'
-  gem 'capistrano-rails', '~> 1.1'
+  # gem 'brakeman', require: false
+  # gem 'rubocop',  require: false
+  # gem 'capistrano', '~> 3.1'
+  # gem 'capistrano-rails', '~> 1.1'
 end
 
 group :test do
@@ -103,8 +105,6 @@ end
 # gem 'date_validator'
 # gem 'cancancan'
 # gem 'paperclip', '~> 4.3'
-
-gem 'sxp'
+# gem 'sxp'
 
 gem 'generic_edit_and_destroy_links', git: 'https://github.com/teksisto/generic_edit_and_destroy_links.git'
-

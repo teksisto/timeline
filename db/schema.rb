@@ -13,9 +13,6 @@
 
 ActiveRecord::Schema.define(version: 20150904040306) do
 
-  # These are extensions that must be enabled in order to support this database
-  enable_extension "plpgsql"
-
   create_table "categories", force: :cascade do |t|
     t.string   "label"
     t.text     "description"
@@ -30,17 +27,17 @@ ActiveRecord::Schema.define(version: 20150904040306) do
     t.string   "icon"
   end
 
-  add_index "categories", ["lft"], name: "index_categories_on_lft", using: :btree
-  add_index "categories", ["parent_id"], name: "index_categories_on_parent_id", using: :btree
-  add_index "categories", ["rgt"], name: "index_categories_on_rgt", using: :btree
+  add_index "categories", ["lft"], name: "index_categories_on_lft"
+  add_index "categories", ["parent_id"], name: "index_categories_on_parent_id"
+  add_index "categories", ["rgt"], name: "index_categories_on_rgt"
 
   create_table "categories_events", id: false, force: :cascade do |t|
     t.integer "category_id"
     t.integer "event_id"
   end
 
-  add_index "categories_events", ["category_id"], name: "index_categories_events_on_category_id", using: :btree
-  add_index "categories_events", ["event_id"], name: "index_categories_events_on_event_id", using: :btree
+  add_index "categories_events", ["category_id"], name: "index_categories_events_on_category_id"
+  add_index "categories_events", ["event_id"], name: "index_categories_events_on_event_id"
 
   create_table "comments", force: :cascade do |t|
     t.integer  "author_id"
@@ -85,8 +82,8 @@ ActiveRecord::Schema.define(version: 20150904040306) do
     t.integer "source_id"
   end
 
-  add_index "people_sources", ["person_id"], name: "index_people_sources_on_person_id", using: :btree
-  add_index "people_sources", ["source_id"], name: "index_people_sources_on_source_id", using: :btree
+  add_index "people_sources", ["person_id"], name: "index_people_sources_on_person_id"
+  add_index "people_sources", ["source_id"], name: "index_people_sources_on_source_id"
 
   create_table "quote_versions", force: :cascade do |t|
     t.integer  "quote_id"
