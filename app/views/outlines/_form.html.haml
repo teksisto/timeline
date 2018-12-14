@@ -3,6 +3,6 @@
     = f.label :text, class: 'control-label'
     .controls
       = f.text_area :text, class: 'form-control', required: true
-    = error_span(@outline[:text])
+    = # error_span(@outline[:text])
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), outlines_path, :class => 'btn btn-default'

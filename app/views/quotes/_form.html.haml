@@ -3,17 +3,17 @@
     = f.label :label, class: 'control-label'
     .controls
       = f.text_field :label, class: 'form-control', required: true
-    = error_span(@quote[:label])
+    = # error_span(@quote[:label])
 
   = f.hidden_field :source_id
-    
+
   #quote_source.well
     #quote_source_toggler
       %strong= 'Source'
     #quote_source_fields.fields-for
       = f.fields_for :source, @quote.source do |source|
-        = render partial: 'sources/fields', locals: {f: source}
-    
+        = render partial: 'sources/fields', locals: {f: source, source: @quote.source}
+
   #versions.well
     #versions_toggler
       %strong= 'Versions'
@@ -24,7 +24,7 @@
         = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
 
   %hr
-  
+
   = f.submit nil,class: 'btn btn-primary'
   = link_to t('.cancel', :default => t("helpers.links.cancel")), quotes_path, :class => 'btn btn-default'
 
