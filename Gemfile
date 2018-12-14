@@ -91,10 +91,6 @@ group :development do
   # gem 'capistrano-rails', '~> 1.1'
 end
 
-# group :test do
-#   gem "codeclimate-test-reporter", require: nil
-# end
-
 #############################################################
 # may be useful in the future
 #############################################################
