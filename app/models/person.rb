@@ -1,4 +1,4 @@
-class Person < ActiveRecord::Base
+class Person < ApplicationRecord
 
   has_and_belongs_to_many :authored,
                           :class_name              => Source,
@@ -7,9 +7,9 @@ class Person < ActiveRecord::Base
                           :inverse_of              => :authors
 
   has_many :comments
-  
+
   def screen_label
     self['screen_label'] ? self['screen_label'] : self['label']
   end
-  
+
 end

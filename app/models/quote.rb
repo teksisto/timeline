@@ -1,10 +1,10 @@
-class Quote < ActiveRecord::Base
+class Quote < ApplicationRecord
 
   has_many   :versions,
              :class_name => QuoteVersion,
              :dependent  => :destroy,
              :inverse_of => :quote
-  
+
   has_many   :comments
 
   belongs_to :source
@@ -23,5 +23,5 @@ class Quote < ActiveRecord::Base
       "##{id}"
     end
   end
-  
+
 end

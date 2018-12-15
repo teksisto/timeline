@@ -1,5 +1,4 @@
-# coding: utf-8
-class Event < ActiveRecord::Base
+class Event < ApplicationRecord
 
   RENDER_METHODS = [
     'table_timeline',
@@ -7,19 +6,19 @@ class Event < ActiveRecord::Base
     'vis_timeline',
     'editor'
   ]
-  
+
   belongs_to :source
   belongs_to :location, class_name: Category, foreign_key: 'location_id'
   has_and_belongs_to_many :categories
 
   before_save :setup_dates
-  
+
   scope :from_sources, lambda{|source_ids|
     if source_ids.present?
       joins(:source).where(sources: {id: source_ids})
     end
   }
-  
+
   scope :from_categories, lambda{|category_ids|
     if category_ids.present?
       where(id:
@@ -40,7 +39,7 @@ class Event < ActiveRecord::Base
     end
     where(location_id: category_id)
   }
-  
+
   scope :sorted, lambda{
     order('start_date')
   }
@@ -53,22 +52,22 @@ class Event < ActiveRecord::Base
       from_categories(events_filter.category_ids).
       sorted
   end
-    
+
   def self.ids_from_categories(category_ids)
     Event.joins(:categories).where(categories: {id: category_ids})
   end
-    
+
   def self.ids_from_categories_via_sources(category_ids)
     Event.joins(:source).where(sources: {category_id: category_ids}).pluck(:id)
   end
-    
+
   def self.ids_from_categories_by_locations(category_ids)
     Event.where(location_id: category_ids).pluck(:id)
   end
-  
+
   def self.by_year(events)
     unless events.empty?
-      
+
       events_by_year = events.group_by{|e| e.start_date.year }
 
       start_year = events.minimum(:start_date).year
@@ -100,12 +99,12 @@ class Event < ActiveRecord::Base
       location.self_and_ancestors.second
     end
   end
-  
+
   private
 
   # Этот метод должен дружить не только с данными, которые
   # приходят из контроллера, но из с данными из fixtures.
-  
+
   def setup_dates
     year, month, day = parse_start_date
 
@@ -130,9 +129,9 @@ class Event < ActiveRecord::Base
       if self[:end_date].present?
         expand_end_date
       end
-      
+
     else
-      
+
       if year && month && day
         self[:start_date] = Date.new( year, month, day )
       elsif year && month && !day
@@ -158,7 +157,7 @@ class Event < ActiveRecord::Base
     day = 31 unless day
     self[:end_date] = Date.new(year, month, day)
   end
-  
+
   def parse_date(value)
     # to_s в следующей строке нужен, потому что fixtures внезапно возвращает integer
     str = value.to_s
@@ -168,5 +167,5 @@ class Event < ActiveRecord::Base
     # если данные есть, то вернуть integer, если нет - nil
     matches.map{|s| s.to_i if s.present?}
   end
-  
+
 end

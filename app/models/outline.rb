@@ -1,4 +1,4 @@
-class Outline < ActiveRecord::Base
+class Outline < ApplicationRecord
 
   belongs_to :source
 

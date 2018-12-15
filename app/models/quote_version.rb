@@ -1,4 +1,4 @@
-class QuoteVersion < ActiveRecord::Base
+class QuoteVersion < ApplicationRecord
 
   POSSIBLE_LANGUAGES = %w[ru en de]
 

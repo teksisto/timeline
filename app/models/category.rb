@@ -1,10 +1,10 @@
-class Category < ActiveRecord::Base
+class Category < ApplicationRecord
 
   acts_as_nested_set
 
   has_and_belongs_to_many :events
   has_many :sources
-  
+
   after_create :inherit_parent_color
   after_move :inherit_parent_color
 
@@ -19,7 +19,7 @@ class Category < ActiveRecord::Base
   def self.locations_root
     self.roots.where(label: 'Location categories').first
   end
-  
+
   def event_category?
     ancestors.include?(self.class.events_root)
   end
@@ -31,7 +31,7 @@ class Category < ActiveRecord::Base
   def location_category?
     ancestors.include?(self.class.locations_root)
   end
-  
+
   def inherit_parent_color
     if parent.present? && !color.present?
       update_attribute(:color, parent.color)
@@ -39,4 +39,3 @@ class Category < ActiveRecord::Base
   end
 
 end
-
