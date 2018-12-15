@@ -10,10 +10,9 @@
 
 ** Установка
 
-   Поправить database.yml.
-
    Запустить:
 
+   : cp config/database.yml.example config/database.yml
    : bundle install
    : rake timeline:setup
 
