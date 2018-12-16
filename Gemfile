@@ -5,11 +5,12 @@ source 'https://rubygems.org'
 #############################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.1'
+gem 'rails', '5.2'
 gem 'rails-controller-testing'
 gem 'listen'
+gem 'bootsnap'
 
-gem 'minitest', '5.10.3'
+# gem 'minitest', '5.10.3'
 
 # Use postgres as the database for Active Record
 # gem 'pg'
