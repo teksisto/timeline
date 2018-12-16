@@ -69,3 +69,5 @@ tramp
 # cask packages
 .cask/
 
+images/timeline/timeline
+images/words/words
