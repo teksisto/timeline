@@ -15,6 +15,18 @@
    : bundle install
    : rake timeline:setup
 
+   Чтобы заработал экспорт в epub нужен Emacs версии 25. Он должен
+   быть доступен по пути ~/usr/bin/emacs25~:
+
+   : sudo add-apt-repository ppa:kelleyk/emacs
+   : sudo apt update
+   : sudo apt install emacs25
+
+   После установки ему нужно подсунуть конфиг:
+
+   : mkdir ~/.emacs.d
+   : cp doc/init.el ~/.emacs.d
+
 ** Что работает сейчас
 
 *** События
@@ -30,6 +42,7 @@
    - оглавления
    - импорт оглавлений в формате org-mode
    - парсер org-mode файлов
+   - экспорт в epub
 
    [[./images/timeline/sources1.png]]
    [[./images/timeline/sources2.png]]

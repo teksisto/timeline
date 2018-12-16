@@ -8,26 +8,28 @@
   = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
   = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
   = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
+  = link_to 'Export', export_source_path(@source), :class => 'btn btn-default'
 
-  = button_edit    @source
-  = button_destroy @source
-      
+  .pull-right
+    = button_edit    @source
+    = button_destroy @source
+
 = render partial: 'content', locals: {source: @source}
-          
+
 - for section in @source.descendants.includes(:outline)
   = content_tag("h#{section.depth}", section.label, id: section.id) do
     = link_to section.label, section
   = render partial: 'content', locals: {source: section}
-    
+
   = link_to 'Add quote',
       new_quote_path(quote: {source_id: section.id}),
       class: 'btn btn-xs btn-default'
-  
+
   = render partial: 'events/editor', locals: {events: section.events}
   = link_to 'Add event',
       new_event_path(event: {source_id: section.id}),
       class: 'btn btn-xs btn-default'
-  
+
 = render partial: 'events/editor', locals: {events: @source.events}
 
 :javascript
@@ -35,5 +37,5 @@
   anchors.options = {
     placement: 'left',
   };
-  
+
   anchors.add();

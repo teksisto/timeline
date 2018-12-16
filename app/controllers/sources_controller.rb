@@ -1,5 +1,5 @@
 class SourcesController < ApplicationController
-  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_section, :create_section, :quotes]
+  before_action :set_source, only: [:show, :edit, :update, :destroy, :new_section, :create_section, :quotes, :export]
 
   # GET /sources
   # GET /sources.json
@@ -77,7 +77,12 @@ class SourcesController < ApplicationController
     @quote_versions = @source.self_and_descendants.map{|s| s.quotes.map{|q| q.versions.first}}.flatten.sort_by{ rand }
     render layout: 'slides'
   end
-  
+
+  def export
+    epub_path = @source.to_epub
+    send_file(epub_path)
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_source

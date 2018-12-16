@@ -17,6 +17,7 @@ Rails.application.routes.draw do
       get :new_section
       post :create_section
       get :quotes
+      get :export
     end
   end
 
