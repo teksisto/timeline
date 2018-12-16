@@ -11,21 +11,21 @@
 - data = @events_filter.data
 
 :javascript
-  
+
   // DOM element where the Timeline will be attached
   var container = document.getElementById('visualization');
 
   // Create a DataSet (allows two way data-binding)
   var items = new vis.DataSet(
-    #{data[:items]}
+    #{data[:items]&.html_safe}
   );
-  
+
   // Configuration for the Timeline
-  var options = #{data[:options]}
+  var options = #{data[:options]&.html_safe}
 
   // Groups
-  #{ data[:groups] }
-  
+  #{  data[:groups]&.html_safe }
+
   // Create a Timeline
   #{ data[:initializer] }
 
