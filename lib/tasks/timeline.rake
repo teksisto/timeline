@@ -1,5 +1,5 @@
 namespace :timeline do
-  
+
   desc "Initial setup."
   task setup: ['db:migrate', 'db:fixtures:load', 'db:seed'] do
 
@@ -9,9 +9,9 @@ namespace :timeline do
     }
 
     for source, destination in links
-      FileUtils.symlink(Rails.root + source, Rails.root + destination)
+      FileUtils.ln_sf(Rails.root + source, Rails.root + destination)
     end
-    
+
   end
 
 end

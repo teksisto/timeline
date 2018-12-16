@@ -1,5 +1,6 @@
 # coding: utf-8
 require 'pp'
+require 'json'
 
 class OrgToc
 
@@ -11,22 +12,24 @@ class OrgToc
   attr_accessor :level
   attr_accessor :content_size
   attr_accessor :quotes
+  attr_accessor :events
   attr_accessor :buffer
   attr_accessor :previous_heading
   attr_accessor :line
-  
+
   def initialize(options)
-    @children = options[:children] || []
-    @content = options[:content] || []
-    @label = options[:label] || ''
-    @text = ''
-    @parent = options[:parent] || nil
-    @level = options[:level] || 0
+    @children     = options[:children] || []
+    @content      = options[:content]  || []
+    @label        = options[:label]    || ''
+    @text         = ''
+    @parent       = options[:parent]   || nil
+    @level        = options[:level]    || 0
     @content_size = @content.size
 
     @buffer = []
     @previous_heading = nil
     @quotes = []
+    @events = []
   end
 
   def parse
@@ -42,7 +45,7 @@ class OrgToc
             add_text
           else
             # нашли со второго по предпоследнего ребенка текущего узла
-            # в буфере лежит текст предыдущего ребенка текущего узла 
+            # в буфере лежит текст предыдущего ребенка текущего узла
             add_child
           end
         else
@@ -54,7 +57,7 @@ class OrgToc
         @buffer << @line
       end
       if last_line?
-        if previous_heading 
+        if previous_heading
           # достигнут конец последовательности заголовков одного уровня
           # в буфере лежит текст последнего ребенка текущего узла
           add_child
@@ -70,7 +73,7 @@ class OrgToc
     # здесь же можно доставать теги и аттрибуты
     children.each{|c| c.parse}
   end
-  
+
   def sanitaze_heading(string)
     string = strip_stars(string)
     string = htmlize_heading(string)
@@ -83,7 +86,7 @@ class OrgToc
   def htmlize_heading(heading)
     heading.gsub('--', '&mdash;')
   end
-  
+
   def render_to_text(str = '')
     unless @level == 0
       heading = '*'*@level + ' ' + @label + "\n"
@@ -104,14 +107,17 @@ class OrgToc
           quote = source.quotes.create
           quote.versions.create(text: q, language: 'ru')
         }
+        @events.each{|e|
+          source.events.create(e)
+        }
       end
     end
 
     @children.each{|c| c.render_to_db(source || parent)}
   end
-  
+
   private
-  
+
   def heading?
     @line =~ /^\*/
   end
@@ -137,7 +143,7 @@ class OrgToc
     @buffer.clear
     @previous_heading = @line
   end
-  
+
   def new_toc
     new_toc_hash = {
       parent: self,
@@ -159,7 +165,7 @@ class OrgToc
   def set_level
     @line_level = @line.count('*')
   end
-  
+
 end
 
 
@@ -172,6 +178,12 @@ class OrgTextParser < OrgToc
         @buffer.clear
       elsif end_of_quote?
         @parent.quotes << @buffer.join
+        @buffer.clear
+      elsif beginning_of_event?
+        @parent.text += @buffer.join
+        @buffer.clear
+      elsif end_of_event?
+        @parent.events << event_prepare(@buffer.join)
         @buffer.clear
       else
         @buffer << @line
@@ -190,14 +202,35 @@ class OrgTextParser < OrgToc
     @line.strip == '#+END_QUOTE'
   end
 
+  def beginning_of_event?
+    @line.strip == '#+BEGIN_SRC event'
+  end
+
+  def end_of_event?
+    @line.strip == '#+END_SRC'
+  end
+
+  def event_prepare(str)
+    data = JSON.load(str)
+
+    if data['category'].present?
+      category_id = Category.where(label: data.delete('category')).first.id
+      data['category_ids'] = [ category_id ]
+    end
+
+    if data['location'].present?
+      location_id = Category.where(label: data.delete('location')).first.id
+      data['location_id']  = location_id
+    end
+
+    data
+  end
 end
-
-
 
 if __FILE__==$0
 
   t = OrgToc.new(content: IO.readlines('simple.org'), label: 'ROOT')
   t.parse
   pp t
-                 
+
 end

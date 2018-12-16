@@ -1115,9 +1115,31 @@
 
    Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Memex (As We May Think)",
+        "description": "Vannevar Bush",
+        "start_date":  "1945",
+        "link":        "https://en.wikipedia.org/wiki/Memex",
+        "category":    "infoorg",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
+
+   #+BEGIN_SRC event
+     {
+        "label":       "HES (Hypertext Editing System)",
+        "description": "Andries van Dam, Ted Nelson",
+        "start_date":  "1967",
+        "link":        "https://en.wikipedia.org/wiki/Hypertext_Editing_System",
+        "category":    "infoorg",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (1968) Douglas Engelbart — oN-Line System
 
@@ -1125,11 +1147,35 @@
 
    Видео: http://www.1968demo.org/
 
+   #+BEGIN_SRC event
+     {
+        "label":       "The Mother of All Demos (NLS)",
+        "description": "",
+        "category":     "infoorg",
+        "start_date":  "1968-12-09",
+        "link":        "https://en.wikipedia.org/wiki/The_Mother_of_All_Demos",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (1968) Andries van Dam — File Retrieval and Editing System
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][FRESS]]
 
+   #+BEGIN_SRC event
+     {
+        "label":       "FRESS (File Retrieval and Editing System)",
+        "description": "Andries van Dam",
+        "category":     "infoorg",
+        "start_date":  "1968",
+        "link":        "https://en.wikipedia.org/wiki/Hypertext_Editing_System",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (1985) Intermedia
+
+   Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
 
    #+BEGIN_QUOTE
        In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
@@ -1140,7 +1186,16 @@
        Annenberg/CPB project and IBM (Meyrowitz 1986, 196).
    #+END_QUOTE
 
-   Wiki: [[https://en.wikipedia.org/wiki/Intermedia_(hypertext)][Intermedia]]
+   #+BEGIN_SRC event
+     {
+        "label":       "Intermedia",
+        "description": "Andries van Dam, William S. Shipp and Norman Meyrowitz",
+        "category":     "infoorg",
+        "start_date":  "1985",
+        "link":        "https://en.wikipedia.org/wiki/Intermedia_(hypertext)",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (1991) Gifford — Semantic file systems
 
@@ -1164,6 +1219,18 @@
        виртуальных файловых систем.
    #+END_QUOTE
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Semantic file systems (Gifford)",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "1991",
+        "link":        "",
+        "location":    "USA"
+     }
+   #+END_SRC
+
+
 ** (1993) LDAP
 
    LDAP интересен своей способностью строить классицификаторы. Там
@@ -1174,9 +1241,31 @@
 
    [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
 
+   #+BEGIN_SRC event
+     {
+        "label":       "LDAP",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "1993",
+        "link":        "https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
    Wiki: [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
+
+   #+BEGIN_SRC event
+     {
+        "label":       "Lifestrings",
+        "description": "Eric Freeman and David Gelertner",
+        "category":    "infoorg",
+        "start_date":  "1996",
+        "link":        "https://en.wikipedia.org/wiki/Lifestreaming",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (1999) Presto
 
@@ -1184,6 +1273,17 @@
    Salisbury. Xerox Palo Alto Research Center.
 
    [[http://www.dourish.com/publications/1999/tochi-presto.pdf][Presto: An Experimental Architecture for Fluid Interactive Document Spaces]]
+
+   #+BEGIN_SRC event
+     {
+        "label":       "Presto",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "1999",
+        "link":        "",
+        "location":    "Xerox Palo Alto Research Center"
+     }
+   #+END_SRC
 
 ** (2000) id3v2.4
 
@@ -1196,12 +1296,34 @@
 
    http://id3.org/id3v2.4.0-frames
 
+   #+BEGIN_SRC event
+     {
+        "label":       "id3v2.4",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2000-11-01",
+        "link":        "http://id3.org/id3v2.4.0-frames",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2000) MusicBrainz
 
    Отлично прописанная онтология для музыки. Last.fm забирает данные
    именно отсюда.
 
    https://musicbrainz.org/
+
+   #+BEGIN_SRC event
+     {
+        "label":       "MusicBrainz",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2000-07-17",
+        "link":        "https://en.wikipedia.org/wiki/MusicBrainz",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (2001) Eric Kim — Purple
 
@@ -1210,7 +1332,29 @@
 
    https://en.wikipedia.org/wiki/Purple_Numbers
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Purple (Eric Kim)",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2001",
+        "link":        "https://en.wikipedia.org/wiki/Purple_Numbers",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2001) Tim Berners-Lee — Semantic Web
+
+   #+BEGIN_SRC event
+     {
+        "label":       "The Semantic Web (article)",
+        "description": "Tim Berners-Lee",
+        "category":    "infoorg",
+        "start_date":  "2001",
+        "link":        "",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (2001) Tinderbox
 
@@ -1237,6 +1381,17 @@
    Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]]
 
    Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
+
+   #+BEGIN_SRC event
+     {
+        "label":       "Tinderbox",
+        "description": "Mark Bernstein",
+        "category":    "infoorg",
+        "start_date":  "2001",
+        "link":        "https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (2003) Joshua Schachter — Del.icio.us
 
@@ -1292,7 +1447,18 @@
        условно.
    #+END_QUOTE
 
-** (2003) Org-mode
+   #+BEGIN_SRC event
+     {
+        "label":       "Del.icio.us",
+        "description": "Joshua Schachter",
+        "category":    "infoorg",
+        "start_date":  "2003",
+        "link":        "https://en.wikipedia.org/wiki/Delicious_(website)",
+        "location":    "USA"
+     }
+   #+END_SRC
+
+** (2003) Carsten Dominik — Org-mode
 
    Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
    которому можно доверять, вполне можно жить с помощью текстовых
@@ -1300,13 +1466,60 @@
 
    http://orgmode.org/
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Org-mode",
+        "description": "Carsten Dominik",
+        "category":    "infoorg",
+        "start_date":  "2003",
+        "link":        "https://en.wikipedia.org/wiki/Org-mode",
+        "location":    "USA"
+     }
+   #+END_SRC
+
+** 2006 Calibre
+
+   #+BEGIN_SRC event
+     {
+        "label":       "Calibre",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2006-10-31",
+        "link":        "https://en.wikipedia.org/wiki/Calibre_(software)",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2004) W3C — RDF / RDFS / OWL
+
+   #+BEGIN_SRC event
+     {
+        "label":       "RDF/RDFS/OWL",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2004",
+        "link":        "",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2007) DBpedia
 
    Вытаскивает структурированные данные из википедии, конвертит их в
    RDF, позволяет делать запросы на SPARQL.
 
    Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
+
+   #+BEGIN_SRC event
+     {
+        "label":       "DBpedia",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2007-01-10",
+        "link":        "https://en.wikipedia.org/wiki/DBpedia",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (2007) Scrivener
 
@@ -1320,17 +1533,50 @@
 
    http://www.literatureandlatte.com/scrivener.html
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Scrivener",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2007",
+        "link":        "https://en.wikipedia.org/wiki/Scrivener_(software)",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2008) Evernote
 
    Подкаст с Пачиковым: [[http://runetologia.podfm.ru/96/][Рунетология 45]]
 
    Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
 
+   #+BEGIN_SRC event
+     {
+        "label":       "Evernote",
+        "description": "Stepan Pachikov",
+        "category":    "infoorg",
+        "start_date":  "2008",
+        "link":        "https://en.wikipedia.org/wiki/Evernote",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 ** (2009) Fluidinfo
 
    У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
 
    http://fluidinfo.com
+
+   #+BEGIN_SRC event
+     {
+        "label":       "Fluidinfo",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2009",
+        "link":        "",
+        "location":    "USA"
+     }
+   #+END_SRC
 
 ** (2013) Ginko
 
@@ -1339,12 +1585,23 @@
 
    https://gingkoapp.com
 
-** Calibre
+   #+BEGIN_SRC event
+     {
+        "label":       "Ginko",
+        "description": "",
+        "category":    "infoorg",
+        "start_date":  "2013",
+        "link":        "",
+        "location":    "USA"
+     }
+   #+END_SRC
+
 
    Reference-mode в читалке. Решение проблемы идентификации для
    электронных книг.
 
    https://calibre-ebook.com/
+
 
 ** Smallest Federated Wiki
 

@@ -2,286 +2,301 @@
 
 event_categories:
   label: "Event categories"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent:
 
 # Event categories / Media
-  
+
 media:
   label: "media"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: event_categories
 
 media_book:
   label: "book"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: media
-  
+
 media_movie:
   label: "movie"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: media
 
 media_music:
   label: "music"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: media
 
 musical_album:
   label: "musical album"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: media_music
 
 musical_group:
   label: "musical group"
-  description: 
+  description:
   color: "#61E8BB"
-  icon: 
+  icon:
   parent: media_music
-  
+
 # Event categories / Technology
-  
+
 technology:
   label: "technology"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: event_categories
 
 biotech:
   label: "bio"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: event_categories
-  
+
 nuclear_energy:
   label: "nuclear energy"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: technology
-  
+
 space:
   label: "space"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
+  parent: technology
+
+# Event categories / Technology / Infoorg
+
+media:
+  label: "infoorg"
+  description:
+  color: "#61E8BB"
+  icon:
   parent: technology
 
 # Event categories / Technology / Computers
-    
+
 computers:
   label: computers
-  description: 
+  description:
   color: "#C9CF31"
-  icon: 
+  icon:
   parent: technology
 
 networks:
   label: "networks"
-  description: 
+  description:
   color: "#C9CF31"
-  icon: 
+  icon:
   parent: computers
 
 hardware:
   label: "hardware"
-  description: 
+  description:
   color: "#C9CF31"
-  icon: 
+  icon:
   parent: computers
-  
+
 arpanet:
   label: "ARPAnet"
-  description: 
+  description:
   color: "#C9CF31"
-  icon: 
+  icon:
   parent: networks
-  
+
 security:
   label: "security"
-  description: 
+  description:
   color: "#F8931F"
-  icon: 
+  icon:
   parent: computers
 
 software:
   label: "software"
-  description: 
+  description:
   color: "#E1E0B2"
-  icon: 
+  icon:
   parent: computers
 
 operating_system:
   label: "operating system"
-  description: 
+  description:
   color: "#E1E0B2"
-  icon: 
+  icon:
   parent: computers
-  
+
 unix:
   label: "unix"
-  description: 
+  description:
   color: "#E1E0B2"
-  icon: 
+  icon:
   parent: operating_system
 
 windows:
   label: "windows"
-  description: 
+  description:
   color: "#E1E0B2"
-  icon: 
+  icon:
   parent: operating_system
 
 
 # Event categories / Politics
-  
+
 politics:
   label: "politics"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: event_categories
 
 head_of_state:
   label: "head of state"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: politics
 
 wars:
   label: "wars"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: politics
 
 # History
 
 history:
   label: "history"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: event_categories
 
 # What the fuck
 
 wtf:
   label: "wtf"
-  description: 
+  description:
   color: "#B1D1E0"
-  icon: 
+  icon:
   parent: event_categories
 
 # Source categories
-  
+
 source_categories:
   label: "Source categories"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent:
 
 source_book:
   label: "book"
-  description: 
+  description:
   color: "#C9CF31"
   icon: book
   parent: source_categories
 
 lectures:
   label: "lectures"
-  description: 
+  description:
   color: ""
   icon: "university"
   parent: source_categories
 
 site:
   label: "site"
-  description: 
+  description:
   color: "#F8931F"
   icon: "external-link"
   parent: source_categories
 
 notes:
   label: "notes"
-  description: 
+  description:
   color: "#F8931F"
   icon: "pencil"
   parent: source_categories
 
-  
+
 # Location
 
 location_categories:
   label: "Location categories"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent:
 
 russia:
   label: "Россия"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: location_categories
 
 germany:
   label: "Германия"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: location_categories
-  
+
 japan:
   label: "Япония"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: location_categories
 
 united_kingdom:
   label: "Великобритания"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: location_categories
 
-  
+
 usa:
-  label: "США"
-  description: 
+  label: "USA"
+  description:
   color: ""
-  icon: 
+  icon:
   parent: location_categories
 
 bell_labs:
   label: "Bell Labs"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: usa
 
 mit:
   label: "MIT"
-  description: 
+  description:
   color: ""
-  icon: 
+  icon:
   parent: usa
-  
+
+xerox_palo_alto_research:
+  label: "Xerox Palo Alto Research Center"
+  description:
+  color: ""
+  icon:
+  parent: usa
