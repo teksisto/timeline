@@ -8,7 +8,7 @@ class Event < ApplicationRecord
   ]
 
   belongs_to :source
-  belongs_to :location, class_name: Category, foreign_key: 'location_id'
+  belongs_to :location, class_name: 'Category', foreign_key: 'location_id'
   has_and_belongs_to_many :categories
 
   before_save :setup_dates

@@ -1,7 +1,7 @@
 class Quote < ApplicationRecord
 
   has_many   :versions,
-             :class_name => QuoteVersion,
+             :class_name => 'QuoteVersion',
              :dependent  => :destroy,
              :inverse_of => :quote
 

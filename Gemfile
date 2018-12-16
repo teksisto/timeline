@@ -5,15 +5,20 @@ source 'https://rubygems.org'
 #############################################################
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.4'
+gem 'rails', '5.1'
+gem 'rails-controller-testing'
+gem 'listen'
+
+gem 'minitest', '5.10.3'
+
 # Use postgres as the database for Active Record
 # gem 'pg'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -36,7 +41,7 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'therubyracer'
-gem 'less-rails' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
+gem 'less-rails', '~> 4.0.0' #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -56,8 +61,10 @@ gem 'web-console', group: :development
 
 gem 'sqlite3'
 
-gem 'haml-rails', '~> 0.9'
+gem 'haml-rails'
 gem 'twitter-bootstrap-rails'
+gem 'font-awesome-rails'
+
 gem 'select2-rails'
 gem 'cocoon'
 
@@ -65,12 +72,7 @@ gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
 
-# gem 'colorize'
-
 gem 'org-ruby'
-
-# gem 'linkeddata'
-# gem 'rdf-virtuoso'
 
 gem 'pry'
 gem 'pry-doc'
@@ -92,6 +94,8 @@ group :development do
   # gem 'capistrano-rails', '~> 1.1'
 end
 
+gem 'generic_edit_and_destroy_links', git: 'https://github.com/teksisto/generic_edit_and_destroy_links.git'
+
 #############################################################
 # may be useful in the future
 #############################################################
@@ -103,5 +107,3 @@ end
 # gem 'cancancan'
 # gem 'paperclip', '~> 4.3'
 # gem 'sxp'
-
-gem 'generic_edit_and_destroy_links', git: 'https://github.com/teksisto/generic_edit_and_destroy_links.git'

@@ -18,30 +18,30 @@ class QuotesControllerTest < ActionController::TestCase
 
   test "should create quote" do
     assert_difference('Quote.count') do
-      post :create, quote: { label: @quote.label, source_id: @quote.source_id }
+      post :create, params: {quote: { label: @quote.label, source_id: @quote.source_id }}
     end
 
     assert_redirected_to quote_path(assigns(:quote))
   end
 
   test "should show quote" do
-    get :show, id: @quote
+    get :show, params: {id: @quote}
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @quote
+    get :edit, params: {id: @quote}
     assert_response :success
   end
 
   test "should update quote" do
-    patch :update, id: @quote, quote: { label: @quote.label, source_id: @quote.source_id }
+    patch :update, params: {id: @quote, quote: { label: @quote.label, source_id: @quote.source_id }}
     assert_redirected_to quote_path(assigns(:quote))
   end
 
   test "should destroy quote" do
     assert_difference('Quote.count', -1) do
-      delete :destroy, id: @quote
+      delete :destroy, params: {id: @quote}
     end
 
     assert_redirected_to quotes_path

@@ -18,30 +18,30 @@ class OutlinesControllerTest < ActionController::TestCase
 
   test "should create outline" do
     assert_difference('Outline.count') do
-      post :create, outline: { text: @outline.text }
+      post :create, params: {outline: { text: @outline.text }}
     end
 
     assert_redirected_to outline_path(assigns(:outline))
   end
 
   test "should show outline" do
-    get :show, id: @outline
+    get :show, params: {id: @outline}
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @outline
+    get :edit, params: {id: @outline}
     assert_response :success
   end
 
   test "should update outline" do
-    patch :update, id: @outline, outline: { text: @outline.text }
+    patch :update, params: {id: @outline, outline: { text: @outline.text }}
     assert_redirected_to outline_path(assigns(:outline))
   end
 
   test "should destroy outline" do
     assert_difference('Outline.count', -1) do
-      delete :destroy, id: @outline
+      delete :destroy, params: {id: @outline}
     end
 
     assert_redirected_to outlines_path

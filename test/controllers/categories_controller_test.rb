@@ -18,30 +18,30 @@ class CategoriesControllerTest < ActionController::TestCase
 
   test "should create category" do
     assert_difference('Category.count') do
-      post :create, category: { color: @category.color, description: @category.description, label: @category.label }
+      process :create, method: :post, params: {category: { color: @category.color, description: @category.description, label: @category.label }}
     end
 
     assert_redirected_to categories_path #(assigns(:category))
   end
 
   test "should show category" do
-    get :show, id: @category
+    get :show, params: {id: @category}
     assert_response :success
   end
 
   test "should get edit" do
-    get :edit, id: @category
+    get :edit, params: {id: @category}
     assert_response :success
   end
 
   test "should update category" do
-    patch :update, id: @category, category: { color: @category.color, description: @category.description, label: @category.label }
+    process :update, method: :patch, params: {id: @category, category: { color: @category.color, description: @category.description, label: @category.label }}
     assert_redirected_to category_path(assigns(:category))
   end
 
   test "should destroy category" do
     assert_difference('Category.count', -1) do
-      delete :destroy, id: @category
+      process :destroy, method: :delete, params: {id: @category}
     end
 
     assert_redirected_to categories_path

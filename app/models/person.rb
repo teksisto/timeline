@@ -1,7 +1,7 @@
 class Person < ApplicationRecord
 
   has_and_belongs_to_many :authored,
-                          :class_name              => Source,
+                          :class_name              => 'Source',
                           :join_table              => 'people_sources',
                           :association_foreign_key => 'source_id',
                           :inverse_of              => :authors
