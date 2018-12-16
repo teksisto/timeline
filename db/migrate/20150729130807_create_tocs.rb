@@ -1,4 +1,4 @@
-class CreateTocs < ActiveRecord::Migration
+class CreateTocs < ActiveRecord::Migration[5.1]
   def change
     create_table :tocs do |t|
       t.string :label

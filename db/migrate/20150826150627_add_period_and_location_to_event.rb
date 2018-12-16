@@ -1,4 +1,4 @@
-class AddPeriodAndLocationToEvent < ActiveRecord::Migration
+class AddPeriodAndLocationToEvent < ActiveRecord::Migration[5.1]
   def change
     
     add_column :events, :period,      :boolean, :default => false

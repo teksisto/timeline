@@ -1,4 +1,4 @@
-class CreateCategoriesEvents < ActiveRecord::Migration
+class CreateCategoriesEvents < ActiveRecord::Migration[5.1]
   def change
     create_table :categories_events, id: false do |t|
       t.belongs_to :category, index: true

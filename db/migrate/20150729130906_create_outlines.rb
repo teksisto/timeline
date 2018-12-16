@@ -1,4 +1,4 @@
-class CreateOutlines < ActiveRecord::Migration
+class CreateOutlines < ActiveRecord::Migration[5.1]
   def change
     create_table :outlines do |t|
       t.text :text

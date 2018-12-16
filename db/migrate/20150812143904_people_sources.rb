@@ -1,4 +1,4 @@
-class PeopleSources < ActiveRecord::Migration
+class PeopleSources < ActiveRecord::Migration[5.1]
   def change
 
     create_table :people_sources, id: false do |t|

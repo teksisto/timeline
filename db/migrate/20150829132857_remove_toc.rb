@@ -1,4 +1,4 @@
-class RemoveToc < ActiveRecord::Migration
+class RemoveToc < ActiveRecord::Migration[5.1]
   def self.up
 
     drop_table :tocs
