@@ -10,7 +10,7 @@ gem 'rails-controller-testing'
 gem 'listen'
 gem 'bootsnap'
 
-# gem 'minitest', '5.10.3'
+gem "activejob", ">= 5.2.1.1"
 
 # Use postgres as the database for Active Record
 # gem 'pg'
