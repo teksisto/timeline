@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_17_063708) do
+ActiveRecord::Schema.define(version: 2018_12_17_080256) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -128,6 +128,20 @@ ActiveRecord::Schema.define(version: 2018_12_17_063708) do
     t.integer "depth", default: 0
     t.integer "children_count", default: 0
     t.text "link"
+  end
+
+  create_table "sources_terms", id: false, force: :cascade do |t|
+    t.integer "source_id"
+    t.integer "term_id"
+    t.index ["source_id"], name: "index_sources_terms_on_source_id"
+    t.index ["term_id"], name: "index_sources_terms_on_term_id"
+  end
+
+  create_table "terms", force: :cascade do |t|
+    t.string "label"
+    t.text "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

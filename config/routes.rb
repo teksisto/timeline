@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :terms
   resources :comments
   resources :people
   resources :resources do

@@ -9,6 +9,15 @@ class Source < ApplicationRecord
                           join_table: 'people_sources',
                           association_foreign_key: 'person_id',
                           inverse_of: 'sources'
+
+  has_and_belongs_to_many :terms,
+                          class_name: 'Term',
+                          join_table: 'sources_terms',
+                          association_foreign_key: 'term_id',
+                          inverse_of: 'sources'
+
+
+
   has_one    :outline
   has_many   :quotes
   has_many   :events
