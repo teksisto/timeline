@@ -1,4 +1,13 @@
-- model_class = Term
-.page-header
-  %h1=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human.titleize
-= render :partial => "form"
+%ul.nav.nav-tabs
+  %li.active
+    %a{'href' => "#new_term",      'data-toggle' => "tab"}= 'New term'
+  %li
+    %a{'href' => "#existing_term", 'data-toggle' => "tab"}= 'Add existing term'
+
+.tab-content
+  .tab-pane.active#new_term
+    .margin-conteiner{style: 'margin-top: 15px;'}
+      = render partial: 'form', locals: {term: @term}
+  .tab-pane#existing_term
+    .margin-conteiner{style: 'margin-top: 15px;'}
+      = render partial: 'select', locals: {term: @term}

@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
 
-  resources :terms
+  resources :terms do
+    collection do
+      post :select
+    end
+  end
   resources :comments
   resources :people
   resources :resources do

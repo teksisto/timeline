@@ -1,0 +1,6 @@
+.section-terms
+  - if section.terms.any?
+    %b Terms
+    %ul
+      - for term in section.terms
+        %li= link_to term.label, term

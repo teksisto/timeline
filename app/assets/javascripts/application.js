@@ -15,6 +15,4 @@
 //= require cocoon
 //= require anchor-js
 //= require jquery_ujs
-//= # require twitter/bootstrap
-
-
+//= require twitter/bootstrap

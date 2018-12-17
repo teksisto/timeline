@@ -33,20 +33,26 @@
 - for section in @source.descendants.includes(:outline)
   = content_tag("h#{section.depth}", section.label, id: section.id) do
     = link_to section.label, section
-  = render partial: 'content', locals: {source: section}
 
-  = link_to 'Add quote',
-      new_quote_path(quote: {source_id: section.id}),
-      class: 'btn btn-xs btn-default'
+    = link_to 'Add event',
+               new_event_path(event: {source_id: section.id}),
+               class: 'btn btn-xs btn-default'
 
-  = link_to 'Add term',
-            new_term_path(term: {source_id: section.id}),
-            class: 'btn btn-xs btn-default'
+    = link_to 'Add quote',
+              new_quote_path(quote: {source_id: section.id}),
+              class: 'btn btn-xs btn-default'
 
-  = render partial: 'events/editor', locals: {events: section.events}
-  = link_to 'Add event',
-      new_event_path(event: {source_id: section.id}),
-      class: 'btn btn-xs btn-default'
+    = link_to 'Add term',
+              new_term_path(term: {source_id: section.id}),
+              class: 'btn btn-xs btn-default'
+
+
+  = render partial: 'content',       locals: {source: section}
+
+  = render partial: 'events/editor', locals: {events:  section.events}
+  = render partial: 'quotes',        locals: {section: section}
+  = render partial: 'terms',         locals: {section: section}
+
 
 = render partial: 'events/editor', locals: {events: @source.events}
 

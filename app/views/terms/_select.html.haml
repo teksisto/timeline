@@ -1,0 +1,15 @@
+= form_tag select_terms_path, class: "form form-horizontal term" do
+
+  .form-group
+    = label_tag :term_id, 'Term', class: 'control-label col-lg-2'
+    .col-lg-10
+      = select_tag :term_id, options_from_collection_for_select(Term.all, :id, :label, nil)
+
+  .form-group
+    = label_tag :source_id, 'Source', class: 'control-label col-lg-2'
+    .col-lg-10
+      = text_field_tag :source_id, term.source_id
+
+  .form-group
+    .col-lg-offset-2.col-lg-10
+      = submit_tag 'Add term', class: 'btn btn-primary'

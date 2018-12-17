@@ -14,7 +14,7 @@ class TermsController < ApplicationController
 
   # GET /terms/new
   def new
-    @term = Term.new
+    @term = Term.new(term_params)
   end
 
   # GET /terms/1/edit
@@ -61,6 +61,17 @@ class TermsController < ApplicationController
     end
   end
 
+  def select
+
+    params.permit(:term_id, :source_id)
+
+    term = Term.find(params[:term_id])
+    source = Source.find(params[:source_id])
+    source.terms << term
+
+    redirect_to source
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_term
@@ -69,6 +80,6 @@ class TermsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def term_params
-      params.require(:term).permit(:label, :text)
+      params.require(:term).permit(:label, :text, :source_id)
     end
 end

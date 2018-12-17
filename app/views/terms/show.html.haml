@@ -1,6 +1,4 @@
 - model_class = Term
-.page-header
-  %h1=t '.title', :default => model_class.model_name.human.titleize
 
 %p
   %strong= model_class.human_attribute_name(:label) + ':'
@@ -11,6 +9,9 @@
   %br
   = @term.text
 
+%ul
+  - for source in @term.sources
+    %li= link_to source.label, source
 
 = link_to t('.back', :default => t("helpers.links.back")), terms_path, :class => 'btn btn-default'
 = link_to t('.edit', :default => t("helpers.links.edit")), edit_term_path(@term), :class => 'btn btn-default'

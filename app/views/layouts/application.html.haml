@@ -10,26 +10,32 @@
 
     .page-header.row
 
-      .col-sm-3.menu-item
+      .col-sm-2.menu-item
         %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
           = link_to 'Events', events_path
 
-      .col-sm-3.menu-item
+      .col-sm-2.menu-item
         %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
           = link_to 'Sources', sources_path
 
-      .col-sm-3.menu-item
+      .col-sm-2.menu-item
         %i.fa.fa-comment{style: "color: #{'red' if params[:controller] == 'quotes'}"}
           = link_to 'Quotes', quotes_path
+
+      .col-sm-2.menu-item
+        %i.fa.fa-language{style: "color: #{'red' if params[:controller] == 'terms'}"}
+          = link_to 'Terms', terms_path
 
       .col-sm-3.menu-item
         %i.fa.fa-tags{style: "color: #{'red' if params[:controller] == 'categories'}"}
           = link_to 'Categories', categories_path
 
+
+
     = yield
 
     %hr{style: 'margin-top: 4em;'}
-    
+
     .footer
 
       .menu-item

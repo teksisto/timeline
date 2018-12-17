@@ -1,4 +1,4 @@
-= form_for @term, html: { class: "form form-horizontal term" } do |f|
+= form_for term, html: { class: "form form-horizontal term" } do |f|
   .form-group
     = f.label :label, class: 'control-label col-lg-2'
     .col-lg-10
@@ -10,6 +10,11 @@
       = f.text_area :text, class: 'form-control', required: true
     = f.error_span(:text)
   .form-group
+    = f.label :source_id, class: 'control-label col-lg-2'
+    .col-lg-10
+      = f.text_field :source_id, class: 'form-control', disabled: true
+    = f.error_span(:text)
+
+  .form-group
     .col-lg-offset-2.col-lg-10
       = f.submit nil,class: 'btn btn-primary'
-      = link_to t('.cancel', :default => t("helpers.links.cancel")), terms_path, :class => 'btn btn-default'
