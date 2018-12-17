@@ -1,18 +1,32 @@
 - model_class = Source
 
-= source_title
+.panel.panel-info
+  .panel-heading
+    = source_title(@source)
+  .panel-body
 
-= source_link
+    %table
+      %tr{valign: 'top'}
+        %td
+          .source-cover{style: 'margin-bottom: 15px; margin-right: 15px;'}
+            - if @source.cover.attached?
+              = image_tag @source.cover.variant(resize: "200")
 
-.controls
-  = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
-  = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
-  = link_to 'Events', events_path(source_ids: [@source]), :class => 'btn btn-default'
-  = link_to 'Export', export_source_path(@source), :class => 'btn btn-default'
+        %td
+          .source-attributes
+            - if @source.link.present?
+              %b Link
+              = source_link(@source)
 
-  .pull-right
-    = button_edit    @source
-    = button_destroy @source
+    .controls
+      = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'
+      = link_to 'Quotes', quotes_source_path(@source), :class => 'btn btn-default'
+      = link_to 'Events', events_path(events_filter: {source_ids: [@source], render_method: 'vis_timeline'}), :class => 'btn btn-default'
+      = link_to 'Export', export_source_path(@source), :class => 'btn btn-default'
+
+      .pull-right
+        = button_edit    @source
+        = button_destroy @source
 
 = render partial: 'content', locals: {source: @source}
 

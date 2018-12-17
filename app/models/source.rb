@@ -14,6 +14,8 @@ class Source < ApplicationRecord
   has_many   :events
   belongs_to :category
 
+  has_one_attached :cover
+
   include SourcesHelper
 
   default_scope do

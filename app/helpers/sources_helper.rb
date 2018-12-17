@@ -21,21 +21,21 @@ module SourcesHelper
     end
   end
 
-  def source_title
+  def source_title(source)
     content_tag('h3') do
-      (category_icon(@source) + by_line_links(@source) + @source.label).html_safe
+      (category_icon(source) + by_line_links(source) + source.label).html_safe
     end
   end
 
-  def source_link
-    if @source.link.present?
-      content_tag('p') do
+  def source_link(source)
+    if source.link.present?
+      content_tag('span') do
         content_tag('i', class: 'fa fa-link') do
           ' '.html_safe + link_to(@source.link, @source.link)
         end
       end
     end
   end
-  
-  
+
+
 end

@@ -70,6 +70,8 @@ gem 'font-awesome-rails'
 gem 'select2-rails'
 gem 'cocoon'
 
+gem 'mini_magick'
+
 gem 'rails-i18n', '~> 4.0.0'
 
 gem 'awesome_nested_set'
