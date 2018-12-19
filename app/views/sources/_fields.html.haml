@@ -33,6 +33,12 @@
   = #error_span(f.object[:label])
 
 .form-group
+  = f.label :file, class: 'control-label'
+  .controls
+    = f.file_field :file, class: 'form-control', required: false
+  = #error_span(f.object[:label])
+
+.form-group
   = f.label :category_id, class: 'control-label'
   .controls
     = f.select :category_id,

@@ -1,5 +1,4 @@
 require 'org_toc'
-require 'pdf_toc'
 
 class Source < ApplicationRecord
 
@@ -25,6 +24,9 @@ class Source < ApplicationRecord
   belongs_to :category
 
   has_one_attached :cover
+  has_one_attached :file
+
+  after_create :extract_toc_from_file
 
   include SourcesHelper
 
@@ -49,12 +51,6 @@ class Source < ApplicationRecord
     root.parse
     root.render_to_db(self)
   end
-
-  # def parse_pdf_toc(org_source)
-  #   root = PDFToc.new(content: StringIO.new(org_source).readlines, label: self.label)
-  #   root.parse
-  #   root.render_to_db(self)
-  # end
 
   def to_epub
     org_mode_path = "tmp/#{id}.org"
@@ -88,6 +84,39 @@ class Source < ApplicationRecord
       end
     end
     buffer
+  end
+
+  def extract_toc_from_file
+    if file.attached?
+      parse_pdf_toc
+    end
+  end
+
+  def parse_pdf_toc
+    Tempfile.create(['toc', '.pdf']) do |tempfile|
+      tempfile.binmode
+      tempfile.write(file.download)
+      raw_toc = `mutool show #{tempfile.path} outline`
+
+      org_toc = pdf_raw_toc_to_org_toc(raw_toc)
+
+      root = OrgToc.new(content: org_toc, label: self.label)
+      root.parse
+      root.render_to_db(self)
+    end
+  end
+
+  def pdf_raw_toc_to_org_toc(toc)
+    toc.split("\n").map do |line|
+      match = line.match(/^\t+/)
+      if match
+        level = match.to_a.first.size + 1
+        line = line.gsub(/^\t+/, '*'*level+' ')
+      else
+        line = line.gsub(/^/, '* ')
+      end
+      line.split("\t").first
+    end
   end
 
 end
