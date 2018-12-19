@@ -1,4 +1,5 @@
 require 'org_toc'
+require 'pdf_toc'
 
 class Source < ApplicationRecord
 
@@ -48,6 +49,12 @@ class Source < ApplicationRecord
     root.parse
     root.render_to_db(self)
   end
+
+  # def parse_pdf_toc(org_source)
+  #   root = PDFToc.new(content: StringIO.new(org_source).readlines, label: self.label)
+  #   root.parse
+  #   root.render_to_db(self)
+  # end
 
   def to_epub
     org_mode_path = "tmp/#{id}.org"

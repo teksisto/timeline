@@ -66,6 +66,7 @@ class SourcesController < ApplicationController
   end
 
   def create_section
+    params.permit
     if @source.parse_org_mode(params[:section_source])
       redirect_to @source
     else

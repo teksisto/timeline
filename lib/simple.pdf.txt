@@ -1,0 +1,5 @@
+Foreword to the Third Edition	10
+Preface	11
+	Why Ruby?	11
+	Ruby Versions	12
+	Changes in the Book	12
