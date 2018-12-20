@@ -78,6 +78,10 @@ gem 'awesome_nested_set'
 
 gem 'org-ruby'
 
+gem 'rubyzip'
+gem 'rexml'
+gem 'ruby-filemagic'
+
 gem 'pry'
 gem 'pry-doc'
 

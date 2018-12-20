@@ -1,4 +1,6 @@
-require 'org_toc'
+require  'org_toc'
+require 'epub_toc'
+require  'pdf_toc'
 
 class Source < ApplicationRecord
 
@@ -15,8 +17,6 @@ class Source < ApplicationRecord
                           join_table: 'sources_terms',
                           association_foreign_key: 'term_id',
                           inverse_of: 'sources'
-
-
 
   has_one    :outline
   has_many   :quotes
@@ -88,34 +88,17 @@ class Source < ApplicationRecord
 
   def extract_toc_from_file
     if file.attached?
-      parse_pdf_toc
-    end
-  end
-
-  def parse_pdf_toc
-    Tempfile.create(['toc', '.pdf']) do |tempfile|
-      tempfile.binmode
-      tempfile.write(file.download)
-      raw_toc = `mutool show #{tempfile.path} outline`
-
-      org_toc = pdf_raw_toc_to_org_toc(raw_toc)
-
-      root = OrgToc.new(content: org_toc, label: self.label)
-      root.parse
-      root.render_to_db(self)
-    end
-  end
-
-  def pdf_raw_toc_to_org_toc(toc)
-    toc.split("\n").map do |line|
-      match = line.match(/^\t+/)
-      if match
-        level = match.to_a.first.size + 1
-        line = line.gsub(/^\t+/, '*'*level+' ')
-      else
-        line = line.gsub(/^/, '* ')
+      Tempfile.create('toc') do |tempfile|
+        tempfile.binmode
+        tempfile.write(file.download)
+        case FileMagic.new.file(tempfile.path)
+        when /EPUB/
+          klass = EpubToc
+        when /PDF/
+          klass = PdfToc
+        end
+        klass.extract(self)
       end
-      line.split("\t").first
     end
   end
 
