@@ -27,6 +27,10 @@
    : mkdir ~/.emacs.d
    : cp doc/init.el ~/.emacs.d
 
+   Чтобы заработал импорт оглавлений из pdf:
+
+   : sudo apt install mupdf-tools
+
 ** Что работает сейчас
 
 *** Источники
