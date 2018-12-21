@@ -97,7 +97,9 @@ class Source < ApplicationRecord
         when /PDF/
           klass = PdfToc
         end
-        klass.extract(self)
+        if klass
+          klass.extract(self)
+        end
       end
     end
   end

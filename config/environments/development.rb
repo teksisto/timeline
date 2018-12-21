@@ -58,4 +58,7 @@ Rails.application.configure do
   # Use an evented file watcher to asynchronously detect changes in source code,
   # routes, locales, etc. This feature depends on the listen gem.
   config.file_watcher = ActiveSupport::EventedFileUpdateChecker
+
+  # https://www.reddit.com/r/rails/comments/9ewt4a/seeding_images_with_active_storage/
+  config.active_job.queue_adapter = :inline
 end
