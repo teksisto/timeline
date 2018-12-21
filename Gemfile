@@ -14,7 +14,7 @@ gem "activejob", ">= 5.2.1.1"
 gem "activestorage", ">= 5.2.1.1"
 
 # Use postgres as the database for Active Record
-# gem 'pg'
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails'
 # Use Uglifier as compressor for JavaScript assets
