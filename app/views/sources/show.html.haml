@@ -34,17 +34,21 @@
   = content_tag("h#{section.depth}", section.label, id: section.id) do
     = link_to section.label, section
 
-    = link_to 'Add event',
-               new_event_path(event: {source_id: section.id}),
-               class: 'btn btn-xs btn-default'
+    .dropdown
+      %button.dropbtn
+        %i.fa.fa-arrow-down
+      .dropdown-content
+        = link_to 'Add event',
+                   new_event_path(event: {source_id: section.id}),
+                   class: 'btn btn-xs btn-default'
 
-    = link_to 'Add quote',
-              new_quote_path(quote: {source_id: section.id}),
-              class: 'btn btn-xs btn-default'
+        = link_to 'Add quote',
+                  new_quote_path(quote: {source_id: section.id}),
+                  class: 'btn btn-xs btn-default'
 
-    = link_to 'Add term',
-              new_term_path(term: {source_id: section.id}),
-              class: 'btn btn-xs btn-default'
+        = link_to 'Add term',
+                  new_term_path(term: {source_id: section.id}),
+                  class: 'btn btn-xs btn-default'
 
 
   = render partial: 'content',       locals: {source: section}
