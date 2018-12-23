@@ -10,13 +10,13 @@
 
     .page-header.row
 
+      .col-sm-3.menu-item
+        %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
+          = link_to 'Sources', sources_path
+
       .col-sm-2.menu-item
         %i.fa.fa-navicon{style: "color: #{'red' if params[:controller] == 'events'}"}
           = link_to 'Events', events_path
-
-      .col-sm-2.menu-item
-        %i.fa.fa-folder-open{style: "color: #{'red' if params[:controller] == 'sources'}"}
-          = link_to 'Sources', sources_path
 
       .col-sm-2.menu-item
         %i.fa.fa-comment{style: "color: #{'red' if params[:controller] == 'quotes'}"}
