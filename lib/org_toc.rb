@@ -1,6 +1,6 @@
 # coding: utf-8
 require 'pp'
-require 'json'
+require 'yaml'
 
 class OrgToc
 
@@ -211,7 +211,7 @@ class OrgTextParser < OrgToc
   end
 
   def event_prepare(str)
-    data = JSON.load(str)
+    data = YAML.load(str)
 
     if data['category'].present?
       category_id = Category.where(label: data.delete('category')).first.id
