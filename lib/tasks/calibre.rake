@@ -7,7 +7,7 @@ namespace :calibre do
 
     # book_category = Category.where(label: 'book').first
 
-    library_path = '/media/teksisto/22E6D16331B47114/library/'
+    library_path = '/media/teksisto/22E6D16331B47114/test_library/'
 
     for book_path in Dir[File.join(library_path, "*/*/")]
       puts '--------------'

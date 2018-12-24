@@ -73,9 +73,24 @@ GEM
     commonjs (0.2.7)
     concurrent-ruby (1.1.4)
     crass (1.0.4)
+    elasticsearch (6.1.0)
+      elasticsearch-api (= 6.1.0)
+      elasticsearch-transport (= 6.1.0)
+    elasticsearch-api (6.1.0)
+      multi_json
+    elasticsearch-model (6.0.0)
+      activesupport (> 3)
+      elasticsearch (> 1)
+      hashie
+    elasticsearch-rails (6.0.0)
+    elasticsearch-transport (6.1.0)
+      faraday
+      multi_json
     erubi (1.8.0)
     erubis (2.7.0)
     execjs (2.7.0)
+    faraday (0.15.4)
+      multipart-post (>= 1.2, < 3)
     ffi (1.9.25)
     font-awesome-rails (4.7.0.4)
       railties (>= 3.2, < 6.0)
@@ -90,6 +105,7 @@ GEM
       haml (>= 4.0.6, < 6.0)
       html2haml (>= 1.0.1)
       railties (>= 4.0.1)
+    hashie (3.6.0)
     html2haml (2.2.0)
       erubis (~> 2.7.0)
       haml (>= 4.0, < 6)
@@ -131,6 +147,7 @@ GEM
     minitest (5.11.3)
     msgpack (1.2.4)
     multi_json (1.13.1)
+    multipart-post (2.0.0)
     nio4r (2.3.1)
     nokogiri (1.9.1)
       mini_portile2 (~> 2.4.0)
@@ -265,6 +282,8 @@ DEPENDENCIES
   byebug
   cocoon
   coffee-rails
+  elasticsearch-model
+  elasticsearch-rails
   font-awesome-rails
   generic_edit_and_destroy_links!
   haml-rails

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_17_080256) do
+ActiveRecord::Schema.define(version: 2018_12_23_162418) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -131,6 +131,7 @@ ActiveRecord::Schema.define(version: 2018_12_17_080256) do
     t.integer "depth", default: 0
     t.integer "children_count", default: 0
     t.text "link"
+    t.text "content"
   end
 
   create_table "sources_terms", id: false, force: :cascade do |t|

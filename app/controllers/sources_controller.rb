@@ -7,6 +7,13 @@ class SourcesController < ApplicationController
     @sources = Source.roots.includes(:authors, :category)
   end
 
+  def search
+    if params[:q]
+      @response = Source.search query: {match:  { content: params[:q].first } },
+                                highlight: { fields: { content: {} } }
+    end
+  end
+
   # GET /sources/1
   # GET /sources/1.json
   def show

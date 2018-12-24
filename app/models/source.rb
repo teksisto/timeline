@@ -2,7 +2,12 @@ require  'org_toc'
 require 'epub_toc'
 require  'pdf_toc'
 
+require 'elasticsearch/model'
+
 class Source < ApplicationRecord
+
+  include Elasticsearch::Model
+  include Elasticsearch::Model::Callbacks
 
   acts_as_nested_set
 
@@ -26,13 +31,14 @@ class Source < ApplicationRecord
   has_one_attached :cover
   has_one_attached :file
 
-  after_create :extract_toc_from_file
-
-  include SourcesHelper
-
   default_scope do
     includes(:authors)
   end
+
+  after_create :extract_toc
+  after_create :extract_content
+
+  include SourcesHelper
 
   def authors
     if root?
@@ -47,7 +53,10 @@ class Source < ApplicationRecord
   end
 
   def parse_org_mode(org_source)
-    root = OrgToc.new(content: StringIO.new(org_source).readlines, label: self.label)
+    root = OrgToc.new(
+      content: StringIO.new(org_source).readlines,
+      label: self.label
+    )
     root.parse
     root.render_to_db(self)
   end
@@ -86,7 +95,7 @@ class Source < ApplicationRecord
     buffer
   end
 
-  def extract_toc_from_file
+  def extract_toc
     if file.attached?
       Tempfile.create('toc') do |tempfile|
         tempfile.binmode
@@ -101,6 +110,21 @@ class Source < ApplicationRecord
           klass.extract(self)
         end
       end
+    end
+  end
+
+  def extract_content
+    if file.attached?
+      output_path = "tmp/source_content_#{id}.txt"
+      Tempfile.create('toc') do |tempfile|
+        tempfile.binmode
+        tempfile.write(file.download)
+
+        `bash -c "java -jar lib/tika.jar -r #{tempfile.path} > #{output_path}"`
+
+      end
+      update_attribute(:content, IO.read(output_path))
+      File.delete(output_path)
     end
   end
 

@@ -102,6 +102,9 @@ group :development do
   # gem 'capistrano-rails', '~> 1.1'
 end
 
+gem 'elasticsearch-model'
+gem 'elasticsearch-rails'
+
 gem 'generic_edit_and_destroy_links', git: 'https://github.com/teksisto/generic_edit_and_destroy_links.git'
 
 #############################################################

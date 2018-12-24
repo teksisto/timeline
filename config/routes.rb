@@ -18,6 +18,9 @@ Rails.application.routes.draw do
   resources :categories
 
   resources :sources do
+    collection do
+      get :search
+    end
     member do
       get :new_section
       post :create_section
