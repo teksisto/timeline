@@ -7,6 +7,7 @@ class OrgToc
   attr_accessor :children
   attr_accessor :content
   attr_accessor :label
+  attr_accessor :anchor
   attr_accessor :text
   attr_accessor :parent
   attr_accessor :level
@@ -30,6 +31,8 @@ class OrgToc
     @previous_heading = nil
     @quotes = []
     @events = []
+
+    extract_anchor
   end
 
   def parse
@@ -100,7 +103,7 @@ class OrgToc
   def render_to_db(parent)
 
     unless @level == 0
-      source = Source.create(label: label, parent: parent)
+      source = Source.create(label: label, parent: parent, anchor: anchor)
       if @text.present?
         source.create_outline(text: @text)
         @quotes.each{|q|
@@ -164,6 +167,16 @@ class OrgToc
 
   def set_level
     @line_level = @line.count('*')
+  end
+
+  def extract_anchor
+    if label.present?
+      array = label.split("\t")
+      if array.size == 2
+        @anchor = array.last
+        @label  = array.first
+      end
+    end
   end
 
 end

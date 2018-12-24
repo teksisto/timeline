@@ -31,7 +31,7 @@ class PdfToc
       else
         line = line.gsub(/^/, '* ')
       end
-      line.split("\t").first
+      line
     end
   end
 
