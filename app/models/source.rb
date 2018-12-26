@@ -1,6 +1,9 @@
 require  'org_toc'
+
 require 'epub_toc'
+require 'epub_content_extractor'
 require  'pdf_toc'
+
 
 require 'elasticsearch/model'
 
@@ -114,18 +117,21 @@ class Source < ApplicationRecord
   end
 
   def extract_content
-    if file.attached?
-      output_path = "tmp/source_content_#{id}.txt"
-      Tempfile.create('toc') do |tempfile|
-        tempfile.binmode
-        tempfile.write(file.download)
-
-        `bash -c "java -jar lib/tika.jar -r #{tempfile.path} > #{output_path}"`
-
-      end
-      update_attribute(:content, IO.read(output_path))
-      File.delete(output_path)
+    if root? && file.attached?
+      EpubContentExtractor.extract(self)
     end
+    # if file.attached?
+    #   output_path = "tmp/source_content_#{id}.txt"
+    #   Tempfile.create('toc') do |tempfile|
+    #     tempfile.binmode
+    #     tempfile.write(file.download)
+
+    #     `bash -c "java -jar lib/tika.jar -r #{tempfile.path} > #{output_path}"`
+
+    #   end
+    #   update_attribute(:content, IO.read(output_path))
+    #   File.delete(output_path)
+    # end
   end
 
 end

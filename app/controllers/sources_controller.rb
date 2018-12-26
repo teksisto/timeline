@@ -9,8 +9,12 @@ class SourcesController < ApplicationController
 
   def search
     if params[:q]
-      @response = Source.search query: {match:  { content: params[:q].first } },
-                                highlight: { fields: { content: {} } }
+      @response = Source.search query: {
+                                  match:  { content: params[:q] }
+                                },
+                                highlight: {
+                                  fields: { content: {} }
+                                }
     end
   end
 

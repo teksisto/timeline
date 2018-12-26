@@ -1,10 +1,11 @@
 = form_tag search_sources_path, method: :get do
-  = text_field :q, params[:q]
+  = text_field_tag :q, params[:q]
   = submit_tag
 
 - if @response
   - for match in @response.results
     .match
-      %h3= link_to match.label, source_path(match.id)
+      - Source.find(match['_id']).self_and_ancestors.each do |ancestor|
+        %h3= link_to ancestor.label, source_path(ancestor)
       - for chunk in match.highlight.content
         %p= chunk.html_safe

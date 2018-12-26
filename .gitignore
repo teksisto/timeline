@@ -35,6 +35,8 @@ config/database.yml
 
 Gemfile~
 
+.byebug_history
+
 # Emacs
 
 *~
