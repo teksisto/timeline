@@ -59,17 +59,4 @@ class PdfContentExtractor
     page_count
   end
 
-  # if file.attached?
-  #   output_path = "tmp/source_content_#{id}.txt"
-  #   Tempfile.create('toc') do |tempfile|
-  #     tempfile.binmode
-  #     tempfile.write(file.download)
-
-  #     `bash -c "java -jar lib/tika.jar -r #{tempfile.path} > #{output_path}"`
-
-  #   end
-  #   update_attribute(:content, IO.read(output_path))
-  #   File.delete(output_path)
-  # end
-
 end
