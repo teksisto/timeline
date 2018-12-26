@@ -9,7 +9,7 @@ class EpubContentExtractor
   end
 
   def extract
-    Tempfile.create(['toc', '.epub']) do |tempfile|
+    Tempfile.create(['source_content', '.epub']) do |tempfile|
       tempfile.binmode
       tempfile.write(@source.file.download)
 

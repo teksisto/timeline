@@ -1,9 +1,10 @@
-require  'org_toc'
+require 'org_toc'
 
 require 'epub_toc'
 require 'epub_content_extractor'
-require  'pdf_toc'
 
+require 'pdf_toc'
+require 'pdf_content_extractor'
 
 require 'elasticsearch/model'
 
@@ -38,8 +39,7 @@ class Source < ApplicationRecord
     includes(:authors)
   end
 
-  after_create :extract_toc
-  after_create :extract_content
+  after_create :extract
 
   include SourcesHelper
 
@@ -98,40 +98,25 @@ class Source < ApplicationRecord
     buffer
   end
 
-  def extract_toc
-    if file.attached?
+  def extract
+    if root? && file.attached?
       Tempfile.create('toc') do |tempfile|
         tempfile.binmode
         tempfile.write(file.download)
         case FileMagic.new.file(tempfile.path)
         when /EPUB/
-          klass = EpubToc
+          toc_klass     = EpubToc
+          content_klass = EpubContentExtractor
         when /PDF/
-          klass = PdfToc
+          toc_klass     = PdfToc
+          content_klass = PdfContentExtractor
         end
-        if klass
-          klass.extract(self)
+        if toc_klass && content_klass
+          content_klass.extract(self)
+              toc_klass.extract(self)
         end
       end
     end
-  end
-
-  def extract_content
-    if root? && file.attached?
-      EpubContentExtractor.extract(self)
-    end
-    # if file.attached?
-    #   output_path = "tmp/source_content_#{id}.txt"
-    #   Tempfile.create('toc') do |tempfile|
-    #     tempfile.binmode
-    #     tempfile.write(file.download)
-
-    #     `bash -c "java -jar lib/tika.jar -r #{tempfile.path} > #{output_path}"`
-
-    #   end
-    #   update_attribute(:content, IO.read(output_path))
-    #   File.delete(output_path)
-    # end
   end
 
 end
