@@ -25,7 +25,7 @@ class PdfContentExtractor
       start_index    = current_anchor
       if following
         following_anchor = following.anchor.to_i
-        end_index        = following_anchor-1
+        end_index        = following_anchor
       else
         following_anchor = last_page
         end_index        = following_anchor
