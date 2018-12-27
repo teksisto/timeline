@@ -14,8 +14,10 @@ class OrgToc
   attr_accessor :content_size
   attr_accessor :quotes
   attr_accessor :events
+  attr_accessor :terms
   attr_accessor :buffer
   attr_accessor :previous_heading
+  attr_accessor :opened_element
   attr_accessor :line
 
   def initialize(options)
@@ -31,6 +33,7 @@ class OrgToc
     @previous_heading = nil
     @quotes = []
     @events = []
+    @terms  = []
 
     extract_anchor
   end
@@ -106,14 +109,15 @@ class OrgToc
       source = Source.create(label: label, parent: parent, anchor: anchor)
       if @text.present?
         source.create_outline(text: @text)
-        @quotes.each{|q|
-          quote = source.quotes.create
-          quote.versions.create(text: q, language: 'ru')
-        }
-        @events.each{|e|
-          source.events.create(e)
-        }
       end
+      @quotes.each{|q|
+        quote = source.quotes.create
+        quote.versions.create(text: q, language: 'ru')
+      }
+
+      @events.each{|e| source.events.create(e) }
+
+      @terms.each{|t| source.terms.create(t) }
     end
 
     @children.each{|c| c.render_to_db(source || parent)}
@@ -199,10 +203,21 @@ class OrgTextParser < OrgToc
         @parent.quotes << @buffer.join
         @buffer.clear
       elsif beginning_of_event?
+        @opened_element = :event
         @parent.text += @buffer.join
         @buffer.clear
-      elsif end_of_event?
-        @parent.events << event_prepare(@buffer.join)
+      elsif beginning_of_term?
+        @opened_element = :term
+        @parent.text += @buffer.join
+        @buffer.clear
+      elsif end_of_something?
+        case @opened_element
+        when :event
+          @parent.events << event_prepare(@buffer.join)
+        when :term
+          @parent.terms << term_prepare(@buffer.join)
+        end
+        @opened_element = nil
         @buffer.clear
       else
         @buffer << @line
@@ -225,7 +240,11 @@ class OrgTextParser < OrgToc
     @line.strip == '#+BEGIN_SRC event'
   end
 
-  def end_of_event?
+  def beginning_of_term?
+    @line.strip == '#+BEGIN_SRC term'
+  end
+
+  def end_of_something?
     @line.strip == '#+END_SRC'
   end
 
@@ -243,6 +262,14 @@ class OrgTextParser < OrgToc
     end
 
     data
+  end
+
+  def term_prepare(str)
+    array = str.split("\n")
+    {
+      'label' => array.shift.strip,
+      'text'  => array.join("\n")
+    }
   end
 end
 
