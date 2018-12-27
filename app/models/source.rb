@@ -113,7 +113,6 @@ class Source < ApplicationRecord
           toc_klass     = PdfToc
           content_klass = PdfContentExtractor
         end
-        byebug
         if toc_klass && content_klass
               toc_klass.extract(self)
           content_klass.extract(self)
