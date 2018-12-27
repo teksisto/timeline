@@ -24,12 +24,13 @@ class PdfToc
 
   def pdf_raw_toc_to_org_toc(toc)
     toc.split("\n").map do |line|
+      line = line[1..-1]
       match = line.match(/^\t+/)
       if match
-        level = match.to_a.first.size + 1
-        line = line.gsub(/^\t+/, '*'*level+' ')
+        level = match.to_a.first.size
+        line = line.gsub(/^\t+"/, '*'*level+' ')
       else
-        line = line.gsub(/^/, '* ')
+        line = line.gsub(/^"/, '* ')
       end
       line
     end

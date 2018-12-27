@@ -99,6 +99,8 @@ class Source < ApplicationRecord
   end
 
   def extract
+
+
     if root? && file.attached?
       Tempfile.create('toc') do |tempfile|
         tempfile.binmode
@@ -111,9 +113,10 @@ class Source < ApplicationRecord
           toc_klass     = PdfToc
           content_klass = PdfContentExtractor
         end
+        byebug
         if toc_klass && content_klass
-          content_klass.extract(self)
               toc_klass.extract(self)
+          content_klass.extract(self)
         end
       end
     end

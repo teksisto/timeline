@@ -170,11 +170,17 @@ class OrgToc
   end
 
   def extract_anchor
+    # Line looks like this:
+    #
+    # -\t\t"10.·Exceptions,·catch,·and·throw"\t#156,81,534$
+    #
     if label.present?
       array = label.split("\t")
       if array.size == 2
-        @anchor = array.last
-        @label  = array.first
+        anchor_blob = array.last
+        anchor_blob = anchor_blob[1..-1]
+        @anchor = anchor_blob.split(',').first
+        @label  = array.first.chop
       end
     end
   end

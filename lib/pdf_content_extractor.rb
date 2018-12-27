@@ -21,10 +21,10 @@ class PdfContentExtractor
       current   = descendants[descendant_id]
       following = descendants[descendant_id+1]
 
-      current_anchor = current.anchor
+      current_anchor = current.anchor.to_i
       start_index    = current_anchor
       if following
-        following_anchor = following.anchor
+        following_anchor = following.anchor.to_i
         end_index        = following_anchor-1
       else
         following_anchor = last_page
