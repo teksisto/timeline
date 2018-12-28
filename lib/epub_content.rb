@@ -1,7 +1,7 @@
-class EpubContentExtractor
+class EpubContent
 
   def self.extract(source)
-    EpubContentExtractor.new(source).extract
+    EpubContent.new(source).extract
   end
 
   def initialize(source)

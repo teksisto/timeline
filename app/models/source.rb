@@ -1,10 +1,10 @@
 require 'org_toc'
 
 require 'epub_toc'
-require 'epub_content_extractor'
+require 'epub_content'
 
 require 'pdf_toc'
-require 'pdf_content_extractor'
+require 'pdf_content'
 
 require 'elasticsearch/model'
 
@@ -97,23 +97,41 @@ class Source < ApplicationRecord
   end
 
   def extract
+    extract_format
+    extract_toc
+    extract_content
+  end
+
+  def extract_format
     if root?
       Tempfile.create('toc') do |tempfile|
         tempfile.binmode
         tempfile.write(file.download)
         case FileMagic.new.file(tempfile.path)
         when /EPUB/
-          toc_klass     = EpubToc
-          content_klass = EpubContentExtractor
+          update_attribute(:format, 'epub')
         when /PDF/
-          toc_klass     = PdfToc
-          content_klass = PdfContentExtractor
-        end
-        if toc_klass && content_klass
-              toc_klass.extract(self)
-          content_klass.extract(self)
+          update_attribute(:format, 'pdf')
         end
       end
+    end
+  end
+
+  def extract_toc
+    case format
+    when 'epub'
+      EpubToc.extract(self)
+    when 'pdf'
+      PdfToc.extract(self)
+    end
+  end
+
+  def extract_content
+    case format
+    when 'epub'
+      EpubContent.extract(self)
+    when 'pdf'
+      PdfContent.extract(self)
     end
   end
 
