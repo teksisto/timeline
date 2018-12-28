@@ -6,6 +6,10 @@ class EpubContent
 
   def initialize(source)
     @source = source
+
+    # Have no idea why i need to do this, but otherwise source is not
+    # aware of any descendants.
+    @source.reload
   end
 
   def extract
