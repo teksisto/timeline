@@ -39,8 +39,6 @@ class Source < ApplicationRecord
     includes(:authors)
   end
 
-  after_create :extract
-
   include SourcesHelper
 
   def authors
@@ -99,9 +97,7 @@ class Source < ApplicationRecord
   end
 
   def extract
-
-
-    if root? && file.attached?
+    if root?
       Tempfile.create('toc') do |tempfile|
         tempfile.binmode
         tempfile.write(file.download)

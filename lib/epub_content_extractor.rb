@@ -36,7 +36,7 @@ class EpubContentExtractor
 
   def tika_filter(content)
     begin
-      input  = Tempfile.new(['epub_chapter_',         '.html'])
+      input  = Tempfile.new(['epub_chapter_', '.html'])
       input.binmode
       input.write(content)
       input.flush
