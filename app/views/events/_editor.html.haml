@@ -15,7 +15,7 @@
           %td= link_to event.label, event_path(event)
           %td= event.description
           %td
-            = button_edit_small    event
-            = button_destroy_small event
-            
+            = button_edit_small    event # class: btn-block
+            = button_destroy_small event # class: btn-block
+
 - #= link_to t('Add event'), new_event_path, :class => 'btn  btn-default'

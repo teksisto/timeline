@@ -73,8 +73,8 @@ Dropdown
 
 .dropbtn {
   background-color: white;
-  color: grey;
-  padding: 10px;
+  color: #ddd;
+  /*padding: 10px;*/
   padding-right: 150px;
   font-size: 16px;
   border: none;
@@ -84,6 +84,8 @@ Dropdown
 .dropdown {
   position: relative;
   display: inline-block;
+  padding: 10px;
+  font-size: 16px;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -98,7 +100,7 @@ Dropdown
 
 /* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
+  color: grey;
   padding: 0;
   text-decoration: none;
   display: block;
