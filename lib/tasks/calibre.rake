@@ -7,7 +7,7 @@ namespace :calibre do
 
     # book_category = Category.where(label: 'book').first
 
-    library_path = '/media/teksisto/22E6D16331B47114/test_library/'
+    library_path = '/media/teksisto/22E6D16331B47114/library/'
 
     for book_path in Dir[File.join(library_path, "*/*/")]
       puts '--------------'
@@ -37,26 +37,30 @@ namespace :calibre do
          file_path.present?  && File.exists?(file_path) &&
          cover_path.present? && File.exists?(cover_path)
 
-        source_attributes = {
-          label: label,
-          authors: authors
-          #category: book_category
-        }
+        begin
+          source_attributes = {
+            label: label,
+            authors: authors
+            # category: book_category
+          }
 
-        source = Source.new(source_attributes)
+          source = Source.new(source_attributes)
 
+          source.save
 
-        source.file.attach(
-          io: File.open(file_path),
-          filename: File.basename(file_path)
-        )
+          source.file.attach(
+            io: File.open(file_path),
+            filename: File.basename(file_path)
+          )
 
-        source.cover.attach(
-          io: File.open(cover_path),
-          filename: File.basename(cover_path)
-        )
+          # source.cover.attach(
+          #   io: File.open(cover_path),
+          #   filename: File.basename(cover_path)
+          # )
 
-        source.save
+        rescue => exception
+          byebug
+        end
 
       else
         puts 'Fuck.'

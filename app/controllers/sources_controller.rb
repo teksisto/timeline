@@ -10,7 +10,9 @@ class SourcesController < ApplicationController
   def search
     if params[:q]
       @response = Source.search query: {
-                                  match_phrase:  { content: params[:q] }
+                                  match_phrase:  {
+                                    content: params[:q]
+                                  }
                                 },
                                 highlight: {
                                   fields: { content: {} }

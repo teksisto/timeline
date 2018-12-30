@@ -1,5 +1,17 @@
 - model_class = Source
 
+= render partial: 'events/modal_form', locals: { event: Event.new }
+= render partial: 'quotes/modal_form', locals: { quote: Quote.new }
+= render partial:  'terms/modal_form', locals: {  term:  Term.new }
+
+:javascript
+  function setSourceId(id) {
+    $('#event_source_id').val(id);
+    $('#quote_source_id').val(id);
+    $('#term_source_id').val(id);
+    $('#source_id').val(id);
+  }
+
 .panel.panel-info
   .panel-heading
     = source_title(@source)
@@ -33,35 +45,11 @@
         = button_edit    @source
         = button_destroy @source
 
-= render partial: 'content', locals: {source: @source}
+- if @source.outline
+  %p= temp_org_render(@source.outline.text)
 
 - for section in @source.descendants.includes(:outline, :terms, :events, :quotes)
-  = content_tag("h#{section.depth}", section.label, id: section.id) do
-    = link_to section.label, section
-
-    %span.dropdown
-      %button.dropbtn
-        %i.fa.fa-arrow-down
-      %span.dropdown-content
-        = link_to 'Add event',
-                   new_event_path(event: {source_id: section.id})
-
-
-        = link_to 'Add quote',
-                  new_quote_path(quote: {source_id: section.id})
-
-
-        = link_to 'Add term',
-                  new_term_path(term: {source_id: section.id})
-
-
-
-  = render partial: 'content',       locals: {source: section}
-
-  = render partial: 'events/editor', locals: {events:  section.events}
-  = render partial: 'quotes',        locals: {section: section}
-  = render partial: 'terms',         locals: {section: section}
-
+  = render partial: 'section', locals: {section: section}
 
 = render partial: 'events/editor', locals: {events: @source.events}
 

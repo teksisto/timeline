@@ -24,17 +24,34 @@ class TermsController < ApplicationController
   # POST /terms
   # POST /terms.json
   def create
-    @term = Term.new(term_params)
+    @term   = Term.new(term_params)
+    @source = Source.find(term_params[:source_id])
 
     respond_to do |format|
       if @term.save
         format.html { redirect_to @term, notice: 'Term was successfully created.' }
         format.json { render :show, status: :created, location: @term }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @term.errors, status: :unprocessable_entity }
+        format.js
       end
     end
+  end
+
+  def select
+
+    params.permit(:term_id, :source_id)
+
+    @term = Term.find(params[:term_id])
+    @source = Source.find(params[:source_id])
+    @source.terms << @term
+
+    respond_to do |format|
+      format.js { render :create }
+    end
+
   end
 
   # PATCH/PUT /terms/1
@@ -61,16 +78,6 @@ class TermsController < ApplicationController
     end
   end
 
-  def select
-
-    params.permit(:term_id, :source_id)
-
-    term = Term.find(params[:term_id])
-    source = Source.find(params[:source_id])
-    source.terms << term
-
-    redirect_to source
-  end
 
   private
     # Use callbacks to share common setup or constraints between actions.

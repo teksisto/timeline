@@ -1,0 +1,31 @@
+= form_for quote, html: { class: "form form-horizontal quote" } do |f|
+  .modal.fade{id: "quoteModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
+    .modal-dialog.modal-dialog-centered{role: "document"}
+      .modal-content
+        .modal-header
+          %h5.modal-title#eventModalFormTitle New quote
+          %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
+        .modal-body
+          .form-group
+            = f.label :label, class: 'control-label'
+            .controls
+              = f.text_field :label, class: 'form-control', required: true
+            = # error_span(@quote[:label])
+
+          = f.hidden_field :source_id
+
+          -# #versions.well
+          -#   #versions_toggler
+          -#     %strong= 'Versions'
+          -#   #versions_fields.fields-for
+          -#     = f.fields_for :versions do |version|
+          -#       = render partial: 'quotes/version_fields', locals: {f: version}
+          -#     .links
+          -#       = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
+
+        .modal-footer
+          = f.submit nil, data: {dismiss: "modal"}, class: 'btn btn-primary'
+          = link_to t('.cancel', :default => t("helpers.links.cancel")),
+                    '#',
+                    data: {dismiss: "modal"},
+                    class: 'btn btn-default'

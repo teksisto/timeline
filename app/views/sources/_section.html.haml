@@ -1,0 +1,26 @@
+.section_wrapper{id: "section_#{section.id}"}
+  = content_tag("h#{section.depth}", section.label, id: section.id) do
+    = link_to section.label, section
+
+    %span.dropdown
+      %button.dropbtn
+        %i.fa.fa-arrow-down
+      %span.dropdown-content
+        = link_to 'Add event', '#',
+                  data: {toggle: "modal", target: "#eventModalForm"},
+                  onclick: "setSourceId(#{section.id});"
+
+        = link_to 'Add quote', '#',
+                  data: {toggle: "modal", target: "#quoteModalForm"},
+                  onclick: "setSourceId(#{section.id});"
+
+        = link_to 'Add term',  '#',
+                  data: {toggle: "modal", target:  "#termModalForm"},
+                  onclick: "setSourceId(#{section.id});"
+
+  - if section.outline
+    %p= temp_org_render(section.outline.text)
+
+  = render partial: 'events/editor', locals: {events:  section.events}
+  = render partial: 'sources/quotes',        locals: {section: section}
+  = render partial: 'sources/terms',         locals: {section: section}

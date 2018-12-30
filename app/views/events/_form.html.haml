@@ -1,4 +1,4 @@
-= form_for @event, html: { class: "form form-horizontal event" } do |f|
+= form_for event, html: { class: "form form-horizontal event" } do |f|
   .form-group
     = f.label :label, class: 'col-sm-2 control-label'
     .controls.col-sm-10.col-sm-10
@@ -48,7 +48,7 @@
 
     .controls.col-sm-10
       = f.select 'category_ids',
-          category_options_for_select(Category.events_root, @event.category_ids),
+          category_options_for_select(Category.events_root, event.category_ids),
           {include_blank: true},
           {multiple: true}
       :javascript
@@ -61,7 +61,7 @@
 
     .controls.col-sm-10
       = f.select 'location_id',
-        category_options_for_select(Category.locations_root, @event.location_id),
+        category_options_for_select(Category.locations_root, event.location_id),
         {include_blank: true},
         {style: 'width: 30%'}
       :javascript
