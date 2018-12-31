@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_28_104802) do
+ActiveRecord::Schema.define(version: 2018_12_30_070601) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -105,19 +105,13 @@ ActiveRecord::Schema.define(version: 2018_12_28_104802) do
     t.index ["source_id"], name: "index_people_sources_on_source_id"
   end
 
-  create_table "quote_versions", force: :cascade do |t|
-    t.integer "quote_id"
-    t.string "language"
-    t.text "text"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "quotes", force: :cascade do |t|
     t.string "label"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer "source_id"
+    t.text "translation"
+    t.text "original"
   end
 
   create_table "sources", force: :cascade do |t|

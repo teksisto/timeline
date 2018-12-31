@@ -3,7 +3,16 @@
     = f.label :label, class: 'control-label'
     .controls
       = f.text_field :label, class: 'form-control', required: true
-    = # error_span(@quote[:label])
+
+  .form-group
+    = f.label :original, class: 'control-label'
+    .controls
+      = f.text_field :original, class: 'form-control', required: true
+
+  .form-group
+    = f.label :translation, class: 'control-label'
+    .controls
+      = f.text_field :translation, class: 'form-control'
 
   = f.hidden_field :source_id
 
@@ -14,15 +23,6 @@
       = f.fields_for :source, @quote.source do |source|
         = render partial: 'sources/fields', locals: {f: source, source: @quote.source}
 
-  #versions.well
-    #versions_toggler
-      %strong= 'Versions'
-    #versions_fields.fields-for
-      = f.fields_for :versions do |version|
-        = render partial: 'version_fields', locals: {f: version}
-      .links
-        = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
-
   %hr
 
   = f.submit nil,class: 'btn btn-primary'
@@ -31,8 +31,4 @@
 :javascript
   $("#quote_source_toggler").click(function (){
     $("#quote_source_fields").toggle();
-  })
-
-  $("#versions_toggler").click(function (){
-    $("#versions_fields").toggle();
   })

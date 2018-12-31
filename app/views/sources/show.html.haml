@@ -1,16 +1,6 @@
 - model_class = Source
 
-= render partial: 'events/modal_form', locals: { event: Event.new }
-= render partial: 'quotes/modal_form', locals: { quote: Quote.new }
-= render partial:  'terms/modal_form', locals: {  term:  Term.new }
-
-:javascript
-  function setSourceId(id) {
-    $('#event_source_id').val(id);
-    $('#quote_source_id').val(id);
-    $('#term_source_id').val(id);
-    $('#source_id').val(id);
-  }
+#modalForm
 
 .panel.panel-info
   .panel-heading

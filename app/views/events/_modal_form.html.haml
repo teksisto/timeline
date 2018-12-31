@@ -1,83 +1,86 @@
-= form_for event, remote: true, html: { class: "form form-horizontal event" } do |f|
-  .modal.fade{id: "eventModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
-    .modal-dialog.modal-dialog-centered{role: "document"}
-      .modal-content
-        .modal-header
-          %h5.modal-title#eventModalFormTitle New event
-          %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
-        .modal-body
-          .form-group
-            = f.label :label, class: 'col-sm-2 control-label'
-            .controls.col-sm-10.col-sm-10
-              = f.text_field :label, class: 'form-control', required: true
-            = # error_span(@event[:label])
+#modalForm
+  = form_for event, remote: true, html: { class: "form form-horizontal event" } do |f|
+    .modal.fade{id: "eventModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
+      .modal-dialog.modal-dialog-centered{role: "document"}
+        .modal-content
+          .modal-header
+            %h5.modal-title#eventModalFormTitle New event
+            %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
+          .modal-body
+            .form-group
+              = f.label :label, class: 'col-sm-2 control-label'
+              .controls.col-sm-10.col-sm-10
+                = f.text_field :label, class: 'form-control', required: true
+              = # error_span(@event[:label])
 
-          .form-group
-            = f.label :start_date, class: 'col-sm-2 control-label'
-            .controls.col-sm-2
-              = f.text_field :start_date, class: 'form-control', required: true
-            = # error_span(@event[:start_date])
+            .form-group
+              = f.label :start_date, class: 'col-sm-2 control-label'
+              .controls.col-sm-10
+                = f.text_field :start_date, class: 'form-control', required: true
+              = # error_span(@event[:start_date])
 
-          .form-group
-            = f.label :end_date, class: 'col-sm-2 control-label'
-            .controls.col-sm-2
-              = f.text_field :end_date, class: 'form-control'
-            = # error_span(@event[:end_date])
+            .form-group
+              = f.label :end_date, class: 'col-sm-2 control-label'
+              .controls.col-sm-10
+                = f.text_field :end_date, class: 'form-control'
+              = # error_span(@event[:end_date])
 
-          .form-group
-            = f.label :period, class: 'col-sm-2 control-label'
-            .controls.col-sm-1
-              = f.check_box :period, class: 'form-control'
-            = # error_span(@event[:period])
+            .form-group
+              = f.label :period, class: 'col-sm-2 control-label'
+              .controls.col-sm-1
+                = f.check_box :period, class: 'form-control'
+              = # error_span(@event[:period])
 
-          .form-group
-            = f.label :age, class: 'col-sm-2 control-label'
-            .controls.col-sm-1
-              = f.check_box :age, class: 'form-control'
-            = # error_span(@event[:age])
+            .form-group
+              = f.label :age, class: 'col-sm-2 control-label'
+              .controls.col-sm-1
+                = f.check_box :age, class: 'form-control'
+              = # error_span(@event[:age])
 
-          .form-group
-            = f.label :description, class: 'col-sm-2 control-label'
-            .controls.col-sm-10
-              = f.text_area :description, class: 'form-control'
-            = # error_span(@event[:description])
+            .form-group
+              = f.label :description, class: 'col-sm-2 control-label'
+              .controls.col-sm-10
+                = f.text_area :description, class: 'form-control'
+              = # error_span(@event[:description])
 
-          .form-group
-            = f.label :link, class: 'col-sm-2 control-label'
-            .controls.col-sm-10
-              = f.url_field :link, class: 'form-control'
-            = # error_span(@event[:link])
+            .form-group
+              = f.label :link, class: 'col-sm-2 control-label'
+              .controls.col-sm-10
+                = f.url_field :link, class: 'form-control'
+              = # error_span(@event[:link])
 
-            = f.hidden_field :source_id
+              = f.hidden_field :source_id
 
-          .form-group
-            = f.label :category_ids, class: 'col-sm-2 control-label'
+            .form-group
+              = f.label :category_ids, class: 'col-sm-2 control-label'
 
-            .controls.col-sm-10
-              = f.select 'category_ids',
-                  category_options_for_select(Category.events_root, event.category_ids),
-                  {include_blank: true},
-                  {multiple: true, width: '100%'}
-              :javascript
-                $("#event_category_ids").select2();
+              .controls.col-sm-10
+                = f.select 'category_ids',
+                    category_options_for_select(Category.events_root, event.category_ids),
+                    {include_blank: true},
+                    {multiple: true}
+                -# :javascript
+                -#   $("#event_category_ids").select2();
+                -#   $(".select2-search__field").css('width: 100%');
 
-            = # error_span(@event[:source_id])
+              = # error_span(@event[:source_id])
 
-          .form-group
-            = f.label :location_id, class: 'col-sm-2 control-label'
+            .form-group
+              = f.label :location_id, class: 'col-sm-2 control-label'
 
-            .controls.col-sm-10
-              = f.select 'location_id',
-                category_options_for_select(Category.locations_root, event.location_id),
-                {include_blank: true}
-              :javascript
-                $("#event_location_id").select2();
+              .controls.col-sm-10
+                = f.select 'location_id',
+                  category_options_for_select(Category.locations_root, event.location_id),
+                  {include_blank: true}
+                -# :javascript
+                -#   $("#event_location_id").select2();
+                -#   $(".select2-search__field").css('width: 100%');
 
-            = # error_span(@event[:source_id])
+              = # error_span(@event[:source_id])
 
-        .modal-footer
-          = f.submit nil, class: 'btn btn-primary', onclick: "$('#eventModalForm').modal('hide')"
-          = link_to t('.cancel', :default => t("helpers.links.cancel")),
-                   '#',
-                   data: {dismiss: "modal"},
-                   class: 'btn btn-primary'
+          .modal-footer
+            = f.submit nil, class: 'btn btn-primary', onclick: "$('#eventModalForm').modal('hide')"
+            = link_to t('.cancel', :default => t("helpers.links.cancel")),
+                     '#',
+                     data: {dismiss: "modal"},
+                     class: 'btn btn-primary'

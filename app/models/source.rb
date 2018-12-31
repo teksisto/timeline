@@ -88,8 +88,8 @@ class Source < ApplicationRecord
       if source.quotes.any?
         source.quotes.each do |quote|
           buffer += "#+BEGIN_QUOTE\n"
-          buffer += quote.versions.first.text + "\n"
-           buffer += "#+END_QUOTE\n"
+          buffer += quote.original + "\n"
+          buffer += "#+END_QUOTE\n"
         end
       end
     end

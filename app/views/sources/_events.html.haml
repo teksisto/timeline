@@ -1,0 +1,19 @@
+- model_class = Event
+
+- unless events.empty?
+  %table.table.table-striped
+    %thead
+      %tr
+        %th= 'Date'
+        %th= model_class.human_attribute_name(:label)
+        %th= model_class.human_attribute_name(:description)
+        %th=t '.actions', :default => t("helpers.actions")
+    %tbody
+      - events.each do |event|
+        %tr
+          %td= event.start_date
+          %td= link_to event.label, event_path(event)
+          %td= event.description
+          %td
+            = button_edit_small    event # class: btn-block
+            = button_destroy_small event # class: btn-block

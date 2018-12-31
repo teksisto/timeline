@@ -1,31 +1,33 @@
-= form_for quote, html: { class: "form form-horizontal quote" } do |f|
-  .modal.fade{id: "quoteModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
-    .modal-dialog.modal-dialog-centered{role: "document"}
-      .modal-content
-        .modal-header
-          %h5.modal-title#eventModalFormTitle New quote
-          %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
-        .modal-body
-          .form-group
-            = f.label :label, class: 'control-label'
-            .controls
-              = f.text_field :label, class: 'form-control', required: true
-            = # error_span(@quote[:label])
+#modalForm
+  = form_for quote, remote: true, html: { class: "form form-horizontal quote" } do |f|
+    .modal.fade{id: "quoteModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
+      .modal-dialog.modal-dialog-centered{role: "document"}
+        .modal-content
+          .modal-header
+            %h5.modal-title#eventModalFormTitle New quote
+            %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
+          .modal-body
+            .form-group
+              = f.label :label, class: 'control-label'
+              .controls
+                = f.text_field :label, class: 'form-control'
+              = # error_span(@quote[:label])
 
-          = f.hidden_field :source_id
+            .form-group
+              = f.label :original, class: 'control-label'
+              .controls
+                = f.text_area :original, class: 'form-control', required: true
 
-          -# #versions.well
-          -#   #versions_toggler
-          -#     %strong= 'Versions'
-          -#   #versions_fields.fields-for
-          -#     = f.fields_for :versions do |version|
-          -#       = render partial: 'quotes/version_fields', locals: {f: version}
-          -#     .links
-          -#       = link_to_add_association 'Add version', f, :versions, class: 'btn btn-default btn-xs'
+            .form-group
+              = f.label :translation, class: 'control-label'
+              .controls
+                = f.text_area :translation, class: 'form-control'
 
-        .modal-footer
-          = f.submit nil, data: {dismiss: "modal"}, class: 'btn btn-primary'
-          = link_to t('.cancel', :default => t("helpers.links.cancel")),
-                    '#',
-                    data: {dismiss: "modal"},
-                    class: 'btn btn-default'
+            = f.hidden_field :source_id
+
+          .modal-footer
+            = f.submit nil, class: 'btn btn-primary', onclick: "$('#quoteModalForm').modal('hide')"
+            = link_to t('.cancel', :default => t("helpers.links.cancel")),
+                      '#',
+                      data: {dismiss: "modal"},
+                      class: 'btn btn-default'

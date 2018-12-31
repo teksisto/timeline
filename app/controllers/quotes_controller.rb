@@ -1,11 +1,10 @@
-# coding: utf-8
 class QuotesController < ApplicationController
 
   before_action :set_quote,  only: [:show, :edit, :update, :destroy]
   after_action  :set_source, only: [:new, :edit]
 
   include SourcesHelper
-  
+
   # GET /quotes
   # GET /quotes.json
   def index
@@ -29,15 +28,18 @@ class QuotesController < ApplicationController
   # POST /quotes
   # POST /quotes.json
   def create
-    @quote = Quote.new(quote_params)
+    @quote  = Quote.new(quote_params)
+    @source = Source.find(quote_params[:source_id])
 
     respond_to do |format|
       if @quote.save
         format.html { redirect_to @quote, notice: 'Quote was successfully created.' }
         format.json { render :show, status: :created, location: @quote }
+        format.js
       else
         format.html { render :new }
         format.json { render json: @quote.errors, status: :unprocessable_entity }
+        format.js   { render :new }
       end
     end
   end
@@ -81,13 +83,8 @@ class QuotesController < ApplicationController
         :label,
         :text,
         :source_id,
-        :versions_attributes => [
-          :id,
-          :quote_id,
-          :language,
-          :text,
-          :_destroy
-        ],
+        :original,
+        :translation,
         :source_attributes => [
           :id,
           :_destroy,
@@ -96,7 +93,7 @@ class QuotesController < ApplicationController
           :link,
           :category_id,
           {:author_ids => []}
-        ] 
+        ]
       )
     end
 end

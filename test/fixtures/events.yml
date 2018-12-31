@@ -163,6 +163,17 @@ ipv4_address exhaustion:
   categories:
     - networks
 
+google_search_lunched:
+  start_date:  <%= Date.new(1997,9,15).to_s(:db) %>
+  end_date:
+  label: 'Google Search'
+  link: 'https://en.wikipedia.org/wiki/Google_Search'
+  location: usa
+  description: ''
+  source: wikipedia
+  categories:
+    - networks
+
 # Computers / Networks / Arpanet
 
 first_packets:
@@ -194,6 +205,8 @@ arpanet_stable:
   source: michigan
   categories:
     - arpanet
+
+
 
 tcp_flag_day:
   start_date:  <%= Date.new(1983,1,1).to_s(:db) %>

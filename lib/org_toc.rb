@@ -111,8 +111,7 @@ class OrgToc
         source.create_outline(text: @text)
       end
       @quotes.each{|q|
-        quote = source.quotes.create
-        quote.versions.create(text: q, language: 'ru')
+        quote = source.quotes.create(original: q)
       }
 
       @events.each{|e| source.events.create(e) }

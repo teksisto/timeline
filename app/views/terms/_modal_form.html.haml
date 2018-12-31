@@ -1,52 +1,53 @@
-.modal.fade{id: "termModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
-  .modal-dialog.modal-dialog-centered{role: "document"}
-    .modal-content
-      .modal-header
-        %h5.modal-title#eventModalFormTitle New term
-        %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
-      .modal-body
-        %ul.nav.nav-tabs
-          %li.active
-            %a{'href' => "#new_term",      'data-toggle' => "tab"}= 'New term'
-          %li
-            %a{'href' => "#existing_term", 'data-toggle' => "tab"}= 'Add existing term'
+#modalForm
+  .modal.fade{id: "termModalForm", tabindex: "-1", role: "dialog", aria: {labelledby: "eventModalFormTitle", hidden: "true"}}
+    .modal-dialog.modal-dialog-centered{role: "document"}
+      .modal-content
+        .modal-header
+          %h5.modal-title#eventModalFormTitle New term
+          %button.close{type: "button", data: {dismiss: "modal"}, aria: {label: "Close"}}
+        .modal-body
+          %ul.nav.nav-tabs
+            %li.active
+              %a{'href' => "#new_term",      'data-toggle' => "tab"}= 'New term'
+            %li
+              %a{'href' => "#existing_term", 'data-toggle' => "tab"}= 'Add existing term'
 
-        .tab-content
-          .tab-pane.active#new_term
-            .margin-conteiner{style: 'margin-top: 15px;'}
-              = form_for term, remote: true, html: { class: "form form-horizontal term" } do |f|
-                .form-group
-                  = f.label :label, class: 'control-label col-lg-2'
-                  .col-lg-10
-                    = f.text_field :label, class: 'form-control', required: true
-                  = f.error_span(:label)
-                .form-group
-                  = f.label :text, class: 'control-label col-lg-2'
-                  .col-lg-10
-                    = f.text_area :text, class: 'form-control', required: true
-                  = f.error_span(:text)
+          .tab-content
+            .tab-pane.active#new_term
+              .margin-conteiner{style: 'margin-top: 15px;'}
+                = form_for term, remote: true, html: { class: "form form-horizontal term" } do |f|
+                  .form-group
+                    = f.label :label, class: 'control-label col-lg-2'
+                    .col-lg-10
+                      = f.text_field :label, class: 'form-control', required: true
+                    = f.error_span(:label)
+                  .form-group
+                    = f.label :text, class: 'control-label col-lg-2'
+                    .col-lg-10
+                      = f.text_area :text, class: 'form-control', required: true
+                    = f.error_span(:text)
 
-                = f.hidden_field :source_id
+                  = f.hidden_field :source_id
 
-                %hr
+                  %hr
 
-                .form-group
-                  .col-lg-offset-2.col-lg-10
-                    = f.submit nil,class: 'btn btn-primary', onclick: "$('#termModalForm').modal('hide')"
+                  .form-group
+                    .col-lg-offset-2.col-lg-10
+                      = f.submit nil,class: 'btn btn-primary', onclick: "$('#termModalForm').modal('hide')"
 
-          .tab-pane#existing_term
-            .margin-conteiner{style: 'margin-top: 15px;'}
-              = form_tag select_terms_path, remote: true, class: "form form-horizontal term" do
+            .tab-pane#existing_term
+              .margin-conteiner{style: 'margin-top: 15px;'}
+                = form_tag select_terms_path, remote: true, class: "form form-horizontal term" do
 
-                .form-group
-                  = label_tag :term_id, 'Term', class: 'control-label col-lg-2'
-                  .col-lg-10
-                    = select_tag :term_id, options_from_collection_for_select(Term.all, :id, :label, nil)
+                  .form-group
+                    = label_tag :term_id, 'Term', class: 'control-label col-lg-2'
+                    .col-lg-10
+                      = select_tag :term_id, options_from_collection_for_select(Term.all, :id, :label, nil)
 
-                = hidden_field_tag :source_id, term.source_id
+                  = hidden_field_tag :source_id, term.source_id
 
-                %hr
+                  %hr
 
-                .form-group
-                  .col-lg-offset-2.col-lg-10
-                    = submit_tag 'Add term', class: 'btn btn-primary', onclick: "$('#termModalForm').modal('hide')"
+                  .form-group
+                    .col-lg-offset-2.col-lg-10
+                      = submit_tag 'Add term', class: 'btn btn-primary', onclick: "$('#termModalForm').modal('hide')"

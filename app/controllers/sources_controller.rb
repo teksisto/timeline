@@ -88,7 +88,7 @@ class SourcesController < ApplicationController
   end
 
   def quotes
-    @quote_versions = @source.self_and_descendants.map{|s| s.quotes.map{|q| q.versions.first}}.flatten.sort_by{ rand }
+    @quote_versions = @source.self_and_descendants.map{|s| s.quotes.map{|q| q.original}}.flatten.sort_by{ rand }
     render layout: 'slides'
   end
 
