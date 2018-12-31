@@ -31,9 +31,15 @@
    : mkdir ~/.emacs.d
    : cp doc/init.el ~/.emacs.d
 
-   Чтобы заработал импорт оглавлений из pdf:
+   Чтобы заработал импорт из pdf нужен самый свежий [[https://mupdf.com/docs/building.html][mupdf-tools]], в
+   репозиториях Ubuntu его нет.
 
-   : sudo apt install mupdf-tools libmagic-dev
+   : sudo apt install libmagic-dev
+   :
+   : git clone --recursive git://git.ghostscript.com/mupdf.git
+   : cd mupdf
+   : git submodule update --init
+   : make HAVE_X11=no HAVE_GLUT=no prefix=/usr/local install
 
 ** Что работает сейчас
 
