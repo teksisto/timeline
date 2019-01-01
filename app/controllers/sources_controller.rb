@@ -16,7 +16,8 @@ class SourcesController < ApplicationController
                                 },
                                 highlight: {
                                   fields: { content: {} }
-                                }
+                                },
+                                size: 100
     end
   end
 

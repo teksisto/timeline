@@ -15,6 +15,11 @@ class Event < ApplicationRecord
 
   scope :from_sources, lambda{|source_ids|
     if source_ids.present?
+      source_ids = source_ids.map{|source_id|
+        source = Source.find(source_id)
+        descendant_ids = source.self_and_descendants.pluck(:id)
+        descendant_ids
+      }.flatten.uniq
       joins(:source).where(sources: {id: source_ids})
     end
   }

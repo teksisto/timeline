@@ -41,7 +41,7 @@
 - for section in @source.descendants.includes(:outline, :terms, :events, :quotes)
   = render partial: 'section', locals: {section: section}
 
-= render partial: 'events/editor', locals: {events: @source.events}
+= render partial: 'sources/events', locals: {events: @source.events}
 
 :javascript
 
