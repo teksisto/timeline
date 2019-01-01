@@ -22,8 +22,8 @@
             - if @source.anchor.present?
               %b Anchor
               = @source.anchor
-            .content
-              = @source.content
+            -# .content
+            -#   = @source.content
 
     .controls
       = link_to 'Add table of contents', new_section_source_path(@source), :class => 'btn btn-default'

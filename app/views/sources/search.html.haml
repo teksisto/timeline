@@ -7,5 +7,6 @@
     .match
       - Source.find(match['_id']).self_and_ancestors.each do |ancestor|
         %h3= link_to ancestor.label, source_path(ancestor)
-      - for chunk in match.highlight.content
-        %p= chunk.html_safe
+        %p
+          - match.highlight.content.each do |chunk|
+            %span= chunk.html_safe
