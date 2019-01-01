@@ -2,15 +2,4 @@
   %b Quotes
   .container-fluid
     - for quote in section.quotes
-      .row
-        - if quote.original.present? && quote.translation.present?
-          .col-sm-6
-            %blockquote
-              = temp_org_render(quote.original)
-          .col-sm-6
-            %blockquote
-              = temp_org_render(quote.translation)
-        - else
-          .col-sm-12
-            %blockquote
-              = temp_org_render(quote.original)
+      = render partial: 'quotes/quote', locals: {quote: quote}

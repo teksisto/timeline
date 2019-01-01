@@ -15,5 +15,14 @@
           %td= link_to event.label, event_path(event)
           %td= event.description
           %td
-            = button_edit_small    event # class: btn-block
-            = button_destroy_small event # class: btn-block
+            = link_to  'Edit',
+                       edit_event_path(event),
+                       remote: true,
+                       class: 'btn btn-xs'
+
+            = link_to 'Delete',
+                      event_path(event),
+                      :remote => true,
+                      :method => :delete,
+                      :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+                      :class => 'btn btn-xs'

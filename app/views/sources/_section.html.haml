@@ -6,13 +6,13 @@
       %button.dropbtn
         %i.fa.fa-arrow-down
       %span.dropdown-content
-        = link_to 'Add event', new_event_path(event: {source_id: section.id}),    remote: true
-        = link_to 'Add quote', new_quote_path(quote: {source_id: section.id}),    remote: true
+        = link_to 'Add event', new_event_path(event: {source_id: section.id}), remote: true
+        = link_to 'Add quote', new_quote_path(quote: {source_id: section.id}), remote: true
         = link_to 'Add term',   new_term_path(term:  {source_id: section.id}), remote: true
 
   - if section.outline
     %p= temp_org_render(section.outline.text)
 
-  = render partial: 'events/editor', locals: {events:  section.events}
-  = render partial: 'sources/quotes',        locals: {section: section}
-  = render partial: 'sources/terms',         locals: {section: section}
+  = render partial: 'sources/events',  locals: {events:  section.events}
+  = render partial: 'sources/quotes', locals: {section: section}
+  = render partial: 'sources/terms',  locals: {section: section}

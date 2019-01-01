@@ -1,0 +1,12 @@
+.row
+  - if quote.original.present? && quote.translation.present?
+    .col-sm-6
+      %blockquote
+        = temp_org_render(quote.original)
+    .col-sm-6
+      %blockquote
+        = temp_org_render(quote.translation)
+  - elsif quote.original.present?
+    .col-sm-12
+      %blockquote
+        = temp_org_render(quote.original)
