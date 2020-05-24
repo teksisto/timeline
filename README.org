@@ -1,3 +1,6 @@
+#+TITLE: Timeline
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/setup/theme-readtheorg.setup
+
 [[./images/pepe_silvia.png]]
 
 * Предпосылки
@@ -35,7 +38,7 @@
 
    Как данные попадают в систему?
 
-   Захват -- это больше про интерфейс.
+   Захват – это больше про интерфейс.
 
    Keeping is not organizing.
 
@@ -76,7 +79,7 @@
    Например при переносе заметок из livejournal в wordpress может
    потеряться информация о текущей прослушиваемой музыке, которая есть
    в постах livejournal. Эта информация ничем особо не отличается ото
-   всей остальной -- просто метаданные для поста. Тем не менее она
+   всей остальной – просто метаданные для поста. Тем не менее она
    тереется, поскольку в целевой системе нет такого поля. Так
    вот. Данные должны забираться из источника целиком. Для этого нужна
    очень емкая структура для хранения. Подход сейчас я вижу только
@@ -136,7 +139,7 @@
 
    Как аннотировать видео?
 
-   Аннотирование в самом простом случае -- это комментирование.
+   Аннотирование в самом простом случае – это комментирование.
 
    Как аннотировать обновляющийся источник? Обновляющийся источник
    сложно аннотировать. Какие-то части появляются, какие-то
@@ -144,7 +147,7 @@
    что она будет ломаться каждую версию. Значит адресовать нужно по
    uuid.
 
-   Удобство аннотирования -- это аргумент в пользу блочной
+   Удобство аннотирования – это аргумент в пользу блочной
    идентификации. Можно добавлять комментарии к каждому параграфу.
 
 ** Переносимость
@@ -175,20 +178,20 @@
 
 *** Зачем бить на блочные элементы
 
-    Удобство идентификации -- можно давать ссылку на конкретное место в
-    тексте. Например цитаты -- как пример производного ресурса -- могут
+    Удобство идентификации – можно давать ссылку на конкретное место в
+    тексте. Например цитаты – как пример производного ресурса – могут
     ссылаться на конкретное место, одкуда они были взяты. Возможность
     поставить ссылку на что угодно, начиная от параграфа и элемента
     списка до конкретной ячейки таблицы.
 
-    Удобство классификации -- можно навешивать атрибуты на что угодно.
+    Удобство классификации – можно навешивать атрибуты на что угодно.
 
-    Удобство аннотирования -- к каждому параграфу можно добавить
+    Удобство аннотирования – к каждому параграфу можно добавить
     аннотацию, например комментарий.
 
     Разбивка на параграфы позволяет строить параллельные тексты. Если
     параллелить две книги выглядит как сложная задача, то запараллелить
-    несколько переводов стихотворения или две цитаты -- это вполне
+    несколько переводов стихотворения или две цитаты – это вполне
     посильная задача даже для выполнения руками.
 
     Разбивка на блочные элементы позволяет использовать разные движки
@@ -211,7 +214,7 @@
    - изменился объем информации и схему надо детализировать
    - изменился подход и классификацию надо переделывать
 
-   Структура -- это функция от объема информации. Меняется объем --
+   Структура – это функция от объема информации. Меняется объем –
    меняется структура.
 
 *** Замена одного дерево на множество
@@ -273,7 +276,7 @@
    гетерогенен. Он может захватывать ссылки, картинки, посты, ресурсы
    любого типа.
 
-   Контекст -- это легковестный блог с вики-страницей в заголовке.
+   Контекст – это легковестный блог с вики-страницей в заголовке.
 
    + Он предназначен либо для мелкого собирательства, которое возможно
      перерастет во что-то большее (например в заметку). Тогда заметка
@@ -285,10 +288,10 @@
    + Крупномаштабный харвест всего встреченного на пути по интересной теме.
 
    На что это похоже:
-   + tumbler -- множество блогов у одного пользователя. Маленькие
+   + tumbler – множество блогов у одного пользователя. Маленькие
      блоги на какую-нибудь обскурную тему, в которых есть два поста и
      новые появляются раз в год.
-   + redmine -- страница версии. Там в заголовке вики-страница, а в
+   + redmine – страница версии. Там в заголовке вики-страница, а в
      хвосте автоматичекий список задач из спринта, разбитых по типу
      работ.
 
@@ -349,23 +352,23 @@
     опутанное дополнительными связями между узлами. Это всевозможный
     cross-referencing, ассоциативные связи и прочее случайное, что
     может объединять узлы. Тот контекст, который есть у каждого узла
-    -- это те самые случайные связи.
+    – это те самые случайные связи.
 
 *** Контекст как строительный блок интерфейса
 
-    Получается, что контекст -- это один из основных строительных
+    Получается, что контекст – это один из основных строительных
     блоков интерфейса. Потому что любые коллекции (eg список
-    полученных/отправленных писем для человека) -- это фильтр, который
+    полученных/отправленных писем для человека) – это фильтр, который
     вытаскивает сущности из базы и показывает в хедере статистику.
 
 *** Динамическое дерево как вложенные контексты
 
-    Интересно, что дерево вложенных контекстов -- это и есть то самое
+    Интересно, что дерево вложенных контекстов – это и есть то самое
     динамическое дерево.
 
     Новые сущности просеиваются сначала сквозь фильтр первого
     контекста, потом через фильтры вложенных контекстов и где-то
-    оседают. Механизм просеивания -- это детали реализации.
+    оседают. Механизм просеивания – это детали реализации.
 
     Еще раз. Контекст гетерогенен. Ему без разницы что засасывать,
     потому что засасывает он ресурсы, адресуемые uuid. Поэтому ничто
@@ -373,7 +376,7 @@
 
     В этом случае, кстати, голова контекста является элементом,
     отображаеммым в ленте контекста верхнего уровня. Не надо так же
-    забывать, что голова контекста -- это обычный ресурс и у него, как
+    забывать, что голова контекста – это обычный ресурс и у него, как
     и у любого друго ресурса могут быть разные вьюшки для
     отображения. Что позволяет например ужать в графическом
     представлении весь контекст до заголовка со ссылкой.
@@ -403,7 +406,7 @@
    Ссылки:
    - [[https://en.wikipedia.org/wiki/Parallel_text][Parallel text]]
    - [[https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BA%D1%81%D1%82_(%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)][Обучение через чтение параллельных текстов]]
-   - [[http://ted.hyperland.com/myU/][Ted Nelson -- My parallel universe]]
+   - [[http://ted.hyperland.com/myU/][Ted Nelson – My parallel universe]]
 
 * Что бы я со всем этим делал
 ** Оглавления для источников
@@ -555,23 +558,23 @@
     меняется).
 
     Идея игры в том, что брать цитаты из разных мест и укладывать их в
-    два столбика -- за и против. Потом смотреть на то, как по любому
+    два столбика – за и против. Потом смотреть на то, как по любому
     вопросу есть две противоположных точки зрения, представленные
     вполне убедительными людьми. Может быть даже в три столбика: за,
-    против и синтез -- но попыток синтеза вокруг очень мало. Хотя идея
+    против и синтез – но попыток синтеза вокруг очень мало. Хотя идея
     "срединного пути" совсем не нова, и была озвучена как упоротыми
     изотериками, так и психотерапевтами.
 
     Я дошел до этой игры сам, но позже обнаружил, что уже есть сервис
-    реализующий похожий подход -- lovehate.ru. Там обитает много
+    реализующий похожий подход – lovehate.ru. Там обитает много
     школьников, что конечно его портит.
 
     Играть в эту игру можно просто с самим собой, находя противоречия
-    как в себе, так и в окружающем мире. Но есть и вторая цель --
+    как в себе, так и в окружающем мире. Но есть и вторая цель –
     сделать какой-то аналог [[https://en.wikipedia.org/wiki/Debate#Student_debating_societies][дискуссионного клуба]]. Сбор best arguments,
     за и против какой-нибудь идеи.
 
-    Конечная цель игры -- синтез разных мнений.
+    Конечная цель игры – синтез разных мнений.
 
     #+BEGIN_QUOTE
         Раздельное мышление — это защитный механизм,
@@ -592,18 +595,18 @@
 
     #+BEGIN_QUOTE
         Настоящий спор, говорю тебе из лагерного опыта, производится
-        как поединок. По согласию выбираем посредника -- хоть Глеба
+        как поединок. По согласию выбираем посредника – хоть Глеба
         сейчас позовем.  Берем лист бумаги, делим его отвесной чертой
         пополам. Наверху, через весь лист, пишем содержание
         спора. Затем, каждый на своей половине, предельно ясно и
         кратко, выражаем свою точку зрения на поставленный
-        вопрос. Чтобы не было случайной ошибки в подборе слова --
+        вопрос. Чтобы не было случайной ошибки в подборе слова –
         время на эту запись не ограничивается. [...] Пустые
         словопрения и сотрясения воздуха могут тянуться неделями. А
         спор на бумаге иногда кончается в десять минут: сразу же
         становится очевидно, что противники или говорят о совершенно
         разных вещах или ни в чем не расходятся. Когда же выявляется
-        смысл продолжать спор -- начинают поочередно записывать доводы
+        смысл продолжать спор – начинают поочередно записывать доводы
         на своих половинках листа.
 
         (Солженицин, "В круге первом")
@@ -652,7 +655,7 @@
     слово или не знает (там не надо думать, если сомневаешься,
     говоришь, что не знаешь). На вычитку 1000 слов у меня уходило
     меньше часа. Предположим, что средний словарный запас у
-    англоговорящего 20-30k слов, у того кто учит язык -- сильно
+    англоговорящего 20-30k слов, у того кто учит язык – сильно
     меньше. За 10-20 часов систему можно научить всем словам, которые
     ты знаешь. По сравнению со временем обучения языку это очень мало.
 
@@ -676,8 +679,8 @@
     В-третьих, можно понимать какие слова учить первыми, потому что
     они чаще встречаются.
 
-    На картинке синяя часть полоски -- это базовая лексика, красная --
-    слова, которые повторяются два и больше раз, и желтая -- слова,
+    На картинке синяя часть полоски – это базовая лексика, красная –
+    слова, которые повторяются два и больше раз, и желтая – слова,
     которые встречаются в сериале один раз.
 
     [[./images/words/words.png]]
@@ -698,7 +701,7 @@
 
 * Поиск подхода к реализации
 
-  Самое вменяемое решение, которое я вижу -- это [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]].
+  Самое вменяемое решение, которое я вижу – это [[https://en.wikipedia.org/wiki/Resource_Description_Framework][RDF]].
 
 ** Декомпозиция
 
@@ -825,7 +828,7 @@
 
     : 2363 + 18904 + 7086 = 28353
 
-    30k триплетов на одну книгу. На 1k книг -- 30 000 000 триплетов.
+    30k триплетов на одну книгу. На 1k книг – 30 000 000 триплетов.
 
 ** Базовые определения
 
@@ -853,7 +856,7 @@
 *** Представление
 
     У ресурса есть класс. Классу соответствует множество представлений,
-    из которого выбирается нужное. Представление -- это шаблон, который
+    из которого выбирается нужное. Представление – это шаблон, который
     получает на входе ресурс, достает из него хеш с атрибутами, с
     помощью адаптера получает контент и рисует из всего этого html.
 
@@ -862,23 +865,23 @@
     Три стандартных, которые показывают ресурс вне зависимости от того
     есть у него класс или нет:
 
-    1) ~default~ -- показывает атрибуты и контент. Атрибуты содержащие
+    1) ~default~ – показывает атрибуты и контент. Атрибуты содержащие
        ссылки на другие ресурсы показываются просто ссылками и никак не
        отображаются.
-    2) ~inline~ -- показывает только контент. Для параграфа это текст в
+    2) ~inline~ – показывает только контент. Для параграфа это текст в
        теге ~<p>~, для картинки тег ~<img>~ и так далее.
-    2) ~link~ -- показывает только ссылку на ресурс.
+    2) ~link~ – показывает только ссылку на ресурс.
 
     Расширенные, опирающиеся на класс:
 
-    1) ~classed-link~ -- отображает иконку рядом со ссылкой в зависимости
+    1) ~classed-link~ – отображает иконку рядом со ссылкой в зависимости
        от типа ресурса.
-    2) ~card~ -- показывает некоторую компактную summary по ресурсу и
+    2) ~card~ – показывает некоторую компактную summary по ресурсу и
        ссылку на полную версию. Например для книги это может быть
        обложка, под которой написано полное название и год
        издания. Карточки используются при отображении "плитки" из
        ресурсов.
-    3) ~classed-link-with-card~ -- ~classed-link~ у которой при навении
+    3) ~classed-link-with-card~ – ~classed-link~ у которой при навении
        мышки на ссылку появляется карточка во всплывающем окне.
 
 *** Атрибут
@@ -894,10 +897,10 @@
 
     URI состоит из NID и NSS.
 
-    NID -- namespace id. Позволяет выбрать адаптер для совершения с ресурсом базовых
+    NID – namespace id. Позволяет выбрать адаптер для совершения с ресурсом базовых
     действий.
 
-    NSS -- namespace spicific string. Позволяет однозначно ссылаться на
+    NSS – namespace spicific string. Позволяет однозначно ссылаться на
     ресурс внутри определенного namespace.
 
     Основные действия, которые должен поддерживать ресурс:
@@ -922,7 +925,7 @@
 
 * Как это все может выглядеть на практике
 
-  RDF -- это идея, что данные хранятся в графе. Хранить этот граф и
+  RDF – это идея, что данные хранятся в графе. Хранить этот граф и
   управлять им можно по-разному.
 
 ** Реляционный подход
@@ -938,7 +941,7 @@
 
    Все хранится в трех таблицах: =Resources=, =Properties=, =Trees=.
 
-   =Trees= -- это оптимизация, которая позволяет хранить деревья,
+   =Trees= – это оптимизация, которая позволяет хранить деревья,
    упорядоченные и не упорядоченные списки, не прибегая к упоротому
    способу ~rdf:next~.
 
@@ -961,12 +964,12 @@
 
 *** Конспект
 
-    Сначала у нас есть один ресурс -- книга. У него есть атрибут =content=
+    Сначала у нас есть один ресурс – книга. У него есть атрибут =content=
     в котором лежит ссылка на дерево.
 
-    Ссылка на дерево -- это указатель на анонимный корневой элемент
+    Ссылка на дерево – это указатель на анонимный корневой элемент
     дерева, к которому крепятся его элементы. У элемента дерева, помимо
-    информации о вложенности есть только одна полезная нагрузка --
+    информации о вложенности есть только одна полезная нагрузка –
     ссылка на ресурс.
 
     Мы делаем первый запрос и получаем из ресурса класса ~Book~ ресурс
@@ -1015,7 +1018,7 @@
 ** Обычный реляционный подход + наведенная семантика
 
    Объекты каждого класса хранятся в отдельной таблице, связи между
-   ними во внешних ключах. Связи лежат в коде. Новый класс -- новый
+   ними во внешних ключах. Связи лежат в коде. Новый класс – новый
    скаффолд. Ограничения разползаются в валидации и колбеки.
 
    На сервере стоит вордпресс, редмайн и медиавики. Делается точка
@@ -1034,7 +1037,7 @@
 ** Семантика
 
    [[https://en.wikipedia.org/wiki/Triplestore][Триплстор]], [[https://en.wikipedia.org/wiki/Semantic_reasoner][ризонер]], запросы на [[https://en.wikipedia.org/wiki/SPARQL][SPARQL]]. Интерфейс на
-   рельсах. Моделей нет. Контроллер по сути один --
+   рельсах. Моделей нет. Контроллер по сути один –
    ~ResourcesController~. В основном надо рисовать партиалы для
    отрисовки ресурсов конретного класса с указанной детализаций и
    связанными ресурсами.
@@ -1051,18 +1054,18 @@
 
     #+BEGIN_QUOTE
         It supports both semantic graphs, via RDF, SPARQL, and OWL, as
-        well as property graphs via Apache TinkerPop and Gremlin--it's
+        well as property graphs via Apache TinkerPop and Gremlin–it's
         the *only graph database that supports both models over the same
         database, simultaneously*.
 
-        -- [[http://tinkerpop.apache.org/providers.html][Tinkertop doc]] / [[https://www.stardog.com/docs/#_property][Stardog doc]]
+        – [[http://tinkerpop.apache.org/providers.html][Tinkertop doc]] / [[https://www.stardog.com/docs/#_property][Stardog doc]]
     #+END_QUOTE
 
     #+BEGIN_QUOTE
         Stardog supports integrity constraint validation as a data
         quality mechanism via *closed world* reasoning.
 
-        -- [[https://www.stardog.com/docs/#_validating_constraints][Stardog doc]]
+        – [[https://www.stardog.com/docs/#_validating_constraints][Stardog doc]]
     #+END_QUOTE
 
 *** AllegroGraph
@@ -1092,7 +1095,7 @@
 
    С другой стороны это радикально упрощает provenance. Нет этой
    упоротой rdf-схемы, где для описания одной связи надо использовать
-   4+n триплетов, (n -- количество триплетов с мета-информацией, 4 --
+   4+n триплетов, (n – количество триплетов с мета-информацией, 4 –
    statement + subject + predicate + object). Как оно устроено внутри,
    мне не интересно, главное что думать про это не надо будет.
 
@@ -1103,7 +1106,7 @@
    - связей между цитатами
    - связей между параграфами
 
-   Книга O'Reilly "Graph Databases" -- это введение в neo4j.
+   Книга O'Reilly "Graph Databases" – это введение в neo4j.
 
    Обертка для ruby: [[https://github.com/neo4jrb/neo4j][neo4jrb]] ([[https://neo4jrb.readthedocs.io/en/7.1.x/][docs]] / [[https://www.youtube.com/watch?v=bDjbqRL9HcM][блог на neo4jrb за 10 минут]])
 
@@ -1115,42 +1118,15 @@
 
    Wikipedia: [[https://en.wikipedia.org/wiki/Memex][Memex]]
 
-   #+BEGIN_SRC event
-        label:       Memex (As We May Think)
-        description: Vannevar Bush
-        start_date:  1945
-        link:        https://en.wikipedia.org/wiki/Memex
-        category:    infoorg
-        location:    USA
-   #+END_SRC
-
 ** (1967) Andries van Dam, Ted Nelson — Hypertext Editing System
 
    Wiki: [[https://en.wikipedia.org/wiki/Hypertext_Editing_System][HES]]
-
-   #+BEGIN_SRC event
-        label:       HES (Hypertext Editing System)
-        description: Andries van Dam, Ted Nelson
-        start_date:  1967
-        link:        https://en.wikipedia.org/wiki/Hypertext_Editing_System
-        category:    infoorg
-        location:    USA
-   #+END_SRC
 
 ** (1968) Douglas Engelbart — oN-Line System
 
    Wiki: [[https://en.wikipedia.org/wiki/The_Mother_of_All_Demos][The Mother of All Demos]] / [[https://en.wikipedia.org/wiki/NLS_(computer_system)][oN-Line System]]
 
    Видео: http://www.1968demo.org/
-
-   #+BEGIN_SRC event
-        label:       The Mother of All Demos (NLS)
-        description:
-        category:    infoorg
-        start_date:  1968-12-09
-        link:        https://en.wikipedia.org/wiki/The_Mother_of_All_Demos
-        location:    USA
-   #+END_SRC
 
 ** (1968) Andries van Dam — File Retrieval and Editing System
 
@@ -1178,15 +1154,6 @@
        Annenberg/CPB project and IBM (Meyrowitz 1986, 196).
    #+END_QUOTE
 
-   #+BEGIN_SRC event
-        label:       Intermedia
-        description: Andries van Dam, William S. Shipp and Norman Meyrowitz
-        category:    infoorg
-        start_date:  1985
-        link:        https://en.wikipedia.org/wiki/Intermedia_(hypertext)
-        location:    USA
-   #+END_SRC
-
 ** (1991) Gifford — Semantic file systems
 
    Старая заметка про Гиффорда:
@@ -1204,20 +1171,10 @@
 
        Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
        они заранее отсеивают ненужные параметры поиска. Дело не в том, что
-       дерево -- это плохо. Дело в том, что одно дерево это плохо. Деревьев
+       дерево – это плохо. Дело в том, что одно дерево это плохо. Деревьев
        должно быть много. В файловую систему из можно интегрировать с помощью
        виртуальных файловых систем.
    #+END_QUOTE
-
-   #+BEGIN_SRC event
-        label:       Semantic file systems (Gifford)
-        description:
-        category:    infoorg
-        start_date:  1991
-        link:
-        location:    USA
-   #+END_SRC
-
 
 ** (1993) LDAP
 
@@ -1229,27 +1186,9 @@
 
    [[http://www.zytrax.com/books/ldap/][LDAP for Rocket Scientists]]
 
-   #+BEGIN_SRC event
-        label:       LDAP
-        description:
-        category:    infoorg
-        start_date:  1993
-        link:        https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol
-        location:    USA
-   #+END_SRC
-
 ** (1996) Eric Freeman and David Gelertner — Lifestreams
 
    Wiki: [[https://en.wikipedia.org/wiki/Lifestreaming][Lifestreaming]]
-
-   #+BEGIN_SRC event
-        label:       Lifestrings
-        description: Eric Freeman and David Gelertner
-        category:    infoorg
-        start_date:  1996
-        link:        https://en.wikipedia.org/wiki/Lifestreaming
-        location:    USA
-   #+END_SRC
 
 ** (1999) Presto
 
@@ -1258,34 +1197,16 @@
 
    [[http://www.dourish.com/publications/1999/tochi-presto.pdf][Presto: An Experimental Architecture for Fluid Interactive Document Spaces]]
 
-   #+BEGIN_SRC event
-        label:       Presto
-        description:
-        category:    infoorg
-        start_date:  1999
-        link:
-        location:    Xerox Palo Alto Research Center
-   #+END_SRC
-
 ** (2000) id3v2.4
 
    Informal standard на теги для mp3 файлов. Не смотря на то, что
    структура метаданных хорошо прописана, по большому счету ее никто
    не использует.
 
-   Проблема метаданных для музыки -- обширная тема, надо ее чуть позже
+   Проблема метаданных для музыки – обширная тема, надо ее чуть позже
    раскрыть.
 
    http://id3.org/id3v2.4.0-frames
-
-   #+BEGIN_SRC event
-        label:       id3v2.4
-        description:
-        category:    infoorg
-        start_date:  2000-11-01
-        link:        http://id3.org/id3v2.4.0-frames
-        location:    USA
-   #+END_SRC
 
 ** (2000) MusicBrainz
 
@@ -1294,15 +1215,6 @@
 
    https://musicbrainz.org/
 
-   #+BEGIN_SRC event
-        label:       MusicBrainz
-        description:
-        category:    infoorg
-        start_date:  2000-07-17
-        link:        https://en.wikipedia.org/wiki/MusicBrainz
-        location:    USA
-   #+END_SRC
-
 ** (2001) Eric Kim — Purple
 
    Подход к решению проблемы идентификации частей документа. Добавляет
@@ -1310,35 +1222,17 @@
 
    https://en.wikipedia.org/wiki/Purple_Numbers
 
-   #+BEGIN_SRC event
-        label:       Purple (Eric Kim)
-        description:
-        category:    infoorg
-        start_date:  2001
-        link:        https://en.wikipedia.org/wiki/Purple_Numbers
-        location:    USA
-   #+END_SRC
-
 ** (2001) Tim Berners-Lee — Semantic Web
-
-   #+BEGIN_SRC event
-        label:       The Semantic Web (article)
-        description: Tim Berners-Lee
-        category:    infoorg
-        start_date:  2001
-        link:
-        location:    USA
-   #+END_SRC
 
 ** (2001) Tinderbox
 
-   По сути -- mindmap. Есть заметки, у них есть классы (прототипы на
+   По сути – mindmap. Есть заметки, у них есть классы (прототипы на
    местном сленге) и аттрибуты. Из классов можно делать иерархии.
 
    Есть несколько способов отображения заметок: mindmap (с
    возможностью заныривания в поддерево), timeline, outline, карта. В
    смысле отображение Tinderbox хорош, хотя он упускает один важный
-   способ отображения -- лента.
+   способ отображения – лента.
 
    Между заметками можно делать связи. Связи можно делать между любыми
    заметками, даже если они находятся на разных уровнях иерархии. Есть
@@ -1350,20 +1244,11 @@
    заметок. Метаданные тоже можно навешивать на уровне заметок. Текст
    по-прежнему лежит одним куском.
 
-   Книга: [[http://www.markbernstein.org/][Mark Bernstein]] -- [[http://www.eastgate.com/Tinderbox/TinderboxWay.html][The Tinderbox Way]]
+   Книга: [[http://www.markbernstein.org/][Mark Bernstein]] – [[http://www.eastgate.com/Tinderbox/TinderboxWay.html][The Tinderbox Way]]
 
    Сайт разработчика: [[http://www.markbernstein.org/][Mark Bernstein]]
 
    Wiki: [[https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29][Tinderbox]]
-
-   #+BEGIN_SRC event
-        label:       Tinderbox
-        description: Mark Bernstein
-        category:    infoorg
-        start_date:  2001
-        link:        https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29
-        location:    USA
-   #+END_SRC
 
 ** (2003) Joshua Schachter — Del.icio.us
 
@@ -1419,15 +1304,6 @@
        условно.
    #+END_QUOTE
 
-   #+BEGIN_SRC event
-        label:       Del.icio.us
-        description: Joshua Schachter
-        category:    infoorg
-        start_date:  2003
-        link:        https://en.wikipedia.org/wiki/Delicious_(website)
-        location:    USA
-   #+END_SRC
-
 ** (2003) Carsten Dominik — Org-mode
 
    Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
@@ -1436,36 +1312,9 @@
 
    http://orgmode.org/
 
-   #+BEGIN_SRC event
-        label:       Org-mode
-        description: Carsten Dominik
-        category:    infoorg
-        start_date:  2003
-        link:        https://en.wikipedia.org/wiki/Org-mode
-        location:    USA
-   #+END_SRC
-
 ** 2006 Calibre
 
-   #+BEGIN_SRC event
-        label:       Calibre
-        description:
-        category:    infoorg
-        start_date:  2006-10-31
-        link:        https://en.wikipedia.org/wiki/Calibre_(software)
-        location:    USA
-   #+END_SRC
-
 ** (2004) W3C — RDF / RDFS / OWL
-
-   #+BEGIN_SRC event
-        label:       RDF/RDFS/OWL
-        description:
-        category:    infoorg
-        start_date:  2004
-        link:
-        location:    USA
-   #+END_SRC
 
 ** (2007) DBpedia
 
@@ -1473,15 +1322,6 @@
    RDF, позволяет делать запросы на SPARQL.
 
    Wiki: [[https://en.wikipedia.org/wiki/DBpedia][DBpedia]]
-
-   #+BEGIN_SRC event
-        label:       DBpedia
-        description:
-        category:    infoorg
-        start_date:  2007-01-10
-        link:        https://en.wikipedia.org/wiki/DBpedia
-        location:    USA
-   #+END_SRC
 
 ** (2007) Scrivener
 
@@ -1495,14 +1335,6 @@
 
    http://www.literatureandlatte.com/scrivener.html
 
-   #+BEGIN_SRC event
-        label:       Scrivener
-        description:
-        category:    infoorg
-        start_date:  2007
-        link:        https://en.wikipedia.org/wiki/Scrivener_(software)
-        location:    USA
-   #+END_SRC
 
 ** (2008) Evernote
 
@@ -1510,29 +1342,11 @@
 
    Wiki: [[https://en.wikipedia.org/wiki/Evernote][Evernote]]
 
-   #+BEGIN_SRC event
-        label:       Evernote
-        description: Stepan Pachikov
-        category:    infoorg
-        start_date:  2008
-        link:        https://en.wikipedia.org/wiki/Evernote
-        location:    USA
-   #+END_SRC
-
 ** (2009) Fluidinfo
 
    У них очень прикольный [[http://blogs.fluidinfo.com/][блог]], если читать его с начала, а не с конца.
 
    http://fluidinfo.com
-
-   #+BEGIN_SRC event
-        label:       Fluidinfo
-        description:
-        category:    infoorg
-        start_date:  2009
-        link:
-        location:    USA
-   #+END_SRC
 
 ** (2013) Ginko
 
@@ -1541,21 +1355,10 @@
 
    https://gingkoapp.com
 
-   #+BEGIN_SRC event
-        label:       Ginko
-        description:
-        category:    infoorg
-        start_date:  2013
-        link:
-        location:    USA
-   #+END_SRC
-
-
    Reference-mode в читалке. Решение проблемы идентификации для
    электронных книг.
 
    https://calibre-ebook.com/
-
 
 ** Smallest Federated Wiki
 
@@ -1600,7 +1403,7 @@
       joined Singly and was the CTO.
    #+END_QUOTE
 
-   2013-08-22 -- поглощен компанией [[http://appcelerator.com/][appcelerator]].
+   2013-08-22 – поглощен компанией [[http://appcelerator.com/][appcelerator]].
 
 ** NEPOMUK
 
@@ -1612,9 +1415,9 @@
 
 * Ссылки
 
-   http://infotoday.com/ -- новости
+   http://infotoday.com/ – новости
 
-   http://booksblog.infotoday.com/ -- книги
+   http://booksblog.infotoday.com/ – книги
 
    Каталог статей на сайте Брета Виктора: Engelbart, Bush, Alan Key и
    другие - http://worrydream.com/refs/.

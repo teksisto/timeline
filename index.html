@@ -1,0 +1,2916 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2020-05-24 Вс 18:29 -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Timeline</title>
+<meta name="generator" content="Org mode" />
+<meta name="author" content="teksisto" />
+<style type="text/css">
+ <!--/*--><![CDATA[/*><!--*/
+  .title  { text-align: center;
+             margin-bottom: .2em; }
+  .subtitle { text-align: center;
+              font-size: medium;
+              font-weight: bold;
+              margin-top:0; }
+  .todo   { font-family: monospace; color: red; }
+  .done   { font-family: monospace; color: green; }
+  .priority { font-family: monospace; color: orange; }
+  .tag    { background-color: #eee; font-family: monospace;
+            padding: 2px; font-size: 80%; font-weight: normal; }
+  .timestamp { color: #bebebe; }
+  .timestamp-kwd { color: #5f9ea0; }
+  .org-right  { margin-left: auto; margin-right: 0px;  text-align: right; }
+  .org-left   { margin-left: 0px;  margin-right: auto; text-align: left; }
+  .org-center { margin-left: auto; margin-right: auto; text-align: center; }
+  .underline { text-decoration: underline; }
+  #postamble p, #preamble p { font-size: 90%; margin: .2em; }
+  p.verse { margin-left: 3%; }
+  pre {
+    border: 1px solid #ccc;
+    box-shadow: 3px 3px 3px #eee;
+    padding: 8pt;
+    font-family: monospace;
+    overflow: auto;
+    margin: 1.2em;
+  }
+  pre.src {
+    position: relative;
+    overflow: visible;
+    padding-top: 1.2em;
+  }
+  pre.src:before {
+    display: none;
+    position: absolute;
+    background-color: white;
+    top: -10px;
+    right: 10px;
+    padding: 3px;
+    border: 1px solid black;
+  }
+  pre.src:hover:before { display: inline;}
+  /* Languages per Org manual */
+  pre.src-asymptote:before { content: 'Asymptote'; }
+  pre.src-awk:before { content: 'Awk'; }
+  pre.src-C:before { content: 'C'; }
+  /* pre.src-C++ doesn't work in CSS */
+  pre.src-clojure:before { content: 'Clojure'; }
+  pre.src-css:before { content: 'CSS'; }
+  pre.src-D:before { content: 'D'; }
+  pre.src-ditaa:before { content: 'ditaa'; }
+  pre.src-dot:before { content: 'Graphviz'; }
+  pre.src-calc:before { content: 'Emacs Calc'; }
+  pre.src-emacs-lisp:before { content: 'Emacs Lisp'; }
+  pre.src-fortran:before { content: 'Fortran'; }
+  pre.src-gnuplot:before { content: 'gnuplot'; }
+  pre.src-haskell:before { content: 'Haskell'; }
+  pre.src-hledger:before { content: 'hledger'; }
+  pre.src-java:before { content: 'Java'; }
+  pre.src-js:before { content: 'Javascript'; }
+  pre.src-latex:before { content: 'LaTeX'; }
+  pre.src-ledger:before { content: 'Ledger'; }
+  pre.src-lisp:before { content: 'Lisp'; }
+  pre.src-lilypond:before { content: 'Lilypond'; }
+  pre.src-lua:before { content: 'Lua'; }
+  pre.src-matlab:before { content: 'MATLAB'; }
+  pre.src-mscgen:before { content: 'Mscgen'; }
+  pre.src-ocaml:before { content: 'Objective Caml'; }
+  pre.src-octave:before { content: 'Octave'; }
+  pre.src-org:before { content: 'Org mode'; }
+  pre.src-oz:before { content: 'OZ'; }
+  pre.src-plantuml:before { content: 'Plantuml'; }
+  pre.src-processing:before { content: 'Processing.js'; }
+  pre.src-python:before { content: 'Python'; }
+  pre.src-R:before { content: 'R'; }
+  pre.src-ruby:before { content: 'Ruby'; }
+  pre.src-sass:before { content: 'Sass'; }
+  pre.src-scheme:before { content: 'Scheme'; }
+  pre.src-screen:before { content: 'Gnu Screen'; }
+  pre.src-sed:before { content: 'Sed'; }
+  pre.src-sh:before { content: 'shell'; }
+  pre.src-sql:before { content: 'SQL'; }
+  pre.src-sqlite:before { content: 'SQLite'; }
+  /* additional languages in org.el's org-babel-load-languages alist */
+  pre.src-forth:before { content: 'Forth'; }
+  pre.src-io:before { content: 'IO'; }
+  pre.src-J:before { content: 'J'; }
+  pre.src-makefile:before { content: 'Makefile'; }
+  pre.src-maxima:before { content: 'Maxima'; }
+  pre.src-perl:before { content: 'Perl'; }
+  pre.src-picolisp:before { content: 'Pico Lisp'; }
+  pre.src-scala:before { content: 'Scala'; }
+  pre.src-shell:before { content: 'Shell Script'; }
+  pre.src-ebnf2ps:before { content: 'ebfn2ps'; }
+  /* additional language identifiers per "defun org-babel-execute"
+       in ob-*.el */
+  pre.src-cpp:before  { content: 'C++'; }
+  pre.src-abc:before  { content: 'ABC'; }
+  pre.src-coq:before  { content: 'Coq'; }
+  pre.src-groovy:before  { content: 'Groovy'; }
+  /* additional language identifiers from org-babel-shell-names in
+     ob-shell.el: ob-shell is the only babel language using a lambda to put
+     the execution function name together. */
+  pre.src-bash:before  { content: 'bash'; }
+  pre.src-csh:before  { content: 'csh'; }
+  pre.src-ash:before  { content: 'ash'; }
+  pre.src-dash:before  { content: 'dash'; }
+  pre.src-ksh:before  { content: 'ksh'; }
+  pre.src-mksh:before  { content: 'mksh'; }
+  pre.src-posh:before  { content: 'posh'; }
+  /* Additional Emacs modes also supported by the LaTeX listings package */
+  pre.src-ada:before { content: 'Ada'; }
+  pre.src-asm:before { content: 'Assembler'; }
+  pre.src-caml:before { content: 'Caml'; }
+  pre.src-delphi:before { content: 'Delphi'; }
+  pre.src-html:before { content: 'HTML'; }
+  pre.src-idl:before { content: 'IDL'; }
+  pre.src-mercury:before { content: 'Mercury'; }
+  pre.src-metapost:before { content: 'MetaPost'; }
+  pre.src-modula-2:before { content: 'Modula-2'; }
+  pre.src-pascal:before { content: 'Pascal'; }
+  pre.src-ps:before { content: 'PostScript'; }
+  pre.src-prolog:before { content: 'Prolog'; }
+  pre.src-simula:before { content: 'Simula'; }
+  pre.src-tcl:before { content: 'tcl'; }
+  pre.src-tex:before { content: 'TeX'; }
+  pre.src-plain-tex:before { content: 'Plain TeX'; }
+  pre.src-verilog:before { content: 'Verilog'; }
+  pre.src-vhdl:before { content: 'VHDL'; }
+  pre.src-xml:before { content: 'XML'; }
+  pre.src-nxml:before { content: 'XML'; }
+  /* add a generic configuration mode; LaTeX export needs an additional
+     (add-to-list 'org-latex-listings-langs '(conf " ")) in .emacs */
+  pre.src-conf:before { content: 'Configuration File'; }
+
+  table { border-collapse:collapse; }
+  caption.t-above { caption-side: top; }
+  caption.t-bottom { caption-side: bottom; }
+  td, th { vertical-align:top;  }
+  th.org-right  { text-align: center;  }
+  th.org-left   { text-align: center;   }
+  th.org-center { text-align: center; }
+  td.org-right  { text-align: right;  }
+  td.org-left   { text-align: left;   }
+  td.org-center { text-align: center; }
+  dt { font-weight: bold; }
+  .footpara { display: inline; }
+  .footdef  { margin-bottom: 1em; }
+  .figure { padding: 1em; }
+  .figure p { text-align: center; }
+  .equation-container {
+    display: table;
+    text-align: center;
+    width: 100%;
+  }
+  .equation {
+    vertical-align: middle;
+  }
+  .equation-label {
+    display: table-cell;
+    text-align: right;
+    vertical-align: middle;
+  }
+  .inlinetask {
+    padding: 10px;
+    border: 2px solid gray;
+    margin: 10px;
+    background: #ffffcc;
+  }
+  #org-div-home-and-up
+   { text-align: right; font-size: 70%; white-space: nowrap; }
+  textarea { overflow-x: auto; }
+  .linenr { font-size: smaller }
+  .code-highlighted { background-color: #ffff00; }
+  .org-info-js_info-navigation { border-style: none; }
+  #org-info-js_console-label
+    { font-size: 10px; font-weight: bold; white-space: nowrap; }
+  .org-info-js_search-highlight
+    { background-color: #ffff00; color: #000000; font-weight: bold; }
+  .org-svg { width: 90%; }
+  /*]]>*/-->
+</style>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/htmlize.css"/>
+<link rel="stylesheet" type="text/css" href="https://fniessen.github.io/org-html-themes/styles/readtheorg/css/readtheorg.css"/>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/lib/js/jquery.stickytableheaders.min.js"></script>
+<script type="text/javascript" src="https://fniessen.github.io/org-html-themes/styles/readtheorg/js/readtheorg.js"></script>
+<script type="text/javascript">
+/*
+@licstart  The following is the entire license notice for the
+JavaScript code in this tag.
+
+Copyright (C) 2012-2020 Free Software Foundation, Inc.
+
+The JavaScript code in this tag is free software: you can
+redistribute it and/or modify it under the terms of the GNU
+General Public License (GNU GPL) as published by the Free Software
+Foundation, either version 3 of the License, or (at your option)
+any later version.  The code is distributed WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE.  See the GNU GPL for more details.
+
+As additional permission under GNU GPL version 3 section 7, you
+may distribute non-source (e.g., minimized or compacted) forms of
+that code without the copy of the GNU GPL normally required by
+section 4, provided you include this license notice and a URL
+through which recipients can access the Corresponding Source.
+
+
+@licend  The above is the entire license notice
+for the JavaScript code in this tag.
+*/
+<!--/*--><![CDATA[/*><!--*/
+ function CodeHighlightOn(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(null != target) {
+     elem.cacheClassElem = elem.className;
+     elem.cacheClassTarget = target.className;
+     target.className = "code-highlighted";
+     elem.className   = "code-highlighted";
+   }
+ }
+ function CodeHighlightOff(elem, id)
+ {
+   var target = document.getElementById(id);
+   if(elem.cacheClassElem)
+     elem.className = elem.cacheClassElem;
+   if(elem.cacheClassTarget)
+     target.className = elem.cacheClassTarget;
+ }
+/*]]>*///-->
+</script>
+</head>
+<body>
+<div id="content">
+<h1 class="title">Timeline</h1>
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#org2b14b11">1. Предпосылки</a></li>
+<li><a href="#org62cf211">2. Задачи инфоорга</a>
+<ul>
+<li><a href="#orga02a2d1">2.1. Захват</a></li>
+<li><a href="#orgb6f98b5">2.2. Идентификация</a></li>
+<li><a href="#org0bc02bd">2.3. Хранение</a></li>
+<li><a href="#orga9816e3">2.4. Классификация</a></li>
+<li><a href="#org35a15be">2.5. Структурирование</a></li>
+<li><a href="#org16b4b7f">2.6. Поиск</a></li>
+<li><a href="#org18a219f">2.7. Репрезентация</a></li>
+<li><a href="#orgcd4b560">2.8. Аннотирование</a></li>
+<li><a href="#org16337da">2.9. Переносимость</a></li>
+</ul>
+</li>
+<li><a href="#org9660883">3. Чего мне хочется от информационного менеджера</a>
+<ul>
+<li><a href="#org3310312">3.1. Объединение базы данных и файлового менеджера</a></li>
+<li><a href="#org8b8dd72">3.2. Блочный текстовый редактор</a>
+<ul>
+<li><a href="#orga73fb65">3.2.1. Зачем бить на блочные элементы</a></li>
+</ul>
+</li>
+<li><a href="#orgbaca183">3.3. Динамические деревья</a>
+<ul>
+<li><a href="#org6676aa8">3.3.1. Проблемы иерархических файловых систем</a></li>
+<li><a href="#orgdf8e82c">3.3.2. Замена одного дерево на множество</a></li>
+<li><a href="#org7624a70">3.3.3. Сохранение файловой семантики</a></li>
+</ul>
+</li>
+<li><a href="#org41837f5">3.4. Контекст</a>
+<ul>
+<li><a href="#orgaaaddce">3.4.1. Заголовочный блок</a></li>
+<li><a href="#org534dae4">3.4.2. Форма быстрого поста</a></li>
+<li><a href="#orgfd7cd1b">3.4.3. Хвост</a></li>
+<li><a href="#org8417fa5">3.4.4. Контекст есть у каждого ресурса</a></li>
+<li><a href="#orgbeac5ec">3.4.5. Контекст как строительный блок интерфейса</a></li>
+<li><a href="#org8155122">3.4.6. Динамическое дерево как вложенные контексты</a></li>
+</ul>
+</li>
+<li><a href="#org3b8fa6c">3.5. Параллельные тексты</a></li>
+</ul>
+</li>
+<li><a href="#org329140a">4. Что бы я со всем этим делал</a>
+<ul>
+<li><a href="#org546b13a">4.1. Оглавления для источников</a></li>
+<li><a href="#org9376406">4.2. Конспекты</a></li>
+<li><a href="#orgc615721">4.3. Цитатник</a>
+<ul>
+<li><a href="#org3732b1a">4.3.1. Привязка цитат к оглавлению книги</a></li>
+<li><a href="#org4df8682">4.3.2. Заголовки для цитат</a></li>
+<li><a href="#org0edfa01">4.3.3. Форматирование внутри цитат</a></li>
+<li><a href="#org750d85d">4.3.4. Параллельные цитатники</a></li>
+<li><a href="#org2dc24d8">4.3.5. Колоды</a></li>
+<li><a href="#org0ffcbcd">4.3.6. Рифмы</a></li>
+<li><a href="#orgf188759">4.3.7. Компартментализм</a></li>
+</ul>
+</li>
+<li><a href="#orgb9c3656">4.4. События</a></li>
+<li><a href="#org3850e97">4.5. Словарь</a>
+<ul>
+<li><a href="#org18a2a2c">4.5.1. Личный словарь терминов</a></li>
+<li><a href="#orgdce7769">4.5.2. Словарь иностранных слов</a></li>
+</ul>
+</li>
+<li><a href="#org0076216">4.6. Импорт данных из веб-сервисов</a></li>
+</ul>
+</li>
+<li><a href="#org94f9b6f">5. Поиск подхода к реализации</a>
+<ul>
+<li><a href="#org5a884e4">5.1. Декомпозиция</a>
+<ul>
+<li><a href="#orgb829790">5.1.1. Блог</a></li>
+<li><a href="#org3f85fb3">5.1.2. Оценка количества триплетов при импорте книги</a></li>
+</ul>
+</li>
+<li><a href="#orgeb71df7">5.2. Базовые определения</a>
+<ul>
+<li><a href="#org4e1fbc8">5.2.1. Ресурс</a></li>
+<li><a href="#org02fb8aa">5.2.2. Представление</a></li>
+<li><a href="#orgc77d1ee">5.2.3. Атрибут</a></li>
+<li><a href="#org0389728">5.2.4. Адаптер</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgac7c272">6. Как это все может выглядеть на практике</a>
+<ul>
+<li><a href="#orgef205fe">6.1. Реляционный подход</a>
+<ul>
+<li><a href="#org6fac7da">6.1.1. Конспект</a></li>
+<li><a href="#orgfc637d2">6.1.2. Цитаты, разложенные по главам</a></li>
+</ul>
+</li>
+<li><a href="#orgbf3ab7a">6.2. Обычный реляционный подход + наведенная семантика</a></li>
+<li><a href="#org6a27bf3">6.3. Семантика</a>
+<ul>
+<li><a href="#org7e3c284">6.3.1. OpenLink Virtuoso</a></li>
+<li><a href="#org07a2001">6.3.2. Stardog</a></li>
+<li><a href="#org3eb2a68">6.3.3. AllegroGraph</a></li>
+</ul>
+</li>
+<li><a href="#org4026438">6.4. Графовая база данных</a></li>
+</ul>
+</li>
+<li><a href="#org8f0204e">7. История</a>
+<ul>
+<li><a href="#org4c5897d">7.1. (1945) Vannevar Bush — As We May Think</a></li>
+<li><a href="#org11d50f2">7.2. (1967) Andries van Dam, Ted Nelson — Hypertext Editing System</a></li>
+<li><a href="#org84454e6">7.3. (1968) Douglas Engelbart — oN-Line System</a></li>
+<li><a href="#org4f6ae4d">7.4. (1968) Andries van Dam — File Retrieval and Editing System</a></li>
+<li><a href="#org88f51ff">7.5. (1985) Intermedia</a></li>
+<li><a href="#org1bf14e3">7.6. (1991) Gifford — Semantic file systems</a></li>
+<li><a href="#org822ceba">7.7. (1993) LDAP</a></li>
+<li><a href="#orgf6dbf7b">7.8. (1996) Eric Freeman and David Gelertner — Lifestreams</a></li>
+<li><a href="#orgb4171e5">7.9. (1999) Presto</a></li>
+<li><a href="#orgc01ec05">7.10. (2000) id3v2.4</a></li>
+<li><a href="#org9cd65ca">7.11. (2000) MusicBrainz</a></li>
+<li><a href="#orgc25862c">7.12. (2001) Eric Kim — Purple</a></li>
+<li><a href="#orgb1d168d">7.13. (2001) Tim Berners-Lee — Semantic Web</a></li>
+<li><a href="#orgda92ea9">7.14. (2001) Tinderbox</a></li>
+<li><a href="#org388a734">7.15. (2003) Joshua Schachter — Del.icio.us</a></li>
+<li><a href="#orgb319cac">7.16. (2003) Carsten Dominik — Org-mode</a></li>
+<li><a href="#orgf1470fb">7.17. 2006 Calibre</a></li>
+<li><a href="#org9dd0c20">7.18. (2004) W3C — RDF / RDFS / OWL</a></li>
+<li><a href="#orgdae948f">7.19. (2007) DBpedia</a></li>
+<li><a href="#org9297103">7.20. (2007) Scrivener</a></li>
+<li><a href="#org93ace55">7.21. (2008) Evernote</a></li>
+<li><a href="#org11468a1">7.22. (2009) Fluidinfo</a></li>
+<li><a href="#org2c51215">7.23. (2013) Ginko</a></li>
+<li><a href="#orgfde662c">7.24. Smallest Federated Wiki</a></li>
+<li><a href="#org3f3bd26">7.25. Chandler</a></li>
+<li><a href="#orgb793351">7.26. CommonTag</a></li>
+<li><a href="#orgd90c616">7.27. Friendfeed</a></li>
+<li><a href="#org4419d55">7.28. Locker</a></li>
+<li><a href="#org282e1aa">7.29. Singly</a></li>
+<li><a href="#orgfc9177c">7.30. NEPOMUK</a></li>
+<li><a href="#org249a87b">7.31. TiddlyWiki</a></li>
+</ul>
+</li>
+<li><a href="#orgdc0e579">8. Ссылки</a>
+<ul>
+<li><a href="#orgf81d825">8.1. Учебные заведения</a></li>
+<li><a href="#org434da64">8.2. Термины</a></li>
+<li><a href="#org128cb59">8.3. Люди</a></li>
+<li><a href="#org9c303a5">8.4. Книги</a></li>
+<li><a href="#org697c05f">8.5. Ассоциации</a></li>
+<li><a href="#orgd405921">8.6. urbansheep</a>
+<ul>
+<li><a href="#orgbd47948">8.6.1. Pinboard</a></li>
+<li><a href="#orga556dcf">8.6.2. FriendFeed</a></li>
+<li><a href="#org3edd704">8.6.3. LiveJournal</a></li>
+</ul>
+</li>
+<li><a href="#org1cf774f">8.7. Конференции</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="figure">
+<p><img src="./images/pepe_silvia.png" alt="pepe_silvia.png" />
+</p>
+</div>
+
+<div id="outline-container-org2b14b11" class="outline-2">
+<h2 id="org2b14b11"><span class="section-number-2">1</span> Предпосылки</h2>
+<div class="outline-text-2" id="text-1">
+<p>
+Человеческая память ограничена. Поэтому нужен инструмент который
+помогает забывать лишнее, вспоминать нужное и наводить порядок в
+голове.
+</p>
+
+<p>
+Нет никакого решения для всех. Поэтому решением является инструмент
+для создания решений.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org62cf211" class="outline-2">
+<h2 id="org62cf211"><span class="section-number-2">2</span> Задачи инфоорга</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+Сначала я выпишу задачи, которые решает любая система по хранению
+данных, чтобы потом можно было ссылаться на эти термины.
+</p>
+
+<p>
+Задачи инфоорга решаются последовательно. Если нет захвата, нечего
+идентифицировать. Если нет идентификации, не к чему привязывать
+классификацию.
+</p>
+
+<p>
+Каждый слой представляет абстракцию для других слоев.
+</p>
+
+<blockquote>
+<p>
+И вот смотрю я на Singly и на предшествующий ему Memolane и до меня
+начинает доходить, что веб-сервисы еще не прошли тот этап, который
+для меня закончился — этап собирания разных данных в одно место. У
+меня были записи в разных форматах, в том числе несколько
+тетрадок. Тетрадки я оцифровал, форматы поубивал, заменив
+текстовыми файлами. Теперь у меня все лежит в одном месте в одном
+формате. Теперь все это можно как-то автоматически обрабатывать. В
+интернете этого еще не произошло, здесь все только начинается.
+</p>
+</blockquote>
+</div>
+
+<div id="outline-container-orga02a2d1" class="outline-3">
+<h3 id="orga02a2d1"><span class="section-number-3">2.1</span> Захват</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+Как данные попадают в систему?
+</p>
+
+<p>
+Захват – это больше про интерфейс.
+</p>
+
+<p>
+Keeping is not organizing.
+</p>
+
+<p>
+Захват должен сохранять контекст.
+</p>
+
+<p>
+Захват должен стоить 0. False positive keeping должен умереть. Если
+захват стоит ноль, значит сохранять надо все что почесало мозг. Мы
+не знаем зачем сохраняем.
+</p>
+
+<p>
+Компьютер знает о нас очень много. Все что может быть захвачено
+автоматически должно захватываться автоматически.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb6f98b5" class="outline-3">
+<h3 id="orgb6f98b5"><span class="section-number-3">2.2</span> Идентификация</h3>
+<div class="outline-text-3" id="text-2-2">
+<p>
+Как адресовать отдельный элемент в системе?
+</p>
+
+<p>
+Номеров страниц как в книгах больше нет, что делать?
+</p>
+
+<p>
+Идентификация отделяет слой классификации от слоя хранения. После
+того, как элемент добавлен в систему, ему пресваивается UUID и
+классификация осуществлется уже над UUID. Нельзя классифицировать
+прямые пути в файловую систему. Если файл перенести в другое
+место, метаданные, прикрепленные к этому файлу, будут ссылаться на
+пустое место.
+</p>
+
+<p>
+Системе должно быть безразлично не только что именно она
+описывает, но и где оно лежит. Хранение должно быть отделено от
+доступа.
+</p>
+
+<p>
+Есть необходимость идентифицировать не только отдельные документы,
+но и части этих документов.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0bc02bd" class="outline-3">
+<h3 id="org0bc02bd"><span class="section-number-3">2.3</span> Хранение</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+В каком формате хранить информацию из различных источников?
+</p>
+
+<p>
+Хочется унифицированности при которой не будет теряться информация.
+Например при переносе заметок из livejournal в wordpress может
+потеряться информация о текущей прослушиваемой музыке, которая есть
+в постах livejournal. Эта информация ничем особо не отличается ото
+всей остальной – просто метаданные для поста. Тем не менее она
+тереется, поскольку в целевой системе нет такого поля. Так
+вот. Данные должны забираться из источника целиком. Для этого нужна
+очень емкая структура для хранения. Подход сейчас я вижу только
+один - RDF.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orga9816e3" class="outline-3">
+<h3 id="orga9816e3"><span class="section-number-3">2.4</span> Классификация</h3>
+<div class="outline-text-3" id="text-2-4">
+<p>
+Как описывать объекты хранящиеся в системе?
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Ontology_(information_science)">Онтологии</a>.
+</p>
+
+<p>
+Не все файлы нуждаются в семантике. Целая куча постоянно
+скачивается, просматривается и удаляется. Нет никакого смысла
+наводить на них семантику, кроме может быть примитивной
+машинной. Те файлы, которые должны быть упорядочены, должны лежать
+в семантическом, тщательно структурируемом хранилище. Все
+остальное пускай лежит как раньше.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org35a15be" class="outline-3">
+<h3 id="org35a15be"><span class="section-number-3">2.5</span> Структурирование</h3>
+<div class="outline-text-3" id="text-2-5">
+<p>
+В какие структуры объединяются ресурсы?
+</p>
+
+<p>
+Группировка и сортировка.
+</p>
+
+<p>
+Структура информации являются функцией от ее объема. Как только
+меняется объем, структуре приходится его догонять. В одной папке с 10
+файлами легко найти нужный, в одной папке с 1000 файлами уже не
+очень. С другой стороны, если эта 1000 файлов отсортирована по какому-то
+признаку, там снова можно ориентироваться.
+</p>
+
+<p>
+Сохраненные запросы / Деревья / Контексты
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16b4b7f" class="outline-3">
+<h3 id="org16b4b7f"><span class="section-number-3">2.6</span> Поиск</h3>
+<div class="outline-text-3" id="text-2-6">
+<p>
+Как искать нужную информацию в массиве?
+</p>
+
+<blockquote>
+<p>
+На больших объемах информации поиск итеративен и разные "мили"
+проходятся разными способами. Полнотекстовый поиск, сохраненные
+запросы и обычный иерархический подход будут мирно сосуществовать
+на машинах. (urbansheep)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org18a219f" class="outline-3">
+<h3 id="org18a219f"><span class="section-number-3">2.7</span> Репрезентация</h3>
+<div class="outline-text-3" id="text-2-7">
+<p>
+Как отображать данные?
+</p>
+
+<p>
+Как нарисовать на экране все то, что у нас есть в базе.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgcd4b560" class="outline-3">
+<h3 id="orgcd4b560"><span class="section-number-3">2.8</span> Аннотирование</h3>
+<div class="outline-text-3" id="text-2-8">
+<p>
+Как хранить и связывать аннотации с сохраненными ресурсами?
+</p>
+
+<p>
+Как аннотировать текст?
+</p>
+
+<p>
+Как аннотировать аудио-файлы?
+</p>
+
+<p>
+Как аннотировать видео?
+</p>
+
+<p>
+Аннотирование в самом простом случае – это комментирование.
+</p>
+
+<p>
+Как аннотировать обновляющийся источник? Обновляющийся источник
+сложно аннотировать. Какие-то части появляются, какие-то
+попадают. Последовательная нумерациия параграфов невозможна, потому
+что она будет ломаться каждую версию. Значит адресовать нужно по
+uuid.
+</p>
+
+<p>
+Удобство аннотирования – это аргумент в пользу блочной
+идентификации. Можно добавлять комментарии к каждому параграфу.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org16337da" class="outline-3">
+<h3 id="org16337da"><span class="section-number-3">2.9</span> Переносимость</h3>
+<div class="outline-text-3" id="text-2-9">
+<p>
+Есть ли импорт и экспорт из хранилища? Можно ли передвинуть данные
+куда-то еще?
+</p>
+
+<p>
+Я готов вбивать руками семантику на весь свой массив данных, но
+только при одном условии: чтобы мне больше никогда не приходилось
+это делать.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org9660883" class="outline-2">
+<h2 id="org9660883"><span class="section-number-2">3</span> Чего мне хочется от информационного менеджера</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org3310312" class="outline-3">
+<h3 id="org3310312"><span class="section-number-3">3.1</span> Объединение базы данных и файлового менеджера</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+Есть куча данных, которая не представлена файлами. Письма, записи
+из он-лайн сервисов, метрики. Для всего этого лучше подходит формат
+базы данных. В файловой системе хранение и классификация
+объединены. Если отделить хранение от классификации, то можно
+объединять в одну ленту как виртуальные сущности, которые лежат в
+БД, как и реальные файлы, представленные в общем-то теми же самыми
+записями в БД.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8b8dd72" class="outline-3">
+<h3 id="org8b8dd72"><span class="section-number-3">3.2</span> Блочный текстовый редактор</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+За неимением лучшего описания блочного текстового редактора сошлюсь
+пока на заметку Глеба Калинина <a href="http://glebkalinin.ru/content-management-vs-web-publishing/">"Контент-менеджмент и веб-публикации"</a>.
+</p>
+</div>
+
+<div id="outline-container-orga73fb65" class="outline-4">
+<h4 id="orga73fb65"><span class="section-number-4">3.2.1</span> Зачем бить на блочные элементы</h4>
+<div class="outline-text-4" id="text-3-2-1">
+<p>
+Удобство идентификации – можно давать ссылку на конкретное место в
+тексте. Например цитаты – как пример производного ресурса – могут
+ссылаться на конкретное место, одкуда они были взяты. Возможность
+поставить ссылку на что угодно, начиная от параграфа и элемента
+списка до конкретной ячейки таблицы.
+</p>
+
+<p>
+Удобство классификации – можно навешивать атрибуты на что угодно.
+</p>
+
+<p>
+Удобство аннотирования – к каждому параграфу можно добавить
+аннотацию, например комментарий.
+</p>
+
+<p>
+Разбивка на параграфы позволяет строить параллельные тексты. Если
+параллелить две книги выглядит как сложная задача, то запараллелить
+несколько переводов стихотворения или две цитаты – это вполне
+посильная задача даже для выполнения руками.
+</p>
+
+<p>
+Разбивка на блочные элементы позволяет использовать разные движки
+для рендера. Например этот кусок написан textile'ом, тут нужна
+подсветка синтаксиса, а это описание графа на языке graphvis,
+которое нужно преобразовать картинку в.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbaca183" class="outline-3">
+<h3 id="orgbaca183"><span class="section-number-3">3.3</span> Динамические деревья</h3>
+<div class="outline-text-3" id="text-3-3">
+</div>
+<div id="outline-container-org6676aa8" class="outline-4">
+<h4 id="org6676aa8"><span class="section-number-4">3.3.1</span> Проблемы иерархических файловых систем</h4>
+<div class="outline-text-4" id="text-3-3-1">
+<p>
+Главная проблема здесь в том, что хранение при таком подходе
+совмещено с классификацией.
+</p>
+
+<p>
+Обычные файловые системы устроены иерархически. В зависимости от
+схемы классификации файл можно положить в разные папки. Проблемы
+начинаются когда:
+</p>
+
+<ul class="org-ul">
+<li>один и тот же файл можно положить в разные места.</li>
+<li>изменился объем информации и схему надо детализировать</li>
+<li>изменился подход и классификацию надо переделывать</li>
+</ul>
+
+<p>
+Структура – это функция от объема информации. Меняется объем –
+меняется структура.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdf8e82c" class="outline-4">
+<h4 id="orgdf8e82c"><span class="section-number-4">3.3.2</span> Замена одного дерево на множество</h4>
+<div class="outline-text-4" id="text-3-3-2">
+<p>
+Предложение в том, чтобы отделить хранение от классификации и
+создавать множество разных деревьев на основе запросов.
+</p>
+
+<p>
+На что это похоже: примеры такого уже давно есть в нормальных
+музыкальных плеерах, которые предлагают разнообразные способы
+отображения коллекции.
+</p>
+
+<p>
+Запрос мог бы выглядеть следующим образом:
+</p>
+<ul class="org-ul">
+<li>на первом уровне выбери все ресурсы с определенным типом и
+сгруппируй по значению атрибута</li>
+<li>на втором уровне каждую из получившихся груп сгруппируй по
+значению другого атрибута</li>
+<li>и т.д.</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org7624a70" class="outline-4">
+<h4 id="org7624a70"><span class="section-number-4">3.3.3</span> Сохранение файловой семантики</h4>
+<div class="outline-text-4" id="text-3-3-3">
+<p>
+Необходимо каким-то образом отображать динамическое дерево в
+файловую систему, чтобы все имеющиеся приложения могли работать со
+структурой папок, которая генерится запросом.
+</p>
+
+
+<p>
+Обычная проблема каталогизаторов, например calibre, в том, что
+доступ к структуре возможен только из интерфейса самого
+приложения. Нельзя пойти в папку, соответствующую
+<code>категория/подкатегория/тег</code> и открыть epub редактором.
+</p>
+</div>
+
+<ol class="org-ol">
+<li><a id="orgc0c753a"></a>FUSE<br />
+<div class="outline-text-5" id="text-3-3-3-1">
+<p>
+Динамические деревья можно отобразить на файловую систему с
+помощью <a href="https://en.wikipedia.org/wiki/Virtual_file_system">виртуальной файловой системы</a>. Под linux это <a href="https://en.wikipedia.org/wiki/Filesystem_in_Userspace">FUSE</a>.
+</p>
+
+<p>
+Биндинги для ruby: <a href="https://github.com/lwoggardner/rfusefs">rbusefs</a>
+</p>
+
+<p>
+Пример использования: <a href="https://gist.github.com/teksisto/f35447da6e8079cfbe93">бесконечные рандомные pdf</a>
+</p>
+</div>
+</li>
+
+<li><a id="orgce2c85e"></a>WebDAV<br />
+<div class="outline-text-5" id="text-3-3-3-2">
+<p>
+Либо, чтобы не связываться с системным программированием, можно
+использовать <a href="https://en.wikipedia.org/wiki/WebDAV">WebDAV</a>, монтировать веб-приложение как папку и снова
+пользоваться ей как файловой системой.
+</p>
+</div>
+</li>
+
+<li><a id="org21cf277"></a>Hard links<br />
+<div class="outline-text-5" id="text-3-3-3-3">
+<p>
+Либо это какой-то менеджер hard links. Под windows жесткие ссылки
+тоже есть, так что возможно это даже кросс-платформенное решение.
+</p>
+
+<p>
+Минус подхода в том, что он работает исключительно для реальных
+файлов, для виртуальных сущностей, типа записей в БД он не
+подходит.
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org41837f5" class="outline-3">
+<h3 id="org41837f5"><span class="section-number-3">3.4</span> Контекст</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+Контекст нужен для объединения ресурсов в одно целое и показывает
+хронологию развития какой-то темы. Контекст по природе
+гетерогенен. Он может захватывать ссылки, картинки, посты, ресурсы
+любого типа.
+</p>
+
+<p>
+Контекст – это легковестный блог с вики-страницей в заголовке.
+</p>
+
+<ul class="org-ul">
+<li>Он предназначен либо для мелкого собирательства, которое возможно
+перерастет во что-то большее (например в заметку). Тогда заметка
+должна стать хедом.</li>
+
+<li>Либо для подборки однотипных высказываний (рифмы из цитат). Хотя их можно
+делать и коммуникативными связями.</li>
+
+<li>Крупномаштабный харвест всего встреченного на пути по интересной теме.</li>
+</ul>
+
+<p>
+На что это похоже:
+</p>
+<ul class="org-ul">
+<li>tumbler – множество блогов у одного пользователя. Маленькие
+блоги на какую-нибудь обскурную тему, в которых есть два поста и
+новые появляются раз в год.</li>
+<li>redmine – страница версии. Там в заголовке вики-страница, а в
+хвосте автоматичекий список задач из спринта, разбитых по типу
+работ.</li>
+</ul>
+
+<p>
+Атрибуты:
+</p>
+
+<ul class="org-ul">
+<li>название</li>
+<li>заголовочный блок</li>
+<li>запрос, определяющий хвост</li>
+<li>хвост = массив ресурсов</li>
+</ul>
+</div>
+
+<div id="outline-container-orgaaaddce" class="outline-4">
+<h4 id="orgaaaddce"><span class="section-number-4">3.4.1</span> Заголовочный блок</h4>
+<div class="outline-text-4" id="text-3-4-1">
+<p>
+Заголовочный блок может использоваться как summary или описание
+того, зачем контекст нужен.
+</p>
+
+<p>
+Так же его можно использовать для агрегирования данных из
+элементов хвоста. Например контекст в который входят все
+поступления/расходы за месяц может показывать в заголовке график
+как менялась сумма денег в кошельке.
+</p>
+
+<p>
+Если контекст используется для создания категории постов, то есть
+как тег, то он дает некоторые преимущества. Маркер контекста может
+быть любым (хоть uuid). В то время как отображаться будет
+нормальное название. В головном блоке можно писать что здесь лежит
+и зачем.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org534dae4" class="outline-4">
+<h4 id="org534dae4"><span class="section-number-4">3.4.2</span> Форма быстрого поста</h4>
+<div class="outline-text-4" id="text-3-4-2">
+<p>
+В контексте есть форма быстрого поста. Ты пишешь туда текст, а он
+сам разбирается какие атрибуты ему проставить. Интересный вопрос:
+как и чем из запроса можно выводить атрибуты, которые присущи новым
+записям.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfd7cd1b" class="outline-4">
+<h4 id="orgfd7cd1b"><span class="section-number-4">3.4.3</span> Хвост</h4>
+<div class="outline-text-4" id="text-3-4-3">
+<p>
+Хвост определяется запросом.
+</p>
+
+<p>
+Контекст может захватывать ресурсы автоматически, если ему задать
+правила. Например все заметки, которые ссылаются на конкретного
+человека.
+</p>
+
+<p>
+Контекст умеет показывать хвост в прямом и обратном хронологическом
+порядках. Если я нахожу какой-то интересный блог в интернете, как
+правило мне хочется читать его с начала.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8417fa5" class="outline-4">
+<h4 id="org8417fa5"><span class="section-number-4">3.4.4</span> Контекст есть у каждого ресурса</h4>
+<div class="outline-text-4" id="text-3-4-4">
+<p>
+Еще одно странное следствие, это то, что контекст есть у каждого
+ресурса. То есть есть как минимум какой-то контекст по-умолчанию в
+который входят:
+</p>
+
+<ul class="org-ul">
+<li>все ресурсы, которые ссылаются на данный</li>
+<li>все ресурсы на которые ссылается он сам.</li>
+</ul>
+
+<p>
+Дело в том, что ни жесткое дерево, ни запутанный граф сами по себе
+не подходят для хранения. Часть данных всегда упорядочена, часть
+связей всегда нарушает иерархию. То есть получается дерево,
+опутанное дополнительными связями между узлами. Это всевозможный
+cross-referencing, ассоциативные связи и прочее случайное, что
+может объединять узлы. Тот контекст, который есть у каждого узла
+– это те самые случайные связи.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgbeac5ec" class="outline-4">
+<h4 id="orgbeac5ec"><span class="section-number-4">3.4.5</span> Контекст как строительный блок интерфейса</h4>
+<div class="outline-text-4" id="text-3-4-5">
+<p>
+Получается, что контекст – это один из основных строительных
+блоков интерфейса. Потому что любые коллекции (eg список
+полученных/отправленных писем для человека) – это фильтр, который
+вытаскивает сущности из базы и показывает в хедере статистику.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org8155122" class="outline-4">
+<h4 id="org8155122"><span class="section-number-4">3.4.6</span> Динамическое дерево как вложенные контексты</h4>
+<div class="outline-text-4" id="text-3-4-6">
+<p>
+Интересно, что дерево вложенных контекстов – это и есть то самое
+динамическое дерево.
+</p>
+
+<p>
+Новые сущности просеиваются сначала сквозь фильтр первого
+контекста, потом через фильтры вложенных контекстов и где-то
+оседают. Механизм просеивания – это детали реализации.
+</p>
+
+<p>
+Еще раз. Контекст гетерогенен. Ему без разницы что засасывать,
+потому что засасывает он ресурсы, адресуемые uuid. Поэтому ничто
+не мешает ему содержать в себе другие контексты.
+</p>
+
+<p>
+В этом случае, кстати, голова контекста является элементом,
+отображаеммым в ленте контекста верхнего уровня. Не надо так же
+забывать, что голова контекста – это обычный ресурс и у него, как
+и у любого друго ресурса могут быть разные вьюшки для
+отображения. Что позволяет например ужать в графическом
+представлении весь контекст до заголовка со ссылкой.
+</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org3b8fa6c" class="outline-3">
+<h3 id="org3b8fa6c"><span class="section-number-3">3.5</span> Параллельные тексты</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+Под текстом здесь понимается любая информация, упорядоченная
+последовательно.
+</p>
+
+<p>
+Примеры параллельных текстов:
+</p>
+
+<ul class="org-ul">
+<li>запись выступления и презентация</li>
+<li>песня и ее текст</li>
+<li>подкаст и трансрипт</li>
+<li>фильм, аудио дорожки к нему и субтитры</li>
+<li>цитата на двух языках</li>
+<li>книга на двух языках</li>
+</ul>
+
+<p>
+Есть утилиты, которые строят параллельные тексты на разных языках
+автоматически. Например, параграф к параграфу. Как я предполагаю,
+они делают это на основе грубого машинного перевода и вычисления
+насколько параграфы идентичны.
+</p>
+<ul class="org-ul">
+<li><a href="http://www.abbyy.com/aligner/">Abbyy Aligner</a></li>
+<li><a href="http://www.supernova-soft.com/wpsite/products/text-aligner/create-parallel-text-for-language-lerning/">Supernova Aligner</a></li>
+</ul>
+
+<p>
+Ссылки:
+</p>
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Parallel_text">Parallel text</a></li>
+<li><a href="https://ru.wikipedia.org/wiki/%D0%9F%D0%B0%D1%80%D0%B0%D0%BB%D0%BB%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D0%B5%D0%BA%D1%81%D1%82_(%D0%BC%D0%B5%D1%82%D0%BE%D0%B4%D0%B8%D0%BA%D0%B0_%D0%BE%D0%B1%D1%83%D1%87%D0%B5%D0%BD%D0%B8%D1%8F)">Обучение через чтение параллельных текстов</a></li>
+<li><a href="http://ted.hyperland.com/myU/">Ted Nelson – My parallel universe</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org329140a" class="outline-2">
+<h2 id="org329140a"><span class="section-number-2">4</span> Что бы я со всем этим делал</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-org546b13a" class="outline-3">
+<h3 id="org546b13a"><span class="section-number-3">4.1</span> Оглавления для источников</h3>
+<div class="outline-text-3" id="text-4-1">
+<p>
+В идеале книги должны импортироваться внутрь, биться на блочные
+элементы и цитаты должны привязываться непосредственно к тому
+пераграфу, откуда она была вытащена. Но это непростая операция,
+даже если на входе epub.
+</p>
+
+<p>
+Поэтому делается упрощенный вариант: от книги оставляется скелет
+в виде оглавления.
+</p>
+
+<p>
+Речь про то, что должен быть выбор: либо источник создается без
+оглавления, либо есть оглавление, либо полный импорт.
+</p>
+
+<p>
+Как достать оглавление:
+</p>
+<ul class="org-ul">
+<li><a href="https://stackoverflow.com/questions/2431426/extract-toc-of-pdf">PDF</a> (<code>mutool show file.pdf outline</code>)</li>
+<li><a href="http://www.idpf.org/accessibility/guidelines/content/nav/toc.php">EPUB</a> (здесь это xml-файл, лежащий в архиве)</li>
+<li>FictionBook (опять xml)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9376406" class="outline-3">
+<h3 id="org9376406"><span class="section-number-3">4.2</span> Конспекты</h3>
+<div class="outline-text-3" id="text-4-2">
+<p>
+Конспект точно так же привязывается к оглавлению, как и
+цитаты.
+</p>
+
+<p>
+В итоге к оглавлению привязываются: сам текст с возможностью
+комментирования любого параграфа и отсылками к заметкам, цитаты,
+новые слова, события, ссылки, карточки персоналий.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc615721" class="outline-3">
+<h3 id="orgc615721"><span class="section-number-3">4.3</span> Цитатник</h3>
+<div class="outline-text-3" id="text-4-3">
+</div>
+<div id="outline-container-org3732b1a" class="outline-4">
+<h4 id="org3732b1a"><span class="section-number-4">4.3.1</span> Привязка цитат к оглавлению книги</h4>
+<div class="outline-text-4" id="text-4-3-1">
+<p>
+Цитаты привязываются к оглавлению источника.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4df8682" class="outline-4">
+<h4 id="org4df8682"><span class="section-number-4">4.3.2</span> Заголовки для цитат</h4>
+<div class="outline-text-4" id="text-4-3-2">
+<p>
+Простая фича, но мне ее не хватает (например в tumbler). Обычно я
+делаю заголовки в формате "#{автор} про #{тема}".
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0edfa01" class="outline-4">
+<h4 id="org0edfa01"><span class="section-number-4">4.3.3</span> Форматирование внутри цитат</h4>
+<div class="outline-text-4" id="text-4-3-3">
+<p>
+Чтобы подсвечивать болдом/цветом куски текста и
+вставлять/сохранять ссылки.
+</p>
+
+<p>
+Паттерн "куда смотреть".
+</p>
+</div>
+</div>
+
+<div id="outline-container-org750d85d" class="outline-4">
+<h4 id="org750d85d"><span class="section-number-4">4.3.4</span> Параллельные цитатники</h4>
+<div class="outline-text-4" id="text-4-3-4">
+<p>
+Параллельные цитатники позволяют отображать версии одной и той же
+цитаты на разных языках. Напрмер чтобы сравнивать перевод и
+оригинал. Цитата по-прежнему является отдельной сущностью и
+крепится к оглавлению.
+</p>
+
+<p>
+<a href="https://htmlpreview.github.io/?https://github.com/teksisto/timeline/blob/doc/misc/parallel_quotes/quotes.html">Пример параллельного цитатника</a> из книги Пирсига "Дзен и искусство
+ухода за мотоциклом". Поскольку не существует электронной версии
+перевода Горшкова я выписывал русские аналоги только для коротких
+цитат.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2dc24d8" class="outline-4">
+<h4 id="org2dc24d8"><span class="section-number-4">4.3.5</span> Колоды</h4>
+<div class="outline-text-4" id="text-4-3-5">
+<p>
+Колоды из цитат. Я называю это колодами, потому что когда-то
+печатал цитаты на карточках. Получалось что-то вроде карточной
+колоды. На самом деле это просто возможноть объединить
+произвольные цитаты в группу и добавить к ней описание.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0ffcbcd" class="outline-4">
+<h4 id="org0ffcbcd"><span class="section-number-4">4.3.6</span> Рифмы</h4>
+<div class="outline-text-4" id="text-4-3-6">
+<p>
+Если долго собирать цитаты между ними начинают проглядывать
+параллели. Есть мнение что люди часто говорят про одни и те же
+вещи, просто называют их по-разному. Хотелось бы помечать такие
+находки в цитатнике связями, а потом обсуждать и оценивать
+такие связи.
+</p>
+
+<p>
+Похожесть цитат не обязательно транизитивное свойство, но
+предполагаю, что для нескольких человек на относительно больших
+наборах цитат будут находится не только пары, но цепочки из цитат.
+</p>
+
+<blockquote>
+<p>
+Reed College at that time offered perhaps the best calligraphy
+instruction in the country. Throughout the campus every poster,
+every label on every drawer, was beautifully hand
+calligraphed. Because I had dropped out and didn't have to take
+the normal classes, I decided to take a calligraphy class to learn
+how to do this. I learned about serif and san serif typefaces,
+about varying the amount of space between different letter
+combinations, about what makes great typography great. It was
+beautiful, historical, artistically subtle in a way that science
+can't capture, and I found it fascinating.
+</p>
+
+<p>
+None of this had even a hope of any practical application in my
+life. But ten years later, when we were designing the first Macintosh
+computer, it all came back to me. And we designed it all into the
+Mac. It was the first computer with beautiful typography. If I had
+never dropped in on that single course in college, the "Mac" would
+have never had multiple typefaces or proportionally spaced fonts. And
+since Windows just copied the Mac, it's likely that no personal
+computer would have them. If I had never dropped out, I would have
+never dropped in on that calligraphy class, and personal computers
+might not have the wonderful typography that they do. Of course it was
+impossible to connect the dots looking forward when I was in
+college. But it was very, very clear looking backwards 10 years later.
+Again, <b>you can't connect the dots looking forward</b>;
+you can only connect them looking backwards. So you have to trust that
+the dots will somehow connect in your future. You have to trust in
+something – your gut, destiny, life, karma, whatever – because
+believing that the dots will connect down the road will give you the
+confidence to follow your heart, even when it leads you off the
+well-worn path, and that will make all the difference.
+</p>
+
+<p>
+(Steve Jobs, <a href="http://www.americanrhetoric.com/speeches/stevejobsstanfordcommencement.htm">Commencement Address at Stanford University</a>)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+What you’re supposed to do in most freshman-rhetoric courses is to
+read a little essay or short story, discuss how the writer has done
+certain little things to achieve certain little effects, and then have
+the students write an imitative little essay or short story to see if
+they can do the same little things. He tried this over and over again
+but it never jelled. The students seldom achieved anything, as a
+result of this calculated mimicry, that was remotely close to the
+models he’d given them. More often their writing got worse. It seemed
+as though every rule he honestly tried to discover with them and learn
+with them was so full of exceptions and contradictions and
+qualifications and confusions that he wished he’d never come across
+the rule in the first place.
+</p>
+
+<p>
+A student would always ask how the rule would apply in a certain
+special circumstance. Phædrus would then have the choice of trying to
+fake through a made-up explanation of how it worked, or follow the
+selfless route and say what he really thought. And what he really
+thought was that <b>the rule was pasted on to the writing after
+the writing was all done</b>. It was post hoc, after the fact,
+instead of prior to the fact.
+</p>
+
+<p>
+(Robert M. Pirsig, <a href="http://design.caltech.edu/Misc/pirsig.html">Zen and the Art of Motorcycle Maintenance</a>)
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgf188759" class="outline-4">
+<h4 id="orgf188759"><span class="section-number-4">4.3.7</span> Компартментализм</h4>
+<div class="outline-text-4" id="text-4-3-7">
+<p>
+Термин из психологии. По-русски обычно переводят как "раздельное
+мышление". Типовые примеры из википедии: чудеса гуманизма в
+общественной деятельности, сочетающиеся с домашним насилием и
+жестокостью; борьба с порнографией, сочетающаяся с обширной
+домашней коллекцией порно.
+</p>
+
+<p>
+Если долго собирать цитаты, в них начинают появляться
+противоположные. Иногда один и тот же человек с течением времени
+высказывает противоположные взгляды (это нормально, он растет и
+меняется).
+</p>
+
+<p>
+Идея игры в том, что брать цитаты из разных мест и укладывать их в
+два столбика – за и против. Потом смотреть на то, как по любому
+вопросу есть две противоположных точки зрения, представленные
+вполне убедительными людьми. Может быть даже в три столбика: за,
+против и синтез – но попыток синтеза вокруг очень мало. Хотя идея
+"срединного пути" совсем не нова, и была озвучена как упоротыми
+изотериками, так и психотерапевтами.
+</p>
+
+<p>
+Я дошел до этой игры сам, но позже обнаружил, что уже есть сервис
+реализующий похожий подход – lovehate.ru. Там обитает много
+школьников, что конечно его портит.
+</p>
+
+<p>
+Играть в эту игру можно просто с самим собой, находя противоречия
+как в себе, так и в окружающем мире. Но есть и вторая цель –
+сделать какой-то аналог <a href="https://en.wikipedia.org/wiki/Debate#Student_debating_societies">дискуссионного клуба</a>. Сбор best arguments,
+за и против какой-нибудь идеи.
+</p>
+
+<p>
+Конечная цель игры – синтез разных мнений.
+</p>
+
+<blockquote>
+<p>
+Раздельное мышление — это защитный механизм,
+позволяющий человеку умещать в себе логически несовместимые
+установки. Если по каким-то причинам человек нуждается в каждой из
+своих несовместимых установок, то осознание возникающего
+противоречия начинает занимать мысли попытками это противоречие
+разрешить (зачастую с помощью рационализаций). Чтобы этого не
+происходило, человек может начать «раздельно мыслить» — не
+осознавая противоречия между ними, придерживаться всех
+несовместимых установок сразу. Со стороны это выглядит как простое
+лицемерие, но сам человек в этом случае придерживается своих
+установок вполне искренне, хотя и использует в каждом конкретном
+случае только одну из них.
+</p>
+
+<p>
+(Википедия, Мак-Вильямс)
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Настоящий спор, говорю тебе из лагерного опыта, производится
+как поединок. По согласию выбираем посредника – хоть Глеба
+сейчас позовем.  Берем лист бумаги, делим его отвесной чертой
+пополам. Наверху, через весь лист, пишем содержание
+спора. Затем, каждый на своей половине, предельно ясно и
+кратко, выражаем свою точку зрения на поставленный
+вопрос. Чтобы не было случайной ошибки в подборе слова –
+время на эту запись не ограничивается. [&#x2026;] Пустые
+словопрения и сотрясения воздуха могут тянуться неделями. А
+спор на бумаге иногда кончается в десять минут: сразу же
+становится очевидно, что противники или говорят о совершенно
+разных вещах или ни в чем не расходятся. Когда же выявляется
+смысл продолжать спор – начинают поочередно записывать доводы
+на своих половинках листа.
+</p>
+
+<p>
+(Солженицин, "В круге первом")
+</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb9c3656" class="outline-3">
+<h3 id="orgb9c3656"><span class="section-number-3">4.4</span> События</h3>
+<div class="outline-text-3" id="text-4-4">
+<p>
+Я прочитал несколько книг про историю компьютеров и сетей и понял,
+к моменту прочтения последней, я уже не могу сопоставить даты,
+которые мне описывают сейчас, с датами, которые были описаны в
+предыдущих книгах. Было бы круто наложить последовательности
+событий друг на друга и показать это все на таймлайне.
+</p>
+
+<p>
+Проблема в том, что когда я слышу, что "Хоббит" был опубликован в
+1937 году, я уже давно забыл, что в том же году вышла первая
+диснеевская полнометражка. События, даты которых я слышу, для меня
+находятся в вакууме. Если их выписывать, то со временем контекста
+будет становится все больше.
+</p>
+
+<p>
+Так же это здорово прочищает мозг, потому что выясняется с какой
+легкостью я ошибаюсь на плюс-минус десять лет в интуитивной оценке,
+когда что-то произошло.
+</p>
+
+<p>
+Кое-как, но события сейчас реализованы. Их можно добавлять,
+разглядывать на таймлайне через <a href="http://visjs.org">vis.js</a>, и крепить вместе с цитатами
+к оглавлению книги.
+</p>
+
+
+<div class="figure">
+<p><img src="./images/timeline/timeline1.png" alt="timeline1.png" />
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3850e97" class="outline-3">
+<h3 id="org3850e97"><span class="section-number-3">4.5</span> Словарь</h3>
+<div class="outline-text-3" id="text-4-5">
+</div>
+<div id="outline-container-org18a2a2c" class="outline-4">
+<h4 id="org18a2a2c"><span class="section-number-4">4.5.1</span> Личный словарь терминов</h4>
+<div class="outline-text-4" id="text-4-5-1">
+<p>
+Карточки для терминов, встреченных в тексте. Крепятся к
+оглавлению. Автоматически генерируют ссылки на запрос в гугл и
+википедию.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgdce7769" class="outline-4">
+<h4 id="orgdce7769"><span class="section-number-4">4.5.2</span> Словарь иностранных слов</h4>
+<div class="outline-text-4" id="text-4-5-2">
+<p>
+Например берем субтитры на английском, тупо режем их на слова и
+удаляем всякий очевидный мусор. ﻿Прикручиваем <a href="https://wordnet.princeton.edu/">WordNet﻿</a>. Удаляем
+множественные числа, превосходные степени, глагольные формы,
+междометия, предлоги и местоимения. Считаем частотность. Находим
+самые частовстречающиеся 2000 слов (<a href="https://en.wikipedia.org/wiki/Basic_English">"core vocabulary"</a>). Делаем
+интерфейс, в котором пользователь может отметить знает он это
+слово или не знает (там не надо думать, если сомневаешься,
+говоришь, что не знаешь). На вычитку 1000 слов у меня уходило
+меньше часа. Предположим, что средний словарный запас у
+англоговорящего 20-30k слов, у того кто учит язык – сильно
+меньше. За 10-20 часов систему можно научить всем словам, которые
+ты знаешь. По сравнению со временем обучения языку это очень мало.
+</p>
+
+<p>
+Ок, на выходе мы получили список слов. Что теперь с ним можно
+поделать?
+</p>
+
+<p>
+Во-первых, можно прогнать свежий текст через базу и найти слова,
+которых ты не знаешь. Если прикрутить <a href="https://github.com/louismullie/treat">treat</a>, то еще и с частью
+речи. Теперь можно автоматом генерить из них карточки для
+запоминания, в которых будет учитываться часть речи ("мне
+встречалось это слово как глагол, а тут оно как существительное"),
+автоматически добавляться пример в котором слово попалось и будет
+стоять ссылка на конретный источник, откуда слово взялось. Это
+очень круто, потому что руками делать карточки вымораживает. Из
+упоротых идей: можно скриншот делать из видео, где это слово
+показыватеся.
+</p>
+
+<p>
+Во-вторых, можно оценивать лексическую сложность текста до
+прочтения.
+</p>
+
+<p>
+В-третьих, можно понимать какие слова учить первыми, потому что
+они чаще встречаются.
+</p>
+
+<p>
+На картинке синяя часть полоски – это базовая лексика, красная –
+слова, которые повторяются два и больше раз, и желтая – слова,
+которые встречаются в сериале один раз.
+</p>
+
+
+<div class="figure">
+<p><img src="./images/words/words.png" alt="words.png" />
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org0076216" class="outline-3">
+<h3 id="org0076216"><span class="section-number-3">4.6</span> Импорт данных из веб-сервисов</h3>
+<div class="outline-text-3" id="text-4-6">
+<p>
+О плохом сервисе никто не знает, хороший закроется через 10
+лет. Плохой сервис не отдает данные пользователям, хороший имеет
+выгрузку данных и api. Но что с ними делать, если он все равно
+закрылся? Интерфейс пропал. Что делать с несколькими
+экспортированными наборами данных, если хочется единую ленту?
+</p>
+
+<p>
+Примеры веб-сервисов, которые пытались делать единую ленту: Singly,
+Locker, Memolane, FriendFeed. В настоящий момент все закрыты.
+</p>
+
+<p>
+Помимо единой ленты есть еще проблема единых метаданных. Теги из
+разных сервисов надо приводить к одному знаменателю.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org94f9b6f" class="outline-2">
+<h2 id="org94f9b6f"><span class="section-number-2">5</span> Поиск подхода к реализации</h2>
+<div class="outline-text-2" id="text-5">
+<p>
+Самое вменяемое решение, которое я вижу – это <a href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a>.
+</p>
+</div>
+
+<div id="outline-container-org5a884e4" class="outline-3">
+<h3 id="org5a884e4"><span class="section-number-3">5.1</span> Декомпозиция</h3>
+<div class="outline-text-3" id="text-5-1">
+</div>
+<div id="outline-container-orgb829790" class="outline-4">
+<h4 id="orgb829790"><span class="section-number-4">5.1.1</span> Блог</h4>
+<div class="outline-text-4" id="text-5-1-1">
+<p>
+Представим себе блог, где каждый пост не является монолитом, а
+собирается из кусочков-атомов. Каждый атом имеет уникальный
+идентификатор, хранится отдельно и имеет свой набор
+атрибутов. Каждый параграф, картинка, видео-ролик в посте – это
+атом. Структура поста задается списком из уникальных идентификаторов
+каждого атома, каждый из которых трансклюдится в пост. На каждый
+параграф в посте можно сослаться, навесить атрибуты и добавить
+комментарии.
+</p>
+
+<p>
+Структура каждого комментария к посту повторяет его структуру. К
+этому добавляется древовидный или линейный контейнер, который хранит
+порядок комментариев.
+</p>
+
+<p>
+Посты организуются в хронологическое дерево. Это может быть
+стандартная схема год/месяц/день или какая-нибудь другая, например,
+год/неделя/день. Деревьев может быть несколько, выбор определяется
+удобством.
+</p>
+
+<p>
+Какие элементы структуры имеем в результате?
+</p>
+
+<ul class="org-ul">
+<li>атомы с атрибутами</li>
+<li>линейный список для объединения атомов в посты</li>
+<li>комментарии, каждый из которых повторяет структуру поста</li>
+<li>дерево для комментариев</li>
+<li>посты организуются в хронологическое дерево</li>
+</ul>
+
+<p>
+Теперь отрезаем лишние сущности.
+</p>
+
+<p>
+Между атомом и постом нет никакой разницы. Оба имеют уникальный
+идентификатор и набор атрибутов. Разница только в том, что у поста
+есть сложный атрибут, который хранит список входящих в него
+атомов. Сущность, обладающую уникальным идентификатором, на которую
+можно навесить атрибуты я дальше буду называть ресурсом.
+</p>
+
+<p>
+Между деревом и линейным списком нет никакой разницы, поскольку
+дерево – это просто список списков. Дерево комментариев – это список
+списков, листьями которого являются ресурсы, содержащие комментарии.
+</p>
+
+<p>
+Теперь у нас есть два вида ресурсов: посты и комментарии. На самом
+деле, даже больше, потому что атомы тоже различаются – текст,
+картинка, видео. Поскольку у нас есть несколько типов ресурсов,
+логично ввести понятие тип ресурса. Определение ресурса расширяется
+до сущности, у которой есть уникальный идентификатор, атрибуты и
+тип. Тип – это такой же атрибут, как и дата создания, заголовок или
+любая другая мета-информация. Отличает его только то, что он
+является обязательным, поскольку без него мы не будем знать, как
+обрабатывать ресурс. Допустим, мы генерируем на основе нашей
+структуры html. Чтобы отобразить текстовый атом, надо преобразовать
+содержащуюся в нем разметку (например markdown) в html, обернуть
+это в div и отдать браузеру. Чтобы показать картинку, надо обернуть
+ее в тег img и отдать браузеру. Разница в обработке закрепляется в
+виде типа.
+</p>
+
+<p>
+Атрибуты — это, строго говоря, тоже ресурсы, а линейные списки
+создаются с помощью цепочек ресурсов, ссылающихся друг на друга. Так
+что кроме ресурсов ничего особо и не остается, но атрибуты и
+линейные списки мы выкидывать пока не будем, а то говорить не о чем
+будет.
+</p>
+
+<p>
+Итак, у нас остались:
+</p>
+
+<ul class="org-ul">
+<li>ресурсы</li>
+<li>атрибуты</li>
+<li>линейные списки</li>
+</ul>
+
+<p>
+Переводим в термины rdf:
+</p>
+
+<ul class="org-ul">
+<li>ресурс по-прежнему остается ресурсом (rdf:Resource)</li>
+<li>атрибуты в терминологии rdf называются rdf:property</li>
+<li>атрибут «тип ресурса» – это rdf:type</li>
+<li>ресурсы, описывающие атрибуты, имеют rdf:type равным rdf:Property</li>
+</ul>
+
+<p>
+Схема получается довольно заманчивая, потому что в базе данных все
+поместится в две таблицы: одна для графа и одна для сопоставления
+идентификаторов атомов и все было бы хорошо, если бы речь шла про
+однопользовательскую систему, например, если бы мы говорили про
+гибкую структуру для бекапа различных блогов. Но у блога есть
+комментарии и пользователей много. Нужно разграничение
+доступа. Красивая схема «все в двух таблицах» разваливается. Права —
+зло, про них придется думать отдельно.
+</p>
+
+<p>
+Чтобы два раза не вставать, сразу скажу, что в смысле бекапа блог не
+сильно отличается от твиттера, френдфида, фликра и многого
+другого. Все упирается в модель безопастности.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f85fb3" class="outline-4">
+<h4 id="org3f85fb3"><span class="section-number-4">5.1.2</span> Оценка количества триплетов при импорте книги</h4>
+<div class="outline-text-4" id="text-5-1-2">
+<p>
+На примере книги <a href="http://www.learningsparql.com/">"Learning SPARQL"</a>.
+</p>
+
+<p>
+Поиск блочных элементов:
+</p>
+
+<pre class="example">
+cat OEBPS/*html &gt; all
+grep -cP '&lt;img|&lt;ol|&lt;li[&gt;\s]|&lt;ul[&gt;\s]|&lt;p[&gt;\s]|&lt;pre[&gt;\s]|&lt;h\d[&gt;\s]|&lt;dd|&lt;dt|&lt;table|&lt;tr|&lt;td' all
+=&gt; 2363 &lt;1&gt;
+</pre>
+
+
+<p>
+Количество заголовков в оглавлении:
+</p>
+
+<pre class="example">
+grep -cP '&lt;a' bk01-toc.html
+=&gt; 268
+</pre>
+
+
+<p>
+Получается в среднем около 8 блочных элементов на элемент
+заголовка. Предположим, что большинство элементов прикреплены к
+заголовкам третьего уровня. (Уровень заголовка считается от единицы.)
+</p>
+
+<p>
+hasPart / isPartOf. Формула: <code>2 * n * (d + 1)</code> Каждый блочный элемент
+принадлежит своему заголовку и всем его родительским.
+</p>
+
+<pre class="example">
+2 * 2363 * (3 + 1) = 18904 &lt;2&gt;
+</pre>
+
+
+<p>
+Теперь у нас есть количество элементов и есть связи. Надо какие-то
+индексы, чтобы сортировать части внутри заголовка. Придется
+использовать упоротую систему нумерации из rdf, где для описания
+связи двух элементов нужно три триплета.
+</p>
+
+<pre class="example">
+(2363-1) * 3 = 7086 &lt;3&gt;
+</pre>
+
+
+<p>
+С учетом того, что информация про язык, авторов и так далее не
+подвергается инференсингу, то в сумме получается:
+</p>
+
+<pre class="example">
+2363 + 18904 + 7086 = 28353
+</pre>
+
+
+<p>
+30k триплетов на одну книгу. На 1k книг – 30 000 000 триплетов.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgeb71df7" class="outline-3">
+<h3 id="orgeb71df7"><span class="section-number-3">5.2</span> Базовые определения</h3>
+<div class="outline-text-3" id="text-5-2">
+</div>
+<div id="outline-container-org4e1fbc8" class="outline-4">
+<h4 id="org4e1fbc8"><span class="section-number-4">5.2.1</span> Ресурс</h4>
+<div class="outline-text-4" id="text-5-2-1">
+<p>
+Отдельная сущность, адресуемая уникальным идентификатором. Роль
+идентификатора выполняет URI.
+</p>
+
+<p>
+Имеет множество атрибутов в формате ключ=значение.
+</p>
+
+<p>
+Имеет множество представлений.
+</p>
+
+<p>
+Ресурс имеет класс, который определяет его базовый логический
+тип. Класс определяет какие атрибуты можно вешать на этот ресурс и
+с помощью каких представлений его рисовать.
+</p>
+
+<p>
+Идентификатор позволяет выцепить из источника данных настоящий
+контент, соответствующий ресурсу. Это так называемый dereferencing.
+</p>
+
+<p>
+Контент есть только у неделимых ресурсов, то есть на самом деле не
+у всех. Контент есть у ресурса, являющегося параграфом текста,
+картинкой, аудио-файлом, видео-файлом. Для ресурсов, у которых нет
+контента, устанавливается некий пустой адаптер.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org02fb8aa" class="outline-4">
+<h4 id="org02fb8aa"><span class="section-number-4">5.2.2</span> Представление</h4>
+<div class="outline-text-4" id="text-5-2-2">
+<p>
+У ресурса есть класс. Классу соответствует множество представлений,
+из которого выбирается нужное. Представление – это шаблон, который
+получает на входе ресурс, достает из него хеш с атрибутами, с
+помощью адаптера получает контент и рисует из всего этого html.
+</p>
+
+<p>
+У одного ресурса есть множество представлений.
+</p>
+
+<p>
+Три стандартных, которые показывают ресурс вне зависимости от того
+есть у него класс или нет:
+</p>
+
+<ol class="org-ol">
+<li><code>default</code> – показывает атрибуты и контент. Атрибуты содержащие
+ссылки на другие ресурсы показываются просто ссылками и никак не
+отображаются.</li>
+<li><code>inline</code> – показывает только контент. Для параграфа это текст в
+теге <code>&lt;p&gt;</code>, для картинки тег <code>&lt;img&gt;</code> и так далее.</li>
+<li><code>link</code> – показывает только ссылку на ресурс.</li>
+</ol>
+
+<p>
+Расширенные, опирающиеся на класс:
+</p>
+
+<ol class="org-ol">
+<li><code>classed-link</code> – отображает иконку рядом со ссылкой в зависимости
+от типа ресурса.</li>
+<li><code>card</code> – показывает некоторую компактную summary по ресурсу и
+ссылку на полную версию. Например для книги это может быть
+обложка, под которой написано полное название и год
+издания. Карточки используются при отображении "плитки" из
+ресурсов.</li>
+<li><code>classed-link-with-card</code> – <code>classed-link</code> у которой при навении
+мышки на ссылку появляется карточка во всплывающем окне.</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-orgc77d1ee" class="outline-4">
+<h4 id="orgc77d1ee"><span class="section-number-4">5.2.3</span> Атрибут</h4>
+<div class="outline-text-4" id="text-5-2-3">
+<p>
+Атрибут тоже ресурс. На него тоже можно навешивать атрибуты.
+</p>
+
+<p>
+Адаптер для него HTTP, потому что так сложилось.
+</p>
+
+<p>
+Формат атрибута <code>&lt;attribute&gt;=&lt;value&gt;</code>. UUID ресурса плюс ключ и значение
+образовывают триплет.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org0389728" class="outline-4">
+<h4 id="org0389728"><span class="section-number-4">5.2.4</span> Адаптер</h4>
+<div class="outline-text-4" id="text-5-2-4">
+<p>
+URI состоит из NID и NSS.
+</p>
+
+<p>
+NID – namespace id. Позволяет выбрать адаптер для совершения с ресурсом базовых
+действий.
+</p>
+
+<p>
+NSS – namespace spicific string. Позволяет однозначно ссылаться на
+ресурс внутри определенного namespace.
+</p>
+
+<p>
+Основные действия, которые должен поддерживать ресурс:
+</p>
+
+<ul class="org-ul">
+<li>создание</li>
+<li>чтение</li>
+<li>редактирование</li>
+<li>удаление</li>
+</ul>
+
+<p>
+Действия над метаданными внутри ресурса:
+</p>
+
+<ul class="org-ul">
+<li>добавить единицу метаданных в формате ключ=значение</li>
+<li>вернуть значение по определенному ключу</li>
+<li>считать все метаданные и вернуть хеш</li>
+<li>установить значение по определенному ключу</li>
+<li>удалить единицу метаданных по ключу</li>
+</ul>
+
+<p>
+Некоторые ресурсы могут не поддерживать метаданные (plain text) или
+быть недоступными для удаления/редактирование (страница в
+интернете). В этом случае адаптер просто не поддерживает эти
+операции.
+</p>
+</div>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgac7c272" class="outline-2">
+<h2 id="orgac7c272"><span class="section-number-2">6</span> Как это все может выглядеть на практике</h2>
+<div class="outline-text-2" id="text-6">
+<p>
+RDF – это идея, что данные хранятся в графе. Хранить этот граф и
+управлять им можно по-разному.
+</p>
+</div>
+
+<div id="outline-container-orgef205fe" class="outline-3">
+<h3 id="orgef205fe"><span class="section-number-3">6.1</span> Реляционный подход</h3>
+<div class="outline-text-3" id="text-6-1">
+<p>
+Лучше всего про реляционный подход написал какой-то чувак с <a href="https://news.ycombinator.com/item?id=10326764">HN</a>:
+</p>
+
+<blockquote>
+<p>
+Having a completely abstracted database with one big
+table called "things" and another big table called "relationships"
+seems really attractive before you actually do it. Then it starts
+to suck.
+</p>
+</blockquote>
+
+<p>
+Все хранится в трех таблицах: <code>Resources</code>, <code>Properties</code>, <code>Trees</code>.
+</p>
+
+<p>
+<code>Trees</code> – это оптимизация, которая позволяет хранить деревья,
+упорядоченные и не упорядоченные списки, не прибегая к упоротому
+способу <code>rdf:next</code>.
+</p>
+
+<p>
+В таблице <code>Resources</code> включен single-table inheritance, который
+выгружает ресурсы в соответствующие ruby-классы.
+</p>
+
+<p>
+Валидации делаются засчет того, что у ресурсов типа <code>Property</code> в
+классах есть методы в духе <code>domain</code> и <code>range</code>, которые возвращают
+множества того, что можно крепить к свойству слева и справа
+соответственно.
+</p>
+
+<p>
+Инферинг делается в духе:
+</p>
+
+<pre class="example">
+after_create :add_inverse_property
+</pre>
+
+
+<p>
+У классов нет множественного наследования. Мне оно строго говоря и
+не нужно, но реализовывать проще, если принять это
+ограничение. Правда придется разруливать два триплета с которых
+вообще начинается вся семантика. Потом все нормально.
+</p>
+</div>
+
+<div id="outline-container-org6fac7da" class="outline-4">
+<h4 id="org6fac7da"><span class="section-number-4">6.1.1</span> Конспект</h4>
+<div class="outline-text-4" id="text-6-1-1">
+<p>
+Сначала у нас есть один ресурс – книга. У него есть атрибут <code>content</code>
+в котором лежит ссылка на дерево.
+</p>
+
+<p>
+Ссылка на дерево – это указатель на анонимный корневой элемент
+дерева, к которому крепятся его элементы. У элемента дерева, помимо
+информации о вложенности есть только одна полезная нагрузка –
+ссылка на ресурс.
+</p>
+
+<p>
+Мы делаем первый запрос и получаем из ресурса класса <code>Book</code> ресурс
+класса <code>Outline</code>.
+</p>
+
+<p>
+Мы делаем второй запрос и получаем свойство <code>content</code> ресурса класса
+<code>Outline</code>. В нем хранится ссылка на дерево.
+</p>
+
+<p>
+Мы делаем третий запрос и получаем упорядоченный массив
+элементов дерева, потому что nested set. Ресурсы крепятся к
+элементам дерева с помощью <code>includes</code>. Для этого нужен один <code>join</code>.
+На выходе получаем массив элементов дерева, с уже загруженными из
+базы элементами типа <code>Paragraph</code>, <code>Section</code> или <code>List</code>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc637d2" class="outline-4">
+<h4 id="orgfc637d2"><span class="section-number-4">6.1.2</span> Цитаты, разложенные по главам</h4>
+<div class="outline-text-4" id="text-6-1-2">
+<p>
+У цитаты есть функциональное свойство источник. Функциональное в
+том смысле, что оно у него может быть только одно, потому что у
+цитаты есть только один источник.
+</p>
+
+<p>
+Цитата крепится свойством <code>source</code> к элементу оглавления класса
+<code>Section</code>. Оглавление в книге одно на всех. К нему крепятся и
+конспекты, и цитаты, и контент. Это означает, что элемент
+оглавления должен иметь свой тип и свои свойства, к которым
+крепятся соответствующие деревья.
+</p>
+
+<p>
+Допустим он имеет тип <code>Section</code>. У <code>Section</code> есть четыре атрибута:
+<code>dc:title</code>, <code>my:content</code>, <code>my:outlite</code>, <code>my:quotes</code>.
+</p>
+
+<p>
+Первый запрос: взять у книги атрибут <code>оглавление</code> и достать оттуда
+ссылку на анонимный элемент дерева, который хранит все элементы
+оглавления класса <code>Section</code>.
+</p>
+
+<pre class="example">
+resource[toc] = tree_id
+</pre>
+
+
+<p>
+Второй запрос: прийти в таблицу деревья и вытащить оттуда всех
+детей этого анонимного элемента, сделав на них <code>inludes</code>, что дает
+нам все ресурсы описывающие главы. Это первый <code>join</code>.
+</p>
+
+<pre class="example">
+tocs = Tree.find(tree_id).descendants.includes(r)
+</pre>
+
+
+<p>
+Третий запрос: из каждого ресурса типа <code>Section</code> надо достать
+свойство <code>quotes</code>, которое ссылается на анонимный элемент дерева,
+который хранит список элементов класса <code>Quote</code>, который нам и нужен.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgbf3ab7a" class="outline-3">
+<h3 id="orgbf3ab7a"><span class="section-number-3">6.2</span> Обычный реляционный подход + наведенная семантика</h3>
+<div class="outline-text-3" id="text-6-2">
+<p>
+Объекты каждого класса хранятся в отдельной таблице, связи между
+ними во внешних ключах. Связи лежат в коде. Новый класс – новый
+скаффолд. Ограничения разползаются в валидации и колбеки.
+</p>
+
+<p>
+На сервере стоит вордпресс, редмайн и медиавики. Делается точка
+доступа <code>sparql</code>, которая маппит их таблицы в rdf и предоставляет
+унифицированный доступ. На основе этой точки доступа рисуется
+интерфейс.
+</p>
+
+<p>
+Основная проблема этого подхода в невозможности импорта данных из
+какого-то источника без изменения схемы хранения данных. Если схему
+не менять, то при импорте либо часть данных потеряется, либо
+придется менять их семантику. Например у нас есть хранилище,
+заточенное под wordress, а импортировать туда надо записи из
+livejournal, и поле "current mood" приходится класть прямо в текст
+записи, потому что мы не можем его добавить не программируя.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6a27bf3" class="outline-3">
+<h3 id="org6a27bf3"><span class="section-number-3">6.3</span> Семантика</h3>
+<div class="outline-text-3" id="text-6-3">
+<p>
+<a href="https://en.wikipedia.org/wiki/Triplestore">Триплстор</a>, <a href="https://en.wikipedia.org/wiki/Semantic_reasoner">ризонер</a>, запросы на <a href="https://en.wikipedia.org/wiki/SPARQL">SPARQL</a>. Интерфейс на
+рельсах. Моделей нет. Контроллер по сути один –
+<code>ResourcesController</code>. В основном надо рисовать партиалы для
+отрисовки ресурсов конретного класса с указанной детализаций и
+связанными ресурсами.
+</p>
+</div>
+
+<div id="outline-container-org7e3c284" class="outline-4">
+<h4 id="org7e3c284"><span class="section-number-4">6.3.1</span> OpenLink Virtuoso</h4>
+<div class="outline-text-4" id="text-6-3-1">
+<p>
+<a href="http://virtuoso.openlinksw.com/">http://virtuoso.openlinksw.com/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org07a2001" class="outline-4">
+<h4 id="org07a2001"><span class="section-number-4">6.3.2</span> Stardog</h4>
+<div class="outline-text-4" id="text-6-3-2">
+<p>
+<a href="https://www.stardog.com">https://www.stardog.com</a>
+</p>
+
+<p>
+Платная.
+</p>
+
+<blockquote>
+<p>
+It supports both semantic graphs, via RDF, SPARQL, and OWL, as
+well as property graphs via Apache TinkerPop and Gremlin–it's
+the <b>only graph database that supports both models over the same
+database, simultaneously</b>.
+</p>
+
+<p>
+– <a href="http://tinkerpop.apache.org/providers.html">Tinkertop doc</a> / <a href="https://www.stardog.com/docs/#_property">Stardog doc</a>
+</p>
+</blockquote>
+
+<blockquote>
+<p>
+Stardog supports integrity constraint validation as a data
+quality mechanism via <b>closed world</b> reasoning.
+</p>
+
+<p>
+– <a href="https://www.stardog.com/docs/#_validating_constraints">Stardog doc</a>
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org3eb2a68" class="outline-4">
+<h4 id="org3eb2a68"><span class="section-number-4">6.3.3</span> AllegroGraph</h4>
+<div class="outline-text-4" id="text-6-3-3">
+<p>
+<a href="http://franz.com/">http://franz.com/</a>
+</p>
+
+<p>
+Выглядит вполне живым. Копирайт на сайте обновляется, есть всякие
+видео и список событий. Есть community версия и платная. Внезапно
+есть биндинги для Common Lisp и курсы по изучению Common Lisp.
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org4026438" class="outline-3">
+<h3 id="org4026438"><span class="section-number-3">6.4</span> Графовая база данных</h3>
+<div class="outline-text-3" id="text-6-4">
+<p>
+Если конкретнее, то <a href="https://neo4j.com">neo4j</a>. Про графовые базы
+пишут, что если цепочки связей между ресурсами больше двух, то
+можно использовать, а если нет, тогда postgres. То есть
+хранить там все нет смысла.
+</p>
+
+<p>
+Использует собственный язык запросов <a href="https://neo4j.com/docs/developer-manual/current/cypher/">Cypher</a>. Говорят, что
+поддерживает SPARQL.
+</p>
+
+<p>
+Подозрение вызывает то, что связи не являются узлами как в RDF. На
+них можно навешивать атрибуты, но это каждый раз происходит
+локально для каждой созданной связи. То есть метаинформацию кто и
+когда добавил связь оставить можно, но нельзя сказать, что эта
+связь соединяет только определенные узлы. Эта информация уходит в
+логику приложения.
+</p>
+
+<p>
+С другой стороны это радикально упрощает provenance. Нет этой
+упоротой rdf-схемы, где для описания одной связи надо использовать
+4+n триплетов, (n – количество триплетов с мета-информацией, 4 –
+statement + subject + predicate + object). Как оно устроено внутри,
+мне не интересно, главное что думать про это не надо будет.
+</p>
+
+<p>
+Очень привлекают примеры с быстрой загрузкой данных из WordNet и
+dbpedia.
+</p>
+
+<p>
+Определенно хорошо применять для:
+</p>
+<ul class="org-ul">
+<li>связей между цитатами</li>
+<li>связей между параграфами</li>
+</ul>
+
+<p>
+Книга O'Reilly "Graph Databases" – это введение в neo4j.
+</p>
+
+<p>
+Обертка для ruby: <a href="https://github.com/neo4jrb/neo4j">neo4jrb</a> (<a href="https://neo4jrb.readthedocs.io/en/7.1.x/">docs</a> / <a href="https://www.youtube.com/watch?v=bDjbqRL9HcM">блог на neo4jrb за 10 минут</a>)
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org8f0204e" class="outline-2">
+<h2 id="org8f0204e"><span class="section-number-2">7</span> История</h2>
+<div class="outline-text-2" id="text-7">
+</div>
+<div id="outline-container-org4c5897d" class="outline-3">
+<h3 id="org4c5897d"><span class="section-number-3">7.1</span> (1945) Vannevar Bush — As We May Think</h3>
+<div class="outline-text-3" id="text-7-1">
+<p>
+The Atlantic: <a href="http://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/">As We May Think</a>
+</p>
+
+<p>
+Wikipedia: <a href="https://en.wikipedia.org/wiki/Memex">Memex</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11d50f2" class="outline-3">
+<h3 id="org11d50f2"><span class="section-number-3">7.2</span> (1967) Andries van Dam, Ted Nelson — Hypertext Editing System</h3>
+<div class="outline-text-3" id="text-7-2">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Hypertext_Editing_System">HES</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org84454e6" class="outline-3">
+<h3 id="org84454e6"><span class="section-number-3">7.3</span> (1968) Douglas Engelbart — oN-Line System</h3>
+<div class="outline-text-3" id="text-7-3">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/The_Mother_of_All_Demos">The Mother of All Demos</a> / <a href="https://en.wikipedia.org/wiki/NLS_(computer_system)">oN-Line System</a>
+</p>
+
+<p>
+Видео: <a href="http://www.1968demo.org/">http://www.1968demo.org/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4f6ae4d" class="outline-3">
+<h3 id="org4f6ae4d"><span class="section-number-3">7.4</span> (1968) Andries van Dam — File Retrieval and Editing System</h3>
+<div class="outline-text-3" id="text-7-4">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Hypertext_Editing_System">FRESS</a>
+</p>
+
+<div class="org-src-container">
+<pre class="src src-event">label:       FRESS (File Retrieval and Editing System)
+description: Andries van Dam
+category:    infoorg
+start_date:  1968
+link:        https://en.wikipedia.org/wiki/Hypertext_Editing_System
+location:    USA
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org88f51ff" class="outline-3">
+<h3 id="org88f51ff"><span class="section-number-3">7.5</span> (1985) Intermedia</h3>
+<div class="outline-text-3" id="text-7-5">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Intermedia_(hypertext)">Intermedia</a>
+</p>
+
+<blockquote>
+<p>
+In 1983 Andries van Dam, William S. Shipp and Norman Meyrowitz founded
+the Institute for Research in Information and Scholarship (IRIS) at Brown.
+Their most notable project was Intermedia, a networked, shared, multiuser
+hypermedia system explicitly designed for use within university research and
+teaching environments. Intermedia was started in 1985 and sponsored by the
+Annenberg/CPB project and IBM (Meyrowitz 1986, 196).
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org1bf14e3" class="outline-3">
+<h3 id="org1bf14e3"><span class="section-number-3">7.6</span> (1991) Gifford — Semantic file systems</h3>
+<div class="outline-text-3" id="text-7-6">
+<p>
+Старая заметка про Гиффорда:
+</p>
+
+<blockquote>
+<p>
+Подход, описанный Гиффордом, можно наглядно продемонстрировать
+на примере del.icio.us. Факт того, что он писал это еще в 1991
+году, убивает на фиг. Но. Главный недостаток этого подхода
+заключается в том, что когда множества полей (fields) и их
+значений (values) выростет, системой будет невозможно
+пользоваться. Это видно и на примере делишеса. Никто не
+пользуется инкрементным поиском. Это прикольно, но медленно и
+нафиг никому не сдалось. Проблема инкрементного поиска в том,
+что вылезает слишком много не нужных параметров.
+</p>
+
+<p>
+Сохраненные запросы имеют то преимущество перед подходом Гиффорда, что
+они заранее отсеивают ненужные параметры поиска. Дело не в том, что
+дерево – это плохо. Дело в том, что одно дерево это плохо. Деревьев
+должно быть много. В файловую систему из можно интегрировать с помощью
+виртуальных файловых систем.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-org822ceba" class="outline-3">
+<h3 id="org822ceba"><span class="section-number-3">7.7</span> (1993) LDAP</h3>
+<div class="outline-text-3" id="text-7-7">
+<p>
+LDAP интересен своей способностью строить классицификаторы. Там
+есть классы, наследование, всякие прочие штуки. Для 1993 года
+неплохо.
+</p>
+
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Lightweight_Directory_Access_Protocol">LDAP</a>
+</p>
+
+<p>
+<a href="http://www.zytrax.com/books/ldap/">LDAP for Rocket Scientists</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf6dbf7b" class="outline-3">
+<h3 id="orgf6dbf7b"><span class="section-number-3">7.8</span> (1996) Eric Freeman and David Gelertner — Lifestreams</h3>
+<div class="outline-text-3" id="text-7-8">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Lifestreaming">Lifestreaming</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4171e5" class="outline-3">
+<h3 id="orgb4171e5"><span class="section-number-3">7.9</span> (1999) Presto</h3>
+<div class="outline-text-3" id="text-7-9">
+<p>
+Paul Dourish, W. Keith Edwards, Anthony LaMarca and Michael
+Salisbury. Xerox Palo Alto Research Center.
+</p>
+
+<p>
+<a href="http://www.dourish.com/publications/1999/tochi-presto.pdf">Presto: An Experimental Architecture for Fluid Interactive Document Spaces</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc01ec05" class="outline-3">
+<h3 id="orgc01ec05"><span class="section-number-3">7.10</span> (2000) id3v2.4</h3>
+<div class="outline-text-3" id="text-7-10">
+<p>
+Informal standard на теги для mp3 файлов. Не смотря на то, что
+структура метаданных хорошо прописана, по большому счету ее никто
+не использует.
+</p>
+
+<p>
+Проблема метаданных для музыки – обширная тема, надо ее чуть позже
+раскрыть.
+</p>
+
+<p>
+<a href="http://id3.org/id3v2.4.0-frames">http://id3.org/id3v2.4.0-frames</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9cd65ca" class="outline-3">
+<h3 id="org9cd65ca"><span class="section-number-3">7.11</span> (2000) MusicBrainz</h3>
+<div class="outline-text-3" id="text-7-11">
+<p>
+Отлично прописанная онтология для музыки. Last.fm забирает данные
+именно отсюда.
+</p>
+
+<p>
+<a href="https://musicbrainz.org/">https://musicbrainz.org/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc25862c" class="outline-3">
+<h3 id="orgc25862c"><span class="section-number-3">7.12</span> (2001) Eric Kim — Purple</h3>
+<div class="outline-text-3" id="text-7-12">
+<p>
+Подход к решению проблемы идентификации частей документа. Добавляет
+для блочных элементов в html якоря со ссылками. Реализация идеи Нельсона.
+</p>
+
+<p>
+<a href="https://en.wikipedia.org/wiki/Purple_Numbers">https://en.wikipedia.org/wiki/Purple_Numbers</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb1d168d" class="outline-3">
+<h3 id="orgb1d168d"><span class="section-number-3">7.13</span> (2001) Tim Berners-Lee — Semantic Web</h3>
+</div>
+
+<div id="outline-container-orgda92ea9" class="outline-3">
+<h3 id="orgda92ea9"><span class="section-number-3">7.14</span> (2001) Tinderbox</h3>
+<div class="outline-text-3" id="text-7-14">
+<p>
+По сути – mindmap. Есть заметки, у них есть классы (прототипы на
+местном сленге) и аттрибуты. Из классов можно делать иерархии.
+</p>
+
+<p>
+Есть несколько способов отображения заметок: mindmap (с
+возможностью заныривания в поддерево), timeline, outline, карта. В
+смысле отображение Tinderbox хорош, хотя он упускает один важный
+способ отображения – лента.
+</p>
+
+<p>
+Между заметками можно делать связи. Связи можно делать между любыми
+заметками, даже если они находятся на разных уровнях иерархии. Есть
+инспектор, который показывает все входящие и исходящие связи для
+конкретной заметки.
+</p>
+
+<p>
+Tinderbox не является редактором гипертекста (и тем более блочным
+редактором), связи у него существуют только на уровне
+заметок. Метаданные тоже можно навешивать на уровне заметок. Текст
+по-прежнему лежит одним куском.
+</p>
+
+<p>
+Книга: <a href="http://www.markbernstein.org/">Mark Bernstein</a> – <a href="http://www.eastgate.com/Tinderbox/TinderboxWay.html">The Tinderbox Way</a>
+</p>
+
+<p>
+Сайт разработчика: <a href="http://www.markbernstein.org/">Mark Bernstein</a>
+</p>
+
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Tinderbox_%28application_software%29">Tinderbox</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org388a734" class="outline-3">
+<h3 id="org388a734"><span class="section-number-3">7.15</span> (2003) Joshua Schachter — Del.icio.us</h3>
+<div class="outline-text-3" id="text-7-15">
+<p>
+Старая заметка про <a href="https://delicious.com">delicious</a>:
+</p>
+
+<blockquote>
+<p>
+Про отношения с делишесом. Плохие у меня с делишесом
+отношения. Естественный подход мне не нравится. Точнее он у
+меня изначально вызвал какое-то непонимание. Поэтому изначально
+я пользовался противоестественным способом. Пытался добавлять
+избытычные метаданные. Сделал подобие онтологии. Но проблема
+этого подхода в том, что дальше с данными сделать ничего
+нельзя. Язык запросов лучше даже на френдфиде.
+</p>
+
+<p>
+Есть другая сторона. Почему фрф лучше для показывания
+ссылок. Сохранение ссылки очень мало кто сопровождает тем почему
+эта ссылка привлекла внимание. Никто не пишет эту самую
+пресловутую тысячу знаков. Это долго и никому не
+инетересно. Сохранение ссылки – это тоже самое рассказывание
+истории. Потому что без истории ссылки никому не нужна. Этих
+ссылок вокруг слишком много, чтобы во все тыкать и самому
+разбираться что там к чему. Социальность делишеса проявляется
+только в одном случае – когда люди начинают искать популярные
+ссылки по какому-то тегу.
+</p>
+
+<p>
+Компенсировать отсутствие обсуждения заправлением делишеса во
+френдфид тоже плохо. Потому что если исходить из того, что это все
+ссылки "на потом", то соотношение сигнал/шум становится слишком
+низким. Каждый сохраняет в день по несколько ссылок умножить на
+количество френдов – получается жуткий мусор. Поэтому ссылки нужно
+обсуждать там, где они лежат.
+</p>
+
+<p>
+Одно время я очень перся от делишеса, но сейчас это прошло. Тогда
+мне хотелось, чтобы так можно было работать с файлами на харде. Но
+если из метаданных нельзя ничего выжать, то на фиг они нужны?
+</p>
+
+<p>
+У делишеса есть проблема интерфейса – сохранять слишком долго. В
+результате на смену ему пришел Read It Later. Пост сохраняется
+одним нажатием галочки. Получается обычный линейный список. То,
+что прошло испытание временем переносится в делишес. Или про это
+рассказывается история во френфиде. Лишнее удаляется одним
+кликом. То что там нет тегов – это отдельная тема. Мне кажется,
+что ключевые слова можно вытаскивать из текста
+автоматом. Используя API того же делишеса или гугла. Или тупо
+смотреть по частоте.
+</p>
+
+<p>
+Получается, что делишес – это медленные коммуникации. Медленные
+именно из-за интерфейса, а не по сути. Из этого вытекает очевидное
+в принципе заключение, что пропускная способность интерфейса
+определяет суть сервиса. Если сделать медленный интерфейс для
+чата, то это будет уже форум. Условно говоря. Если сделать быстрый
+интерфейс для форума, то получится френдфид. Опять же очень
+условно.
+</p>
+</blockquote>
+</div>
+</div>
+
+<div id="outline-container-orgb319cac" class="outline-3">
+<h3 id="orgb319cac"><span class="section-number-3">7.16</span> (2003) Carsten Dominik — Org-mode</h3>
+<div class="outline-text-3" id="text-7-16">
+<p>
+Outliner для emacs. Выяснилось, что пока нет хорошего инструмента,
+которому можно доверять, вполне можно жить с помощью текстовых
+файлов и git.
+</p>
+
+<p>
+<a href="http://orgmode.org/">http://orgmode.org/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgf1470fb" class="outline-3">
+<h3 id="orgf1470fb"><span class="section-number-3">7.17</span> 2006 Calibre</h3>
+</div>
+
+<div id="outline-container-org9dd0c20" class="outline-3">
+<h3 id="org9dd0c20"><span class="section-number-3">7.18</span> (2004) W3C — RDF / RDFS / OWL</h3>
+</div>
+
+<div id="outline-container-orgdae948f" class="outline-3">
+<h3 id="orgdae948f"><span class="section-number-3">7.19</span> (2007) DBpedia</h3>
+<div class="outline-text-3" id="text-7-19">
+<p>
+Вытаскивает структурированные данные из википедии, конвертит их в
+RDF, позволяет делать запросы на SPARQL.
+</p>
+
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/DBpedia">DBpedia</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org9297103" class="outline-3">
+<h3 id="org9297103"><span class="section-number-3">7.20</span> (2007) Scrivener</h3>
+<div class="outline-text-3" id="text-7-20">
+<p>
+Инструмент для написания текстов. Есть текстовый редактор и
+контроль версий. Есть хранилище связанных файлов и их отображение в
+виде доски. Какие-то инструменты для рефакторинга в духе
+"переименовать персонажа".
+</p>
+
+<p>
+Надо еще в нем покопаться, но пока ощущение что в целом он про текст
+как проект.
+</p>
+
+<p>
+<a href="http://www.literatureandlatte.com/scrivener.html">http://www.literatureandlatte.com/scrivener.html</a>
+</p>
+</div>
+</div>
+
+
+<div id="outline-container-org93ace55" class="outline-3">
+<h3 id="org93ace55"><span class="section-number-3">7.21</span> (2008) Evernote</h3>
+<div class="outline-text-3" id="text-7-21">
+<p>
+Подкаст с Пачиковым: <a href="http://runetologia.podfm.ru/96/">Рунетология 45</a>
+</p>
+
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Evernote">Evernote</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org11468a1" class="outline-3">
+<h3 id="org11468a1"><span class="section-number-3">7.22</span> (2009) Fluidinfo</h3>
+<div class="outline-text-3" id="text-7-22">
+<p>
+У них очень прикольный <a href="http://blogs.fluidinfo.com/">блог</a>, если читать его с начала, а не с конца.
+</p>
+
+<p>
+<a href="http://fluidinfo.com">http://fluidinfo.com</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org2c51215" class="outline-3">
+<h3 id="org2c51215"><span class="section-number-3">7.23</span> (2013) Ginko</h3>
+<div class="outline-text-3" id="text-7-23">
+<p>
+Хороший. Умеет делать презентации и возвращать текст в виде
+json. Интересен в первую очередь интерфейсом.
+</p>
+
+<p>
+<a href="https://gingkoapp.com">https://gingkoapp.com</a>
+</p>
+
+<p>
+Reference-mode в читалке. Решение проблемы идентификации для
+электронных книг.
+</p>
+
+<p>
+<a href="https://calibre-ebook.com/">https://calibre-ebook.com/</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfde662c" class="outline-3">
+<h3 id="orgfde662c"><span class="section-number-3">7.24</span> Smallest Federated Wiki</h3>
+<div class="outline-text-3" id="text-7-24">
+<p>
+Создатель первой вики, <a href="https://en.wikipedia.org/wiki/Ward_Cunningham">Ward Cunningham</a>, делает федеративную
+вики. Страницы можно форкать и поддерживать локально свою версию.
+</p>
+
+<p>
+<a href="http://fed.wiki.org">http://fed.wiki.org</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org3f3bd26" class="outline-3">
+<h3 id="org3f3bd26"><span class="section-number-3">7.25</span> Chandler</h3>
+<div class="outline-text-3" id="text-7-25">
+<p>
+Wiki: <a href="https://en.wikipedia.org/wiki/Chandler_%28software%29">Chandler</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb793351" class="outline-3">
+<h3 id="orgb793351"><span class="section-number-3">7.26</span> CommonTag</h3>
+<div class="outline-text-3" id="text-7-26">
+<p>
+Теги на основе заголовков статей в википедии. Позволяют получить
+для тега хорошо прописанную семантику, в том числе на разных
+языках. Какая-то инкарнация этой идеи вроде используется в facebook
+для отмечания интересов пользователя.
+</p>
+
+<p>
+<a href="http://microformats.org/wiki/CommonTag">http://microformats.org/wiki/CommonTag</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgd90c616" class="outline-3">
+<h3 id="orgd90c616"><span class="section-number-3">7.27</span> Friendfeed</h3>
+<div class="outline-text-3" id="text-7-27">
+<p>
+Помимо всего прочего умел собирать данных из разных источников в
+одну ленту.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org4419d55" class="outline-3">
+<h3 id="org4419d55"><span class="section-number-3">7.28</span> Locker</h3>
+<div class="outline-text-3" id="text-7-28">
+<p>
+Метасервис по собиранию данных из разных веб-сервисов в единую
+ленту.
+</p>
+</div>
+</div>
+
+<div id="outline-container-org282e1aa" class="outline-3">
+<h3 id="org282e1aa"><span class="section-number-3">7.29</span> Singly</h3>
+<div class="outline-text-3" id="text-7-29">
+<p>
+Метасервис по собиранию данных из разных веб-сервисов в единую
+ленту. Singly ориентирован не только на собирание, но и на
+предоставление к собранному API для различных манипуляций и
+визуализации.
+</p>
+
+<blockquote>
+<p>
+Singly was founded by Jeremie Miller, creator of XMPP, Jason Cavnar
+and Simon Murtha-Smith. Matt Zimmerman, former CTO of Ubuntu,
+joined Singly and was the CTO.
+</p>
+</blockquote>
+
+<p>
+2013-08-22 – поглощен компанией <a href="http://appcelerator.com/">appcelerator</a>.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgfc9177c" class="outline-3">
+<h3 id="orgfc9177c"><span class="section-number-3">7.30</span> NEPOMUK</h3>
+<div class="outline-text-3" id="text-7-30">
+<p>
+<a href="https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29">https://en.wikipedia.org/wiki/NEPOMUK_%28framework%29</a>
+</p>
+</div>
+</div>
+
+<div id="outline-container-org249a87b" class="outline-3">
+<h3 id="org249a87b"><span class="section-number-3">7.31</span> TiddlyWiki</h3>
+<div class="outline-text-3" id="text-7-31">
+<p>
+<a href="http://tiddlywiki.com/">http://tiddlywiki.com/</a>
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgdc0e579" class="outline-2">
+<h2 id="orgdc0e579"><span class="section-number-2">8</span> Ссылки</h2>
+<div class="outline-text-2" id="text-8">
+<p>
+<a href="http://infotoday.com/">http://infotoday.com/</a> – новости
+</p>
+
+<p>
+<a href="http://booksblog.infotoday.com/">http://booksblog.infotoday.com/</a> – книги
+</p>
+
+<p>
+Каталог статей на сайте Брета Виктора: Engelbart, Bush, Alan Key и
+другие - <a href="http://worrydream.com/refs/">http://worrydream.com/refs/</a>.
+</p>
+</div>
+
+<div id="outline-container-orgf81d825" class="outline-3">
+<h3 id="orgf81d825"><span class="section-number-3">8.1</span> Учебные заведения</h3>
+<div class="outline-text-3" id="text-8-1">
+<p>
+<a href="http://www.ischool.berkeley.edu/">UC Berkeley School of Information</a>
+</p>
+<ul class="org-ul">
+<li><a href="https://bcourses.berkeley.edu/courses/1247347/assignments/syllabus">INFO202: Information Organization and Retrieval (Fall 2014)</a></li>
+</ul>
+
+<p>
+<a href="https://ischool.uw.edu/">University of Washington Information School</a>
+</p>
+<ul class="org-ul">
+<li><a href="http://kftf.ischool.washington.edu/">Keeping Found Things Found</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org434da64" class="outline-3">
+<h3 id="org434da64"><span class="section-number-3">8.2</span> Термины</h3>
+<div class="outline-text-3" id="text-8-2">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Personal_information_manager">Personal information manager</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Semantic_Web">Semantic Web</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Personal_knowledge_base">Personal knowledge base</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Information_science">Information science</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Faceted_classification">Faceted classification</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Metadata">Metadata</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Entity%E2%80%93attribute%E2%80%93value_model">Entity–attribute–value model</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Adaptive_hypermedia">Adaptive hypermedia</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Hypertext">Hypertext</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Semantic_desktop">Semantic desktop</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Parallel_text">Parallel text</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Transclusion">Transclusion</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Graph_database">Graph database</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Universally_unique_identifier">Universally unique identifier (UUID)</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Uniform_Resource_Identifier">URI</a> / <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">URL</a> / <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Name">URN</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Dublin_Core">Dublin Core</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org128cb59" class="outline-3">
+<h3 id="org128cb59"><span class="section-number-3">8.3</span> Люди</h3>
+<div class="outline-text-3" id="text-8-3">
+<ul class="org-ul">
+<li><a href="https://en.wikipedia.org/wiki/Douglas_Engelbart">Douglas Engelbart</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Andries_van_Dam">Andries van Dam</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Ted_Nelson">Ted Nelson</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org9c303a5" class="outline-3">
+<h3 id="org9c303a5"><span class="section-number-3">8.4</span> Книги</h3>
+<div class="outline-text-3" id="text-8-4">
+<p>
+История:
+</p>
+<ul class="org-ul">
+<li><a href="http://www.anthempress.com/memory-machines">Memory Machines: The Evolution of Hypertext</a> (Anthem Press)</li>
+</ul>
+
+<p>
+Техническое:
+</p>
+<ul class="org-ul">
+<li>A Semantic Web Primer (MIT Press)</li>
+<li>Semantic Web for the Working Ontologist (Morgan-Kaufman)</li>
+<li>Learning SPARQL (O'Reilly)</li>
+<li>Graph Databases (O'Reilly)</li>
+</ul>
+
+<p>
+Методологическое:
+</p>
+<ul class="org-ul">
+<li>Keeping Found Things Found (Morgan-Kaufman)</li>
+<li>The Discipline of Organizing (MIT Press)</li>
+</ul>
+
+<p>
+Художественное:
+</p>
+<ul class="org-ul">
+<li>Игра в бисер (Герман Гессе)</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org697c05f" class="outline-3">
+<h3 id="org697c05f"><span class="section-number-3">8.5</span> Ассоциации</h3>
+<div class="outline-text-3" id="text-8-5">
+<ul class="org-ul">
+<li><a href="https://www.asist.org/">Association for Information Science and Technology</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orgd405921" class="outline-3">
+<h3 id="orgd405921"><span class="section-number-3">8.6</span> urbansheep</h3>
+<div class="outline-text-3" id="text-8-6">
+</div>
+<div id="outline-container-orgbd47948" class="outline-4">
+<h4 id="orgbd47948"><span class="section-number-4">8.6.1</span> Pinboard</h4>
+<div class="outline-text-4" id="text-8-6-1">
+<ul class="org-ul">
+<li><a href="https://pinboard.in/u:urbansheep/t:km/">KM</a> / <a href="https://pinboard.in/u:urbansheep/t:knowledgemanagement/">knowledgemanagement</a></li>
+<li><a href="https://pinboard.in/u:urbansheep/t:infoorg/">infoorg</a></li>
+<li><a href="https://pinboard.in/u:urbansheep/t:hypertext/">hypertext</a></li>
+<li><a href="https://pinboard.in/u:urbansheep/t:semanticweb/">semanticweb</a></li>
+<li><a href="https://pinboard.in/u:urbansheep/t:classification/">classification</a></li>
+<li><a href="https://pinboard.in/u:urbansheep/t:metadata/">metadata</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-orga556dcf" class="outline-4">
+<h4 id="orga556dcf"><span class="section-number-4">8.6.2</span> FriendFeed</h4>
+<div class="outline-text-4" id="text-8-6-2">
+<ul class="org-ul">
+<li><a href="http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/infoorg.html">инфоорг</a></li>
+<li><a href="http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/svoy_nebolshoy_internet.html">свой небольшой интернет</a></li>
+<li><a href="http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/tsifrovaya_istoriya.html">цифровая история</a></li>
+<li><a href="http://urbansheep.com/friendfeed/urbansheep/lists/hashtags/arhivisty.html">архивисты</a></li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org3edd704" class="outline-4">
+<h4 id="org3edd704"><span class="section-number-4">8.6.3</span> LiveJournal</h4>
+<div class="outline-text-4" id="text-8-6-3">
+<ul class="org-ul">
+<li><a href="https://urbansheep.livejournal.com/tag/info%20organization">info organization</a></li>
+<li><a href="https://urbansheep.livejornal.com/tag/classification">classification</a></li>
+<li><a href="https://urbansheep.livejournal.com/tag/memory_management">memory management</a></li>
+<li><a href="https://urbansheep.livejournal.com/tag/knowledge_management">knowledge management</a></li>
+<li><a href="https://urbansheep.livejornal.com/tag/hypertext">hypertext</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org1cf774f" class="outline-3">
+<h3 id="org1cf774f"><span class="section-number-3">8.7</span> Конференции</h3>
+<div class="outline-text-3" id="text-8-7">
+<ul class="org-ul">
+<li><a href="https://archive.org/details/PDA2015">Personal Digital Archiving Conference</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="author">Author: teksisto</p>
+<p class="date">Created: 2020-05-24 Вс 18:29</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+</body>
+</html>
