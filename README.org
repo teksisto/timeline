@@ -1,3 +1,9 @@
+* Warning
+
+  Текст про инфоорг, который я тут писал, уехал в отдельный
+  репозиторий и доступен через [[https://teksisto.github.io/infoorg/][Github Pages]], здесь он останется только
+  как пример для импорта и дальше обновляться не будет.
+
 * Timeline
 
   Здесь я размышляю [[https://github.com/teksisto/timeline/blob/master/doc/adafasdf.md][какой personal information manager мне хотелось бы
